@@ -32,3 +32,14 @@ Regra do dono: **nada de hipótese**. Todo candidato vem de dado real; o Claude 
    `pautas.candidatos` com `fonte` (A/B/C), `evidencia` (título + views de onde veio) e `grupo` ("pauta" = mesmo
    tema, próximo vídeo; "dobra" = outro nicho).
 3. `python -I pautas.py medir validacoes/pedidos/<slug>.json --publicar` (~12 min). Aparece no Validador.
+
+## Roteiro (aba Roteiro) — engenharia reversa, 5 estruturas, adaptação cultural
+- `roteiro.py baixar <vídeo> <slug>` baixa a transcrição e mede (duração, palavras/min, capítulos). O Claude lê e
+  escreve `roteiros/<slug>/analise.json` (gancho, blocos com tempo e função, transições, gatilhos, CTA, regra).
+- **Banco de 5 estruturas validadas** (vídeos reais com muitas views), para alternar e não cair em conteúdo
+  repetitivo: catálogo sequencial (`lavagem-de-dinheiro-de`), iceberg, documentário investigativo, ascensão e
+  queda, passo a passo em capítulos (`estrutura-*`). Para outro tema, achar 5 referências do tema no validador.
+- **Adaptar, não traduzir**: antes de escrever, montar `roteiros/adaptacao-<idioma>-<tema>.json` só com dados
+  locais (vídeos do idioma com views + minuto, autocompletar do idioma, casos locais). Ex.: `adaptacao-de-lavagem.json`.
+- O roteiro novo (`roteiro.json`: titulo, idioma, blocos[{bloco, segue, texto, fontes}]) copia a ESTRUTURA, nunca o
+  texto; fatos com fonte (WebSearch). Publicar: `roteiro.py publicar <slug>`.

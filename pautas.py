@@ -75,15 +75,58 @@ def cmd_coletar(a):
     print(f"Pronto: {p / (ped['slug'] + '.json')}", flush=True)
 
 
+def casa(titulo, q):
+    """O título fala do tema? Compara pelo radical (6 letras: 'dönerläden' = 'dönerladen').
+    Busca de até 2 palavras: precisa de TODAS; 3 ou mais: 60%."""
+    ks = [w[:6] for w in re.findall(r"\w+", sem_acento(q)) if len(w) > 2]
+    t = sem_acento(titulo)
+    if not ks:
+        return False
+    achou = sum(1 for w in ks if w in t)
+    return achou == len(ks) if len(ks) <= 2 else achou / len(ks) >= 0.6
+
+
+PAL = {"de": "der die das und mit ist ein eine nicht wie warum was so funktioniert für von zu im den dem wird erklärt".split(),
+       "en": "the and of to how why what is in a with you your this that explained works".split(),
+       "pt": "o a os as e de do da que como por um uma para com não é seu sua explicado".split(),
+       "es": "el la los las y de del que como por un una para con no es su explicado".split(),
+       "fr": "le la les et de des du que comment pourquoi un une pour avec pas est expliqué".split()}
+
+
+def idioma_pelo_titulo(t):
+    """Plano B quando o YouTube não informa o idioma: conta palavras típicas de cada idioma no título."""
+    ws = re.findall(r"\w+", (t or "").lower())
+    pts = {k: sum(1 for w in ws if w in v) for k, v in PAL.items()}
+    k = max(pts, key=pts.get)
+    if pts[k] >= 2 and sorted(pts.values())[-2] < pts[k]:
+        return k
+    if re.search(r"[äöüß]", (t or "").lower()):  # letras que só o alemão usa
+        return "de"
+    if re.search(r"[ãõç]", (t or "").lower()):
+        return "pt"
+    if re.search(r"[ñ¿¡]", (t or "").lower()):
+        return "es"
+    return None
+
+
+def idioma_seguro(vid):
+    r = idioma_titulo(vid)
+    return r if r[0] else idioma_titulo(vid)  # 2ª tentativa quando o YouTube falha
+
+
 def conferir(res, idioma, k):
     """Idioma real dos k primeiros resultados (os títulos da busca podem vir traduzidos)."""
     with ThreadPoolExecutor(5) as ex:
-        reais = list(ex.map(idioma_titulo, [r.get("id") for r in res[:k]]))
+        reais = list(ex.map(idioma_seguro, [r.get("id") for r in res[:k]]))
     itens = []
     for i, r in enumerate(res[:k]):
         real, tit = reais[i]
-        itens.append({"id": r.get("id"), "titulo": tit or r.get("title"), "canal": r.get("channel"),
-                      "views": r.get("view_count") or 0, "dur": r.get("duration"), "idioma_real": lingua(real)})
+        t = tit or r.get("title")
+        lg, fonte = lingua(real), "youtube"
+        if not lg:
+            lg, fonte = idioma_pelo_titulo(t), "titulo"
+        itens.append({"id": r.get("id"), "titulo": t, "canal": r.get("channel"), "views": r.get("view_count") or 0,
+                      "dur": r.get("duration"), "idioma_real": lg, "idioma_fonte": fonte})
     return [x for x in itens if x["idioma_real"] == idioma]
 
 
@@ -93,7 +136,7 @@ def medir_um(c, pa, n, k):
     with ThreadPoolExecutor(2) as ex:  # as duas buscas ao mesmo tempo
         r1, r2 = ex.map(lambda q: buscar(q, n, "qualquer"), [c["busca_tema"], q_molde])
     # só conta como demanda do tema o vídeo cujo título tem as palavras da busca (não um vídeo genérico do assunto)
-    r1 = [r for r in r1 if parecido(r.get("title") or "", c["busca_tema"])]
+    r1 = [r for r in r1 if casa(r.get("title") or "", c["busca_tema"])]
     tema_res = conferir(r1, idioma, k)
     mol_res = conferir(r2, idioma, k)
     conc = [x for x in mol_res if parecido(x["titulo"], q_molde) and (x["dur"] or 0) >= 240]

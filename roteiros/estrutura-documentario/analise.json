@@ -1,0 +1,71 @@
+{
+ "resumo": "Documentário investigativo de TV (ZDFzoom): um especialista abre com o problema, a equipe testa na prática com câmera escondida (comprar carro em dinheiro vivo), segue o dinheiro em imóveis e registros, ouve políticos e termina com o que precisa mudar.",
+ "formato": "Documentário investigativo (problema → teste → especialistas → poder público → solução)",
+ "duracao_seg": 1233,
+ "palavras_por_minuto": 131,
+ "dark": "Parcial. Teste com câmera escondida e entrevistas não dá para fazer anônimo; a ESTRUTURA sim, trocando o teste por dados públicos, documentos e casos de jornal.",
+ "gancho": {
+  "tipo": "Especialista + caso concreto + comparação entre países",
+  "como": "Delegado especialista explica um caso (ouro comprado com dinheiro vivo) → na Alemanha não existe limite para pagar em dinheiro; na Espanha é 2.500 €, na Itália 1.000 €, na Grécia 500 € → frase de efeito ('me dê 1 milhão em dinheiro e uma rua: em uma manhã eu transformo em joias sem ninguém notar') → 'é tão fácil assim? vamos testar'.",
+  "duracao_seg": 80,
+  "por_que_funciona": "Injustiça + vergonha nacional ('paraíso para lavadores') + promessa de teste real."
+ },
+ "blocos": [
+  {
+   "ini": 0,
+   "fim": 80,
+   "nome": "Gancho: especialista + comparação",
+   "funcao": "Mostrar o problema com um número que choca o público local",
+   "palavras_aprox": 180
+  },
+  {
+   "ini": 80,
+   "fim": 240,
+   "nome": "Teste prático",
+   "funcao": "Comprovar na rua (concessionárias aceitam dinheiro vivo sem documento?)",
+   "palavras_aprox": 350
+  },
+  {
+   "ini": 240,
+   "fim": 518,
+   "nome": "Seguir o dinheiro: imóveis e registros",
+   "funcao": "Imóveis como destino; registro de transparência vazio; ONG que investiga",
+   "palavras_aprox": 610
+  },
+  {
+   "ini": 518,
+   "fim": 824,
+   "nome": "Falhas do sistema",
+   "funcao": "Quem deveria fiscalizar não fiscaliza",
+   "palavras_aprox": 670
+  },
+  {
+   "ini": 824,
+   "fim": 1084,
+   "nome": "Por que o país é um paraíso",
+   "funcao": "Política, lobby, respostas oficiais por escrito",
+   "palavras_aprox": 570
+  },
+  {
+   "ini": 1084,
+   "fim": 1233,
+   "nome": "O que falta",
+   "funcao": "Leis que funcionam + o que ainda falta (limite para dinheiro vivo)",
+   "palavras_aprox": 330
+  }
+ ],
+ "transicoes": "Pergunta do repórter que leva ao próximo bloco ('mas quem controla isso? vamos descobrir').",
+ "gatilhos": [
+  "injustiça",
+  "vergonha nacional",
+  "prova",
+  "autoridade"
+ ],
+ "detalhes_de_estilo": [
+  "capítulos com perguntas",
+  "comparação com outros países em números",
+  "fecha com proposta concreta"
+ ],
+ "cta": "Nenhum.",
+ "regra": "Problema local → prova → seguir o dinheiro → por que ninguém resolve → o que mudaria."
+}

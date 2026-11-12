@@ -2,6 +2,40 @@
  {
   "slug": "lavagem-de-dinheiro-de",
   "referencia": "Every Money Laundering Technique Explained",
+  "formato": "Catálogo sequencial (every [X] explained), narração em 3ª pessoa, explicativo",
+  "views": 1125922,
+  "titulo": null,
+  "idioma": null
+ },
+ {
+  "slug": "estrutura-iceberg",
+  "referencia": "L'iceberg de l'argent sale",
+  "formato": "Iceberg (níveis do raso ao profundo), narração em 2ª pessoa, investigativo",
+  "views": 4505350,
+  "titulo": null,
+  "idioma": null
+ },
+ {
+  "slug": "estrutura-documentario",
+  "referencia": "Leichtes Spiel für kriminelle Geldwäscher | ZDFzoom",
+  "formato": "Documentário investigativo (problema → teste → especialistas → poder público → solução)",
+  "views": 1000359,
+  "titulo": null,
+  "idioma": null
+ },
+ {
+  "slug": "estrutura-ascensao-queda",
+  "referencia": "Geldwäsche-König: Der Aufstieg des Ali C. (1/2) | Die Spur",
+  "formato": "Biografia em ascensão e queda (abre no auge → volta ao começo → sobe → cai)",
+  "views": 730437,
+  "titulo": null,
+  "idioma": null
+ },
+ {
+  "slug": "estrutura-passo-a-passo",
+  "referencia": "How Money Laundering Actually Works | How Crime Works | Insider",
+  "formato": "Passo a passo cronológico em capítulos ('How X actually works')",
+  "views": 4904288,
   "titulo": null,
   "idioma": null
  }

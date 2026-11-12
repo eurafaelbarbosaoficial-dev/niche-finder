@@ -1,0 +1,71 @@
+{
+ "resumo": "Bastidores em capítulos numerados contados por quem fez (agente infiltrado que lavou dinheiro para o cartel de Escobar): criar a persona → conhecer o cartel → o mercado → recolher o dinheiro → pagamentos → vigilância → bancos → intermediários → cair a máscara → consequências → futuro.",
+ "formato": "Passo a passo cronológico em capítulos ('How X actually works')",
+ "duracao_seg": 1349,
+ "palavras_por_minuto": 166,
+ "dark": "Sim, adaptado: narrar em 2ª pessoa ('você é um agente infiltrado…') ou em 3ª pessoa sobre um caso documentado, com capítulos numerados.",
+ "gancho": {
+  "tipo": "Credencial + perigo",
+  "como": "'Passei 2 anos infiltrado lavando dezenas de milhões para o cartel de Escobar' → por que importa (a lavagem compra países) → 'estou de silhueta porque o cartel pôs preço na minha cabeça'.",
+  "duracao_seg": 48,
+  "por_que_funciona": "Autoridade + perigo real + promessa de bastidores."
+ },
+ "blocos": [
+  {
+   "ini": 0,
+   "fim": 48,
+   "nome": "Gancho: credencial + perigo",
+   "funcao": "Quem conta e por que é perigoso",
+   "palavras_aprox": 130
+  },
+  {
+   "ini": 48,
+   "fim": 313,
+   "nome": "Cap. 1–3: preparar e entrar",
+   "funcao": "Criar a fachada, conhecer os criminosos, entender o mercado",
+   "palavras_aprox": 730
+  },
+  {
+   "ini": 313,
+   "fim": 737,
+   "nome": "Cap. 4–6: a operação",
+   "funcao": "Recolher, pagar, ser vigiado: detalhes operacionais",
+   "palavras_aprox": 1170
+  },
+  {
+   "ini": 737,
+   "fim": 980,
+   "nome": "Cap. 7–8: o sistema por trás",
+   "funcao": "Bancos e intermediários",
+   "palavras_aprox": 670
+  },
+  {
+   "ini": 980,
+   "fim": 1180,
+   "nome": "Cap. 9–10: o desfecho",
+   "funcao": "Cair a máscara e as consequências",
+   "palavras_aprox": 550
+  },
+  {
+   "ini": 1180,
+   "fim": 1349,
+   "nome": "Cap. 11: o futuro",
+   "funcao": "Como o problema continua hoje",
+   "palavras_aprox": 470
+  }
+ ],
+ "transicoes": "Capítulos numerados com título na tela; cada um responde 'e depois?'.",
+ "gatilhos": [
+  "autoridade",
+  "perigo",
+  "bastidores",
+  "cronologia"
+ ],
+ "detalhes_de_estilo": [
+  "detalhes operacionais concretos (caixa da FedEx com 500 mil)",
+  "momentos de tensão",
+  "fecha olhando para o presente"
+ ],
+ "cta": "Nenhum.",
+ "regra": "Capítulos cronológicos numerados, do preparo ao desfecho, com detalhes concretos."
+}

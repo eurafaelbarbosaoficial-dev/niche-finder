@@ -1,0 +1,73 @@
+{
+ "resumo": "Ascensão e queda de UMA pessoa real (Ali C., 'rei da lavagem' de Hamburgo) contada por ele e pela família: abre no auge (milhões, voos 3 vezes por dia), volta à infância (gangue, breakdance), mostra como entrou, o auge, a pressão e a queda.",
+ "formato": "Biografia em ascensão e queda (abre no auge → volta ao começo → sobe → cai)",
+ "duracao_seg": 1966,
+ "palavras_por_minuto": 111,
+ "dark": "Sim, adaptado: em vez de entrevista, narração em 3ª pessoa de um caso real documentado (processo, reportagens), com fontes.",
+ "gancho": {
+  "tipo": "In medias res no auge + frase do personagem",
+  "como": "Áudio de ligação → 'Meu nome é Ali C. Durante anos lavei dinheiro do tráfico' → números do auge (200, 300, 500 milhões; voava 3 vezes por dia; 'éramos os reis') → 'a Alemanha é um paraíso para lavadores' → contraste: a casa hoje é uma ruína queimada.",
+  "duracao_seg": 100,
+  "por_que_funciona": "Contraste auge × ruína logo no começo: o viewer fica para saber como ele chegou lá e como caiu."
+ },
+ "blocos": [
+  {
+   "ini": 0,
+   "fim": 100,
+   "nome": "Gancho: o auge e a ruína",
+   "funcao": "Mostrar o fim e o topo antes do começo",
+   "palavras_aprox": 190
+  },
+  {
+   "ini": 100,
+   "fim": 500,
+   "nome": "O lugar",
+   "funcao": "A casa-quartel (máquinas de contar dinheiro, armas): cenário concreto",
+   "palavras_aprox": 740
+  },
+  {
+   "ini": 500,
+   "fim": 900,
+   "nome": "Origem",
+   "funcao": "Infância, gangue, primeiros contatos no submundo",
+   "palavras_aprox": 740
+  },
+  {
+   "ini": 900,
+   "fim": 1300,
+   "nome": "Como o sistema funcionava",
+   "funcao": "O esquema (transferências, malas de dinheiro para o exterior) e os clientes (máfias)",
+   "palavras_aprox": 740
+  },
+  {
+   "ini": 1300,
+   "fim": 1800,
+   "nome": "Pressão",
+   "funcao": "Paranoia, família envolvida, sinais de que vão ser pegos",
+   "palavras_aprox": 925
+  },
+  {
+   "ini": 1800,
+   "fim": 1966,
+   "nome": "Queda (gancho para a parte 2)",
+   "funcao": "'Perdi o controle mas continuei' → corte para o próximo episódio",
+   "palavras_aprox": 300
+  }
+ ],
+ "transicoes": "Saltos no tempo marcados por lugares e objetos; frases do personagem fazem a ponte.",
+ "gatilhos": [
+  "curiosidade (como chegou lá?)",
+  "proibido",
+  "família",
+  "contraste auge × queda",
+  "série (parte 1 de 2)"
+ ],
+ "detalhes_de_estilo": [
+  "voz do personagem",
+  "números do auge",
+  "objetos concretos",
+  "termina em suspense para a parte 2"
+ ],
+ "cta": "Implícito: parte 2.",
+ "regra": "Abrir no auge, voltar ao começo, subir, pressão, queda; terminar em gancho de série."
+}

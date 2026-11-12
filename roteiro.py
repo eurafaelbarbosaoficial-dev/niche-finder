@@ -72,8 +72,11 @@ def publicar(slug):
     idx = json.loads(idx_p.read_text(encoding="utf-8")) if idx_p.exists() else []
     idx = [x for x in idx if x["slug"] != slug]
     idx.insert(0, {"slug": slug, "referencia": out.get("medidas", {}).get("titulo"),
+                   "formato": (out.get("analise") or {}).get("formato"), "views": out.get("medidas", {}).get("views"),
                    "titulo": (out.get("roteiro") or {}).get("titulo"), "idioma": (out.get("roteiro") or {}).get("idioma")})
     idx_p.write_text(json.dumps(idx, ensure_ascii=False, indent=1), encoding="utf-8")
+    if "--sem-push" in sys.argv:
+        return print(f"Gravado: docs/roteiros/{slug}.json")
     subprocess.run(["git", "add", "docs/roteiros", "roteiros"], cwd=BASE)
     subprocess.run(["git", "commit", "-q", "-m", f"Roteiro: {slug}"], cwd=BASE)
     subprocess.run(["git", "push", "-q"], cwd=BASE)
