@@ -59,7 +59,8 @@
    ],
    "molde_videos": [],
    "relacao": "mesmo subnicho",
-   "onde": "mesmo canal"
+   "onde": "mesmo canal",
+   "tema_pt": "Escândalos de lavagem nos bancos"
   },
   {
    "tema": "Betrugsmaschen gegen Senioren",
@@ -115,7 +116,8 @@
    ],
    "molde_videos": [],
    "relacao": "mesmo nicho, subnicho vizinho",
-   "onde": "mesmo canal (novo bloco temático)"
+   "onde": "mesmo canal (novo bloco temático)",
+   "tema_pt": "Golpes contra idosos"
   },
   {
    "tema": "Geldwäsche-Tricks",
@@ -144,7 +146,8 @@
    ],
    "molde_videos": [],
    "relacao": "mesmo subnicho",
-   "onde": "mesmo canal"
+   "onde": "mesmo canal",
+   "tema_pt": "Lavagem de dinheiro com lanchonetes de döner"
   },
   {
    "tema": "Finanzagent-Maschen",
@@ -182,7 +185,8 @@
    ],
    "molde_videos": [],
    "relacao": "mesmo subnicho",
-   "onde": "mesmo canal"
+   "onde": "mesmo canal",
+   "tema_pt": "Golpe do 'agente financeiro' (laranjas)"
   },
   {
    "tema": "Inflations-Mechanismen",
@@ -211,7 +215,8 @@
    ],
    "molde_videos": [],
    "relacao": "mesmo nicho, subnicho vizinho",
-   "onde": "mesmo canal (novo bloco temático)"
+   "onde": "mesmo canal (novo bloco temático)",
+   "tema_pt": "Como a inflação funciona de verdade"
   },
   {
    "tema": "Geldwäsche-Wege über Dubai",
@@ -249,7 +254,8 @@
    ],
    "molde_videos": [],
    "relacao": "mesmo subnicho",
-   "onde": "mesmo canal"
+   "onde": "mesmo canal",
+   "tema_pt": "Lavagem de dinheiro via Dubai"
   },
   {
    "tema": "Casino-Geldwäsche-Methoden",
@@ -268,7 +274,8 @@
    "tema_videos": [],
    "molde_videos": [],
    "relacao": "mesmo subnicho",
-   "onde": "mesmo canal"
+   "onde": "mesmo canal",
+   "tema_pt": "Lavagem de dinheiro em cassinos"
   },
   {
    "tema": "Geldwäsche mit Gold",
@@ -287,7 +294,8 @@
    "tema_videos": [],
    "molde_videos": [],
    "relacao": "mesmo subnicho",
-   "onde": "mesmo canal"
+   "onde": "mesmo canal",
+   "tema_pt": "Lavagem de dinheiro com ouro"
   },
   {
    "tema": "Rentenfallen",
@@ -335,7 +343,8 @@
     }
    ],
    "relacao": "mesmo nicho, subnicho vizinho",
-   "onde": "mesmo canal (novo bloco temático)"
+   "onde": "mesmo canal (novo bloco temático)",
+   "tema_pt": "Armadilhas da aposentadoria"
   },
   {
    "tema": "Fabelwesen",
@@ -373,7 +382,8 @@
    ],
    "molde_videos": [],
    "relacao": "outro nicho",
-   "onde": "canal novo"
+   "onde": "canal novo",
+   "tema_pt": "Criaturas míticas"
   },
   {
    "tema": "Manipulationstechniken",
@@ -402,7 +412,8 @@
    ],
    "molde_videos": [],
    "relacao": "outro nicho",
-   "onde": "canal novo"
+   "onde": "canal novo",
+   "tema_pt": "Técnicas de manipulação"
   },
   {
    "tema": "Alien-Arten",
@@ -440,7 +451,8 @@
    ],
    "molde_videos": [],
    "relacao": "outro nicho",
-   "onde": "canal novo"
+   "onde": "canal novo",
+   "tema_pt": "Tipos de alienígena"
   },
   {
    "tema": "verbotenen Bücher",
@@ -487,7 +499,8 @@
    ],
    "molde_videos": [],
    "relacao": "outro nicho",
-   "onde": "canal novo"
+   "onde": "canal novo",
+   "tema_pt": "Livros proibidos"
   },
   {
    "tema": "Gesellschaftsschichten",
@@ -534,7 +547,8 @@
    ],
    "molde_videos": [],
    "relacao": "outro nicho",
-   "onde": "canal novo"
+   "onde": "canal novo",
+   "tema_pt": "Classes sociais"
   },
   {
    "tema": "PC-Komponenten",
@@ -581,7 +595,8 @@
     }
    ],
    "relacao": "outro nicho",
-   "onde": "canal novo"
+   "onde": "canal novo",
+   "tema_pt": "Peças de computador"
   },
   {
    "tema": "Gefühle, die du nicht benennen kannst",
@@ -600,7 +615,8 @@
    "tema_videos": [],
    "molde_videos": [],
    "relacao": "outro nicho",
-   "onde": "canal novo"
+   "onde": "canal novo",
+   "tema_pt": "Sentimentos que você não sabe nomear"
   },
   {
    "tema": "Sekten",
@@ -666,7 +682,8 @@
     }
    ],
    "relacao": "outro nicho",
-   "onde": "canal novo"
+   "onde": "canal novo",
+   "tema_pt": "Seitas"
   },
   {
    "tema": "Drogen und ihre Wirkung",
@@ -741,7 +758,8 @@
     }
    ],
    "relacao": "outro nicho",
-   "onde": "canal novo"
+   "onde": "canal novo",
+   "tema_pt": "Drogas e seus efeitos"
   }
  ],
  "projeto": {

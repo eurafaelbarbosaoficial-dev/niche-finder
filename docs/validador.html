@@ -83,6 +83,54 @@
 @media(max-width:620px){.pt{grid-template-columns:26px minmax(0,1fr)}.pt .dd{grid-column:2;justify-content:flex-start}.pt .dd span{text-align:left}}
 @media(max-width:900px){.langs{grid-template-columns:repeat(3,minmax(0,1fr))}.orig{grid-template-columns:1fr}}
 @media(max-width:560px){.langs{grid-template-columns:repeat(2,minmax(0,1fr))}.vs li a{grid-template-columns:auto minmax(0,1fr) auto}.vs .lgx,.vs .d{display:none}.ask{border-radius:20px;flex-wrap:wrap}.ask .btn{width:100%;justify-content:center}}
+
+/* ---- partes de baixo, visual de produto ---- */
+.bloco-sec{margin-top:8px}
+.trilha{display:flex;align-items:stretch;gap:8px;flex-wrap:wrap}
+.tr-s{flex:1 1 220px;border-radius:20px;border:1px solid var(--ln);background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.015));padding:18px 20px;display:flex;flex-direction:column;gap:6px}
+.tr-ic{width:38px;height:38px;border-radius:12px;background:var(--lmbg);color:var(--lm);display:grid;place-items:center;margin-bottom:6px} .tr-ic svg{width:20px;height:20px}
+.tr-s small{font-size:12px;color:var(--mut);letter-spacing:.06em;text-transform:uppercase} .tr-s b{font-size:18px;font-weight:600;letter-spacing:-.02em;line-height:1.3} .tr-f{font-size:12px;color:var(--dim)}
+.seta{display:grid;place-items:center;color:var(--dim)} .seta svg{width:20px;height:20px}
+.regra{margin-top:12px;border-radius:16px;background:var(--s1);border:1px solid var(--ln);padding:14px 18px;color:var(--tx2);font-size:14px} .regra b:first-child{display:block;color:var(--tx);margin-bottom:2px}
+.mapa2{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:12px}
+.cm2{position:relative;isolation:isolate;border-radius:22px;border:1px solid var(--ln);background:linear-gradient(170deg,rgba(255,255,255,.045),rgba(255,255,255,.01));padding:20px;display:flex;flex-direction:column;gap:12px}
+.cm2.rec{border-color:var(--lmln);background:linear-gradient(170deg,rgba(212,255,58,.12),rgba(212,255,58,.02));box-shadow:0 20px 60px -30px rgba(212,255,58,.35)}
+.selo2{position:absolute;top:16px;right:16px;background:var(--lm);color:#000;font-size:11.5px;font-weight:600;padding:4px 10px;border-radius:999px}
+.cm2-h{display:flex;align-items:center;gap:12px} .cm2-h h5{margin:0;font-size:17px;font-weight:600;letter-spacing:-.015em;padding-right:90px}
+.cm2-n{width:34px;height:34px;flex:none;border-radius:50%;display:grid;place-items:center;font-weight:600;background:var(--s2);color:var(--tx2)} .cm2.rec .cm2-n{background:var(--lm);color:#000}
+.cm2-mm{display:flex;flex-direction:column;gap:6px} .cm2-mm span{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--tx2)} .cm2-mm svg{width:15px;height:15px;flex:none}
+.cm2-mm .fica svg{color:var(--mut)} .cm2-mm .muda svg{color:var(--lm)}
+.cm2-v{display:flex;flex-wrap:wrap;gap:8px;align-items:center} .cm2-on{font-size:12.5px;color:var(--mut)}
+.cm2 p{margin:0;font-size:13.5px;line-height:1.55;color:var(--tx2)}
+.cm2-op{display:flex;flex-wrap:wrap;gap:5px} .cm2-op span{font-size:11.5px;padding:3px 9px;border-radius:999px}
+.nota2{margin:14px 2px 0;font-size:12.5px;color:var(--dim);line-height:1.6;max-width:90ch}
+.pcs{display:flex;flex-direction:column;gap:10px}
+.pc{position:relative;isolation:isolate;display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px;border-radius:22px;border:1px solid var(--ln);background:linear-gradient(170deg,rgba(255,255,255,.04),rgba(255,255,255,.01));padding:14px;cursor:pointer;transition:background .25s,border-color .25s}
+.pc:hover{background:rgba(255,255,255,.06)} .pc.bom{border-color:rgba(212,255,58,.22)}
+.pc-l{position:relative} .pc-n{position:absolute;top:-6px;left:-6px;z-index:2;width:26px;height:26px;border-radius:50%;background:var(--bg);border:1px solid var(--ln2);display:grid;place-items:center;font-size:12px;font-weight:600;color:var(--tx2)}
+.pc.bom .pc-n{background:var(--lm);color:#000;border-color:var(--lm)}
+.pc-img{display:block;width:180px;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:var(--s2)} .pc-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s var(--ease)}
+.pc:hover .pc-img img{transform:scale(1.06)} .pc-img.vz{display:grid;place-items:center;color:var(--dim)} .pc-img.vz svg{width:28px;height:28px}
+.pc-c{min-width:0;display:flex;flex-direction:column;gap:6px;padding:2px 6px 2px 0}
+.pc-tg{display:flex;gap:6px;flex-wrap:wrap} .pc-on{font-size:11.5px;font-weight:600;padding:3px 10px;border-radius:999px;background:rgba(74,222,128,.1);color:var(--up)} .pc-on.novo{background:rgba(251,191,36,.12);color:var(--am)}
+.pc h5{margin:2px 0 0;font-size:19px;font-weight:600;letter-spacing:-.02em;line-height:1.25} .pc-pt{font-size:13.5px;color:var(--mut);margin-top:-3px}
+.pc-br{display:flex;align-items:center;gap:12px;margin-top:6px} .pc-bar{flex:0 1 260px;height:8px;border-radius:9px;background:var(--s2);overflow:hidden}
+.pc-bar i{display:block;height:100%;border-radius:9px;background:linear-gradient(90deg,rgba(212,255,58,.5),var(--lm))} .pc-br span{font-size:13px;color:var(--tx2)} .pc-br b{color:var(--tx);font-weight:600}
+.pc-mt{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--mut)} .pc-src{color:var(--dim)}
+.pc-x{display:none;grid-column:1/-1;border-top:1px solid var(--ln);padding:14px 6px 4px} .pc.on .pc-x{display:block;animation:sobe .4s var(--ease)}
+.pc-x p{margin:0 0 6px;font-size:14px;color:var(--tx2)} .pc-x h6{margin:16px 0 8px;font-size:13px;font-weight:500;color:var(--mut)} .pc-x h6.ok,.ok{color:var(--up)}
+.vg{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:8px}
+.vc{display:flex;gap:12px;align-items:center;padding:8px;border-radius:14px;border:1px solid var(--ln);background:var(--s1);transition:border-color .2s,background .2s;min-width:0}
+.vc:hover{border-color:var(--ln2);background:var(--s2)}
+.vc-i{position:relative;flex:none;width:112px;aspect-ratio:16/9;border-radius:9px;overflow:hidden;background:var(--s2)} .vc-i img{width:100%;height:100%;object-fit:cover;display:block}
+.vc-i em{position:absolute;right:4px;bottom:4px;font-style:normal;font-size:10.5px;background:rgba(0,0,0,.75);padding:1px 5px;border-radius:5px}
+.vc-t{min-width:0;display:flex;flex-direction:column;gap:2px} .vc-t b{font-size:13px;font-weight:500;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vc-t small{font-size:12px;color:var(--mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis} .vc-v{font-size:12px;color:var(--tx2)} .vc-v i{font-style:normal}
+.tp2{font-size:12px;font-weight:600;color:var(--lm);background:var(--lmbg);border-radius:999px;padding:4px 11px} .q2{font-size:15px;color:var(--tx);font-style:italic}
+.kp2{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-bottom:12px}
+.kp2 div{border-radius:14px;background:var(--s1);border:1px solid var(--ln);padding:12px 14px} .kp2 small{display:block;font-size:12px;color:var(--mut)} .kp2 b{font-size:22px;font-weight:600;letter-spacing:-.02em} .kp2 em{font-style:normal;font-size:13px;color:var(--mut)} .kp2 .dn{color:var(--dn)}
+.molde{font-family:var(--sans)!important;font-weight:500}
+@media(max-width:640px){.pc{grid-template-columns:1fr}.pc-img{width:100%}.seta{transform:rotate(90deg);width:100%}.cm2-h h5{padding-right:0}.selo2{position:static;align-self:flex-start}}
 </style>
 </head>
 <body>
@@ -122,45 +170,64 @@ $("cop").onclick=function(){var t=$("tit").value.trim(),b=this;var txt='Valide n
 $("tit").onkeydown=function(e){if(e.key==="Enter")$("cop").click();};
 
 var PL={forte:"Forte",boa:"Boa",disputada:"Disputada",fraca:"Pouca demanda",feita_fraca:"Já tentaram, fraco"};
-var FT={A:"A · molde no mundo",B:"B · autocompletar",C:"C · canal de referência"};
+var VLAB={oportunidade:"Oportunidade",forte:"Forte",boa:"Boa",oportunidade_fraca:"Vazio",validado_morno:"Morno",disputada:"Disputada",validado_concorrencia:"Validado",fraca:"Pouca demanda",feito_sem_sucesso:"Fraco",feita_fraca:"Fraco"};
+var IC={
+ nicho:"<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7'><circle cx='12' cy='12' r='9'/><path d='M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18'/></svg>",
+ sub:"<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7'><circle cx='12' cy='12' r='9'/><circle cx='12' cy='12' r='5'/><circle cx='12' cy='12' r='1.5' fill='currentColor'/></svg>",
+ micro:"<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.7'><circle cx='10.5' cy='10.5' r='6.5'/><path d='m20 20-4.6-4.6'/></svg>",
+ fica:"<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><rect x='5' y='11' width='14' height='9' rx='2'/><path d='M8 11V8a4 4 0 0 1 8 0v3'/></svg>",
+ muda:"<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M7 7h11l-3-3M17 17H6l3 3'/></svg>",
+ play:"<svg viewBox='0 0 24 24' fill='currentColor'><path d='M8 5v14l11-7z'/></svg>"};
+function vcard(i){if(!i)return"";return"<a class='vc' href='https://youtu.be/"+esc(i.id)+"' target='_blank' rel='noopener'><span class='vc-i'><img loading='lazy' src='https://i.ytimg.com/vi/"+esc(i.id)+"/mqdefault.jpg' alt=''>"+(i.dur?"<em>"+dur(i.dur)+"</em>":"")+"</span>"+
+  "<span class='vc-t'><b>"+esc(i.titulo)+"</b><small>"+esc(i.canal||"")+"</small><span class='vc-v'>"+f(i.views)+" views"+(i.mesmo_formato===true?" · <i class='ok'>mesmo formato</i>":i.mesmo_formato===false?" · outro formato":"")+"</span></span></a>";}
 function pautas(slug){fetch("pautas/"+encodeURIComponent(slug)+".json?t="+Date.now()).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}).then(function(p){
   var el=$("pautas");if(!el)return;if(!p){el.innerHTML="";return;}
+  var LG=NOME[p.idioma]||p.idioma;
+  var FT={A:"Formato já provado em outro assunto",B:"O que o público ("+LG.toLowerCase()+") digita no YouTube",C:"O canal de referência já fez"};
   var gp=p.pautas.filter(function(x){return(x.grupo||"pauta")==="pauta";}),gd=p.pautas.filter(function(x){return x.grupo==="dobra";});
-  function lin(x,i){return"<div class='pt glow"+(i<3&&(x.veredito==="forte"||x.veredito==="boa")?" top":"")+"'><span class='rk'>"+String(i+1).padStart(2,"0")+"</span>"+
-    "<div><h5>"+esc(x.tema)+"</h5><div class='mq'>"+esc(x.busca_molde)+"</div><div class='ev'><b>"+esc(FT[x.fonte]||x.fonte)+"</b>"+esc(x.evidencia)+"</div>"+(x.onde?"<div class='onde "+(x.fonte==="A"?"novo":"")+"'>"+esc(x.relacao)+" → "+esc(x.onde)+"</div>":"")+"</div>"+
-    "<div class='dd'><span class='vd k-"+x.veredito+"'>"+PL[x.veredito]+"</span><span>demanda<b>"+f(x.demanda_max)+"</b></span><span>no molde<b>"+x.concorrentes+"</b></span><span>procura<b>"+x.procura+"</b></span></div>"+
-    "<div class='pt-x'><p>"+esc(x.explica)+"</p><h6>Vídeos sobre o tema no idioma (busca: "+esc(x.busca_tema)+")</h6><ul class='vs'>"+(x.tema_videos||[]).map(vli).join("")+"</ul>"+
-    ((x.molde_videos||[]).length?"<h6>Quem já fez no molde</h6><ul class='vs'>"+x.molde_videos.map(vli).join("")+"</ul>":"<h6>Ninguém no molde nesse idioma.</h6>")+"</div></div>";}
-  function vli(i){return"<li><a href='https://youtu.be/"+esc(i.id)+"' target='_blank' rel='noopener'><span class='f s'>"+esc((i.idioma_real||"?").toUpperCase())+"</span><span class='lg lgx'>"+dur(i.dur)+"</span><span class='t'><span>"+esc(i.titulo)+"</span><small>"+esc(i.canal||"")+"</small></span><span class='v'>"+f(i.views)+"</span><span class='d'></span></a></li>";}
-  var mp=p.mapa_dobras,VLAB={oportunidade:"Oportunidade",forte:"Forte",boa:"Boa",oportunidade_fraca:"Vazio",validado_morno:"Morno",disputada:"Disputada",validado_concorrencia:"Validado",fraca:"Pouca demanda",feito_sem_sucesso:"Fraco",feita_fraca:"Fraco"};
-  var pj=p.projeto,ph=pj?"<div class='st'><h3>Seu projeto</h3><span>onde este canal fica no YouTube · calculado pelos dados</span></div><div class='proj'>"+
-    [["Nicho",pj.nicho,pj.nicho_fonte],["Subnicho",pj.subnicho,pj.subnicho_fonte],["Micronicho",String(pj.micronicho||"").replace("{X}","…"),pj.micronicho_fonte]].map(function(r,i){
-      return"<div class='pj'><small>"+(i+1)+" · "+r[0]+"</small><b>"+esc(r[1])+"</b><span>"+esc(r[2])+"</span></div>";}).join("")+"</div>"+
-    "<p class='aviso'>Regra do canal: os vídeos ficam no mesmo nicho e subnicho (o algoritmo aprende para quem entregar). Pauta de outro nicho = canal novo. Cada pauta abaixo diz onde ela entra.</p>":"";
-  var mh=mp?"<div class='st'><h3>Mapa de dobras</h3><span>os 5 caminhos do Raj · o que mantém, o que muda e o que os dados dizem</span></div><div class='mapa'>"+mp.caminhos.map(function(c){var rec=c.n===mp.recomendado;
-    return"<div class='cm glow"+(rec?" rec":"")+"'>"+(rec?"<span class='selo'>caminho recomendado</span>":"")+"<div class='cm-n'>"+c.n+"</div><h5>"+esc(c.nome)+"</h5>"+
-      "<div class='cm-mm'><span>mantém <b>"+esc(c.mantem)+"</b></span><span>muda <b>"+esc(c.muda)+"</b></span></div>"+
-      (c.veredito?"<span class='vd k-"+c.veredito+"'>"+(VLAB[c.veredito]||c.veredito)+"</span>":"<span class='vd k-fraca'>sem dado</span>")+
-      (c.onde?"<span class='onde'>"+esc(c.onde)+"</span>":"")+"<p>"+esc(c.melhor)+"</p>"+((c.opcoes||[]).length>1?"<div class='cm-op'>"+c.opcoes.slice(0,8).map(function(x){return"<span class='k-"+x.veredito+"'>"+esc((x.nome||"").slice(0,34))+"</span>";}).join("")+"</div>":"")+
-      "<small>fonte: "+esc(c.fonte)+"</small></div>";}).join("")+"</div><p class='aviso'>"+esc(mp.regra)+"</p>":"";
-  el.innerHTML=ph+mh+"<div class='st'><h3>Próximos vídeos em "+esc(NOME[p.idioma]||p.idioma)+"</h3><span>mesmo tema · ordenados por oportunidade · pesquisado "+esc(p.data)+"</span></div><div class='pt-l'>"+gp.map(lin).join("")+"</div>"+
-    "<div class='st'><h3>Dobras para outros nichos (com dados)</h3><span>o molde já funcionou nesses assuntos em algum idioma · medido em "+esc(NOME[p.idioma]||p.idioma)+"</span></div><div class='pt-l'>"+gd.map(lin).join("")+"</div>"+
-    "<p class='aviso'>Todo candidato vem de dado real: (A) vídeos que já fizeram sucesso com o molde em algum idioma, (B) o que o povo digita no YouTube do idioma alvo, (C) vídeos do canal de referência. O Claude só traduz o candidato; o programa mede tudo no YouTube. Demanda = maior vídeo sobre o tema no idioma (idioma real conferido). No molde = quantos já fizeram “"+esc(p.molde_alvo)+"” com esse tema.</p>";
-  [].forEach.call(el.querySelectorAll(".pt"),function(b){b.onclick=function(e){if(e.target.closest("a"))return;b.classList.toggle("on");};});});}
+  function card(x,i,mx){var top=(x.tema_videos||[])[0],pct=Math.max(3,Math.round(100*Math.log10((x.demanda_max||0)+1)/Math.log10(mx+1))),bom=x.veredito==="forte"||x.veredito==="boa";
+    return"<article class='pc glow"+(bom?" bom":"")+"'><div class='pc-l'><span class='pc-n'>"+(i+1)+"</span>"+
+      (top?"<span class='pc-img'><img loading='lazy' src='https://i.ytimg.com/vi/"+esc(top.id)+"/mqdefault.jpg' alt=''></span>":"<span class='pc-img vz'>"+IC.micro+"</span>")+"</div>"+
+      "<div class='pc-c'><div class='pc-tg'><span class='vd k-"+x.veredito+"'>"+PL[x.veredito]+"</span>"+(x.onde?"<span class='pc-on "+(x.fonte==="A"?"novo":"")+"'>"+(x.fonte==="A"?"Canal novo":"Mesmo canal")+"</span>":"")+"</div>"+
+      "<h5>"+esc(x.tema)+"</h5>"+(x.tema_pt?"<div class='pc-pt'>"+esc(x.tema_pt)+"</div>":"")+
+      "<div class='pc-br'><div class='pc-bar'><i style='width:"+pct+"%'></i></div><span><b>"+f(x.demanda_max)+"</b> views no maior vídeo do tema</span></div>"+
+      "<div class='pc-mt'><span>"+(x.concorrentes?x.concorrentes+" já fizeram no formato":"Ninguém fez no formato")+"</span><span>Procura "+x.procura+"/10</span><span class='pc-src'>"+esc(FT[x.fonte]||x.fonte)+"</span></div></div>"+
+      "<div class='pc-x'><p>"+esc(x.explica)+"</p><p class='mut'>De onde veio: "+esc(x.evidencia)+(x.relacao?" · "+esc(x.relacao)+" → "+esc(x.onde):"")+"</p>"+
+      "<h6>Os maiores vídeos sobre o tema em "+esc(LG)+"</h6><div class='vg'>"+((x.tema_videos||[]).map(vcard).join("")||"<p class='mut'>Nenhum vídeo sobre o tema achado no idioma.</p>")+"</div>"+
+      ((x.molde_videos||[]).length?"<h6>Quem já fez nesse formato</h6><div class='vg'>"+x.molde_videos.map(vcard).join("")+"</div>":"<h6 class='ok'>Ninguém fez nesse formato em "+esc(LG)+" — espaço livre</h6>")+"</div></article>";}
+  function lista(arr){var mx=Math.max.apply(0,arr.map(function(x){return x.demanda_max||0;}).concat([1]));return"<div class='pcs'>"+arr.map(function(x,i){return card(x,i,mx);}).join("")+"</div>";}
+  var pj=p.projeto,ph="";
+  if(pj){var steps=[["nicho","Nicho",pj.nicho,pj.nicho_fonte],["sub","Subnicho",pj.subnicho,pj.subnicho_fonte],["micro","Micronicho",String(pj.micronicho||"").replace("{X}","…"),pj.micronicho_fonte]];
+    ph="<section class='bloco-sec'><div class='st'><h3>Seu projeto</h3><span>onde este canal fica no YouTube</span></div><div class='trilha'>"+steps.map(function(s,i){
+      return(i?"<span class='seta'><svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='m9 6 6 6-6 6'/></svg></span>":"")+
+        "<div class='tr-s'><span class='tr-ic'>"+IC[s[0]]+"</span><small>"+s[1]+"</small><b>"+esc(s[2])+"</b><span class='tr-f'>"+esc(s[3])+"</span></div>";}).join("")+"</div>"+
+      "<div class='regra'><b>Regra do canal</b> Todos os vídeos ficam neste nicho e subnicho — é assim que o YouTube aprende para quem entregar. Tema de outro nicho vira <b>canal novo</b>; cada pauta abaixo já diz onde entra.</div></section>";}
+  var mp=p.mapa_dobras,mh="";
+  if(mp){mh="<section class='bloco-sec'><div class='st'><h3>Mapa de dobras</h3><span>os 5 caminhos do Raj, avaliados com os dados</span></div><div class='mapa2'>"+mp.caminhos.map(function(c){var rec=c.n===mp.recomendado;
+    return"<div class='cm2 glow"+(rec?" rec":"")+"'>"+(rec?"<span class='selo2'>Recomendado</span>":"")+"<div class='cm2-h'><span class='cm2-n'>"+c.n+"</span><h5>"+esc(c.nome)+"</h5></div>"+
+      "<div class='cm2-mm'><span class='fica'>"+IC.fica+"Mantém: "+esc(c.mantem)+"</span><span class='muda'>"+IC.muda+"Muda: "+esc(c.muda)+"</span></div>"+
+      "<div class='cm2-v'>"+(c.veredito?"<span class='vd k-"+c.veredito+"'>"+(VLAB[c.veredito]||c.veredito)+"</span>":"<span class='vd k-fraca'>Sem dado ainda</span>")+(c.onde?"<span class='cm2-on'>"+esc(c.onde)+"</span>":"")+"</div>"+
+      "<p>"+esc(c.melhor)+"</p>"+((c.opcoes||[]).length>1?"<div class='cm2-op'>"+c.opcoes.slice(0,6).map(function(x){return"<span class='k-"+x.veredito+"'>"+esc((x.nome||"").slice(0,30))+"</span>";}).join("")+"</div>":"")+"</div>";}).join("")+"</div>"+
+      "<p class='nota2'>"+esc(mp.regra)+"</p></section>";}
+  el.innerHTML=ph+mh+
+    "<section class='bloco-sec'><div class='st'><h3>Próximos vídeos em "+esc(LG)+"</h3><span>do mais forte ao mais fraco · clique para ver os vídeos</span></div>"+lista(gp)+"</section>"+
+    "<section class='bloco-sec'><div class='st'><h3>Outros nichos com o mesmo formato</h3><span>para um canal novo · medidos em "+esc(LG)+"</span></div>"+lista(gd)+"</section>"+
+    "<p class='nota2'>Cada tema vem de dado real — o formato já provado em outro assunto, o que o público digita no YouTube ou o que o canal de referência já fez. O Claude só traduz; o programa mede tudo no YouTube (idioma real conferido). Pesquisado em "+esc(p.data)+".</p>";
+  [].forEach.call(el.querySelectorAll(".pc"),function(b){b.onclick=function(e){if(e.target.closest("a"))return;b.classList.toggle("on");};});
+  UI.revelar(el.querySelectorAll(".bloco-sec"));});}
 function hist(){var s=location.hash.slice(1)||(idx[0]||{}).slug;
   $("hist").innerHTML=idx.map(function(x){var r=x.resumo||{};return"<button class='hi"+(x.slug===s?" on":"")+"' data-s='"+esc(x.slug)+"'><b>"+esc(x.titulo||x.slug)+"</b><small>"+esc(x.data)+"</small><span class='dots'>"+
-    Object.keys(r).map(function(k){return"<span class='k-"+r[k]+"' title='"+NOME[k]+": "+LAB[r[k]]+"'>"+k.toUpperCase()+"</span>";}).join("")+"</span></button>";}).join("");
+    Object.keys(r).map(function(k){return"<span class='k-"+r[k]+"' title='"+NOME[k]+": "+LAB[r[k]]+"'>"+NOME[k]+"</span>";}).join("")+"</span></button>";}).join("");
   [].forEach.call($("hist").querySelectorAll(".hi"),function(b){b.onclick=function(){location.hash=b.dataset.s;};});}
 function melhor(g){return Math.max.apply(0,(g.buscas||[]).filter(function(b){return b.tipo!=="tema";}).map(function(b){return b.melhor_concorrente||0;}).concat([0]));}
 function painel(g){
-  return"<div class='pn' id='pn'><div class='pn-h'><div><h4>"+esc(g.titulo)+"</h4><p>"+esc(g.explica)+"</p>"+(g.nota?"<p class='mut'>Por que testar: "+esc(g.nota)+"</p>":"")+"</div>"+vd(g.veredito)+"</div>"+
-  (g.buscas||[]).map(function(b,bi){var tema=b.tipo==="tema",it=(b.itens||[]).filter(function(i){return i.conferido;}),key=g.k+"-"+bi,mostra=todos[key]?it:it.slice(0,5);
-    return"<div class='bq'><div class='bq-t'><span class='tp'>"+(tema?"tema · procura":"molde · concorrência")+"</span><code>"+esc(b.busca)+"</code></div>"+
-    "<div class='kp'>"+(tema?"":"<div><small>Concorrentes</small><b>"+b.concorrentes+"</b></div><div><small>Melhor concorrente</small><b>"+f(b.melhor_concorrente)+"</b></div>"+(b.copias_fracas?"<div><small>Cópias &lt; 1 mil</small><b style='color:var(--dn)'>"+b.copias_fracas+"</b></div>":""))+
-      "<div><small>Maior de outro formato</small><b>"+f(b.adjacentes_max)+"</b></div><div><small>Procura 0–10</small><b>"+b.procura+"</b></div></div>"+
-    "<ul class='vs'>"+mostra.map(function(i){return"<li><a href='https://youtu.be/"+esc(i.id)+"' target='_blank' rel='noopener'><span class='f "+(i.mesmo_formato?"s'>● molde":"n'>○ outro")+"</span><span class='lg lgx'>"+esc((i.idioma_real||"?").toUpperCase())+"</span>"+
-      "<span class='t'><span>"+esc(i.titulo)+"</span><small>"+esc(i.canal||"?")+"</small></span><span class='v'>"+f(i.views)+"</span><span class='d'>"+dur(i.dur)+"</span></a></li>";}).join("")+"</ul>"+
-    (it.length>5?"<button class='mais' data-k='"+key+"'>"+(todos[key]?"Mostrar menos":"Ver os "+it.length+" vídeos conferidos")+"</button>":"")+"</div>";}).join("")+"</div>";
+  return"<div class='pn' id='pn'><div class='pn-h'><div><h4>"+esc(g.titulo)+"</h4><p>"+esc(g.explica)+"</p></div>"+vd(g.veredito)+"</div>"+
+  (g.buscas||[]).map(function(b,bi){var tema=b.tipo==="tema",it=(b.itens||[]).filter(function(i){return i.conferido;}),key=g.k+"-"+bi,mostra=todos[key]?it:it.slice(0,4);
+    return"<div class='bq'><div class='bq-t'><span class='tp2'>"+(tema?"Quanto o público procura o tema":"Quem já fez esse formato")+"</span><span class='q2'>“"+esc(b.busca)+"”</span></div>"+
+    "<div class='kp2'>"+(tema?"":"<div><small>Já fizeram</small><b>"+b.concorrentes+"</b></div><div><small>Melhor deles</small><b>"+f(b.melhor_concorrente)+"</b></div>"+(b.copias_fracas?"<div><small>Cópias fracas</small><b class='dn'>"+b.copias_fracas+"</b></div>":""))+
+      "<div><small>Maior vídeo de outro formato</small><b>"+f(b.adjacentes_max)+"</b></div><div><small>Procura</small><b>"+b.procura+"<em>/10</em></b></div></div>"+
+    "<div class='vg'>"+mostra.map(vcard).join("")+"</div>"+
+    (it.length>4?"<button class='mais' data-k='"+key+"'>"+(todos[key]?"Mostrar menos":"Ver os "+it.length+" vídeos conferidos")+"</button>":"")+"</div>";}).join("")+"</div>";
 }
 function render(rolar){
   var d=dado,o=d.origem||{},gs=[];

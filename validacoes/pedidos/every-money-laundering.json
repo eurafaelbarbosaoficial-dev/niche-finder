@@ -50,126 +50,144 @@
     "busca_tema": "dönerläden geldwäsche",
     "fonte": "B",
     "evidencia": "autocompletar DE: 'dönerläden geldwäsche'",
-    "grupo": "pauta"
+    "grupo": "pauta",
+    "tema_pt": "Lavagem de dinheiro com lanchonetes de döner"
    },
    {
     "tema": "Casino-Geldwäsche-Methoden",
     "busca_tema": "geldwäsche casino",
     "fonte": "B",
     "evidencia": "autocompletar DE: 'geldwäsche casino'",
-    "grupo": "pauta"
+    "grupo": "pauta",
+    "tema_pt": "Lavagem de dinheiro em cassinos"
    },
    {
     "tema": "Geldwäsche-Wege über Dubai",
     "busca_tema": "dubai geldwäsche",
     "fonte": "B",
     "evidencia": "autocompletar DE: 'dubai geldwäsche'",
-    "grupo": "pauta"
+    "grupo": "pauta",
+    "tema_pt": "Lavagem de dinheiro via Dubai"
    },
    {
     "tema": "Geldwäsche-Skandale der Banken",
     "busca_tema": "deutsche bank geldwäsche",
     "fonte": "B",
     "evidencia": "autocompletar DE: 'deutsche bank geldwäsche'",
-    "grupo": "pauta"
+    "grupo": "pauta",
+    "tema_pt": "Escândalos de lavagem nos bancos"
    },
    {
     "tema": "Finanzagent-Maschen",
     "busca_tema": "finanzagent geldwäsche",
     "fonte": "B",
     "evidencia": "autocompletar DE: 'finanzagent geldwäsche'",
-    "grupo": "pauta"
+    "grupo": "pauta",
+    "tema_pt": "Golpe do 'agente financeiro' (laranjas)"
    },
    {
     "tema": "Geldwäsche mit Gold",
     "busca_tema": "geldwäsche gold",
     "fonte": "B",
     "evidencia": "autocompletar DE: 'geldwäsche gold'",
-    "grupo": "pauta"
+    "grupo": "pauta",
+    "tema_pt": "Lavagem de dinheiro com ouro"
    },
    {
     "tema": "Rentenfallen",
     "busca_tema": "warum du deine rente nie ausgeben wirst",
     "fonte": "C",
     "evidencia": "canal de referência: 'Why You'll Never Actually Spend Your Retirement Savings' 290 mil",
-    "grupo": "pauta"
+    "grupo": "pauta",
+    "tema_pt": "Armadilhas da aposentadoria"
    },
    {
     "tema": "Inflations-Mechanismen",
     "busca_tema": "wie inflation wirklich funktioniert",
     "fonte": "C",
     "evidencia": "canal de referência: 'How Inflation Actually Works' 49 mil",
-    "grupo": "pauta"
+    "grupo": "pauta",
+    "tema_pt": "Como a inflação funciona de verdade"
    },
    {
     "tema": "Betrugsmaschen gegen Senioren",
     "busca_tema": "betrug senioren maschen",
     "fonte": "C",
     "evidencia": "canal de referência: 'Every Scam That Targets People Over 50, Explained' (173 views — fraco)",
-    "grupo": "pauta"
+    "grupo": "pauta",
+    "tema_pt": "Golpes contra idosos"
    },
    {
     "tema": "Sekten",
     "busca_tema": "sekten",
     "fonte": "A",
     "evidencia": "molde no mundo: 'Every Major Cult Explained' 3,4 mi (EN)",
-    "grupo": "dobra"
+    "grupo": "dobra",
+    "tema_pt": "Seitas"
    },
    {
     "tema": "Manipulationstechniken",
     "busca_tema": "manipulationstechniken",
     "fonte": "A",
     "evidencia": "molde no mundo: 'Every Manipulation Technique… Explained' 2,9 mi (EN)",
-    "grupo": "dobra"
+    "grupo": "dobra",
+    "tema_pt": "Técnicas de manipulação"
    },
    {
     "tema": "Drogen und ihre Wirkung",
     "busca_tema": "drogen und ihre wirkung",
     "fonte": "A",
     "evidencia": "molde no mundo: 'EVERY Drug & its Effects, Explained' 2 mi (EN)",
-    "grupo": "dobra"
+    "grupo": "dobra",
+    "tema_pt": "Drogas e seus efeitos"
    },
    {
     "tema": "Gefühle, die du nicht benennen kannst",
     "busca_tema": "gefühle die man nicht benennen kann",
     "fonte": "A",
     "evidencia": "molde no mundo: 'Every Feeling You Can't Name Explained' 4,7 mi (EN)",
-    "grupo": "dobra"
+    "grupo": "dobra",
+    "tema_pt": "Sentimentos que você não sabe nomear"
    },
    {
     "tema": "Alien-Arten",
     "busca_tema": "alien arten",
     "fonte": "A",
     "evidencia": "molde no mundo: 'EVERY TYPE OF ALIEN EXPLAINED' 753 mil (EN)",
-    "grupo": "dobra"
+    "grupo": "dobra",
+    "tema_pt": "Tipos de alienígena"
    },
    {
     "tema": "verbotenen Bücher",
     "busca_tema": "verbotene bücher",
     "fonte": "A",
     "evidencia": "molde no mundo: 'Every BANNED Book Explained in 20 Minutes' 167 mil (EN)",
-    "grupo": "dobra"
+    "grupo": "dobra",
+    "tema_pt": "Livros proibidos"
    },
    {
     "tema": "Gesellschaftsschichten",
     "busca_tema": "gesellschaftsschichten",
     "fonte": "A",
     "evidencia": "molde no mundo: 'Toutes les classes sociales expliquées' 333 mil (FR)",
-    "grupo": "dobra"
+    "grupo": "dobra",
+    "tema_pt": "Classes sociais"
    },
    {
     "tema": "Fabelwesen",
     "busca_tema": "fabelwesen",
     "fonte": "A",
     "evidencia": "molde no mundo: 'Todas as Criaturas Míticas Explicadas' 309 mil (PT)",
-    "grupo": "dobra"
+    "grupo": "dobra",
+    "tema_pt": "Criaturas míticas"
    },
    {
     "tema": "PC-Komponenten",
     "busca_tema": "pc komponenten",
     "fonte": "A",
     "evidencia": "molde no mundo: 'Todas as Peças de Computador Explicadas' 661 mil (PT)",
-    "grupo": "dobra"
+    "grupo": "dobra",
+    "tema_pt": "Peças de computador"
    }
   ],
   "subnicho": "Crime financeiro → lavagem de dinheiro (Geldwäsche)"
