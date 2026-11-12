@@ -1,6 +1,6 @@
 {
  "slug": "every-money-laundering",
- "data": "2026-11-12 17:52",
+ "data": "2026-11-12 18:06",
  "idioma": "de",
  "tema": "geldwäsche",
  "molde_alvo": "alle {X} erklärt",
@@ -57,9 +57,7 @@
      "idioma_fonte": "youtube"
     }
    ],
-   "molde_videos": [],
-   "relacao": "mesmo subnicho",
-   "onde": "mesmo canal"
+   "molde_videos": []
   },
   {
    "tema": "Betrugsmaschen gegen Senioren",
@@ -113,65 +111,7 @@
      "idioma_fonte": "youtube"
     }
    ],
-   "molde_videos": [],
-   "relacao": "mesmo nicho, subnicho vizinho",
-   "onde": "mesmo canal (novo bloco temático)"
-  },
-  {
-   "tema": "Finanzagent-Maschen",
-   "busca_tema": "finanzagent geldwäsche",
-   "fonte": "B",
-   "evidencia": "autocompletar DE: 'finanzagent geldwäsche'",
-   "grupo": "pauta",
-   "busca_molde": "alle Finanzagent-Maschen erklärt",
-   "demanda_max": 26064,
-   "procura": 3,
-   "concorrentes": 0,
-   "melhor_concorrente": null,
-   "veredito": "boa",
-   "explica": "Ninguém fez no molde; demanda média (melhor vídeo do tema: 26.064).",
-   "pontos": 50.2,
-   "tema_videos": [
-    {
-     "id": "jnPK2W8G2PU",
-     "titulo": "Was ist Geldw�sche? � #Finanzisch",
-     "canal": "finanzministeriumTV",
-     "views": 26064,
-     "dur": 97,
-     "idioma_real": "de",
-     "idioma_fonte": "youtube"
-    },
-    {
-     "id": "Y8J5xIT4Rng",
-     "titulo": "Finanzagenten-Betrug: Wenn ein Nebenjob zur Geldw�sche wird",
-     "canal": "Betrugsmaschen erklärt",
-     "views": 208,
-     "dur": 838,
-     "idioma_real": "de",
-     "idioma_fonte": "youtube"
-    },
-    {
-     "id": "EcBOJHMvXeA",
-     "titulo": "Webinar \"Pr�vention von Geldw�sche und Terrorismusfinanzierung\"",
-     "canal": "Fachgruppe UBIT NÖ",
-     "views": 171,
-     "dur": 3657,
-     "idioma_real": "de",
-     "idioma_fonte": "youtube"
-    },
-    {
-     "id": "pBWvAyfgY9M",
-     "titulo": "Geldw�sche-Betrug: So erkennst du unseri�se Jobangebote als Finanzagent",
-     "canal": "Die Masche dahinter",
-     "views": 34,
-     "dur": 233,
-     "idioma_real": "de",
-     "idioma_fonte": "youtube"
-    }
-   ],
-   "molde_videos": [],
-   "relacao": "mesmo subnicho",
-   "onde": "mesmo canal"
+   "molde_videos": []
   },
   {
    "tema": "Geldwäsche-Tricks",
@@ -198,9 +138,43 @@
      "idioma_fonte": "titulo"
     }
    ],
-   "molde_videos": [],
-   "relacao": "mesmo subnicho",
-   "onde": "mesmo canal"
+   "molde_videos": []
+  },
+  {
+   "tema": "Finanzagent-Maschen",
+   "busca_tema": "finanzagent geldwäsche",
+   "fonte": "B",
+   "evidencia": "autocompletar DE: 'finanzagent geldwäsche'",
+   "grupo": "pauta",
+   "busca_molde": "alle Finanzagent-Maschen erklärt",
+   "demanda_max": 208,
+   "procura": 3,
+   "concorrentes": 0,
+   "melhor_concorrente": null,
+   "veredito": "fraca",
+   "explica": "Pouca demanda achada no idioma (melhor vídeo do tema: 208).",
+   "pontos": 29.2,
+   "tema_videos": [
+    {
+     "id": "Y8J5xIT4Rng",
+     "titulo": "Finanzagenten-Betrug: Wenn ein Nebenjob zur Geldw�sche wird",
+     "canal": "Betrugsmaschen erklärt",
+     "views": 208,
+     "dur": 838,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "pBWvAyfgY9M",
+     "titulo": "Geldw�sche-Betrug: So erkennst du unseri�se Jobangebote als Finanzagent",
+     "canal": "Die Masche dahinter",
+     "views": 34,
+     "dur": 233,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ],
+   "molde_videos": []
   },
   {
    "tema": "Inflations-Mechanismen",
@@ -227,9 +201,7 @@
      "idioma_fonte": "youtube"
     }
    ],
-   "molde_videos": [],
-   "relacao": "mesmo nicho, subnicho vizinho",
-   "onde": "mesmo canal (novo bloco temático)"
+   "molde_videos": []
   },
   {
    "tema": "Geldwäsche-Wege über Dubai",
@@ -265,9 +237,7 @@
      "idioma_fonte": "youtube"
     }
    ],
-   "molde_videos": [],
-   "relacao": "mesmo subnicho",
-   "onde": "mesmo canal"
+   "molde_videos": []
   },
   {
    "tema": "Casino-Geldwäsche-Methoden",
@@ -284,9 +254,7 @@
    "explica": "Pouca demanda achada no idioma (melhor vídeo do tema: 0).",
    "pontos": 2.0,
    "tema_videos": [],
-   "molde_videos": [],
-   "relacao": "mesmo subnicho",
-   "onde": "mesmo canal"
+   "molde_videos": []
   },
   {
    "tema": "Geldwäsche mit Gold",
@@ -303,9 +271,7 @@
    "explica": "Pouca demanda achada no idioma (melhor vídeo do tema: 0).",
    "pontos": 2.0,
    "tema_videos": [],
-   "molde_videos": [],
-   "relacao": "mesmo subnicho",
-   "onde": "mesmo canal"
+   "molde_videos": []
   },
   {
    "tema": "Rentenfallen",
@@ -351,9 +317,43 @@
      "idioma_real": "de",
      "idioma_fonte": "youtube"
     }
+   ]
+  },
+  {
+   "tema": "Fabelwesen",
+   "busca_tema": "fabelwesen",
+   "fonte": "A",
+   "evidencia": "molde no mundo: 'Todas as Criaturas Míticas Explicadas' 309 mil (PT)",
+   "grupo": "dobra",
+   "busca_molde": "alle Fabelwesen erklärt",
+   "demanda_max": 1849529,
+   "procura": 10,
+   "concorrentes": 0,
+   "melhor_concorrente": null,
+   "veredito": "forte",
+   "explica": "Ninguém fez no molde e o tema tem demanda (vídeo de 1.849.529 views no idioma).",
+   "pontos": 82.7,
+   "tema_videos": [
+    {
+     "id": "eRHLGjqlDA0",
+     "titulo": "Dieses Deutsche Fabelwesen existiert wirklich...",
+     "canal": "Need To Know",
+     "views": 1849529,
+     "dur": 1718,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "UbK68QweJH4",
+     "titulo": "Fabelwesen, die es wirklich gibt",
+     "canal": "Doktor NOS",
+     "views": 27550,
+     "dur": 1245,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
    ],
-   "relacao": "mesmo nicho, subnicho vizinho",
-   "onde": "mesmo canal (novo bloco temático)"
+   "molde_videos": []
   },
   {
    "tema": "Manipulationstechniken",
@@ -362,45 +362,25 @@
    "evidencia": "molde no mundo: 'Every Manipulation Technique… Explained' 2,9 mi (EN)",
    "grupo": "dobra",
    "busca_molde": "alle Manipulationstechniken erklärt",
-   "demanda_max": 51074,
+   "demanda_max": 507601,
    "procura": 7,
    "concorrentes": 0,
    "melhor_concorrente": null,
    "veredito": "forte",
-   "explica": "Ninguém fez no molde e o tema tem demanda (vídeo de 51.074 views no idioma).",
-   "pontos": 61.1,
+   "explica": "Ninguém fez no molde e o tema tem demanda (vídeo de 507.601 views no idioma).",
+   "pontos": 71.1,
    "tema_videos": [
     {
-     "id": "dqs-9A8hux8",
-     "titulo": "Die 7 Manipulationsspiele, die jeder kennen sollte",
-     "canal": "Prof. Ashok Riehm - Coaching",
-     "views": 51074,
-     "dur": 1338,
-     "idioma_real": "de",
-     "idioma_fonte": "youtube"
-    },
-    {
-     "id": "4twduvBNbyU",
-     "titulo": "5 Manipulationstechniken, die verboten sein sollten (Schwarze Rhetorik)",
-     "canal": "Erschaffe dich neu",
-     "views": 46978,
-     "dur": 355,
-     "idioma_real": "de",
-     "idioma_fonte": "youtube"
-    },
-    {
-     "id": "R2V5cV3ulxI",
-     "titulo": "6 Merkmale, die manipulative Personen sofort entlarven! - So sch�tzt du dich effektiv!",
-     "canal": "Karsten Noack",
-     "views": 7862,
-     "dur": 732,
+     "id": "kppRmNjaZ-g",
+     "titulo": "Manipulationstechniken � Wie Sie sich erfolgreich dagegen wehren",
+     "canal": "Dr. Wlodarek Life Coaching",
+     "views": 507601,
+     "dur": 790,
      "idioma_real": "de",
      "idioma_fonte": "youtube"
     }
    ],
-   "molde_videos": [],
-   "relacao": "outro nicho",
-   "onde": "canal novo"
+   "molde_videos": []
   },
   {
    "tema": "Alien-Arten",
@@ -410,12 +390,12 @@
    "grupo": "dobra",
    "busca_molde": "alle Alien-Arten erklärt",
    "demanda_max": 119833,
-   "procura": 4,
+   "procura": 3,
    "concorrentes": 0,
    "melhor_concorrente": null,
    "veredito": "forte",
    "explica": "Ninguém fez no molde e o tema tem demanda (vídeo de 119.833 views no idioma).",
-   "pontos": 58.8,
+   "pontos": 56.8,
    "tema_videos": [
     {
      "id": "cCsMxcO49Ko",
@@ -436,9 +416,7 @@
      "idioma_fonte": "youtube"
     }
    ],
-   "molde_videos": [],
-   "relacao": "outro nicho",
-   "onde": "canal novo"
+   "molde_videos": []
   },
   {
    "tema": "verbotenen Bücher",
@@ -483,91 +461,68 @@
      "idioma_fonte": "youtube"
     }
    ],
-   "molde_videos": [],
-   "relacao": "outro nicho",
-   "onde": "canal novo"
+   "molde_videos": []
   },
   {
-   "tema": "Fabelwesen",
-   "busca_tema": "fabelwesen mythologie",
+   "tema": "Gesellschaftsschichten",
+   "busca_tema": "gesellschaftsschichten",
    "fonte": "A",
-   "evidencia": "molde no mundo: 'Todas as Criaturas Míticas Explicadas' 309 mil (PT)",
+   "evidencia": "molde no mundo: 'Toutes les classes sociales expliquées' 333 mil (FR)",
    "grupo": "dobra",
-   "busca_molde": "alle Fabelwesen erklärt",
-   "demanda_max": 12657,
-   "procura": 10,
+   "busca_molde": "alle Gesellschaftsschichten erklärt",
+   "demanda_max": 47258,
+   "procura": 2,
    "concorrentes": 0,
    "melhor_concorrente": null,
    "veredito": "boa",
-   "explica": "Ninguém fez no molde; demanda média (melhor vídeo do tema: 12.657).",
-   "pontos": 61.0,
+   "explica": "Ninguém fez no molde; demanda média (melhor vídeo do tema: 47.258).",
+   "pontos": 50.7,
    "tema_videos": [
     {
-     "id": "MxFhdQN0nVA",
-     "titulo": "Der Greif - Das Fabelwesen, das �ber den L�ften Regiert - Mythologische Kuriosit�ten",
-     "canal": "Geschichte und Mythologie Illustriert",
-     "views": 12657,
-     "dur": 212,
+     "id": "vrV8b-HrNng",
+     "titulo": "Weekend �ber Gesellschaftsschichten, soziale Arbeit und Gelsenkirchener Mentalit�t",
+     "canal": "GERMANIA",
+     "views": 47258,
+     "dur": 279,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "gakcCm7mSMA",
+     "titulo": "Reich & dekadent: Berlins reichste Gesellschaftsschicht im Interview | SAT.1 Fr�hst�cksfernsehen",
+     "canal": "Frühstücksfernsehen",
+     "views": 27949,
+     "dur": 281,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "Ng85RvLWquI",
+     "titulo": "Teil 2 Gesellschaftsschichten erkennen und annehmen",
+     "canal": "Die Pferdin",
+     "views": 85,
+     "dur": 416,
      "idioma_real": "de",
      "idioma_fonte": "youtube"
     }
    ],
-   "molde_videos": [],
-   "relacao": "outro nicho",
-   "onde": "canal novo"
+   "molde_videos": []
   },
   {
    "tema": "PC-Komponenten",
-   "busca_tema": "pc komponenten erklärt",
+   "busca_tema": "pc komponenten",
    "fonte": "A",
    "evidencia": "molde no mundo: 'Todas as Peças de Computador Explicadas' 661 mil (PT)",
    "grupo": "dobra",
    "busca_molde": "alle PC-Komponenten erklärt",
-   "demanda_max": 108800,
+   "demanda_max": 0,
    "procura": 7,
-   "concorrentes": 2,
+   "concorrentes": 3,
    "melhor_concorrente": 93147,
    "veredito": "disputada",
-   "explica": "Já fizeram no molde (2 vídeo(s), melhor 93.147). Entrar só com ângulo diferente.",
-   "pontos": 19.3,
-   "tema_videos": [
-    {
-     "id": "MPI3UjGjqYI",
-     "titulo": "PC-KOMPONENTEN einfach erkl�rt",
-     "canal": "IT & Medien einfach erklärt",
-     "views": 108800,
-     "dur": 272,
-     "idioma_real": "de",
-     "idioma_fonte": "youtube"
-    },
-    {
-     "id": "RJ4tpNuX_Ls",
-     "titulo": "Gaming PC Komponenten erkl�rt | Einsteigerguide zu allen Komponenten eines Gaming-PCs | DasMonty",
-     "canal": "DasMonty",
-     "views": 93147,
-     "dur": 1769,
-     "idioma_real": "de",
-     "idioma_fonte": "youtube"
-    },
-    {
-     "id": "XeqAuWBUR9M",
-     "titulo": "Alle Computer-Komponenten erkl�rt in 30 Minuten!",
-     "canal": "Programmieren lernen",
-     "views": 10784,
-     "dur": 1867,
-     "idioma_real": "de",
-     "idioma_fonte": "youtube"
-    },
-    {
-     "id": "l4K338EJdio",
-     "titulo": "Komponenten eines Computers | Einfach erkl�rt | 2022",
-     "canal": "Riemer Computers Hardware",
-     "views": 3730,
-     "dur": 315,
-     "idioma_real": "de",
-     "idioma_fonte": "youtube"
-    }
-   ],
+   "explica": "Já fizeram no molde (3 vídeo(s), melhor 93.147). Entrar só com ângulo diferente.",
+   "pontos": 4.2,
+   "tema_videos": [],
    "molde_videos": [
     {
      "id": "RJ4tpNuX_Ls",
@@ -586,57 +541,17 @@
      "dur": 1867,
      "idioma_real": "de",
      "idioma_fonte": "youtube"
-    }
-   ],
-   "relacao": "outro nicho",
-   "onde": "canal novo"
-  },
-  {
-   "tema": "Gesellschaftsschichten",
-   "busca_tema": "soziale klassen gesellschaftsschichten",
-   "fonte": "A",
-   "evidencia": "molde no mundo: 'Toutes les classes sociales expliquées' 333 mil (FR)",
-   "grupo": "dobra",
-   "busca_molde": "alle Gesellschaftsschichten erklärt",
-   "demanda_max": 191,
-   "procura": 2,
-   "concorrentes": 0,
-   "melhor_concorrente": null,
-   "veredito": "fraca",
-   "explica": "Pouca demanda achada no idioma (melhor vídeo do tema: 191).",
-   "pontos": 26.8,
-   "tema_videos": [
-    {
-     "id": "8Ho73hBpTFo",
-     "titulo": "��Das ist Kitsch�: Wie Geschmack soziale Klassen trennt (Bourdieu)�",
-     "canal": "Cem 旗本",
-     "views": 191,
-     "dur": 392,
-     "idioma_real": "de",
-     "idioma_fonte": "youtube"
     },
     {
-     "id": "PZby586eknw",
-     "titulo": "Ralf Dahrendorf - Soziale Klassen und Klassenkonflikt in der industriellen Gesellschaft",
-     "canal": "SoziPodcast",
-     "views": 144,
-     "dur": 1377,
-     "idioma_real": "de",
-     "idioma_fonte": "youtube"
-    },
-    {
-     "id": "Vi5r_hmjrWE",
-     "titulo": "13. Soziale Ungleichheit - Strukturen - Klassen, St�nde, Schichten, Milieus, Lebensstile",
-     "canal": "Pascal Anna",
-     "views": 97,
-     "dur": 722,
+     "id": "nWsxLnSBdi8",
+     "titulo": "Mainboard Komplett-Guide: Alle Komponenten erkl�rt f�r PC-Bau Anf�nger",
+     "canal": "VielTech - Einfach erklärt",
+     "views": 718,
+     "dur": 1254,
      "idioma_real": "de",
      "idioma_fonte": "youtube"
     }
-   ],
-   "molde_videos": [],
-   "relacao": "outro nicho",
-   "onde": "canal novo"
+   ]
   },
   {
    "tema": "Gefühle, die du nicht benennen kannst",
@@ -653,9 +568,71 @@
    "explica": "Pouca demanda achada no idioma (melhor vídeo do tema: 0).",
    "pontos": 4.0,
    "tema_videos": [],
-   "molde_videos": [],
-   "relacao": "outro nicho",
-   "onde": "canal novo"
+   "molde_videos": []
+  },
+  {
+   "tema": "Sekten",
+   "busca_tema": "sekten",
+   "fonte": "A",
+   "evidencia": "molde no mundo: 'Every Major Cult Explained' 3,4 mi (EN)",
+   "grupo": "dobra",
+   "busca_molde": "alle Sekten erklärt",
+   "demanda_max": 487530,
+   "procura": 10,
+   "concorrentes": 2,
+   "melhor_concorrente": 13772,
+   "veredito": "feita_fraca",
+   "explica": "Já fizeram no molde, sem sucesso (melhor 13.772). Alerta.",
+   "pontos": 76.9,
+   "tema_videos": [
+    {
+     "id": "xebxSPuAIFk",
+     "titulo": "Alienkult und Gotteswahn: Die unheimlichsten Sekten und ihre Verbrechen | Crime Time Doku",
+     "canal": "Kati Winter",
+     "views": 487530,
+     "dur": 16188,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "f7E7_wOuEo0",
+     "titulo": "Top 10 verst�render Sekten, die ihr niemals kennenlernen m�chtet",
+     "canal": "WatchMojo Deutschland",
+     "views": 93225,
+     "dur": 831,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "KsqH3EJjQgA",
+     "titulo": "Das sind die schlimmsten Sekten der Welt! | M�rder Doku",
+     "canal": "Deep Inside",
+     "views": 29389,
+     "dur": 1050,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ],
+   "molde_videos": [
+    {
+     "id": "0uxZb_vQG54",
+     "titulo": "Alle gro�en Sekten erkl�rt in 11 Minuten",
+     "canal": "Nachgedacht",
+     "views": 6647,
+     "dur": 680,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "8TNaX7lrsXg",
+     "titulo": "Alle Satanischen Sekten in 15 Minuten Erkl�rt",
+     "canal": "Paint es mir!",
+     "views": 13772,
+     "dur": 959,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ]
   },
   {
    "tema": "Drogen und ihre Wirkung",
@@ -667,9 +644,9 @@
    "demanda_max": 27544,
    "procura": 1,
    "concorrentes": 3,
-   "melhor_concorrente": 27544,
+   "melhor_concorrente": 2019,
    "veredito": "feita_fraca",
-   "explica": "Já fizeram no molde, sem sucesso (melhor 27.544). Alerta.",
+   "explica": "Já fizeram no molde, sem sucesso (melhor 2.019). Alerta.",
    "pontos": 46.4,
    "tema_videos": [
     {
@@ -711,11 +688,11 @@
      "idioma_fonte": "youtube"
     },
     {
-     "id": "ePgM9aZ7bAc",
-     "titulo": "Partydrogen und ihre Wirkung: Was du unbedingt wissen solltest",
-     "canal": "AOK - Der Gesundheitskanal",
-     "views": 27544,
-     "dur": 287,
+     "id": "thqG2d7DbfA",
+     "titulo": "12 Drogen und ihre Wirkung in 17 Minuten erkl�rt",
+     "canal": "ErklärProfessor",
+     "views": 2,
+     "dur": 1013,
      "idioma_real": "de",
      "idioma_fonte": "youtube"
     },
@@ -728,225 +705,7 @@
      "idioma_real": "de",
      "idioma_fonte": "youtube"
     }
-   ],
-   "relacao": "outro nicho",
-   "onde": "canal novo"
-  },
-  {
-   "tema": "Sekten",
-   "busca_tema": "sekten erklärt",
-   "fonte": "A",
-   "evidencia": "molde no mundo: 'Every Major Cult Explained' 3,4 mi (EN)",
-   "grupo": "dobra",
-   "busca_molde": "alle Sekten erklärt",
-   "demanda_max": 0,
-   "procura": 10,
-   "concorrentes": 2,
-   "melhor_concorrente": 13772,
-   "veredito": "feita_fraca",
-   "explica": "Já fizeram no molde, sem sucesso (melhor 13.772). Alerta.",
-   "pontos": 20.0,
-   "tema_videos": [],
-   "molde_videos": [
-    {
-     "id": "0uxZb_vQG54",
-     "titulo": "Alle gro�en Sekten erkl�rt in 11 Minuten",
-     "canal": "Nachgedacht",
-     "views": 6647,
-     "dur": 680,
-     "idioma_real": "de",
-     "idioma_fonte": "youtube"
-    },
-    {
-     "id": "8TNaX7lrsXg",
-     "titulo": "Alle Satanischen Sekten in 15 Minuten Erkl�rt",
-     "canal": "Paint es mir!",
-     "views": 13772,
-     "dur": 959,
-     "idioma_real": "de",
-     "idioma_fonte": "youtube"
-    }
-   ],
-   "relacao": "outro nicho",
-   "onde": "canal novo"
-  }
- ],
- "mapa_dobras": {
-  "recomendado": 1,
-  "caminhos": [
-   {
-    "n": 1,
-    "nome": "Outro idioma",
-    "mantem": "nicho + formato",
-    "muda": "idioma",
-    "melhor": "Alemão: Ninguém faz esse formato neste idioma, e o tema tem procura (vídeo de outro formato com 1.000.355 views; autocompletar 4/10).",
-    "veredito": "oportunidade",
-    "opcoes": [
-     {
-      "nome": "Português",
-      "veredito": "validado_concorrencia"
-     },
-     {
-      "nome": "Espanhol",
-      "veredito": "validado_concorrencia"
-     },
-     {
-      "nome": "Inglês",
-      "veredito": "validado_concorrencia"
-     },
-     {
-      "nome": "Alemão",
-      "veredito": "oportunidade"
-     },
-     {
-      "nome": "Francês",
-      "veredito": "validado_morno"
-     }
-    ],
-    "fonte": "Validador: o molde pesquisado nos 5 idiomas",
-    "onde": "canal novo no idioma (é o 1º canal deste projeto)"
-   },
-   {
-    "n": 2,
-    "nome": "Outro nicho, mesmo idioma",
-    "mantem": "formato + idioma (Inglês)",
-    "muda": "nicho",
-    "veredito": "disputada",
-    "melhor": "Os assuntos achados já existem em Inglês (é de lá que eles vêm): Every Feeling You Can't Name Explained (4.743.185); Every Major Cult Explained (3.372.158); Every Manipulation Technique & How To Combat It Explained (2.949.721)",
-    "opcoes": [
-     {
-      "nome": "Every Feeling You Can't Name Explained",
-      "veredito": "disputada"
-     },
-     {
-      "nome": "Every Major Cult Explained",
-      "veredito": "disputada"
-     },
-     {
-      "nome": "Every Manipulation Technique & How To Combat It Explained",
-      "veredito": "disputada"
-     },
-     {
-      "nome": "EVERY Drug & its Effects, Explained",
-      "veredito": "disputada"
-     },
-     {
-      "nome": "Every Complex Thing YOU Don't Understand, Explained",
-      "veredito": "disputada"
-     }
-    ],
-    "fonte": "Coleta A: o molde pesquisado no idioma de origem",
-    "onde": "canal novo (outro nicho não entra no mesmo canal)"
-   },
-   {
-    "n": 3,
-    "nome": "Outro nicho em Alemão (canal novo)",
-    "mantem": "formato",
-    "muda": "nicho + idioma",
-    "veredito": "forte",
-    "melhor": "Alien-Arten: Ninguém fez no molde e o tema tem demanda (vídeo de 119.833 views no idioma).",
-    "opcoes": [
-     {
-      "nome": "Alien-Arten",
-      "veredito": "forte"
-     },
-     {
-      "nome": "verbotenen Bücher",
-      "veredito": "forte"
-     },
-     {
-      "nome": "Manipulationstechniken",
-      "veredito": "forte"
-     },
-     {
-      "nome": "Fabelwesen",
-      "veredito": "boa"
-     },
-     {
-      "nome": "PC-Komponenten",
-      "veredito": "disputada"
-     },
-     {
-      "nome": "Drogen und ihre Wirkung",
-      "veredito": "feita_fraca"
-     },
-     {
-      "nome": "Gesellschaftsschichten",
-      "veredito": "fraca"
-     },
-     {
-      "nome": "Gefühle, die du nicht benennen kannst",
-      "veredito": "fraca"
-     },
-     {
-      "nome": "Sekten",
-      "veredito": "feita_fraca"
-     }
-    ],
-    "fonte": "Pautas: dobras medidas no idioma alvo",
-    "onde": "canal novo (outro nicho não entra no mesmo canal)"
-   },
-   {
-    "n": 4,
-    "nome": "Outro formato, mesmo nicho",
-    "mantem": "nicho + idioma (Alemão)",
-    "muda": "formato (iceberg, documentário, ascensão e queda, passo a passo)",
-    "veredito": "disputada",
-    "melhor": "Já existem vídeos do tema em outros formatos no idioma: Leichtes Spiel f�r kriminelle Geldw�scher | ZDFzoom (1.000.355); Geldw�sche - \"Breaking Bad\" in echt? (359.505); Geldwasche einfach erkl�rt! (Mit vielen anschaulichen Beispielen) (340.310). Use as 5 estruturas para variar, não como caminho principal.",
-    "opcoes": [
-     {
-      "nome": "Leichtes Spiel f�r kriminelle Geldw�scher | ZDFzoom",
-      "veredito": "disputada"
-     },
-     {
-      "nome": "Geldw�sche - \"Breaking Bad\" in echt?",
-      "veredito": "disputada"
-     },
-     {
-      "nome": "Geldwasche einfach erkl�rt! (Mit vielen anschaulichen Beispielen)",
-      "veredito": "disputada"
-     },
-     {
-      "nome": "Geldw�sche: Wie wird Schwarzgeld gewaschen?",
-      "veredito": "disputada"
-     },
-     {
-      "nome": "Wie einfach ist Geldw�sche in Deutschland?  Reaktion auf die ARD-Doku \"Dirty Money\"",
-      "veredito": "disputada"
-     }
-    ],
-    "fonte": "Validador: vídeos do tema no idioma alvo que NÃO são do molde",
-    "onde": "mesmo canal (só varia o jeito de contar)"
-   },
-   {
-    "n": 5,
-    "nome": "Outro público",
-    "mantem": "nicho + formato",
-    "muda": "público (gênero, idade)",
-    "veredito": null,
-    "melhor": "Ainda sem dado medido para este tema. Para medir: buscar o molde com o público no título (ex.: 'para mulheres', 'für Senioren') no idioma alvo.",
-    "opcoes": [],
-    "fonte": "—",
-    "onde": "mesmo canal ou canal novo, conforme o público"
-   }
-  ],
-  "regra": "Recomendado = o caminho com o veredito mais forte nos dados (oportunidade/forte > boa > disputada). Empate: o mais simples (menor número)."
- },
- "projeto": {
-  "nicho": "Finanças",
-  "nicho_fonte": "categoria em que o finder achou o canal de origem",
-  "subnicho": "Crime financeiro → lavagem de dinheiro (Geldwäsche)",
-  "subnicho_fonte": "assunto do vídeo que estourou",
-  "micronicho": "alle {X} erklärt · Alemão",
-  "micronicho_fonte": "o molde do título no idioma do canal",
-  "canal_de_origem": {
-   "nome": "Econ in a Nutshell",
-   "temas": [
-    "money",
-    "actually",
-    "retirement savings",
-    "explained"
    ]
   }
- }
+ ]
 }
