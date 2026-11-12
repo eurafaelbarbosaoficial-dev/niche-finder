@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-12T17:11:06",
+ "atualizado": "2026-11-12T19:37:26",
  "canais": {
   "UCv9FlFdoZwAjounm8WlsKrQ": {
    "nome": "Ich mag Moneten",
@@ -8,23 +8,23 @@
     {
      "molde": "[X] wie [X]",
      "n": 3,
-     "media": 139148,
-     "max": 333000,
+     "media": 143000,
+     "max": 336000,
      "exemplos": [
       {
        "id": "nTP6ZKAHiZI",
        "titulo": "LevlUp vom Hype zum MILLIONENVERLUST: Wie geht’s der Marke wirklich?!",
-       "views": 333000
+       "views": 336000
       },
       {
        "id": "LCpDruBZJ4U",
        "titulo": "Millionen-Imperium EliasN97: Wie viel verdient er wirklich?!",
-       "views": 84000
+       "views": 90000
       },
       {
        "id": "4f2D2V3ljmg",
        "titulo": "MILLIONENVERLUSTE nach Nestlé-Deal: Wie geht’s ANKERKRAUT wirklich?!",
-       "views": 445
+       "views": 3000
       }
      ],
      "indice": 1.01
@@ -32,16 +32,16 @@
     {
      "molde": "[X]",
      "n": 1,
-     "media": 136000,
-     "max": 136000,
+     "media": 137000,
+     "max": 137000,
      "exemplos": [
       {
        "id": "BQ0e1QpPg9I",
        "titulo": "Milliarde in Sicht? So viel verdient Andreas W. Herb wirklich!",
-       "views": 136000
+       "views": 137000
       }
      ],
-     "indice": 0.98
+     "indice": 0.97
     }
    ]
   },
@@ -52,13 +52,13 @@
     {
      "molde": "every [X] explained",
      "n": 5,
-     "media": 15159,
-     "max": 72000,
+     "media": 15559,
+     "max": 74000,
      "exemplos": [
       {
        "id": "o_BISFxKC7c",
        "titulo": "Every Cyberware in Cyberpunk Explained",
-       "views": 72000
+       "views": 74000
       },
       {
        "id": "pnF4oFsdD4c",
@@ -85,7 +85,7 @@
        "views": 1900
       }
      ],
-     "indice": 0.15
+     "indice": 0.14
     }
    ]
   },
@@ -96,58 +96,58 @@
     {
      "molde": "tout [X] tu [X] [N]",
      "n": 1,
-     "media": 76000,
-     "max": 76000,
+     "media": 82000,
+     "max": 82000,
      "exemplos": [
       {
        "id": "RcstaJgYz8M",
        "titulo": "Tout ce que tu DOIS savoir avant de jouer à GTA 6",
-       "views": 76000
+       "views": 82000
       }
      ],
-     "indice": 1.73
+     "indice": 1.69
     },
     {
      "molde": "[X] [N] [X] [N]",
      "n": 1,
-     "media": 50000,
-     "max": 50000,
+     "media": 54000,
+     "max": 54000,
      "exemplos": [
       {
        "id": "FTMRo1YykOA",
        "titulo": "GTA 6 fait des choses qu'on n'aurait JAMAIS imaginées dans GTA 5 !",
-       "views": 50000
+       "views": 54000
       }
      ],
-     "indice": 1.14
+     "indice": 1.11
     },
     {
      "molde": "[N] [X] [N] [X] [N]",
      "n": 1,
-     "media": 46000,
-     "max": 46000,
+     "media": 47000,
+     "max": 47000,
      "exemplos": [
       {
        "id": "CbazBfR7KwI",
        "titulo": "13 réflexes de GTA 5 à OUBLIER dès le premier jour sur GTA 6 !",
-       "views": 46000
+       "views": 47000
       }
      ],
-     "indice": 1.04
+     "indice": 0.97
     },
     {
      "molde": "[X] [N] [X]",
      "n": 1,
-     "media": 4100,
-     "max": 4100,
+     "media": 11000,
+     "max": 11000,
      "exemplos": [
       {
        "id": "MIr09-RUsDM",
        "titulo": "GTA 6 : GUIDE COMPLET de la CARTE (à voir avant le jour de la sortie)",
-       "views": 4100
+       "views": 11000
       }
      ],
-     "indice": 0.09
+     "indice": 0.23
     }
    ]
   },
@@ -158,40 +158,40 @@
     {
      "molde": "tu [X] tu [X] se [X]",
      "n": 1,
-     "media": 362000,
-     "max": 362000,
+     "media": 365000,
+     "max": 365000,
      "exemplos": [
       {
        "id": "TVx1hWeRzsw",
        "titulo": "Tu piégeais une araignée et tu l’oubliais : que se passe-t-il ?",
-       "views": 362000
+       "views": 365000
       }
      ],
-     "indice": 3.76
+     "indice": 3.71
     },
     {
      "molde": "[X]",
      "n": 3,
-     "media": 89533,
-     "max": 234000,
+     "media": 92700,
+     "max": 242000,
      "exemplos": [
       {
        "id": "O19PN4KJ0Fc",
        "titulo": "Que devient une araignée mise dehors ?",
-       "views": 234000
+       "views": 242000
       },
       {
        "id": "7ZfTNeT3W6Y",
        "titulo": "Que devient une araignée après avoir été aspirée ?",
-       "views": 33000
+       "views": 34000
       },
       {
        "id": "mtbaNTISvXg",
        "titulo": "Un cafard chez toi… Combien d’autres ?",
-       "views": 1600
+       "views": 2100
       }
      ],
-     "indice": 0.93
+     "indice": 0.94
     },
     {
      "molde": "[X] quand [X]",
@@ -205,7 +205,21 @@
        "views": 19000
       }
      ],
-     "indice": 0.2
+     "indice": 0.19
+    },
+    {
+     "molde": "[X] tu [X]",
+     "n": 1,
+     "media": 13000,
+     "max": 13000,
+     "exemplos": [
+      {
+       "id": "_QRCQirKZok",
+       "titulo": "L’araignée dans ta chambre sait elle que tu existes ?",
+       "views": 13000
+      }
+     ],
+     "indice": 0.13
     },
     {
      "molde": "[X] se [X] si tu [X]",
@@ -220,20 +234,6 @@
       }
      ],
      "indice": 0.13
-    },
-    {
-     "molde": "[X] tu [X]",
-     "n": 1,
-     "media": 12000,
-     "max": 12000,
-     "exemplos": [
-      {
-       "id": "_QRCQirKZok",
-       "titulo": "L’araignée dans ta chambre sait elle que tu existes ?",
-       "views": 12000
-      }
-     ],
-     "indice": 0.12
     }
    ]
   },
@@ -244,45 +244,45 @@
     {
      "molde": "[X] history [X]",
      "n": 5,
-     "media": 60620,
-     "max": 221000,
+     "media": 62960,
+     "max": 230000,
      "exemplos": [
       {
        "id": "udzlKEj87RE",
        "titulo": "The Mystery of the Olmecs: The Complete History of Mexico's Mother Culture",
-       "views": 221000
+       "views": 230000
       },
       {
        "id": "H88PV9ZYCqI",
        "titulo": "Mesopotamia: The Complete History of Iraq, from Babylon to Today",
-       "views": 63000
+       "views": 65000
       },
       {
        "id": "TERGrfdAQzo",
        "titulo": "THE COMPLETE HISTORY of Poland | The Country Erased From the Map That Came Back",
-       "views": 7100
+       "views": 7200
       }
      ],
-     "indice": 1.34
+     "indice": 1.32
     },
     {
      "molde": "[X]",
      "n": 2,
-     "media": 45400,
-     "max": 85000,
+     "media": 50500,
+     "max": 90000,
      "exemplos": [
       {
        "id": "ZMzE-XFK_RA",
        "titulo": "Yemen is",
-       "views": 85000
+       "views": 90000
       },
       {
        "id": "3D-uyMyzS4E",
        "titulo": "Egypt",
-       "views": 5800
+       "views": 11000
       }
      ],
-     "indice": 1.0
+     "indice": 1.06
     },
     {
      "molde": "[X] [N] [X] history [X]",
@@ -296,18 +296,18 @@
        "views": 10000
       }
      ],
-     "indice": 0.22
+     "indice": 0.21
     },
     {
      "molde": "[X] history [X] [N] [X]",
      "n": 1,
-     "media": 4500,
-     "max": 4500,
+     "media": 4600,
+     "max": 4600,
      "exemplos": [
       {
        "id": "qolpM0f95zA",
        "titulo": "The Complete History of Japan: Samurai in Seville, Shoguns, and 200 Years of Isolation",
-       "views": 4500
+       "views": 4600
       }
      ],
      "indice": 0.1
@@ -316,60 +316,60 @@
   },
   "UCgBr2zNf-689J8HmZUCJifw": {
    "nome": "Explorer Unveiled",
-   "n_videos": 31,
+   "n_videos": 32,
    "clusters": [
     {
      "molde": "[X] secret [X]",
      "n": 1,
-     "media": 102000,
-     "max": 102000,
+     "media": 103000,
+     "max": 103000,
      "exemplos": [
       {
        "id": "Q_Q-Dhze1pk",
        "titulo": "The Secret of Egyptian Granite Cutting May Finally Be Solved Graham Hancock.",
-       "views": 102000
+       "views": 103000
       }
      ],
-     "indice": 15.52
+     "indice": 15.04
     },
     {
      "molde": "[X] was [X] [N] [X] what [X] you",
      "n": 1,
-     "media": 49000,
-     "max": 49000,
+     "media": 50000,
+     "max": 50000,
      "exemplos": [
       {
        "id": "e9Qmgzsrl_I",
        "titulo": "Jesus’ Tomb Was Opened After 2,000 Years—What They Found Will Shock You!",
-       "views": 49000
+       "views": 50000
       }
      ],
-     "indice": 7.45
-    },
-    {
-     "molde": "[X] what [X] you",
-     "n": 1,
-     "media": 6200,
-     "max": 6200,
-     "exemplos": [
-      {
-       "id": "SYggYB5H3Ag",
-       "titulo": "Scientists Finally Enter Noah’s Ark in Turkey — What They Found Will Terrify You!",
-       "views": 6200
-      }
-     ],
-     "indice": 0.94
+     "indice": 7.3
     },
     {
      "molde": "[X] secret [X] was [X]",
      "n": 1,
-     "media": 6100,
-     "max": 6100,
+     "media": 19000,
+     "max": 19000,
      "exemplos": [
       {
        "id": "w6mqapsznIA",
        "titulo": "Archaeologists Uncover a Dark Secret Written Inside the Olmec Heads Nobody Was Supposed To See.",
-       "views": 6100
+       "views": 19000
+      }
+     ],
+     "indice": 2.77
+    },
+    {
+     "molde": "[X] what [X] you",
+     "n": 1,
+     "media": 6400,
+     "max": 6400,
+     "exemplos": [
+      {
+       "id": "SYggYB5H3Ag",
+       "titulo": "Scientists Finally Enter Noah’s Ark in Turkey — What They Found Will Terrify You!",
+       "views": 6400
       }
      ],
      "indice": 0.93
@@ -386,12 +386,12 @@
        "views": 4100
       }
      ],
-     "indice": 0.62
+     "indice": 0.6
     },
     {
      "molde": "[X] [N] [X]",
      "n": 2,
-     "media": 3488,
+     "media": 3490,
      "max": 6800,
      "exemplos": [
       {
@@ -402,15 +402,15 @@
       {
        "id": "-yG3gzUjEU8",
        "titulo": "We Excavated a 7,000-Year-Old Mustatil in Saudi Arabia.",
-       "views": 177
+       "views": 180
       }
      ],
-     "indice": 0.53
+     "indice": 0.51
     },
     {
      "molde": "[X] what [X]",
      "n": 6,
-     "media": 2756,
+     "media": 2757,
      "max": 12000,
      "exemplos": [
       {
@@ -426,21 +426,21 @@
       {
        "id": "SsCqXsUGW-w",
        "titulo": "Scientists Found What Destroyed Sodom. It Wasn't Fire From God.",
-       "views": 622
+       "views": 623
       }
      ],
-     "indice": 0.42
+     "indice": 0.4
     },
     {
      "molde": "[X] [N] [X] what [X]",
      "n": 2,
-     "media": 2011,
-     "max": 3900,
+     "media": 2061,
+     "max": 4000,
      "exemplos": [
       {
        "id": "HQplp5btRc8",
        "titulo": "King Solomon’s Tomb Opened After 5,000 Years — What They Found Shocked the World!",
-       "views": 3900
+       "views": 4000
       },
       {
        "id": "5c7_ddyyGUQ",
@@ -448,7 +448,7 @@
        "views": 122
       }
      ],
-     "indice": 0.31
+     "indice": 0.3
     },
     {
      "molde": "[N] [X]",
@@ -462,21 +462,21 @@
        "views": 1800
       }
      ],
-     "indice": 0.27
+     "indice": 0.26
     },
     {
      "molde": "what [X]",
      "n": 1,
-     "media": 784,
-     "max": 784,
+     "media": 785,
+     "max": 785,
      "exemplos": [
       {
        "id": "KNCZsRHD-ks",
        "titulo": "What AI Found Inside Puma Punku Has Archaeologists Rechecking Everything.",
-       "views": 784
+       "views": 785
       }
      ],
-     "indice": 0.12
+     "indice": 0.11
     },
     {
      "molde": "[X] was [X]",
@@ -492,7 +492,7 @@
       {
        "id": "8YKwisT3GHE",
        "titulo": "Scientists Finally Examined the Sumerian 'Handbag of the Gods' — The Discovery Was Disturbing.",
-       "views": 168
+       "views": 169
       }
      ],
      "indice": 0.1
@@ -500,21 +500,21 @@
     {
      "molde": "[X] what [X] was [X]",
      "n": 1,
-     "media": 641,
-     "max": 641,
+     "media": 643,
+     "max": 643,
      "exemplos": [
       {
        "id": "_YXD53i_soQ",
        "titulo": "The Gene Hackman Cover-Up — What They Found Was Never Meant to Be Seen.",
-       "views": 641
+       "views": 643
       }
      ],
-     "indice": 0.1
+     "indice": 0.09
     },
     {
      "molde": "[X]",
-     "n": 8,
-     "media": 468,
+     "n": 9,
+     "media": 437,
      "max": 1100,
      "exemplos": [
       {
@@ -525,7 +525,7 @@
       {
        "id": "SDmG_Bi5IUM",
        "titulo": "The Final Words of an Ethiopian Monk About Jesus Are Terrifying.",
-       "views": 815
+       "views": 844
       },
       {
        "id": "8yD-4sDpIYM",
@@ -533,7 +533,7 @@
        "views": 604
       }
      ],
-     "indice": 0.07
+     "indice": 0.06
     },
     {
      "molde": "[X] secret [X] top [X]",
@@ -575,7 +575,7 @@
        "views": 100
       }
      ],
-     "indice": 0.02
+     "indice": 0.01
     }
    ]
   },
@@ -586,13 +586,13 @@
     {
      "molde": "[N] [X] secrets you [X]",
      "n": 1,
-     "media": 320000,
-     "max": 320000,
+     "media": 322000,
+     "max": 322000,
      "exemplos": [
       {
        "id": "v92pJn3Hp0M",
        "titulo": "40 Minecraft Secrets You Didn't Know!",
-       "views": 320000
+       "views": 322000
       }
      ],
      "indice": 1.0
@@ -615,12 +615,12 @@
        "views": 58000
       }
      ],
-     "indice": 2.95
+     "indice": 2.94
     },
     {
      "molde": "[X] qui [X]",
      "n": 2,
-     "media": 35983,
+     "media": 35990,
      "max": 71000,
      "exemplos": [
       {
@@ -631,10 +631,10 @@
       {
        "id": "fw95azujErw",
        "titulo": "L'électricité : l'explication complète (ce qui court vraiment dans vos murs)",
-       "views": 967
+       "views": 981
       }
      ],
-     "indice": 1.83
+     "indice": 1.82
     },
     {
      "molde": "[X] pourquoi tu [X]",
@@ -648,7 +648,7 @@
        "views": 34000
       }
      ],
-     "indice": 1.73
+     "indice": 1.72
     },
     {
      "molde": "[X] tu [X] tu [X]",
@@ -681,7 +681,7 @@
     {
      "molde": "[X]",
      "n": 5,
-     "media": 3456,
+     "media": 3620,
      "max": 8200,
      "exemplos": [
       {
@@ -697,7 +697,7 @@
       {
        "id": "OTgEeh1qGl4",
        "titulo": "Le chat de Schrödinger : l'explication complète (vivant et mort à la fois)",
-       "views": 3300
+       "views": 3400
       }
      ],
      "indice": 0.18
@@ -711,27 +711,27 @@
     {
      "molde": "[X] vous [X]",
      "n": 1,
-     "media": 80000,
-     "max": 80000,
+     "media": 81000,
+     "max": 81000,
      "exemplos": [
       {
        "id": "hYrmD2MJsf0",
        "titulo": "La vraie raison pour laquelle les Français portaient des perruques n'est pas celle que vous croyez",
-       "views": 80000
+       "views": 81000
       }
      ],
-     "indice": 2.98
+     "indice": 2.96
     },
     {
      "molde": "pourquoi [X] du [N] [X] du [N] [X]",
      "n": 2,
-     "media": 77000,
-     "max": 143000,
+     "media": 79000,
+     "max": 147000,
      "exemplos": [
       {
        "id": "ZUyE3euxk5E",
        "titulo": "Pourquoi les États-Unis utilisent-ils du 60 Hz alors que la France utilise du 50 Hz ?",
-       "views": 143000
+       "views": 147000
       },
       {
        "id": "Uc-uHnd_eIY",
@@ -739,21 +739,21 @@
        "views": 11000
       }
      ],
-     "indice": 2.87
+     "indice": 2.88
     },
     {
      "molde": "[X] votre [X]",
      "n": 1,
-     "media": 64000,
-     "max": 64000,
+     "media": 66000,
+     "max": 66000,
      "exemplos": [
       {
        "id": "8wIKKDnjHLk",
        "titulo": "À quoi sert vraiment le fil neutre dans votre installation électrique ?",
-       "views": 64000
+       "views": 66000
       }
      ],
-     "indice": 2.39
+     "indice": 2.41
     },
     {
      "molde": "[X] pourquoi [X]",
@@ -767,26 +767,40 @@
        "views": 31000
       }
      ],
-     "indice": 1.16
+     "indice": 1.13
     },
     {
      "molde": "pourquoi [X] du [N] [X] [N] [X]",
      "n": 1,
-     "media": 7900,
-     "max": 7900,
+     "media": 8300,
+     "max": 8300,
      "exemplos": [
       {
        "id": "BkdlF-_33S0",
        "titulo": "Pourquoi les avions utilisent du 400 Hz au lieu de 50 Hz ?",
-       "views": 7900
+       "views": 8300
       }
      ],
-     "indice": 0.29
+     "indice": 0.3
+    },
+    {
+     "molde": "comment [X] pourquoi [N] [X]",
+     "n": 1,
+     "media": 7100,
+     "max": 7100,
+     "exemplos": [
+      {
+       "id": "HGuTa9wbleU",
+       "titulo": "Comment fonctionne le triphasé : pourquoi 3 phases ?",
+       "views": 7100
+      }
+     ],
+     "indice": 0.26
     },
     {
      "molde": "[X]",
      "n": 4,
-     "media": 6188,
+     "media": 6211,
      "max": 20000,
      "exemplos": [
       {
@@ -800,23 +814,9 @@
        "views": 4400
       },
       {
-       "id": "mVPeEn4Sk7E",
-       "titulo": "Avant la cuisinière, la moitié des maisons françaises étaient invivables",
-       "views": 203
-      }
-     ],
-     "indice": 0.23
-    },
-    {
-     "molde": "comment [X] pourquoi [N] [X]",
-     "n": 1,
-     "media": 6100,
-     "max": 6100,
-     "exemplos": [
-      {
-       "id": "HGuTa9wbleU",
-       "titulo": "Comment fonctionne le triphasé : pourquoi 3 phases ?",
-       "views": 6100
+       "id": "dClP2LbZFZA",
+       "titulo": "L'antenne existait bien avant la radio — mais à quoi servait-elle vraiment ?",
+       "views": 239
       }
      ],
      "indice": 0.23
@@ -833,7 +833,7 @@
        "views": 3400
       }
      ],
-     "indice": 0.13
+     "indice": 0.12
     },
     {
      "molde": "[X] quand [X]",
@@ -847,7 +847,7 @@
        "views": 2600
       }
      ],
-     "indice": 0.1
+     "indice": 0.09
     },
     {
      "molde": "[X] comment [X]",
@@ -861,7 +861,7 @@
        "views": 1500
       }
      ],
-     "indice": 0.06
+     "indice": 0.05
     }
    ]
   },
@@ -881,18 +881,18 @@
        "views": 94000
       }
      ],
-     "indice": 3.32
+     "indice": 3.31
     },
     {
      "molde": "[X]",
      "n": 5,
-     "media": 33669,
-     "max": 85000,
+     "media": 33909,
+     "max": 86000,
      "exemplos": [
       {
        "id": "E7WLStRtE6M",
        "titulo": "She Thought No One Knew About Her Dirty Affair… Her Lover Told the Police | True Crime Documentary",
-       "views": 85000
+       "views": 86000
       },
       {
        "id": "Muupi4vKfUg",
@@ -947,18 +947,18 @@
        "views": 7800
       }
      ],
-     "indice": 0.28
+     "indice": 0.27
     },
     {
      "molde": "[X] secret",
      "n": 1,
-     "media": 6000,
-     "max": 6000,
+     "media": 6100,
+     "max": 6100,
      "exemplos": [
       {
        "id": "2KTT7vuFtkM",
        "titulo": "Love Marriage Turned Into Deadly Divorce… Killer Revealed a Shocking Secret | True Crime Documentary",
-       "views": 6000
+       "views": 6100
       }
      ],
      "indice": 0.21
@@ -966,13 +966,13 @@
     {
      "molde": "[X] who [X]",
      "n": 1,
-     "media": 52,
-     "max": 52,
+     "media": 140,
+     "max": 140,
      "exemplos": [
       {
        "id": "wR5U_CRSrBQ",
        "titulo": "Greedy Killer Who Thought Killing His Partner’s Family Would Make Him Rich | True Crime Documentary",
-       "views": 52
+       "views": 140
       }
      ],
      "indice": 0.0
@@ -986,40 +986,40 @@
     {
      "molde": "si [X] como si [X] [N] [X]",
      "n": 1,
-     "media": 139000,
-     "max": 139000,
+     "media": 144000,
+     "max": 144000,
      "exemplos": [
       {
        "id": "uZZ9QiDNJg0",
        "titulo": "Si Alguien Te Hace Daño y Actúa Como Si Nada, Recuerda Estas 5 Cosas | Robert Greene",
-       "views": 139000
+       "views": 144000
       }
      ],
-     "indice": 10.83
+     "indice": 10.79
     },
     {
      "molde": "[X]",
      "n": 6,
-     "media": 6256,
-     "max": 33000,
+     "media": 6631,
+     "max": 35000,
      "exemplos": [
       {
        "id": "UXPfN-la2p4",
        "titulo": "Los Hombres Masculinos No Persiguen, Desaparecen | Robert Greene",
-       "views": 33000
+       "views": 35000
       },
       {
        "id": "nHNZWSGBmYI",
        "titulo": "LA FORMA MÁS INTELIGENTE DE TRATAR CON PERSONAS TÓXICAS | Discurso Motivacional de Robert Greene",
-       "views": 3300
+       "views": 3500
       },
       {
        "id": "KgPW74H2B5g",
        "titulo": "Cuidado con las Personas Solitarias que No Tienen Amigos | La Advertencia de Robert Greene",
-       "views": 453
+       "views": 468
       }
      ],
-     "indice": 0.49
+     "indice": 0.5
     },
     {
      "molde": "como [X]",
@@ -1033,18 +1033,18 @@
        "views": 2200
       }
      ],
-     "indice": 0.17
+     "indice": 0.16
     },
     {
      "molde": "como [X] se [X]",
      "n": 1,
-     "media": 257,
-     "max": 257,
+     "media": 270,
+     "max": 270,
      "exemplos": [
       {
        "id": "iSq5ZqfEgVs",
        "titulo": "Cómo Crear un Aura Tan Poderosa que Nadie se Atreva a Desafiarte | Inspirado en Robert Greene",
-       "views": 257
+       "views": 270
       }
      ],
      "indice": 0.02
@@ -1052,18 +1052,18 @@
     {
      "molde": "[N] [X]",
      "n": 2,
-     "media": 195,
-     "max": 252,
+     "media": 211,
+     "max": 281,
      "exemplos": [
       {
        "id": "nS_okwStzII",
        "titulo": "7 Maneras de Tratar a Quienes Te Hacen Daño | Robert Greene",
-       "views": 252
+       "views": 281
       },
       {
        "id": "tCqf9_-1RFc",
        "titulo": "10 Formas Poderosas de Tratar con Personas Tóxicas sin Perder el Control | Motivación Robert Greene",
-       "views": 139
+       "views": 142
       }
      ],
      "indice": 0.02
@@ -1071,13 +1071,13 @@
     {
      "molde": "como [X] [N] [X]",
      "n": 1,
-     "media": 126,
-     "max": 126,
+     "media": 127,
+     "max": 127,
      "exemplos": [
       {
        "id": "tBMK1pBIIus",
        "titulo": "Cómo Superar a Cualquiera: 5 Reglas para Dominar por Completo | Robert Greene",
-       "views": 126
+       "views": 127
       }
      ],
      "indice": 0.01
@@ -1085,13 +1085,13 @@
     {
      "molde": "[X] [N] [X]",
      "n": 1,
-     "media": 83,
-     "max": 83,
+     "media": 84,
+     "max": 84,
      "exemplos": [
       {
        "id": "hAbryMbE3Sc",
        "titulo": "Los Empáticos Poderosos No Tienen Amigos: 7 Razones Ocultas | Robert Greene",
-       "views": 83
+       "views": 84
       }
      ],
      "indice": 0.01
@@ -1119,16 +1119,16 @@
     {
      "molde": "wie du [X] wenn [X]",
      "n": 1,
-     "media": 112000,
-     "max": 112000,
+     "media": 113000,
+     "max": 113000,
      "exemplos": [
       {
        "id": "lVzwNIIv7eM",
        "titulo": "Wie du sie dazu bringst, dich zu wollen – selbst wenn sie kein Interesse an dir hat",
-       "views": 112000
+       "views": 113000
       }
      ],
-     "indice": 6.15
+     "indice": 6.09
     },
     {
      "molde": "wenn [X] [N] [X]",
@@ -1142,21 +1142,40 @@
        "views": 15000
       }
      ],
-     "indice": 0.82
+     "indice": 0.81
     },
     {
      "molde": "[X] wenn [X]",
      "n": 1,
-     "media": 11000,
-     "max": 11000,
+     "media": 12000,
+     "max": 12000,
      "exemplos": [
       {
        "id": "tdxlv6et5P4",
        "titulo": "DAS VERLETZT EINE FRAU AM MEISTEN, WENN SIE DICH NICHT ZU SCHÄTZEN WEISS  WEIBLICHE PSYCHOLOGIE",
-       "views": 11000
+       "views": 12000
       }
      ],
-     "indice": 0.6
+     "indice": 0.65
+    },
+    {
+     "molde": "[X]",
+     "n": 2,
+     "media": 10050,
+     "max": 15000,
+     "exemplos": [
+      {
+       "id": "awOa6pgIvEE",
+       "titulo": "Sie wirkt kalt     doch diese Zeichen bedeuten mehr, als du denkst!",
+       "views": 15000
+      },
+      {
+       "id": "0wMhK1-1JzQ",
+       "titulo": "Sie hat KEIN Interesse Bring sie mit diesem Psychologie Trick dazu, DICH zu WOLLEN!",
+       "views": 5100
+      }
+     ],
+     "indice": 0.54
     },
     {
      "molde": "[X] tu [X] erklart",
@@ -1170,7 +1189,7 @@
        "views": 10000
       }
      ],
-     "indice": 0.55
+     "indice": 0.54
     },
     {
      "molde": "[X] [N] [X]",
@@ -1184,37 +1203,18 @@
        "views": 10000
       }
      ],
-     "indice": 0.55
-    },
-    {
-     "molde": "[X]",
-     "n": 2,
-     "media": 9950,
-     "max": 15000,
-     "exemplos": [
-      {
-       "id": "awOa6pgIvEE",
-       "titulo": "Sie wirkt kalt     doch diese Zeichen bedeuten mehr, als du denkst!",
-       "views": 15000
-      },
-      {
-       "id": "0wMhK1-1JzQ",
-       "titulo": "Sie hat KEIN Interesse Bring sie mit diesem Psychologie Trick dazu, DICH zu WOLLEN!",
-       "views": 4900
-      }
-     ],
-     "indice": 0.55
+     "indice": 0.54
     },
     {
      "molde": "[N] [X]",
      "n": 2,
-     "media": 1900,
-     "max": 2000,
+     "media": 1950,
+     "max": 2100,
      "exemplos": [
       {
        "id": "PNKtHKDLxZc",
        "titulo": "100 % GARANTIERT Sie wird zurückkommen und dich wieder anflehen!  Weibliche Psychologie",
-       "views": 2000
+       "views": 2100
       },
       {
        "id": "_UeynHrhVug",
@@ -1222,21 +1222,21 @@
        "views": 1800
       }
      ],
-     "indice": 0.1
+     "indice": 0.11
     },
     {
      "molde": "tu [X]",
      "n": 1,
-     "media": 525,
-     "max": 525,
+     "media": 1400,
+     "max": 1400,
      "exemplos": [
       {
        "id": "_0_J2ujzSEk",
        "titulo": "Tu DAS eine, und Frauen werden dich für immer wollen  Weibliche Psychologie",
-       "views": 525
+       "views": 1400
       }
      ],
-     "indice": 0.03
+     "indice": 0.08
     }
    ]
   },
@@ -1247,13 +1247,13 @@
     {
      "molde": "[X]",
      "n": 2,
-     "media": 333000,
-     "max": 640000,
+     "media": 333500,
+     "max": 641000,
      "exemplos": [
       {
        "id": "tkkloNvK_JM",
        "titulo": "Las PEORES actuaciones del fútbol",
-       "views": 640000
+       "views": 641000
       },
       {
        "id": "iqzqJj3rX-M",
@@ -1261,35 +1261,35 @@
        "views": 26000
       }
      ],
-     "indice": 1.3
+     "indice": 1.29
     },
     {
      "molde": "todas [X] explicadas",
      "n": 1,
-     "media": 323000,
-     "max": 323000,
+     "media": 327000,
+     "max": 327000,
      "exemplos": [
       {
        "id": "oEdHapwzJ4s",
        "titulo": "Todas Las Celebraciones De Gol Prohibidas Explicadas.",
-       "views": 323000
+       "views": 327000
       }
      ],
-     "indice": 1.26
+     "indice": 1.27
     },
     {
      "molde": "[X] cada [X]",
      "n": 1,
-     "media": 37000,
-     "max": 37000,
+     "media": 38000,
+     "max": 38000,
      "exemplos": [
       {
        "id": "5fsOOxjdXp8",
        "titulo": "La Peor Noche De Borrachera De Cada Futbolista Famoso",
-       "views": 37000
+       "views": 38000
       }
      ],
-     "indice": 0.14
+     "indice": 0.15
     }
    ]
   },
@@ -1300,13 +1300,13 @@
     {
      "molde": "[X]",
      "n": 1,
-     "media": 221000,
-     "max": 221000,
+     "media": 222000,
+     "max": 222000,
      "exemplos": [
       {
        "id": "CSlvxQzxe40",
        "titulo": "Die herzzerreißendsten Momente im Fußball 💔",
-       "views": 221000
+       "views": 222000
       }
      ],
      "indice": 1.99
@@ -1334,30 +1334,30 @@
     {
      "molde": "[N] [X] se [X] [N]",
      "n": 1,
-     "media": 90000,
-     "max": 90000,
+     "media": 91000,
+     "max": 91000,
      "exemplos": [
       {
        "id": "sMaRDek_Uf8",
        "titulo": "8 Modificações Que Vão Se Tornar Ilegais nos Carros Brasileiros em 2027",
-       "views": 90000
+       "views": 91000
       }
      ],
-     "indice": 2.59
+     "indice": 2.58
     },
     {
      "molde": "[X] [N] [X]",
      "n": 1,
-     "media": 81000,
-     "max": 81000,
+     "media": 83000,
+     "max": 83000,
      "exemplos": [
       {
        "id": "SDbZ4Q5rF2c",
        "titulo": "A Polícia Não Consegue Impedir Este NOVO Golpe Nas Concessionárias — 12 Modelos São Alvo",
-       "views": 81000
+       "views": 83000
       }
      ],
-     "indice": 2.33
+     "indice": 2.35
     },
     {
      "molde": "[X] [N] [X] [N] [X] seu [X]",
@@ -1371,18 +1371,18 @@
        "views": 76000
       }
      ],
-     "indice": 2.18
+     "indice": 2.15
     },
     {
      "molde": "[X] todos [X]",
      "n": 2,
-     "media": 14500,
-     "max": 18000,
+     "media": 15000,
+     "max": 19000,
      "exemplos": [
       {
        "id": "aQCuBBYbdYk",
        "titulo": "Renault Acabou de Ser PEGA no Brasil — Todos Sabiam Que Algo Estava ERRADO!",
-       "views": 18000
+       "views": 19000
       },
       {
        "id": "bsA3JQs7WX0",
@@ -1395,7 +1395,7 @@
     {
      "molde": "[N] [X] [N] [X]",
      "n": 2,
-     "media": 951,
+     "media": 952,
      "max": 1000,
      "exemplos": [
       {
@@ -1406,7 +1406,7 @@
       {
        "id": "cOjV73WJAg0",
        "titulo": "10 Concessionárias Que Estão Enganando Clientes No Brasil — 3 Já Foram Flagradas",
-       "views": 903
+       "views": 904
       }
      ],
      "indice": 0.03
@@ -1414,13 +1414,13 @@
     {
      "molde": "[X] se [X]",
      "n": 1,
-     "media": 528,
-     "max": 528,
+     "media": 552,
+     "max": 552,
      "exemplos": [
       {
        "id": "H5qbQ1tOsRQ",
        "titulo": "Donos De SUVs Chineses No Brasil Se ARREPENDEM Da Compra — Veja o Motivo",
-       "views": 528
+       "views": 552
       }
      ],
      "indice": 0.02
@@ -1434,13 +1434,13 @@
     {
      "molde": "[X] [N]",
      "n": 2,
-     "media": 114500,
-     "max": 210000,
+     "media": 115000,
+     "max": 211000,
      "exemplos": [
       {
        "id": "7z799IO-SV8",
        "titulo": "Mercedes elite ball knowledge... (part 1)",
-       "views": 210000
+       "views": 211000
       },
       {
        "id": "46Ste9zd8rY",
@@ -1462,7 +1462,7 @@
        "views": 104000
       }
      ],
-     "indice": 1.39
+     "indice": 1.38
     },
     {
      "molde": "[X]",
@@ -1510,35 +1510,35 @@
        "views": 1100000
       }
      ],
-     "indice": 12.08
+     "indice": 12.05
     },
     {
      "molde": "why [X] your [X]",
      "n": 1,
-     "media": 290000,
-     "max": 290000,
+     "media": 292000,
+     "max": 292000,
      "exemplos": [
       {
        "id": "5c81AORL5cI",
        "titulo": "Why You’ll Never Actually Spend Your Retirement Savings",
-       "views": 290000
+       "views": 292000
       }
      ],
-     "indice": 3.19
+     "indice": 3.2
     },
     {
      "molde": "how [X] who [X]",
      "n": 1,
-     "media": 49000,
-     "max": 49000,
+     "media": 50000,
+     "max": 50000,
      "exemplos": [
       {
        "id": "YPS4ag5a38E",
        "titulo": "How Inflation Actually Works (And Who It Really Hurts)",
-       "views": 49000
+       "views": 50000
       }
      ],
-     "indice": 0.54
+     "indice": 0.55
     },
     {
      "molde": "why your [X]",
@@ -1552,21 +1552,21 @@
        "views": 36000
       }
      ],
-     "indice": 0.4
+     "indice": 0.39
     },
     {
      "molde": "[X] how [X]",
      "n": 1,
-     "media": 33000,
-     "max": 33000,
+     "media": 34000,
+     "max": 34000,
      "exemplos": [
       {
        "id": "792HTqjzAJo",
        "titulo": "The Vancouver Model: How Drug Money Became Houses",
-       "views": 33000
+       "views": 34000
       }
      ],
-     "indice": 0.36
+     "indice": 0.37
     },
     {
      "molde": "[X] [N]",
@@ -1613,26 +1613,26 @@
     {
      "molde": "[X] [N] [X] what [X]",
      "n": 1,
-     "media": 2600,
-     "max": 2600,
+     "media": 2700,
+     "max": 2700,
      "exemplos": [
       {
        "id": "SmMN-vTCaU8",
        "titulo": "Social Security Runs Dry in 2032. Here’s What Actually Happens.",
-       "views": 2600
+       "views": 2700
       }
      ],
      "indice": 0.03
     },
     {
-     "molde": "why [X]",
+     "molde": "[X] explained",
      "n": 1,
      "media": 1600,
      "max": 1600,
      "exemplos": [
       {
        "id": "8MSQKrM_d9U",
-       "titulo": "Why the World's Biggest Tax Haven Might Be... South Dakota",
+       "titulo": "On Paper, He Owns Nothing: Offshore Trusts Explained",
        "views": 1600
       }
      ],
@@ -1640,14 +1640,19 @@
     },
     {
      "molde": "[X] [N] [X] you [X]",
-     "n": 1,
-     "media": 1100,
+     "n": 2,
+     "media": 749,
      "max": 1100,
      "exemplos": [
       {
        "id": "-JpM1y0YSts",
        "titulo": "Zero Saved at 45? The Math Is Better Than You Think",
        "views": 1100
+      },
+      {
+       "id": "PlWUZXueAlg",
+       "titulo": "The $130,000 Bill Nobody Warns You About",
+       "views": 399
       }
      ],
      "indice": 0.01
@@ -1655,27 +1660,13 @@
     {
      "molde": "[X] what [X] explained [X] you",
      "n": 1,
-     "media": 427,
-     "max": 427,
+     "media": 451,
+     "max": 451,
      "exemplos": [
       {
        "id": "h7Jvi2nAgqk",
        "titulo": "Is the Stock Market a Casino? What Nobody Explained to You",
-       "views": 427
-      }
-     ],
-     "indice": 0.0
-    },
-    {
-     "molde": "[X] [N] [X] every [X]",
-     "n": 1,
-     "media": 393,
-     "max": 393,
-     "exemplos": [
-      {
-       "id": "PlWUZXueAlg",
-       "titulo": "Rose, 81, Broke Her Hip. Now She Needs Help Every Single Day",
-       "views": 393
+       "views": 451
       }
      ],
      "indice": 0.0
@@ -1683,41 +1674,27 @@
     {
      "molde": "your [X] why",
      "n": 1,
-     "media": 303,
-     "max": 303,
+     "media": 328,
+     "max": 328,
      "exemplos": [
       {
        "id": "xOJ5mKnUBYc",
        "titulo": "Your Kids Can't Afford a House. Here's Why.",
-       "views": 303
+       "views": 328
       }
      ],
      "indice": 0.0
     },
     {
-     "molde": "[X] history what [X] [N] [X]",
+     "molde": "[X] was [X]",
      "n": 1,
      "media": 277,
      "max": 277,
      "exemplos": [
       {
        "id": "DJSg2lquKd0",
-       "titulo": "The Biggest Heist in History: What the $6.3 Billion Binance Hack Means for Crypto",
+       "titulo": "Binance Was Hacked. Will Big Companies Still Trust Crypto?",
        "views": 277
-      }
-     ],
-     "indice": 0.0
-    },
-    {
-     "molde": "every [X] [N] explained",
-     "n": 1,
-     "media": 173,
-     "max": 173,
-     "exemplos": [
-      {
-       "id": "m6EsnBxxL3o",
-       "titulo": "Every Scam That Targets People Over 50, Explained",
-       "views": 173
       }
      ],
      "indice": 0.0
@@ -1725,13 +1702,27 @@
     {
      "molde": "[N] [X] explained",
      "n": 1,
-     "media": 130,
-     "max": 130,
+     "media": 259,
+     "max": 259,
      "exemplos": [
       {
        "id": "eRgQx3V44Lc",
        "titulo": "$700 Billion Gone: The Nvidia Crash, Explained",
-       "views": 130
+       "views": 259
+      }
+     ],
+     "indice": 0.0
+    },
+    {
+     "molde": "[X] [N] [X] your [X]",
+     "n": 1,
+     "media": 173,
+     "max": 173,
+     "exemplos": [
+      {
+       "id": "m6EsnBxxL3o",
+       "titulo": "The 7 Scams Coming for Your Retirement Savings",
+       "views": 173
       }
      ],
      "indice": 0.0
@@ -1745,35 +1736,35 @@
     {
      "molde": "em [N] min [X]",
      "n": 2,
-     "media": 225500,
-     "max": 289000,
+     "media": 227500,
+     "max": 292000,
      "exemplos": [
       {
        "id": "PhBMBlcVnrE",
        "titulo": "Me Despidió Sin Saber Que Compré La Empresa Hace 48 Horas (La Junta Será Épica) 😎",
-       "views": 289000
+       "views": 292000
       },
       {
        "id": "pY89htqp7lE",
        "titulo": "Despide al Creador del Sistema para Poner a su Hijo, y el Karma lo Destruye en 3 Horas",
-       "views": 162000
+       "views": 163000
       }
      ],
-     "indice": 2.13
+     "indice": 2.12
     },
     {
      "molde": "[X] [N] [X]",
      "n": 1,
-     "media": 65000,
-     "max": 65000,
+     "media": 70000,
+     "max": 70000,
      "exemplos": [
       {
        "id": "SYLZGJzhsFI",
        "titulo": "Mi CEO Me Despidió... Y Le Quité la Patente de 750 Millones de Dólares 📄",
-       "views": 65000
+       "views": 70000
       }
      ],
-     "indice": 0.61
+     "indice": 0.65
     },
     {
      "molde": "[X] [N] [X] [N] [X] [N] [X]",
@@ -1821,23 +1812,23 @@
        "views": 226000
       }
      ],
-     "indice": 2.36
+     "indice": 2.34
     },
     {
      "molde": "[X] explicada em [N] min",
      "n": 6,
-     "media": 106716,
-     "max": 497000,
+     "media": 107416,
+     "max": 500000,
      "exemplos": [
       {
        "id": "PruS4b3ow-w",
        "titulo": "La MITOLOGÍA GRIEGA Completa Explicada en 26 minutos",
-       "views": 497000
+       "views": 500000
       },
       {
        "id": "MZ-D5UuxkDM",
        "titulo": "La MITOLOGÍA NÓRDICA COMPLETA: De ODÍN al RAGNARÖK explicada en 23 minutos",
-       "views": 82000
+       "views": 83000
       },
       {
        "id": "5zkx3yt4SuA",
@@ -1850,18 +1841,18 @@
     {
      "molde": "[X] historia [X] explicada em [N] min",
      "n": 2,
-     "media": 43009,
-     "max": 86000,
+     "media": 43612,
+     "max": 87000,
      "exemplos": [
       {
        "id": "sVNIPU3id2g",
        "titulo": "La Historia de LA ODISEA Completa Explicada en 23 minutos",
-       "views": 86000
+       "views": 87000
       },
       {
        "id": "HHX3_W7lgSs",
        "titulo": "La Historia COMPLETA de la MITOLOGÍA AZTECA Explicada en 26 minutos",
-       "views": 18
+       "views": 225
       }
      ],
      "indice": 0.45
@@ -1889,37 +1880,37 @@
     {
      "molde": "[X] was [X]",
      "n": 2,
-     "media": 182500,
-     "max": 257000,
+     "media": 186500,
+     "max": 264000,
      "exemplos": [
       {
        "id": "pkjHaqCB26g",
        "titulo": "Billionärs-Oma testet Enkel-Verlobte als arme Witwe – Was sie entdeckt, schockiert sie!",
-       "views": 257000
+       "views": 264000
       },
       {
        "id": "W6d4LDbqTpY",
        "titulo": "Ein Milliardär überprüft seine Überwachungskameras – WAS ER SAH, SCHOCKIERTE IHN!",
-       "views": 108000
+       "views": 109000
       }
      ],
-     "indice": 2.39
+     "indice": 2.38
     },
     {
      "molde": "[X]",
      "n": 2,
-     "media": 34500,
-     "max": 54000,
+     "media": 35500,
+     "max": 55000,
      "exemplos": [
       {
        "id": "4efEq3ue8Rw",
        "titulo": "Ein reicher Mann verkleidet seine Mutter als arme Frau – Nur eine Kellnerin zeigt ihr Mitgefühl!",
-       "views": 54000
+       "views": 55000
       },
       {
        "id": "-IYT-a5NYBc",
        "titulo": "Seine Ex lachte über seinen rostigen Pickup – Doch dann erfuhr sie, WEM die Firma jetzt gehörte!",
-       "views": 15000
+       "views": 16000
       }
      ],
      "indice": 0.45
@@ -1936,21 +1927,21 @@
        "views": 25000
       }
      ],
-     "indice": 0.33
+     "indice": 0.32
     },
     {
      "molde": "ich [X]",
      "n": 1,
-     "media": 38,
-     "max": 38,
+     "media": 481,
+     "max": 481,
      "exemplos": [
       {
        "id": "sJ8ByQ3cNa0",
        "titulo": "Ich brachte die Hochzeitstorte – Doch die Braut bat mich, ihren Bräutigam zu ersetzen!",
-       "views": 38
+       "views": 481
       }
      ],
-     "indice": 0.0
+     "indice": 0.01
     }
    ]
   },
@@ -1961,13 +1952,13 @@
     {
      "molde": "[X] was [X]",
      "n": 1,
-     "media": 53000,
-     "max": 53000,
+     "media": 54000,
+     "max": 54000,
      "exemplos": [
       {
        "id": "byMsBFgLeVE",
        "titulo": "She threw cake in her poor ex's face – But HE was a billionaire!",
-       "views": 53000
+       "views": 54000
       }
      ],
      "indice": 1.28
@@ -1975,27 +1966,27 @@
     {
      "molde": "[X] who [X]",
      "n": 1,
-     "media": 39000,
-     "max": 39000,
+     "media": 40000,
+     "max": 40000,
      "exemplos": [
       {
        "id": "1oaZ8GvcEqw",
        "titulo": "They tried to humiliate her at the class reunion – But then they found out who owned the luxury h...",
-       "views": 39000
+       "views": 40000
       }
      ],
-     "indice": 0.94
+     "indice": 0.95
     },
     {
      "molde": "[X]",
      "n": 3,
-     "media": 38155,
-     "max": 114000,
+     "media": 38896,
+     "max": 116000,
      "exemplos": [
       {
        "id": "sZe5_9Fg24g",
        "titulo": "\"Send the ugly one to him – he'll reject her!\" But the millionaire fell in love with her!",
-       "views": 114000
+       "views": 116000
       },
       {
        "id": "GJD57UxtRHA",
@@ -2005,15 +1996,3822 @@
       {
        "id": "yRpduXLnCIo",
        "titulo": "Majorsfrau droht schwarzem Leutnant – Doch der Oberst hört alles mit!",
-       "views": 13
+       "views": 235
       }
      ],
      "indice": 0.92
     }
    ]
+  },
+  "UCr02LyWl33rqFI2hF1dwStg": {
+   "nome": "Popden",
+   "n_videos": 11,
+   "clusters": [
+    {
+     "molde": "[X] explained em [N] min",
+     "n": 1,
+     "media": 639000,
+     "max": 639000,
+     "exemplos": [
+      {
+       "id": "rIsVYfIIgHQ",
+       "titulo": "Ramayana Explained for Americans in 14 Minutes",
+       "views": 639000
+      }
+     ],
+     "indice": 4.27
+    },
+    {
+     "molde": "[X] was [X]",
+     "n": 1,
+     "media": 194000,
+     "max": 194000,
+     "exemplos": [
+      {
+       "id": "rc1weD5bjjY",
+       "titulo": "Ramayana Was Peak (Spoiler Talk)",
+       "views": 194000
+      }
+     ],
+     "indice": 1.3
+    },
+    {
+     "molde": "[X]",
+     "n": 4,
+     "media": 117500,
+     "max": 275000,
+     "exemplos": [
+      {
+       "id": "B1sdPehE_tw",
+       "titulo": "Can Ramayana Win Over America?",
+       "views": 275000
+      },
+      {
+       "id": "4bcL3oR-964",
+       "titulo": "Ramayana Almost Did It!!",
+       "views": 167000
+      },
+      {
+       "id": "gVn9MVroukI",
+       "titulo": "Watch This Before Godzilla Minus Zero",
+       "views": 17000
+      }
+     ],
+     "indice": 0.79
+    },
+    {
+     "molde": "[X] vs [X] who [X]",
+     "n": 1,
+     "media": 115000,
+     "max": 115000,
+     "exemplos": [
+      {
+       "id": "ePGZmo0bXD8",
+       "titulo": "Ramayana vs Godzilla: Who Wins America?",
+       "views": 115000
+      }
+     ],
+     "indice": 0.77
+    },
+    {
+     "molde": "every [X] explained em [N] min",
+     "n": 2,
+     "media": 104500,
+     "max": 163000,
+     "exemplos": [
+      {
+       "id": "pIY9HRlm-Mk",
+       "titulo": "Every Godzilla Monster Explained in 13 Minutes",
+       "views": 163000
+      },
+      {
+       "id": "ZWZBI1w9cEo",
+       "titulo": "Every Ramayana God Explained for Americans in 11 Minutes",
+       "views": 46000
+      }
+     ],
+     "indice": 0.7
+    },
+    {
+     "molde": "what [X] [N] [X]",
+     "n": 1,
+     "media": 19000,
+     "max": 19000,
+     "exemplos": [
+      {
+       "id": "N2ynafOfhAY",
+       "titulo": "What Ramayana 2 Must Fix",
+       "views": 19000
+      }
+     ],
+     "indice": 0.13
+    },
+    {
+     "molde": "all [N] [X]",
+     "n": 1,
+     "media": 13,
+     "max": 13,
+     "exemplos": [
+      {
+       "id": "pWSUVUwk_7Y",
+       "titulo": "All 13 Godzillas: Dead or Alive?",
+       "views": 13
+      }
+     ],
+     "indice": 0.0
+    }
+   ]
+  },
+  "UCF55R01ZxpOwrnrUVZEtREw": {
+   "nome": "La Salle sur Demande",
+   "n_videos": 4,
+   "clusters": [
+    {
+     "molde": "toute [X] expliquee [X]",
+     "n": 1,
+     "media": 157000,
+     "max": 157000,
+     "exemplos": [
+      {
+       "id": "120gJaUcAsY",
+       "titulo": "Toute l'histoire de Harry Potter expliquée simplement",
+       "views": 157000
+      }
+     ],
+     "indice": 1.83
+    },
+    {
+     "molde": "toutes [X] expliquees",
+     "n": 1,
+     "media": 154000,
+     "max": 154000,
+     "exemplos": [
+      {
+       "id": "zOe_vu7tTo4",
+       "titulo": "Toutes les écoles de magie de Harry Potter expliquées",
+       "views": 154000
+      }
+     ],
+     "indice": 1.79
+    },
+    {
+     "molde": "tous [X]",
+     "n": 1,
+     "media": 31000,
+     "max": 31000,
+     "exemplos": [
+      {
+       "id": "JFWAqgSWqjI",
+       "titulo": "Tous les sorts interdits et légendaires de Harry Potter",
+       "views": 31000
+      }
+     ],
+     "indice": 0.36
+    },
+    {
+     "molde": "pourquoi [X]",
+     "n": 1,
+     "media": 1200,
+     "max": 1200,
+     "exemplos": [
+      {
+       "id": "_4ghEJWfuY4",
+       "titulo": "Pourquoi les sorciers n'ont ni villes ni technologie ?",
+       "views": 1200
+      }
+     ],
+     "indice": 0.01
+    }
+   ]
+  },
+  "UCiT5YKd9nSgnXFWeLmF3F3Q": {
+   "nome": "Cœur Interdit",
+   "n_videos": 15,
+   "clusters": [
+    {
+     "molde": "[X] best [X]",
+     "n": 1,
+     "media": 216000,
+     "max": 216000,
+     "exemplos": [
+      {
+       "id": "IYZf0mfYVEU",
+       "titulo": "❤️ Her mafia savior is also her best friend’s father… A forbidden love!",
+       "views": 216000
+      }
+     ],
+     "indice": 5.23
+    },
+    {
+     "molde": "[X] who [X]",
+     "n": 2,
+     "media": 78000,
+     "max": 81000,
+     "exemplos": [
+      {
+       "id": "olfV4ietLnY",
+       "titulo": "💔 She Just Wanted to Save Her Daughter… But Found the Son Who Had Been Stolen from Her!",
+       "views": 81000
+      },
+      {
+       "id": "RYRiCEJ9CP4",
+       "titulo": "💔 Blind, She Falls for Her Bodyguard… Who Is the Mafia Boss",
+       "views": 75000
+      }
+     ],
+     "indice": 1.89
+    },
+    {
+     "molde": "[X]",
+     "n": 9,
+     "media": 26642,
+     "max": 146000,
+     "exemplos": [
+      {
+       "id": "_Gk4yXWQ4Cw",
+       "titulo": "💔 She Lost Her Sight to Save Her Son… and He Tortured His Own Mother Without Recognizing Her!",
+       "views": 146000
+      },
+      {
+       "id": "FONNHlCqnQc",
+       "titulo": "👑 Her husband's mistress slaps her mother… without knowing she's the richest woman in the world",
+       "views": 34000
+      },
+      {
+       "id": "aiEJz67Gaas",
+       "titulo": "❄️ Pregnant and Betrayed by Her Fiancé… Now They’re the Ones Trapped in the Blizzard!",
+       "views": 29000
+      }
+     ],
+     "indice": 0.64
+    },
+    {
+     "molde": "[X] [N] [X]",
+     "n": 1,
+     "media": 5400,
+     "max": 5400,
+     "exemplos": [
+      {
+       "id": "gX7donOJJEA",
+       "titulo": "🔥 She Gained 100 Pounds Overnight… Her Rival Made a Deal with the Devil!",
+       "views": 5400
+      }
+     ],
+     "indice": 0.13
+    },
+    {
+     "molde": "[X] was [X]",
+     "n": 1,
+     "media": 1300,
+     "max": 1300,
+     "exemplos": [
+      {
+       "id": "y8V20Wqu6x8",
+       "titulo": "🔥 She Seduced Her Stepbrother to Escape an Arranged Marriage… But He Was a Mafia King!",
+       "views": 1300
+      }
+     ],
+     "indice": 0.03
+    },
+    {
+     "molde": "[X] top [X]",
+     "n": 1,
+     "media": 1100,
+     "max": 1100,
+     "exemplos": [
+      {
+       "id": "vNMeCANzmvQ",
+       "titulo": "Her Sister Is the World's Top Assassin—Her Broke Coworker Is a Financial Empire's Heir",
+       "views": 1100
+      }
+     ],
+     "indice": 0.03
+    }
+   ]
+  },
+  "UCoGEsuRZAJh5yYY5iKfmUBQ": {
+   "nome": "Gracias Hoy",
+   "n_videos": 8,
+   "clusters": [
+    {
+     "molde": "[X] [N] what was [X]",
+     "n": 1,
+     "media": 477000,
+     "max": 477000,
+     "exemplos": [
+      {
+       "id": "5NVSW-nyhAY",
+       "titulo": "They sold him junk for $400… what was inside silenced the auction",
+       "views": 477000
+      }
+     ],
+     "indice": 1.99
+    },
+    {
+     "molde": "[X] [N] [X] [N] [X]",
+     "n": 2,
+     "media": 366153,
+     "max": 732000,
+     "exemplos": [
+      {
+       "id": "90UliJ8etBU",
+       "titulo": "The bank sold him 34 dead hectares for 120 thousand pesos — and he found the water buried underneath",
+       "views": 732000
+      },
+      {
+       "id": "rt4F24qu2LM",
+       "titulo": "Pesó el ganado del pueblo 37 años en una báscula de 1958 — el banco la cerró sin leer sus libretas",
+       "views": 306
+      }
+     ],
+     "indice": 1.53
+    },
+    {
+     "molde": "[X] was [X] [N] [X]",
+     "n": 1,
+     "media": 231000,
+     "max": 231000,
+     "exemplos": [
+      {
+       "id": "jlKcB1ReK94",
+       "titulo": "Three tow trucks said the trailer was a lost cause — then the old man started up his 1948 tractor",
+       "views": 231000
+      }
+     ],
+     "indice": 0.96
+    },
+    {
+     "molde": "[X]",
+     "n": 1,
+     "media": 193000,
+     "max": 193000,
+     "exemplos": [
+      {
+       "id": "TmH4PMhmtmw",
+       "titulo": "A millionaire dressed as a farmer at an auction — and saw a widow selling her last tractor",
+       "views": 193000
+      }
+     ],
+     "indice": 0.8
+    },
+    {
+     "molde": "[X] [N] [X]",
+     "n": 2,
+     "media": 134000,
+     "max": 237000,
+     "exemplos": [
+      {
+       "id": "pOk5YoZ-Jd0",
+       "titulo": "The engineers said nothing could pull it out — then the old man fired up his 1948 crane",
+       "views": 237000
+      },
+      {
+       "id": "dH2eubNIMsI",
+       "titulo": "The bank laughed at his offer — and he stalled their 600 million project",
+       "views": 31000
+      }
+     ],
+     "indice": 0.56
+    },
+    {
+     "molde": "[X] [N] [X] when [X] all",
+     "n": 1,
+     "media": 18000,
+     "max": 18000,
+     "exemplos": [
+      {
+       "id": "MQHppVEi8wY",
+       "titulo": "They Piled Up Their Pumps for 15 Years as Junk — When the Agency Went Bankrupt, He Had Them All",
+       "views": 18000
+      }
+     ],
+     "indice": 0.08
+    }
+   ]
+  },
+  "UCkngK5YNdSm2kmGw9D4XMZQ": {
+   "nome": " DATO X",
+   "n_videos": 3,
+   "clusters": [
+    {
+     "molde": "[X] story [X]",
+     "n": 1,
+     "media": 91000,
+     "max": 91000,
+     "exemplos": [
+      {
+       "id": "4SSDUuu1t2Q",
+       "titulo": "LEGEND QUEST: THE COMPLETE STORY IN CHRONOLOGICAL ORDER",
+       "views": 91000
+      }
+     ],
+     "indice": 2.96
+    },
+    {
+     "molde": "[X]",
+     "n": 1,
+     "media": 764,
+     "max": 764,
+     "exemplos": [
+      {
+       "id": "iNfUhw7WOV4",
+       "titulo": "THE REVENGE OF THE BLACK CHARRO: COMPLETE ANALYSIS AND REVIEW",
+       "views": 764
+      }
+     ],
+     "indice": 0.02
+    },
+    {
+     "molde": "[N] [X] your [X]",
+     "n": 1,
+     "media": 447,
+     "max": 447,
+     "exemplos": [
+      {
+       "id": "NfS0hOLKWck",
+       "titulo": "5 PIXAR THEORIES THAT WILL BLOW YOUR MIND 🤯",
+       "views": 447
+      }
+     ],
+     "indice": 0.01
+    }
+   ]
+  },
+  "UCY2ZvudTKE0rovOHBZflbHQ": {
+   "nome": "Supongamos",
+   "n_videos": 13,
+   "clusters": [
+    {
+     "molde": "[X] si [X] quien [X]",
+     "n": 1,
+     "media": 172000,
+     "max": 172000,
+     "exemplos": [
+      {
+       "id": "hG0ruvLK67s",
+       "titulo": "¿Qué Pasaría si Supieras Quién Gusta de ti en Secreto?",
+       "views": 172000
+      }
+     ],
+     "indice": 7.82
+    },
+    {
+     "molde": "[X] si todos [X] tus [X]",
+     "n": 1,
+     "media": 15000,
+     "max": 15000,
+     "exemplos": [
+      {
+       "id": "JRu2VzkfDeE",
+       "titulo": "¿Qué Pasaría si Todos Pudieran Oír Tus Pensamientos?",
+       "views": 15000
+      }
+     ],
+     "indice": 0.68
+    },
+    {
+     "molde": "[X] si [X]",
+     "n": 7,
+     "media": 13602,
+     "max": 85000,
+     "exemplos": [
+      {
+       "id": "QelPsZve1ms",
+       "titulo": "¿Y Si Volvieras al Kínder con la Mente de un Ingeniero?",
+       "views": 85000
+      },
+      {
+       "id": "J6JVAXrNW9Y",
+       "titulo": "¿Qué Pasaría si Fueras la Última Mujer de la Tierra?",
+       "views": 4500
+      },
+      {
+       "id": "o-qB_cF-rxg",
+       "titulo": "¿Qué Pasaría si Pudieras Hablar con los Muertos?",
+       "views": 3300
+      }
+     ],
+     "indice": 0.62
+    },
+    {
+     "molde": "[X] si [X] cada [X]",
+     "n": 1,
+     "media": 1000,
+     "max": 1000,
+     "exemplos": [
+      {
+       "id": "Nsf4WoyAktU",
+       "titulo": "¿Qué Pasaría si Pudieras Ver Cuántas Mentiras Dice Cada Persona?",
+       "views": 1000
+      }
+     ],
+     "indice": 0.05
+    },
+    {
+     "molde": "[X]",
+     "n": 1,
+     "media": 969,
+     "max": 969,
+     "exemplos": [
+      {
+       "id": "FW3PCdBt24I",
+       "titulo": "¿Podrías Sobrevivir un año a un Apocalipsis Zombi?",
+       "views": 969
+      }
+     ],
+     "indice": 0.04
+    },
+    {
+     "molde": "[X] si [X] todos",
+     "n": 2,
+     "media": 947,
+     "max": 1200,
+     "exemplos": [
+      {
+       "id": "oquxWEVfsWo",
+       "titulo": "¿Qué Pasaría si Pudieras Ver el Coeficiente Intelectual de Todos?",
+       "views": 1200
+      },
+      {
+       "id": "MQF_4Vh6aGM",
+       "titulo": "¿Qué Pasaría Si Pudieras Ver Cuánto Tiempo de Vida le Queda a Todos?",
+       "views": 695
+      }
+     ],
+     "indice": 0.04
+    }
+   ]
+  },
+  "UC8ZRQ_4OnYcb6axsNMqye2A": {
+   "nome": "Know Better",
+   "n_videos": 9,
+   "clusters": [
+    {
+     "molde": "what if [X] minute [X] minute",
+     "n": 1,
+     "media": 108000,
+     "max": 108000,
+     "exemplos": [
+      {
+       "id": "WG9zGhQuSjU",
+       "titulo": "What If Full Nuclear War Happened? Minute by Minute",
+       "views": 108000
+      }
+     ],
+     "indice": 6.5
+    },
+    {
+     "molde": "what if [X]",
+     "n": 3,
+     "media": 13397,
+     "max": 39000,
+     "exemplos": [
+      {
+       "id": "HzHxxyRsPKE",
+       "titulo": "What If a Full-Scale War Between the USA and China Happened?",
+       "views": 39000
+      },
+      {
+       "id": "WL59By8kBrg",
+       "titulo": "What If the World Had No Internet?",
+       "views": 646
+      },
+      {
+       "id": "RjQ-Q9lMywU",
+       "titulo": "What If AI Took Over the World? Month by Month",
+       "views": 545
+      }
+     ],
+     "indice": 0.81
+    },
+    {
+     "molde": "[X] explained [X] [N]",
+     "n": 1,
+     "media": 634,
+     "max": 634,
+     "exemplos": [
+      {
+       "id": "nJiW9lJWjHM",
+       "titulo": "Hiroshima and Nagasaki Explained: The Bombs That Ended World War II (1945)",
+       "views": 634
+      }
+     ],
+     "indice": 0.04
+    },
+    {
+     "molde": "[X] explained how [X] [N]",
+     "n": 1,
+     "media": 581,
+     "max": 581,
+     "exemplos": [
+      {
+       "id": "bB-9_4zw8ZA",
+       "titulo": "The Great Depression Explained: How One Crash Broke the World (1929)",
+       "views": 581
+      }
+     ],
+     "indice": 0.03
+    },
+    {
+     "molde": "what [X] why [X]",
+     "n": 1,
+     "media": 151,
+     "max": 151,
+     "exemplos": [
+      {
+       "id": "F-jJfHS9xPY",
+       "titulo": "What Nikola Tesla Actually Invented!? And Why He Died Alone",
+       "views": 151
+      }
+     ],
+     "indice": 0.01
+    },
+    {
+     "molde": "[X] [N]",
+     "n": 2,
+     "media": 41,
+     "max": 47,
+     "exemplos": [
+      {
+       "id": "0HznpK5howA",
+       "titulo": "The Black Death: The Pandemic That Killed Half of Europe (1347)",
+       "views": 47
+      },
+      {
+       "id": "vf6w7ZeBDms",
+       "titulo": "The Volcano That Stole Summer (1816)",
+       "views": 36
+      }
+     ],
+     "indice": 0.0
+    }
+   ]
+  },
+  "UCUK7e3Qja5d-muR6b-jiZCw": {
+   "nome": "Questionverse",
+   "n_videos": 11,
+   "clusters": [
+    {
+     "molde": "what if you [X] your [X]",
+     "n": 4,
+     "media": 213925,
+     "max": 638000,
+     "exemplos": [
+      {
+       "id": "a4IxwLQNj-k",
+       "titulo": "What If You Were Stuck in a Bunker With Your Crush?",
+       "views": 638000
+      },
+      {
+       "id": "AY0DR7bvfXY",
+       "titulo": "What If You And Your Crush Were Alone On A Desert Island?",
+       "views": 176000
+      },
+      {
+       "id": "1oKyfVfl2qQ",
+       "titulo": "What If You Were Trapped in Squid Game With Your Crush?",
+       "views": 39000
+      }
+     ],
+     "indice": 1.61
+    },
+    {
+     "molde": "what if you [X]",
+     "n": 2,
+     "media": 203500,
+     "max": 272000,
+     "exemplos": [
+      {
+       "id": "Z4HLqdR2iP4",
+       "titulo": "What If You Were the Strongest Person in the World?",
+       "views": 272000
+      },
+      {
+       "id": "8ItQgbmRh_0",
+       "titulo": "What If You Could Talk To Any Animal?",
+       "views": 135000
+      }
+     ],
+     "indice": 1.54
+    },
+    {
+     "molde": "what if you [X] every [X] you",
+     "n": 1,
+     "media": 90000,
+     "max": 90000,
+     "exemplos": [
+      {
+       "id": "eYv4svv3tqY",
+       "titulo": "What If You Became Stronger Every Time Someone Hurt You?",
+       "views": 90000
+      }
+     ],
+     "indice": 0.68
+    },
+    {
+     "molde": "what if you [X] your [X] [N] [X]",
+     "n": 1,
+     "media": 68000,
+     "max": 68000,
+     "exemplos": [
+      {
+       "id": "vmhnFVXVVl0",
+       "titulo": "What If You Got Stuck in a Walmart With Your Crush for 30 Days?",
+       "views": 68000
+      }
+     ],
+     "indice": 0.51
+    },
+    {
+     "molde": "what if you [X] [N] [X] your [X]",
+     "n": 1,
+     "media": 13000,
+     "max": 13000,
+     "exemplos": [
+      {
+       "id": "Hyhixgi_1oE",
+       "titulo": "What If You Woke Up 10,000 Years Ago With Your Crush?",
+       "views": 13000
+      }
+     ],
+     "indice": 0.1
+    },
+    {
+     "molde": "what if [X]",
+     "n": 2,
+     "media": 11950,
+     "max": 22000,
+     "exemplos": [
+      {
+       "id": "06ukUxfPm90",
+       "titulo": "What If a Caveman Woke Up in Today's World?",
+       "views": 22000
+      },
+      {
+       "id": "OwHWeRInV9c",
+       "titulo": "What If the Sun Suddenly Disappeared Tomorrow?",
+       "views": 1900
+      }
+     ],
+     "indice": 0.09
+    }
+   ]
+  },
+  "UC-QrclM1b36lLkYO-BTfy0Q": {
+   "nome": "Possiblo",
+   "n_videos": 5,
+   "clusters": [
+    {
+     "molde": "what if [X]",
+     "n": 1,
+     "media": 115000,
+     "max": 115000,
+     "exemplos": [
+      {
+       "id": "DYYsGuTpBKc",
+       "titulo": "What If Clothes Disappeared for a Whole Year?",
+       "views": 115000
+      }
+     ],
+     "indice": 4.49
+    },
+    {
+     "molde": "what if you [X] [N] [X]",
+     "n": 1,
+     "media": 10000,
+     "max": 10000,
+     "exemplos": [
+      {
+       "id": "zNjhOJjoQd0",
+       "titulo": "What If You Were the Only Man in a World of 1000 Elf Girls?",
+       "views": 10000
+      }
+     ],
+     "indice": 0.39
+    },
+    {
+     "molde": "what if [X] you [X]",
+     "n": 1,
+     "media": 2400,
+     "max": 2400,
+     "exemplos": [
+      {
+       "id": "ITZt1MxHWYs",
+       "titulo": "What If Everything You Draw Comes Alive?",
+       "views": 2400
+      }
+     ],
+     "indice": 0.09
+    },
+    {
+     "molde": "what if your [X] hour",
+     "n": 1,
+     "media": 506,
+     "max": 506,
+     "exemplos": [
+      {
+       "id": "-lAuGPtE_Wo",
+       "titulo": "What If Your Thoughts Became Real for One Hour?",
+       "views": 506
+      }
+     ],
+     "indice": 0.02
+    },
+    {
+     "molde": "what if you [X]",
+     "n": 1,
+     "media": 292,
+     "max": 292,
+     "exemplos": [
+      {
+       "id": "PPm_vsD_0ik",
+       "titulo": "What If You Were the Last Man With Testosterone?",
+       "views": 292
+      }
+     ],
+     "indice": 0.01
+    }
+   ]
+  },
+  "UCyAdgyZa96XMtWXrpVIv12Q": {
+   "nome": "PlanetIF",
+   "n_videos": 4,
+   "clusters": [
+    {
+     "molde": "what if you [X] [N] [X] your [X]",
+     "n": 2,
+     "media": 66000,
+     "max": 82000,
+     "exemplos": [
+      {
+       "id": "ACYLPE3zBaE",
+       "titulo": "What If You Were Stuck on an Island for 30 Days With Your Crush?",
+       "views": 82000
+      },
+      {
+       "id": "FchsLhDadho",
+       "titulo": "What If You Were Stuck on a Cruise for 30 Days With Your Crush?",
+       "views": 50000
+      }
+     ],
+     "indice": 1.93
+    },
+    {
+     "molde": "what if every [X] you",
+     "n": 1,
+     "media": 3900,
+     "max": 3900,
+     "exemplos": [
+      {
+       "id": "ehlxIHJNDBA",
+       "titulo": "What If Every Girl At School Had a Crush On You?",
+       "views": 3900
+      }
+     ],
+     "indice": 0.11
+    },
+    {
+     "molde": "what if you [X] your [X]",
+     "n": 1,
+     "media": 836,
+     "max": 836,
+     "exemplos": [
+      {
+       "id": "t_05LYQnV8g",
+       "titulo": "What If You Were Kidnapped With Your Crush?",
+       "views": 836
+      }
+     ],
+     "indice": 0.02
+    }
+   ]
+  },
+  "UChGZPomLQmdC7UDt34-aUIA": {
+   "nome": "Stick Saga",
+   "n_videos": 4,
+   "clusters": [
+    {
+     "molde": "what if [X] you",
+     "n": 1,
+     "media": 553000,
+     "max": 553000,
+     "exemplos": [
+      {
+       "id": "UMkVmEO-88I",
+       "titulo": "What If Nobody Could Lie… Except You?",
+       "views": 553000
+      }
+     ],
+     "indice": 2.99
+    },
+    {
+     "molde": "what if you [X] [N] seconds",
+     "n": 1,
+     "media": 171000,
+     "max": 171000,
+     "exemplos": [
+      {
+       "id": "983Mfl8zRjc",
+       "titulo": "What If You Could Rewind Time by 10 Seconds?",
+       "views": 171000
+      }
+     ],
+     "indice": 0.93
+    },
+    {
+     "molde": "what if you [X]",
+     "n": 1,
+     "media": 9800,
+     "max": 9800,
+     "exemplos": [
+      {
+       "id": "ULn4I4gz2jk",
+       "titulo": "What If You Saw Everything in Slow Motion?",
+       "views": 9800
+      }
+     ],
+     "indice": 0.05
+    },
+    {
+     "molde": "what if [X] you [X] your [X] [N]",
+     "n": 1,
+     "media": 5000,
+     "max": 5000,
+     "exemplos": [
+      {
+       "id": "6ukaJjYy6bQ",
+       "titulo": "What If Nobody Could Lie Except You and Your Son? (Episode 2)",
+       "views": 5000
+      }
+     ],
+     "indice": 0.03
+    }
+   ]
+  },
+  "UCkMQyMQcjJtKCiT_Rig1xow": {
+   "nome": "Stupid Dupid ",
+   "n_videos": 14,
+   "clusters": [
+    {
+     "molde": "what if you [X] every [X]",
+     "n": 1,
+     "media": 187000,
+     "max": 187000,
+     "exemplos": [
+      {
+       "id": "oUBrE7YDj1o",
+       "titulo": "What if you could hear every girls thoughts?",
+       "views": 187000
+      }
+     ],
+     "indice": 1.75
+    },
+    {
+     "molde": "what if you [X] your [X]",
+     "n": 3,
+     "media": 185000,
+     "max": 337000,
+     "exemplos": [
+      {
+       "id": "y271pfesEYs",
+       "titulo": "What If You And Your Crush Were Alone On The Planet?",
+       "views": 337000
+      },
+      {
+       "id": "4mdSlCzkT6o",
+       "titulo": "What If You and Your Crush Were the Last Two Humans Alive?",
+       "views": 203000
+      },
+      {
+       "id": "hLNpGNDuFcY",
+       "titulo": "What If You Were the Only Person in a Bunker With Your Crush",
+       "views": 15000
+      }
+     ],
+     "indice": 1.74
+    },
+    {
+     "molde": "what if you [X]",
+     "n": 3,
+     "media": 138666,
+     "max": 334000,
+     "exemplos": [
+      {
+       "id": "RsnpKukfvlw",
+       "titulo": "What If You Turned Into A Girl?",
+       "views": 334000
+      },
+      {
+       "id": "lI3SJQ_PP0g",
+       "titulo": "What If You Could Master Anything Instantly",
+       "views": 66000
+      },
+      {
+       "id": "lpDE60GsJ8A",
+       "titulo": "What If You Could See Everyones Real Attractiveness?",
+       "views": 16000
+      }
+     ],
+     "indice": 1.3
+    },
+    {
+     "molde": "what if you [X] [N] [X]",
+     "n": 1,
+     "media": 106000,
+     "max": 106000,
+     "exemplos": [
+      {
+       "id": "ECnEJef7vsE",
+       "titulo": "What If You Were The Only Man On An Island of 100 Native American Girls?",
+       "views": 106000
+      }
+     ],
+     "indice": 0.99
+    },
+    {
+     "molde": "what if every [X] you [X] you [N] [X]",
+     "n": 1,
+     "media": 64000,
+     "max": 64000,
+     "exemplos": [
+      {
+       "id": "cjfPcGIQJDc",
+       "titulo": "What If Every Step You Took Earned You 1 Dollar?",
+       "views": 64000
+      }
+     ],
+     "indice": 0.6
+    },
+    {
+     "molde": "what if [X] what your [X]",
+     "n": 1,
+     "media": 58000,
+     "max": 58000,
+     "exemplos": [
+      {
+       "id": "kjFVpv9b35U",
+       "titulo": "What If Everyone Could Hear What Your Thinking?",
+       "views": 58000
+      }
+     ],
+     "indice": 0.54
+    },
+    {
+     "molde": "what if you [X] [N] [X] your [X]",
+     "n": 1,
+     "media": 48000,
+     "max": 48000,
+     "exemplos": [
+      {
+       "id": "XbbYUjWxxfQ",
+       "titulo": "What If You Had 7 Days Left With Your Crush",
+       "views": 48000
+      }
+     ],
+     "indice": 0.45
+    },
+    {
+     "molde": "what if your [X] every [X]",
+     "n": 1,
+     "media": 35000,
+     "max": 35000,
+     "exemplos": [
+      {
+       "id": "fFvBLCsZZ3E",
+       "titulo": "What If Your Crush Confessed Every Day",
+       "views": 35000
+      }
+     ],
+     "indice": 0.33
+    },
+    {
+     "molde": "what if you [X] your [X] [N] [X]",
+     "n": 1,
+     "media": 20000,
+     "max": 20000,
+     "exemplos": [
+      {
+       "id": "s5NiJPN7GiQ",
+       "titulo": "What If You and Your Crush Were the Last 2 People Stuck on an Island",
+       "views": 20000
+      }
+     ],
+     "indice": 0.19
+    },
+    {
+     "molde": "what if all your [X]",
+     "n": 1,
+     "media": 3400,
+     "max": 3400,
+     "exemplos": [
+      {
+       "id": "QO9fCZRup9A",
+       "titulo": "What If All Your Lies Came True?”",
+       "views": 3400
+      }
+     ],
+     "indice": 0.03
+    }
+   ]
+  },
+  "UCdvbGznFEcB7E3IS7Wo-F7A": {
+   "nome": "IfYou Films",
+   "n_videos": 12,
+   "clusters": [
+    {
+     "molde": "[X] what if you [X]",
+     "n": 1,
+     "media": 652000,
+     "max": 652000,
+     "exemplos": [
+      {
+       "id": "Q4phfD_oBoY",
+       "titulo": "Zombie Outbreak: What If YOU Were Patient Zero?",
+       "views": 652000
+      }
+     ],
+     "indice": 6.73
+    },
+    {
+     "molde": "[X] what if you [X] [N]",
+     "n": 2,
+     "media": 125500,
+     "max": 162000,
+     "exemplos": [
+      {
+       "id": "KH0-lytwKXA",
+       "titulo": "Zombie Outbreak: What If YOU Were Patient Zero? (Part 2)",
+       "views": 162000
+      },
+      {
+       "id": "59F30vIEPtI",
+       "titulo": "Zombie Outbreak: What If YOU Were Patient Zero? (Part 3)",
+       "views": 89000
+      }
+     ],
+     "indice": 1.3
+    },
+    {
+     "molde": "what if you [X] [N] [X]",
+     "n": 1,
+     "media": 67000,
+     "max": 67000,
+     "exemplos": [
+      {
+       "id": "PBGf69ozFd8",
+       "titulo": "What IF You Had 9 Lives?",
+       "views": 67000
+      }
+     ],
+     "indice": 0.69
+    },
+    {
+     "molde": "what if you [X] your [X]",
+     "n": 1,
+     "media": 39000,
+     "max": 39000,
+     "exemplos": [
+      {
+       "id": "2ezEIGffePI",
+       "titulo": "What If You Had to Repopulate Earth With Your Ex?",
+       "views": 39000
+      }
+     ],
+     "indice": 0.4
+    },
+    {
+     "molde": "what if you [X]",
+     "n": 3,
+     "media": 37466,
+     "max": 92000,
+     "exemplos": [
+      {
+       "id": "IpnFpRZiDtU",
+       "titulo": "What If You Were the Only Person Left on Earth?",
+       "views": 92000
+      },
+      {
+       "id": "C4PIjoNkyKA",
+       "titulo": "What If You Got Trapped in Walmart After Closing?",
+       "views": 16000
+      },
+      {
+       "id": "jilysj2t7Do",
+       "titulo": "What If You Got Trapped in an Underwater Cave?",
+       "views": 4400
+      }
+     ],
+     "indice": 0.39
+    },
+    {
+     "molde": "what if every [X] you",
+     "n": 1,
+     "media": 22000,
+     "max": 22000,
+     "exemplos": [
+      {
+       "id": "SzkE2nANhOo",
+       "titulo": "What If Every Girl on Earth Had a Crush on You?",
+       "views": 22000
+      }
+     ],
+     "indice": 0.23
+    },
+    {
+     "molde": "[X] what if you [X] your [X]",
+     "n": 1,
+     "media": 9200,
+     "max": 9200,
+     "exemplos": [
+      {
+       "id": "FaRXENxTB30",
+       "titulo": "Nuclear Apocalypse: What If You Were Locked With Your Crush?",
+       "views": 9200
+      }
+     ],
+     "indice": 0.09
+    },
+    {
+     "molde": "what if you [X] all your [X]",
+     "n": 1,
+     "media": 9100,
+     "max": 9100,
+     "exemplos": [
+      {
+       "id": "5WLrCNRg2lE",
+       "titulo": "What If You Got Younger With All Your Memories?",
+       "views": 9100
+      }
+     ],
+     "indice": 0.09
+    },
+    {
+     "molde": "what if you [X] how [X] you",
+     "n": 1,
+     "media": 1000,
+     "max": 1000,
+     "exemplos": [
+      {
+       "id": "DCfxpCDo1rU",
+       "titulo": "What If You Knew Exactly How Much Everyone Likes You?",
+       "views": 1000
+      }
+     ],
+     "indice": 0.01
+    }
+   ]
+  },
+  "UCt-GhchW5nGSjr-ETeGab_g": {
+   "nome": "ConChaser",
+   "n_videos": 20,
+   "clusters": [
+    {
+     "molde": "what if you [X]",
+     "n": 6,
+     "media": 843666,
+     "max": 1800000,
+     "exemplos": [
+      {
+       "id": "DK4EOHCrVvM",
+       "titulo": "What If You Could See Everyone's Future Wealth?",
+       "views": 1800000
+      },
+      {
+       "id": "2TsZSQ77E9o",
+       "titulo": "What If You Could See Everyone's IQ?",
+       "views": 1700000
+      },
+      {
+       "id": "i7xw0ZRT-DI",
+       "titulo": "What If You Could See Everyone's Future Height?",
+       "views": 937000
+      }
+     ],
+     "indice": 2.3
+    },
+    {
+     "molde": "what if you [X] how [X] you",
+     "n": 1,
+     "media": 669000,
+     "max": 669000,
+     "exemplos": [
+      {
+       "id": "iKZw4OZ6S6E",
+       "titulo": "What If You Could See How Many People Have a Crush on You?",
+       "views": 669000
+      }
+     ],
+     "indice": 1.82
+    },
+    {
+     "molde": "what if you [X] who [X] you [X]",
+     "n": 1,
+     "media": 581000,
+     "max": 581000,
+     "exemplos": [
+      {
+       "id": "k00lF9AQx0U",
+       "titulo": "What If You Could See Who Finds You Attractive?",
+       "views": 581000
+      }
+     ],
+     "indice": 1.58
+    },
+    {
+     "molde": "what if you [X] how [X]",
+     "n": 3,
+     "media": 169000,
+     "max": 264000,
+     "exemplos": [
+      {
+       "id": "L3PPO4MdLyY",
+       "titulo": "What If You Could See How Many Days People Have Left?",
+       "views": 264000
+      },
+      {
+       "id": "dlJ_roZ_fAM",
+       "titulo": "What If You Could See How Many Lives Everyone Has Saved?",
+       "views": 174000
+      },
+      {
+       "id": "grnsQxRNEII",
+       "titulo": "What If You Could See How Many Partners Everyone Has Had?",
+       "views": 69000
+      }
+     ],
+     "indice": 0.46
+    },
+    {
+     "molde": "what if you [X] [N] seconds [X]",
+     "n": 1,
+     "media": 162000,
+     "max": 162000,
+     "exemplos": [
+      {
+       "id": "BepbYfGBO5I",
+       "titulo": "What If You Could See 10 Seconds Into the Future?",
+       "views": 162000
+      }
+     ],
+     "indice": 0.44
+    },
+    {
+     "molde": "what if you [X] [N] [X] all your [X]",
+     "n": 1,
+     "media": 106000,
+     "max": 106000,
+     "exemplos": [
+      {
+       "id": "JvorMSW9zDE",
+       "titulo": "What If You Went Back 10 Years With All Your Memories?",
+       "views": 106000
+      }
+     ],
+     "indice": 0.29
+    },
+    {
+     "molde": "what if you [X] who [X] you",
+     "n": 1,
+     "media": 65000,
+     "max": 65000,
+     "exemplos": [
+      {
+       "id": "qpfFDh9ZTWc",
+       "titulo": "What If You Could See Who Is Smarter Than You?",
+       "views": 65000
+      }
+     ],
+     "indice": 0.18
+    },
+    {
+     "molde": "what if you [X] who [X] your [X]",
+     "n": 1,
+     "media": 51000,
+     "max": 51000,
+     "exemplos": [
+      {
+       "id": "FWiZVL0ekwg",
+       "titulo": "What If You Could See Who Talks Behind Your Back?",
+       "views": 51000
+      }
+     ],
+     "indice": 0.14
+    },
+    {
+     "molde": "what if you [X] who [X]",
+     "n": 2,
+     "media": 42500,
+     "max": 60000,
+     "exemplos": [
+      {
+       "id": "r-2AwgUYods",
+       "titulo": "What If You Could See Who Will Become Famous?",
+       "views": 60000
+      },
+      {
+       "id": "WefHf8KgZHM",
+       "titulo": "What If You Could See Who the Antichrist Is?",
+       "views": 25000
+      }
+     ],
+     "indice": 0.12
+    },
+    {
+     "molde": "what if [X] your [X]",
+     "n": 1,
+     "media": 29000,
+     "max": 29000,
+     "exemplos": [
+      {
+       "id": "-TobwH3z_7k",
+       "titulo": "What If Everyone Could Hear Your Thoughts?",
+       "views": 29000
+      }
+     ],
+     "indice": 0.08
+    },
+    {
+     "molde": "what if you [X] [N] [X]",
+     "n": 1,
+     "media": 23000,
+     "max": 23000,
+     "exemplos": [
+      {
+       "id": "PQ5n2vlysBc",
+       "titulo": "What If You Played GTA 6 Before Anyone Else?",
+       "views": 23000
+      }
+     ],
+     "indice": 0.06
+    },
+    {
+     "molde": "what if [X] your [X] history",
+     "n": 1,
+     "media": 1400,
+     "max": 1400,
+     "exemplos": [
+      {
+       "id": "gDILE0DwzfI",
+       "titulo": "What If Everyone Could See Your Search History?",
+       "views": 1400
+      }
+     ],
+     "indice": 0.0
+    }
+   ]
+  },
+  "UCYbIl0eyQSt3MyaVdmq55Zg": {
+   "nome": "Flowstate Motion",
+   "n_videos": 15,
+   "clusters": [
+    {
+     "molde": "what if you [X]",
+     "n": 6,
+     "media": 30750,
+     "max": 145000,
+     "exemplos": [
+      {
+       "id": "2cy8FXdrhoI",
+       "titulo": "What IF You Turned Into a Girl For a Day?",
+       "views": 145000
+      },
+      {
+       "id": "EcaDR-rM-4s",
+       "titulo": "What IF You Turned Into a Girl For a Week?",
+       "views": 34000
+      },
+      {
+       "id": "S2x5j8mrtkE",
+       "titulo": "What IF You Were The Last Man Left in The World?",
+       "views": 2400
+      }
+     ],
+     "indice": 2.32
+    },
+    {
+     "molde": "what if you [X] who [X] you",
+     "n": 1,
+     "media": 9100,
+     "max": 9100,
+     "exemplos": [
+      {
+       "id": "xL5p2GADHQI",
+       "titulo": "What IF You Could See Who Secretly Loves You?",
+       "views": 9100
+      }
+     ],
+     "indice": 0.69
+    },
+    {
+     "molde": "what if your [X]",
+     "n": 1,
+     "media": 3500,
+     "max": 3500,
+     "exemplos": [
+      {
+       "id": "xYe6lxtZu8A",
+       "titulo": "What IF Your Crush Moved In Next Door?",
+       "views": 3500
+      }
+     ],
+     "indice": 0.26
+    },
+    {
+     "molde": "what if you [X] your [X]",
+     "n": 2,
+     "media": 377,
+     "max": 579,
+     "exemplos": [
+      {
+       "id": "fOT5k8CNkVU",
+       "titulo": "What IF You Saved Your School From a Zombie Apocalypse?",
+       "views": 579
+      },
+      {
+       "id": "5Cua9W-EZ94",
+       "titulo": "What IF You Were Stranded On an Island With Your Crush?",
+       "views": 176
+      }
+     ],
+     "indice": 0.03
+    },
+    {
+     "molde": "what if your best [X]",
+     "n": 1,
+     "media": 329,
+     "max": 329,
+     "exemplos": [
+      {
+       "id": "xAMiL-lZCC8",
+       "titulo": "What IF Your Best Friend Turned Into a Girl?",
+       "views": 329
+      }
+     ],
+     "indice": 0.02
+    },
+    {
+     "molde": "what if you [X] [N] [X] every [X]",
+     "n": 1,
+     "media": 310,
+     "max": 310,
+     "exemplos": [
+      {
+       "id": "gjnOmaDt2zk",
+       "titulo": "What IF You Got $1 For Every Look?",
+       "views": 310
+      }
+     ],
+     "indice": 0.02
+    },
+    {
+     "molde": "what if [X] was [X]",
+     "n": 1,
+     "media": 212,
+     "max": 212,
+     "exemplos": [
+      {
+       "id": "iYBqAKBaRC8",
+       "titulo": "What IF Real Life Was Pay To Win?",
+       "views": 212
+      }
+     ],
+     "indice": 0.02
+    },
+    {
+     "molde": "what if you [X] how [X]",
+     "n": 1,
+     "media": 203,
+     "max": 203,
+     "exemplos": [
+      {
+       "id": "Uyw3Iyqd7L8",
+       "titulo": "What If You Could See How Many Crimes Everyone Has Committed?",
+       "views": 203
+      }
+     ],
+     "indice": 0.02
+    },
+    {
+     "molde": "what if you [X] you",
+     "n": 1,
+     "media": 106,
+     "max": 106,
+     "exemplos": [
+      {
+       "id": "y-aBqinFM-I",
+       "titulo": "What If You Let AI Do Everything For You?",
+       "views": 106
+      }
+     ],
+     "indice": 0.01
+    }
+   ]
+  },
+  "UCGdsFp5xGVFQL86nrKL2vJw": {
+   "nome": "Modo ¿Y si?",
+   "n_videos": 7,
+   "clusters": [
+    {
+     "molde": "[X] si [X] [N] [X]",
+     "n": 2,
+     "media": 178000,
+     "max": 221000,
+     "exemplos": [
+      {
+       "id": "T4gNCuuXxf4",
+       "titulo": "¿Y si despertaras con 1000 de IQ?",
+       "views": 221000
+      },
+      {
+       "id": "K-_VRH-zgUE",
+       "titulo": "¿Y si reaccionaras 100 veces más rápido?",
+       "views": 135000
+      }
+     ],
+     "indice": 3.32
+    },
+    {
+     "molde": "[X] si [X] todos tus [X]",
+     "n": 1,
+     "media": 12000,
+     "max": 12000,
+     "exemplos": [
+      {
+       "id": "6Q9VSJk7zMM",
+       "titulo": "¿Y si despertaras en el kínder con todos tus recuerdos?",
+       "views": 12000
+      }
+     ],
+     "indice": 0.22
+    },
+    {
+     "molde": "[X] si [X] [N] segundos [X]",
+     "n": 1,
+     "media": 2600,
+     "max": 2600,
+     "exemplos": [
+      {
+       "id": "a4JDli578Lg",
+       "titulo": "¿Y si pudieras ver 5 segundos del futuro?",
+       "views": 2600
+      }
+     ],
+     "indice": 0.05
+    },
+    {
+     "molde": "[X] si [X] cada [X]",
+     "n": 2,
+     "media": 2381,
+     "max": 3900,
+     "exemplos": [
+      {
+       "id": "eYfJTdPSrBY",
+       "titulo": "¿Y si fueras el DOBLE de fuerte cada día?",
+       "views": 3900
+      },
+      {
+       "id": "DhQ97KS4vKY",
+       "titulo": "¿Y si vieras cuántas MENTIRAS dice cada persona?",
+       "views": 863
+      }
+     ],
+     "indice": 0.04
+    },
+    {
+     "molde": "[X] si todos [X] tus [X]",
+     "n": 1,
+     "media": 322,
+     "max": 322,
+     "exemplos": [
+      {
+       "id": "_UttKauGuNQ",
+       "titulo": "¿Y si todos pudieran escuchar tus pensamientos?",
+       "views": 322
+      }
+     ],
+     "indice": 0.01
+    }
+   ]
+  },
+  "UCyjGHJ3f-llEKw5xwJOZ2yw": {
+   "nome": "IMAGINA ESTO",
+   "n_videos": 6,
+   "clusters": [
+    {
+     "molde": "[X] si [X]",
+     "n": 1,
+     "media": 347000,
+     "max": 347000,
+     "exemplos": [
+      {
+       "id": "Cj4ykHQaNkY",
+       "titulo": "¿Y si fueras el ÚNICO CHICO en una escuela solo para chicas?",
+       "views": 347000
+      }
+     ],
+     "indice": 4.54
+    },
+    {
+     "molde": "[X] si [X] tu [X]",
+     "n": 1,
+     "media": 65000,
+     "max": 65000,
+     "exemplos": [
+      {
+       "id": "dts5UAiLcAc",
+       "titulo": "¿Y si controlaras los sueños de tu CRUSH?",
+       "views": 65000
+      }
+     ],
+     "indice": 0.85
+    },
+    {
+     "molde": "[X] si todos se [X] tu",
+     "n": 1,
+     "media": 25000,
+     "max": 25000,
+     "exemplos": [
+      {
+       "id": "mZdzx1gzK0M",
+       "titulo": " ¿Y si Todos se Volvieran Niños Menos Tú?",
+       "views": 25000
+      }
+     ],
+     "indice": 0.33
+    },
+    {
+     "molde": "[X] si [X] tu",
+     "n": 1,
+     "media": 11000,
+     "max": 11000,
+     "exemplos": [
+      {
+       "id": "qaphGTNbSMw",
+       "titulo": "¿Y si nadie pudiera SALVARLOS… excepto TÚ?",
+       "views": 11000
+      }
+     ],
+     "indice": 0.14
+    },
+    {
+     "molde": "[X] si tus [X] [N] [X]",
+     "n": 1,
+     "media": 7900,
+     "max": 7900,
+     "exemplos": [
+      {
+       "id": "M8y1nJzvzdk",
+       "titulo": "¿Y si tus REFLEJOS fueran 100 veces más RÁPIDOS?",
+       "views": 7900
+      }
+     ],
+     "indice": 0.1
+    },
+    {
+     "molde": "[X] si tu [X] se [X] todos [X]",
+     "n": 1,
+     "media": 2500,
+     "max": 2500,
+     "exemplos": [
+      {
+       "id": "ZnwLf6Rt_BY",
+       "titulo": "¿Y si tu fuerza se duplicara TODOS los días ?",
+       "views": 2500
+      }
+     ],
+     "indice": 0.03
+    }
+   ]
+  },
+  "UC1vEorUPyH9RlT6GOJc4Exg": {
+   "nome": "Y si Films",
+   "n_videos": 8,
+   "clusters": [
+    {
+     "molde": "[X] si [X] [N] [X]",
+     "n": 2,
+     "media": 45000,
+     "max": 74000,
+     "exemplos": [
+      {
+       "id": "2YEQrKLIxPQ",
+       "titulo": "¿Y si reaccionaras 100 veces más rápido?",
+       "views": 74000
+      },
+      {
+       "id": "KMKEU_n92Iw",
+       "titulo": "¿Y si tuvieras 1000 de IQ para hacer lo que quieras?",
+       "views": 16000
+      }
+     ],
+     "indice": 2.88
+    },
+    {
+     "molde": "[X] si [X] todos tus [X]",
+     "n": 1,
+     "media": 17000,
+     "max": 17000,
+     "exemplos": [
+      {
+       "id": "qSS9TcMTqbM",
+       "titulo": "¿Y si despertaras en el kínder con todos tus recuerdos?",
+       "views": 17000
+      }
+     ],
+     "indice": 1.09
+    },
+    {
+     "molde": "[X] si [X]",
+     "n": 2,
+     "media": 4900,
+     "max": 7100,
+     "exemplos": [
+      {
+       "id": "-EhrIIig5oU",
+       "titulo": "¿Y si dejaras de sentir dolor para siempre?",
+       "views": 7100
+      },
+      {
+       "id": "5pg5Pk1KwIU",
+       "titulo": "¿Y si reaccionaras a la velocidad de la luz?",
+       "views": 2700
+      }
+     ],
+     "indice": 0.31
+    },
+    {
+     "molde": "[X] si [X] cada [X]",
+     "n": 1,
+     "media": 3700,
+     "max": 3700,
+     "exemplos": [
+      {
+       "id": "mH8TBZ4CCic",
+       "titulo": "¿Y si pudieras ver cuánto dinero tendrá cada persona?",
+       "views": 3700
+      }
+     ],
+     "indice": 0.24
+    },
+    {
+     "molde": "[X] si [X] [N] [X] tu [X]",
+     "n": 1,
+     "media": 3100,
+     "max": 3100,
+     "exemplos": [
+      {
+       "id": "kUrmoKFKONQ",
+       "titulo": "¿Y si solo pudieras teletransportarte 100 veces en tu vida?",
+       "views": 3100
+      }
+     ],
+     "indice": 0.2
+    },
+    {
+     "molde": "[X] si [X] verdad",
+     "n": 1,
+     "media": 1200,
+     "max": 1200,
+     "exemplos": [
+      {
+       "id": "faA1c_yklVg",
+       "titulo": "¿Y si pudieras ver cuánto te aman de verdad?",
+       "views": 1200
+      }
+     ],
+     "indice": 0.08
+    }
+   ]
+  },
+  "UCl_ZmhmkjsD9uiVafc8jYzg": {
+   "nome": "Sifinito",
+   "n_videos": 8,
+   "clusters": [
+    {
+     "molde": "[X] si [X] [N] [X] tu [X]",
+     "n": 1,
+     "media": 56000,
+     "max": 56000,
+     "exemplos": [
+      {
+       "id": "h_izTr3gxdo",
+       "titulo": "¿Y si te quedaras encerrado 30 días en la escuela con tu crush?",
+       "views": 56000
+      }
+     ],
+     "indice": 5.0
+    },
+    {
+     "molde": "[X] si [X] tu [X]",
+     "n": 1,
+     "media": 21000,
+     "max": 21000,
+     "exemplos": [
+      {
+       "id": "8B5NYvhSWcY",
+       "titulo": "¿Y si quedaras atrapado con tu crush en un búnker?",
+       "views": 21000
+      }
+     ],
+     "indice": 1.88
+    },
+    {
+     "molde": "what if your [X] was [X] you",
+     "n": 1,
+     "media": 6500,
+     "max": 6500,
+     "exemplos": [
+      {
+       "id": "oT2IzUAcpnA",
+       "titulo": "What if your crush was a zombie but still remembered you?",
+       "views": 6500
+      }
+     ],
+     "indice": 0.58
+    },
+    {
+     "molde": "what if you [X] your [X]",
+     "n": 1,
+     "media": 2400,
+     "max": 2400,
+     "exemplos": [
+      {
+       "id": "4KbAhTFSIyw",
+       "titulo": "What If You Were Trapped in Minecraft With Your Crush?",
+       "views": 2400
+      }
+     ],
+     "indice": 0.21
+    },
+    {
+     "molde": "[X] si tu [X]",
+     "n": 1,
+     "media": 2400,
+     "max": 2400,
+     "exemplos": [
+      {
+       "id": "U4MUWttAHOA",
+       "titulo": "¿Y si tu avión cayera en la selva?",
+       "views": 2400
+      }
+     ],
+     "indice": 0.21
+    },
+    {
+     "molde": "what if you [X] [N] [X] your [X]",
+     "n": 1,
+     "media": 607,
+     "max": 607,
+     "exemplos": [
+      {
+       "id": "F3nSu-O_1Fo",
+       "titulo": "What if you woke up 20,000 years ago with your crush?",
+       "views": 607
+      }
+     ],
+     "indice": 0.05
+    },
+    {
+     "molde": "[X] si [X] cada [X]",
+     "n": 2,
+     "media": 331,
+     "max": 390,
+     "exemplos": [
+      {
+       "id": "ewV8ccoPHHY",
+       "titulo": "¿Y si pudieras ver cuánto va a medir cada persona?",
+       "views": 390
+      },
+      {
+       "id": "y_OIOg7vPtQ",
+       "titulo": "¿Y si pudieras ver cuántos seguidores va a tener cada persona?",
+       "views": 272
+      }
+     ],
+     "indice": 0.03
+    }
+   ]
+  },
+  "UC1QzF-rDVX9VKdz5eDU0uSg": {
+   "nome": "FrameTime",
+   "n_videos": 7,
+   "clusters": [
+    {
+     "molde": "was [X] wenn [X] [N] [X]",
+     "n": 1,
+     "media": 79000,
+     "max": 79000,
+     "exemplos": [
+      {
+       "id": "QHZbgmzPAdg",
+       "titulo": "Was passiert, wenn die ganze Welt gleichzeitig GTA 6 startet?",
+       "views": 79000
+      }
+     ],
+     "indice": 3.53
+    },
+    {
+     "molde": "[N] [X] [N] [X] [N] [X]",
+     "n": 1,
+     "media": 42000,
+     "max": 42000,
+     "exemplos": [
+      {
+       "id": "5zursF6JRWo",
+       "titulo": "10 Dinge, die du an Tag 1 in GTA 6 auf KEINEN Fall machen darfst",
+       "views": 42000
+      }
+     ],
+     "indice": 1.88
+    },
+    {
+     "molde": "was [X] [N] [X] alle [X]",
+     "n": 1,
+     "media": 22000,
+     "max": 22000,
+     "exemplos": [
+      {
+       "id": "PFNGZ-UCkLA",
+       "titulo": "Was im GTA 6 Preload steckt (alle neuen Funde)",
+       "views": 22000
+      }
+     ],
+     "indice": 0.98
+    },
+    {
+     "molde": "[X] [N] [X]",
+     "n": 1,
+     "media": 6400,
+     "max": 6400,
+     "exemplos": [
+      {
+       "id": "SRGvq-ybm3U",
+       "titulo": "GTA 6 in Real Life: Diese Orte gibt es wirklich",
+       "views": 6400
+      }
+     ],
+     "indice": 0.29
+    },
+    {
+     "molde": "[X] [N]",
+     "n": 1,
+     "media": 2800,
+     "max": 2800,
+     "exemplos": [
+      {
+       "id": "Oq_TvduxK2I",
+       "titulo": "So erfindet Rockstar die Autos in GTA 6",
+       "views": 2800
+      }
+     ],
+     "indice": 0.13
+    },
+    {
+     "molde": "warum dein [X] [N] [X]",
+     "n": 1,
+     "media": 2300,
+     "max": 2300,
+     "exemplos": [
+      {
+       "id": "LNdB68O9gpU",
+       "titulo": "Warum dein erster Überfall in GTA 6 schiefgeht..",
+       "views": 2300
+      }
+     ],
+     "indice": 0.1
+    },
+    {
+     "molde": "warum [X] [N] [X]",
+     "n": 1,
+     "media": 2200,
+     "max": 2200,
+     "exemplos": [
+      {
+       "id": "UqukufTMJ20",
+       "titulo": "Warum GTA 6 so realistisch aussieht",
+       "views": 2200
+      }
+     ],
+     "indice": 0.1
+    }
+   ]
+  },
+  "UCPHpBHgJEM12OLkwsmh7Ymg": {
+   "nome": "Matthias Vogel - Bestattungsdienste",
+   "n_videos": 7,
+   "clusters": [
+    {
+     "molde": "was [X] wenn [X]",
+     "n": 1,
+     "media": 110000,
+     "max": 110000,
+     "exemplos": [
+      {
+       "id": "y76F0FP_POA",
+       "titulo": "Was WIRKLICH Auf Deutschen Friedhöfen Passiert,Wenn Die Familie Das Grab Verlässt(Das Sieht NIEMAND)",
+       "views": 110000
+      }
+     ],
+     "indice": 2.7
+    },
+    {
+     "molde": "[X] [N] [X] erklart",
+     "n": 1,
+     "media": 45000,
+     "max": 45000,
+     "exemplos": [
+      {
+       "id": "oInyuYHgpdc",
+       "titulo": "Nach 10 Jahren Im Sarg In Deutschland: DAS Bleibt Von Deinem Körper Übrig — Ein Bestatter Erklärt",
+       "views": 45000
+      }
+     ],
+     "indice": 1.11
+    },
+    {
+     "molde": "[N] [X]",
+     "n": 3,
+     "media": 41018,
+     "max": 121000,
+     "exemplos": [
+      {
+       "id": "sRKHhxiAD-Y",
+       "titulo": "7 Dinge, Die WIRKLICH Mit Deinem Körper Im Kremationsofen In Deutschland Passieren",
+       "views": 121000
+      },
+      {
+       "id": "HBgqenLL3BY",
+       "titulo": "9 Dinge, Die Mit Deinem Körper Passieren, BEVOR Er In Den Kremationsofen Kommt",
+       "views": 1400
+      },
+      {
+       "id": "qj9svJSIL4Q",
+       "titulo": "5 Dinge, Die Deutsche Bestatter Mit Deinen Liebsten Machen (Und Dir NIE Sagen)",
+       "views": 655
+      }
+     ],
+     "indice": 1.01
+    },
+    {
+     "molde": "was [X] erklart",
+     "n": 1,
+     "media": 6700,
+     "max": 6700,
+     "exemplos": [
+      {
+       "id": "S6WoD1myPXQ",
+       "titulo": "Was In Der Ersten Woche Im Sarg Mit Deinem Körper Passiert — Ein Deutscher Bestatter Erklärt",
+       "views": 6700
+      }
+     ],
+     "indice": 0.16
+    },
+    {
+     "molde": "was [X] was du [X]",
+     "n": 1,
+     "media": 204,
+     "max": 204,
+     "exemplos": [
+      {
+       "id": "2K_l8XXCsmE",
+       "titulo": "Was Mit Deinem Körper Im Verschlossenen Sarg Passiert — Deutscher Bestatter Zeigt, Was Du NIE Siehst",
+       "views": 204
+      }
+     ],
+     "indice": 0.01
+    }
+   ]
+  },
+  "UCAHyOZ9vigNeQtzIKBb8Csg": {
+   "nome": "Monopology",
+   "n_videos": 6,
+   "clusters": [
+    {
+     "molde": "was [X] wenn du [X]",
+     "n": 2,
+     "media": 72550,
+     "max": 142000,
+     "exemplos": [
+      {
+       "id": "b7tqetMTvOE",
+       "titulo": "Was wäre, wenn du mit ALLEN Erinnerungen wiedergeboren wirst?",
+       "views": 142000
+      },
+      {
+       "id": "L_CBcpQxUHM",
+       "titulo": "Was wäre, wenn du im echten Leben nur EINMAL speichern könntest?",
+       "views": 3100
+      }
+     ],
+     "indice": 1.85
+    },
+    {
+     "molde": "was [X] wenn dein [X]",
+     "n": 1,
+     "media": 54000,
+     "max": 54000,
+     "exemplos": [
+      {
+       "id": "DIbh-XHANLA",
+       "titulo": "Was wäre, wenn dein IQ JEDEN Tag steigt?",
+       "views": 54000
+      }
+     ],
+     "indice": 1.37
+    },
+    {
+     "molde": "was [X] wenn du alle [X]",
+     "n": 1,
+     "media": 20000,
+     "max": 20000,
+     "exemplos": [
+      {
+       "id": "OuuzAFugGVI",
+       "titulo": "Was wäre, wenn du ALLE Gedanken über dich hören könntest?",
+       "views": 20000
+      }
+     ],
+     "indice": 0.51
+    },
+    {
+     "molde": "was [X] wenn [X]",
+     "n": 1,
+     "media": 15000,
+     "max": 15000,
+     "exemplos": [
+      {
+       "id": "1jU9QlSl_50",
+       "titulo": "Was wäre, wenn die Berliner Mauer NIE gefallen wäre?",
+       "views": 15000
+      }
+     ],
+     "indice": 0.38
+    },
+    {
+     "molde": "was [X] wenn jeder [X] [N] [X]",
+     "n": 1,
+     "media": 1600,
+     "max": 1600,
+     "exemplos": [
+      {
+       "id": "9LtHWyHKYws",
+       "titulo": "Was passiert, wenn JEDER Mensch 100 % gibt?",
+       "views": 1600
+      }
+     ],
+     "indice": 0.04
+    }
+   ]
+  },
+  "UC8S2qnGR4ptTRkT7bUgUfkg": {
+   "nome": "T+0",
+   "n_videos": 1,
+   "clusters": [
+    {
+     "molde": "what if [X]",
+     "n": 1,
+     "media": 335000,
+     "max": 335000,
+     "exemplos": [
+      {
+       "id": "-EHMs-LZWcc",
+       "titulo": "What If Russia Dropped a Nuclear Bomb on Germany? | T+0",
+       "views": 335000
+      }
+     ],
+     "indice": 1.0
+    }
+   ]
+  },
+  "UCjXCoo0SOXZD8BFgb5ABlMg": {
+   "nome": "IFNation",
+   "n_videos": 10,
+   "clusters": [
+    {
+     "molde": "what if [X] your [X]",
+     "n": 1,
+     "media": 809000,
+     "max": 809000,
+     "exemplos": [
+      {
+       "id": "zqQZXZ-eUnE",
+       "titulo": "What If Everyone Could Hear Your Thoughts?",
+       "views": 809000
+      }
+     ],
+     "indice": 3.38
+    },
+    {
+     "molde": "what if you [X] [N] [X] every [X] you [X]",
+     "n": 1,
+     "media": 487000,
+     "max": 487000,
+     "exemplos": [
+      {
+       "id": "Ba6P05ndlw4",
+       "titulo": "What If You Grew 1 Inch Every Time You Said Sorry?",
+       "views": 487000
+      }
+     ],
+     "indice": 2.03
+    },
+    {
+     "molde": "what if you [X] [N] [X]",
+     "n": 1,
+     "media": 416000,
+     "max": 416000,
+     "exemplos": [
+      {
+       "id": "G63ZpgzmSGo",
+       "titulo": "What If You Had 500 Charisma?",
+       "views": 416000
+      }
+     ],
+     "indice": 1.74
+    },
+    {
+     "molde": "what if you [X] what [X] your [X]",
+     "n": 1,
+     "media": 279000,
+     "max": 279000,
+     "exemplos": [
+      {
+       "id": "QNWwwpcVDHU",
+       "titulo": "What If You Could Hear What Everyone Says Behind Your Back?",
+       "views": 279000
+      }
+     ],
+     "indice": 1.16
+    },
+    {
+     "molde": "what if you [X] who [X] you",
+     "n": 2,
+     "media": 114250,
+     "max": 221000,
+     "exemplos": [
+      {
+       "id": "EeruWNQ0CDM",
+       "titulo": "What If You Could See Who Misses You?",
+       "views": 221000
+      },
+      {
+       "id": "WhnlFrGeCow",
+       "titulo": "What If You Could See Who Secretly Has a Crush on You?",
+       "views": 7500
+      }
+     ],
+     "indice": 0.48
+    },
+    {
+     "molde": "what if you [X] who [X] your [X]",
+     "n": 1,
+     "media": 88000,
+     "max": 88000,
+     "exemplos": [
+      {
+       "id": "1QZ0EuH46rU",
+       "titulo": "What If You Could See Who Would Come to Your Funeral?",
+       "views": 88000
+      }
+     ],
+     "indice": 0.37
+    },
+    {
+     "molde": "what if you [X] how [X] you",
+     "n": 1,
+     "media": 43000,
+     "max": 43000,
+     "exemplos": [
+      {
+       "id": "QsRdIy2CQ-I",
+       "titulo": "What If You Could See How Much Everyone Envies You?",
+       "views": 43000
+      }
+     ],
+     "indice": 0.18
+    },
+    {
+     "molde": "what if you [X] your [X]",
+     "n": 1,
+     "media": 24000,
+     "max": 24000,
+     "exemplos": [
+      {
+       "id": "anJnDZ8OjN4",
+       "titulo": "What If You Could See Who's Faking Being Your Friend?",
+       "views": 24000
+      }
+     ],
+     "indice": 0.1
+    },
+    {
+     "molde": "what if every [X] you",
+     "n": 1,
+     "media": 21000,
+     "max": 21000,
+     "exemplos": [
+      {
+       "id": "8rvHH0DoWyY",
+       "titulo": "What If Every Girl on Earth Had a Crush on You",
+       "views": 21000
+      }
+     ],
+     "indice": 0.09
+    }
+   ]
+  },
+  "UCK1hJeCCw4swOXOkYXyWo8A": {
+   "nome": "IFANIME",
+   "n_videos": 11,
+   "clusters": [
+    {
+     "molde": "what if you [X]",
+     "n": 10,
+     "media": 96857,
+     "max": 479000,
+     "exemplos": [
+      {
+       "id": "lDhzDKKWYr4",
+       "titulo": "What If YOU Went Super Saiyan in Real Life?",
+       "views": 479000
+      },
+      {
+       "id": "jmpb90twDt4",
+       "titulo": "What If You Had Ultra Instinct?",
+       "views": 289000
+      },
+      {
+       "id": "vai9QmmRU1U",
+       "titulo": "What If You Went Super Saiyan God?",
+       "views": 80000
+      }
+     ],
+     "indice": 1.09
+    },
+    {
+     "molde": "what if [X]",
+     "n": 1,
+     "media": 8100,
+     "max": 8100,
+     "exemplos": [
+      {
+       "id": "1U2PEov3NQ4",
+       "titulo": "What If Dragon Balls Were Real?",
+       "views": 8100
+      }
+     ],
+     "indice": 0.09
+    }
+   ]
+  },
+  "UCl-Y6NtTH0jUnkymFhMlvSA": {
+   "nome": "BalkanTV",
+   "n_videos": 2,
+   "clusters": [
+    {
+     "molde": "[X] wenn [X]",
+     "n": 1,
+     "media": 115000,
+     "max": 115000,
+     "exemplos": [
+      {
+       "id": "DlcArRVoNis",
+       "titulo": "So mächtig wäre Jugoslawien heute: Wenn das nicht passiert wäre!",
+       "views": 115000
+      }
+     ],
+     "indice": 1.73
+    },
+    {
+     "molde": "[X]",
+     "n": 1,
+     "media": 18000,
+     "max": 18000,
+     "exemplos": [
+      {
+       "id": "MJkIK6B_JAo",
+       "titulo": "Yugoslavs in Germany and Austria: Here’s the Reason",
+       "views": 18000
+      }
+     ],
+     "indice": 0.27
+    }
+   ]
+  },
+  "UCxiRAVTvab3YzQ1gHnqQraQ": {
+   "nome": "Truppenkunde",
+   "n_videos": 5,
+   "clusters": [
+    {
+     "molde": "alle [X] erklart em [N] minn",
+     "n": 4,
+     "media": 74000,
+     "max": 143000,
+     "exemplos": [
+      {
+       "id": "aFZcQ8EvLt8",
+       "titulo": "Alle Dienstgrade der Marine erklärt in 11 Minuten",
+       "views": 143000
+      },
+      {
+       "id": "Sjccb_eGOnU",
+       "titulo": "Alle Dienstgrade der NVA erklärt in 10 Minuten",
+       "views": 77000
+      },
+      {
+       "id": "ueSMvqXQbB0",
+       "titulo": "Alle Dienstgrade des Heeres erklärt in 10 Minuten",
+       "views": 62000
+      }
+     ],
+     "indice": 1.17
+    },
+    {
+     "molde": "[X] alle [X]",
+     "n": 1,
+     "media": 20000,
+     "max": 20000,
+     "exemplos": [
+      {
+       "id": "na-m-Itope0",
+       "titulo": "NVA gegen Bundeswehr: Alle Dienstgrade im Vergleich",
+       "views": 20000
+      }
+     ],
+     "indice": 0.32
+    }
+   ]
+  },
+  "UCKWB86Dfk_yV-Vg9yyRZMWQ": {
+   "nome": "Mr. Billy Explica",
+   "n_videos": 9,
+   "clusters": [
+    {
+     "molde": "your [X] every level [X] [N] [X]",
+     "n": 1,
+     "media": 430000,
+     "max": 430000,
+     "exemplos": [
+      {
+       "id": "Qp-SCOU_ur8",
+       "titulo": "Your Life at Every Level as a Formula 1 Driver",
+       "views": 430000
+      }
+     ],
+     "indice": 3.94
+    },
+    {
+     "molde": "your [X] every level [X]",
+     "n": 7,
+     "media": 78414,
+     "max": 418000,
+     "exemplos": [
+      {
+       "id": "XEoalR26FMg",
+       "titulo": "Your Life at Every Level as a Car Tuner",
+       "views": 418000
+      },
+      {
+       "id": "caXaWT3y_1U",
+       "titulo": "Your Life at Every Level as a Basketball Player",
+       "views": 81000
+      },
+      {
+       "id": "1PiF54da0Es",
+       "titulo": "Your Life at Every Level as a Soccer Player",
+       "views": 32000
+      }
+     ],
+     "indice": 0.72
+    },
+    {
+     "molde": "your [X] every [X] level",
+     "n": 1,
+     "media": 2600,
+     "max": 2600,
+     "exemplos": [
+      {
+       "id": "5FcKJdY4dkA",
+       "titulo": "Your Life at Every Assassin Level",
+       "views": 2600
+      }
+     ],
+     "indice": 0.02
+    }
+   ]
+  },
+  "UComJO6QL7jJkEWmCSzkUd5g": {
+   "nome": "Rise With Gabriel",
+   "n_videos": 27,
+   "clusters": [
+    {
+     "molde": "[X] todo [X] como [X] tu [X]",
+     "n": 1,
+     "media": 143000,
+     "max": 143000,
+     "exemplos": [
+      {
+       "id": "f1FVG8Gjs7w",
+       "titulo": "DEJA DE CONTAR TODO Y MIRA CÓMO CAMBIA TU VIDA | Gabriel Rolón",
+       "views": 143000
+      }
+     ],
+     "indice": 13.55
+    },
+    {
+     "molde": "como [X] todo [X]",
+     "n": 1,
+     "media": 87000,
+     "max": 87000,
+     "exemplos": [
+      {
+       "id": "rULtjNp7x8c",
+       "titulo": "Cómo Dejar de ENOJARTE por Todo y Mantener la Calma Ante Cualquiera | Gabriel Rolón",
+       "views": 87000
+      }
+     ],
+     "indice": 8.25
+    },
+    {
+     "molde": "[X] tu [X] tu [X]",
+     "n": 1,
+     "media": 13000,
+     "max": 13000,
+     "exemplos": [
+      {
+       "id": "X7HoL0ihusw",
+       "titulo": "Ordena Tu Mundo Exterior y Transforma Tu Interior Para Siempre | Gabriel Rolón",
+       "views": 13000
+      }
+     ],
+     "indice": 1.23
+    },
+    {
+     "molde": "como [X] cuando [X] tu [X]",
+     "n": 1,
+     "media": 10000,
+     "max": 10000,
+     "exemplos": [
+      {
+       "id": "enfb94PMxOY",
+       "titulo": "Cómo Seguir Adelante Cuando Nadie Está a Tu Lado | Gabriel Rolón",
+       "views": 10000
+      }
+     ],
+     "indice": 0.95
+    },
+    {
+     "molde": "[X] [N] [X] todos [X]",
+     "n": 1,
+     "media": 8000,
+     "max": 8000,
+     "exemplos": [
+      {
+       "id": "DViJXIYOHbk",
+       "titulo": "Aplica Estas 3 Actitudes y Todos Te Respetarán | Gabriel Rolón",
+       "views": 8000
+      }
+     ],
+     "indice": 0.76
+    },
+    {
+     "molde": "como [X] tu [X]",
+     "n": 1,
+     "media": 6100,
+     "max": 6100,
+     "exemplos": [
+      {
+       "id": "5cotzzHvpOk",
+       "titulo": "CÓMO DESAPEGARTE EMOCIONALMENTE DE ALGUIEN Y RECUPERAR TU PAZ Y AMOR PROPIO | Gabriel Rolón",
+       "views": 6100
+      }
+     ],
+     "indice": 0.58
+    },
+    {
+     "molde": "cuando [X] tu [X]",
+     "n": 1,
+     "media": 3000,
+     "max": 3000,
+     "exemplos": [
+      {
+       "id": "TOuXlOSs2cg",
+       "titulo": "Cuando No Le Importa Perderte, Esta Es Tu Mejor Respuesta | Gabriel Rolón",
+       "views": 3000
+      }
+     ],
+     "indice": 0.28
+    },
+    {
+     "molde": "[N] [X] tu [X]",
+     "n": 2,
+     "media": 1650,
+     "max": 2100,
+     "exemplos": [
+      {
+       "id": "MrBXF4oJUaU",
+       "titulo": "10 CLAVES PARA SOLTAR A ALGUIEN Y RECUPERAR TU PAZ INTERIOR | GABRIEL ROLÓN",
+       "views": 2100
+      },
+      {
+       "id": "wQivnAws7Vc",
+       "titulo": "10 Claves Para DESAPEGARTE de Alguien y Recuperar Tu Paz Interior | Gabriel Rolón",
+       "views": 1200
+      }
+     ],
+     "indice": 0.16
+    },
+    {
+     "molde": "[X]",
+     "n": 4,
+     "media": 1545,
+     "max": 3200,
+     "exemplos": [
+      {
+       "id": "-snWpk9yUek",
+       "titulo": "Así Actúa una Persona Emocionalmente Inmadura | Gabriel Rolón",
+       "views": 3200
+      },
+      {
+       "id": "id5cC19cN2E",
+       "titulo": "NO PERSIGAS A NADIE, DEJA QUE TE ENCUENTREN | Gabriel Rolón",
+       "views": 2700
+      },
+      {
+       "id": "OJIKZhpp_5E",
+       "titulo": "DEJA DE BUSCARLO Y HARÁS QUE ÉL TE EXTRAÑE | GABRIEL ROLÓN",
+       "views": 200
+      }
+     ],
+     "indice": 0.15
+    },
+    {
+     "molde": "como [X] quien [X] tu [X]",
+     "n": 1,
+     "media": 980,
+     "max": 980,
+     "exemplos": [
+      {
+       "id": "bMhJIWDumVA",
+       "titulo": "CÓMO SOLTAR A QUIEN NO TE VALORA Y RECUPERAR TU PAZ | Gabriel Rolón",
+       "views": 980
+      }
+     ],
+     "indice": 0.09
+    },
+    {
+     "molde": "cuando [X]",
+     "n": 2,
+     "media": 753,
+     "max": 1200,
+     "exemplos": [
+      {
+       "id": "-HDIB7aBD_A",
+       "titulo": "CUANDO DEJAS DE BUSCAR, LA VIDA TE SORPRENDE | Gabriel Rolón – Powerful Speech",
+       "views": 1200
+      },
+      {
+       "id": "vJI1_bXSM58",
+       "titulo": "Cuando una Mujer Deja de Amar a su Marido, Estas Señales lo Revelan | Gabriel Rolón",
+       "views": 307
+      }
+     ],
+     "indice": 0.07
+    },
+    {
+     "molde": "[X] quien [X]",
+     "n": 1,
+     "media": 660,
+     "max": 660,
+     "exemplos": [
+      {
+       "id": "TO69LeD5X8g",
+       "titulo": "No Necesitas a Quien No Te Elige | Gabriel Rolón",
+       "views": 660
+      }
+     ],
+     "indice": 0.06
+    },
+    {
+     "molde": "[N] [X] cuando [X]",
+     "n": 1,
+     "media": 598,
+     "max": 598,
+     "exemplos": [
+      {
+       "id": "IzP-8c-uTWo",
+       "titulo": "7 FRASES QUE REVELAN CUANDO UN HOMBRE ESTÁ REALMENTE ENAMORADO | Gabriel Rolón",
+       "views": 598
+      }
+     ],
+     "indice": 0.06
+    },
+    {
+     "molde": "todo [X]",
+     "n": 1,
+     "media": 497,
+     "max": 497,
+     "exemplos": [
+      {
+       "id": "rhbovjejSs4",
+       "titulo": "Todo Pasa por Algo: Una Reflexión Psicológica para la Vida | Gabriel Rolón",
+       "views": 497
+      }
+     ],
+     "indice": 0.05
+    },
+    {
+     "molde": "como [X] [N] [X] tu [X]",
+     "n": 1,
+     "media": 289,
+     "max": 289,
+     "exemplos": [
+      {
+       "id": "4vkmbcIogyY",
+       "titulo": "Cómo SANAR una Ruptura Amorosa en 5 Pasos y Recuperar tu Paz Interior | Gabriel Rolón",
+       "views": 289
+      }
+     ],
+     "indice": 0.03
+    },
+    {
+     "molde": "[X] cuando [X]",
+     "n": 1,
+     "media": 173,
+     "max": 173,
+     "exemplos": [
+      {
+       "id": "kQQeePzfwNA",
+       "titulo": "EL VERDADERO AMOR COMIENZA CUANDO APRENDES A AMARTE A TI MISMO | Gabriel Rolón",
+       "views": 173
+      }
+     ],
+     "indice": 0.02
+    },
+    {
+     "molde": "[X] tu [X]",
+     "n": 3,
+     "media": 145,
+     "max": 329,
+     "exemplos": [
+      {
+       "id": "KWwPxosQD1M",
+       "titulo": "Recupera Tu Alegría Después de Amar a la Persona Equivocada | Gabriel Rolón",
+       "views": 329
+      },
+      {
+       "id": "42Qt2-krsTg",
+       "titulo": "DEJA DE PERMITIR QUE TE UTILICEN Y RECUPERA TU DIGNIDAD | GABRIEL ROLÓN",
+       "views": 60
+      },
+      {
+       "id": "NaSg2b4MVts",
+       "titulo": "EL PODER DEL SILENCIO: HAZ QUE RECONOZCA TU VERDADERO VALOR | GABRIEL ROLÓN",
+       "views": 48
+      }
+     ],
+     "indice": 0.01
+    },
+    {
+     "molde": "[X] tus [X] tu [X]",
+     "n": 1,
+     "media": 88,
+     "max": 88,
+     "exemplos": [
+      {
+       "id": "QNngVyu5ca4",
+       "titulo": "SUPERA TUS MIEDOS Y TRANSFORMA TU VIDA PARA SIEMPRE | GABRIEL ROLÓN",
+       "views": 88
+      }
+     ],
+     "indice": 0.01
+    },
+    {
+     "molde": "[X] verdad [X]",
+     "n": 1,
+     "media": 59,
+     "max": 59,
+     "exemplos": [
+      {
+       "id": "E-cTXK9_IJs",
+       "titulo": "UN HOMBRE CASADO TE BUSCA, PERO… ¿DE VERDAD TE ELIGE? | GABRIEL ROLÓN",
+       "views": 59
+      }
+     ],
+     "indice": 0.01
+    },
+    {
+     "molde": "si [X] [N] [X]",
+     "n": 1,
+     "media": 12,
+     "max": 12,
+     "exemplos": [
+      {
+       "id": "LlX8LxpzRMU",
+       "titulo": "SI UN HOMBRE HACE ESTAS 15 COSAS, ¡ESTÁ MÁS INTERESADO EN TI DE LO QUE CREES! | GABRIEL ROLÓN",
+       "views": 12
+      }
+     ],
+     "indice": 0.0
+    }
+   ]
+  },
+  "UCnzSXbpG6itN2ABKs-QRyVA": {
+   "nome": "Primer Nivel",
+   "n_videos": 2,
+   "clusters": [
+    {
+     "molde": "[X] si [X] verdad",
+     "n": 1,
+     "media": 1800000,
+     "max": 1800000,
+     "exemplos": [
+      {
+       "id": "mZycvkys-Vc",
+       "titulo": "¿Qué pasaría si pudieras ver cuánto te quieren de verdad?",
+       "views": 1800000
+      }
+     ],
+     "indice": 1.81
+    },
+    {
+     "molde": "[X] si todos [X]",
+     "n": 1,
+     "media": 193000,
+     "max": 193000,
+     "exemplos": [
+      {
+       "id": "PWwNk5lySu4",
+       "titulo": "¿Qué pasaría si TODOS pudieran ver cuánto los quieres?",
+       "views": 193000
+      }
+     ],
+     "indice": 0.19
+    }
+   ]
+  },
+  "UCutLLgwa_ovnN4sjU9S3vaw": {
+   "nome": "Life in Levels",
+   "n_videos": 9,
+   "clusters": [
+    {
+     "molde": "your [X] every level [X] [N] [X]",
+     "n": 3,
+     "media": 165978,
+     "max": 377000,
+     "exemplos": [
+      {
+       "id": "A616edx1j1c",
+       "titulo": "Your Life at Every Level of Living in an RV Park for $650 a Month",
+       "views": 377000
+      },
+      {
+       "id": "gZIJuoIV7oM",
+       "titulo": "Your Life at Every Level of Buying a $95,000 Condo in Florida",
+       "views": 120000
+      },
+      {
+       "id": "49mgxi0nwxA",
+       "titulo": "Your Life at Every Level of Retiring at 62 Without Health Insurance",
+       "views": 936
+      }
+     ],
+     "indice": 2.12
+    },
+    {
+     "molde": "your [X] every level [X] [N] [X] [N]",
+     "n": 1,
+     "media": 119000,
+     "max": 119000,
+     "exemplos": [
+      {
+       "id": "hzX3KzRw8RA",
+       "titulo": "Your Life at Every Level of Buying a $68,000 Mobile Home at 65",
+       "views": 119000
+      }
+     ],
+     "indice": 1.52
+    },
+    {
+     "molde": "your [X] every level [X] [N]",
+     "n": 2,
+     "media": 19250,
+     "max": 31000,
+     "exemplos": [
+      {
+       "id": "eX16Uucy4P0",
+       "titulo": "Your Life at Every Level of Living on a Boat in Florida at 64",
+       "views": 31000
+      },
+      {
+       "id": "AC56I8lys9U",
+       "titulo": "Your Life at Every Level of Getting Divorced at 62",
+       "views": 7500
+      }
+     ],
+     "indice": 0.25
+    },
+    {
+     "molde": "your [X] every level [X]",
+     "n": 2,
+     "media": 17541,
+     "max": 35000,
+     "exemplos": [
+      {
+       "id": "Ia2Z21lhCgU",
+       "titulo": "Your Life at Every Level of Retiring to Mexico on Social Security",
+       "views": 35000
+      },
+      {
+       "id": "LKANCVIEbNE",
+       "titulo": "Your Life at Every Level of Buying a Used Truck",
+       "views": 82
+      }
+     ],
+     "indice": 0.22
+    },
+    {
+     "molde": "your [X] every level [X] your [X] [N]",
+     "n": 1,
+     "media": 15000,
+     "max": 15000,
+     "exemplos": [
+      {
+       "id": "hbkofPzhKtU",
+       "titulo": "Your Life at Every Level of Living in Your Car at 63",
+       "views": 15000
+      }
+     ],
+     "indice": 0.19
+    }
+   ]
+  },
+  "UCeumVi30Wf4kKsmaFQe_AZQ": {
+   "nome": "Akademie für Lernpädagogik",
+   "n_videos": 16,
+   "clusters": [
+    {
+     "molde": "[X] vs [X]",
+     "n": 1,
+     "media": 3200000,
+     "max": 3200000,
+     "exemplos": [
+      {
+       "id": "oNx_S8Q8rEU",
+       "titulo": "Aufschieben stoppen: Belohnungsjäger vs. Architekt | Natalia Kowalski",
+       "views": 3200000
+      }
+     ],
+     "indice": 8.47
+    },
+    {
+     "molde": "wie [X] [N] [X]",
+     "n": 1,
+     "media": 645000,
+     "max": 645000,
+     "exemplos": [
+      {
+       "id": "v4so6z8VdV8",
+       "titulo": "Wie Lernen im Gehirn funktioniert: 2 typische Lernfehler | Natalia Kowalski",
+       "views": 645000
+      }
+     ],
+     "indice": 1.71
+    },
+    {
+     "molde": "[X] was [X]",
+     "n": 2,
+     "media": 317000,
+     "max": 466000,
+     "exemplos": [
+      {
+       "id": "R8fR7xSatiA",
+       "titulo": "Weiterführende Schule: Was Kinder beim Wechsel brauchen | Natalia Kowalski",
+       "views": 466000
+      },
+      {
+       "id": "QyFXpPBnwR0",
+       "titulo": "Belohnung fürs Lernen? Was stattdessen motiviert | Jürgen Möller",
+       "views": 168000
+      }
+     ],
+     "indice": 0.84
+    },
+    {
+     "molde": "[X] [N] stufen [X] erklart [X]",
+     "n": 1,
+     "media": 315000,
+     "max": 315000,
+     "exemplos": [
+      {
+       "id": "j1QwYRZv_dg",
+       "titulo": "Die 4 Stufen des Lernens – einfach erklärt für Eltern | Natalia Kowalski",
+       "views": 315000
+      }
+     ],
+     "indice": 0.83
+    },
+    {
+     "molde": "[X] warum [X]",
+     "n": 2,
+     "media": 284000,
+     "max": 443000,
+     "exemplos": [
+      {
+       "id": "fulb2U0mi7c",
+       "titulo": "Lernstrategien: Warum Lernen bei manchen Kindern klappt | Natalia Kowalski",
+       "views": 443000
+      },
+      {
+       "id": "FliBV7uapE4",
+       "titulo": "Konzentration bei Kindern: Warum Ermahnen nicht hilft | Natalia Kowalski",
+       "views": 125000
+      }
+     ],
+     "indice": 0.75
+    },
+    {
+     "molde": "[X] [N] [X] dein [X]",
+     "n": 1,
+     "media": 186000,
+     "max": 186000,
+     "exemplos": [
+      {
+       "id": "My5Mc8ooYm8",
+       "titulo": "Selbstständig lernen: 4 Bausteine für dein Kind | Natalia Kowalski",
+       "views": 186000
+      }
+     ],
+     "indice": 0.49
+    },
+    {
+     "molde": "wenn [X] was [X]",
+     "n": 1,
+     "media": 109000,
+     "max": 109000,
+     "exemplos": [
+      {
+       "id": "022MF85RhR8",
+       "titulo": "Wenn Kinder beim Lernen dicht machen: Was jetzt hilft | Natalia Kowalski",
+       "views": 109000
+      }
+     ],
+     "indice": 0.29
+    },
+    {
+     "molde": "[X]",
+     "n": 1,
+     "media": 94000,
+     "max": 94000,
+     "exemplos": [
+      {
+       "id": "aH_GsWYkck8",
+       "titulo": "Prüfungsangst bei Kindern: So hilfst du richtig | Marlene Beller",
+       "views": 94000
+      }
+     ],
+     "indice": 0.25
+    },
+    {
+     "molde": "[X] [N] [X]",
+     "n": 3,
+     "media": 89666,
+     "max": 218000,
+     "exemplos": [
+      {
+       "id": "Zm6H1Y8eOpI",
+       "titulo": "Perfektionismus bei Kindern: 6 Bausteine, die entlasten | Jürgen Möller",
+       "views": 218000
+      },
+      {
+       "id": "H20jYjEEhZA",
+       "titulo": "Keine Lust zu lernen? 3 Schlüssel zur Motivation | Jürgen Möller",
+       "views": 36000
+      },
+      {
+       "id": "becLwCWcRZY",
+       "titulo": "Selbstzweifel bei Kindern: 3 Tipps für ein starkes Selbstbild | Marlene Beller",
+       "views": 15000
+      }
+     ],
+     "indice": 0.24
+    },
+    {
+     "molde": "[X] how [X]",
+     "n": 2,
+     "media": 10000,
+     "max": 10000,
+     "exemplos": [
+      {
+       "id": "03AUYbXT5YM",
+       "titulo": "Learning How to Learn: The Study Toolkit for School Kids | Jürgen Möller",
+       "views": 10000
+      },
+      {
+       "id": "TAaZKUlyRuw",
+       "titulo": "Procrastination in Children: How to Break the Vicious Cycle | Jürgen Möller",
+       "views": 10000
+      }
+     ],
+     "indice": 0.03
+    },
+    {
+     "molde": "[X] what [X]",
+     "n": 1,
+     "media": 4000,
+     "max": 4000,
+     "exemplos": [
+      {
+       "id": "B6QY30yFtZ0",
+       "titulo": "Learning Motivation: What Educational Research Says | Jürgen Möller",
+       "views": 4000
+      }
+     ],
+     "indice": 0.01
+    }
+   ]
+  },
+  "UCK_0EhPxErWtQLcH7fKKk6w": {
+   "nome": "Dr. Alexandre Moreau",
+   "n_videos": 21,
+   "clusters": [
+    {
+     "molde": "[X] vous [X]",
+     "n": 1,
+     "media": 41000,
+     "max": 41000,
+     "exemplos": [
+      {
+       "id": "zjqVtStUCCY",
+       "titulo": "Vessie : Arrêtez de Vous Lever la Nuit Grâce à Cette Astuce ...",
+       "views": 41000
+      }
+     ],
+     "indice": 6.22
+    },
+    {
+     "molde": "[X] [N] [X] votre [X] si vous [X] chaque [X]",
+     "n": 1,
+     "media": 20000,
+     "max": 20000,
+     "exemplos": [
+      {
+       "id": "SoYt8yHfZms",
+       "titulo": "Après 70 ans : Que devient votre cœur si vous mangez de l’avoine chaque jour ?",
+       "views": 20000
+      }
+     ],
+     "indice": 3.04
+    },
+    {
+     "molde": "[X] [N] [X]",
+     "n": 6,
+     "media": 8924,
+     "max": 50000,
+     "exemplos": [
+      {
+       "id": "_PsRJoIlUsw",
+       "titulo": "Après 70 ans | l’eau ne suffit plus !",
+       "views": 50000
+      },
+      {
+       "id": "Wz-aPZChHw8",
+       "titulo": "APRÈS 70 ANS : SELLES BLOQUÉES ? QUE FAIRE ?",
+       "views": 2400
+      },
+      {
+       "id": "vKfH29_uxps",
+       "titulo": "Jambes faibles après 60 ans : le seul exercice à commencer dès aujourd'hui.",
+       "views": 424
+      }
+     ],
+     "indice": 1.35
+    },
+    {
+     "molde": "[X] [N] [X] quand votre [X] explique",
+     "n": 1,
+     "media": 6700,
+     "max": 6700,
+     "exemplos": [
+      {
+       "id": "FESUS1eoajA",
+       "titulo": "Après 70 ans : à partir de quand votre tension est-elle trop haute ? Un médecin explique",
+       "views": 6700
+      }
+     ],
+     "indice": 1.02
+    },
+    {
+     "molde": "[X] [N] [X] [N] [X]",
+     "n": 4,
+     "media": 2930,
+     "max": 11000,
+     "exemplos": [
+      {
+       "id": "DqFwsd5ycoY",
+       "titulo": "APRÈS 70 ANS : JAMBES FAIBLES ? 1 EXERCICE À FAIRE !",
+       "views": 11000
+      },
+      {
+       "id": "aSofY1DvqTM",
+       "titulo": "Le Docteur RÉVÈLE : les 6 HABITUDES EN OR pour bien VIEILLIR après 60 ANS.",
+       "views": 415
+      },
+      {
+       "id": "-QbylpSRWMc",
+       "titulo": "Après 60 ans : 3 erreurs à éviter en marchant !",
+       "views": 220
+      }
+     ],
+     "indice": 0.44
+    },
+    {
+     "molde": "[X] [N] [X] votre [X]",
+     "n": 1,
+     "media": 2700,
+     "max": 2700,
+     "exemplos": [
+      {
+       "id": "O-1NMnrvhQ8",
+       "titulo": "APRÈS 70 ANS : AJOUTEZ CET ALIMENT PUISSANT À VOTRE PETIT-DÉJEUNER POUR RENFORCER VOS MUSCLES !",
+       "views": 2700
+      }
+     ],
+     "indice": 0.41
+    },
+    {
+     "molde": "[X] [N] [X] [N] [X] explique",
+     "n": 1,
+     "media": 1400,
+     "max": 1400,
+     "exemplos": [
+      {
+       "id": "hiWefte3I14",
+       "titulo": "APRÈS 70 ans : 5 SIGNES que vos REINS SOUFFRENT en SILENCE ! Un MÉDECIN explique",
+       "views": 1400
+      }
+     ],
+     "indice": 0.21
+    },
+    {
+     "molde": "[X] [N] [X] [N] [X] votre [X]",
+     "n": 1,
+     "media": 551,
+     "max": 551,
+     "exemplos": [
+      {
+       "id": "sSUY-EKmrkY",
+       "titulo": "Après 70 ans : 3 médicaments essentiels à connaître pour protéger votre santé !",
+       "views": 551
+      }
+     ],
+     "indice": 0.08
+    },
+    {
+     "molde": "[X] [N] [X] qui vous [X] vous [X]",
+     "n": 1,
+     "media": 241,
+     "max": 241,
+     "exemplos": [
+      {
+       "id": "0gF7R1rQ3rY",
+       "titulo": "APRÈS 70 ANS : L’ERREUR avec l’EAU qui vous fait vous lever la nuit !",
+       "views": 241
+      }
+     ],
+     "indice": 0.04
+    },
+    {
+     "molde": "[X] [N] [X] vous [X] chaque [X]",
+     "n": 1,
+     "media": 163,
+     "max": 163,
+     "exemplos": [
+      {
+       "id": "YLE_Xj9BauQ",
+       "titulo": "AVC | 5 SIGNES AVANT-COUREURS que vous IGNOREZ CHAQUE JOUR !",
+       "views": 163
+      }
+     ],
+     "indice": 0.02
+    },
+    {
+     "molde": "[X] [N] [X] [N] [X] qui [X] votre [X]",
+     "n": 1,
+     "media": 119,
+     "max": 119,
+     "exemplos": [
+      {
+       "id": "4WyB1A1PlyY",
+       "titulo": "APRÈS 70 ANS : 4 HABITUDES MATINALES QUI MENACENT VOTRE CŒUR ! | ALERTE CARDIOLOGUE",
+       "views": 119
+      }
+     ],
+     "indice": 0.02
+    },
+    {
+     "molde": "[X]",
+     "n": 2,
+     "media": 91,
+     "max": 128,
+     "exemplos": [
+      {
+       "id": "4ZowX-FbL0k",
+       "titulo": "Les signes d’alerte du cancer du côlon à ne jamais ignorer",
+       "views": 128
+      },
+      {
+       "id": "Wz73RbYDZYo",
+       "titulo": "DÉMENCE : Le médicament que les seniors doivent connaître !",
+       "views": 55
+      }
+     ],
+     "indice": 0.01
+    }
+   ]
+  },
+  "UC7X_nUKxIP9S_2H_qdahp4A": {
+   "nome": "Ovinn",
+   "n_videos": 7,
+   "clusters": [
+    {
+     "molde": "what [X]",
+     "n": 1,
+     "media": 188000,
+     "max": 188000,
+     "exemplos": [
+      {
+       "id": "YR55mtWklrw",
+       "titulo": "What Did Ancient Humans Do For Pleasure?",
+       "views": 188000
+      }
+     ],
+     "indice": 6.95
+    },
+    {
+     "molde": "what [X] all [X]",
+     "n": 1,
+     "media": 378,
+     "max": 378,
+     "exemplos": [
+      {
+       "id": "vNq9KnP18q8",
+       "titulo": "What Did Ancient Humans Actually Do All Day?",
+       "views": 378
+      }
+     ],
+     "indice": 0.01
+    },
+    {
+     "molde": "what [X] when [X]",
+     "n": 1,
+     "media": 276,
+     "max": 276,
+     "exemplos": [
+      {
+       "id": "0-fyuBArPyM",
+       "titulo": "What Did Ancient Humans Do When They Got Sick?",
+       "views": 276
+      }
+     ],
+     "indice": 0.01
+    },
+    {
+     "molde": "how [X]",
+     "n": 3,
+     "media": 204,
+     "max": 266,
+     "exemplos": [
+      {
+       "id": "HOlSiWEq5GU",
+       "titulo": "How Did Humans Invent the Toilet?",
+       "views": 266
+      },
+      {
+       "id": "ax6wgu0No6I",
+       "titulo": "How Did Humans Invent Swear Words?",
+       "views": 213
+      },
+      {
+       "id": "s1F3zvUElZY",
+       "titulo": "How Did Humans Invent Money and Debt?",
+       "views": 135
+      }
+     ],
+     "indice": 0.01
+    },
+    {
+     "molde": "who was [X]",
+     "n": 1,
+     "media": 57,
+     "max": 57,
+     "exemplos": [
+      {
+       "id": "w8PO6bSwbqI",
+       "titulo": "Who Was the First Human to Lie?",
+       "views": 57
+      }
+     ],
+     "indice": 0.0
+    }
+   ]
+  },
+  "UCozUPlYyRApcyX6sfvfn2eA": {
+   "nome": "Ancientism",
+   "n_videos": 5,
+   "clusters": [
+    {
+     "molde": "what [X]",
+     "n": 1,
+     "media": 107000,
+     "max": 107000,
+     "exemplos": [
+      {
+       "id": "TOFhLYYwGOQ",
+       "titulo": "What Did Ancient Humans Do For Pleasure?",
+       "views": 107000
+      }
+     ],
+     "indice": 4.82
+    },
+    {
+     "molde": "what [X] all [X]",
+     "n": 1,
+     "media": 3100,
+     "max": 3100,
+     "exemplos": [
+      {
+       "id": "C-gzxeaDqTU",
+       "titulo": "What Did Ancient Humans Really Do All Day?",
+       "views": 3100
+      }
+     ],
+     "indice": 0.14
+    },
+    {
+     "molde": "how [X]",
+     "n": 1,
+     "media": 525,
+     "max": 525,
+     "exemplos": [
+      {
+       "id": "eDqHd2k5fiQ",
+       "titulo": "How Did Ancient Humans Survive Freezing Winters?",
+       "views": 525
+      }
+     ],
+     "indice": 0.02
+    },
+    {
+     "molde": "why [X]",
+     "n": 2,
+     "media": 133,
+     "max": 267,
+     "exemplos": [
+      {
+       "id": "2boYcN7vPh4",
+       "titulo": "Why Didn’t Evolution Get Rid of ADHD?",
+       "views": 267
+      },
+      {
+       "id": "kv5hhKpLhkw",
+       "titulo": "Why Did Humans Even Start Wearing Clothes?",
+       "views": 0
+      }
+     ],
+     "indice": 0.01
+    }
+   ]
   }
  },
  "em_alta": [
+  {
+   "molde": "what if you [X]",
+   "canais": [
+    {
+     "id": "UCUK7e3Qja5d-muR6b-jiZCw",
+     "nome": "Questionverse",
+     "idioma": "en",
+     "max": 272000
+    },
+    {
+     "id": "UC-QrclM1b36lLkYO-BTfy0Q",
+     "nome": "Possiblo",
+     "idioma": "en",
+     "max": 292
+    },
+    {
+     "id": "UChGZPomLQmdC7UDt34-aUIA",
+     "nome": "Stick Saga",
+     "idioma": "en",
+     "max": 9800
+    },
+    {
+     "id": "UCkMQyMQcjJtKCiT_Rig1xow",
+     "nome": "Stupid Dupid ",
+     "idioma": "en",
+     "max": 334000
+    },
+    {
+     "id": "UCdvbGznFEcB7E3IS7Wo-F7A",
+     "nome": "IfYou Films",
+     "idioma": "en",
+     "max": 92000
+    },
+    {
+     "id": "UCt-GhchW5nGSjr-ETeGab_g",
+     "nome": "ConChaser",
+     "idioma": "en",
+     "max": 1800000
+    },
+    {
+     "id": "UCYbIl0eyQSt3MyaVdmq55Zg",
+     "nome": "Flowstate Motion",
+     "idioma": "en",
+     "max": 145000
+    },
+    {
+     "id": "UCK1hJeCCw4swOXOkYXyWo8A",
+     "nome": "IFANIME",
+     "idioma": "en",
+     "max": 479000
+    }
+   ],
+   "videos": 32,
+   "max": 1800000
+  },
+  {
+   "molde": "what if you [X] your [X]",
+   "canais": [
+    {
+     "id": "UCUK7e3Qja5d-muR6b-jiZCw",
+     "nome": "Questionverse",
+     "idioma": "en",
+     "max": 638000
+    },
+    {
+     "id": "UCyAdgyZa96XMtWXrpVIv12Q",
+     "nome": "PlanetIF",
+     "idioma": "en",
+     "max": 836
+    },
+    {
+     "id": "UCkMQyMQcjJtKCiT_Rig1xow",
+     "nome": "Stupid Dupid ",
+     "idioma": "en",
+     "max": 337000
+    },
+    {
+     "id": "UCdvbGznFEcB7E3IS7Wo-F7A",
+     "nome": "IfYou Films",
+     "idioma": "en",
+     "max": 39000
+    },
+    {
+     "id": "UCYbIl0eyQSt3MyaVdmq55Zg",
+     "nome": "Flowstate Motion",
+     "idioma": "en",
+     "max": 579
+    },
+    {
+     "id": "UCl_ZmhmkjsD9uiVafc8jYzg",
+     "nome": "Sifinito",
+     "idioma": "es",
+     "max": 2400
+    },
+    {
+     "id": "UCjXCoo0SOXZD8BFgb5ABlMg",
+     "nome": "IFNation",
+     "idioma": "en",
+     "max": 24000
+    }
+   ],
+   "videos": 13,
+   "max": 638000
+  },
+  {
+   "molde": "[X] was [X]",
+   "canais": [
+    {
+     "id": "UCgBr2zNf-689J8HmZUCJifw",
+     "nome": "Explorer Unveiled",
+     "idioma": "en",
+     "max": 1200
+    },
+    {
+     "id": "UC_DdIoJzHZXlEKTVy41_KQw",
+     "nome": "Econ in a Nutshell",
+     "idioma": "en",
+     "max": 277
+    },
+    {
+     "id": "UCooFBfsq7LviK84I7TfzUCA",
+     "nome": "Wahre Schicksale",
+     "idioma": "de",
+     "max": 264000
+    },
+    {
+     "id": "UC11JUsJTF-gkghJ_63jkCFg",
+     "nome": "Blutende Wahrheit.",
+     "idioma": "de",
+     "max": 54000
+    },
+    {
+     "id": "UCr02LyWl33rqFI2hF1dwStg",
+     "nome": "Popden",
+     "idioma": "en",
+     "max": 194000
+    },
+    {
+     "id": "UCiT5YKd9nSgnXFWeLmF3F3Q",
+     "nome": "Cœur Interdit",
+     "idioma": "fr",
+     "max": 1300
+    },
+    {
+     "id": "UCeumVi30Wf4kKsmaFQe_AZQ",
+     "nome": "Akademie für Lernpädagogik",
+     "idioma": "de",
+     "max": 466000
+    }
+   ],
+   "videos": 10,
+   "max": 466000
+  },
+  {
+   "molde": "what if you [X] [N] [X]",
+   "canais": [
+    {
+     "id": "UC-QrclM1b36lLkYO-BTfy0Q",
+     "nome": "Possiblo",
+     "idioma": "en",
+     "max": 10000
+    },
+    {
+     "id": "UCkMQyMQcjJtKCiT_Rig1xow",
+     "nome": "Stupid Dupid ",
+     "idioma": "en",
+     "max": 106000
+    },
+    {
+     "id": "UCdvbGznFEcB7E3IS7Wo-F7A",
+     "nome": "IfYou Films",
+     "idioma": "en",
+     "max": 67000
+    },
+    {
+     "id": "UCt-GhchW5nGSjr-ETeGab_g",
+     "nome": "ConChaser",
+     "idioma": "en",
+     "max": 23000
+    },
+    {
+     "id": "UCjXCoo0SOXZD8BFgb5ABlMg",
+     "nome": "IFNation",
+     "idioma": "en",
+     "max": 416000
+    }
+   ],
+   "videos": 5,
+   "max": 416000
+  },
+  {
+   "molde": "what if [X]",
+   "canais": [
+    {
+     "id": "UC8ZRQ_4OnYcb6axsNMqye2A",
+     "nome": "Know Better",
+     "idioma": "en",
+     "max": 39000
+    },
+    {
+     "id": "UCUK7e3Qja5d-muR6b-jiZCw",
+     "nome": "Questionverse",
+     "idioma": "en",
+     "max": 22000
+    },
+    {
+     "id": "UC-QrclM1b36lLkYO-BTfy0Q",
+     "nome": "Possiblo",
+     "idioma": "en",
+     "max": 115000
+    },
+    {
+     "id": "UC8S2qnGR4ptTRkT7bUgUfkg",
+     "nome": "T+0",
+     "idioma": "de",
+     "max": 335000
+    },
+    {
+     "id": "UCK1hJeCCw4swOXOkYXyWo8A",
+     "nome": "IFANIME",
+     "idioma": "en",
+     "max": 8100
+    }
+   ],
+   "videos": 8,
+   "max": 335000
+  },
   {
    "molde": "every [X] explained",
    "canais": [
@@ -2021,7 +5819,7 @@
      "id": "UCXFh84AW7p06Vkv2OfTJu6Q",
      "nome": "Jimbo Explains",
      "idioma": "en",
-     "max": 72000
+     "max": 74000
     },
     {
      "id": "UC_6WWfny6AWYqKs40RUy6wg",
@@ -2034,35 +5832,178 @@
      "nome": "Econ in a Nutshell",
      "idioma": "en",
      "max": 1100000
+    },
+    {
+     "id": "UCr02LyWl33rqFI2hF1dwStg",
+     "nome": "Popden",
+     "idioma": "en",
+     "max": 163000
     }
    ],
-   "videos": 7,
+   "videos": 9,
    "max": 1100000
   },
   {
-   "molde": "[X] was [X]",
+   "molde": "what if you [X] [N] [X] your [X]",
+   "canais": [
+    {
+     "id": "UCUK7e3Qja5d-muR6b-jiZCw",
+     "nome": "Questionverse",
+     "idioma": "en",
+     "max": 13000
+    },
+    {
+     "id": "UCyAdgyZa96XMtWXrpVIv12Q",
+     "nome": "PlanetIF",
+     "idioma": "en",
+     "max": 82000
+    },
+    {
+     "id": "UCkMQyMQcjJtKCiT_Rig1xow",
+     "nome": "Stupid Dupid ",
+     "idioma": "en",
+     "max": 48000
+    },
+    {
+     "id": "UCl_ZmhmkjsD9uiVafc8jYzg",
+     "nome": "Sifinito",
+     "idioma": "es",
+     "max": 607
+    }
+   ],
+   "videos": 5,
+   "max": 82000
+  },
+  {
+   "molde": "[X] si [X] cada [X]",
+   "canais": [
+    {
+     "id": "UCY2ZvudTKE0rovOHBZflbHQ",
+     "nome": "Supongamos",
+     "idioma": "es",
+     "max": 1000
+    },
+    {
+     "id": "UCGdsFp5xGVFQL86nrKL2vJw",
+     "nome": "Modo ¿Y si?",
+     "idioma": "es",
+     "max": 3900
+    },
+    {
+     "id": "UC1vEorUPyH9RlT6GOJc4Exg",
+     "nome": "Y si Films",
+     "idioma": "es",
+     "max": 3700
+    },
+    {
+     "id": "UCl_ZmhmkjsD9uiVafc8jYzg",
+     "nome": "Sifinito",
+     "idioma": "es",
+     "max": 390
+    }
+   ],
+   "videos": 6,
+   "max": 3900
+  },
+  {
+   "molde": "what if you [X] how [X] you",
+   "canais": [
+    {
+     "id": "UCdvbGznFEcB7E3IS7Wo-F7A",
+     "nome": "IfYou Films",
+     "idioma": "en",
+     "max": 1000
+    },
+    {
+     "id": "UCt-GhchW5nGSjr-ETeGab_g",
+     "nome": "ConChaser",
+     "idioma": "en",
+     "max": 669000
+    },
+    {
+     "id": "UCjXCoo0SOXZD8BFgb5ABlMg",
+     "nome": "IFNation",
+     "idioma": "en",
+     "max": 43000
+    }
+   ],
+   "videos": 3,
+   "max": 669000
+  },
+  {
+   "molde": "[X] si [X]",
+   "canais": [
+    {
+     "id": "UCY2ZvudTKE0rovOHBZflbHQ",
+     "nome": "Supongamos",
+     "idioma": "es",
+     "max": 85000
+    },
+    {
+     "id": "UCyjGHJ3f-llEKw5xwJOZ2yw",
+     "nome": "IMAGINA ESTO",
+     "idioma": "es",
+     "max": 347000
+    },
+    {
+     "id": "UC1vEorUPyH9RlT6GOJc4Exg",
+     "nome": "Y si Films",
+     "idioma": "es",
+     "max": 7100
+    }
+   ],
+   "videos": 10,
+   "max": 347000
+  },
+  {
+   "molde": "what if you [X] who [X] you",
+   "canais": [
+    {
+     "id": "UCt-GhchW5nGSjr-ETeGab_g",
+     "nome": "ConChaser",
+     "idioma": "en",
+     "max": 65000
+    },
+    {
+     "id": "UCYbIl0eyQSt3MyaVdmq55Zg",
+     "nome": "Flowstate Motion",
+     "idioma": "en",
+     "max": 9100
+    },
+    {
+     "id": "UCjXCoo0SOXZD8BFgb5ABlMg",
+     "nome": "IFNation",
+     "idioma": "en",
+     "max": 221000
+    }
+   ],
+   "videos": 4,
+   "max": 221000
+  },
+  {
+   "molde": "what [X]",
    "canais": [
     {
      "id": "UCgBr2zNf-689J8HmZUCJifw",
      "nome": "Explorer Unveiled",
      "idioma": "en",
-     "max": 1200
+     "max": 785
     },
     {
-     "id": "UCooFBfsq7LviK84I7TfzUCA",
-     "nome": "Wahre Schicksale",
-     "idioma": "de",
-     "max": 257000
+     "id": "UC7X_nUKxIP9S_2H_qdahp4A",
+     "nome": "Ovinn",
+     "idioma": "en",
+     "max": 188000
     },
     {
-     "id": "UC11JUsJTF-gkghJ_63jkCFg",
-     "nome": "Blutende Wahrheit.",
-     "idioma": "de",
-     "max": 53000
+     "id": "UCozUPlYyRApcyX6sfvfn2eA",
+     "nome": "Ancientism",
+     "idioma": "en",
+     "max": 107000
     }
    ],
-   "videos": 5,
-   "max": 257000
+   "videos": 3,
+   "max": 188000
   },
   {
    "molde": "[X] who [X]",
@@ -2071,74 +6012,352 @@
      "id": "UC6Bv_ao56LZSaNFvERZE9Ig",
      "nome": "Hushfall True Crime",
      "idioma": "en",
-     "max": 52
+     "max": 140
     },
     {
      "id": "UC11JUsJTF-gkghJ_63jkCFg",
      "nome": "Blutende Wahrheit.",
      "idioma": "de",
-     "max": 39000
-    }
-   ],
-   "videos": 2,
-   "max": 39000
-  },
-  {
-   "molde": "[X] pourquoi [X]",
-   "canais": [
-    {
-     "id": "UCKghUSV9nLqShwy__Oj2d0g",
-     "nome": "La Science Expliquée",
-     "idioma": "fr",
-     "max": 9000
+     "max": 40000
     },
     {
-     "id": "UCNDq_ifL_7QIKFogHjcY4EA",
-     "nome": "Au-delà de l'Ordinaire",
+     "id": "UCiT5YKd9nSgnXFWeLmF3F3Q",
+     "nome": "Cœur Interdit",
      "idioma": "fr",
-     "max": 31000
+     "max": 81000
     }
    ],
-   "videos": 2,
-   "max": 31000
+   "videos": 4,
+   "max": 81000
   },
   {
-   "molde": "[X] quand [X]",
+   "molde": "what if every [X] you",
    "canais": [
     {
-     "id": "UC6WJCl51WBqjTccpHpmac9g",
-     "nome": "InsectiSi",
-     "idioma": "fr",
-     "max": 19000
-    },
-    {
-     "id": "UCNDq_ifL_7QIKFogHjcY4EA",
-     "nome": "Au-delà de l'Ordinaire",
-     "idioma": "fr",
-     "max": 2600
-    }
-   ],
-   "videos": 2,
-   "max": 19000
-  },
-  {
-   "molde": "[X] [N] [X] what [X]",
-   "canais": [
-    {
-     "id": "UCgBr2zNf-689J8HmZUCJifw",
-     "nome": "Explorer Unveiled",
+     "id": "UCyAdgyZa96XMtWXrpVIv12Q",
+     "nome": "PlanetIF",
      "idioma": "en",
      "max": 3900
     },
     {
-     "id": "UC_DdIoJzHZXlEKTVy41_KQw",
-     "nome": "Econ in a Nutshell",
+     "id": "UCdvbGznFEcB7E3IS7Wo-F7A",
+     "nome": "IfYou Films",
      "idioma": "en",
-     "max": 2600
+     "max": 22000
+    },
+    {
+     "id": "UCjXCoo0SOXZD8BFgb5ABlMg",
+     "nome": "IFNation",
+     "idioma": "en",
+     "max": 21000
     }
    ],
    "videos": 3,
-   "max": 3900
+   "max": 22000
+  },
+  {
+   "molde": "[X] si [X] verdad",
+   "canais": [
+    {
+     "id": "UC1vEorUPyH9RlT6GOJc4Exg",
+     "nome": "Y si Films",
+     "idioma": "es",
+     "max": 1200
+    },
+    {
+     "id": "UCnzSXbpG6itN2ABKs-QRyVA",
+     "nome": "Primer Nivel",
+     "idioma": "es",
+     "max": 1800000
+    }
+   ],
+   "videos": 2,
+   "max": 1800000
+  },
+  {
+   "molde": "what if [X] your [X]",
+   "canais": [
+    {
+     "id": "UCt-GhchW5nGSjr-ETeGab_g",
+     "nome": "ConChaser",
+     "idioma": "en",
+     "max": 29000
+    },
+    {
+     "id": "UCjXCoo0SOXZD8BFgb5ABlMg",
+     "nome": "IFNation",
+     "idioma": "en",
+     "max": 809000
+    }
+   ],
+   "videos": 2,
+   "max": 809000
+  },
+  {
+   "molde": "[X] explained",
+   "canais": [
+    {
+     "id": "UC_DdIoJzHZXlEKTVy41_KQw",
+     "nome": "Econ in a Nutshell",
+     "idioma": "en",
+     "max": 1600
+    },
+    {
+     "id": "UCr02LyWl33rqFI2hF1dwStg",
+     "nome": "Popden",
+     "idioma": "en",
+     "max": 639000
+    }
+   ],
+   "videos": 2,
+   "max": 639000
+  },
+  {
+   "molde": "your [X] every level [X] [N] [X]",
+   "canais": [
+    {
+     "id": "UCKWB86Dfk_yV-Vg9yyRZMWQ",
+     "nome": "Mr. Billy Explica",
+     "idioma": "es",
+     "max": 430000
+    },
+    {
+     "id": "UCutLLgwa_ovnN4sjU9S3vaw",
+     "nome": "Life in Levels",
+     "idioma": "en",
+     "max": 377000
+    }
+   ],
+   "videos": 4,
+   "max": 430000
+  },
+  {
+   "molde": "your [X] every level [X]",
+   "canais": [
+    {
+     "id": "UCKWB86Dfk_yV-Vg9yyRZMWQ",
+     "nome": "Mr. Billy Explica",
+     "idioma": "es",
+     "max": 418000
+    },
+    {
+     "id": "UCutLLgwa_ovnN4sjU9S3vaw",
+     "nome": "Life in Levels",
+     "idioma": "en",
+     "max": 35000
+    }
+   ],
+   "videos": 9,
+   "max": 418000
+  },
+  {
+   "molde": "what if you [X] how [X]",
+   "canais": [
+    {
+     "id": "UCt-GhchW5nGSjr-ETeGab_g",
+     "nome": "ConChaser",
+     "idioma": "en",
+     "max": 264000
+    },
+    {
+     "id": "UCYbIl0eyQSt3MyaVdmq55Zg",
+     "nome": "Flowstate Motion",
+     "idioma": "en",
+     "max": 203
+    }
+   ],
+   "videos": 4,
+   "max": 264000
+  },
+  {
+   "molde": "[X] si [X] [N] [X]",
+   "canais": [
+    {
+     "id": "UCGdsFp5xGVFQL86nrKL2vJw",
+     "nome": "Modo ¿Y si?",
+     "idioma": "es",
+     "max": 221000
+    },
+    {
+     "id": "UC1vEorUPyH9RlT6GOJc4Exg",
+     "nome": "Y si Films",
+     "idioma": "es",
+     "max": 74000
+    }
+   ],
+   "videos": 4,
+   "max": 221000
+  },
+  {
+   "molde": "[X] wenn [X]",
+   "canais": [
+    {
+     "id": "UCAM_O67GlUSKpEtC0Wpw5hg",
+     "nome": "Ihr Denken",
+     "idioma": "de",
+     "max": 12000
+    },
+    {
+     "id": "UCl-Y6NtTH0jUnkymFhMlvSA",
+     "nome": "BalkanTV",
+     "idioma": "de",
+     "max": 115000
+    }
+   ],
+   "videos": 2,
+   "max": 115000
+  },
+  {
+   "molde": "was [X] wenn [X]",
+   "canais": [
+    {
+     "id": "UCPHpBHgJEM12OLkwsmh7Ymg",
+     "nome": "Matthias Vogel - Bestattungsdienste",
+     "idioma": "?",
+     "max": 110000
+    },
+    {
+     "id": "UCAHyOZ9vigNeQtzIKBb8Csg",
+     "nome": "Monopology",
+     "idioma": "de",
+     "max": 15000
+    }
+   ],
+   "videos": 2,
+   "max": 110000
+  },
+  {
+   "molde": "what if you [X] who [X] your [X]",
+   "canais": [
+    {
+     "id": "UCt-GhchW5nGSjr-ETeGab_g",
+     "nome": "ConChaser",
+     "idioma": "en",
+     "max": 51000
+    },
+    {
+     "id": "UCjXCoo0SOXZD8BFgb5ABlMg",
+     "nome": "IFNation",
+     "idioma": "en",
+     "max": 88000
+    }
+   ],
+   "videos": 2,
+   "max": 88000
+  },
+  {
+   "molde": "[X] vous [X]",
+   "canais": [
+    {
+     "id": "UCNDq_ifL_7QIKFogHjcY4EA",
+     "nome": "Au-delà de l'Ordinaire",
+     "idioma": "fr",
+     "max": 81000
+    },
+    {
+     "id": "UCK_0EhPxErWtQLcH7fKKk6w",
+     "nome": "Dr. Alexandre Moreau",
+     "idioma": "fr",
+     "max": 41000
+    }
+   ],
+   "videos": 2,
+   "max": 81000
+  },
+  {
+   "molde": "what if you [X] your [X] [N] [X]",
+   "canais": [
+    {
+     "id": "UCUK7e3Qja5d-muR6b-jiZCw",
+     "nome": "Questionverse",
+     "idioma": "en",
+     "max": 68000
+    },
+    {
+     "id": "UCkMQyMQcjJtKCiT_Rig1xow",
+     "nome": "Stupid Dupid ",
+     "idioma": "en",
+     "max": 20000
+    }
+   ],
+   "videos": 2,
+   "max": 68000
+  },
+  {
+   "molde": "[X] si [X] tu [X]",
+   "canais": [
+    {
+     "id": "UCyjGHJ3f-llEKw5xwJOZ2yw",
+     "nome": "IMAGINA ESTO",
+     "idioma": "es",
+     "max": 65000
+    },
+    {
+     "id": "UCl_ZmhmkjsD9uiVafc8jYzg",
+     "nome": "Sifinito",
+     "idioma": "es",
+     "max": 21000
+    }
+   ],
+   "videos": 2,
+   "max": 65000
+  },
+  {
+   "molde": "[X] si [X] [N] [X] tu [X]",
+   "canais": [
+    {
+     "id": "UC1vEorUPyH9RlT6GOJc4Exg",
+     "nome": "Y si Films",
+     "idioma": "es",
+     "max": 3100
+    },
+    {
+     "id": "UCl_ZmhmkjsD9uiVafc8jYzg",
+     "nome": "Sifinito",
+     "idioma": "es",
+     "max": 56000
+    }
+   ],
+   "videos": 2,
+   "max": 56000
+  },
+  {
+   "molde": "what if your [X] every [X]",
+   "canais": [
+    {
+     "id": "UC_DdIoJzHZXlEKTVy41_KQw",
+     "nome": "Econ in a Nutshell",
+     "idioma": "en",
+     "max": 6200
+    },
+    {
+     "id": "UCkMQyMQcjJtKCiT_Rig1xow",
+     "nome": "Stupid Dupid ",
+     "idioma": "en",
+     "max": 35000
+    }
+   ],
+   "videos": 2,
+   "max": 35000
+  },
+  {
+   "molde": "[X] how [X]",
+   "canais": [
+    {
+     "id": "UC_DdIoJzHZXlEKTVy41_KQw",
+     "nome": "Econ in a Nutshell",
+     "idioma": "en",
+     "max": 34000
+    },
+    {
+     "id": "UCeumVi30Wf4kKsmaFQe_AZQ",
+     "nome": "Akademie für Lernpädagogik",
+     "idioma": "de",
+     "max": 10000
+    }
+   ],
+   "videos": 3,
+   "max": 34000
   }
  ]
 }
