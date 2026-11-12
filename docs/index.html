@@ -3,230 +3,199 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Niche Finder — Canais</title>
+<title>Niche Finder</title>
+<meta name="theme-color" content="#060607">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-<header class="hd">
-  <div class="hd-in">
-    <a class="marca" href="index.html"><span class="sq">NF</span><span>Niche Finder</span></a>
-    <nav class="abas"><a class="on" href="index.html">Canais</a><a href="validador.html">Validador</a></nav>
-    <div class="hd-dir">
-      <span class="vivo"><i id="dot"></i><span id="st">carregando…</span></span>
-      <button class="bt" id="recarregar" title="Buscar os dados mais novos agora (R)">↻ Atualizar</button>
-    </div>
-  </div>
-  <div class="prog" id="prog"><i id="prog-b"></i></div>
-</header>
+<div class="fundo"><i></i><i></i><i></i></div>
+<svg width="0" height="0" style="position:absolute"><defs><linearGradient id="gsp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D4FF3A" stop-opacity=".35"/><stop offset="1" stop-color="#D4FF3A" stop-opacity="0"/></linearGradient></defs></svg>
 
-<div class="tick" id="tick"></div>
+<nav class="nav">
+  <a class="mk" href="index.html"><b>NF</b><span>Niche Finder</span></a>
+  <div class="tabs"><a class="on" href="index.html">Canais</a><a href="validador.html">Validador</a></div>
+  <span class="live"><i id="dot"></i><span id="st">…</span></span>
+  <button class="ck" id="abrir-cmd"><span>Buscar</span><kbd>Ctrl K</kbd></button>
+</nav>
 
-<div class="app">
-  <aside class="lado" id="lado">
-    <div class="bloco">
-      <label class="busca"><span>⌕</span><input id="q" type="search" placeholder="Buscar canal, vídeo, tema" autocomplete="off"><kbd>/</kbd></label>
-    </div>
-    <div class="bloco">
-      <div class="rot">Idioma</div>
-      <div class="chips" id="langs"></div>
-    </div>
-    <div class="bloco">
-      <div class="rot">Nichos <span class="dica">clique para filtrar</span></div>
-      <div id="mapa"></div>
-    </div>
-    <div class="bloco crit">
-      <div class="rot">Critérios desta lista</div>
-      <ul id="crit"></ul>
-    </div>
-    <div class="bloco">
-      <div class="rot">Checados e descartados</div>
-      <ul class="fora" id="motivos"></ul>
-    </div>
-  </aside>
+<main class="wrap">
+  <section class="rv">
+    <span class="eyebrow" id="eyebrow">● ao vivo</span>
+    <h1 class="h1">Canais que <em>estouraram</em> nas últimas 3 semanas.</h1>
+    <p class="sub">Primeiro vídeo há no máximo <b>21 dias</b> e pelo menos <b>um vídeo longo com 50 mil views</b>. Garimpados em português, espanhol, inglês, alemão e francês — a lista se atualiza sozinha.</p>
+  </section>
+  <div class="erro" id="erro"></div>
 
-  <main class="cont">
-    <div class="hero">
-      <h1>Canais novos que já estouraram</h1>
-      <p id="lead">Primeiro vídeo nas últimas <b>3 semanas</b> e pelo menos <b>um vídeo longo com 50 mil views</b>. PT · ES · EN · DE · FR. Atualiza sozinho.</p>
+  <section class="bento" id="bento">
+    <a class="tile foto w6 h2 glow rv" id="t-top"><img id="t-top-img" alt=""><div class="in"><span class="eyebrow">maior vídeo de canal novo</span><b id="t-top-tit">—</b><span class="x" id="t-top-sub"></span></div></a>
+    <div class="tile glow rv"><small>Outliers agora</small><span class="big lm" id="k-out">0</span><div class="x">canais com vídeo de 50 mil+</div></div>
+    <div class="tile glow rv"><small>Maior outlier ×</small><span class="big" id="k-x">—</span><div class="x">views/vídeo ÷ inscritos</div></div>
+    <div class="tile glow rv"><small>Em observação</small><span class="big" id="k-obs">0</span><div class="x">novos, ainda abaixo de 50 mil</div></div>
+    <div class="tile glow rv"><small>Canais checados</small><span class="big" id="k-chk">0</span><div class="x" id="k-fora"></div></div>
+    <div class="tile w6 glow rv"><small>Outliers por idioma</small><div class="rows" id="t-lang"></div></div>
+    <div class="tile w6 glow rv"><small>Nichos que mais estouram</small><div class="rows" id="t-nicho"></div></div>
+  </section>
+
+  <section class="ctrl" id="ctrl">
+    <div class="ctrl-l">
+      <label class="srch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Filtrar por canal, vídeo ou tema" autocomplete="off"><kbd>/</kbd></label>
+      <div class="segm" id="langs"></div>
+      <select class="drop" id="ordem" aria-label="Ordenar">
+        <option value="melhor">↓ Melhor vídeo</option><option value="ratio">↓ Outlier ×</option><option value="dia">↓ Views por dia</option>
+        <option value="cresc">↓ Crescimento 24h</option><option value="novo">↓ Mais recente</option><option value="insc">↓ Inscritos</option>
+      </select>
     </div>
-    <div class="erro" id="erro"></div>
-    <div class="barra">
-      <button class="bt so-cel" id="abrir-filtros">Filtros</button>
-      <span class="cont-t" id="cont"></span>
-      <button class="link" id="limpar">limpar filtros</button>
-      <div class="barra-dir">
-        <select class="sel" id="ordem" aria-label="Ordenar">
-          <option value="melhor">Melhor vídeo</option>
-          <option value="ratio">Outlier × (views/vídeo ÷ inscritos)</option>
-          <option value="dia">Views por dia</option>
-          <option value="cresc">Crescimento 24h</option>
-          <option value="novo">1º vídeo mais recente</option>
-          <option value="views">Views do canal</option>
-          <option value="insc">Inscritos</option>
-        </select>
-        <div class="seg" id="modo"><button data-m="cards">Cards</button><button data-m="tabela">Tabela</button></div>
-      </div>
-    </div>
-    <div id="lista"></div>
-    <details class="como">
-      <summary>Como ler esta página</summary>
-      <dl>
-        <dt>Canal novo</dt><dd>O 1º vídeo que está no ar saiu nas últimas 3 semanas. A idade do canal não importa.</dd>
-        <dt>Outlier</dt><dd>Tem pelo menos UM vídeo longo (4 min+) com 50 mil views. Não é a soma. Canais novos abaixo disso ficam “em observação” e entram sozinhos se passarem.</dd>
-        <dt>Outlier ×</dt><dd>Média de views por vídeo dividida pelos inscritos (a métrica do Raj). 50× ou mais = o canal alcança muito além da própria base.</dd>
-        <dt>Crescimento 24h</dt><dd>Views ganhas desde a medição de ~24 h atrás. Aparece a partir da 2ª rodada.</dd>
-        <dt>Temas</dt><dd>Palavras que se repetem nos títulos e em quantos % dos vídeos aparecem.</dd>
-      </dl>
-    </details>
-    <footer id="rodape"></footer>
-  </main>
-</div>
+    <div class="rail" id="rail"></div>
+  </section>
+  <div class="info"><span id="cont"></span><button class="lnk" id="limpar">Limpar filtros</button></div>
+  <section class="grid" id="grid"></section>
+
+  <section class="como rv">
+    <div><b>Canal novo</b><p>O 1º vídeo que está no ar saiu há no máximo 3 semanas. A idade da conta não importa.</p></div>
+    <div><b>Outlier</b><p>Pelo menos UM vídeo longo (4 min+) com 50 mil views. Não é a soma do canal. Shorts não contam.</p></div>
+    <div><b>Outlier ×</b><p>Média de views por vídeo ÷ inscritos. Acima de 50× o canal alcança muito além da própria base.</p></div>
+    <div><b>Atalhos</b><p><kbd>Ctrl K</kbd> busca rápida · <kbd>/</kbd> filtrar · <kbd>Esc</kbd> fechar · <kbd>R</kbd> atualizar</p></div>
+  </section>
+  <footer id="rodape"></footer>
+</main>
 
 <div class="veu" id="veu"></div>
-<aside class="gaveta" id="gaveta" aria-hidden="true"></aside>
+<section class="folha" id="folha" aria-hidden="true"></section>
+<div class="cmd" id="cmd" role="dialog" aria-label="Busca rápida"><input id="cmd-q" placeholder="Ir para um canal, nicho ou idioma…" autocomplete="off"><ul id="cmd-l"></ul>
+  <div class="pe"><span><kbd>↑</kbd> <kbd>↓</kbd> navegar</span><span><kbd>Enter</kbd> abrir</span><span><kbd>Esc</kbd> fechar</span></div></div>
 
+<script src="ui.js"></script>
 <script>
 (function(){
 var LANGS={pt:"Português",es:"Espanhol",en:"Inglês",de:"Alemão",fr:"Francês"};
-var D=null,S={cat:"",lang:"",q:"",ordem:"melhor",modo:"cards"},aberto=null;
-try{var s=JSON.parse(localStorage.getItem("nf2")||"{}");for(var k in s)if(k in S)S[k]=s[k];}catch(e){}
-function salvar(){try{localStorage.setItem("nf2",JSON.stringify(S));}catch(e){}}
+var D=null,S={cat:"",lang:"",q:"",ordem:"melhor"},aberto=null,primeira=true;
+try{var s=JSON.parse(localStorage.getItem("nf3")||"{}");for(var k in s)if(k in S)S[k]=s[k];}catch(e){}
+function salvar(){try{localStorage.setItem("nf3",JSON.stringify(S));}catch(e){}}
 function $(id){return document.getElementById(id);}
 function esc(s){return String(s==null?"?":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
 function fmt(n){if(n==null)return"?";var a=Math.abs(n);
   if(a>=1e6)return(n/1e6).toFixed(1).replace(/\.0$/,"").replace(".",",")+" mi";
   if(a>=1e3)return(n/1e3).toFixed(1).replace(/\.0$/,"").replace(".",",")+" mil";return String(n);}
+function ful(n){return n==null?"?":Number(n).toLocaleString("pt-BR");}
 function fdata(s){if(!s)return"?";var p=s.slice(0,10).split("-");return p[2]+"/"+p[1];}
 function ha(iso){if(!iso)return"?";var m=Math.round((Date.now()-new Date(iso).getTime())/6e4);
-  if(m<1)return"agora";if(m<60)return"há "+m+" min";var h=Math.round(m/60);if(h<48)return"há "+h+" h";return"há "+Math.round(h/24)+" d";}
+  if(m<1)return"agora";if(m<60)return"há "+m+" min";var h=Math.round(m/60);if(h<48)return"há "+h+" h";return"há "+Math.round(h/24)+" dias";}
 function cresc(c){var h=c.historico||[];if(h.length<2)return null;var u=h[h.length-1],lim=new Date(u[0]).getTime()-864e5,b=h[0];
   for(var i=0;i<h.length;i++)if(new Date(h[i][0]).getTime()<=lim)b=h[i];return u[1]-b[1];}
-function ratio(c){if(!c.inscritos||!c.n_longos)return null;return (c.views_total/c.n_longos)/c.inscritos;}
+function ratio(c){if(!c.inscritos||!c.n_longos)return null;return(c.views_total/c.n_longos)/c.inscritos;}
 function fr(r){return r==null?"?":(r>=10?Math.round(r):r.toFixed(1).replace(".",","))+"×";}
-function dur(s){return s?Math.round(s/60)+" min":"";}
-function spark(h,w,hh,curto){h=h||[];if(h.length<2)return"<span class='sp-vazio'>"+(curto?"—":"sem histórico ainda")+"</span>";
-  var v=h.map(function(x){return x[1];}),mn=Math.min.apply(0,v),mx=Math.max.apply(0,v),r=mx-mn||1;
-  var pts=v.map(function(y,i){return (i*(w/(v.length-1))).toFixed(1)+","+(hh-2-(y-mn)/r*(hh-4)).toFixed(1);}).join(" ");
-  return"<svg class='sp' viewBox='0 0 "+w+" "+hh+"' preserveAspectRatio='none'><polyline points='"+pts+"'/></svg>";}
+function spark(h,w,hh){h=h||[];if(h.length<2)return"";var v=h.map(function(x){return x[1];}),mn=Math.min.apply(0,v),mx=Math.max.apply(0,v),r=mx-mn||1;
+  var p=v.map(function(y,i){return[(i*(w/(v.length-1))).toFixed(1),(hh-2-(y-mn)/r*(hh-4)).toFixed(1)];});
+  var l="M"+p.map(function(q){return q.join(",");}).join(" L");
+  return"<svg class='sp' viewBox='0 0 "+w+" "+hh+"' preserveAspectRatio='none'><path class='ar' d='"+l+" L"+w+","+hh+" L0,"+hh+" Z'/><path d='"+l+"'/></svg>";}
 
 function carregar(){
   fetch("dados.json?t="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();})
   .then(function(d){var c=d.criterios||(d.criterios={});c.bom_video=c.bom_video||50000;
     (d.canais||[]).forEach(function(x){x.performando=((x.melhor||{}).views||0)>=c.bom_video;});
     if(d.em_observacao==null)d.em_observacao=(d.canais||[]).filter(function(x){return!x.performando;}).length;
-    d.canais=(d.canais||[]).filter(function(x){return x.performando;});
-    D=d;$("erro").style.display="none";tudo();})
+    d.canais=(d.canais||[]).filter(function(x){return x.performando;});D=d;$("erro").style.display="none";tudo();})
   .catch(function(e){$("erro").style.display="block";$("erro").textContent="Não consegui ler os dados agora ("+e.message+"). Tento de novo em 30 s.";});
 }
 
 function tudo(){
-  var c=D.criterios,r=D.rodada||{},rod=r.status==="buscando",cs=D.canais||[];
-  $("dot").className=rod?"on":"";
-  $("st").textContent=rod?"buscando · "+(r.total?Math.round(100*r.feito/r.total)+"%":(r.fase||"")):"atualizado "+ha(D.atualizado);
-  $("prog").className="prog"+(rod?" on":"");$("prog-b").style.width=(rod&&r.total?Math.round(100*r.feito/r.total):0)+"%";
+  var r=D.rodada||{},rod=r.status==="buscando",cs=D.canais||[];
+  $("dot").className=rod?"on":"";$("st").textContent=rod?"buscando "+(r.total?Math.round(100*r.feito/r.total)+"%":""):ha(D.atualizado);
+  $("eyebrow").textContent=rod?"● buscando agora · "+(r.total?r.feito+" de "+r.total:""):"● atualizado "+ha(D.atualizado);
   var top=cs.slice().sort(function(a,b){return(b.melhor.views||0)-(a.melhor.views||0);})[0];
-  var nichos={};cs.forEach(function(x){nichos[x.categoria]=1;});
+  if(top){$("t-top-img").src="https://i.ytimg.com/vi/"+top.melhor.id+"/hqdefault.jpg";$("t-top-tit").textContent=top.melhor.titulo;
+    $("t-top-sub").textContent=fmt(top.melhor.views)+" views · "+top.nome+" · "+(LANGS[top.idioma]||top.idioma);$("t-top").onclick=function(){abrir(top.id);};}
   var rs=cs.map(ratio).filter(function(x){return x!=null;}).sort(function(a,b){return b-a;});
-  $("tick").innerHTML=[["Outliers",cs.length,"g"],["Nichos com outlier",Object.keys(nichos).length],["Em observação",fmt(D.em_observacao)],
-    ["Canais checados",(D.checados||0).toLocaleString("pt-BR")],["Maior vídeo",top?fmt(top.melhor.views):"—","a",top?top.nome:""],["Maior outlier ×",rs.length?fr(rs[0]):"—"]]
-    .map(function(k){return"<div class='tk "+(k[2]||"")+"'><small>"+k[0]+"</small><b>"+k[1]+"</b>"+(k[3]?"<em>"+esc(k[3])+"</em>":"")+"</div>";}).join("");
-  $("crit").innerHTML=["1º vídeo há até "+Math.round((c.dias_video||21)/7)+" semanas","Só vídeos de "+Math.round((c.min_duracao||240)/60)+" min ou mais",
-    "1 vídeo com "+fmt(c.bom_video)+"+ views","Shorts não entram","Busca a cada 3 h · site a cada 30 s"].map(function(t){return"<li>"+esc(t)+"</li>";}).join("");
-  var f=D.fora||{};$("motivos").innerHTML=Object.keys(f).sort(function(a,b){return f[b]-f[a];}).map(function(k){return"<li><span>"+esc(k)+"</span><b>"+fmt(f[k])+"</b></li>";}).join("");
-  $("rodape").textContent="Dados do YouTube via yt-dlp · gravado em "+fdata(D.atualizado)+" às "+(D.atualizado||"").slice(11,16)+" · o que o YouTube não informou aparece como “?”.";
-  mapa(cs);langs(cs);lista();if(aberto)abrir(aberto,true);
+  UI.contar($("k-out"),cs.length,String);UI.contar($("k-obs"),D.em_observacao||0,ful);UI.contar($("k-chk"),D.checados||0,ful);
+  $("k-x").textContent=rs.length?fr(rs[0]):"—";
+  var f=D.fora||{},tf=0;for(var k in f)tf+=f[k];$("k-fora").textContent=ful(tf)+" descartados (antigos ou grandes)";
+  var nl={};cs.forEach(function(x){nl[x.idioma]=(nl[x.idioma]||0)+1;});var ml=Math.max.apply(0,[1].concat(Object.keys(nl).map(function(k){return nl[k];})));
+  $("t-lang").innerHTML=Object.keys(LANGS).map(function(k){return"<div class='rw'><span>"+LANGS[k]+"</span><span class='tr'><i data-w='"+Math.round(100*(nl[k]||0)/ml)+"'></i></span><b>"+(nl[k]||0)+"</b></div>";}).join("");
+  var nn={};cs.forEach(function(x){nn[x.categoria]=(nn[x.categoria]||0)+1;});var kn=Object.keys(nn).sort(function(a,b){return nn[b]-nn[a];}).slice(0,5),mn=nn[kn[0]]||1;
+  $("t-nicho").innerHTML=kn.map(function(k){return"<div class='rw'><span style='white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>"+esc(k)+"</span><span class='tr'><i data-w='"+Math.round(100*nn[k]/mn)+"'></i></span><b>"+nn[k]+"</b></div>";}).join("")||"<div class='x'>Nenhum ainda.</div>";
+  setTimeout(function(){[].forEach.call(document.querySelectorAll(".tr i"),function(i){i.style.width=i.dataset.w+"%";});},120);
+  $("rodape").textContent="Dados do YouTube · gravado em "+fdata(D.atualizado)+" às "+(D.atualizado||"").slice(11,16)+" · o que o YouTube não informou aparece como ?";
+  langs(cs);rail(cs);lista();if(aberto)abrir(aberto,true);
 }
-
-function mapa(cs){
-  var cats=D.categorias||{},por={},grupos={};
-  Object.keys(cats).forEach(function(k){por[k]=0;(grupos[cats[k]]=grupos[cats[k]]||[]).push(k);});
-  cs.forEach(function(x){if(x.categoria in por)por[x.categoria]++;});
-  var mx=1;for(var k in por)mx=Math.max(mx,por[k]);
-  $("mapa").innerHTML=Object.keys(grupos).map(function(g){
-    return"<div class='grp'>"+esc(g)+"</div>"+grupos[g].sort(function(a,b){return por[b]-por[a];}).map(function(k){
-      return"<button class='ni"+(S.cat===k?" on":"")+(por[k]?"":" zero")+"' data-cat='"+esc(k)+"'><span>"+esc(k)+"</span><b>"+por[k]+"</b><i style='width:"+Math.round(100*por[k]/mx)+"%'></i></button>";}).join("");}).join("");
-  [].forEach.call($("mapa").querySelectorAll(".ni"),function(b){b.onclick=function(){S.cat=S.cat===b.dataset.cat?"":b.dataset.cat;salvar();mapa(D.canais);lista();fecharLado();};});
-}
-function langs(cs){
-  var n={};cs.forEach(function(x){n[x.idioma]=(n[x.idioma]||0)+1;});
-  $("langs").innerHTML="<button data-l=''"+(S.lang===""?" class='on'":"")+">Todos <em>"+cs.length+"</em></button>"+
-    Object.keys(LANGS).map(function(k){return"<button data-l='"+k+"'"+(S.lang===k?" class='on'":"")+" title='"+LANGS[k]+"'>"+k.toUpperCase()+" <em>"+(n[k]||0)+"</em></button>";}).join("");
-  [].forEach.call($("langs").querySelectorAll("button"),function(b){b.onclick=function(){S.lang=b.dataset.l;salvar();langs(D.canais);lista();};});
-}
+function langs(cs){var n={};cs.forEach(function(x){n[x.idioma]=(n[x.idioma]||0)+1;});
+  $("langs").innerHTML="<button data-l=''"+(S.lang===""?" class='on'":"")+">Todos<em>"+cs.length+"</em></button>"+
+    Object.keys(LANGS).map(function(k){return"<button data-l='"+k+"'"+(S.lang===k?" class='on'":"")+" title='"+LANGS[k]+"'>"+k.toUpperCase()+"<em>"+(n[k]||0)+"</em></button>";}).join("");
+  [].forEach.call($("langs").querySelectorAll("button"),function(b){b.onclick=function(){S.lang=b.dataset.l;salvar();langs(D.canais);lista();};});UI.pilula($("langs"));}
+function rail(cs){var cats=D.categorias||{},n={};cs.forEach(function(x){n[x.categoria]=(n[x.categoria]||0)+1;});
+  var ks=Object.keys(cats).sort(function(a,b){return(n[b]||0)-(n[a]||0);});
+  $("rail").innerHTML="<button data-c=''"+(S.cat===""?" class='on'":"")+">Todos os nichos</button>"+ks.map(function(k){return"<button data-c='"+esc(k)+"' class='"+(S.cat===k?"on":"")+(n[k]?"":" zero")+"'>"+esc(k)+"<b>"+(n[k]||0)+"</b></button>";}).join("");
+  [].forEach.call($("rail").querySelectorAll("button"),function(b){b.onclick=function(){S.cat=b.dataset.c;salvar();rail(D.canais);lista();};});}
 var ORD={melhor:function(x){return x.melhor.views||0;},ratio:function(x){return ratio(x)||0;},dia:function(x){return x.views_dia||0;},
-  cresc:function(x){return cresc(x)||0;},novo:function(x){return-(x.dias_primeiro||0);},views:function(x){return x.views_total||0;},insc:function(x){return x.inscritos||0;}};
-function filtrados(){
-  var cs=(D.canais||[]).filter(function(x){if(S.cat&&x.categoria!==S.cat)return false;if(S.lang&&x.idioma!==S.lang)return false;
-    if(S.q){var t=(x.nome+" "+(x.videos||[]).map(function(v){return v.titulo;}).join(" ")+" "+(x.palavras||[]).map(function(p){return p.termo;}).join(" ")+" "+x.categoria).toLowerCase();
-      if(t.indexOf(S.q.toLowerCase())<0)return false;}return true;});
-  var f=ORD[S.ordem]||ORD.melhor;return cs.sort(function(a,b){return f(b)-f(a);});
-}
-function lista(){
-  var cs=filtrados(),fs=[S.cat,S.lang&&LANGS[S.lang],S.q&&("“"+S.q+"”")].filter(Boolean);
-  $("cont").innerHTML="<b>"+cs.length+"</b> de "+(D.canais||[]).length+" outliers"+(fs.length?" · "+esc(fs.join(" · ")):"");
-  $("limpar").style.display=fs.length?"":"none";$("ordem").value=S.ordem;
-  [].forEach.call($("modo").children,function(b){b.className=b.dataset.m===S.modo?"on":"";});
-  if(!cs.length){$("lista").innerHTML="<div class='vazio'>"+((D.canais||[]).length?"Nenhum canal com esses filtros.":"Nenhum outlier ainda. A busca roda a cada 3 horas e a página se atualiza sozinha.")+"</div>";return;}
-  $("lista").innerHTML=S.modo==="tabela"?tabela(cs):"<div class='grade'>"+cs.map(card).join("")+"</div>";
-  [].forEach.call($("lista").querySelectorAll("[data-id]"),function(el){el.onclick=function(ev){if(ev.target.closest("a"))return;abrir(el.dataset.id);};});
-}
-function barras(vs,max){return(vs||[]).slice(0,3).map(function(v){return"<li><span class='bt-t'>"+esc(v.titulo)+"</span><span class='bt-v'>"+fmt(v.views)+"</span><i style='width:"+Math.max(2,Math.round(100*(v.views||0)/max))+"%'></i></li>";}).join("");}
-function card(x){
-  var m=x.melhor,r=ratio(x),g=cresc(x);
-  return"<article class='cd' data-id='"+esc(x.id)+"' tabindex='0'>"+
-    "<div class='cd-img'><img loading='lazy' src='https://i.ytimg.com/vi/"+esc(m.id)+"/mqdefault.jpg' alt=''><span class='pv'>"+fmt(m.views)+"</span>"+(m.dur?"<span class='pd'>"+dur(m.dur)+"</span>":"")+
-    (r!=null&&r>=50?"<span class='px'>"+fr(r)+"</span>":"")+"</div>"+
-    "<div class='cd-b'><div class='cd-h'><b class='cd-n'>"+esc(x.nome)+"</b><span class='tag'>"+esc((x.idioma||"?").toUpperCase())+"</span></div>"+
-    "<div class='cd-s'>"+esc(x.categoria)+" · 1º vídeo há "+(x.dias_primeiro==null?"?":x.dias_primeiro)+" d</div>"+
-    "<div class='met'><div><small>Inscritos</small><b>"+fmt(x.inscritos)+"</b></div><div><small>Vídeos</small><b>"+(x.n_longos==null?"?":x.n_longos)+"</b></div>"+
-    "<div><small>Views/dia</small><b>"+fmt(x.views_dia)+"</b></div><div><small>Outlier</small><b class='"+(r!=null&&r>=50?"am":"")+"'>"+fr(r)+"</b></div></div>"+
-    "<ul class='bars'>"+barras(x.videos,m.views||1)+"</ul>"+
-    "<div class='cd-f'>"+spark(x.historico,90,22)+(g?"<span class='up'>▲ "+fmt(g)+" / 24h</span>":"")+"<span class='mais'>detalhes →</span></div></div></article>";
-}
-function tabela(cs){
-  var cols=[["Canal",null],["Idioma",null],["Nicho",null],["Melhor vídeo","melhor"],["Outlier ×","ratio"],["Inscritos","insc"],["Views/dia","dia"],["24h","cresc"],["1º vídeo","novo"],["Tendência",null]];
-  return"<div class='tw'><table class='tb'><thead><tr>"+cols.map(function(c){return"<th"+(c[1]?" data-o='"+c[1]+"' class='ord"+(S.ordem===c[1]?" on":"")+"'":"")+">"+c[0]+(S.ordem===c[1]?" ↓":"")+"</th>";}).join("")+"</tr></thead><tbody>"+
-  cs.map(function(x){var r=ratio(x),g=cresc(x);return"<tr data-id='"+esc(x.id)+"'><td class='tn'><img src='https://i.ytimg.com/vi/"+esc(x.melhor.id)+"/default.jpg' alt=''><span>"+esc(x.nome)+"<small>"+esc(x.melhor.titulo)+"</small></span></td>"+
-    "<td><span class='tag'>"+esc((x.idioma||"?").toUpperCase())+"</span></td><td class='mut'>"+esc(x.categoria)+"</td><td class='n'>"+fmt(x.melhor.views)+"</td>"+
-    "<td class='n "+(r!=null&&r>=50?"am":"")+"'>"+fr(r)+"</td><td class='n'>"+fmt(x.inscritos)+"</td><td class='n'>"+fmt(x.views_dia)+"</td><td class='n up'>"+(g?"+"+fmt(g):"—")+"</td>"+
-    "<td class='n'>"+(x.dias_primeiro==null?"?":x.dias_primeiro+" d")+"</td><td>"+spark(x.historico,70,18,1)+"</td></tr>";}).join("")+"</tbody></table></div>";
-}
-function abrir(id,quieto){
-  var x=(D.canais||[]).filter(function(c){return c.id===id;})[0];if(!x){fechar();return;}aberto=id;
+  cresc:function(x){return cresc(x)||0;},novo:function(x){return-(x.dias_primeiro||0);},insc:function(x){return x.inscritos||0;}};
+function filtrados(){var cs=(D.canais||[]).filter(function(x){if(S.cat&&x.categoria!==S.cat)return false;if(S.lang&&x.idioma!==S.lang)return false;
+    if(S.q){var t=(x.nome+" "+(x.videos||[]).map(function(v){return v.titulo;}).join(" ")+" "+(x.palavras||[]).map(function(p){return p.termo;}).join(" ")+" "+x.categoria).toLowerCase();if(t.indexOf(S.q.toLowerCase())<0)return false;}return true;});
+  var f=ORD[S.ordem]||ORD.melhor;return cs.sort(function(a,b){return f(b)-f(a);});}
+function card(x){var m=x.melhor,r=ratio(x),g=cresc(x);
+  return"<article class='card glow' data-id='"+esc(x.id)+"' tabindex='0'><div class='im'><img loading='lazy' src='https://i.ytimg.com/vi/"+esc(m.id)+"/mqdefault.jpg' alt=''>"+
+    "<span class='bdg v'>▶ "+fmt(m.views)+"</span>"+(m.dur?"<span class='bdg d'>"+Math.round(m.dur/60)+" min</span>":"")+(r!=null&&r>=50?"<span class='bdg x'>"+fr(r)+"</span>":"")+"</div>"+
+    "<div class='bd'><h3><span>"+esc(x.nome)+"</span><span class='lg'>"+esc((x.idioma||"?").toUpperCase())+"</span></h3><div class='meta'>"+esc(x.categoria)+" · começou há "+(x.dias_primeiro==null?"?":x.dias_primeiro)+" dias</div>"+
+    "<div class='nums'><div><small>Inscritos</small><b>"+fmt(x.inscritos)+"</b></div><div><small>Vídeos</small><b>"+(x.n_longos==null?"?":x.n_longos)+"</b></div><div><small>Views/dia</small><b>"+fmt(x.views_dia)+"</b></div></div>"+
+    "<div class='ft'>"+spark(x.historico,84,24)+(g?"<span class='up'>+"+fmt(g)+" 24h</span>":"")+"<span class='go'>Ver canal <span>→</span></span></div></div></article>";}
+function lista(){var cs=filtrados(),fs=[S.cat,S.lang&&LANGS[S.lang],S.q&&("“"+S.q+"”")].filter(Boolean);
+  $("cont").innerHTML="<b>"+cs.length+"</b> de "+(D.canais||[]).length+" outliers"+(fs.length?" · "+esc(fs.join(" · ")):"");$("limpar").style.display=fs.length?"":"none";$("ordem").value=S.ordem;
+  $("grid").innerHTML=cs.length?cs.map(card).join(""):"<div class='vazio'>"+((D.canais||[]).length?"Nenhum canal com esses filtros.":"Nenhum outlier ainda. A busca roda a cada 3 horas.")+"</div>";
+  UI.revelar($("grid").querySelectorAll(".card"));
+  [].forEach.call($("grid").querySelectorAll(".card"),function(el){el.onclick=function(){abrir(el.dataset.id);};});}
+function grafico(h){h=h||[];if(h.length<2)return"<div class='mut' style='padding:30px 0;text-align:center'>O gráfico aparece a partir da 2ª medição.</div>";
+  var w=600,hh=120,v=h.map(function(x){return x[1];}),mn=Math.min.apply(0,v),mx=Math.max.apply(0,v),r=mx-mn||1;
+  var p=v.map(function(y,i){return[(i*(w/(v.length-1))).toFixed(1),(hh-6-(y-mn)/r*(hh-14)).toFixed(1)];}),l="M"+p.map(function(q){return q.join(",");}).join(" L");
+  return"<svg viewBox='0 0 "+w+" "+hh+"' preserveAspectRatio='none'><path d='"+l+" L"+w+","+hh+" L0,"+hh+" Z' fill='url(#gsp)'/><path d='"+l+"' fill='none' stroke='#D4FF3A' stroke-width='2' vector-effect='non-scaling-stroke'/></svg>"+
+    "<div style='display:flex;justify-content:space-between;font:12px var(--mono);color:var(--mut);margin-top:6px'><span>"+fdata(h[0][0])+" · "+fmt(v[0])+"</span><span>"+fdata(h[h.length-1][0])+" · "+fmt(v[v.length-1])+"</span></div>";}
+function abrir(id,quieto){var x=(D.canais||[]).filter(function(c){return c.id===id;})[0];if(!x)return;aberto=id;
   var m=x.melhor,r=ratio(x),g=cresc(x),mx=m.views||1;
-  $("gaveta").innerHTML="<div class='gv-top'><button class='bt' id='fechar'>✕ Fechar</button><span class='mut'>Esc</span></div>"+
-    "<a class='gv-img' href='https://youtu.be/"+esc(m.id)+"' target='_blank' rel='noopener'><img src='https://i.ytimg.com/vi/"+esc(m.id)+"/hqdefault.jpg' alt=''><span class='pv'>▶ "+fmt(m.views)+" views</span></a>"+
-    "<h2>"+esc(x.nome)+"</h2><div class='mut'>"+esc(LANGS[x.idioma]||x.idioma)+" · "+esc(x.categoria)+" · achado buscando “"+esc(x.termo)+"”</div>"+
-    "<div class='gv-met'><div><small>Melhor vídeo</small><b>"+fmt(m.views)+"</b></div><div><small>Outlier ×</small><b class='"+(r!=null&&r>=50?"am":"")+"'>"+fr(r)+"</b></div>"+
-    "<div><small>Inscritos</small><b>"+fmt(x.inscritos)+"</b></div><div><small>Views do canal</small><b>"+fmt(x.views_total)+"</b></div>"+
-    "<div><small>Vídeos longos</small><b>"+(x.n_longos==null?"?":x.n_longos)+"</b></div><div><small>Views/dia</small><b>"+fmt(x.views_dia)+"</b></div>"+
-    "<div><small>1º vídeo</small><b>"+fdata(x.primeiro_video)+"</b></div><div><small>Ganho 24h</small><b class='up'>"+(g?"+"+fmt(g):"—")+"</b></div></div>"+
-    "<div class='rot'>Views do canal ao longo das medições</div><div class='gv-sp'>"+spark(x.historico,320,60)+"</div>"+
-    "<div class='rot'>Vídeos mais vistos</div><ul class='bars grande'>"+(x.videos||[]).map(function(v){return"<li><a class='bt-t' href='https://youtu.be/"+esc(v.id)+"' target='_blank' rel='noopener'>"+esc(v.titulo)+"</a><span class='bt-v'>"+fmt(v.views)+"</span><i style='width:"+Math.max(2,Math.round(100*(v.views||0)/mx))+"%'></i></li>";}).join("")+"</ul>"+
-    "<div class='rot'>Temas que se repetem nos títulos</div><div class='temas'>"+((x.palavras||[]).slice(0,8).map(function(p){return"<span>"+esc(p.termo)+" <em>"+p.pct+"%</em></span>";}).join("")||"<span>sem tema repetido</span>")+"</div>"+
-    "<div class='gv-ac'><a class='bt pri' href='validador.html?t="+encodeURIComponent(m.titulo||"")+"'>Validar este título em 5 idiomas →</a><a class='bt' href='"+esc(x.url)+"' target='_blank' rel='noopener'>Abrir canal ↗</a></div>";
-  $("gaveta").className="gaveta on";$("gaveta").setAttribute("aria-hidden","false");$("veu").className="veu on";
-  $("fechar").onclick=fechar;if(!quieto)$("gaveta").scrollTop=0;
-}
-function fechar(){aberto=null;$("gaveta").className="gaveta";$("gaveta").setAttribute("aria-hidden","true");$("veu").className="veu"+($("lado").classList.contains("on")?" on":"");}
-function fecharLado(){$("lado").classList.remove("on");if(!aberto)$("veu").className="veu";}
+  $("folha").innerHTML="<div class='alca'></div><button class='fx' id='fx' aria-label='Fechar'>✕</button>"+
+    "<div class='fl-top'><a class='im' href='https://youtu.be/"+esc(m.id)+"' target='_blank' rel='noopener'><img src='https://i.ytimg.com/vi/"+esc(m.id)+"/hqdefault.jpg' alt=''><span class='bdg v'>▶ assistir · "+fmt(m.views)+"</span></a>"+
+    "<div><h2>"+esc(x.nome)+"</h2><div class='chipz'><span>"+esc(LANGS[x.idioma]||x.idioma)+"</span><span>"+esc(x.categoria)+"</span><span>1º vídeo "+fdata(x.primeiro_video)+"</span></div>"+
+    "<div class='kv'><div><small>Melhor vídeo</small><b class='lm'>"+fmt(m.views)+"</b></div><div><small>Outlier ×</small><b>"+fr(r)+"</b></div><div><small>Inscritos</small><b>"+fmt(x.inscritos)+"</b></div>"+
+    "<div><small>Views do canal</small><b>"+fmt(x.views_total)+"</b></div><div><small>Vídeos longos</small><b>"+(x.n_longos==null?"?":x.n_longos)+"</b></div><div><small>Ganho 24h</small><b class='up'>"+(g?"+"+fmt(g):"—")+"</b></div></div></div></div>"+
+    "<div class='fl-sec'><h4>Views do canal em cada medição</h4><div class='chart'>"+grafico(x.historico)+"</div></div>"+
+    "<div class='fl-sec'><h4>Vídeos mais vistos</h4><ul class='vl'>"+(x.videos||[]).map(function(v){return"<li><a href='https://youtu.be/"+esc(v.id)+"' target='_blank' rel='noopener'><i data-s='"+((v.views||0)/mx).toFixed(3)+"'></i><span>"+esc(v.titulo)+"</span><b>"+fmt(v.views)+"</b></a></li>";}).join("")+"</ul></div>"+
+    "<div class='fl-sec'><h4>Temas que se repetem nos títulos</h4><div class='tg'>"+((x.palavras||[]).slice(0,10).map(function(p){return"<span>"+esc(p.termo)+"<em>"+p.pct+"%</em></span>";}).join("")||"<span>sem tema repetido</span>")+"</div></div>"+
+    "<div class='acts'><a class='btn pri' href='validador.html?t="+encodeURIComponent(m.titulo||"")+"'>Validar este título em 5 idiomas →</a><a class='btn' href='"+esc(x.url)+"' target='_blank' rel='noopener'>Abrir no YouTube ↗</a></div>";
+  $("folha").classList.add("on");$("folha").setAttribute("aria-hidden","false");$("veu").classList.add("on");document.body.style.overflow="hidden";
+  $("fx").onclick=fechar;if(!quieto)$("folha").scrollTop=0;
+  setTimeout(function(){[].forEach.call($("folha").querySelectorAll(".vl i"),function(i){i.style.transform="scaleX("+i.dataset.s+")";});},250);}
+function fechar(){aberto=null;$("folha").classList.remove("on");$("folha").setAttribute("aria-hidden","true");$("veu").classList.remove("on");document.body.style.overflow="";}
 
-$("q").value=S.q;
-$("q").oninput=function(){S.q=this.value.trim();salvar();if(D)lista();};
+/* busca rápida Ctrl+K */
+var cmdSel=0,cmdItens=[];
+function cmdAbrir(){$("cmd").classList.add("on");$("veu").classList.add("on");$("cmd-q").value="";cmdFiltrar();setTimeout(function(){$("cmd-q").focus();},30);}
+function cmdFechar(){$("cmd").classList.remove("on");if(!aberto)$("veu").classList.remove("on");}
+function cmdFiltrar(){if(!D)return;var q=$("cmd-q").value.toLowerCase().trim(),its=[];
+  (D.canais||[]).forEach(function(x){its.push({t:x.nome,s:x.melhor.titulo,img:x.melhor.id,v:fmt(x.melhor.views),a:function(){abrir(x.id);}});});
+  Object.keys(LANGS).forEach(function(k){its.push({t:"Mostrar só "+LANGS[k],s:"filtro de idioma",a:function(){S.lang=k;S.cat="";salvar();tudo();}});});
+  Object.keys(D.categorias||{}).forEach(function(k){its.push({t:"Nicho: "+k,s:"filtro de nicho",a:function(){S.cat=k;salvar();tudo();}});});
+  its.push({t:"Abrir o Validador de dobras",s:"outra página",a:function(){location.href="validador.html";}});
+  cmdItens=its.filter(function(i){return!q||(i.t+" "+i.s).toLowerCase().indexOf(q)>=0;}).slice(0,40);cmdSel=0;cmdDesenhar();}
+function cmdDesenhar(){$("cmd-l").innerHTML=cmdItens.map(function(i,n){return"<li data-n='"+n+"'"+(n===cmdSel?" class='on'":"")+">"+(i.img?"<img src='https://i.ytimg.com/vi/"+esc(i.img)+"/default.jpg' alt=''>":"")+"<span><b>"+esc(i.t)+"</b><small>"+esc(i.s)+"</small></span>"+(i.v?"<em>"+i.v+"</em>":"")+"</li>";}).join("")||"<li><span><small>Nada encontrado.</small></span></li>";
+  [].forEach.call($("cmd-l").querySelectorAll("li[data-n]"),function(li){li.onclick=function(){cmdRodar(+li.dataset.n);};});
+  var o=$("cmd-l").querySelector(".on");if(o)o.scrollIntoView({block:"nearest"});}
+function cmdRodar(n){var i=cmdItens[n];cmdFechar();if(i)i.a();}
+$("cmd-q").oninput=cmdFiltrar;
+$("cmd-q").onkeydown=function(e){if(e.key==="ArrowDown"){cmdSel=Math.min(cmdItens.length-1,cmdSel+1);cmdDesenhar();e.preventDefault();}
+  else if(e.key==="ArrowUp"){cmdSel=Math.max(0,cmdSel-1);cmdDesenhar();e.preventDefault();}else if(e.key==="Enter")cmdRodar(cmdSel);};
+$("abrir-cmd").onclick=cmdAbrir;
+
+$("q").value=S.q;$("q").oninput=function(){S.q=this.value.trim();salvar();if(D)lista();};
 $("ordem").onchange=function(){S.ordem=this.value;salvar();lista();};
-[].forEach.call($("modo").children,function(b){b.onclick=function(){S.modo=b.dataset.m;salvar();lista();};});
-$("lista").addEventListener("click",function(e){var th=e.target.closest("th[data-o]");if(th){S.ordem=th.dataset.o;salvar();lista();}});
 $("limpar").onclick=function(){S.cat="";S.lang="";S.q="";$("q").value="";salvar();tudo();};
-$("recarregar").onclick=carregar;
-$("veu").onclick=function(){fechar();fecharLado();};
-$("abrir-filtros").onclick=function(){$("lado").classList.add("on");$("veu").className="veu on";};
+$("veu").onclick=function(){fechar();cmdFechar();};
 document.addEventListener("keydown",function(e){var tag=(e.target.tagName||"").toLowerCase();
-  if(e.key==="Escape"){fechar();fecharLado();if(tag==="input")e.target.blur();}
-  else if(tag!=="input"&&tag!=="select"){if(e.key==="/"){e.preventDefault();$("q").focus();}else if(e.key==="r"||e.key==="R")carregar();
-    else if(e.key==="Enter"&&e.target.dataset&&e.target.dataset.id)abrir(e.target.dataset.id);}});
+  if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="k"){e.preventDefault();$("cmd").classList.contains("on")?cmdFechar():cmdAbrir();return;}
+  if(e.key==="Escape"){fechar();cmdFechar();if(tag==="input")e.target.blur();return;}
+  if(tag==="input"||tag==="select"||tag==="textarea")return;
+  if(e.key==="/"){e.preventDefault();$("q").focus();}else if(e.key==="r"||e.key==="R")carregar();
+  else if(e.key==="Enter"&&e.target.dataset&&e.target.dataset.id)abrir(e.target.dataset.id);});
+UI.pilula(document.querySelector(".tabs"));UI.revelar(document.querySelectorAll(".rv"));
 carregar();setInterval(carregar,30000);
 })();
 </script>
