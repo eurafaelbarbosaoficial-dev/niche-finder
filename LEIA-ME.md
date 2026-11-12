@@ -1,5 +1,7 @@
 # Niche Finder
 
+**Site:** https://eurafaelbarbosaoficial-dev.github.io/niche-finder/ · **Repositório:** https://github.com/eurafaelbarbosaoficial-dev/niche-finder
+
 Acha **canais novos** no YouTube, criados há até 30 dias, que já estão **performando**: têm pelo menos um vídeo
 longo com 50 mil views ou mais. Não é a soma do canal. Procura em 17 nichos amplos e em PT, ES, EN, DE e FR, e mostra tudo num site em cards.
 Não usa a API do YouTube.
@@ -45,7 +47,7 @@ da busca (`estado/canais.json`). Não precisa copiar nenhuma pasta à mão.
 
 1. Instale o Git, se ainda não tiver: `winget install Git.Git`.
 2. Baixe o repositório para a pasta Documentos:
-   `git clone https://github.com/<seu-usuario>/niche-finder "%USERPROFILE%\Documents\Niche Finder"`.
+   `git clone https://github.com/eurafaelbarbosaoficial-dev/niche-finder "%USERPROFILE%\Documents\Niche Finder"`.
 3. Dentro da pasta, rode `powershell -ExecutionPolicy Bypass -File instalar.ps1`. Ele instala Python, yt-dlp e Deno
    e cria a tarefa do Windows que roda a busca a cada 3 horas.
 4. Na máquina antiga, apague a tarefa (Agendador de Tarefas → "Niche Finder" → Excluir). Duas máquinas buscando ao
