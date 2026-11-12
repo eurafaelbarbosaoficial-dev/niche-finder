@@ -1,0 +1,7 @@
+# A memoria da busca (estado/canais.json) VAI para o GitHub: assim outra maquina continua de onde parou.
+# O log e a saida ficam so no PC.
+estado/log.txt
+estado/saida.txt
+__pycache__/
+*.tmp
+estado/erro.txt
