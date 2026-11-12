@@ -5,3 +5,6 @@ estado/saida.txt
 __pycache__/
 *.tmp
 estado/erro.txt
+conhecimento/raj/legendas/
+conhecimento/raj/erros.txt
+estado/ultima_busca.json

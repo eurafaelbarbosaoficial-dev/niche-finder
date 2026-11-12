@@ -1,0 +1,21 @@
+{
+ "slug": "every-money-laundering",
+ "origem": {"titulo": "Every Money Laundering Technique Explained", "canal": "Econ in a Nutshell",
+            "id": "XgIo6SrSxS4", "canal_id": "UC_DdIoJzHZXlEKTVy41_KQw", "views": 1100000, "idioma": "en", "inscritos": 4860},
+ "molde": "Every [técnica de um tema proibido/financeiro] Explained",
+ "buscas": {
+  "pt": ["todas as técnicas de lavagem de dinheiro explicadas", "lavagem de dinheiro explicada"],
+  "es": ["todas las técnicas de lavado de dinero explicadas", "lavado de dinero explicado"],
+  "en": ["every money laundering technique explained", "money laundering explained"],
+  "de": ["alle Geldwäsche Methoden erklärt", "Geldwäsche erklärt"],
+  "fr": ["toutes les techniques de blanchiment d'argent expliquées", "blanchiment d'argent expliqué"]
+ },
+ "dobras": [
+  {"nome": "Golpes / fraudes", "idioma": "en", "nota": "mesmo público de crime financeiro; driver 'proibido' + 'medo'",
+   "buscas": ["every scam explained", "every financial fraud explained"]},
+  {"nome": "Sonegação e paraísos fiscais", "idioma": "en", "nota": "mesmo universo (dinheiro escondido)",
+   "buscas": ["every tax evasion technique explained"]},
+  {"nome": "Golpes (em português)", "idioma": "pt", "nota": "molde catálogo aplicado a golpes no Brasil",
+   "buscas": ["todos os golpes explicados"]}
+ ]
+}

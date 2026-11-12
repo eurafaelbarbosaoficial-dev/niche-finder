@@ -1,0 +1,29 @@
+[
+ {
+  "slug": "every-money-laundering",
+  "data": "2026-11-12 16:10",
+  "titulo": "Every Money Laundering Technique Explained",
+  "molde": "Every [técnica de um tema proibido/financeiro] Explained",
+  "resumo": {
+   "pt": "validado_concorrencia",
+   "es": "validado_concorrencia",
+   "en": "validado_concorrencia",
+   "de": "oportunidade",
+   "fr": "validado_morno"
+  },
+  "dobras": [
+   {
+    "nome": "Golpes / fraudes",
+    "veredito": "validado_concorrencia"
+   },
+   {
+    "nome": "Sonegação e paraísos fiscais",
+    "veredito": "validado_concorrencia"
+   },
+   {
+    "nome": "Golpes (em português)",
+    "veredito": "validado_concorrencia"
+   }
+  ]
+ }
+]

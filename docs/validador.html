@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Validador de Dobras</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--panel:#0c0c0f;--card:#111115;--card2:#17171c;--line:#23232a;--line2:#33333d;--tx:#fff;--tx2:#c8c8d0;--mut:#878793;
+--acc:#7c5cff;--acc2:#c084fc;--accbg:#1a1533;--ok:#22c55e;--okbg:rgba(34,197,94,.12);--warn:#f5b84b;--warnbg:rgba(245,184,75,.12);--bad:#f87171;--badbg:rgba(248,113,113,.12)}
+*{box-sizing:border-box} html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit} button{font:inherit;color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 16px 70px}
+header{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top{max-width:1200px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:-.02em;text-decoration:none}
+.logo b{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--acc),var(--acc2));display:grid;place-items:center;font-size:16px}
+nav{display:flex;gap:4px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:3px}
+nav a{padding:5px 12px;border-radius:7px;font-size:13.5px;color:var(--tx2);text-decoration:none}
+nav a.on{background:var(--tx);color:#000;font-weight:600}
+.hero{padding:30px 0 6px}
+.hero h1{font-size:clamp(26px,4.2vw,40px);margin:0 0 8px;letter-spacing:-.035em;font-weight:800;line-height:1.1}
+.hero h1 span{background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--tx2);margin:0;max-width:820px} .lead b{color:var(--tx)}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin:18px 0 0}
+.box h3{margin:0 0 6px;font-size:15px} .box p{margin:0;color:var(--tx2);font-size:14px}
+.pedir{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.pedir input{flex:1 1 260px;min-width:0;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 12px;color:var(--tx)}
+.btn{border:1px solid var(--line2);background:var(--card2);border-radius:9px;padding:7px 12px;cursor:pointer;font-size:13px}
+.btn:hover{border-color:var(--acc)}
+h2.t{font-size:20px;margin:36px 0 4px;letter-spacing:-.02em} p.ts{margin:0 0 14px;color:var(--mut);font-size:13.5px}
+.lista{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:12px}
+.val{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;cursor:pointer;text-align:left;display:flex;flex-direction:column;gap:8px}
+.val:hover{border-color:var(--line2)} .val.on{border-color:var(--acc)}
+.val b{font-size:15.5px} .val small{color:var(--mut);font-size:12.5px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.v{font-style:normal;font-size:11.5px;font-weight:700;padding:3px 8px;border-radius:7px;white-space:nowrap}
+.v.oportunidade{background:var(--okbg);color:var(--ok)} .v.oportunidade_fraca{background:var(--warnbg);color:var(--warn)}
+.v.validado_concorrencia{background:var(--accbg);color:#b9a8ff} .v.validado_morno{background:#1c1c22;color:var(--tx2)}
+.v.feito_sem_sucesso{background:var(--badbg);color:var(--bad)}
+.det{margin-top:30px} .orig{display:flex;gap:16px;flex-wrap:wrap;align-items:flex-start}
+.orig img{width:min(100%,300px);border-radius:12px;border:1px solid var(--line)}
+.orig .i{flex:1 1 280px;min-width:0} .orig h2{margin:0 0 6px;font-size:22px;letter-spacing:-.02em}
+.molde{display:inline-block;margin-top:8px;font-family:ui-monospace,Consolas,monospace;font-size:13px;background:var(--accbg);color:#cbbdff;padding:5px 9px;border-radius:8px}
+.lang{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-top:12px}
+.lh{display:flex;align-items:center;gap:10px;flex-wrap:wrap} .lh h3{margin:0;font-size:17px}
+.lh .x{color:var(--tx2);font-size:13.5px;flex:1 1 260px}
+.bq{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.bq .q{font-weight:600;font-size:14px} .bq .q code{font-family:ui-monospace,Consolas,monospace;color:#cbbdff}
+.nums{display:flex;flex-wrap:wrap;gap:14px;margin:6px 0;font-size:13px;color:var(--tx2)} .nums b{color:var(--tx)}
+details summary{cursor:pointer;color:var(--mut);font-size:13px}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top} th{color:var(--mut);font-weight:600}
+td.r{text-align:right;white-space:nowrap} .tw{overflow-x:auto}
+.m{color:var(--ok);font-weight:700} .no{color:var(--mut)}
+.vazio{color:var(--mut);padding:20px;border:1px dashed var(--line2);border-radius:14px;text-align:center}
+.leg{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;font-size:12.5px;color:var(--tx2)} .leg span{display:flex;gap:6px;align-items:center}
+@media(max-width:600px){.orig img{width:100%}}
+</style>
+</head>
+<body>
+<header><div class="top">
+  <a class="logo" href="index.html"><b>◎</b>Niche Finder</a>
+  <nav><a href="index.html">Canais</a><a class="on" href="validador.html">Validador</a></nav>
+</div></header>
+<div class="wrap">
+  <section class="hero">
+    <h1>Validador de <span>dobras</span></h1>
+    <p class="lead">Pega um título que <b>estourou</b> e pesquisa o mesmo molde em <b>português, espanhol, inglês, alemão e francês</b>
+      (escrito como um nativo buscaria), além de dobras para outros nichos. Mostra onde <b>ninguém faz</b> (oportunidade) e onde
+      <b>já tem gente fazendo</b> (tema validado: dá para entrar subnichando ou mudando o público).</p>
+    <div class="leg">
+      <span><i class="v oportunidade">Oportunidade</i> ninguém faz + tema tem procura</span>
+      <span><i class="v oportunidade_fraca">Vazio, procura fraca</i></span>
+      <span><i class="v validado_concorrencia">Validado: subnichar</i> já fazem e funciona</span>
+      <span><i class="v validado_morno">Validado morno</i></span>
+      <span><i class="v feito_sem_sucesso">Feito sem sucesso</i> alerta</span>
+    </div>
+    <div class="box"><h3>Como pedir uma validação</h3>
+      <p>Cole o título que estourou abaixo e copie o pedido. Mande para o Claude no Claude Code (pasta Niche Finder):
+        ele escreve as buscas em cada idioma, roda o validador e publica aqui.</p>
+      <div class="pedir"><input id="tit" placeholder="Ex.: Every Money Laundering Technique Explained">
+        <button class="btn" id="cop">Copiar pedido</button></div>
+    </div>
+  </section>
+  <h2 class="t">Validações feitas</h2><p class="ts" id="sub">Carregando…</p>
+  <div class="lista" id="lista"></div>
+  <div class="det" id="det"></div>
+</div>
+<script>
+var LAB={oportunidade:"Oportunidade",oportunidade_fraca:"Vazio, procura fraca",validado_concorrencia:"Validado: subnichar",validado_morno:"Validado morno",feito_sem_sucesso:"Feito sem sucesso"};
+var NOME={pt:"PT",es:"ES",en:"EN",de:"DE",fr:"FR"};
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function f(n){if(n==null)return"?";if(n>=1e6)return(n/1e6).toFixed(1).replace(".0","")+" mi";if(n>=1e3)return Math.round(n/1e3)+" mil";return String(n)}
+function chip(v,t){return '<i class="v '+v+'">'+esc(t||LAB[v]||v)+'</i>'}
+function dur(s){return s?Math.floor(s/60)+":"+String(s%60).padStart(2,"0"):"?"}
+document.getElementById("cop").onclick=function(){var t=document.getElementById("tit").value.trim();
+  var txt='Valide no Validador de dobras o título: "'+(t||"<cole aqui>")+'". Pesquise em PT, ES, EN, DE e FR e sugira dobras.';
+  (navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(function(){this_ok()},function(){prompt("Copie:",txt)});
+  function this_ok(){var b=document.getElementById("cop");b.textContent="Copiado ✓";setTimeout(function(){b.textContent="Copiar pedido"},1800)}};
+var idx=[];
+(function(){var t=new URLSearchParams(location.search).get("t");if(t){var i=document.getElementById("tit");i.value=t;i.scrollIntoView({block:"center"})}})();
+function lista(){var el=document.getElementById("lista");var atual=location.hash.slice(1);
+  document.getElementById("sub").textContent=idx.length?idx.length+" validação(ões). Clique para ver os detalhes.":"";
+  if(!idx.length){el.innerHTML='<div class="vazio">Nenhuma validação ainda.</div>';return}
+  el.innerHTML=idx.map(function(x){var r=x.resumo||{};return '<button class="val'+(x.slug===atual?" on":"")+'" data-s="'+esc(x.slug)+'"><b>'+esc(x.titulo||x.slug)+'</b>'+
+   '<small>'+esc(x.molde||"")+' · '+esc(x.data)+'</small><div class="chips">'+
+   Object.keys(r).map(function(k){return chip(r[k],NOME[k]+": "+(LAB[r[k]]||r[k]))}).join("")+'</div>'+
+   ((x.dobras||[]).length&&x.dobras.map?'<small>Dobras:</small><div class="chips">'+x.dobras.map(function(d){return chip(d.veredito,d.nome)}).join("")+'</div>':'')+'</button>'}).join("");
+  [].forEach.call(el.querySelectorAll(".val"),function(b){b.onclick=function(){location.hash=b.dataset.s}})}
+function bloco(titulo,v,explica,buscas,extra){
+  return '<div class="lang"><div class="lh"><h3>'+esc(titulo)+'</h3>'+chip(v)+'<span class="x">'+esc(explica)+(extra?'<br><span style="color:var(--mut)">'+esc(extra)+'</span>':'')+'</span></div>'+
+  buscas.map(function(b){
+    var linhas=(b.itens||[]).filter(function(i){return i.conferido}).map(function(i){
+      return '<tr><td>'+(i.mesmo_formato?'<span class="m">●</span>':'<span class="no">○</span>')+'</td><td>'+esc((i.idioma_real||"?").toUpperCase())+'</td><td><a href="https://youtu.be/'+esc(i.id)+'" target="_blank" rel="noopener">'+esc(i.titulo)+'</a><br><span class="no">'+esc(i.canal||"?")+'</span></td><td class="r">'+f(i.views)+'</td><td class="r">'+dur(i.dur)+'</td></tr>'}).join("");
+    return '<div class="bq"><div class="q">'+(b.tipo==="tema"?'Busca do tema (procura)':'Busca do molde (concorrência)')+': <code>'+esc(b.busca)+'</code></div><div class="nums">'+
+     (b.tipo==="tema"?'':'<span>Concorrentes no formato: <b>'+b.concorrentes+'</b> ('+b.canais_concorrentes+' canal/is)</span>'+
+     '<span>Melhor deles: <b>'+f(b.melhor_concorrente)+'</b></span>'+(b.copias_fracas?'<span>Cópias fracas (&lt;1 mil): <b>'+b.copias_fracas+'</b></span>':''))+
+     '<span>Maior vídeo de outro formato: <b>'+f(b.adjacentes_max)+'</b></span>'+
+     '<span>Procura (autocompletar 0–10): <b>'+b.procura+'</b></span></div>'+
+     '<details><summary>Ver os vídeos conferidos (● = mesmo formato)</summary><div class="tw"><table><tr><th></th><th>Idioma</th><th>Vídeo</th><th>Views</th><th>Dur.</th></tr>'+linhas+'</table></div></details></div>'}).join("")+'</div>'}
+function detalhe(){var s=location.hash.slice(1),el=document.getElementById("det");lista();if(!s){el.innerHTML="";return}
+  fetch("validacoes/"+encodeURIComponent(s)+".json?t="+Date.now()).then(function(r){return r.json()}).then(function(d){
+    var o=d.origem||{};
+    var h='<div class="orig">'+(o.id?'<a href="https://youtu.be/'+esc(o.id)+'" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/'+esc(o.id)+'/hqdefault.jpg" alt=""></a>':'')+
+     '<div class="i"><h2>'+esc(o.titulo||d.slug)+'</h2><div style="color:var(--tx2);font-size:14px">'+esc(o.canal||"")+(o.views?' · '+f(o.views)+' views':'')+(o.inscritos?' · '+f(o.inscritos)+' inscritos':'')+(o.idioma?' · idioma '+esc(o.idioma.toUpperCase()):'')+'</div>'+
+     (d.molde?'<div class="molde">Molde: '+esc(d.molde)+'</div>':'')+'<div style="color:var(--mut);font-size:12.5px;margin-top:8px">Pesquisado em '+esc(d.data)+'. Concorrente = vídeo de 4 min+ no idioma real pesquisado, com as palavras do molde no título (o vídeo e o canal de origem não contam). Validado = algum com '+f(d.criterios.bom)+'+ views; sem sucesso = o melhor abaixo de '+f(d.criterios.fraco)+'.</div></div></div>';
+    h+='<h2 class="t">O mesmo título em cada idioma</h2>'+(d.idiomas||[]).map(function(l){return bloco(l.nome,l.veredito,l.explica,l.buscas)}).join("");
+    if((d.dobras||[]).length)h+='<h2 class="t">Dobras para outros nichos</h2>'+d.dobras.map(function(x){return bloco(x.nome+" ("+(x.idioma||"").toUpperCase()+")",x.veredito,x.explica,x.buscas,x.nota)}).join("");
+    el.innerHTML=h;el.scrollIntoView({behavior:"smooth"})}).catch(function(){el.innerHTML='<div class="vazio">Não achei essa validação.</div>'})}
+fetch("validacoes/index.json?t="+Date.now()).then(function(r){return r.ok?r.json():[]}).catch(function(){return[]}).then(function(d){idx=d||[];detalhe()});
+window.addEventListener("hashchange",detalhe);
+</script>
+</body>
+</html>

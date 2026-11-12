@@ -28,6 +28,14 @@ Não usa a API do YouTube.
 
 Para mudar um número: `finder.py --dias-video 21 --bom-video 50000 --min-duracao 240`.
 
+## Validador de dobras (aba "Validador" do site)
+
+Pega um título que estourou e pesquisa o mesmo molde em PT, ES, EN, DE e FR, mais algumas dobras para outros nichos.
+Para cada idioma diz se é **oportunidade** (ninguém faz e o tema tem procura), **validado** (já fazem e funciona:
+entrar subnichando ou mudando o público) ou **feito sem sucesso** (alerta). Como pedir: no site, cole o título,
+copie o pedido e mande para o Claude Code nesta pasta. Ele escreve as buscas (como um nativo buscaria) e roda
+`validador.py`. O método está em `conhecimento/GUIA-DOBRA.md`.
+
 ## Como o site fica sempre atualizado
 
 1. A tarefa do Windows "Niche Finder" roda `rodar.bat` a cada 3 horas. O notebook precisa estar ligado.
