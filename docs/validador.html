@@ -56,6 +56,13 @@
 .vs .v{font:500 13px var(--mono)} .vs .d{font:12px var(--mono);color:var(--mut)}
 .mais{margin-top:8px;background:none;border:0;color:var(--lm);cursor:pointer;font-size:13px;padding:4px 0}
 .legenda{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px} .legenda span{font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px}
+.mapa{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:10px}
+.cm{position:relative;isolation:isolate;border-radius:18px;border:1px solid var(--ln);background:var(--s1);padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+.cm.rec{border-color:var(--lm);background:var(--lmbg)} .cm .selo{position:absolute;top:-10px;right:14px;background:var(--lm);color:#000;font:600 10.5px var(--mono);padding:3px 9px;border-radius:999px;letter-spacing:.03em}
+.cm-n{font:600 28px var(--mono);color:var(--dim);line-height:1} .cm.rec .cm-n{color:var(--lm)} .cm h5{margin:0;font-size:16px}
+.cm-mm{display:flex;flex-direction:column;gap:2px;font-size:12.5px;color:var(--mut)} .cm-mm b{color:var(--tx2);font-weight:500}
+.cm p{margin:0;color:var(--tx2);font-size:13px;line-height:1.5} .cm small{color:var(--dim);font-size:11.5px}
+.cm-op{display:flex;flex-wrap:wrap;gap:4px} .cm-op span{font-size:11px;padding:2px 7px;border-radius:999px}
 .pt-l{display:flex;flex-direction:column;gap:8px}
 .pt{position:relative;isolation:isolate;display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:14px;align-items:center;border-radius:16px;border:1px solid var(--ln);background:var(--s1);padding:14px 16px;cursor:pointer;transition:background .2s}
 .pt:hover{background:var(--s2)} .pt .rk{font:600 15px var(--mono);color:var(--dim)} .pt.top .rk{color:var(--lm)}
@@ -119,7 +126,14 @@ function pautas(slug){fetch("pautas/"+encodeURIComponent(slug)+".json?t="+Date.n
     "<div class='pt-x'><p>"+esc(x.explica)+"</p><h6>Vídeos sobre o tema no idioma (busca: "+esc(x.busca_tema)+")</h6><ul class='vs'>"+(x.tema_videos||[]).map(vli).join("")+"</ul>"+
     ((x.molde_videos||[]).length?"<h6>Quem já fez no molde</h6><ul class='vs'>"+x.molde_videos.map(vli).join("")+"</ul>":"<h6>Ninguém no molde nesse idioma.</h6>")+"</div></div>";}
   function vli(i){return"<li><a href='https://youtu.be/"+esc(i.id)+"' target='_blank' rel='noopener'><span class='f s'>"+esc((i.idioma_real||"?").toUpperCase())+"</span><span class='lg lgx'>"+dur(i.dur)+"</span><span class='t'><span>"+esc(i.titulo)+"</span><small>"+esc(i.canal||"")+"</small></span><span class='v'>"+f(i.views)+"</span><span class='d'></span></a></li>";}
-  el.innerHTML="<div class='st'><h3>Próximos vídeos em "+esc(NOME[p.idioma]||p.idioma)+"</h3><span>mesmo tema · ordenados por oportunidade · pesquisado "+esc(p.data)+"</span></div><div class='pt-l'>"+gp.map(lin).join("")+"</div>"+
+  var mp=p.mapa_dobras,VLAB={oportunidade:"Oportunidade",forte:"Forte",boa:"Boa",oportunidade_fraca:"Vazio",validado_morno:"Morno",disputada:"Disputada",validado_concorrencia:"Validado",fraca:"Pouca demanda",feito_sem_sucesso:"Fraco",feita_fraca:"Fraco"};
+  var mh=mp?"<div class='st'><h3>Mapa de dobras</h3><span>os 5 caminhos do Raj · o que mantém, o que muda e o que os dados dizem</span></div><div class='mapa'>"+mp.caminhos.map(function(c){var rec=c.n===mp.recomendado;
+    return"<div class='cm glow"+(rec?" rec":"")+"'>"+(rec?"<span class='selo'>caminho recomendado</span>":"")+"<div class='cm-n'>"+c.n+"</div><h5>"+esc(c.nome)+"</h5>"+
+      "<div class='cm-mm'><span>mantém <b>"+esc(c.mantem)+"</b></span><span>muda <b>"+esc(c.muda)+"</b></span></div>"+
+      (c.veredito?"<span class='vd k-"+c.veredito+"'>"+(VLAB[c.veredito]||c.veredito)+"</span>":"<span class='vd k-fraca'>sem dado</span>")+
+      "<p>"+esc(c.melhor)+"</p>"+((c.opcoes||[]).length>1?"<div class='cm-op'>"+c.opcoes.slice(0,8).map(function(x){return"<span class='k-"+x.veredito+"'>"+esc((x.nome||"").slice(0,34))+"</span>";}).join("")+"</div>":"")+
+      "<small>fonte: "+esc(c.fonte)+"</small></div>";}).join("")+"</div><p class='aviso'>"+esc(mp.regra)+"</p>":"";
+  el.innerHTML=mh+"<div class='st'><h3>Próximos vídeos em "+esc(NOME[p.idioma]||p.idioma)+"</h3><span>mesmo tema · ordenados por oportunidade · pesquisado "+esc(p.data)+"</span></div><div class='pt-l'>"+gp.map(lin).join("")+"</div>"+
     "<div class='st'><h3>Dobras para outros nichos (com dados)</h3><span>o molde já funcionou nesses assuntos em algum idioma · medido em "+esc(NOME[p.idioma]||p.idioma)+"</span></div><div class='pt-l'>"+gd.map(lin).join("")+"</div>"+
     "<p class='aviso'>Todo candidato vem de dado real: (A) vídeos que já fizeram sucesso com o molde em algum idioma, (B) o que o povo digita no YouTube do idioma alvo, (C) vídeos do canal de referência. O Claude só traduz o candidato; o programa mede tudo no YouTube. Demanda = maior vídeo sobre o tema no idioma (idioma real conferido). No molde = quantos já fizeram “"+esc(p.molde_alvo)+"” com esse tema.</p>";
   [].forEach.call(el.querySelectorAll(".pt"),function(b){b.onclick=function(e){if(e.target.closest("a"))return;b.classList.toggle("on");};});});}

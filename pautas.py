@@ -178,6 +178,10 @@ def cmd_medir(a):
     p = BASE / "docs" / "pautas"; p.mkdir(parents=True, exist_ok=True)
     (p / f"{ped['slug']}.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"Pronto: {p / (ped['slug'] + '.json')}", flush=True)
+    try:
+        mapa_dobras(ped["slug"])
+    except Exception as e:
+        print(f"mapa de dobras: {e}")
     if a.publicar:
         subprocess.run(["git", "add", "docs/pautas", "validacoes"], cwd=BASE)
         subprocess.run(["git", "commit", "-q", "-m", f"Pautas: {ped['slug']}"], cwd=BASE)
@@ -194,5 +198,77 @@ def main():
     {"coletar": cmd_coletar, "medir": cmd_medir}[a.cmd](a)
 
 
-if __name__ == "__main__":
+if __name__ == "__main__" and not (len(sys.argv) > 1 and sys.argv[1] == "mapa"):
     main()
+
+
+# ---------- mapa de dobras: os 5 caminhos do Raj, com o que os dados já mostram ----------
+FORCA = {"oportunidade": 5, "forte": 5, "boa": 3, "oportunidade_fraca": 2, "validado_morno": 2, "disputada": 1,
+         "validado_concorrencia": 1, "fraca": 0, "feito_sem_sucesso": 0, "feita_fraca": 0}
+
+
+def mapa_dobras(slug):
+    val = json.loads((BASE / "docs" / "validacoes" / f"{slug}.json").read_text(encoding="utf-8"))
+    pp = BASE / "docs" / "pautas" / f"{slug}.json"
+    pau = json.loads(pp.read_text(encoding="utf-8"))
+    cand_p = BASE / "validacoes" / "candidatos" / f"{slug}.json"
+    cand = json.loads(cand_p.read_text(encoding="utf-8")) if cand_p.exists() else {}
+    o, alvo = val.get("origem", {}), pau["idioma"]
+    nomes = {"pt": "Português", "es": "Espanhol", "en": "Inglês", "de": "Alemão", "fr": "Francês"}
+    caminhos = []
+    # 1) mesmo nicho + mesmo formato → outro idioma
+    ops = sorted(val["idiomas"], key=lambda l: -FORCA.get(l["veredito"], 0))
+    melhor = ops[0] if ops else None
+    caminhos.append({"n": 1, "nome": "Outro idioma", "mantem": "nicho + formato", "muda": "idioma",
+                     "melhor": f"{nomes.get(melhor['idioma'], melhor['idioma'])}: {melhor['explica']}" if melhor else "—",
+                     "veredito": melhor["veredito"] if melhor else None,
+                     "opcoes": [{"nome": nomes.get(l["idioma"]), "veredito": l["veredito"]} for l in val["idiomas"]],
+                     "fonte": "Validador: o molde pesquisado nos 5 idiomas"})
+    # 2) mesmo formato + mesmo idioma de origem → outro nicho
+    orig = o.get("idioma", "en")
+    ex2 = [x for x in cand.get("A_molde_no_mundo", []) if x["idioma_busca"] == orig][:5]
+    caminhos.append({"n": 2, "nome": "Outro nicho, mesmo idioma", "mantem": f"formato + idioma ({nomes.get(orig, orig)})",
+                     "muda": "nicho", "veredito": "disputada" if ex2 else None,
+                     "melhor": (f"Os assuntos achados já existem em {nomes.get(orig, orig)} (é de lá que eles vêm): "
+                                + "; ".join(f"{x['titulo']} ({num(x['views'])})" for x in ex2[:3])) if ex2 else "Sem dado.",
+                     "opcoes": [{"nome": x["titulo"], "veredito": "disputada"} for x in ex2],
+                     "fonte": "Coleta A: o molde pesquisado no idioma de origem"})
+    # 3) mesmo formato → outro nicho + outro idioma
+    dob = [x for x in pau["pautas"] if x.get("grupo") == "dobra"]
+    dob.sort(key=lambda x: (-FORCA.get(x["veredito"], 0), -x["demanda_max"]))
+    caminhos.append({"n": 3, "nome": f"Outro nicho em {nomes.get(alvo, alvo)}", "mantem": "formato",
+                     "muda": "nicho + idioma", "veredito": dob[0]["veredito"] if dob else None,
+                     "melhor": f"{dob[0]['tema']}: {dob[0]['explica']}" if dob else "Sem dado.",
+                     "opcoes": [{"nome": x["tema"], "veredito": x["veredito"]} for x in dob],
+                     "fonte": "Pautas: dobras medidas no idioma alvo"})
+    # 4) mesmo nicho + idioma alvo → outro formato
+    lg = next((l for l in val["idiomas"] if l["idioma"] == alvo), None)
+    outros = []
+    for b in (lg or {}).get("buscas", []):
+        for it in b.get("itens", []):
+            if it.get("conferido") and it.get("idioma_real") == alvo and not it.get("mesmo_formato"):
+                outros.append(it)
+    outros = sorted({x["id"]: x for x in outros}.values(), key=lambda x: -(x["views"] or 0))[:5]
+    caminhos.append({"n": 4, "nome": "Outro formato, mesmo nicho", "mantem": f"nicho + idioma ({nomes.get(alvo, alvo)})",
+                     "muda": "formato (iceberg, documentário, ascensão e queda, passo a passo)",
+                     "veredito": "disputada" if outros and (outros[0]["views"] or 0) >= 50_000 else ("boa" if outros else None),
+                     "melhor": ("Já existem vídeos do tema em outros formatos no idioma: " + "; ".join(
+                         f"{x['titulo']} ({num(x['views'] or 0)})" for x in outros[:3]) +
+                                ". Use as 5 estruturas para variar, não como caminho principal.") if outros else "Sem dado.",
+                     "opcoes": [{"nome": x["titulo"], "veredito": "disputada"} for x in outros],
+                     "fonte": "Validador: vídeos do tema no idioma alvo que NÃO são do molde"})
+    # 5) outro público
+    caminhos.append({"n": 5, "nome": "Outro público", "mantem": "nicho + formato", "muda": "público (gênero, idade)",
+                     "veredito": None, "melhor": "Ainda sem dado medido para este tema. Para medir: buscar o molde com o "
+                     "público no título (ex.: 'para mulheres', 'für Senioren') no idioma alvo.", "opcoes": [],
+                     "fonte": "—"})
+    rec = max([c for c in caminhos if c["veredito"]], key=lambda c: (FORCA.get(c["veredito"], 0), -c["n"]))
+    pau["mapa_dobras"] = {"recomendado": rec["n"], "caminhos": caminhos,
+                          "regra": "Recomendado = o caminho com o veredito mais forte nos dados (oportunidade/forte > boa > "
+                                   "disputada). Empate: o mais simples (menor número)."}
+    pp.write_text(json.dumps(pau, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"Mapa de dobras: recomendado = caminho {rec['n']} ({rec['nome']})")
+
+
+if __name__ == "__main__" and len(sys.argv) > 2 and sys.argv[1] == "mapa":
+    mapa_dobras(json.loads(Path(sys.argv[2]).read_text(encoding="utf-8"))["slug"])

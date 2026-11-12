@@ -734,5 +734,161 @@
     }
    ]
   }
- ]
+ ],
+ "mapa_dobras": {
+  "recomendado": 1,
+  "caminhos": [
+   {
+    "n": 1,
+    "nome": "Outro idioma",
+    "mantem": "nicho + formato",
+    "muda": "idioma",
+    "melhor": "Alemão: Ninguém faz esse formato neste idioma, e o tema tem procura (vídeo de outro formato com 1.000.355 views; autocompletar 4/10).",
+    "veredito": "oportunidade",
+    "opcoes": [
+     {
+      "nome": "Português",
+      "veredito": "validado_concorrencia"
+     },
+     {
+      "nome": "Espanhol",
+      "veredito": "validado_concorrencia"
+     },
+     {
+      "nome": "Inglês",
+      "veredito": "validado_concorrencia"
+     },
+     {
+      "nome": "Alemão",
+      "veredito": "oportunidade"
+     },
+     {
+      "nome": "Francês",
+      "veredito": "validado_morno"
+     }
+    ],
+    "fonte": "Validador: o molde pesquisado nos 5 idiomas"
+   },
+   {
+    "n": 2,
+    "nome": "Outro nicho, mesmo idioma",
+    "mantem": "formato + idioma (Inglês)",
+    "muda": "nicho",
+    "veredito": "disputada",
+    "melhor": "Os assuntos achados já existem em Inglês (é de lá que eles vêm): Every Feeling You Can't Name Explained (4.743.185); Every Major Cult Explained (3.372.158); Every Manipulation Technique & How To Combat It Explained (2.949.721)",
+    "opcoes": [
+     {
+      "nome": "Every Feeling You Can't Name Explained",
+      "veredito": "disputada"
+     },
+     {
+      "nome": "Every Major Cult Explained",
+      "veredito": "disputada"
+     },
+     {
+      "nome": "Every Manipulation Technique & How To Combat It Explained",
+      "veredito": "disputada"
+     },
+     {
+      "nome": "EVERY Drug & its Effects, Explained",
+      "veredito": "disputada"
+     },
+     {
+      "nome": "Every Complex Thing YOU Don't Understand, Explained",
+      "veredito": "disputada"
+     }
+    ],
+    "fonte": "Coleta A: o molde pesquisado no idioma de origem"
+   },
+   {
+    "n": 3,
+    "nome": "Outro nicho em Alemão",
+    "mantem": "formato",
+    "muda": "nicho + idioma",
+    "veredito": "forte",
+    "melhor": "Alien-Arten: Ninguém fez no molde e o tema tem demanda (vídeo de 119.833 views no idioma).",
+    "opcoes": [
+     {
+      "nome": "Alien-Arten",
+      "veredito": "forte"
+     },
+     {
+      "nome": "verbotenen Bücher",
+      "veredito": "forte"
+     },
+     {
+      "nome": "Manipulationstechniken",
+      "veredito": "forte"
+     },
+     {
+      "nome": "Fabelwesen",
+      "veredito": "boa"
+     },
+     {
+      "nome": "PC-Komponenten",
+      "veredito": "disputada"
+     },
+     {
+      "nome": "Drogen und ihre Wirkung",
+      "veredito": "feita_fraca"
+     },
+     {
+      "nome": "Gesellschaftsschichten",
+      "veredito": "fraca"
+     },
+     {
+      "nome": "Gefühle, die du nicht benennen kannst",
+      "veredito": "fraca"
+     },
+     {
+      "nome": "Sekten",
+      "veredito": "feita_fraca"
+     }
+    ],
+    "fonte": "Pautas: dobras medidas no idioma alvo"
+   },
+   {
+    "n": 4,
+    "nome": "Outro formato, mesmo nicho",
+    "mantem": "nicho + idioma (Alemão)",
+    "muda": "formato (iceberg, documentário, ascensão e queda, passo a passo)",
+    "veredito": "disputada",
+    "melhor": "Já existem vídeos do tema em outros formatos no idioma: Leichtes Spiel f�r kriminelle Geldw�scher | ZDFzoom (1.000.355); Geldw�sche - \"Breaking Bad\" in echt? (359.505); Geldwasche einfach erkl�rt! (Mit vielen anschaulichen Beispielen) (340.310). Use as 5 estruturas para variar, não como caminho principal.",
+    "opcoes": [
+     {
+      "nome": "Leichtes Spiel f�r kriminelle Geldw�scher | ZDFzoom",
+      "veredito": "disputada"
+     },
+     {
+      "nome": "Geldw�sche - \"Breaking Bad\" in echt?",
+      "veredito": "disputada"
+     },
+     {
+      "nome": "Geldwasche einfach erkl�rt! (Mit vielen anschaulichen Beispielen)",
+      "veredito": "disputada"
+     },
+     {
+      "nome": "Geldw�sche: Wie wird Schwarzgeld gewaschen?",
+      "veredito": "disputada"
+     },
+     {
+      "nome": "Wie einfach ist Geldw�sche in Deutschland?  Reaktion auf die ARD-Doku \"Dirty Money\"",
+      "veredito": "disputada"
+     }
+    ],
+    "fonte": "Validador: vídeos do tema no idioma alvo que NÃO são do molde"
+   },
+   {
+    "n": 5,
+    "nome": "Outro público",
+    "mantem": "nicho + formato",
+    "muda": "público (gênero, idade)",
+    "veredito": null,
+    "melhor": "Ainda sem dado medido para este tema. Para medir: buscar o molde com o público no título (ex.: 'para mulheres', 'für Senioren') no idioma alvo.",
+    "opcoes": [],
+    "fonte": "—"
+   }
+  ],
+  "regra": "Recomendado = o caminho com o veredito mais forte nos dados (oportunidade/forte > boa > disputada). Empate: o mais simples (menor número)."
+ }
 }
