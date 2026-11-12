@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Niche Finder — Roteiro</title>
+<meta name="theme-color" content="#060607">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+<style>
+.lst{display:flex;gap:10px;overflow-x:auto;margin-top:40px}
+.lst button{flex:none;width:300px;text-align:left;border:1px solid var(--ln);background:var(--s1);border-radius:16px;padding:14px 16px;cursor:pointer}
+.lst button.on{border-color:var(--lmln);background:var(--lmbg)} .lst b{display:block;font-weight:500;font-size:14px} .lst small{font:11.5px var(--mono);color:var(--mut)}
+.ref{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:16px;margin-top:22px;align-items:start}
+.ref img{width:100%;border-radius:16px;border:1px solid var(--ln);display:block}
+.ref h2{margin:0;font-size:26px;letter-spacing:-.03em;line-height:1.15;font-weight:600}
+.kpi3{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px}
+.kpi3 div{background:var(--s1);border:1px solid var(--ln);border-radius:12px;padding:10px 12px} .kpi3 small{display:block;font-size:11.5px;color:var(--mut)} .kpi3 b{font:600 18px var(--mono)}
+.res{margin-top:14px;color:var(--tx2);font-size:15px;max-width:80ch}
+.sec2{margin:48px 0 14px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap} .sec2 h3{margin:0;font-size:22px;letter-spacing:-.025em;font-weight:600} .sec2 span{color:var(--mut);font-size:13.5px}
+.linha{position:relative;height:46px;border-radius:12px;background:var(--s1);border:1px solid var(--ln);overflow:hidden;display:flex}
+.linha div{position:relative;border-right:1px solid rgba(0,0,0,.5);display:flex;align-items:center;padding:0 8px;font:500 11.5px var(--mono);color:#000;white-space:nowrap;overflow:hidden;cursor:pointer;transition:filter .2s}
+.linha div:hover{filter:brightness(1.15)} .linha div:nth-child(5n+1){background:var(--lm)} .linha div:nth-child(5n+2){background:#A3E635} .linha div:nth-child(5n+3){background:#7DD3FC}
+.linha div:nth-child(5n+4){background:#F9A8D4} .linha div:nth-child(5n+5){background:#FDE68A}
+.tempo{display:flex;justify-content:space-between;font:11px var(--mono);color:var(--dim);margin-top:6px}
+.gancho{border-radius:18px;border:1px solid var(--lmln);background:var(--lmbg);padding:18px 20px;margin-top:14px}
+.gancho b{color:var(--lm)} .gancho p{margin:8px 0 0;color:var(--tx2)}
+.blk{display:flex;flex-direction:column;gap:8px;margin-top:14px}
+.bl{border-radius:16px;border:1px solid var(--ln);background:var(--s1);padding:14px 18px}
+.bl-h{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap} .bl-h b{font-size:15.5px} .bl-h span{font:12px var(--mono);color:var(--mut)}
+.bl p{margin:6px 0 0;color:var(--tx2);font-size:14px} .bl ol{margin:10px 0 0;padding-left:20px;color:var(--tx2);font-size:13.5px} .bl ol li{margin:3px 0}
+.chips2{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px} .chips2 span{font-size:12.5px;border:1px solid var(--ln);border-radius:999px;padding:3px 10px;color:var(--tx2)}
+.dois{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
+.cx{border-radius:16px;border:1px solid var(--ln);background:var(--s1);padding:14px 18px} .cx h4{margin:0 0 6px;font-size:13px;color:var(--mut);font-weight:500} .cx p,.cx li{color:var(--tx2);font-size:14px} .cx ul{margin:0;padding-left:18px}
+.rt{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.rb{border-radius:18px;border:1px solid var(--ln);background:rgba(16,16,18,.7);overflow:hidden}
+.rb-h{display:flex;justify-content:space-between;gap:10px;padding:12px 18px;border-bottom:1px solid var(--ln);flex-wrap:wrap} .rb-h b{font-size:14.5px} .rb-h span{font:12px var(--mono);color:var(--lm)}
+.rb-t{padding:14px 18px;font-size:16px;line-height:1.7;white-space:pre-wrap}
+.rb-f{padding:0 18px 14px;font-size:12px;color:var(--mut)} .rb-f a{color:var(--az);text-decoration:underline}
+.copiar{margin-top:14px}
+.vazio{margin-top:30px}
+@media(max-width:820px){.ref,.dois{grid-template-columns:1fr}.kpi3{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="fundo"><i></i><i></i><i></i></div>
+<nav class="nav">
+  <a class="mk" href="index.html"><b>NF</b><span>Niche Finder</span></a>
+  <div class="tabs"><a href="index.html">Canais</a><a href="validador.html">Validador</a><a class="on" href="roteiro.html">Roteiro</a></div>
+</nav>
+<main class="wrap">
+  <section class="rv">
+    <span class="eyebrow">Engenharia reversa de roteiro</span>
+    <h1 class="h1">A estrutura de quem <em>estourou</em>, com o seu tema.</h1>
+    <p class="sub">O vídeo de referência é desmontado: gancho, blocos com tempo, ritmo, transições, gatilhos e fechamento. O roteiro novo segue o mesmo mapa, bloco por bloco — <b>copia a estrutura, nunca o texto</b>, e os fatos têm fonte.</p>
+  </section>
+  <div class="lst rv" id="lst"></div>
+  <div id="det"><div class="vazio">Carregando…</div></div>
+</main>
+<script src="ui.js"></script>
+<script>
+(function(){
+var idx=[];function $(i){return document.getElementById(i);}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function f(n){if(n==null)return"—";if(n>=1e6)return(n/1e6).toFixed(1).replace(/\.0$/,"").replace(".",",")+" mi";if(n>=1e3)return(n/1e3).toFixed(1).replace(/\.0$/,"").replace(".",",")+" mil";return String(n);}
+function mm(s){s=Math.round(s||0);return Math.floor(s/60)+":"+String(s%60).padStart(2,"0");}
+function lista(){var s=location.hash.slice(1)||(idx[0]||{}).slug;
+  $("lst").innerHTML=idx.map(function(x){return"<button class='"+(x.slug===s?"on":"")+"' data-s='"+esc(x.slug)+"'><b>"+esc(x.titulo||x.referencia)+"</b><small>ref: "+esc(x.referencia)+"</small></button>";}).join("");
+  [].forEach.call($("lst").querySelectorAll("button"),function(b){b.onclick=function(){location.hash=b.dataset.s;};});}
+function render(d){var m=d.medidas||{},a=d.analise||{},r=d.roteiro,tot=a.duracao_seg||m.duracao||1;
+  var h="<div class='ref'><a href='https://youtu.be/"+esc(m.id)+"' target='_blank' rel='noopener'><img src='https://i.ytimg.com/vi/"+esc(m.id)+"/hqdefault.jpg' alt=''></a><div><div class='mut' style='font-size:12.5px'>Vídeo de referência</div><h2>"+esc(m.titulo)+"</h2>"+
+   "<div class='kpi3'><div><small>Views</small><b>"+f(m.views)+"</b></div><div><small>Duração</small><b>"+mm(m.duracao)+"</b></div><div><small>Palavras/min</small><b>"+(m.palavras_por_minuto||"—")+"</b></div><div><small>Palavras</small><b>"+f(m.palavras)+"</b></div></div>"+
+   "<p class='res'>"+esc(a.resumo||"")+"</p></div></div>";
+  if(a.blocos){
+    h+="<div class='sec2'><h3>Mapa da estrutura</h3><span>"+esc(a.formato||"")+" · clique num bloco</span></div><div class='linha'>"+a.blocos.map(function(b,i){return"<div style='width:"+(100*(b.fim-b.ini)/tot)+"%' data-i='"+i+"' title='"+esc(b.nome)+"'>"+esc(b.nome)+"</div>";}).join("")+"</div>"+
+     "<div class='tempo'><span>0:00</span><span>"+mm(tot)+"</span></div>";
+    if(a.gancho)h+="<div class='gancho'><b>Gancho · "+esc(a.gancho.tipo)+"</b><p>"+esc(a.gancho.como)+"</p><p class='mut'>Por que funciona: "+esc(a.gancho.por_que_funciona)+"</p></div>";
+    h+="<div class='blk'>"+a.blocos.map(function(b,i){return"<div class='bl' id='b"+i+"'><div class='bl-h'><b>"+esc(b.nome)+"</b><span>"+mm(b.ini)+"–"+mm(b.fim)+" · ~"+b.palavras_aprox+" palavras</span></div><p>"+esc(b.funcao)+"</p>"+
+      (b.molde_do_item?"<ol>"+b.molde_do_item.map(function(x){return"<li>"+esc(x)+"</li>";}).join("")+"</ol>":"")+(b.itens?"<div class='chips2'>"+b.itens.map(function(x,j){return"<span>"+(j+1)+". "+esc(x)+"</span>";}).join("")+"</div>":"")+"</div>";}).join("")+"</div>";
+    h+="<div class='dois'><div class='cx'><h4>Transições</h4><p>"+esc(a.transicoes)+"</p><h4 style='margin-top:12px'>Chamada para ação</h4><p>"+esc(a.cta)+"</p></div><div class='cx'><h4>Gatilhos</h4><ul>"+(a.gatilhos||[]).map(function(x){return"<li>"+esc(x)+"</li>";}).join("")+"</ul><h4 style='margin-top:12px'>Estilo</h4><ul>"+(a.detalhes_de_estilo||[]).map(function(x){return"<li>"+esc(x)+"</li>";}).join("")+"</ul></div></div>";
+  }
+  if(r){h+="<div class='sec2'><h3>Seu roteiro: "+esc(r.titulo)+"</h3><span>"+esc((r.idioma||"").toUpperCase())+" · "+esc(r.nota||"")+"</span></div><div class='rt'>"+(r.blocos||[]).map(function(b){return"<div class='rb'><div class='rb-h'><b>"+esc(b.bloco)+"</b><span>segue: "+esc(b.segue||"")+"</span></div><div class='rb-t'>"+esc(b.texto)+"</div>"+
+     ((b.fontes||[]).length?"<div class='rb-f'>Fontes: "+b.fontes.map(function(u,i){return"<a href='"+esc(u)+"' target='_blank' rel='noopener'>["+(i+1)+"]</a>";}).join(" ")+"</div>":"")+"</div>";}).join("")+"</div>"+
+     "<button class='btn pri copiar' id='cp'>Copiar roteiro completo</button>";}
+  else h+="<div class='sec2'><h3>Seu roteiro</h3><span>ainda não escrito</span></div><div class='vazio'>Escolha o tema (na aba Validador → Próximos vídeos) e peça ao Claude: “escreva o roteiro de &lt;tema&gt; seguindo a estrutura de "+esc(m.titulo)+"”.</div>";
+  $("det").innerHTML=h;
+  [].forEach.call($("det").querySelectorAll(".linha div"),function(x){x.onclick=function(){$("b"+x.dataset.i).scrollIntoView({behavior:"smooth",block:"center"});};});
+  if($("cp"))$("cp").onclick=function(){var t=(r.blocos||[]).map(function(b){return b.texto;}).join("\n\n");navigator.clipboard.writeText(t).then(function(){$("cp").textContent="Copiado ✓";});};}
+function abrir(){var s=location.hash.slice(1)||(idx[0]||{}).slug;lista();if(!s){$("det").innerHTML="<div class='vazio'>Nenhum roteiro ainda.</div>";return;}
+  fetch("roteiros/"+encodeURIComponent(s)+".json?t="+Date.now()).then(function(r){return r.json();}).then(render).catch(function(){$("det").innerHTML="<div class='vazio'>Não achei.</div>";});}
+UI.pilula(document.querySelector(".tabs"));UI.revelar(document.querySelectorAll(".rv"));
+fetch("roteiros/index.json?t="+Date.now()).then(function(r){return r.ok?r.json():[];}).catch(function(){return[];}).then(function(d){idx=d||[];abrir();});
+window.addEventListener("hashchange",abrir);
+})();
+</script>
+</body>
+</html>

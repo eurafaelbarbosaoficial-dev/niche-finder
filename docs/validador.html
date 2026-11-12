@@ -56,6 +56,18 @@
 .vs .v{font:500 13px var(--mono)} .vs .d{font:12px var(--mono);color:var(--mut)}
 .mais{margin-top:8px;background:none;border:0;color:var(--lm);cursor:pointer;font-size:13px;padding:4px 0}
 .legenda{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px} .legenda span{font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px}
+.pt-l{display:flex;flex-direction:column;gap:8px}
+.pt{position:relative;isolation:isolate;display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:14px;align-items:center;border-radius:16px;border:1px solid var(--ln);background:var(--s1);padding:14px 16px;cursor:pointer;transition:background .2s}
+.pt:hover{background:var(--s2)} .pt .rk{font:600 15px var(--mono);color:var(--dim)} .pt.top .rk{color:var(--lm)}
+.pt h5{margin:0;font-size:15.5px;font-weight:600;letter-spacing:-.01em} .pt .mq{font:12.5px var(--mono);color:var(--lm2);margin-top:3px}
+.pt .ev{font-size:12.5px;color:var(--mut);margin-top:6px} .pt .ev b{font:600 10.5px var(--mono);border:1px solid var(--ln2);border-radius:999px;padding:1px 7px;margin-right:6px;color:var(--tx2)}
+.pt .dd{display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:flex-end} .pt .dd span{font:12px var(--mono);color:var(--tx2);text-align:right} .pt .dd span b{display:block;font-size:15px;color:var(--tx)}
+.pt-x{display:none;grid-column:1/-1;border-top:1px solid var(--ln);padding-top:12px;margin-top:2px} .pt.on .pt-x{display:block}
+.pt-x p{margin:0 0 10px;color:var(--tx2);font-size:13.5px} .pt-x h6{margin:12px 0 6px;font-size:12px;font-weight:500;color:var(--mut)}
+.k-forte{background:rgba(74,222,128,.14);color:var(--up)} .k-boa{background:rgba(212,255,58,.12);color:var(--lm)} .k-disputada{background:rgba(125,211,252,.13);color:var(--az)}
+.k-fraca{background:var(--s2);color:var(--tx2)} .k-feita_fraca{background:rgba(251,113,133,.13);color:var(--dn)}
+.aviso{margin-top:10px;font-size:12.5px;color:var(--mut);border-left:2px solid var(--ln2);padding-left:10px}
+@media(max-width:620px){.pt{grid-template-columns:26px minmax(0,1fr)}.pt .dd{grid-column:2;justify-content:flex-start}.pt .dd span{text-align:left}}
 @media(max-width:900px){.langs{grid-template-columns:repeat(3,minmax(0,1fr))}.orig{grid-template-columns:1fr}}
 @media(max-width:560px){.langs{grid-template-columns:repeat(2,minmax(0,1fr))}.vs li a{grid-template-columns:auto minmax(0,1fr) auto}.vs .lgx,.vs .d{display:none}.ask{border-radius:20px;flex-wrap:wrap}.ask .btn{width:100%;justify-content:center}}
 </style>
@@ -64,7 +76,7 @@
 <div class="fundo"><i></i><i></i><i></i></div>
 <nav class="nav">
   <a class="mk" href="index.html"><b>NF</b><span>Niche Finder</span></a>
-  <div class="tabs"><a href="index.html">Canais</a><a class="on" href="validador.html">Validador</a></div>
+  <div class="tabs"><a href="index.html">Canais</a><a class="on" href="validador.html">Validador</a><a href="roteiro.html">Roteiro</a></div>
   <span class="live"><i></i><span>dobras</span></span>
 </nav>
 
@@ -96,6 +108,21 @@ $("cop").onclick=function(){var t=$("tit").value.trim(),b=this;var txt='Valide n
   (navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(function(){b.textContent="Copiado ✓";setTimeout(function(){b.textContent="Copiar pedido";},1800);},function(){prompt("Copie o pedido:",txt);});};
 $("tit").onkeydown=function(e){if(e.key==="Enter")$("cop").click();};
 
+var PL={forte:"Forte",boa:"Boa",disputada:"Disputada",fraca:"Pouca demanda",feita_fraca:"Já tentaram, fraco"};
+var FT={A:"A · molde no mundo",B:"B · autocompletar",C:"C · canal de referência"};
+function pautas(slug){fetch("pautas/"+encodeURIComponent(slug)+".json?t="+Date.now()).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}).then(function(p){
+  var el=$("pautas");if(!el)return;if(!p){el.innerHTML="";return;}
+  var gp=p.pautas.filter(function(x){return(x.grupo||"pauta")==="pauta";}),gd=p.pautas.filter(function(x){return x.grupo==="dobra";});
+  function lin(x,i){return"<div class='pt glow"+(i<3&&(x.veredito==="forte"||x.veredito==="boa")?" top":"")+"'><span class='rk'>"+String(i+1).padStart(2,"0")+"</span>"+
+    "<div><h5>"+esc(x.tema)+"</h5><div class='mq'>"+esc(x.busca_molde)+"</div><div class='ev'><b>"+esc(FT[x.fonte]||x.fonte)+"</b>"+esc(x.evidencia)+"</div></div>"+
+    "<div class='dd'><span class='vd k-"+x.veredito+"'>"+PL[x.veredito]+"</span><span>demanda<b>"+f(x.demanda_max)+"</b></span><span>no molde<b>"+x.concorrentes+"</b></span><span>procura<b>"+x.procura+"</b></span></div>"+
+    "<div class='pt-x'><p>"+esc(x.explica)+"</p><h6>Vídeos sobre o tema no idioma (busca: "+esc(x.busca_tema)+")</h6><ul class='vs'>"+(x.tema_videos||[]).map(vli).join("")+"</ul>"+
+    ((x.molde_videos||[]).length?"<h6>Quem já fez no molde</h6><ul class='vs'>"+x.molde_videos.map(vli).join("")+"</ul>":"<h6>Ninguém no molde nesse idioma.</h6>")+"</div></div>";}
+  function vli(i){return"<li><a href='https://youtu.be/"+esc(i.id)+"' target='_blank' rel='noopener'><span class='f s'>"+esc((i.idioma_real||"?").toUpperCase())+"</span><span class='lg lgx'>"+dur(i.dur)+"</span><span class='t'><span>"+esc(i.titulo)+"</span><small>"+esc(i.canal||"")+"</small></span><span class='v'>"+f(i.views)+"</span><span class='d'></span></a></li>";}
+  el.innerHTML="<div class='st'><h3>Próximos vídeos em "+esc(NOME[p.idioma]||p.idioma)+"</h3><span>mesmo tema · ordenados por oportunidade · pesquisado "+esc(p.data)+"</span></div><div class='pt-l'>"+gp.map(lin).join("")+"</div>"+
+    "<div class='st'><h3>Dobras para outros nichos (com dados)</h3><span>o molde já funcionou nesses assuntos em algum idioma · medido em "+esc(NOME[p.idioma]||p.idioma)+"</span></div><div class='pt-l'>"+gd.map(lin).join("")+"</div>"+
+    "<p class='aviso'>Todo candidato vem de dado real: (A) vídeos que já fizeram sucesso com o molde em algum idioma, (B) o que o povo digita no YouTube do idioma alvo, (C) vídeos do canal de referência. O Claude só traduz o candidato; o programa mede tudo no YouTube. Demanda = maior vídeo sobre o tema no idioma (idioma real conferido). No molde = quantos já fizeram “"+esc(p.molde_alvo)+"” com esse tema.</p>";
+  [].forEach.call(el.querySelectorAll(".pt"),function(b){b.onclick=function(e){if(e.target.closest("a"))return;b.classList.toggle("on");};});});}
 function hist(){var s=location.hash.slice(1)||(idx[0]||{}).slug;
   $("hist").innerHTML=idx.map(function(x){var r=x.resumo||{};return"<button class='hi"+(x.slug===s?" on":"")+"' data-s='"+esc(x.slug)+"'><b>"+esc(x.titulo||x.slug)+"</b><small>"+esc(x.data)+"</small><span class='dots'>"+
     Object.keys(r).map(function(k){return"<span class='k-"+r[k]+"' title='"+NOME[k]+": "+LAB[r[k]]+"'>"+k.toUpperCase()+"</span>";}).join("")+"</span></button>";}).join("");
@@ -124,11 +151,12 @@ function render(rolar){
     "<p class='mut' style='font-size:12.5px;margin:14px 0 0'>Concorrente = vídeo de 4 min+ no idioma real, com as palavras do molde no título (o vídeo e o canal de origem não contam). Validado = algum com "+f(d.criterios.bom)+"+ views; sem sucesso = o melhor abaixo de "+f(d.criterios.fraco)+".</p>"+
     "<div class='legenda'>"+Object.keys(LAB).map(function(k){return"<span class='k-"+k+"'>"+LAB[k]+"</span>";}).join("")+"</div></div></div>"+
     "<div class='st'><h3>O mesmo molde em 5 idiomas</h3><span>clique para ver os vídeos de cada um</span></div><div class='langs'>"+gs.filter(function(x){return x.tipo==="i";}).map(tile).join("")+"</div>"+
-    (gs.some(function(x){return x.tipo==="d";})?"<div class='st'><h3>Dobras para outros nichos</h3><span>mesmo molde, outro assunto ou público</span></div><div class='dobras'>"+gs.filter(function(x){return x.tipo==="d";}).map(tile).join("")+"</div>":"")+
-    (g?painel(g):"");
+    (gs.some(function(x){return x.tipo==="d";})?"<div class='st'><h3>Dobras testadas no validador</h3><span>escolhidas à mão neste teste (hipótese) — as dobras com dados estão abaixo, em Pautas</span></div><div class='dobras'>"+gs.filter(function(x){return x.tipo==="d";}).map(tile).join("")+"</div>":"")+
+    (g?painel(g):"")+"<div id='pautas'></div>";
   [].forEach.call($("det").querySelectorAll(".lt"),function(b){b.onclick=function(){sel=b.dataset.k;render(true);};});
   [].forEach.call($("det").querySelectorAll(".mais"),function(b){b.onclick=function(){todos[b.dataset.k]=!todos[b.dataset.k];render();};});
   if(rolar&&$("pn"))$("pn").scrollIntoView({behavior:"smooth",block:"start"});
+  pautas(d.slug);
 }
 function abrir(){var s=location.hash.slice(1)||(idx[0]||{}).slug;hist();
   if(!s){$("det").innerHTML="<div class='vazio' style='margin-top:30px'>Nenhuma validação ainda. Cole um título acima e peça ao Claude.</div>";return;}

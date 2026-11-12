@@ -15,10 +15,20 @@ O dono não é programador: explique em português simples. Leia o `LEIA-ME.md` 
 
 ## Validador de dobras (quando o dono pede "valide o título X")
 1. Escreva `validacoes/pedidos/<slug>.json` (formato no topo de `validador.py`): origem (título, canal, id do vídeo,
-   views, idioma), o **molde** do título com [buracos], e 2 buscas por idioma (pt, es, en, de, fr) escritas **como um
-   nativo buscaria** (não tradução literal), e de 2 a 4 **dobras** (mesmo molde em outros nichos/públicos), com uma
-   nota curta do porquê (driver, público). Base do método: `conhecimento/GUIA-DOBRA.md`.
+   views, idioma, canal_id), o **molde** do título com [buracos], e 2 buscas por idioma (pt, es, en, de, fr) escritas
+   **como um nativo buscaria** (1ª = o molde, 2ª = o tema). **Não invente dobras aqui** (deixe "dobras" vazio): as
+   dobras e os próximos vídeos saem do `pautas.py`, só de dados. Base do método: `conhecimento/GUIA-DOBRA.md`.
 2. Rode `python -I validador.py validacoes/pedidos/<slug>.json --publicar` (uns 5–10 min; em segundo plano).
 3. Resultado: `docs/validacoes/<slug>.json`, visto em `docs/validador.html#<slug>`.
 4. Explique ao dono por idioma: oportunidade / validado (subnichar) / feito sem sucesso, com os números.
    Se "validado: subnichar", proponha subnichos/públicos e ofereça validar de novo. Nada de número inventado.
+
+## Pautas e dobras com dados (depois do validador, para o idioma escolhido)
+Regra do dono: **nada de hipótese**. Todo candidato vem de dado real; o Claude só traduz.
+1. No pedido, preencha `"pautas": {"idioma", "tema" (no idioma alvo), "molde_mundo" (molde em en/es/pt/fr/de),
+   "molde_alvo" ("alle {X} erklärt")}` e rode `python -I pautas.py coletar validacoes/pedidos/<slug>.json`.
+2. Leia `validacoes/candidatos/<slug>.json`: (A) assuntos onde o molde já funcionou no mundo, (B) autocompletar do
+   idioma alvo, (C) vídeos do canal de referência. Escolha só dali; traduza para o idioma alvo e grave em
+   `pautas.candidatos` com `fonte` (A/B/C), `evidencia` (título + views de onde veio) e `grupo` ("pauta" = mesmo
+   tema, próximo vídeo; "dobra" = outro nicho).
+3. `python -I pautas.py medir validacoes/pedidos/<slug>.json --publicar` (~12 min). Aparece no Validador.

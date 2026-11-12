@@ -1,21 +1,202 @@
 {
  "slug": "every-money-laundering",
- "origem": {"titulo": "Every Money Laundering Technique Explained", "canal": "Econ in a Nutshell",
-            "id": "XgIo6SrSxS4", "canal_id": "UC_DdIoJzHZXlEKTVy41_KQw", "views": 1100000, "idioma": "en", "inscritos": 4860},
+ "origem": {
+  "titulo": "Every Money Laundering Technique Explained",
+  "canal": "Econ in a Nutshell",
+  "id": "XgIo6SrSxS4",
+  "canal_id": "UC_DdIoJzHZXlEKTVy41_KQw",
+  "views": 1100000,
+  "idioma": "en",
+  "inscritos": 4860
+ },
  "molde": "Every [técnica de um tema proibido/financeiro] Explained",
  "buscas": {
-  "pt": ["todas as técnicas de lavagem de dinheiro explicadas", "lavagem de dinheiro explicada"],
-  "es": ["todas las técnicas de lavado de dinero explicadas", "lavado de dinero explicado"],
-  "en": ["every money laundering technique explained", "money laundering explained"],
-  "de": ["alle Geldwäsche Methoden erklärt", "Geldwäsche erklärt"],
-  "fr": ["toutes les techniques de blanchiment d'argent expliquées", "blanchiment d'argent expliqué"]
+  "pt": [
+   "todas as técnicas de lavagem de dinheiro explicadas",
+   "lavagem de dinheiro explicada"
+  ],
+  "es": [
+   "todas las técnicas de lavado de dinero explicadas",
+   "lavado de dinero explicado"
+  ],
+  "en": [
+   "every money laundering technique explained",
+   "money laundering explained"
+  ],
+  "de": [
+   "alle Geldwäsche Methoden erklärt",
+   "Geldwäsche erklärt"
+  ],
+  "fr": [
+   "toutes les techniques de blanchiment d'argent expliquées",
+   "blanchiment d'argent expliqué"
+  ]
  },
  "dobras": [
-  {"nome": "Golpes / fraudes", "idioma": "en", "nota": "mesmo público de crime financeiro; driver 'proibido' + 'medo'",
-   "buscas": ["every scam explained", "every financial fraud explained"]},
-  {"nome": "Sonegação e paraísos fiscais", "idioma": "en", "nota": "mesmo universo (dinheiro escondido)",
-   "buscas": ["every tax evasion technique explained"]},
-  {"nome": "Golpes (em português)", "idioma": "pt", "nota": "molde catálogo aplicado a golpes no Brasil",
-   "buscas": ["todos os golpes explicados"]}
- ]
+  {
+   "nome": "Golpes / fraudes",
+   "idioma": "en",
+   "nota": "mesmo público de crime financeiro; driver 'proibido' + 'medo'",
+   "buscas": [
+    "every scam explained",
+    "every financial fraud explained"
+   ]
+  },
+  {
+   "nome": "Sonegação e paraísos fiscais",
+   "idioma": "en",
+   "nota": "mesmo universo (dinheiro escondido)",
+   "buscas": [
+    "every tax evasion technique explained"
+   ]
+  },
+  {
+   "nome": "Golpes (em português)",
+   "idioma": "pt",
+   "nota": "molde catálogo aplicado a golpes no Brasil",
+   "buscas": [
+    "todos os golpes explicados"
+   ]
+  }
+ ],
+ "pautas": {
+  "idioma": "de",
+  "tema": "geldwäsche",
+  "molde_mundo": {
+   "en": "every explained",
+   "es": "todas explicadas",
+   "pt": "todas explicadas",
+   "fr": "toutes expliquées",
+   "de": "alle erklärt"
+  },
+  "molde_alvo": "alle {X} erklärt",
+  "candidatos": [
+   {
+    "tema": "Geldwäsche-Tricks",
+    "busca_tema": "dönerläden geldwäsche",
+    "fonte": "B",
+    "evidencia": "autocompletar DE: 'dönerläden geldwäsche'",
+    "grupo": "pauta"
+   },
+   {
+    "tema": "Casino-Geldwäsche-Methoden",
+    "busca_tema": "geldwäsche casino",
+    "fonte": "B",
+    "evidencia": "autocompletar DE: 'geldwäsche casino'",
+    "grupo": "pauta"
+   },
+   {
+    "tema": "Geldwäsche-Wege über Dubai",
+    "busca_tema": "dubai geldwäsche",
+    "fonte": "B",
+    "evidencia": "autocompletar DE: 'dubai geldwäsche'",
+    "grupo": "pauta"
+   },
+   {
+    "tema": "Geldwäsche-Skandale der Banken",
+    "busca_tema": "deutsche bank geldwäsche",
+    "fonte": "B",
+    "evidencia": "autocompletar DE: 'deutsche bank geldwäsche'",
+    "grupo": "pauta"
+   },
+   {
+    "tema": "Finanzagent-Maschen",
+    "busca_tema": "finanzagent geldwäsche",
+    "fonte": "B",
+    "evidencia": "autocompletar DE: 'finanzagent geldwäsche'",
+    "grupo": "pauta"
+   },
+   {
+    "tema": "Geldwäsche mit Gold",
+    "busca_tema": "geldwäsche gold",
+    "fonte": "B",
+    "evidencia": "autocompletar DE: 'geldwäsche gold'",
+    "grupo": "pauta"
+   },
+   {
+    "tema": "Rentenfallen",
+    "busca_tema": "warum du deine rente nie ausgeben wirst",
+    "fonte": "C",
+    "evidencia": "canal de referência: 'Why You'll Never Actually Spend Your Retirement Savings' 290 mil",
+    "grupo": "pauta"
+   },
+   {
+    "tema": "Inflations-Mechanismen",
+    "busca_tema": "wie inflation wirklich funktioniert",
+    "fonte": "C",
+    "evidencia": "canal de referência: 'How Inflation Actually Works' 49 mil",
+    "grupo": "pauta"
+   },
+   {
+    "tema": "Betrugsmaschen gegen Senioren",
+    "busca_tema": "betrug senioren maschen",
+    "fonte": "C",
+    "evidencia": "canal de referência: 'Every Scam That Targets People Over 50, Explained' (173 views — fraco)",
+    "grupo": "pauta"
+   },
+   {
+    "tema": "Sekten",
+    "busca_tema": "sekten erklärt",
+    "fonte": "A",
+    "evidencia": "molde no mundo: 'Every Major Cult Explained' 3,4 mi (EN)",
+    "grupo": "dobra"
+   },
+   {
+    "tema": "Manipulationstechniken",
+    "busca_tema": "manipulationstechniken",
+    "fonte": "A",
+    "evidencia": "molde no mundo: 'Every Manipulation Technique… Explained' 2,9 mi (EN)",
+    "grupo": "dobra"
+   },
+   {
+    "tema": "Drogen und ihre Wirkung",
+    "busca_tema": "drogen und ihre wirkung",
+    "fonte": "A",
+    "evidencia": "molde no mundo: 'EVERY Drug & its Effects, Explained' 2 mi (EN)",
+    "grupo": "dobra"
+   },
+   {
+    "tema": "Gefühle, die du nicht benennen kannst",
+    "busca_tema": "gefühle die man nicht benennen kann",
+    "fonte": "A",
+    "evidencia": "molde no mundo: 'Every Feeling You Can't Name Explained' 4,7 mi (EN)",
+    "grupo": "dobra"
+   },
+   {
+    "tema": "Alien-Arten",
+    "busca_tema": "alien arten",
+    "fonte": "A",
+    "evidencia": "molde no mundo: 'EVERY TYPE OF ALIEN EXPLAINED' 753 mil (EN)",
+    "grupo": "dobra"
+   },
+   {
+    "tema": "verbotenen Bücher",
+    "busca_tema": "verbotene bücher",
+    "fonte": "A",
+    "evidencia": "molde no mundo: 'Every BANNED Book Explained in 20 Minutes' 167 mil (EN)",
+    "grupo": "dobra"
+   },
+   {
+    "tema": "Gesellschaftsschichten",
+    "busca_tema": "soziale klassen gesellschaftsschichten",
+    "fonte": "A",
+    "evidencia": "molde no mundo: 'Toutes les classes sociales expliquées' 333 mil (FR)",
+    "grupo": "dobra"
+   },
+   {
+    "tema": "Fabelwesen",
+    "busca_tema": "fabelwesen mythologie",
+    "fonte": "A",
+    "evidencia": "molde no mundo: 'Todas as Criaturas Míticas Explicadas' 309 mil (PT)",
+    "grupo": "dobra"
+   },
+   {
+    "tema": "PC-Komponenten",
+    "busca_tema": "pc komponenten erklärt",
+    "fonte": "A",
+    "evidencia": "molde no mundo: 'Todas as Peças de Computador Explicadas' 661 mil (PT)",
+    "grupo": "dobra"
+   }
+  ]
+ }
 }
