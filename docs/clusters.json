@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-12T17:09:09",
+ "atualizado": "2026-11-12T17:11:06",
  "canais": {
   "UCv9FlFdoZwAjounm8WlsKrQ": {
    "nome": "Ich mag Moneten",
@@ -8,7 +8,7 @@
     {
      "molde": "[X] wie [X]",
      "n": 3,
-     "media": 139142,
+     "media": 139148,
      "max": 333000,
      "exemplos": [
       {
@@ -24,7 +24,7 @@
       {
        "id": "4f2D2V3ljmg",
        "titulo": "MILLIONENVERLUSTE nach Nestlé-Deal: Wie geht’s ANKERKRAUT wirklich?!",
-       "views": 427
+       "views": 445
       }
      ],
      "indice": 1.01
@@ -52,13 +52,13 @@
     {
      "molde": "every [X] explained",
      "n": 5,
-     "media": 14959,
-     "max": 71000,
+     "media": 15159,
+     "max": 72000,
      "exemplos": [
       {
        "id": "o_BISFxKC7c",
        "titulo": "Every Cyberware in Cyberpunk Explained",
-       "views": 71000
+       "views": 72000
       },
       {
        "id": "pnF4oFsdD4c",
@@ -133,18 +133,18 @@
        "views": 46000
       }
      ],
-     "indice": 1.05
+     "indice": 1.04
     },
     {
      "molde": "[X] [N] [X]",
      "n": 1,
-     "media": 4000,
-     "max": 4000,
+     "media": 4100,
+     "max": 4100,
      "exemplos": [
       {
        "id": "MIr09-RUsDM",
        "titulo": "GTA 6 : GUIDE COMPLET de la CARTE (à voir avant le jour de la sortie)",
-       "views": 4000
+       "views": 4100
       }
      ],
      "indice": 0.09
@@ -171,8 +171,8 @@
     },
     {
      "molde": "[X]",
-     "n": 4,
-     "media": 70150,
+     "n": 3,
+     "media": 89533,
      "max": 234000,
      "exemplos": [
       {
@@ -186,12 +186,12 @@
        "views": 33000
       },
       {
-       "id": "_QRCQirKZok",
-       "titulo": "L’araignée dans ta chambre te remarque-t-elle ?",
-       "views": 12000
+       "id": "mtbaNTISvXg",
+       "titulo": "Un cafard chez toi… Combien d’autres ?",
+       "views": 1600
       }
      ],
-     "indice": 0.73
+     "indice": 0.93
     },
     {
      "molde": "[X] quand [X]",
@@ -220,6 +220,20 @@
       }
      ],
      "indice": 0.13
+    },
+    {
+     "molde": "[X] tu [X]",
+     "n": 1,
+     "media": 12000,
+     "max": 12000,
+     "exemplos": [
+      {
+       "id": "_QRCQirKZok",
+       "titulo": "L’araignée dans ta chambre sait elle que tu existes ?",
+       "views": 12000
+      }
+     ],
+     "indice": 0.12
     }
    ]
   },
@@ -254,13 +268,13 @@
     {
      "molde": "[X]",
      "n": 2,
-     "media": 44900,
-     "max": 84000,
+     "media": 45400,
+     "max": 85000,
      "exemplos": [
       {
        "id": "ZMzE-XFK_RA",
        "titulo": "Yemen is",
-       "views": 84000
+       "views": 85000
       },
       {
        "id": "3D-uyMyzS4E",
@@ -268,7 +282,7 @@
        "views": 5800
       }
      ],
-     "indice": 0.99
+     "indice": 1.0
     },
     {
      "molde": "[X] [N] [X] history [X]",
@@ -316,7 +330,7 @@
        "views": 102000
       }
      ],
-     "indice": 15.53
+     "indice": 15.52
     },
     {
      "molde": "[X] was [X] [N] [X] what [X] you",
@@ -330,7 +344,7 @@
        "views": 49000
       }
      ],
-     "indice": 7.46
+     "indice": 7.45
     },
     {
      "molde": "[X] what [X] you",
@@ -349,16 +363,16 @@
     {
      "molde": "[X] secret [X] was [X]",
      "n": 1,
-     "media": 5900,
-     "max": 5900,
+     "media": 6100,
+     "max": 6100,
      "exemplos": [
       {
        "id": "w6mqapsznIA",
        "titulo": "Archaeologists Uncover a Dark Secret Written Inside the Olmec Heads Nobody Was Supposed To See.",
-       "views": 5900
+       "views": 6100
       }
      ],
-     "indice": 0.9
+     "indice": 0.93
     },
     {
      "molde": "[N] [X] why [X]",
@@ -667,7 +681,7 @@
     {
      "molde": "[X]",
      "n": 5,
-     "media": 3455,
+     "media": 3456,
      "max": 8200,
      "exemplos": [
       {
@@ -1213,13 +1227,13 @@
     {
      "molde": "tu [X]",
      "n": 1,
-     "media": 522,
-     "max": 522,
+     "media": 525,
+     "max": 525,
      "exemplos": [
       {
        "id": "_0_J2ujzSEk",
        "titulo": "Tu DAS eine, und Frauen werden dich für immer wollen  Weibliche Psychologie",
-       "views": 522
+       "views": 525
       }
      ],
      "indice": 0.03
@@ -1556,22 +1570,17 @@
     },
     {
      "molde": "[X] [N]",
-     "n": 2,
-     "media": 12050,
+     "n": 1,
+     "media": 23000,
      "max": 23000,
      "exemplos": [
       {
        "id": "8ha2z2xlnGo",
        "titulo": "The Biggest Financial Mistake People Make After 50",
        "views": 23000
-      },
-      {
-       "id": "-JpM1y0YSts",
-       "titulo": "Is It Too Late to Start Saving at 45?",
-       "views": 1100
       }
      ],
-     "indice": 0.13
+     "indice": 0.25
     },
     {
      "molde": "what if your [X] every [X]",
@@ -1616,18 +1625,32 @@
      "indice": 0.03
     },
     {
-     "molde": "[X] explained",
+     "molde": "why [X]",
      "n": 1,
      "media": 1600,
      "max": 1600,
      "exemplos": [
       {
        "id": "8MSQKrM_d9U",
-       "titulo": "On Paper, He Owns Nothing: Offshore Trusts Explained",
+       "titulo": "Why the World's Biggest Tax Haven Might Be... South Dakota",
        "views": 1600
       }
      ],
      "indice": 0.02
+    },
+    {
+     "molde": "[X] [N] [X] you [X]",
+     "n": 1,
+     "media": 1100,
+     "max": 1100,
+     "exemplos": [
+      {
+       "id": "-JpM1y0YSts",
+       "titulo": "Zero Saved at 45? The Math Is Better Than You Think",
+       "views": 1100
+      }
+     ],
+     "indice": 0.01
     },
     {
      "molde": "[X] what [X] explained [X] you",
@@ -1658,29 +1681,29 @@
      "indice": 0.0
     },
     {
-     "molde": "[X] was [X]",
+     "molde": "your [X] why",
      "n": 1,
-     "media": 271,
-     "max": 271,
+     "media": 303,
+     "max": 303,
      "exemplos": [
       {
-       "id": "DJSg2lquKd0",
-       "titulo": "Binance Was Hacked. Will Big Companies Still Trust Crypto?",
-       "views": 271
+       "id": "xOJ5mKnUBYc",
+       "titulo": "Your Kids Can't Afford a House. Here's Why.",
+       "views": 303
       }
      ],
      "indice": 0.0
     },
     {
-     "molde": "your [X] why",
+     "molde": "[X] history what [X] [N] [X]",
      "n": 1,
-     "media": 245,
-     "max": 245,
+     "media": 277,
+     "max": 277,
      "exemplos": [
       {
-       "id": "xOJ5mKnUBYc",
-       "titulo": "Your Kids Can't Afford a House. Here's Why.",
-       "views": 245
+       "id": "DJSg2lquKd0",
+       "titulo": "The Biggest Heist in History: What the $6.3 Billion Binance Hack Means for Crypto",
+       "views": 277
       }
      ],
      "indice": 0.0
@@ -1827,7 +1850,7 @@
     {
      "molde": "[X] historia [X] explicada em [N] min",
      "n": 2,
-     "media": 43007,
+     "media": 43009,
      "max": 86000,
      "exemplos": [
       {
@@ -1838,7 +1861,7 @@
       {
        "id": "HHX3_W7lgSs",
        "titulo": "La Historia COMPLETA de la MITOLOGÍA AZTECA Explicada en 26 minutos",
-       "views": 14
+       "views": 18
       }
      ],
      "indice": 0.45
@@ -1918,13 +1941,13 @@
     {
      "molde": "ich [X]",
      "n": 1,
-     "media": 36,
-     "max": 36,
+     "media": 38,
+     "max": 38,
      "exemplos": [
       {
        "id": "sJ8ByQ3cNa0",
        "titulo": "Ich brachte die Hochzeitstorte – Doch die Braut bat mich, ihren Bräutigam zu ersetzen!",
-       "views": 36
+       "views": 38
       }
      ],
      "indice": 0.0
@@ -1938,16 +1961,16 @@
     {
      "molde": "[X] was [X]",
      "n": 1,
-     "media": 54000,
-     "max": 54000,
+     "media": 53000,
+     "max": 53000,
      "exemplos": [
       {
        "id": "byMsBFgLeVE",
        "titulo": "She threw cake in her poor ex's face – But HE was a billionaire!",
-       "views": 54000
+       "views": 53000
       }
      ],
-     "indice": 1.3
+     "indice": 1.28
     },
     {
      "molde": "[X] who [X]",
@@ -1966,7 +1989,7 @@
     {
      "molde": "[X]",
      "n": 3,
-     "media": 38152,
+     "media": 38155,
      "max": 114000,
      "exemplos": [
       {
@@ -1977,12 +2000,12 @@
       {
        "id": "GJD57UxtRHA",
        "titulo": "“Don’t Take Off!” – The Billionaire Ignored Her Warning… And Risked His Life!",
-       "views": 454
+       "views": 453
       },
       {
        "id": "yRpduXLnCIo",
        "titulo": "Majorsfrau droht schwarzem Leutnant – Doch der Oberst hört alles mit!",
-       "views": 4
+       "views": 13
       }
      ],
      "indice": 0.92
@@ -1992,87 +2015,13 @@
  },
  "em_alta": [
   {
-   "molde": "[X] [N] [X]",
-   "canais": [
-    {
-     "id": "UCk7lueN2v1WI--45z4g2Rng",
-     "nome": "G3ADRIEN OFF",
-     "idioma": "fr",
-     "max": 4000
-    },
-    {
-     "id": "UCgBr2zNf-689J8HmZUCJifw",
-     "nome": "Explorer Unveiled",
-     "idioma": "en",
-     "max": 6800
-    },
-    {
-     "id": "UCevjhh502_2TLqG_sL6QBeQ",
-     "nome": "Psicología Esencial",
-     "idioma": "es",
-     "max": 83
-    },
-    {
-     "id": "UCAM_O67GlUSKpEtC0Wpw5hg",
-     "nome": "Ihr Denken",
-     "idioma": "de",
-     "max": 10000
-    },
-    {
-     "id": "UCTbeDS5rNx4ZDvSLrbOmk8g",
-     "nome": "Garagem Brasileira",
-     "idioma": "?",
-     "max": 81000
-    },
-    {
-     "id": "UCLh3DKE6E0uuyf17ORbyh5w",
-     "nome": "Corner Office Drama",
-     "idioma": "en",
-     "max": 65000
-    }
-   ],
-   "videos": 7,
-   "max": 81000
-  },
-  {
-   "molde": "[X] was [X]",
-   "canais": [
-    {
-     "id": "UCgBr2zNf-689J8HmZUCJifw",
-     "nome": "Explorer Unveiled",
-     "idioma": "en",
-     "max": 1200
-    },
-    {
-     "id": "UC_DdIoJzHZXlEKTVy41_KQw",
-     "nome": "Econ in a Nutshell",
-     "idioma": "en",
-     "max": 271
-    },
-    {
-     "id": "UCooFBfsq7LviK84I7TfzUCA",
-     "nome": "Wahre Schicksale",
-     "idioma": "de",
-     "max": 257000
-    },
-    {
-     "id": "UC11JUsJTF-gkghJ_63jkCFg",
-     "nome": "Blutende Wahrheit.",
-     "idioma": "de",
-     "max": 54000
-    }
-   ],
-   "videos": 6,
-   "max": 257000
-  },
-  {
    "molde": "every [X] explained",
    "canais": [
     {
      "id": "UCXFh84AW7p06Vkv2OfTJu6Q",
      "nome": "Jimbo Explains",
      "idioma": "en",
-     "max": 71000
+     "max": 72000
     },
     {
      "id": "UC_6WWfny6AWYqKs40RUy6wg",
@@ -2091,48 +2040,29 @@
    "max": 1100000
   },
   {
-   "molde": "[N] [X]",
+   "molde": "[X] was [X]",
    "canais": [
     {
      "id": "UCgBr2zNf-689J8HmZUCJifw",
      "nome": "Explorer Unveiled",
      "idioma": "en",
-     "max": 1800
+     "max": 1200
     },
     {
-     "id": "UCevjhh502_2TLqG_sL6QBeQ",
-     "nome": "Psicología Esencial",
-     "idioma": "es",
-     "max": 252
-    },
-    {
-     "id": "UCAM_O67GlUSKpEtC0Wpw5hg",
-     "nome": "Ihr Denken",
+     "id": "UCooFBfsq7LviK84I7TfzUCA",
+     "nome": "Wahre Schicksale",
      "idioma": "de",
-     "max": 2000
+     "max": 257000
+    },
+    {
+     "id": "UC11JUsJTF-gkghJ_63jkCFg",
+     "nome": "Blutende Wahrheit.",
+     "idioma": "de",
+     "max": 53000
     }
    ],
    "videos": 5,
-   "max": 2000
-  },
-  {
-   "molde": "[X] [N]",
-   "canais": [
-    {
-     "id": "UC_6WWfny6AWYqKs40RUy6wg",
-     "nome": "oily af",
-     "idioma": "en",
-     "max": 210000
-    },
-    {
-     "id": "UC_DdIoJzHZXlEKTVy41_KQw",
-     "nome": "Econ in a Nutshell",
-     "idioma": "en",
-     "max": 23000
-    }
-   ],
-   "videos": 4,
-   "max": 210000
+   "max": 257000
   },
   {
    "molde": "[X] who [X]",

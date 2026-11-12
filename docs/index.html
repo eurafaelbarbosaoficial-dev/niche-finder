@@ -39,6 +39,8 @@
     <div class="tile w6 glow rv"><small>Nichos que mais estouram</small><div class="rows" id="t-nicho"></div></div>
   </section>
 
+  <section class="alta rv" id="alta-box" style="display:none"><div class="st2"><h3>Moldes em alta</h3><span>a mesma estrutura de título em canais novos diferentes = formato que está pegando</span></div><div class="alta" id="alta"></div></section>
+
   <section class="ctrl" id="ctrl">
     <div class="ctrl-l">
       <label class="srch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
@@ -93,6 +95,13 @@ function spark(h,w,hh){h=h||[];if(h.length<2)return"";var v=h.map(function(x){re
   var l="M"+p.map(function(q){return q.join(",");}).join(" L");
   return"<svg class='sp' viewBox='0 0 "+w+" "+hh+"' preserveAspectRatio='none'><path class='ar' d='"+l+" L"+w+","+hh+" L0,"+hh+" Z'/><path d='"+l+"'/></svg>";}
 
+var CL=null;
+function carregarCl(){fetch("clusters.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}).then(function(c){CL=c;alta();});}
+function mold(m){return esc(m).replace(/\[X\]/g,"<i>[X]</i>").replace(/\[N\]/g,"<i>[N]</i>");}
+function alta(){var a=(CL&&CL.em_alta)||[];$("alta-box").style.display=a.length?"":"none";
+  $("alta").innerHTML=a.slice(0,9).map(function(m){var ids={};m.canais.forEach(function(c){ids[c.id]=c;});var cs=Object.keys(ids).map(function(k){return ids[k];});
+    return"<div class='mo glow'><code>"+mold(m.molde)+"</code><div class='mo-n'><b>"+cs.length+"</b> canais · melhor <b>"+fmt(m.max)+"</b></div><div class='mo-c'>"+cs.map(function(c){return"<button data-id='"+esc(c.id)+"'>"+esc(c.nome)+" <em>"+esc((c.idioma||"").toUpperCase())+"</em></button>";}).join("")+"</div></div>";}).join("");
+  [].forEach.call($("alta").querySelectorAll("button[data-id]"),function(b){b.onclick=function(){abrir(b.dataset.id);};});}
 function carregar(){
   fetch("dados.json?t="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();})
   .then(function(d){var c=d.criterios||(d.criterios={});c.bom_video=c.bom_video||50000;
@@ -159,11 +168,16 @@ function abrir(id,quieto){var x=(D.canais||[]).filter(function(c){return c.id===
     "<div><small>Views do canal</small><b>"+fmt(x.views_total)+"</b></div><div><small>Vídeos longos</small><b>"+(x.n_longos==null?"?":x.n_longos)+"</b></div><div><small>Ganho 24h</small><b class='up'>"+(g?"+"+fmt(g):"—")+"</b></div></div></div></div>"+
     "<div class='fl-sec'><h4>Views do canal em cada medição</h4><div class='chart'>"+grafico(x.historico)+"</div></div>"+
     "<div class='fl-sec'><h4>Vídeos mais vistos</h4><ul class='vl'>"+(x.videos||[]).map(function(v){return"<li><a href='https://youtu.be/"+esc(v.id)+"' target='_blank' rel='noopener'><i data-s='"+((v.views||0)/mx).toFixed(3)+"'></i><span>"+esc(v.titulo)+"</span><b>"+fmt(v.views)+"</b></a></li>";}).join("")+"</ul></div>"+
-    "<div class='fl-sec'><h4>Temas que se repetem nos títulos</h4><div class='tg'>"+((x.palavras||[]).slice(0,10).map(function(p){return"<span>"+esc(p.termo)+"<em>"+p.pct+"%</em></span>";}).join("")||"<span>sem tema repetido</span>")+"</div></div>"+
+    clSec(x)+"<div class='fl-sec'><h4>Temas que se repetem nos títulos</h4><div class='tg'>"+((x.palavras||[]).slice(0,10).map(function(p){return"<span>"+esc(p.termo)+"<em>"+p.pct+"%</em></span>";}).join("")||"<span>sem tema repetido</span>")+"</div></div>"+
     "<div class='acts'><a class='btn pri' href='validador.html?t="+encodeURIComponent(m.titulo||"")+"'>Validar este título em 5 idiomas →</a><a class='btn' href='"+esc(x.url)+"' target='_blank' rel='noopener'>Abrir no YouTube ↗</a></div>";
   $("folha").classList.add("on");$("folha").setAttribute("aria-hidden","false");$("veu").classList.add("on");document.body.style.overflow="hidden";
   $("fx").onclick=fechar;if(!quieto)$("folha").scrollTop=0;
   setTimeout(function(){[].forEach.call($("folha").querySelectorAll(".vl i"),function(i){i.style.transform="scaleX("+i.dataset.s+")";});},250);}
+function clSec(x){var c=CL&&CL.canais&&CL.canais[x.id];if(!c||!c.clusters.length)return"";
+  return"<div class='fl-sec'><h4>Clusters de título · "+c.n_videos+" vídeos longos agrupados pela estrutura (palavras de assunto viram [X])</h4><div class='cls'>"+
+  c.clusters.slice(0,8).map(function(k){var ix=k.indice;return"<div class='cl'><div class='cl-h'><code>"+mold(k.molde)+"</code><span class='ix "+(ix>=1.2?"bom":ix<0.8?"ruim":"")+"'>"+(ix==null?"":(ix>=1?"▲ ":"▼ ")+String(ix).replace(".",",")+"× a média")+"</span></div>"+
+    "<div class='cl-m'>"+k.n+" vídeo(s) · média "+fmt(k.media)+" · melhor "+fmt(k.max)+"</div><div class='cl-e'>"+esc(k.exemplos[0].titulo)+"</div></div>";}).join("")+
+  "</div><p class='mut' style='font-size:12.5px;margin:8px 0 0'>▲ acima de 1× = esse molde rende mais que a média do canal (repetir); ▼ abaixo = rende menos (matar). Agrupamento automático por palavras; canais novos têm poucos vídeos, então os clusters ficam pequenos.</p></div>";}
 function fechar(){aberto=null;$("folha").classList.remove("on");$("folha").setAttribute("aria-hidden","true");$("veu").classList.remove("on");document.body.style.overflow="";}
 
 /* busca rápida Ctrl+K */
@@ -196,7 +210,7 @@ document.addEventListener("keydown",function(e){var tag=(e.target.tagName||"").t
   if(e.key==="/"){e.preventDefault();$("q").focus();}else if(e.key==="r"||e.key==="R")carregar();
   else if(e.key==="Enter"&&e.target.dataset&&e.target.dataset.id)abrir(e.target.dataset.id);});
 UI.pilula(document.querySelector(".tabs"));UI.revelar(document.querySelectorAll(".rv"));
-carregar();setInterval(carregar,30000);
+carregar();carregarCl();setInterval(carregar,30000);setInterval(carregarCl,300000);
 })();
 </script>
 </body>

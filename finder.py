@@ -14,7 +14,7 @@ Como funciona (cada rodada):
 Só vídeos longos contam (Shorts e vídeos com menos de 4 min ficam de fora). Nada é inventado: o que o YouTube não
 informou fica vazio ("?" no site).
 """
-import argparse, datetime as dt, json, os, re, sys, time, urllib.request
+import argparse, datetime as dt, json, os, re, subprocess, sys, time, urllib.request
 from pathlib import Path
 
 for _s in (sys.stdout, sys.stderr):
@@ -285,6 +285,11 @@ def rodada(a, trava):
             if i % 10 == 0:
                 salvar()
     info.update(status="pronto", fase="Rodada concluída", fim=agora().isoformat())
+    salvar()
+    try:  # clusters de título dos outliers (docs/clusters.json), antes de publicar
+        subprocess.run([sys.executable, "-I", str(Path(__file__).resolve().parent / "clusters.py")], timeout=1800)
+    except Exception as e:
+        log(f"clusters: {e}")
     salvar(forcar_push=True)
     log("Rodada concluída.")
 
