@@ -1,104 +1,531 @@
 {
   "Games": {
     "grupo": "Entretenimento",
-    "pt": ["história dos games", "curiosidades de jogos"], "es": ["historia de los videojuegos", "curiosidades de videojuegos"],
-    "en": ["video game history documentary", "gaming explained"], "de": ["geschichte der videospiele", "gaming doku deutsch"],
-    "fr": ["histoire du jeu vidéo", "anecdotes jeux vidéo"]
+    "pt": [
+      "história dos games",
+      "curiosidades de jogos"
+    ],
+    "es": [
+      "historia de los videojuegos",
+      "curiosidades de videojuegos"
+    ],
+    "en": [
+      "video game history documentary",
+      "gaming explained"
+    ],
+    "de": [
+      "geschichte der videospiele",
+      "gaming doku deutsch"
+    ],
+    "fr": [
+      "histoire du jeu vidéo",
+      "anecdotes jeux vidéo"
+    ]
   },
   "Filmes": {
     "grupo": "Entretenimento",
-    "pt": ["filme explicado", "curiosidades de filmes"], "es": ["película explicada", "curiosidades del cine"],
-    "en": ["movie explained", "movie recap"], "de": ["film erklärt", "filme fakten deutsch"],
-    "fr": ["film expliqué", "résumé de film"]
+    "pt": [
+      "filme explicado",
+      "curiosidades de filmes"
+    ],
+    "es": [
+      "película explicada",
+      "curiosidades del cine"
+    ],
+    "en": [
+      "movie explained",
+      "movie recap"
+    ],
+    "de": [
+      "film erklärt",
+      "filme fakten deutsch"
+    ],
+    "fr": [
+      "film expliqué",
+      "résumé de film"
+    ]
   },
   "Séries": {
     "grupo": "Entretenimento",
-    "pt": ["série explicada", "resumo da série"], "es": ["serie explicada", "resumen de la serie"],
-    "en": ["tv series explained", "series recap"], "de": ["serie erklärt", "serie zusammenfassung"],
-    "fr": ["série expliquée", "résumé de la série"]
+    "pt": [
+      "série explicada",
+      "resumo da série"
+    ],
+    "es": [
+      "serie explicada",
+      "resumen de la serie"
+    ],
+    "en": [
+      "tv series explained",
+      "series recap"
+    ],
+    "de": [
+      "serie erklärt",
+      "serie zusammenfassung"
+    ],
+    "fr": [
+      "série expliquée",
+      "résumé de la série"
+    ]
   },
   "Animes e desenhos": {
     "grupo": "Entretenimento",
-    "pt": ["anime explicado", "desenhos antigos curiosidades"], "es": ["anime explicado", "caricaturas curiosidades"],
-    "en": ["anime explained", "cartoon theory"], "de": ["anime erklärt", "zeichentrick fakten"],
-    "fr": ["anime expliqué", "dessin animé théorie"]
+    "pt": [
+      "anime explicado",
+      "desenhos antigos curiosidades"
+    ],
+    "es": [
+      "anime explicado",
+      "caricaturas curiosidades"
+    ],
+    "en": [
+      "anime explained",
+      "cartoon theory"
+    ],
+    "de": [
+      "anime erklärt",
+      "zeichentrick fakten"
+    ],
+    "fr": [
+      "anime expliqué",
+      "dessin animé théorie"
+    ]
   },
   "Cultura pop e famosos": {
     "grupo": "Entretenimento",
-    "pt": ["a história de famoso", "o que aconteceu com"], "es": ["qué pasó con", "la historia de famoso"],
-    "en": ["what happened to celebrity", "celebrity downfall"], "de": ["was wurde aus", "promi geschichte"],
-    "fr": ["que devient", "histoire de star"]
+    "pt": [
+      "a história de famoso",
+      "o que aconteceu com"
+    ],
+    "es": [
+      "qué pasó con",
+      "la historia de famoso"
+    ],
+    "en": [
+      "what happened to celebrity",
+      "celebrity downfall"
+    ],
+    "de": [
+      "was wurde aus",
+      "promi geschichte"
+    ],
+    "fr": [
+      "que devient",
+      "histoire de star"
+    ]
   },
   "História": {
     "grupo": "Conhecimento",
-    "pt": ["história do brasil documentário", "história antiga"], "es": ["historia documental", "historia antigua"],
-    "en": ["history documentary", "ancient history explained"], "de": ["geschichte doku", "antike geschichte"],
-    "fr": ["documentaire histoire", "histoire antique"]
+    "pt": [
+      "história do brasil documentário",
+      "história antiga"
+    ],
+    "es": [
+      "historia documental",
+      "historia antigua"
+    ],
+    "en": [
+      "history documentary",
+      "ancient history explained"
+    ],
+    "de": [
+      "geschichte doku",
+      "antike geschichte"
+    ],
+    "fr": [
+      "documentaire histoire",
+      "histoire antique"
+    ]
   },
   "Curiosidades": {
     "grupo": "Conhecimento",
-    "pt": ["curiosidades que você não sabia", "fatos curiosos"], "es": ["curiosidades que no sabías", "datos curiosos"],
-    "en": ["facts you didn't know", "interesting facts"], "de": ["fakten die du nicht wusstest", "interessante fakten"],
-    "fr": ["choses que vous ne saviez pas", "faits incroyables"]
+    "pt": [
+      "curiosidades que você não sabia",
+      "fatos curiosos"
+    ],
+    "es": [
+      "curiosidades que no sabías",
+      "datos curiosos"
+    ],
+    "en": [
+      "facts you didn't know",
+      "interesting facts"
+    ],
+    "de": [
+      "fakten die du nicht wusstest",
+      "interessante fakten"
+    ],
+    "fr": [
+      "choses que vous ne saviez pas",
+      "faits incroyables"
+    ]
   },
   "Ciência e tecnologia": {
     "grupo": "Conhecimento",
-    "pt": ["ciência explicada", "tecnologia explicada"], "es": ["ciencia explicada", "tecnología explicada"],
-    "en": ["science explained", "technology explained"], "de": ["wissenschaft erklärt", "technik erklärt"],
-    "fr": ["science expliquée", "technologie expliquée"]
+    "pt": [
+      "ciência explicada",
+      "tecnologia explicada"
+    ],
+    "es": [
+      "ciencia explicada",
+      "tecnología explicada"
+    ],
+    "en": [
+      "science explained",
+      "technology explained"
+    ],
+    "de": [
+      "wissenschaft erklärt",
+      "technik erklärt"
+    ],
+    "fr": [
+      "science expliquée",
+      "technologie expliquée"
+    ]
   },
   "Mistério e true crime": {
     "grupo": "Conhecimento",
-    "pt": ["caso real", "mistério não resolvido"], "es": ["caso real", "misterio sin resolver"],
-    "en": ["true crime documentary", "unsolved mystery"], "de": ["true crime deutsch", "ungelöste mysterien"],
-    "fr": ["affaire criminelle", "mystère non résolu"]
+    "pt": [
+      "caso real",
+      "mistério não resolvido"
+    ],
+    "es": [
+      "caso real",
+      "misterio sin resolver"
+    ],
+    "en": [
+      "true crime documentary",
+      "unsolved mystery"
+    ],
+    "de": [
+      "true crime deutsch",
+      "ungelöste mysterien"
+    ],
+    "fr": [
+      "affaire criminelle",
+      "mystère non résolu"
+    ]
   },
   "Psicologia": {
     "grupo": "Conhecimento",
-    "pt": ["psicologia comportamento", "mente humana"], "es": ["psicología comportamiento", "mente humana"],
-    "en": ["psychology explained", "dark psychology"], "de": ["psychologie erklärt", "menschliche psyche"],
-    "fr": ["psychologie expliquée", "comportement humain"]
+    "pt": [
+      "psicologia comportamento",
+      "mente humana"
+    ],
+    "es": [
+      "psicología comportamiento",
+      "mente humana"
+    ],
+    "en": [
+      "psychology explained",
+      "dark psychology"
+    ],
+    "de": [
+      "psychologie erklärt",
+      "menschliche psyche"
+    ],
+    "fr": [
+      "psychologie expliquée",
+      "comportement humain"
+    ]
   },
   "Esportes": {
     "grupo": "Estilo de vida",
-    "pt": ["história do futebol", "maiores jogadores da história"], "es": ["historia del fútbol", "mejores jugadores de la historia"],
-    "en": ["sports documentary", "greatest athletes of all time"], "de": ["fußball geschichte", "sport doku"],
-    "fr": ["histoire du football", "documentaire sport"]
+    "pt": [
+      "história do futebol",
+      "maiores jogadores da história"
+    ],
+    "es": [
+      "historia del fútbol",
+      "mejores jugadores de la historia"
+    ],
+    "en": [
+      "sports documentary",
+      "greatest athletes of all time"
+    ],
+    "de": [
+      "fußball geschichte",
+      "sport doku"
+    ],
+    "fr": [
+      "histoire du football",
+      "documentaire sport"
+    ]
   },
   "Carros": {
     "grupo": "Estilo de vida",
-    "pt": ["história de carro", "carros curiosidades"], "es": ["historia de autos", "curiosidades de coches"],
-    "en": ["car history documentary", "cars explained"], "de": ["auto geschichte", "autos erklärt"],
-    "fr": ["histoire automobile", "voitures expliqué"]
+    "pt": [
+      "história de carro",
+      "carros curiosidades"
+    ],
+    "es": [
+      "historia de autos",
+      "curiosidades de coches"
+    ],
+    "en": [
+      "car history documentary",
+      "cars explained"
+    ],
+    "de": [
+      "auto geschichte",
+      "autos erklärt"
+    ],
+    "fr": [
+      "histoire automobile",
+      "voitures expliqué"
+    ]
   },
   "Finanças": {
     "grupo": "Estilo de vida",
-    "pt": ["como ficar rico", "economia explicada"], "es": ["cómo hacerse rico", "economía explicada"],
-    "en": ["economy explained", "money explained"], "de": ["wirtschaft erklärt", "geld erklärt"],
-    "fr": ["économie expliquée", "argent comment"]
+    "pt": [
+      "como ficar rico",
+      "economia explicada"
+    ],
+    "es": [
+      "cómo hacerse rico",
+      "economía explicada"
+    ],
+    "en": [
+      "economy explained",
+      "money explained"
+    ],
+    "de": [
+      "wirtschaft erklärt",
+      "geld erklärt"
+    ],
+    "fr": [
+      "économie expliquée",
+      "argent comment"
+    ]
   },
   "Histórias de empresas": {
     "grupo": "Estilo de vida",
-    "pt": ["a história da empresa", "como a empresa faliu"], "es": ["la historia de la empresa", "cómo quebró"],
-    "en": ["company history documentary", "how the company collapsed"], "de": ["firmengeschichte", "aufstieg und fall firma"],
-    "fr": ["l'histoire de l'entreprise", "faillite entreprise histoire"]
+    "pt": [
+      "a história da empresa",
+      "como a empresa faliu"
+    ],
+    "es": [
+      "la historia de la empresa",
+      "cómo quebró"
+    ],
+    "en": [
+      "company history documentary",
+      "how the company collapsed"
+    ],
+    "de": [
+      "firmengeschichte",
+      "aufstieg und fall firma"
+    ],
+    "fr": [
+      "l'histoire de l'entreprise",
+      "faillite entreprise histoire"
+    ]
   },
   "Histórias do Reddit": {
     "grupo": "Histórias",
-    "pt": ["histórias do reddit", "relatos reais"], "es": ["historias de reddit", "relatos reales"],
-    "en": ["reddit stories", "aita reddit story"], "de": ["reddit geschichten", "reddit storys deutsch"],
-    "fr": ["histoires reddit", "histoires vraies"]
+    "pt": [
+      "histórias do reddit",
+      "relatos reais"
+    ],
+    "es": [
+      "historias de reddit",
+      "relatos reales"
+    ],
+    "en": [
+      "reddit stories",
+      "aita reddit story"
+    ],
+    "de": [
+      "reddit geschichten",
+      "reddit storys deutsch"
+    ],
+    "fr": [
+      "histoires reddit",
+      "histoires vraies"
+    ]
   },
   "Folclore e lendas": {
     "grupo": "Histórias",
-    "pt": ["lendas brasileiras", "folclore"], "es": ["leyendas", "mitología"],
-    "en": ["mythology explained", "folklore legends"], "de": ["sagen und legenden", "mythologie erklärt"],
-    "fr": ["légendes", "mythologie expliquée"]
+    "pt": [
+      "lendas brasileiras",
+      "folclore"
+    ],
+    "es": [
+      "leyendas",
+      "mitología"
+    ],
+    "en": [
+      "mythology explained",
+      "folklore legends"
+    ],
+    "de": [
+      "sagen und legenden",
+      "mythologie erklärt"
+    ],
+    "fr": [
+      "légendes",
+      "mythologie expliquée"
+    ]
   },
   "Histórias de vida": {
     "grupo": "Histórias",
-    "pt": ["história de superação", "história real emocionante"], "es": ["historia de superación", "historia real"],
-    "en": ["inspiring true story", "life story documentary"], "de": ["wahre geschichte", "bewegende geschichte"],
-    "fr": ["histoire vraie émouvante", "histoire incroyable"]
+    "pt": [
+      "história de superação",
+      "história real emocionante"
+    ],
+    "es": [
+      "historia de superación",
+      "historia real"
+    ],
+    "en": [
+      "inspiring true story",
+      "life story documentary"
+    ],
+    "de": [
+      "wahre geschichte",
+      "bewegende geschichte"
+    ],
+    "fr": [
+      "histoire vraie émouvante",
+      "histoire incroyable"
+    ]
+  },
+  "E se… (What if)": {
+    "grupo": "Formatos",
+    "pt": [
+      "e se",
+      "o que aconteceria se"
+    ],
+    "es": [
+      "qué pasaría si",
+      "y si"
+    ],
+    "en": [
+      "what if",
+      "what would happen if"
+    ],
+    "de": [
+      "was wäre wenn",
+      "was passiert wenn"
+    ],
+    "fr": [
+      "et si",
+      "que se passerait-il si"
+    ]
+  },
+  "Catálogo (todos explicados)": {
+    "grupo": "Formatos",
+    "pt": [
+      "todos os tipos explicados",
+      "todas explicadas em minutos"
+    ],
+    "es": [
+      "todos los tipos explicados",
+      "todas explicadas en minutos"
+    ],
+    "en": [
+      "every explained",
+      "every type of explained"
+    ],
+    "de": [
+      "alle erklärt",
+      "alle arten erklärt"
+    ],
+    "fr": [
+      "tous les types expliqués",
+      "toutes expliquées en minutes"
+    ]
+  },
+  "POV / sua vida como": {
+    "grupo": "Formatos",
+    "pt": [
+      "pov você",
+      "sua vida como"
+    ],
+    "es": [
+      "pov eres",
+      "tu vida como"
+    ],
+    "en": [
+      "pov you are",
+      "your life as"
+    ],
+    "de": [
+      "pov du bist",
+      "dein leben als"
+    ],
+    "fr": [
+      "pov tu es",
+      "ta vie de"
+    ]
+  },
+  "Iceberg": {
+    "grupo": "Formatos",
+    "pt": [
+      "iceberg de",
+      "iceberg explicado"
+    ],
+    "es": [
+      "iceberg de",
+      "iceberg explicado"
+    ],
+    "en": [
+      "iceberg explained",
+      "the iceberg of"
+    ],
+    "de": [
+      "eisberg erklärt",
+      "iceberg deutsch"
+    ],
+    "fr": [
+      "l'iceberg de",
+      "iceberg expliqué"
+    ]
+  },
+  "Níveis / ranking": {
+    "grupo": "Formatos",
+    "pt": [
+      "todos os níveis de",
+      "níveis de"
+    ],
+    "es": [
+      "todos los niveles de",
+      "niveles de"
+    ],
+    "en": [
+      "every level of",
+      "levels of explained"
+    ],
+    "de": [
+      "alle level von",
+      "stufen von erklärt"
+    ],
+    "fr": [
+      "tous les niveaux de",
+      "niveaux de expliqué"
+    ]
+  },
+  "Como era antigamente": {
+    "grupo": "Formatos",
+    "pt": [
+      "como os humanos antigos",
+      "como as pessoas viviam antigamente"
+    ],
+    "es": [
+      "cómo los humanos antiguos",
+      "cómo vivían en la antigüedad"
+    ],
+    "en": [
+      "how did ancient humans",
+      "how did people in the past"
+    ],
+    "de": [
+      "wie haben menschen früher",
+      "wie lebten menschen im mittelalter"
+    ],
+    "fr": [
+      "comment les humains préhistoriques",
+      "comment vivaient les gens au moyen âge"
+    ]
   }
 }
