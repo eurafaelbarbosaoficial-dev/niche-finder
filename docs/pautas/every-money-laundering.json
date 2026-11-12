@@ -1,0 +1,738 @@
+{
+ "slug": "every-money-laundering",
+ "data": "2026-11-12 17:52",
+ "idioma": "de",
+ "tema": "geldwäsche",
+ "molde_alvo": "alle {X} erklärt",
+ "pautas": [
+  {
+   "tema": "Geldwäsche-Skandale der Banken",
+   "busca_tema": "deutsche bank geldwäsche",
+   "fonte": "B",
+   "evidencia": "autocompletar DE: 'deutsche bank geldwäsche'",
+   "grupo": "pauta",
+   "busca_molde": "alle Geldwäsche-Skandale der Banken erklärt",
+   "demanda_max": 202317,
+   "procura": 3,
+   "concorrentes": 0,
+   "melhor_concorrente": null,
+   "veredito": "forte",
+   "explica": "Ninguém fez no molde e o tema tem demanda (vídeo de 202.317 views no idioma).",
+   "pontos": 59.1,
+   "tema_videos": [
+    {
+     "id": "SDHF3EuUdnQ",
+     "titulo": "Verdacht auf Geldw�sche: Razzia bei der Deutschen Bank",
+     "canal": "tagesschau",
+     "views": 202317,
+     "dur": 274,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "WXso3F7iMSw",
+     "titulo": "Razzia bei Deutscher Bank \"kann kein Zufall sein\": Reitz zu Geldw�sche-Verdacht",
+     "canal": "ntv Nachrichten",
+     "views": 17979,
+     "dur": 210,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "2VJ8aBHTY0A",
+     "titulo": "Verdacht der Geldw�sche: Razzia bei Deutscher Bank",
+     "canal": "tagesschau",
+     "views": 10458,
+     "dur": 91,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "RYyAXw04RJA",
+     "titulo": "Geldw�sche-Gesch�fte in Billionenh�he: F�hrend ist die Deutsche Bank",
+     "canal": "euronews (deutsch)",
+     "views": 1184,
+     "dur": 71,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ],
+   "molde_videos": []
+  },
+  {
+   "tema": "Betrugsmaschen gegen Senioren",
+   "busca_tema": "betrug senioren maschen",
+   "fonte": "C",
+   "evidencia": "canal de referência: 'Every Scam That Targets People Over 50, Explained' (173 views — fraco)",
+   "grupo": "pauta",
+   "busca_molde": "alle Betrugsmaschen gegen Senioren erklärt",
+   "demanda_max": 49516,
+   "procura": 3,
+   "concorrentes": 0,
+   "melhor_concorrente": null,
+   "veredito": "boa",
+   "explica": "Ninguém fez no molde; demanda média (melhor vídeo do tema: 49.516).",
+   "pontos": 52.9,
+   "tema_videos": [
+    {
+     "id": "O4NHlPEcxsA",
+     "titulo": " Senioren in Gefahr! Die 5 fiesesten Telefonbetrugsmaschen 2025 � Polizei warnt!",
+     "canal": "Weisheit der Alten 🌿",
+     "views": 49516,
+     "dur": 1153,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "Obow9DNKDJI",
+     "titulo": "Senioren aufgepasst: 5 neue Betrugsmaschen � so werden �ltere gezielt hintergangen",
+     "canal": "SeniorFitRatgeber",
+     "views": 14698,
+     "dur": 1461,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "4ft9mbn8Wek",
+     "titulo": "Vorsicht vor diesen 5 Betrugsmaschen, die auf Senioren abzielen!",
+     "canal": "Le Hoe",
+     "views": 550,
+     "dur": 1173,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "ytZ7CQhF4WM",
+     "titulo": "Polizei warnt! So erkennen Senioren JEDEN Betr�ger (EIN Wort sch�tzt Ihre ganze Familie)",
+     "canal": "Clever im Alter",
+     "views": 1,
+     "dur": 864,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ],
+   "molde_videos": []
+  },
+  {
+   "tema": "Finanzagent-Maschen",
+   "busca_tema": "finanzagent geldwäsche",
+   "fonte": "B",
+   "evidencia": "autocompletar DE: 'finanzagent geldwäsche'",
+   "grupo": "pauta",
+   "busca_molde": "alle Finanzagent-Maschen erklärt",
+   "demanda_max": 26064,
+   "procura": 3,
+   "concorrentes": 0,
+   "melhor_concorrente": null,
+   "veredito": "boa",
+   "explica": "Ninguém fez no molde; demanda média (melhor vídeo do tema: 26.064).",
+   "pontos": 50.2,
+   "tema_videos": [
+    {
+     "id": "jnPK2W8G2PU",
+     "titulo": "Was ist Geldw�sche? � #Finanzisch",
+     "canal": "finanzministeriumTV",
+     "views": 26064,
+     "dur": 97,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "Y8J5xIT4Rng",
+     "titulo": "Finanzagenten-Betrug: Wenn ein Nebenjob zur Geldw�sche wird",
+     "canal": "Betrugsmaschen erklärt",
+     "views": 208,
+     "dur": 838,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "EcBOJHMvXeA",
+     "titulo": "Webinar \"Pr�vention von Geldw�sche und Terrorismusfinanzierung\"",
+     "canal": "Fachgruppe UBIT NÖ",
+     "views": 171,
+     "dur": 3657,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "pBWvAyfgY9M",
+     "titulo": "Geldw�sche-Betrug: So erkennst du unseri�se Jobangebote als Finanzagent",
+     "canal": "Die Masche dahinter",
+     "views": 34,
+     "dur": 233,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ],
+   "molde_videos": []
+  },
+  {
+   "tema": "Geldwäsche-Tricks",
+   "busca_tema": "dönerläden geldwäsche",
+   "fonte": "B",
+   "evidencia": "autocompletar DE: 'dönerläden geldwäsche'",
+   "grupo": "pauta",
+   "busca_molde": "alle Geldwäsche-Tricks erklärt",
+   "demanda_max": 4353,
+   "procura": 2,
+   "concorrentes": 0,
+   "melhor_concorrente": null,
+   "veredito": "fraca",
+   "explica": "Pouca demanda achada no idioma (melhor vídeo do tema: 4.353).",
+   "pontos": 40.4,
+   "tema_videos": [
+    {
+     "id": "ar0TyHHMpbQ",
+     "titulo": "Arabisierung in Dresden: So funktioniert Geldw�sche mit D�nerl�den",
+     "canal": "AlterWeißerMann",
+     "views": 4353,
+     "dur": 611,
+     "idioma_real": "de",
+     "idioma_fonte": "titulo"
+    }
+   ],
+   "molde_videos": []
+  },
+  {
+   "tema": "Inflations-Mechanismen",
+   "busca_tema": "wie inflation wirklich funktioniert",
+   "fonte": "C",
+   "evidencia": "canal de referência: 'How Inflation Actually Works' 49 mil",
+   "grupo": "pauta",
+   "busca_molde": "alle Inflations-Mechanismen erklärt",
+   "demanda_max": 278,
+   "procura": 2,
+   "concorrentes": 0,
+   "melhor_concorrente": null,
+   "veredito": "fraca",
+   "explica": "Pouca demanda achada no idioma (melhor vídeo do tema: 278).",
+   "pontos": 28.5,
+   "tema_videos": [
+    {
+     "id": "2tBV9H2YrTs",
+     "titulo": "Wie trifft Dich die Inflation wirklich? Wie ver�ndert sich Dein pers�nliches FINANZ-System?",
+     "canal": "Wege aus dem Finanz-Dschungel",
+     "views": 278,
+     "dur": 772,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ],
+   "molde_videos": []
+  },
+  {
+   "tema": "Geldwäsche-Wege über Dubai",
+   "busca_tema": "dubai geldwäsche",
+   "fonte": "B",
+   "evidencia": "autocompletar DE: 'dubai geldwäsche'",
+   "grupo": "pauta",
+   "busca_molde": "alle Geldwäsche-Wege über Dubai erklärt",
+   "demanda_max": 215,
+   "procura": 1,
+   "concorrentes": 0,
+   "melhor_concorrente": null,
+   "veredito": "fraca",
+   "explica": "Pouca demanda achada no idioma (melhor vídeo do tema: 215).",
+   "pontos": 25.3,
+   "tema_videos": [
+    {
+     "id": "OR7uws0CyKA",
+     "titulo": "Geldw�sche in Dubai",
+     "canal": "Teichmann International",
+     "views": 215,
+     "dur": 70,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "8KNNd1G3uCA",
+     "titulo": "Geldw�sche in Dubai? #dubai #geld #steuern",
+     "canal": "Teichmann International",
+     "views": 46,
+     "dur": 61,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ],
+   "molde_videos": []
+  },
+  {
+   "tema": "Casino-Geldwäsche-Methoden",
+   "busca_tema": "geldwäsche casino",
+   "fonte": "B",
+   "evidencia": "autocompletar DE: 'geldwäsche casino'",
+   "grupo": "pauta",
+   "busca_molde": "alle Casino-Geldwäsche-Methoden erklärt",
+   "demanda_max": 0,
+   "procura": 1,
+   "concorrentes": 0,
+   "melhor_concorrente": null,
+   "veredito": "fraca",
+   "explica": "Pouca demanda achada no idioma (melhor vídeo do tema: 0).",
+   "pontos": 2.0,
+   "tema_videos": [],
+   "molde_videos": []
+  },
+  {
+   "tema": "Geldwäsche mit Gold",
+   "busca_tema": "geldwäsche gold",
+   "fonte": "B",
+   "evidencia": "autocompletar DE: 'geldwäsche gold'",
+   "grupo": "pauta",
+   "busca_molde": "alle Geldwäsche mit Gold erklärt",
+   "demanda_max": 0,
+   "procura": 1,
+   "concorrentes": 0,
+   "melhor_concorrente": null,
+   "veredito": "fraca",
+   "explica": "Pouca demanda achada no idioma (melhor vídeo do tema: 0).",
+   "pontos": 2.0,
+   "tema_videos": [],
+   "molde_videos": []
+  },
+  {
+   "tema": "Rentenfallen",
+   "busca_tema": "warum du deine rente nie ausgeben wirst",
+   "fonte": "C",
+   "evidencia": "canal de referência: 'Why You'll Never Actually Spend Your Retirement Savings' 290 mil",
+   "grupo": "pauta",
+   "busca_molde": "alle Rentenfallen erklärt",
+   "demanda_max": 1765,
+   "procura": 0,
+   "concorrentes": 1,
+   "melhor_concorrente": 8533,
+   "veredito": "feita_fraca",
+   "explica": "Já fizeram no molde, sem sucesso (melhor 8.533). Alerta.",
+   "pontos": 32.5,
+   "tema_videos": [
+    {
+     "id": "e9_2qJnbiOk",
+     "titulo": "Der Grund warum du NIE in RENTE gehen wirst",
+     "canal": "Finanzratten",
+     "views": 1765,
+     "dur": 895,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "grXUdTuWfs0",
+     "titulo": "Warum du deine Rente nie ausgeben wirst",
+     "canal": "Aufwärtsleben",
+     "views": 3,
+     "dur": 521,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ],
+   "molde_videos": [
+    {
+     "id": "HxCNv5i0srM",
+     "titulo": "Versteckte Rentenfallen  So viel Steuern zahlen Sie wirklich",
+     "canal": "Dirk Rott | Steuerratgeber",
+     "views": 8533,
+     "dur": 413,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ]
+  },
+  {
+   "tema": "Manipulationstechniken",
+   "busca_tema": "manipulationstechniken",
+   "fonte": "A",
+   "evidencia": "molde no mundo: 'Every Manipulation Technique… Explained' 2,9 mi (EN)",
+   "grupo": "dobra",
+   "busca_molde": "alle Manipulationstechniken erklärt",
+   "demanda_max": 51074,
+   "procura": 7,
+   "concorrentes": 0,
+   "melhor_concorrente": null,
+   "veredito": "forte",
+   "explica": "Ninguém fez no molde e o tema tem demanda (vídeo de 51.074 views no idioma).",
+   "pontos": 61.1,
+   "tema_videos": [
+    {
+     "id": "dqs-9A8hux8",
+     "titulo": "Die 7 Manipulationsspiele, die jeder kennen sollte",
+     "canal": "Prof. Ashok Riehm - Coaching",
+     "views": 51074,
+     "dur": 1338,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "4twduvBNbyU",
+     "titulo": "5 Manipulationstechniken, die verboten sein sollten (Schwarze Rhetorik)",
+     "canal": "Erschaffe dich neu",
+     "views": 46978,
+     "dur": 355,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "R2V5cV3ulxI",
+     "titulo": "6 Merkmale, die manipulative Personen sofort entlarven! - So sch�tzt du dich effektiv!",
+     "canal": "Karsten Noack",
+     "views": 7862,
+     "dur": 732,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ],
+   "molde_videos": []
+  },
+  {
+   "tema": "Alien-Arten",
+   "busca_tema": "alien arten",
+   "fonte": "A",
+   "evidencia": "molde no mundo: 'EVERY TYPE OF ALIEN EXPLAINED' 753 mil (EN)",
+   "grupo": "dobra",
+   "busca_molde": "alle Alien-Arten erklärt",
+   "demanda_max": 119833,
+   "procura": 4,
+   "concorrentes": 0,
+   "melhor_concorrente": null,
+   "veredito": "forte",
+   "explica": "Ninguém fez no molde e o tema tem demanda (vídeo de 119.833 views no idioma).",
+   "pontos": 58.8,
+   "tema_videos": [
+    {
+     "id": "cCsMxcO49Ko",
+     "titulo": "Zehn Alien Arten",
+     "canal": "GRENZWERTIG",
+     "views": 119833,
+     "dur": 775,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "bVThXSe8r6M",
+     "titulo": "Diese Alien Arten sollen wirklich existieren - Enigma369 - Folge 4",
+     "canal": "ENIGMA 369",
+     "views": 285,
+     "dur": 3834,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ],
+   "molde_videos": []
+  },
+  {
+   "tema": "verbotenen Bücher",
+   "busca_tema": "verbotene bücher",
+   "fonte": "A",
+   "evidencia": "molde no mundo: 'Every BANNED Book Explained in 20 Minutes' 167 mil (EN)",
+   "grupo": "dobra",
+   "busca_molde": "alle verbotenen Bücher erklärt",
+   "demanda_max": 71137,
+   "procura": 3,
+   "concorrentes": 0,
+   "melhor_concorrente": null,
+   "veredito": "forte",
+   "explica": "Ninguém fez no molde e o tema tem demanda (vídeo de 71.137 views no idioma).",
+   "pontos": 54.5,
+   "tema_videos": [
+    {
+     "id": "7zRvRQoOS_E",
+     "titulo": "Verbotene B�cher | Zensur in Deutschland",
+     "canal": "musstewissen Deutsch",
+     "views": 71137,
+     "dur": 305,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "_WtS7VFduCQ",
+     "titulo": "VERBOTENE B�cher, von denen du die Finger lassen solltest",
+     "canal": "KRASS!",
+     "views": 27715,
+     "dur": 1523,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "Ch3S869Few4",
+     "titulo": "Die gef�hrlichsten B�cher der Welt | Die Verbotene Bibliothek",
+     "canal": "Verstand",
+     "views": 3240,
+     "dur": 1296,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ],
+   "molde_videos": []
+  },
+  {
+   "tema": "Fabelwesen",
+   "busca_tema": "fabelwesen mythologie",
+   "fonte": "A",
+   "evidencia": "molde no mundo: 'Todas as Criaturas Míticas Explicadas' 309 mil (PT)",
+   "grupo": "dobra",
+   "busca_molde": "alle Fabelwesen erklärt",
+   "demanda_max": 12657,
+   "procura": 10,
+   "concorrentes": 0,
+   "melhor_concorrente": null,
+   "veredito": "boa",
+   "explica": "Ninguém fez no molde; demanda média (melhor vídeo do tema: 12.657).",
+   "pontos": 61.0,
+   "tema_videos": [
+    {
+     "id": "MxFhdQN0nVA",
+     "titulo": "Der Greif - Das Fabelwesen, das �ber den L�ften Regiert - Mythologische Kuriosit�ten",
+     "canal": "Geschichte und Mythologie Illustriert",
+     "views": 12657,
+     "dur": 212,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ],
+   "molde_videos": []
+  },
+  {
+   "tema": "PC-Komponenten",
+   "busca_tema": "pc komponenten erklärt",
+   "fonte": "A",
+   "evidencia": "molde no mundo: 'Todas as Peças de Computador Explicadas' 661 mil (PT)",
+   "grupo": "dobra",
+   "busca_molde": "alle PC-Komponenten erklärt",
+   "demanda_max": 108800,
+   "procura": 7,
+   "concorrentes": 2,
+   "melhor_concorrente": 93147,
+   "veredito": "disputada",
+   "explica": "Já fizeram no molde (2 vídeo(s), melhor 93.147). Entrar só com ângulo diferente.",
+   "pontos": 19.3,
+   "tema_videos": [
+    {
+     "id": "MPI3UjGjqYI",
+     "titulo": "PC-KOMPONENTEN einfach erkl�rt",
+     "canal": "IT & Medien einfach erklärt",
+     "views": 108800,
+     "dur": 272,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "RJ4tpNuX_Ls",
+     "titulo": "Gaming PC Komponenten erkl�rt | Einsteigerguide zu allen Komponenten eines Gaming-PCs | DasMonty",
+     "canal": "DasMonty",
+     "views": 93147,
+     "dur": 1769,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "XeqAuWBUR9M",
+     "titulo": "Alle Computer-Komponenten erkl�rt in 30 Minuten!",
+     "canal": "Programmieren lernen",
+     "views": 10784,
+     "dur": 1867,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "l4K338EJdio",
+     "titulo": "Komponenten eines Computers | Einfach erkl�rt | 2022",
+     "canal": "Riemer Computers Hardware",
+     "views": 3730,
+     "dur": 315,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ],
+   "molde_videos": [
+    {
+     "id": "RJ4tpNuX_Ls",
+     "titulo": "Gaming PC Komponenten erkl�rt | Einsteigerguide zu allen Komponenten eines Gaming-PCs | DasMonty",
+     "canal": "DasMonty",
+     "views": 93147,
+     "dur": 1769,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "XeqAuWBUR9M",
+     "titulo": "Alle Computer-Komponenten erkl�rt in 30 Minuten!",
+     "canal": "Programmieren lernen",
+     "views": 10784,
+     "dur": 1867,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ]
+  },
+  {
+   "tema": "Gesellschaftsschichten",
+   "busca_tema": "soziale klassen gesellschaftsschichten",
+   "fonte": "A",
+   "evidencia": "molde no mundo: 'Toutes les classes sociales expliquées' 333 mil (FR)",
+   "grupo": "dobra",
+   "busca_molde": "alle Gesellschaftsschichten erklärt",
+   "demanda_max": 191,
+   "procura": 2,
+   "concorrentes": 0,
+   "melhor_concorrente": null,
+   "veredito": "fraca",
+   "explica": "Pouca demanda achada no idioma (melhor vídeo do tema: 191).",
+   "pontos": 26.8,
+   "tema_videos": [
+    {
+     "id": "8Ho73hBpTFo",
+     "titulo": "��Das ist Kitsch�: Wie Geschmack soziale Klassen trennt (Bourdieu)�",
+     "canal": "Cem 旗本",
+     "views": 191,
+     "dur": 392,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "PZby586eknw",
+     "titulo": "Ralf Dahrendorf - Soziale Klassen und Klassenkonflikt in der industriellen Gesellschaft",
+     "canal": "SoziPodcast",
+     "views": 144,
+     "dur": 1377,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "Vi5r_hmjrWE",
+     "titulo": "13. Soziale Ungleichheit - Strukturen - Klassen, St�nde, Schichten, Milieus, Lebensstile",
+     "canal": "Pascal Anna",
+     "views": 97,
+     "dur": 722,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ],
+   "molde_videos": []
+  },
+  {
+   "tema": "Gefühle, die du nicht benennen kannst",
+   "busca_tema": "gefühle die man nicht benennen kann",
+   "fonte": "A",
+   "evidencia": "molde no mundo: 'Every Feeling You Can't Name Explained' 4,7 mi (EN)",
+   "grupo": "dobra",
+   "busca_molde": "alle Gefühle, die du nicht benennen kannst erklärt",
+   "demanda_max": 0,
+   "procura": 2,
+   "concorrentes": 0,
+   "melhor_concorrente": null,
+   "veredito": "fraca",
+   "explica": "Pouca demanda achada no idioma (melhor vídeo do tema: 0).",
+   "pontos": 4.0,
+   "tema_videos": [],
+   "molde_videos": []
+  },
+  {
+   "tema": "Drogen und ihre Wirkung",
+   "busca_tema": "drogen und ihre wirkung",
+   "fonte": "A",
+   "evidencia": "molde no mundo: 'EVERY Drug & its Effects, Explained' 2 mi (EN)",
+   "grupo": "dobra",
+   "busca_molde": "alle Drogen und ihre Wirkung erklärt",
+   "demanda_max": 27544,
+   "procura": 1,
+   "concorrentes": 3,
+   "melhor_concorrente": 27544,
+   "veredito": "feita_fraca",
+   "explica": "Já fizeram no molde, sem sucesso (melhor 27.544). Alerta.",
+   "pontos": 46.4,
+   "tema_videos": [
+    {
+     "id": "ePgM9aZ7bAc",
+     "titulo": "Partydrogen und ihre Wirkung: Was du unbedingt wissen solltest",
+     "canal": "AOK - Der Gesundheitskanal",
+     "views": 27544,
+     "dur": 287,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "Nt3KrDyGIEg",
+     "titulo": "15 Drogen und ihre Wirkung in 16 Minuten erkl�rt",
+     "canal": "WISSENSKERN",
+     "views": 2019,
+     "dur": 997,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "3ekUaotwIb8",
+     "titulo": "Jede Droge und ihre Wirkungen erkl�rt in 18 Minuten",
+     "canal": "Wissens Professor",
+     "views": 1028,
+     "dur": 1061,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ],
+   "molde_videos": [
+    {
+     "id": "Nt3KrDyGIEg",
+     "titulo": "15 Drogen und ihre Wirkung in 16 Minuten erkl�rt",
+     "canal": "WISSENSKERN",
+     "views": 2019,
+     "dur": 997,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "ePgM9aZ7bAc",
+     "titulo": "Partydrogen und ihre Wirkung: Was du unbedingt wissen solltest",
+     "canal": "AOK - Der Gesundheitskanal",
+     "views": 27544,
+     "dur": 287,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "lK6CjsDgF3E",
+     "titulo": "Alle DROGEN & NEBENWIRKUNGEN einfach erkl�rt (14 Min)",
+     "canal": "WissenGemalt",
+     "views": 415,
+     "dur": 887,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ]
+  },
+  {
+   "tema": "Sekten",
+   "busca_tema": "sekten erklärt",
+   "fonte": "A",
+   "evidencia": "molde no mundo: 'Every Major Cult Explained' 3,4 mi (EN)",
+   "grupo": "dobra",
+   "busca_molde": "alle Sekten erklärt",
+   "demanda_max": 0,
+   "procura": 10,
+   "concorrentes": 2,
+   "melhor_concorrente": 13772,
+   "veredito": "feita_fraca",
+   "explica": "Já fizeram no molde, sem sucesso (melhor 13.772). Alerta.",
+   "pontos": 20.0,
+   "tema_videos": [],
+   "molde_videos": [
+    {
+     "id": "0uxZb_vQG54",
+     "titulo": "Alle gro�en Sekten erkl�rt in 11 Minuten",
+     "canal": "Nachgedacht",
+     "views": 6647,
+     "dur": 680,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    },
+    {
+     "id": "8TNaX7lrsXg",
+     "titulo": "Alle Satanischen Sekten in 15 Minuten Erkl�rt",
+     "canal": "Paint es mir!",
+     "views": 13772,
+     "dur": 959,
+     "idioma_real": "de",
+     "idioma_fonte": "youtube"
+    }
+   ]
+  }
+ ]
+}

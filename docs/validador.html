@@ -151,7 +151,7 @@ function render(rolar){
     "<p class='mut' style='font-size:12.5px;margin:14px 0 0'>Concorrente = vídeo de 4 min+ no idioma real, com as palavras do molde no título (o vídeo e o canal de origem não contam). Validado = algum com "+f(d.criterios.bom)+"+ views; sem sucesso = o melhor abaixo de "+f(d.criterios.fraco)+".</p>"+
     "<div class='legenda'>"+Object.keys(LAB).map(function(k){return"<span class='k-"+k+"'>"+LAB[k]+"</span>";}).join("")+"</div></div></div>"+
     "<div class='st'><h3>O mesmo molde em 5 idiomas</h3><span>clique para ver os vídeos de cada um</span></div><div class='langs'>"+gs.filter(function(x){return x.tipo==="i";}).map(tile).join("")+"</div>"+
-    (gs.some(function(x){return x.tipo==="d";})?"<div class='st'><h3>Dobras testadas no validador</h3><span>escolhidas à mão neste teste (hipótese) — as dobras com dados estão abaixo, em Pautas</span></div><div class='dobras'>"+gs.filter(function(x){return x.tipo==="d";}).map(tile).join("")+"</div>":"")+
+
     (g?painel(g):"")+"<div id='pautas'></div>";
   [].forEach.call($("det").querySelectorAll(".lt"),function(b){b.onclick=function(){sel=b.dataset.k;render(true);};});
   [].forEach.call($("det").querySelectorAll(".mais"),function(b){b.onclick=function(){todos[b.dataset.k]=!todos[b.dataset.k];render();};});

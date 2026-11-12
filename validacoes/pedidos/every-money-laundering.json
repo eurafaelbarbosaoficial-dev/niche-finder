@@ -32,33 +32,7 @@
    "blanchiment d'argent expliqué"
   ]
  },
- "dobras": [
-  {
-   "nome": "Golpes / fraudes",
-   "idioma": "en",
-   "nota": "mesmo público de crime financeiro; driver 'proibido' + 'medo'",
-   "buscas": [
-    "every scam explained",
-    "every financial fraud explained"
-   ]
-  },
-  {
-   "nome": "Sonegação e paraísos fiscais",
-   "idioma": "en",
-   "nota": "mesmo universo (dinheiro escondido)",
-   "buscas": [
-    "every tax evasion technique explained"
-   ]
-  },
-  {
-   "nome": "Golpes (em português)",
-   "idioma": "pt",
-   "nota": "molde catálogo aplicado a golpes no Brasil",
-   "buscas": [
-    "todos os golpes explicados"
-   ]
-  }
- ],
+ "dobras": [],
  "pautas": {
   "idioma": "de",
   "tema": "geldwäsche",
@@ -136,7 +110,7 @@
    },
    {
     "tema": "Sekten",
-    "busca_tema": "sekten erklärt",
+    "busca_tema": "sekten",
     "fonte": "A",
     "evidencia": "molde no mundo: 'Every Major Cult Explained' 3,4 mi (EN)",
     "grupo": "dobra"
@@ -178,21 +152,21 @@
    },
    {
     "tema": "Gesellschaftsschichten",
-    "busca_tema": "soziale klassen gesellschaftsschichten",
+    "busca_tema": "gesellschaftsschichten",
     "fonte": "A",
     "evidencia": "molde no mundo: 'Toutes les classes sociales expliquées' 333 mil (FR)",
     "grupo": "dobra"
    },
    {
     "tema": "Fabelwesen",
-    "busca_tema": "fabelwesen mythologie",
+    "busca_tema": "fabelwesen",
     "fonte": "A",
     "evidencia": "molde no mundo: 'Todas as Criaturas Míticas Explicadas' 309 mil (PT)",
     "grupo": "dobra"
    },
    {
     "tema": "PC-Komponenten",
-    "busca_tema": "pc komponenten erklärt",
+    "busca_tema": "pc komponenten",
     "fonte": "A",
     "evidencia": "molde no mundo: 'Todas as Peças de Computador Explicadas' 661 mil (PT)",
     "grupo": "dobra"

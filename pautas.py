@@ -78,11 +78,12 @@ def cmd_coletar(a):
 def casa(titulo, q):
     """O título fala do tema? Compara pelo radical (6 letras: 'dönerläden' = 'dönerladen').
     Busca de até 2 palavras: precisa de TODAS; 3 ou mais: 60%."""
-    ks = [w[:6] for w in re.findall(r"\w+", sem_acento(q)) if len(w) > 2]
-    t = sem_acento(titulo)
+    ks = [w[:max(6, len(w) - 2)] for w in re.findall(r"\w+", sem_acento(q)) if len(w) > 2]
+    tws = re.findall(r"\w+", sem_acento(titulo))
     if not ks:
         return False
-    achou = sum(1 for w in ks if w in t)
+    # cada palavra da busca precisa ser o COMEÇO de uma palavra do título (radical quase inteiro: 'finanzage' ≠ 'finanzisch')
+    achou = sum(1 for w in ks if any(tw.startswith(w) or w in tw for tw in tws if len(tw) >= len(w)))
     return achou == len(ks) if len(ks) <= 2 else achou / len(ks) >= 0.6
 
 

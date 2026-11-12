@@ -11,19 +11,6 @@
    "de": "oportunidade",
    "fr": "validado_morno"
   },
-  "dobras": [
-   {
-    "nome": "Golpes / fraudes",
-    "veredito": "validado_concorrencia"
-   },
-   {
-    "nome": "Sonegação e paraísos fiscais",
-    "veredito": "validado_concorrencia"
-   },
-   {
-    "nome": "Golpes (em português)",
-    "veredito": "validado_concorrencia"
-   }
-  ]
+  "dobras": []
  }
 ]
