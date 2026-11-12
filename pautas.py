@@ -236,7 +236,7 @@ def mapa_dobras(slug):
     # 3) mesmo formato → outro nicho + outro idioma
     dob = [x for x in pau["pautas"] if x.get("grupo") == "dobra"]
     dob.sort(key=lambda x: (-FORCA.get(x["veredito"], 0), -x["demanda_max"]))
-    caminhos.append({"n": 3, "nome": f"Outro nicho em {nomes.get(alvo, alvo)}", "mantem": "formato",
+    caminhos.append({"n": 3, "nome": f"Outro nicho em {nomes.get(alvo, alvo)} (canal novo)", "mantem": "formato",
                      "muda": "nicho + idioma", "veredito": dob[0]["veredito"] if dob else None,
                      "melhor": f"{dob[0]['tema']}: {dob[0]['explica']}" if dob else "Sem dado.",
                      "opcoes": [{"nome": x["tema"], "veredito": x["veredito"]} for x in dob],
@@ -262,7 +262,25 @@ def mapa_dobras(slug):
                      "veredito": None, "melhor": "Ainda sem dado medido para este tema. Para medir: buscar o molde com o "
                      "público no título (ex.: 'para mulheres', 'für Senioren') no idioma alvo.", "opcoes": [],
                      "fonte": "—"})
+    onde = {1: "canal novo no idioma (é o 1º canal deste projeto)", 2: "canal novo (outro nicho não entra no mesmo canal)",
+            3: "canal novo (outro nicho não entra no mesmo canal)", 4: "mesmo canal (só varia o jeito de contar)",
+            5: "mesmo canal ou canal novo, conforme o público"}
+    for c in caminhos:
+        c["onde"] = onde[c["n"]]
     rec = max([c for c in caminhos if c["veredito"]], key=lambda c: (FORCA.get(c["veredito"], 0), -c["n"]))
+    # ficha do projeto: nicho (categoria do finder), subnicho (assunto do vídeo que estourou), micronicho (molde + idioma)
+    dados = json.loads((BASE / "docs" / "dados.json").read_text(encoding="utf-8"))
+    canal = next((c for c in dados.get("canais", []) if c.get("id") == o.get("canal_id")), {})
+    ped = json.loads((BASE / "validacoes" / "pedidos" / f"{slug}.json").read_text(encoding="utf-8"))
+    pau["projeto"] = {
+        "nicho": canal.get("categoria") or "?", "nicho_fonte": "categoria em que o finder achou o canal de origem",
+        "subnicho": ped.get("pautas", {}).get("subnicho") or pau.get("tema"), "subnicho_fonte": "assunto do vídeo que estourou",
+        "micronicho": f"{pau.get('molde_alvo')} · {nomes.get(alvo, alvo)}", "micronicho_fonte": "o molde do título no idioma do canal",
+        "canal_de_origem": {"nome": o.get("canal"), "temas": [x["termo"] for x in canal.get("palavras", [])[:4]]}}
+    rel = {"B": ("mesmo subnicho", "mesmo canal"), "C": ("mesmo nicho, subnicho vizinho", "mesmo canal (novo bloco temático)"),
+           "A": ("outro nicho", "canal novo")}
+    for x in pau["pautas"]:
+        x["relacao"], x["onde"] = rel.get(x.get("fonte"), ("?", "?"))
     pau["mapa_dobras"] = {"recomendado": rec["n"], "caminhos": caminhos,
                           "regra": "Recomendado = o caminho com o veredito mais forte nos dados (oportunidade/forte > boa > "
                                    "disputada). Empate: o mais simples (menor número)."}

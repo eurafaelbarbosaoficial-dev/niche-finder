@@ -56,6 +56,12 @@
 .vs .v{font:500 13px var(--mono)} .vs .d{font:12px var(--mono);color:var(--mut)}
 .mais{margin-top:8px;background:none;border:0;color:var(--lm);cursor:pointer;font-size:13px;padding:4px 0}
 .legenda{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px} .legenda span{font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px}
+.proj{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.pj{border-radius:16px;border:1px solid var(--ln);background:var(--s1);padding:14px 16px;display:flex;flex-direction:column;gap:4px;position:relative}
+.pj small{font:500 11px var(--mono);color:var(--lm);letter-spacing:.04em;text-transform:uppercase} .pj b{font-size:16px;font-weight:600;line-height:1.3} .pj span{font-size:12px;color:var(--mut)}
+.onde{display:inline-block;margin-top:6px;font:500 11.5px var(--mono);color:var(--up);border:1px solid rgba(74,222,128,.3);border-radius:999px;padding:2px 9px}
+.onde.novo{color:var(--am);border-color:rgba(251,191,36,.35)}
+@media(max-width:700px){.proj{grid-template-columns:1fr}}
 .mapa{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:10px}
 .cm{position:relative;isolation:isolate;border-radius:18px;border:1px solid var(--ln);background:var(--s1);padding:16px 18px;display:flex;flex-direction:column;gap:8px}
 .cm.rec{border-color:var(--lm);background:var(--lmbg)} .cm .selo{position:absolute;top:-10px;right:14px;background:var(--lm);color:#000;font:600 10.5px var(--mono);padding:3px 9px;border-radius:999px;letter-spacing:.03em}
@@ -121,19 +127,23 @@ function pautas(slug){fetch("pautas/"+encodeURIComponent(slug)+".json?t="+Date.n
   var el=$("pautas");if(!el)return;if(!p){el.innerHTML="";return;}
   var gp=p.pautas.filter(function(x){return(x.grupo||"pauta")==="pauta";}),gd=p.pautas.filter(function(x){return x.grupo==="dobra";});
   function lin(x,i){return"<div class='pt glow"+(i<3&&(x.veredito==="forte"||x.veredito==="boa")?" top":"")+"'><span class='rk'>"+String(i+1).padStart(2,"0")+"</span>"+
-    "<div><h5>"+esc(x.tema)+"</h5><div class='mq'>"+esc(x.busca_molde)+"</div><div class='ev'><b>"+esc(FT[x.fonte]||x.fonte)+"</b>"+esc(x.evidencia)+"</div></div>"+
+    "<div><h5>"+esc(x.tema)+"</h5><div class='mq'>"+esc(x.busca_molde)+"</div><div class='ev'><b>"+esc(FT[x.fonte]||x.fonte)+"</b>"+esc(x.evidencia)+"</div>"+(x.onde?"<div class='onde "+(x.fonte==="A"?"novo":"")+"'>"+esc(x.relacao)+" → "+esc(x.onde)+"</div>":"")+"</div>"+
     "<div class='dd'><span class='vd k-"+x.veredito+"'>"+PL[x.veredito]+"</span><span>demanda<b>"+f(x.demanda_max)+"</b></span><span>no molde<b>"+x.concorrentes+"</b></span><span>procura<b>"+x.procura+"</b></span></div>"+
     "<div class='pt-x'><p>"+esc(x.explica)+"</p><h6>Vídeos sobre o tema no idioma (busca: "+esc(x.busca_tema)+")</h6><ul class='vs'>"+(x.tema_videos||[]).map(vli).join("")+"</ul>"+
     ((x.molde_videos||[]).length?"<h6>Quem já fez no molde</h6><ul class='vs'>"+x.molde_videos.map(vli).join("")+"</ul>":"<h6>Ninguém no molde nesse idioma.</h6>")+"</div></div>";}
   function vli(i){return"<li><a href='https://youtu.be/"+esc(i.id)+"' target='_blank' rel='noopener'><span class='f s'>"+esc((i.idioma_real||"?").toUpperCase())+"</span><span class='lg lgx'>"+dur(i.dur)+"</span><span class='t'><span>"+esc(i.titulo)+"</span><small>"+esc(i.canal||"")+"</small></span><span class='v'>"+f(i.views)+"</span><span class='d'></span></a></li>";}
   var mp=p.mapa_dobras,VLAB={oportunidade:"Oportunidade",forte:"Forte",boa:"Boa",oportunidade_fraca:"Vazio",validado_morno:"Morno",disputada:"Disputada",validado_concorrencia:"Validado",fraca:"Pouca demanda",feito_sem_sucesso:"Fraco",feita_fraca:"Fraco"};
+  var pj=p.projeto,ph=pj?"<div class='st'><h3>Seu projeto</h3><span>onde este canal fica no YouTube · calculado pelos dados</span></div><div class='proj'>"+
+    [["Nicho",pj.nicho,pj.nicho_fonte],["Subnicho",pj.subnicho,pj.subnicho_fonte],["Micronicho",String(pj.micronicho||"").replace("{X}","…"),pj.micronicho_fonte]].map(function(r,i){
+      return"<div class='pj'><small>"+(i+1)+" · "+r[0]+"</small><b>"+esc(r[1])+"</b><span>"+esc(r[2])+"</span></div>";}).join("")+"</div>"+
+    "<p class='aviso'>Regra do canal: os vídeos ficam no mesmo nicho e subnicho (o algoritmo aprende para quem entregar). Pauta de outro nicho = canal novo. Cada pauta abaixo diz onde ela entra.</p>":"";
   var mh=mp?"<div class='st'><h3>Mapa de dobras</h3><span>os 5 caminhos do Raj · o que mantém, o que muda e o que os dados dizem</span></div><div class='mapa'>"+mp.caminhos.map(function(c){var rec=c.n===mp.recomendado;
     return"<div class='cm glow"+(rec?" rec":"")+"'>"+(rec?"<span class='selo'>caminho recomendado</span>":"")+"<div class='cm-n'>"+c.n+"</div><h5>"+esc(c.nome)+"</h5>"+
       "<div class='cm-mm'><span>mantém <b>"+esc(c.mantem)+"</b></span><span>muda <b>"+esc(c.muda)+"</b></span></div>"+
       (c.veredito?"<span class='vd k-"+c.veredito+"'>"+(VLAB[c.veredito]||c.veredito)+"</span>":"<span class='vd k-fraca'>sem dado</span>")+
-      "<p>"+esc(c.melhor)+"</p>"+((c.opcoes||[]).length>1?"<div class='cm-op'>"+c.opcoes.slice(0,8).map(function(x){return"<span class='k-"+x.veredito+"'>"+esc((x.nome||"").slice(0,34))+"</span>";}).join("")+"</div>":"")+
+      (c.onde?"<span class='onde'>"+esc(c.onde)+"</span>":"")+"<p>"+esc(c.melhor)+"</p>"+((c.opcoes||[]).length>1?"<div class='cm-op'>"+c.opcoes.slice(0,8).map(function(x){return"<span class='k-"+x.veredito+"'>"+esc((x.nome||"").slice(0,34))+"</span>";}).join("")+"</div>":"")+
       "<small>fonte: "+esc(c.fonte)+"</small></div>";}).join("")+"</div><p class='aviso'>"+esc(mp.regra)+"</p>":"";
-  el.innerHTML=mh+"<div class='st'><h3>Próximos vídeos em "+esc(NOME[p.idioma]||p.idioma)+"</h3><span>mesmo tema · ordenados por oportunidade · pesquisado "+esc(p.data)+"</span></div><div class='pt-l'>"+gp.map(lin).join("")+"</div>"+
+  el.innerHTML=ph+mh+"<div class='st'><h3>Próximos vídeos em "+esc(NOME[p.idioma]||p.idioma)+"</h3><span>mesmo tema · ordenados por oportunidade · pesquisado "+esc(p.data)+"</span></div><div class='pt-l'>"+gp.map(lin).join("")+"</div>"+
     "<div class='st'><h3>Dobras para outros nichos (com dados)</h3><span>o molde já funcionou nesses assuntos em algum idioma · medido em "+esc(NOME[p.idioma]||p.idioma)+"</span></div><div class='pt-l'>"+gd.map(lin).join("")+"</div>"+
     "<p class='aviso'>Todo candidato vem de dado real: (A) vídeos que já fizeram sucesso com o molde em algum idioma, (B) o que o povo digita no YouTube do idioma alvo, (C) vídeos do canal de referência. O Claude só traduz o candidato; o programa mede tudo no YouTube. Demanda = maior vídeo sobre o tema no idioma (idioma real conferido). No molde = quantos já fizeram “"+esc(p.molde_alvo)+"” com esse tema.</p>";
   [].forEach.call(el.querySelectorAll(".pt"),function(b){b.onclick=function(e){if(e.target.closest("a"))return;b.classList.toggle("on");};});});}

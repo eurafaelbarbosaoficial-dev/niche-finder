@@ -57,7 +57,9 @@
      "idioma_fonte": "youtube"
     }
    ],
-   "molde_videos": []
+   "molde_videos": [],
+   "relacao": "mesmo subnicho",
+   "onde": "mesmo canal"
   },
   {
    "tema": "Betrugsmaschen gegen Senioren",
@@ -111,7 +113,9 @@
      "idioma_fonte": "youtube"
     }
    ],
-   "molde_videos": []
+   "molde_videos": [],
+   "relacao": "mesmo nicho, subnicho vizinho",
+   "onde": "mesmo canal (novo bloco temático)"
   },
   {
    "tema": "Finanzagent-Maschen",
@@ -165,7 +169,9 @@
      "idioma_fonte": "youtube"
     }
    ],
-   "molde_videos": []
+   "molde_videos": [],
+   "relacao": "mesmo subnicho",
+   "onde": "mesmo canal"
   },
   {
    "tema": "Geldwäsche-Tricks",
@@ -192,7 +198,9 @@
      "idioma_fonte": "titulo"
     }
    ],
-   "molde_videos": []
+   "molde_videos": [],
+   "relacao": "mesmo subnicho",
+   "onde": "mesmo canal"
   },
   {
    "tema": "Inflations-Mechanismen",
@@ -219,7 +227,9 @@
      "idioma_fonte": "youtube"
     }
    ],
-   "molde_videos": []
+   "molde_videos": [],
+   "relacao": "mesmo nicho, subnicho vizinho",
+   "onde": "mesmo canal (novo bloco temático)"
   },
   {
    "tema": "Geldwäsche-Wege über Dubai",
@@ -255,7 +265,9 @@
      "idioma_fonte": "youtube"
     }
    ],
-   "molde_videos": []
+   "molde_videos": [],
+   "relacao": "mesmo subnicho",
+   "onde": "mesmo canal"
   },
   {
    "tema": "Casino-Geldwäsche-Methoden",
@@ -272,7 +284,9 @@
    "explica": "Pouca demanda achada no idioma (melhor vídeo do tema: 0).",
    "pontos": 2.0,
    "tema_videos": [],
-   "molde_videos": []
+   "molde_videos": [],
+   "relacao": "mesmo subnicho",
+   "onde": "mesmo canal"
   },
   {
    "tema": "Geldwäsche mit Gold",
@@ -289,7 +303,9 @@
    "explica": "Pouca demanda achada no idioma (melhor vídeo do tema: 0).",
    "pontos": 2.0,
    "tema_videos": [],
-   "molde_videos": []
+   "molde_videos": [],
+   "relacao": "mesmo subnicho",
+   "onde": "mesmo canal"
   },
   {
    "tema": "Rentenfallen",
@@ -335,7 +351,9 @@
      "idioma_real": "de",
      "idioma_fonte": "youtube"
     }
-   ]
+   ],
+   "relacao": "mesmo nicho, subnicho vizinho",
+   "onde": "mesmo canal (novo bloco temático)"
   },
   {
    "tema": "Manipulationstechniken",
@@ -380,7 +398,9 @@
      "idioma_fonte": "youtube"
     }
    ],
-   "molde_videos": []
+   "molde_videos": [],
+   "relacao": "outro nicho",
+   "onde": "canal novo"
   },
   {
    "tema": "Alien-Arten",
@@ -416,7 +436,9 @@
      "idioma_fonte": "youtube"
     }
    ],
-   "molde_videos": []
+   "molde_videos": [],
+   "relacao": "outro nicho",
+   "onde": "canal novo"
   },
   {
    "tema": "verbotenen Bücher",
@@ -461,7 +483,9 @@
      "idioma_fonte": "youtube"
     }
    ],
-   "molde_videos": []
+   "molde_videos": [],
+   "relacao": "outro nicho",
+   "onde": "canal novo"
   },
   {
    "tema": "Fabelwesen",
@@ -488,7 +512,9 @@
      "idioma_fonte": "youtube"
     }
    ],
-   "molde_videos": []
+   "molde_videos": [],
+   "relacao": "outro nicho",
+   "onde": "canal novo"
   },
   {
    "tema": "PC-Komponenten",
@@ -561,7 +587,9 @@
      "idioma_real": "de",
      "idioma_fonte": "youtube"
     }
-   ]
+   ],
+   "relacao": "outro nicho",
+   "onde": "canal novo"
   },
   {
    "tema": "Gesellschaftsschichten",
@@ -606,7 +634,9 @@
      "idioma_fonte": "youtube"
     }
    ],
-   "molde_videos": []
+   "molde_videos": [],
+   "relacao": "outro nicho",
+   "onde": "canal novo"
   },
   {
    "tema": "Gefühle, die du nicht benennen kannst",
@@ -623,7 +653,9 @@
    "explica": "Pouca demanda achada no idioma (melhor vídeo do tema: 0).",
    "pontos": 4.0,
    "tema_videos": [],
-   "molde_videos": []
+   "molde_videos": [],
+   "relacao": "outro nicho",
+   "onde": "canal novo"
   },
   {
    "tema": "Drogen und ihre Wirkung",
@@ -696,7 +728,9 @@
      "idioma_real": "de",
      "idioma_fonte": "youtube"
     }
-   ]
+   ],
+   "relacao": "outro nicho",
+   "onde": "canal novo"
   },
   {
    "tema": "Sekten",
@@ -732,7 +766,9 @@
      "idioma_real": "de",
      "idioma_fonte": "youtube"
     }
-   ]
+   ],
+   "relacao": "outro nicho",
+   "onde": "canal novo"
   }
  ],
  "mapa_dobras": {
@@ -767,7 +803,8 @@
       "veredito": "validado_morno"
      }
     ],
-    "fonte": "Validador: o molde pesquisado nos 5 idiomas"
+    "fonte": "Validador: o molde pesquisado nos 5 idiomas",
+    "onde": "canal novo no idioma (é o 1º canal deste projeto)"
    },
    {
     "n": 2,
@@ -798,11 +835,12 @@
       "veredito": "disputada"
      }
     ],
-    "fonte": "Coleta A: o molde pesquisado no idioma de origem"
+    "fonte": "Coleta A: o molde pesquisado no idioma de origem",
+    "onde": "canal novo (outro nicho não entra no mesmo canal)"
    },
    {
     "n": 3,
-    "nome": "Outro nicho em Alemão",
+    "nome": "Outro nicho em Alemão (canal novo)",
     "mantem": "formato",
     "muda": "nicho + idioma",
     "veredito": "forte",
@@ -845,7 +883,8 @@
       "veredito": "feita_fraca"
      }
     ],
-    "fonte": "Pautas: dobras medidas no idioma alvo"
+    "fonte": "Pautas: dobras medidas no idioma alvo",
+    "onde": "canal novo (outro nicho não entra no mesmo canal)"
    },
    {
     "n": 4,
@@ -876,7 +915,8 @@
       "veredito": "disputada"
      }
     ],
-    "fonte": "Validador: vídeos do tema no idioma alvo que NÃO são do molde"
+    "fonte": "Validador: vídeos do tema no idioma alvo que NÃO são do molde",
+    "onde": "mesmo canal (só varia o jeito de contar)"
    },
    {
     "n": 5,
@@ -886,9 +926,27 @@
     "veredito": null,
     "melhor": "Ainda sem dado medido para este tema. Para medir: buscar o molde com o público no título (ex.: 'para mulheres', 'für Senioren') no idioma alvo.",
     "opcoes": [],
-    "fonte": "—"
+    "fonte": "—",
+    "onde": "mesmo canal ou canal novo, conforme o público"
    }
   ],
   "regra": "Recomendado = o caminho com o veredito mais forte nos dados (oportunidade/forte > boa > disputada). Empate: o mais simples (menor número)."
+ },
+ "projeto": {
+  "nicho": "Finanças",
+  "nicho_fonte": "categoria em que o finder achou o canal de origem",
+  "subnicho": "Crime financeiro → lavagem de dinheiro (Geldwäsche)",
+  "subnicho_fonte": "assunto do vídeo que estourou",
+  "micronicho": "alle {X} erklärt · Alemão",
+  "micronicho_fonte": "o molde do título no idioma do canal",
+  "canal_de_origem": {
+   "nome": "Econ in a Nutshell",
+   "temas": [
+    "money",
+    "actually",
+    "retirement savings",
+    "explained"
+   ]
+  }
  }
 }

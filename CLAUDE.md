@@ -26,7 +26,7 @@ O dono não é programador: explique em português simples. Leia o `LEIA-ME.md` 
 ## Pautas e dobras com dados (depois do validador, para o idioma escolhido)
 Regra do dono: **nada de hipótese**. Todo candidato vem de dado real; o Claude só traduz.
 1. No pedido, preencha `"pautas": {"idioma", "tema" (no idioma alvo), "molde_mundo" (molde em en/es/pt/fr/de),
-   "molde_alvo" ("alle {X} erklärt")}` e rode `python -I pautas.py coletar validacoes/pedidos/<slug>.json`.
+   "molde_alvo" ("alle {X} erklärt"), "subnicho" (assunto do vídeo que estourou)}` e rode `python -I pautas.py coletar validacoes/pedidos/<slug>.json`.
 2. Leia `validacoes/candidatos/<slug>.json`: (A) assuntos onde o molde já funcionou no mundo, (B) autocompletar do
    idioma alvo, (C) vídeos do canal de referência. Escolha só dali; traduza para o idioma alvo e grave em
    `pautas.candidatos` com `fonte` (A/B/C), `evidencia` (título + views de onde veio) e `grupo` ("pauta" = mesmo
@@ -43,3 +43,7 @@ Regra do dono: **nada de hipótese**. Todo candidato vem de dado real; o Claude 
   locais (vídeos do idioma com views + minuto, autocompletar do idioma, casos locais). Ex.: `adaptacao-de-lavagem.json`.
 - O roteiro novo (`roteiro.json`: titulo, idioma, blocos[{bloco, segue, texto, fontes}]) copia a ESTRUTURA, nunca o
   texto; fatos com fonte (WebSearch). Publicar: `roteiro.py publicar <slug>`.
+- Cada pauta recebe a relação com o canal pela FONTE do dado: B (autocompletar do tema) = mesmo subnicho, mesmo canal;
+  C (canal de referência) = subnicho vizinho, mesmo canal em bloco temático; A (molde em outros assuntos) = outro
+  nicho → canal novo. Nunca misturar nichos no mesmo canal (Raj, vídeos 12 e 13). A ficha "Seu projeto"
+  (nicho → subnicho → micronicho) e o "Mapa de dobras" (5 caminhos, recomendado pelos dados) saem de `pautas.py mapa`.
