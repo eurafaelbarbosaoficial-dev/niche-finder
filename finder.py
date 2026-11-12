@@ -175,15 +175,31 @@ def main():
     ap.add_argument("--periodo", default="mes")
     ap.add_argument("--publicar", type=int, default=0,
                     help="manda o site para o GitHub a cada N minutos durante a rodada (0 = não manda)")
+    ap.add_argument("--paralelo", type=int, default=4, help="quantos canais checar ao mesmo tempo")
     a = ap.parse_args()
     ESTADO.mkdir(exist_ok=True)
+
+    # trava: se outra busca está rodando (trava mexida nos últimos 15 min), não começa outra
+    trava = ESTADO / "rodando.lock"
+    if trava.exists() and time.time() - trava.stat().st_mtime < 15 * 60:
+        log("Outra busca já está rodando. Saindo.")
+        return
+    trava.write_text(str(os.getpid()))
+    try:
+        rodada(a, trava)
+    finally:
+        trava.unlink(missing_ok=True)
+
+
+def rodada(a, trava):
+    from concurrent.futures import ThreadPoolExecutor, as_completed
     cfg = ler(AQUI / "categorias.json", {})
     cache = ler(CACHE_F, {})
     info = {"status": "buscando", "inicio": agora().isoformat(), "fase": "Buscando vídeos novos", "feito": 0, "total": 0}
-
     ultimo = {"push": 0.0}
 
     def salvar(forcar_push=False):
+        trava.touch()
         gravar(CACHE_F, cache)
         gravar(DADOS_F, montar_dados(cache, info, cfg, a))
         if a.publicar and (forcar_push or time.time() - ultimo["push"] > a.publicar * 60):
@@ -191,53 +207,78 @@ def main():
             ultimo["push"] = time.time()
 
     salvar()
-    achados = {}
-    termos = [(cat, v["grupo"], lang, t) for cat, v in cfg.items() for lang in ("pt", "es", "en", "de", "fr")
-              for t in v.get(lang, [])]
-    for i, (cat, grupo, lang, termo) in enumerate(termos, 1):
-        res = buscar(termo, a.por_busca, a.periodo)
-        for r in res:
-            cid = r.get("channel_id")
-            if cid and (r.get("duration") or 0) >= a.min_duracao and cid not in achados:
-                achados[cid] = (cat, grupo, termo)
-        info.update(fase=f"Buscando vídeos novos ({i}/{len(termos)})", feito=i, total=len(termos))
-        if i % 10 == 0:
-            salvar()
-        log(f"[{lang}] {cat}: “{termo}” → {len(res)} vídeos")
+    # resultado das buscas fica guardado 3 horas: se a rodada cair, a próxima não busca tudo de novo
+    busca_f = ESTADO / "ultima_busca.json"
+    guardada = ler(busca_f, {})
+    if guardada and time.time() - guardada.get("quando", 0) < 3 * 3600:
+        achados = {k: tuple(v) for k, v in guardada["achados"].items()}
+        log(f"Usando a busca de {dt.datetime.fromtimestamp(guardada['quando']):%H:%M} ({len(achados)} canais)")
+    else:
+        achados = {}
+        termos = [(cat, v["grupo"], lang, t) for cat, v in cfg.items() for lang in ("pt", "es", "en", "de", "fr")
+                  for t in v.get(lang, [])]
+        with ThreadPoolExecutor(a.paralelo) as ex:
+            futs = {ex.submit(buscar, t[3], a.por_busca, a.periodo): t for t in termos}
+            for i, f in enumerate(as_completed(futs), 1):
+                cat, grupo, lang, termo = futs[f]
+                res = f.result() or []
+                for r in res:
+                    cid = r.get("channel_id")
+                    if cid and (r.get("duration") or 0) >= a.min_duracao and cid not in achados:
+                        achados[cid] = (cat, grupo, termo)
+                info.update(fase=f"Buscando vídeos novos ({i}/{len(termos)})", feito=i, total=len(termos))
+                if i % 10 == 0:
+                    salvar()
+                log(f"[{lang}] {cat}: “{termo}” → {len(res)} vídeos")
+        gravar(busca_f, {"quando": time.time(), "achados": achados})
 
     # novos já conhecidos (para atualizar as views) + canais achados agora que ainda não foram descartados
     fila = [cid for cid, c in cache.items() if c.get("status") == "novo"]
     fila += [cid for cid in achados if cache.get(cid, {}).get("status") not in ("novo", "fora")]
     info.update(fase="Checando canais", feito=0, total=len(fila))
     log(f"{len(achados)} canais nas buscas · {len(fila)} para checar")
-    for i, cid in enumerate(fila, 1):
-        antigo = cache.get(cid, {})
+
+    def trabalho(cid):
+        antigo = dict(cache.get(cid, {}))
         if antigo.get("status") == "novo":
             if (dt.date.today() - dt.date.fromisoformat(antigo["criado"])).days > a.dias_canal:
-                cache[cid] = {**antigo, "status": "fora", "motivo": "passou de 30 dias"}
-            else:
-                d = lista_videos(cid, antigo.get("idioma"))
-                if d:
-                    antigo.update(medir_videos(d, a.min_duracao))
-                cache[cid] = antigo
-        else:
-            cat, grupo, termo = achados[cid]
-            cache[cid] = {**checar_novo(cid, a.dias_canal, a.min_duracao), "categoria": cat, "grupo": grupo,
-                          "termo": termo, "visto_em": dt.date.today().isoformat()}
-        c = cache[cid]
-        if c.get("status") == "novo":
-            h = c.setdefault("historico", [])
-            h.append([agora().isoformat(timespec="minutes"), c.get("views_total") or 0])
-            del h[:-60]
-        log(f"  {i}/{len(fila)} {c.get('nome') or cid}: {c.get('status')}"
-            f"{' — ' + c['motivo'] if c.get('motivo') and c.get('status') != 'novo' else ''}"
-            f"{' · ' + str(c.get('views_total')) + ' views' if c.get('status') == 'novo' else ''}")
-        info.update(feito=i)
-        if i % 5 == 0:
-            salvar()
+                return {**antigo, "status": "fora", "motivo": "passou de 30 dias"}
+            d = lista_videos(cid, antigo.get("idioma"))
+            if d:
+                antigo.update(medir_videos(d, a.min_duracao))
+            return antigo
+        cat, grupo, termo = achados[cid]
+        return {**checar_novo(cid, a.dias_canal, a.min_duracao), "categoria": cat, "grupo": grupo,
+                "termo": termo, "visto_em": dt.date.today().isoformat()}
+
+    with ThreadPoolExecutor(a.paralelo) as ex:
+        futs = {ex.submit(trabalho, cid): cid for cid in fila}
+        for i, f in enumerate(as_completed(futs), 1):
+            cid = futs[f]
+            try:
+                cache[cid] = f.result()
+            except Exception as e:
+                log(f"  erro em {cid}: {e}")
+                continue
+            c = cache[cid]
+            _registrar(c, cid, i, len(fila))
+            info.update(feito=i)
+            if i % 10 == 0:
+                salvar()
     info.update(status="pronto", fase="Rodada concluída", fim=agora().isoformat())
     salvar(forcar_push=True)
     log("Rodada concluída.")
+
+
+def _registrar(c, cid, i, total):
+    """Guarda o histórico de views do canal novo e escreve a linha no log."""
+    if c.get("status") == "novo":
+        h = c.setdefault("historico", [])
+        h.append([agora().isoformat(timespec="minutes"), c.get("views_total") or 0])
+        del h[:-60]
+    log(f"  {i}/{total} {c.get('nome') or cid}: {c.get('status')}"
+        f"{' — ' + c['motivo'] if c.get('motivo') and c.get('status') != 'novo' else ''}"
+        f"{' · melhor vídeo ' + str((c.get('melhor') or {}).get('views')) + ' views' if c.get('status') == 'novo' else ''}")
 
 
 if __name__ == "__main__":
