@@ -1,0 +1,2214 @@
+{
+ "atualizado": "2026-11-12T17:09:09",
+ "canais": {
+  "UCv9FlFdoZwAjounm8WlsKrQ": {
+   "nome": "Ich mag Moneten",
+   "n_videos": 4,
+   "clusters": [
+    {
+     "molde": "[X] wie [X]",
+     "n": 3,
+     "media": 139142,
+     "max": 333000,
+     "exemplos": [
+      {
+       "id": "nTP6ZKAHiZI",
+       "titulo": "LevlUp vom Hype zum MILLIONENVERLUST: Wie geht’s der Marke wirklich?!",
+       "views": 333000
+      },
+      {
+       "id": "LCpDruBZJ4U",
+       "titulo": "Millionen-Imperium EliasN97: Wie viel verdient er wirklich?!",
+       "views": 84000
+      },
+      {
+       "id": "4f2D2V3ljmg",
+       "titulo": "MILLIONENVERLUSTE nach Nestlé-Deal: Wie geht’s ANKERKRAUT wirklich?!",
+       "views": 427
+      }
+     ],
+     "indice": 1.01
+    },
+    {
+     "molde": "[X]",
+     "n": 1,
+     "media": 136000,
+     "max": 136000,
+     "exemplos": [
+      {
+       "id": "BQ0e1QpPg9I",
+       "titulo": "Milliarde in Sicht? So viel verdient Andreas W. Herb wirklich!",
+       "views": 136000
+      }
+     ],
+     "indice": 0.98
+    }
+   ]
+  },
+  "UCXFh84AW7p06Vkv2OfTJu6Q": {
+   "nome": "Jimbo Explains",
+   "n_videos": 6,
+   "clusters": [
+    {
+     "molde": "every [X] explained",
+     "n": 5,
+     "media": 14959,
+     "max": 71000,
+     "exemplos": [
+      {
+       "id": "o_BISFxKC7c",
+       "titulo": "Every Cyberware in Cyberpunk Explained",
+       "views": 71000
+      },
+      {
+       "id": "pnF4oFsdD4c",
+       "titulo": "Every Insane Internet Community Explained",
+       "views": 3400
+      },
+      {
+       "id": "BXz7ih1rJ4A",
+       "titulo": "Every Game Money Trap Explained",
+       "views": 178
+      }
+     ],
+     "indice": 1.17
+    },
+    {
+     "molde": "every [X]",
+     "n": 1,
+     "media": 1900,
+     "max": 1900,
+     "exemplos": [
+      {
+       "id": "fVYR8fyzTPY",
+       "titulo": "Every Glitch That Destroyed a Video Game's Economy",
+       "views": 1900
+      }
+     ],
+     "indice": 0.15
+    }
+   ]
+  },
+  "UCk7lueN2v1WI--45z4g2Rng": {
+   "nome": "G3ADRIEN OFF",
+   "n_videos": 4,
+   "clusters": [
+    {
+     "molde": "tout [X] tu [X] [N]",
+     "n": 1,
+     "media": 76000,
+     "max": 76000,
+     "exemplos": [
+      {
+       "id": "RcstaJgYz8M",
+       "titulo": "Tout ce que tu DOIS savoir avant de jouer à GTA 6",
+       "views": 76000
+      }
+     ],
+     "indice": 1.73
+    },
+    {
+     "molde": "[X] [N] [X] [N]",
+     "n": 1,
+     "media": 50000,
+     "max": 50000,
+     "exemplos": [
+      {
+       "id": "FTMRo1YykOA",
+       "titulo": "GTA 6 fait des choses qu'on n'aurait JAMAIS imaginées dans GTA 5 !",
+       "views": 50000
+      }
+     ],
+     "indice": 1.14
+    },
+    {
+     "molde": "[N] [X] [N] [X] [N]",
+     "n": 1,
+     "media": 46000,
+     "max": 46000,
+     "exemplos": [
+      {
+       "id": "CbazBfR7KwI",
+       "titulo": "13 réflexes de GTA 5 à OUBLIER dès le premier jour sur GTA 6 !",
+       "views": 46000
+      }
+     ],
+     "indice": 1.05
+    },
+    {
+     "molde": "[X] [N] [X]",
+     "n": 1,
+     "media": 4000,
+     "max": 4000,
+     "exemplos": [
+      {
+       "id": "MIr09-RUsDM",
+       "titulo": "GTA 6 : GUIDE COMPLET de la CARTE (à voir avant le jour de la sortie)",
+       "views": 4000
+      }
+     ],
+     "indice": 0.09
+    }
+   ]
+  },
+  "UC6WJCl51WBqjTccpHpmac9g": {
+   "nome": "InsectiSi",
+   "n_videos": 7,
+   "clusters": [
+    {
+     "molde": "tu [X] tu [X] se [X]",
+     "n": 1,
+     "media": 362000,
+     "max": 362000,
+     "exemplos": [
+      {
+       "id": "TVx1hWeRzsw",
+       "titulo": "Tu piégeais une araignée et tu l’oubliais : que se passe-t-il ?",
+       "views": 362000
+      }
+     ],
+     "indice": 3.76
+    },
+    {
+     "molde": "[X]",
+     "n": 4,
+     "media": 70150,
+     "max": 234000,
+     "exemplos": [
+      {
+       "id": "O19PN4KJ0Fc",
+       "titulo": "Que devient une araignée mise dehors ?",
+       "views": 234000
+      },
+      {
+       "id": "7ZfTNeT3W6Y",
+       "titulo": "Que devient une araignée après avoir été aspirée ?",
+       "views": 33000
+      },
+      {
+       "id": "_QRCQirKZok",
+       "titulo": "L’araignée dans ta chambre te remarque-t-elle ?",
+       "views": 12000
+      }
+     ],
+     "indice": 0.73
+    },
+    {
+     "molde": "[X] quand [X]",
+     "n": 1,
+     "media": 19000,
+     "max": 19000,
+     "exemplos": [
+      {
+       "id": "qyWvZr8t_wk",
+       "titulo": "Que fait une guêpe quand son nid a disparu ?",
+       "views": 19000
+      }
+     ],
+     "indice": 0.2
+    },
+    {
+     "molde": "[X] se [X] si tu [X]",
+     "n": 1,
+     "media": 13000,
+     "max": 13000,
+     "exemplos": [
+      {
+       "id": "4invQYzlX_8",
+       "titulo": "Que se passe t il si tu détruis une fourmilière ?",
+       "views": 13000
+      }
+     ],
+     "indice": 0.13
+    }
+   ]
+  },
+  "UC25qgftg1KoQBA4AkKjDZzQ": {
+   "nome": "EL ORIGEN",
+   "n_videos": 9,
+   "clusters": [
+    {
+     "molde": "[X] history [X]",
+     "n": 5,
+     "media": 60620,
+     "max": 221000,
+     "exemplos": [
+      {
+       "id": "udzlKEj87RE",
+       "titulo": "The Mystery of the Olmecs: The Complete History of Mexico's Mother Culture",
+       "views": 221000
+      },
+      {
+       "id": "H88PV9ZYCqI",
+       "titulo": "Mesopotamia: The Complete History of Iraq, from Babylon to Today",
+       "views": 63000
+      },
+      {
+       "id": "TERGrfdAQzo",
+       "titulo": "THE COMPLETE HISTORY of Poland | The Country Erased From the Map That Came Back",
+       "views": 7100
+      }
+     ],
+     "indice": 1.34
+    },
+    {
+     "molde": "[X]",
+     "n": 2,
+     "media": 44900,
+     "max": 84000,
+     "exemplos": [
+      {
+       "id": "ZMzE-XFK_RA",
+       "titulo": "Yemen is",
+       "views": 84000
+      },
+      {
+       "id": "3D-uyMyzS4E",
+       "titulo": "Egypt",
+       "views": 5800
+      }
+     ],
+     "indice": 0.99
+    },
+    {
+     "molde": "[X] [N] [X] history [X]",
+     "n": 1,
+     "media": 10000,
+     "max": 10000,
+     "exemplos": [
+      {
+       "id": "EG33rjPYdss",
+       "titulo": "From Persia to the 2026 War: The Complete History of Iran",
+       "views": 10000
+      }
+     ],
+     "indice": 0.22
+    },
+    {
+     "molde": "[X] history [X] [N] [X]",
+     "n": 1,
+     "media": 4500,
+     "max": 4500,
+     "exemplos": [
+      {
+       "id": "qolpM0f95zA",
+       "titulo": "The Complete History of Japan: Samurai in Seville, Shoguns, and 200 Years of Isolation",
+       "views": 4500
+      }
+     ],
+     "indice": 0.1
+    }
+   ]
+  },
+  "UCgBr2zNf-689J8HmZUCJifw": {
+   "nome": "Explorer Unveiled",
+   "n_videos": 31,
+   "clusters": [
+    {
+     "molde": "[X] secret [X]",
+     "n": 1,
+     "media": 102000,
+     "max": 102000,
+     "exemplos": [
+      {
+       "id": "Q_Q-Dhze1pk",
+       "titulo": "The Secret of Egyptian Granite Cutting May Finally Be Solved Graham Hancock.",
+       "views": 102000
+      }
+     ],
+     "indice": 15.53
+    },
+    {
+     "molde": "[X] was [X] [N] [X] what [X] you",
+     "n": 1,
+     "media": 49000,
+     "max": 49000,
+     "exemplos": [
+      {
+       "id": "e9Qmgzsrl_I",
+       "titulo": "Jesus’ Tomb Was Opened After 2,000 Years—What They Found Will Shock You!",
+       "views": 49000
+      }
+     ],
+     "indice": 7.46
+    },
+    {
+     "molde": "[X] what [X] you",
+     "n": 1,
+     "media": 6200,
+     "max": 6200,
+     "exemplos": [
+      {
+       "id": "SYggYB5H3Ag",
+       "titulo": "Scientists Finally Enter Noah’s Ark in Turkey — What They Found Will Terrify You!",
+       "views": 6200
+      }
+     ],
+     "indice": 0.94
+    },
+    {
+     "molde": "[X] secret [X] was [X]",
+     "n": 1,
+     "media": 5900,
+     "max": 5900,
+     "exemplos": [
+      {
+       "id": "w6mqapsznIA",
+       "titulo": "Archaeologists Uncover a Dark Secret Written Inside the Olmec Heads Nobody Was Supposed To See.",
+       "views": 5900
+      }
+     ],
+     "indice": 0.9
+    },
+    {
+     "molde": "[N] [X] why [X]",
+     "n": 1,
+     "media": 4100,
+     "max": 4100,
+     "exemplos": [
+      {
+       "id": "ftAmdKOchgI",
+       "titulo": "15 Vatican Relics Kept Under Lock and Key — and Why Even Insiders Can't Touch Them.",
+       "views": 4100
+      }
+     ],
+     "indice": 0.62
+    },
+    {
+     "molde": "[X] [N] [X]",
+     "n": 2,
+     "media": 3488,
+     "max": 6800,
+     "exemplos": [
+      {
+       "id": "-UeTCKgV7ZM",
+       "titulo": "A Jewish Man Studied Jesus' Shroud for 46 Years Then One Molecule Changed Everything.",
+       "views": 6800
+      },
+      {
+       "id": "-yG3gzUjEU8",
+       "titulo": "We Excavated a 7,000-Year-Old Mustatil in Saudi Arabia.",
+       "views": 177
+      }
+     ],
+     "indice": 0.53
+    },
+    {
+     "molde": "[X] what [X]",
+     "n": 6,
+     "media": 2756,
+     "max": 12000,
+     "exemplos": [
+      {
+       "id": "GhcU82UY6tM",
+       "titulo": "Scientists Sent a Camera Into the Flooded Shaft Beneath Giza — What It Found Changes Everything.",
+       "views": 12000
+      },
+      {
+       "id": "gMi5Y0HaWjs",
+       "titulo": "Divers Finally Reached the Bottom of Jacob's Well — What Cameras Found Is Beyond Horrifying",
+       "views": 3300
+      },
+      {
+       "id": "SsCqXsUGW-w",
+       "titulo": "Scientists Found What Destroyed Sodom. It Wasn't Fire From God.",
+       "views": 622
+      }
+     ],
+     "indice": 0.42
+    },
+    {
+     "molde": "[X] [N] [X] what [X]",
+     "n": 2,
+     "media": 2011,
+     "max": 3900,
+     "exemplos": [
+      {
+       "id": "HQplp5btRc8",
+       "titulo": "King Solomon’s Tomb Opened After 5,000 Years — What They Found Shocked the World!",
+       "views": 3900
+      },
+      {
+       "id": "5c7_ddyyGUQ",
+       "titulo": "They Tested 7,000-Year-Old Mummy DNA — and What It Revealed STUNNED Scientists…",
+       "views": 122
+      }
+     ],
+     "indice": 0.31
+    },
+    {
+     "molde": "[N] [X]",
+     "n": 1,
+     "media": 1800,
+     "max": 1800,
+     "exemplos": [
+      {
+       "id": "LghZtYoV_yU",
+       "titulo": "20 Terrifying Discoveries In Amazon That Shocked The Whole World.",
+       "views": 1800
+      }
+     ],
+     "indice": 0.27
+    },
+    {
+     "molde": "what [X]",
+     "n": 1,
+     "media": 784,
+     "max": 784,
+     "exemplos": [
+      {
+       "id": "KNCZsRHD-ks",
+       "titulo": "What AI Found Inside Puma Punku Has Archaeologists Rechecking Everything.",
+       "views": 784
+      }
+     ],
+     "indice": 0.12
+    },
+    {
+     "molde": "[X] was [X]",
+     "n": 2,
+     "media": 684,
+     "max": 1200,
+     "exemplos": [
+      {
+       "id": "Vz8CsqfEQz4",
+       "titulo": "The Real Reason Göbekli Tepe Was Buried Has Finally Been Exposed — And It Terrifies Experts",
+       "views": 1200
+      },
+      {
+       "id": "8YKwisT3GHE",
+       "titulo": "Scientists Finally Examined the Sumerian 'Handbag of the Gods' — The Discovery Was Disturbing.",
+       "views": 168
+      }
+     ],
+     "indice": 0.1
+    },
+    {
+     "molde": "[X] what [X] was [X]",
+     "n": 1,
+     "media": 641,
+     "max": 641,
+     "exemplos": [
+      {
+       "id": "_YXD53i_soQ",
+       "titulo": "The Gene Hackman Cover-Up — What They Found Was Never Meant to Be Seen.",
+       "views": 641
+      }
+     ],
+     "indice": 0.1
+    },
+    {
+     "molde": "[X]",
+     "n": 8,
+     "media": 468,
+     "max": 1100,
+     "exemplos": [
+      {
+       "id": "MY5Hzw9G1RI",
+       "titulo": "Scientists Found a Hidden Door Beyond King Tut’s Tomb — And It May Lead to Nefertiti.",
+       "views": 1100
+      },
+      {
+       "id": "SDmG_Bi5IUM",
+       "titulo": "The Final Words of an Ethiopian Monk About Jesus Are Terrifying.",
+       "views": 815
+      },
+      {
+       "id": "8yD-4sDpIYM",
+       "titulo": "New Evidence From the Shroud of Turin Reveals Something Scientists Didn’t Anticipate.",
+       "views": 604
+      }
+     ],
+     "indice": 0.07
+    },
+    {
+     "molde": "[X] secret [X] top [X]",
+     "n": 1,
+     "media": 210,
+     "max": 210,
+     "exemplos": [
+      {
+       "id": "sCzQglXc6To",
+       "titulo": "Archaeologists Finally Opened The Secret Hatch On Top Of Egypt's Sphinx.",
+       "views": 210
+      }
+     ],
+     "indice": 0.03
+    },
+    {
+     "molde": "[X] every [X]",
+     "n": 1,
+     "media": 178,
+     "max": 178,
+     "exemplos": [
+      {
+       "id": "wfJDcg60Vbk",
+       "titulo": "Google AI Studied Every Crop Circle Ever Discovered — The Pattern Shocked the World!",
+       "views": 178
+      }
+     ],
+     "indice": 0.03
+    },
+    {
+     "molde": "what [X] history",
+     "n": 1,
+     "media": 100,
+     "max": 100,
+     "exemplos": [
+      {
+       "id": "73Nt4C3iff0",
+       "titulo": "What Scientists Found Inside Empress Cixi’s Coffin Changed History | Chinese Archaeology.",
+       "views": 100
+      }
+     ],
+     "indice": 0.02
+    }
+   ]
+  },
+  "UCI9a2iEPk_mApBWI5JpF1xw": {
+   "nome": "Meep 2",
+   "n_videos": 1,
+   "clusters": [
+    {
+     "molde": "[N] [X] secrets you [X]",
+     "n": 1,
+     "media": 320000,
+     "max": 320000,
+     "exemplos": [
+      {
+       "id": "v92pJn3Hp0M",
+       "titulo": "40 Minecraft Secrets You Didn't Know!",
+       "views": 320000
+      }
+     ],
+     "indice": 1.0
+    }
+   ]
+  },
+  "UCKghUSV9nLqShwy__Oj2d0g": {
+   "nome": "La Science Expliquée",
+   "n_videos": 11,
+   "clusters": [
+    {
+     "molde": "[X] pourquoi",
+     "n": 1,
+     "media": 58000,
+     "max": 58000,
+     "exemplos": [
+      {
+       "id": "0aYN_bBdQgY",
+       "titulo": "La physique quantique : l'explication complète (ça marche, mais personne ne sait pourquoi)",
+       "views": 58000
+      }
+     ],
+     "indice": 2.95
+    },
+    {
+     "molde": "[X] qui [X]",
+     "n": 2,
+     "media": 35983,
+     "max": 71000,
+     "exemplos": [
+      {
+       "id": "8KCfNudcMws",
+       "titulo": "L'intrication quantique : l'explication complète (le fantôme qui a donné tort à Einstein)",
+       "views": 71000
+      },
+      {
+       "id": "fw95azujErw",
+       "titulo": "L'électricité : l'explication complète (ce qui court vraiment dans vos murs)",
+       "views": 967
+      }
+     ],
+     "indice": 1.83
+    },
+    {
+     "molde": "[X] pourquoi tu [X]",
+     "n": 1,
+     "media": 34000,
+     "max": 34000,
+     "exemplos": [
+      {
+       "id": "Kexwijb7qlY",
+       "titulo": "La conscience : l'explication complète (personne ne sait pourquoi tu ressens quelque chose)",
+       "views": 34000
+      }
+     ],
+     "indice": 1.73
+    },
+    {
+     "molde": "[X] tu [X] tu [X]",
+     "n": 1,
+     "media": 26000,
+     "max": 26000,
+     "exemplos": [
+      {
+       "id": "W3cn0oApnGY",
+       "titulo": "La quatrième dimension : l'explication complète (tu vis dedans et tu ne la vois pas)",
+       "views": 26000
+      }
+     ],
+     "indice": 1.32
+    },
+    {
+     "molde": "[X] pourquoi [X]",
+     "n": 1,
+     "media": 9000,
+     "max": 9000,
+     "exemplos": [
+      {
+       "id": "zVC_PuX166k",
+       "titulo": "L'effet papillon : l'explication complète (et pourquoi personne ne peut prévoir la météo à un mois)",
+       "views": 9000
+      }
+     ],
+     "indice": 0.46
+    },
+    {
+     "molde": "[X]",
+     "n": 5,
+     "media": 3455,
+     "max": 8200,
+     "exemplos": [
+      {
+       "id": "zs9wT07oZCE",
+       "titulo": "Le voyage dans le temps : l'explication complète (les astronautes voyagent déjà dans le futur)",
+       "views": 8200
+      },
+      {
+       "id": "8szKOhA0mjY",
+       "titulo": "Le paradoxe de Fermi : l'explication complète (nous sommes peut-être seuls dans l'univers)",
+       "views": 3700
+      },
+      {
+       "id": "OTgEeh1qGl4",
+       "titulo": "Le chat de Schrödinger : l'explication complète (vivant et mort à la fois)",
+       "views": 3300
+      }
+     ],
+     "indice": 0.18
+    }
+   ]
+  },
+  "UCNDq_ifL_7QIKFogHjcY4EA": {
+   "nome": "Au-delà de l'Ordinaire",
+   "n_videos": 14,
+   "clusters": [
+    {
+     "molde": "[X] vous [X]",
+     "n": 1,
+     "media": 80000,
+     "max": 80000,
+     "exemplos": [
+      {
+       "id": "hYrmD2MJsf0",
+       "titulo": "La vraie raison pour laquelle les Français portaient des perruques n'est pas celle que vous croyez",
+       "views": 80000
+      }
+     ],
+     "indice": 2.98
+    },
+    {
+     "molde": "pourquoi [X] du [N] [X] du [N] [X]",
+     "n": 2,
+     "media": 77000,
+     "max": 143000,
+     "exemplos": [
+      {
+       "id": "ZUyE3euxk5E",
+       "titulo": "Pourquoi les États-Unis utilisent-ils du 60 Hz alors que la France utilise du 50 Hz ?",
+       "views": 143000
+      },
+      {
+       "id": "Uc-uHnd_eIY",
+       "titulo": "Pourquoi les États-Unis utilisent-ils encore du 120 V alors que la France utilise du 230 V ?",
+       "views": 11000
+      }
+     ],
+     "indice": 2.87
+    },
+    {
+     "molde": "[X] votre [X]",
+     "n": 1,
+     "media": 64000,
+     "max": 64000,
+     "exemplos": [
+      {
+       "id": "8wIKKDnjHLk",
+       "titulo": "À quoi sert vraiment le fil neutre dans votre installation électrique ?",
+       "views": 64000
+      }
+     ],
+     "indice": 2.39
+    },
+    {
+     "molde": "[X] pourquoi [X]",
+     "n": 1,
+     "media": 31000,
+     "max": 31000,
+     "exemplos": [
+      {
+       "id": "qGkG8RlEODI",
+       "titulo": "Fil rigide ou fil souple : pourquoi les électriciens utilisent les deux ?",
+       "views": 31000
+      }
+     ],
+     "indice": 1.16
+    },
+    {
+     "molde": "pourquoi [X] du [N] [X] [N] [X]",
+     "n": 1,
+     "media": 7900,
+     "max": 7900,
+     "exemplos": [
+      {
+       "id": "BkdlF-_33S0",
+       "titulo": "Pourquoi les avions utilisent du 400 Hz au lieu de 50 Hz ?",
+       "views": 7900
+      }
+     ],
+     "indice": 0.29
+    },
+    {
+     "molde": "[X]",
+     "n": 4,
+     "media": 6188,
+     "max": 20000,
+     "exemplos": [
+      {
+       "id": "3yFLyg4SJcU",
+       "titulo": "L'histoire surprenante de ce que portaient les femmes avant l'invention du soutien-gorge",
+       "views": 20000
+      },
+      {
+       "id": "ME3eyBpnl-Y",
+       "titulo": "Avant les disjoncteurs, l'électricité transformait les maisons en pièges mortels",
+       "views": 4400
+      },
+      {
+       "id": "mVPeEn4Sk7E",
+       "titulo": "Avant la cuisinière, la moitié des maisons françaises étaient invivables",
+       "views": 203
+      }
+     ],
+     "indice": 0.23
+    },
+    {
+     "molde": "comment [X] pourquoi [N] [X]",
+     "n": 1,
+     "media": 6100,
+     "max": 6100,
+     "exemplos": [
+      {
+       "id": "HGuTa9wbleU",
+       "titulo": "Comment fonctionne le triphasé : pourquoi 3 phases ?",
+       "views": 6100
+      }
+     ],
+     "indice": 0.23
+    },
+    {
+     "molde": "pourquoi [X] qui [X]",
+     "n": 1,
+     "media": 3400,
+     "max": 3400,
+     "exemplos": [
+      {
+       "id": "B9Y7G5sk5Yo",
+       "titulo": "Pourquoi les prises électriques françaises ont-elles une broche métallique qui dépasse ?",
+       "views": 3400
+      }
+     ],
+     "indice": 0.13
+    },
+    {
+     "molde": "[X] quand [X]",
+     "n": 1,
+     "media": 2600,
+     "max": 2600,
+     "exemplos": [
+      {
+       "id": "yjE9hERqd7I",
+       "titulo": "Avant le papier toilette, on s'essuyait avec ça… quand on avait de la chance",
+       "views": 2600
+      }
+     ],
+     "indice": 0.1
+    },
+    {
+     "molde": "[X] comment [X]",
+     "n": 1,
+     "media": 1500,
+     "max": 1500,
+     "exemplos": [
+      {
+       "id": "PZN9rSGq7Ds",
+       "titulo": "Avant le chauffage central, comment les Français survivaient-ils aux hivers glacials ?",
+       "views": 1500
+      }
+     ],
+     "indice": 0.06
+    }
+   ]
+  },
+  "UC6Bv_ao56LZSaNFvERZE9Ig": {
+   "nome": "Hushfall True Crime",
+   "n_videos": 11,
+   "clusters": [
+    {
+     "molde": "[X] story",
+     "n": 1,
+     "media": 94000,
+     "max": 94000,
+     "exemplos": [
+      {
+       "id": "9jddPxwGF5g",
+       "titulo": "She Never Knew This Would Be Her Last Night Alive | True Crime Documentary | True Crime Story",
+       "views": 94000
+      }
+     ],
+     "indice": 3.32
+    },
+    {
+     "molde": "[X]",
+     "n": 5,
+     "media": 33669,
+     "max": 85000,
+     "exemplos": [
+      {
+       "id": "E7WLStRtE6M",
+       "titulo": "She Thought No One Knew About Her Dirty Affair… Her Lover Told the Police | True Crime Documentary",
+       "views": 85000
+      },
+      {
+       "id": "Muupi4vKfUg",
+       "titulo": "The Bride Vanished Before The Reception... The Groom Never Looked Worried | True Crime Documentary",
+       "views": 65000
+      },
+      {
+       "id": "TStD3ZuCoSk",
+       "titulo": "Ex-Cop Murdered His Wives: The Shocking Crime of Drew Peterson | True Crime Documentary",
+       "views": 11000
+      }
+     ],
+     "indice": 1.19
+    },
+    {
+     "molde": "[X] truth",
+     "n": 1,
+     "media": 27000,
+     "max": 27000,
+     "exemplos": [
+      {
+       "id": "NdGKDXHqz7w",
+       "titulo": "She Vanished a Week After Her Wedding… One Tiny Clue Exposed the Truth | True Crime Documentary",
+       "views": 27000
+      }
+     ],
+     "indice": 0.95
+    },
+    {
+     "molde": "[X] [N] [X] was [X]",
+     "n": 1,
+     "media": 8200,
+     "max": 8200,
+     "exemplos": [
+      {
+       "id": "lah6dpUIPII",
+       "titulo": "He Caught His Wife Sleeping With Another Man… 3 Days Later He Was Found Dead| True Crime Documentary",
+       "views": 8200
+      }
+     ],
+     "indice": 0.29
+    },
+    {
+     "molde": "[X] every [X] was [X]",
+     "n": 1,
+     "media": 7800,
+     "max": 7800,
+     "exemplos": [
+      {
+       "id": "i1yFzVY--TY",
+       "titulo": "Cop Hunting Women Every Night... His Wife Thought He Was on Duty | True Crime Documentary",
+       "views": 7800
+      }
+     ],
+     "indice": 0.28
+    },
+    {
+     "molde": "[X] secret",
+     "n": 1,
+     "media": 6000,
+     "max": 6000,
+     "exemplos": [
+      {
+       "id": "2KTT7vuFtkM",
+       "titulo": "Love Marriage Turned Into Deadly Divorce… Killer Revealed a Shocking Secret | True Crime Documentary",
+       "views": 6000
+      }
+     ],
+     "indice": 0.21
+    },
+    {
+     "molde": "[X] who [X]",
+     "n": 1,
+     "media": 52,
+     "max": 52,
+     "exemplos": [
+      {
+       "id": "wR5U_CRSrBQ",
+       "titulo": "Greedy Killer Who Thought Killing His Partner’s Family Would Make Him Rich | True Crime Documentary",
+       "views": 52
+      }
+     ],
+     "indice": 0.0
+    }
+   ]
+  },
+  "UCevjhh502_2TLqG_sL6QBeQ": {
+   "nome": "Psicología Esencial",
+   "n_videos": 14,
+   "clusters": [
+    {
+     "molde": "si [X] como si [X] [N] [X]",
+     "n": 1,
+     "media": 139000,
+     "max": 139000,
+     "exemplos": [
+      {
+       "id": "uZZ9QiDNJg0",
+       "titulo": "Si Alguien Te Hace Daño y Actúa Como Si Nada, Recuerda Estas 5 Cosas | Robert Greene",
+       "views": 139000
+      }
+     ],
+     "indice": 10.83
+    },
+    {
+     "molde": "[X]",
+     "n": 6,
+     "media": 6256,
+     "max": 33000,
+     "exemplos": [
+      {
+       "id": "UXPfN-la2p4",
+       "titulo": "Los Hombres Masculinos No Persiguen, Desaparecen | Robert Greene",
+       "views": 33000
+      },
+      {
+       "id": "nHNZWSGBmYI",
+       "titulo": "LA FORMA MÁS INTELIGENTE DE TRATAR CON PERSONAS TÓXICAS | Discurso Motivacional de Robert Greene",
+       "views": 3300
+      },
+      {
+       "id": "KgPW74H2B5g",
+       "titulo": "Cuidado con las Personas Solitarias que No Tienen Amigos | La Advertencia de Robert Greene",
+       "views": 453
+      }
+     ],
+     "indice": 0.49
+    },
+    {
+     "molde": "como [X]",
+     "n": 1,
+     "media": 2200,
+     "max": 2200,
+     "exemplos": [
+      {
+       "id": "pnyGaiwROdY",
+       "titulo": "Cómo las Personas Inteligentes Tratan con las Personas Ignorantes | La Sabiduría de Robert Greene",
+       "views": 2200
+      }
+     ],
+     "indice": 0.17
+    },
+    {
+     "molde": "como [X] se [X]",
+     "n": 1,
+     "media": 257,
+     "max": 257,
+     "exemplos": [
+      {
+       "id": "iSq5ZqfEgVs",
+       "titulo": "Cómo Crear un Aura Tan Poderosa que Nadie se Atreva a Desafiarte | Inspirado en Robert Greene",
+       "views": 257
+      }
+     ],
+     "indice": 0.02
+    },
+    {
+     "molde": "[N] [X]",
+     "n": 2,
+     "media": 195,
+     "max": 252,
+     "exemplos": [
+      {
+       "id": "nS_okwStzII",
+       "titulo": "7 Maneras de Tratar a Quienes Te Hacen Daño | Robert Greene",
+       "views": 252
+      },
+      {
+       "id": "tCqf9_-1RFc",
+       "titulo": "10 Formas Poderosas de Tratar con Personas Tóxicas sin Perder el Control | Motivación Robert Greene",
+       "views": 139
+      }
+     ],
+     "indice": 0.02
+    },
+    {
+     "molde": "como [X] [N] [X]",
+     "n": 1,
+     "media": 126,
+     "max": 126,
+     "exemplos": [
+      {
+       "id": "tBMK1pBIIus",
+       "titulo": "Cómo Superar a Cualquiera: 5 Reglas para Dominar por Completo | Robert Greene",
+       "views": 126
+      }
+     ],
+     "indice": 0.01
+    },
+    {
+     "molde": "[X] [N] [X]",
+     "n": 1,
+     "media": 83,
+     "max": 83,
+     "exemplos": [
+      {
+       "id": "hAbryMbE3Sc",
+       "titulo": "Los Empáticos Poderosos No Tienen Amigos: 7 Razones Ocultas | Robert Greene",
+       "views": 83
+      }
+     ],
+     "indice": 0.01
+    },
+    {
+     "molde": "[X] tus [X] [N] [X]",
+     "n": 1,
+     "media": 26,
+     "max": 26,
+     "exemplos": [
+      {
+       "id": "Er82rWpO3F4",
+       "titulo": "Vence Mentalmente a Tus Enemigos: 7 Estrategias Psicológicas Implacables | Robert Greene",
+       "views": 26
+      }
+     ],
+     "indice": 0.0
+    }
+   ]
+  },
+  "UCAM_O67GlUSKpEtC0Wpw5hg": {
+   "nome": "Ihr Denken",
+   "n_videos": 10,
+   "clusters": [
+    {
+     "molde": "wie du [X] wenn [X]",
+     "n": 1,
+     "media": 112000,
+     "max": 112000,
+     "exemplos": [
+      {
+       "id": "lVzwNIIv7eM",
+       "titulo": "Wie du sie dazu bringst, dich zu wollen – selbst wenn sie kein Interesse an dir hat",
+       "views": 112000
+      }
+     ],
+     "indice": 6.15
+    },
+    {
+     "molde": "wenn [X] [N] [X]",
+     "n": 1,
+     "media": 15000,
+     "max": 15000,
+     "exemplos": [
+      {
+       "id": "TveVJOnIw6Y",
+       "titulo": "Wenn sie DAS mit dir teilt, ist sie zu 100 % in dich verliebt!",
+       "views": 15000
+      }
+     ],
+     "indice": 0.82
+    },
+    {
+     "molde": "[X] wenn [X]",
+     "n": 1,
+     "media": 11000,
+     "max": 11000,
+     "exemplos": [
+      {
+       "id": "tdxlv6et5P4",
+       "titulo": "DAS VERLETZT EINE FRAU AM MEISTEN, WENN SIE DICH NICHT ZU SCHÄTZEN WEISS  WEIBLICHE PSYCHOLOGIE",
+       "views": 11000
+      }
+     ],
+     "indice": 0.6
+    },
+    {
+     "molde": "[X] tu [X] erklart",
+     "n": 1,
+     "media": 10000,
+     "max": 10000,
+     "exemplos": [
+      {
+       "id": "SJhAyQHZnqA",
+       "titulo": "enn du eine Frau umarmen möchtest, TU NIEMALS DAS!  Weibliche Psychologie erklärt",
+       "views": 10000
+      }
+     ],
+     "indice": 0.55
+    },
+    {
+     "molde": "[X] [N] [X]",
+     "n": 1,
+     "media": 10000,
+     "max": 10000,
+     "exemplos": [
+      {
+       "id": "WoLshNfSlrY",
+       "titulo": "VERWENDE NUR DIESE 2 WORTE … UND SIE WIRD DICH BEGEHREN | WEIBLICHE PSYCHOLOGIE ENTHÜLLT",
+       "views": 10000
+      }
+     ],
+     "indice": 0.55
+    },
+    {
+     "molde": "[X]",
+     "n": 2,
+     "media": 9950,
+     "max": 15000,
+     "exemplos": [
+      {
+       "id": "awOa6pgIvEE",
+       "titulo": "Sie wirkt kalt     doch diese Zeichen bedeuten mehr, als du denkst!",
+       "views": 15000
+      },
+      {
+       "id": "0wMhK1-1JzQ",
+       "titulo": "Sie hat KEIN Interesse Bring sie mit diesem Psychologie Trick dazu, DICH zu WOLLEN!",
+       "views": 4900
+      }
+     ],
+     "indice": 0.55
+    },
+    {
+     "molde": "[N] [X]",
+     "n": 2,
+     "media": 1900,
+     "max": 2000,
+     "exemplos": [
+      {
+       "id": "PNKtHKDLxZc",
+       "titulo": "100 % GARANTIERT Sie wird zurückkommen und dich wieder anflehen!  Weibliche Psychologie",
+       "views": 2000
+      },
+      {
+       "id": "_UeynHrhVug",
+       "titulo": "6 Grenzen, die Frauen dazu bringen, dich zu respektieren und dich zu erobern  Weibliche Psychologie",
+       "views": 1800
+      }
+     ],
+     "indice": 0.1
+    },
+    {
+     "molde": "tu [X]",
+     "n": 1,
+     "media": 522,
+     "max": 522,
+     "exemplos": [
+      {
+       "id": "_0_J2ujzSEk",
+       "titulo": "Tu DAS eine, und Frauen werden dich für immer wollen  Weibliche Psychologie",
+       "views": 522
+      }
+     ],
+     "indice": 0.03
+    }
+   ]
+  },
+  "UCn4lXlc17hx6zjGqE0exMoA": {
+   "nome": "Cancha Allstars",
+   "n_videos": 4,
+   "clusters": [
+    {
+     "molde": "[X]",
+     "n": 2,
+     "media": 333000,
+     "max": 640000,
+     "exemplos": [
+      {
+       "id": "tkkloNvK_JM",
+       "titulo": "Las PEORES actuaciones del fútbol",
+       "views": 640000
+      },
+      {
+       "id": "iqzqJj3rX-M",
+       "titulo": "Las Peores Muertes en el Fútbol.",
+       "views": 26000
+      }
+     ],
+     "indice": 1.3
+    },
+    {
+     "molde": "todas [X] explicadas",
+     "n": 1,
+     "media": 323000,
+     "max": 323000,
+     "exemplos": [
+      {
+       "id": "oEdHapwzJ4s",
+       "titulo": "Todas Las Celebraciones De Gol Prohibidas Explicadas.",
+       "views": 323000
+      }
+     ],
+     "indice": 1.26
+    },
+    {
+     "molde": "[X] cada [X]",
+     "n": 1,
+     "media": 37000,
+     "max": 37000,
+     "exemplos": [
+      {
+       "id": "5fsOOxjdXp8",
+       "titulo": "La Peor Noche De Borrachera De Cada Futbolista Famoso",
+       "views": 37000
+      }
+     ],
+     "indice": 0.14
+    }
+   ]
+  },
+  "UCvyRUX1kPOMAxKyn7yLfFkg": {
+   "nome": "Lucas Fußball",
+   "n_videos": 2,
+   "clusters": [
+    {
+     "molde": "[X]",
+     "n": 1,
+     "media": 221000,
+     "max": 221000,
+     "exemplos": [
+      {
+       "id": "CSlvxQzxe40",
+       "titulo": "Die herzzerreißendsten Momente im Fußball 💔",
+       "views": 221000
+      }
+     ],
+     "indice": 1.99
+    },
+    {
+     "molde": "wie [X]",
+     "n": 1,
+     "media": 1300,
+     "max": 1300,
+     "exemplos": [
+      {
+       "id": "QeWDd-eHMpg",
+       "titulo": "Wie ist das ultimative Superteam des Fußballs GESCHEITERT?",
+       "views": 1300
+      }
+     ],
+     "indice": 0.01
+    }
+   ]
+  },
+  "UCTbeDS5rNx4ZDvSLrbOmk8g": {
+   "nome": "Garagem Brasileira",
+   "n_videos": 8,
+   "clusters": [
+    {
+     "molde": "[N] [X] se [X] [N]",
+     "n": 1,
+     "media": 90000,
+     "max": 90000,
+     "exemplos": [
+      {
+       "id": "sMaRDek_Uf8",
+       "titulo": "8 Modificações Que Vão Se Tornar Ilegais nos Carros Brasileiros em 2027",
+       "views": 90000
+      }
+     ],
+     "indice": 2.59
+    },
+    {
+     "molde": "[X] [N] [X]",
+     "n": 1,
+     "media": 81000,
+     "max": 81000,
+     "exemplos": [
+      {
+       "id": "SDbZ4Q5rF2c",
+       "titulo": "A Polícia Não Consegue Impedir Este NOVO Golpe Nas Concessionárias — 12 Modelos São Alvo",
+       "views": 81000
+      }
+     ],
+     "indice": 2.33
+    },
+    {
+     "molde": "[X] [N] [X] [N] [X] seu [X]",
+     "n": 1,
+     "media": 76000,
+     "max": 76000,
+     "exemplos": [
+      {
+       "id": "e4NwQKg1s0Y",
+       "titulo": "Testei 7 Óleos de Motor Vendidos no Brasil com Dados Reais (Só 2 Realmente Protegem o Seu Motor)",
+       "views": 76000
+      }
+     ],
+     "indice": 2.18
+    },
+    {
+     "molde": "[X] todos [X]",
+     "n": 2,
+     "media": 14500,
+     "max": 18000,
+     "exemplos": [
+      {
+       "id": "aQCuBBYbdYk",
+       "titulo": "Renault Acabou de Ser PEGA no Brasil — Todos Sabiam Que Algo Estava ERRADO!",
+       "views": 18000
+      },
+      {
+       "id": "bsA3JQs7WX0",
+       "titulo": "Jeep Acabou de Ser PEGA no Brasil — Todos Sabiam Que Algo Estava ERRADO!",
+       "views": 11000
+      }
+     ],
+     "indice": 0.42
+    },
+    {
+     "molde": "[N] [X] [N] [X]",
+     "n": 2,
+     "media": 951,
+     "max": 1000,
+     "exemplos": [
+      {
+       "id": "nvWpVwnbOSs",
+       "titulo": "15 Carros Que Vão Desaparecer das Ruas do Brasil Até 2028 — Entenda o Motivo",
+       "views": 1000
+      },
+      {
+       "id": "cOjV73WJAg0",
+       "titulo": "10 Concessionárias Que Estão Enganando Clientes No Brasil — 3 Já Foram Flagradas",
+       "views": 903
+      }
+     ],
+     "indice": 0.03
+    },
+    {
+     "molde": "[X] se [X]",
+     "n": 1,
+     "media": 528,
+     "max": 528,
+     "exemplos": [
+      {
+       "id": "H5qbQ1tOsRQ",
+       "titulo": "Donos De SUVs Chineses No Brasil Se ARREPENDEM Da Compra — Veja o Motivo",
+       "views": 528
+      }
+     ],
+     "indice": 0.02
+    }
+   ]
+  },
+  "UC_6WWfny6AWYqKs40RUy6wg": {
+   "nome": "oily af",
+   "n_videos": 5,
+   "clusters": [
+    {
+     "molde": "[X] [N]",
+     "n": 2,
+     "media": 114500,
+     "max": 210000,
+     "exemplos": [
+      {
+       "id": "7z799IO-SV8",
+       "titulo": "Mercedes elite ball knowledge... (part 1)",
+       "views": 210000
+      },
+      {
+       "id": "46Ste9zd8rY",
+       "titulo": "Mercedes elite ball knowledge... (part 2)",
+       "views": 19000
+      }
+     ],
+     "indice": 1.53
+    },
+    {
+     "molde": "[X] you [X]",
+     "n": 1,
+     "media": 104000,
+     "max": 104000,
+     "exemplos": [
+      {
+       "id": "zkQM8YpCBQU",
+       "titulo": "So you want a Dodge Hellcat...",
+       "views": 104000
+      }
+     ],
+     "indice": 1.39
+    },
+    {
+     "molde": "[X]",
+     "n": 1,
+     "media": 21000,
+     "max": 21000,
+     "exemplos": [
+      {
+       "id": "WDwlRXkD6yE",
+       "titulo": "BMW ownership is a SICKNESS",
+       "views": 21000
+      }
+     ],
+     "indice": 0.28
+    },
+    {
+     "molde": "every [X] explained",
+     "n": 1,
+     "media": 21000,
+     "max": 21000,
+     "exemplos": [
+      {
+       "id": "v9eG5c3YvSE",
+       "titulo": "Every Type of Loud Car Owner Explained",
+       "views": 21000
+      }
+     ],
+     "indice": 0.28
+    }
+   ]
+  },
+  "UC_DdIoJzHZXlEKTVy41_KQw": {
+   "nome": "Econ in a Nutshell",
+   "n_videos": 17,
+   "clusters": [
+    {
+     "molde": "every [X] explained",
+     "n": 1,
+     "media": 1100000,
+     "max": 1100000,
+     "exemplos": [
+      {
+       "id": "XgIo6SrSxS4",
+       "titulo": "Every Money Laundering Technique Explained",
+       "views": 1100000
+      }
+     ],
+     "indice": 12.08
+    },
+    {
+     "molde": "why [X] your [X]",
+     "n": 1,
+     "media": 290000,
+     "max": 290000,
+     "exemplos": [
+      {
+       "id": "5c81AORL5cI",
+       "titulo": "Why You’ll Never Actually Spend Your Retirement Savings",
+       "views": 290000
+      }
+     ],
+     "indice": 3.19
+    },
+    {
+     "molde": "how [X] who [X]",
+     "n": 1,
+     "media": 49000,
+     "max": 49000,
+     "exemplos": [
+      {
+       "id": "YPS4ag5a38E",
+       "titulo": "How Inflation Actually Works (And Who It Really Hurts)",
+       "views": 49000
+      }
+     ],
+     "indice": 0.54
+    },
+    {
+     "molde": "why your [X]",
+     "n": 1,
+     "media": 36000,
+     "max": 36000,
+     "exemplos": [
+      {
+       "id": "337XyUfjfXs",
+       "titulo": "Why Your Parents' Money Advice No Longer Works",
+       "views": 36000
+      }
+     ],
+     "indice": 0.4
+    },
+    {
+     "molde": "[X] how [X]",
+     "n": 1,
+     "media": 33000,
+     "max": 33000,
+     "exemplos": [
+      {
+       "id": "792HTqjzAJo",
+       "titulo": "The Vancouver Model: How Drug Money Became Houses",
+       "views": 33000
+      }
+     ],
+     "indice": 0.36
+    },
+    {
+     "molde": "[X] [N]",
+     "n": 2,
+     "media": 12050,
+     "max": 23000,
+     "exemplos": [
+      {
+       "id": "8ha2z2xlnGo",
+       "titulo": "The Biggest Financial Mistake People Make After 50",
+       "views": 23000
+      },
+      {
+       "id": "-JpM1y0YSts",
+       "titulo": "Is It Too Late to Start Saving at 45?",
+       "views": 1100
+      }
+     ],
+     "indice": 0.13
+    },
+    {
+     "molde": "what if your [X] every [X]",
+     "n": 1,
+     "media": 6200,
+     "max": 6200,
+     "exemplos": [
+      {
+       "id": "0w1nGOQTaw0",
+       "titulo": "What If Your Money Grew 10x Every Day?",
+       "views": 6200
+      }
+     ],
+     "indice": 0.07
+    },
+    {
+     "molde": "your [X]",
+     "n": 1,
+     "media": 3600,
+     "max": 3600,
+     "exemplos": [
+      {
+       "id": "TDDCmQ9v8F8",
+       "titulo": "Your Money Isn't in the Bank. So Where Is It?",
+       "views": 3600
+      }
+     ],
+     "indice": 0.04
+    },
+    {
+     "molde": "[X] [N] [X] what [X]",
+     "n": 1,
+     "media": 2600,
+     "max": 2600,
+     "exemplos": [
+      {
+       "id": "SmMN-vTCaU8",
+       "titulo": "Social Security Runs Dry in 2032. Here’s What Actually Happens.",
+       "views": 2600
+      }
+     ],
+     "indice": 0.03
+    },
+    {
+     "molde": "[X] explained",
+     "n": 1,
+     "media": 1600,
+     "max": 1600,
+     "exemplos": [
+      {
+       "id": "8MSQKrM_d9U",
+       "titulo": "On Paper, He Owns Nothing: Offshore Trusts Explained",
+       "views": 1600
+      }
+     ],
+     "indice": 0.02
+    },
+    {
+     "molde": "[X] what [X] explained [X] you",
+     "n": 1,
+     "media": 427,
+     "max": 427,
+     "exemplos": [
+      {
+       "id": "h7Jvi2nAgqk",
+       "titulo": "Is the Stock Market a Casino? What Nobody Explained to You",
+       "views": 427
+      }
+     ],
+     "indice": 0.0
+    },
+    {
+     "molde": "[X] [N] [X] every [X]",
+     "n": 1,
+     "media": 393,
+     "max": 393,
+     "exemplos": [
+      {
+       "id": "PlWUZXueAlg",
+       "titulo": "Rose, 81, Broke Her Hip. Now She Needs Help Every Single Day",
+       "views": 393
+      }
+     ],
+     "indice": 0.0
+    },
+    {
+     "molde": "[X] was [X]",
+     "n": 1,
+     "media": 271,
+     "max": 271,
+     "exemplos": [
+      {
+       "id": "DJSg2lquKd0",
+       "titulo": "Binance Was Hacked. Will Big Companies Still Trust Crypto?",
+       "views": 271
+      }
+     ],
+     "indice": 0.0
+    },
+    {
+     "molde": "your [X] why",
+     "n": 1,
+     "media": 245,
+     "max": 245,
+     "exemplos": [
+      {
+       "id": "xOJ5mKnUBYc",
+       "titulo": "Your Kids Can't Afford a House. Here's Why.",
+       "views": 245
+      }
+     ],
+     "indice": 0.0
+    },
+    {
+     "molde": "every [X] [N] explained",
+     "n": 1,
+     "media": 173,
+     "max": 173,
+     "exemplos": [
+      {
+       "id": "m6EsnBxxL3o",
+       "titulo": "Every Scam That Targets People Over 50, Explained",
+       "views": 173
+      }
+     ],
+     "indice": 0.0
+    },
+    {
+     "molde": "[N] [X] explained",
+     "n": 1,
+     "media": 130,
+     "max": 130,
+     "exemplos": [
+      {
+       "id": "eRgQx3V44Lc",
+       "titulo": "$700 Billion Gone: The Nvidia Crash, Explained",
+       "views": 130
+      }
+     ],
+     "indice": 0.0
+    }
+   ]
+  },
+  "UCLh3DKE6E0uuyf17ORbyh5w": {
+   "nome": "Corner Office Drama",
+   "n_videos": 5,
+   "clusters": [
+    {
+     "molde": "em [N] min [X]",
+     "n": 2,
+     "media": 225500,
+     "max": 289000,
+     "exemplos": [
+      {
+       "id": "PhBMBlcVnrE",
+       "titulo": "Me Despidió Sin Saber Que Compré La Empresa Hace 48 Horas (La Junta Será Épica) 😎",
+       "views": 289000
+      },
+      {
+       "id": "pY89htqp7lE",
+       "titulo": "Despide al Creador del Sistema para Poner a su Hijo, y el Karma lo Destruye en 3 Horas",
+       "views": 162000
+      }
+     ],
+     "indice": 2.13
+    },
+    {
+     "molde": "[X] [N] [X]",
+     "n": 1,
+     "media": 65000,
+     "max": 65000,
+     "exemplos": [
+      {
+       "id": "SYLZGJzhsFI",
+       "titulo": "Mi CEO Me Despidió... Y Le Quité la Patente de 750 Millones de Dólares 📄",
+       "views": 65000
+      }
+     ],
+     "indice": 0.61
+    },
+    {
+     "molde": "[X] [N] [X] [N] [X] [N] [X]",
+     "n": 1,
+     "media": 11000,
+     "max": 11000,
+     "exemplos": [
+      {
+       "id": "A2-wkP9im-M",
+       "titulo": "A Mi Compañero le Dieron $600,000 de Bono. A Mí $85,000... Así Que Renuncié a las 3 A.M.",
+       "views": 11000
+      }
+     ],
+     "indice": 0.1
+    },
+    {
+     "molde": "[X] my [X] every [X]",
+     "n": 1,
+     "media": 1700,
+     "max": 1700,
+     "exemplos": [
+      {
+       "id": "AU39RZNkaIk",
+       "titulo": "The CEO’s Son Gave My Job To His Girlfriend… Then Every Client Followed Me",
+       "views": 1700
+      }
+     ],
+     "indice": 0.02
+    }
+   ]
+  },
+  "UCryx91ld1sPn1dOxNldRBHw": {
+   "nome": "El Cronista Irreverente",
+   "n_videos": 10,
+   "clusters": [
+    {
+     "molde": "[X] historia [X] explicado em [N] min",
+     "n": 1,
+     "media": 226000,
+     "max": 226000,
+     "exemplos": [
+      {
+       "id": "dvrx-huIz1U",
+       "titulo": "La Historia del MICTLÁN Completa: El Inframundo Mexica Explicado en 20 minutos",
+       "views": 226000
+      }
+     ],
+     "indice": 2.36
+    },
+    {
+     "molde": "[X] explicada em [N] min",
+     "n": 6,
+     "media": 106716,
+     "max": 497000,
+     "exemplos": [
+      {
+       "id": "PruS4b3ow-w",
+       "titulo": "La MITOLOGÍA GRIEGA Completa Explicada en 26 minutos",
+       "views": 497000
+      },
+      {
+       "id": "MZ-D5UuxkDM",
+       "titulo": "La MITOLOGÍA NÓRDICA COMPLETA: De ODÍN al RAGNARÖK explicada en 23 minutos",
+       "views": 82000
+      },
+      {
+       "id": "5zkx3yt4SuA",
+       "titulo": "La GUERRA DE TROYA  Completa Explicada EN 20 MINUTOS",
+       "views": 30000
+      }
+     ],
+     "indice": 1.11
+    },
+    {
+     "molde": "[X] historia [X] explicada em [N] min",
+     "n": 2,
+     "media": 43007,
+     "max": 86000,
+     "exemplos": [
+      {
+       "id": "sVNIPU3id2g",
+       "titulo": "La Historia de LA ODISEA Completa Explicada en 23 minutos",
+       "views": 86000
+      },
+      {
+       "id": "HHX3_W7lgSs",
+       "titulo": "La Historia COMPLETA de la MITOLOGÍA AZTECA Explicada en 26 minutos",
+       "views": 14
+      }
+     ],
+     "indice": 0.45
+    },
+    {
+     "molde": "[X] [N] [X] explicados em [N] min",
+     "n": 1,
+     "media": 6400,
+     "max": 6400,
+     "exemplos": [
+      {
+       "id": "FQP-G1TzvhU",
+       "titulo": "Los 10 MONSTRUOS MÁS TEMIBLES de la MITOLOGÍA GRIEGA Explicados en 27 minutos",
+       "views": 6400
+      }
+     ],
+     "indice": 0.07
+    }
+   ]
+  },
+  "UCooFBfsq7LviK84I7TfzUCA": {
+   "nome": "Wahre Schicksale",
+   "n_videos": 6,
+   "clusters": [
+    {
+     "molde": "[X] was [X]",
+     "n": 2,
+     "media": 182500,
+     "max": 257000,
+     "exemplos": [
+      {
+       "id": "pkjHaqCB26g",
+       "titulo": "Billionärs-Oma testet Enkel-Verlobte als arme Witwe – Was sie entdeckt, schockiert sie!",
+       "views": 257000
+      },
+      {
+       "id": "W6d4LDbqTpY",
+       "titulo": "Ein Milliardär überprüft seine Überwachungskameras – WAS ER SAH, SCHOCKIERTE IHN!",
+       "views": 108000
+      }
+     ],
+     "indice": 2.39
+    },
+    {
+     "molde": "[X]",
+     "n": 2,
+     "media": 34500,
+     "max": 54000,
+     "exemplos": [
+      {
+       "id": "4efEq3ue8Rw",
+       "titulo": "Ein reicher Mann verkleidet seine Mutter als arme Frau – Nur eine Kellnerin zeigt ihr Mitgefühl!",
+       "views": 54000
+      },
+      {
+       "id": "-IYT-a5NYBc",
+       "titulo": "Seine Ex lachte über seinen rostigen Pickup – Doch dann erfuhr sie, WEM die Firma jetzt gehörte!",
+       "views": 15000
+      }
+     ],
+     "indice": 0.45
+    },
+    {
+     "molde": "[X] alle [X]",
+     "n": 1,
+     "media": 25000,
+     "max": 25000,
+     "exemplos": [
+      {
+       "id": "AV7Mr8RrGxk",
+       "titulo": "Er wollte seine Ex bloßstellen – doch ihre Limousine ließ alle Gäste sprachlos auf der Feier zurück!",
+       "views": 25000
+      }
+     ],
+     "indice": 0.33
+    },
+    {
+     "molde": "ich [X]",
+     "n": 1,
+     "media": 36,
+     "max": 36,
+     "exemplos": [
+      {
+       "id": "sJ8ByQ3cNa0",
+       "titulo": "Ich brachte die Hochzeitstorte – Doch die Braut bat mich, ihren Bräutigam zu ersetzen!",
+       "views": 36
+      }
+     ],
+     "indice": 0.0
+    }
+   ]
+  },
+  "UC11JUsJTF-gkghJ_63jkCFg": {
+   "nome": "Blutende Wahrheit.",
+   "n_videos": 5,
+   "clusters": [
+    {
+     "molde": "[X] was [X]",
+     "n": 1,
+     "media": 54000,
+     "max": 54000,
+     "exemplos": [
+      {
+       "id": "byMsBFgLeVE",
+       "titulo": "She threw cake in her poor ex's face – But HE was a billionaire!",
+       "views": 54000
+      }
+     ],
+     "indice": 1.3
+    },
+    {
+     "molde": "[X] who [X]",
+     "n": 1,
+     "media": 39000,
+     "max": 39000,
+     "exemplos": [
+      {
+       "id": "1oaZ8GvcEqw",
+       "titulo": "They tried to humiliate her at the class reunion – But then they found out who owned the luxury h...",
+       "views": 39000
+      }
+     ],
+     "indice": 0.94
+    },
+    {
+     "molde": "[X]",
+     "n": 3,
+     "media": 38152,
+     "max": 114000,
+     "exemplos": [
+      {
+       "id": "sZe5_9Fg24g",
+       "titulo": "\"Send the ugly one to him – he'll reject her!\" But the millionaire fell in love with her!",
+       "views": 114000
+      },
+      {
+       "id": "GJD57UxtRHA",
+       "titulo": "“Don’t Take Off!” – The Billionaire Ignored Her Warning… And Risked His Life!",
+       "views": 454
+      },
+      {
+       "id": "yRpduXLnCIo",
+       "titulo": "Majorsfrau droht schwarzem Leutnant – Doch der Oberst hört alles mit!",
+       "views": 4
+      }
+     ],
+     "indice": 0.92
+    }
+   ]
+  }
+ },
+ "em_alta": [
+  {
+   "molde": "[X] [N] [X]",
+   "canais": [
+    {
+     "id": "UCk7lueN2v1WI--45z4g2Rng",
+     "nome": "G3ADRIEN OFF",
+     "idioma": "fr",
+     "max": 4000
+    },
+    {
+     "id": "UCgBr2zNf-689J8HmZUCJifw",
+     "nome": "Explorer Unveiled",
+     "idioma": "en",
+     "max": 6800
+    },
+    {
+     "id": "UCevjhh502_2TLqG_sL6QBeQ",
+     "nome": "Psicología Esencial",
+     "idioma": "es",
+     "max": 83
+    },
+    {
+     "id": "UCAM_O67GlUSKpEtC0Wpw5hg",
+     "nome": "Ihr Denken",
+     "idioma": "de",
+     "max": 10000
+    },
+    {
+     "id": "UCTbeDS5rNx4ZDvSLrbOmk8g",
+     "nome": "Garagem Brasileira",
+     "idioma": "?",
+     "max": 81000
+    },
+    {
+     "id": "UCLh3DKE6E0uuyf17ORbyh5w",
+     "nome": "Corner Office Drama",
+     "idioma": "en",
+     "max": 65000
+    }
+   ],
+   "videos": 7,
+   "max": 81000
+  },
+  {
+   "molde": "[X] was [X]",
+   "canais": [
+    {
+     "id": "UCgBr2zNf-689J8HmZUCJifw",
+     "nome": "Explorer Unveiled",
+     "idioma": "en",
+     "max": 1200
+    },
+    {
+     "id": "UC_DdIoJzHZXlEKTVy41_KQw",
+     "nome": "Econ in a Nutshell",
+     "idioma": "en",
+     "max": 271
+    },
+    {
+     "id": "UCooFBfsq7LviK84I7TfzUCA",
+     "nome": "Wahre Schicksale",
+     "idioma": "de",
+     "max": 257000
+    },
+    {
+     "id": "UC11JUsJTF-gkghJ_63jkCFg",
+     "nome": "Blutende Wahrheit.",
+     "idioma": "de",
+     "max": 54000
+    }
+   ],
+   "videos": 6,
+   "max": 257000
+  },
+  {
+   "molde": "every [X] explained",
+   "canais": [
+    {
+     "id": "UCXFh84AW7p06Vkv2OfTJu6Q",
+     "nome": "Jimbo Explains",
+     "idioma": "en",
+     "max": 71000
+    },
+    {
+     "id": "UC_6WWfny6AWYqKs40RUy6wg",
+     "nome": "oily af",
+     "idioma": "en",
+     "max": 21000
+    },
+    {
+     "id": "UC_DdIoJzHZXlEKTVy41_KQw",
+     "nome": "Econ in a Nutshell",
+     "idioma": "en",
+     "max": 1100000
+    }
+   ],
+   "videos": 7,
+   "max": 1100000
+  },
+  {
+   "molde": "[N] [X]",
+   "canais": [
+    {
+     "id": "UCgBr2zNf-689J8HmZUCJifw",
+     "nome": "Explorer Unveiled",
+     "idioma": "en",
+     "max": 1800
+    },
+    {
+     "id": "UCevjhh502_2TLqG_sL6QBeQ",
+     "nome": "Psicología Esencial",
+     "idioma": "es",
+     "max": 252
+    },
+    {
+     "id": "UCAM_O67GlUSKpEtC0Wpw5hg",
+     "nome": "Ihr Denken",
+     "idioma": "de",
+     "max": 2000
+    }
+   ],
+   "videos": 5,
+   "max": 2000
+  },
+  {
+   "molde": "[X] [N]",
+   "canais": [
+    {
+     "id": "UC_6WWfny6AWYqKs40RUy6wg",
+     "nome": "oily af",
+     "idioma": "en",
+     "max": 210000
+    },
+    {
+     "id": "UC_DdIoJzHZXlEKTVy41_KQw",
+     "nome": "Econ in a Nutshell",
+     "idioma": "en",
+     "max": 23000
+    }
+   ],
+   "videos": 4,
+   "max": 210000
+  },
+  {
+   "molde": "[X] who [X]",
+   "canais": [
+    {
+     "id": "UC6Bv_ao56LZSaNFvERZE9Ig",
+     "nome": "Hushfall True Crime",
+     "idioma": "en",
+     "max": 52
+    },
+    {
+     "id": "UC11JUsJTF-gkghJ_63jkCFg",
+     "nome": "Blutende Wahrheit.",
+     "idioma": "de",
+     "max": 39000
+    }
+   ],
+   "videos": 2,
+   "max": 39000
+  },
+  {
+   "molde": "[X] pourquoi [X]",
+   "canais": [
+    {
+     "id": "UCKghUSV9nLqShwy__Oj2d0g",
+     "nome": "La Science Expliquée",
+     "idioma": "fr",
+     "max": 9000
+    },
+    {
+     "id": "UCNDq_ifL_7QIKFogHjcY4EA",
+     "nome": "Au-delà de l'Ordinaire",
+     "idioma": "fr",
+     "max": 31000
+    }
+   ],
+   "videos": 2,
+   "max": 31000
+  },
+  {
+   "molde": "[X] quand [X]",
+   "canais": [
+    {
+     "id": "UC6WJCl51WBqjTccpHpmac9g",
+     "nome": "InsectiSi",
+     "idioma": "fr",
+     "max": 19000
+    },
+    {
+     "id": "UCNDq_ifL_7QIKFogHjcY4EA",
+     "nome": "Au-delà de l'Ordinaire",
+     "idioma": "fr",
+     "max": 2600
+    }
+   ],
+   "videos": 2,
+   "max": 19000
+  },
+  {
+   "molde": "[X] [N] [X] what [X]",
+   "canais": [
+    {
+     "id": "UCgBr2zNf-689J8HmZUCJifw",
+     "nome": "Explorer Unveiled",
+     "idioma": "en",
+     "max": 3900
+    },
+    {
+     "id": "UC_DdIoJzHZXlEKTVy41_KQw",
+     "nome": "Econ in a Nutshell",
+     "idioma": "en",
+     "max": 2600
+    }
+   ],
+   "videos": 3,
+   "max": 3900
+  }
+ ]
+}
