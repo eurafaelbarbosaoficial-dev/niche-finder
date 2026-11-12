@@ -3,281 +3,230 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Niche Finder</title>
+<title>Niche Finder — Canais</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#000;--panel:#0c0c0f;--card:#111115;--card2:#17171c;--line:#23232a;--line2:#33333d;--tx:#fff;--tx2:#c8c8d0;--mut:#878793;
---acc:#7c5cff;--acc2:#c084fc;--accbg:#1a1533;--accln:#352a72;--ok:#22c55e;--okbg:rgba(34,197,94,.12);--up:#4ade80;--warn:#f5b84b}
-*{box-sizing:border-box}
-html{background:var(--bg)}
-body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:none} a:hover{text-decoration:underline}
-button,input,select{font:inherit;color:inherit}
-.wrap{max-width:1440px;margin:0 auto;padding:0 16px 70px}
-header{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.top{max-width:1440px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:-.02em}
-.logo b{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--acc),var(--acc2));display:grid;place-items:center;font-size:16px}
-.nav{display:flex;gap:4px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:3px}
-.nav a{padding:5px 12px;border-radius:7px;font-size:13.5px;color:var(--tx2)} .nav a:hover{text-decoration:none;color:var(--tx)}
-.validar{display:block;margin-top:12px;text-align:center;font-size:13px;font-weight:600;border:1px solid var(--accln);background:var(--accbg);color:#cbbdff;border-radius:9px;padding:7px 10px}
-.validar:hover{text-decoration:none;border-color:var(--acc)}
-.nav a.on{background:var(--tx);color:#000;font-weight:600}
-.status{margin-left:auto;display:flex;align-items:center;gap:10px;font-size:13px;color:var(--tx2);flex-wrap:wrap}
-.pill{display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--panel);border-radius:99px;padding:5px 12px}
-.dot{width:8px;height:8px;border-radius:50%;background:var(--mut)}
-.dot.on{background:var(--ok);animation:pulse 1.6s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(34,197,94,.6)}70%{box-shadow:0 0 0 8px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
-.btn{border:1px solid var(--line2);background:var(--card2);border-radius:9px;padding:6px 12px;cursor:pointer;font-size:13px}
-.btn:hover{border-color:var(--acc)}
-.hero{padding:30px 0 6px}
-.hero h1{font-size:clamp(26px,4.2vw,40px);margin:0 0 8px;letter-spacing:-.035em;font-weight:800;line-height:1.1}
-.hero h1 span{background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
-.lead{color:var(--tx2);margin:0;max-width:820px;font-size:15.5px} .lead b{color:var(--tx)}
-.crit{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}
-.crit span{font-size:12.5px;color:var(--tx2);background:var(--panel);border:1px solid var(--line);padding:5px 10px 5px 6px;border-radius:8px;display:flex;align-items:center;gap:7px}
-.crit i{font-style:normal;font-size:11px;font-weight:700;width:18px;height:18px;border-radius:5px;display:grid;place-items:center;background:var(--accbg);color:#a594ff}
-.prog{margin:22px 0 0;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:none}
-.prog.on{display:block}
-.prog-l{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:14px} .prog-l small{color:var(--mut)}
-.bar{height:7px;background:var(--line);border-radius:99px;overflow:hidden;margin-top:10px}
-.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--acc),var(--acc2));border-radius:99px;transition:width .6s}
-.kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:16px 0 0}
-.kpi{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;min-width:0}
-.kpi b{font-size:28px;font-weight:800;letter-spacing:-.03em;display:block;line-height:1.15;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.kpi small{color:var(--mut);font-size:12.5px} .kpi.g b{color:var(--ok)} .kpi .s{display:block;font-size:12px;color:var(--tx2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-h2.t{font-size:20px;margin:40px 0 4px;letter-spacing:-.02em} p.ts{margin:0 0 14px;color:var(--mut);font-size:13.5px}
-.mapa{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,215px),1fr));gap:10px}
-.nicho{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;text-align:left;display:flex;flex-direction:column;gap:6px;transition:border-color .15s}
-.nicho:hover{border-color:var(--line2)} .nicho.on{border-color:var(--acc);background:var(--accbg)}
-.nicho .g{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);font-weight:700}
-.nicho .n{font-weight:700;font-size:15px}
-.nicho .c{display:flex;gap:12px;font-size:12.5px;color:var(--tx2)} .nicho .c b{color:var(--tx)} .nicho .c .p b{color:var(--ok)}
-.meter{height:4px;background:var(--line);border-radius:9px;overflow:hidden} .meter i{display:block;height:100%;background:var(--ok)}
-.tools{position:sticky;top:57px;z-index:5;background:rgba(0,0,0,.9);backdrop-filter:blur(10px);margin:34px -16px 0;padding:12px 16px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.busca{flex:1 1 220px;min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 12px}
-.busca:focus{outline:none;border-color:var(--acc)}
-.seg{display:flex;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:3px;gap:2px;flex-wrap:wrap}
-.seg button{border:0;background:none;padding:5px 10px;border-radius:7px;cursor:pointer;font-size:13px;color:var(--tx2)}
-.seg button.on{background:var(--tx);color:#000;font-weight:600}
-.seg button em{font-style:normal;opacity:.6;margin-left:3px;font-size:12px}
-.tog{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--tx2);cursor:pointer;user-select:none}
-.tog input{display:none} .tog s{width:34px;height:20px;border-radius:99px;background:var(--line2);position:relative;transition:.2s}
-.tog s:after{content:"";position:absolute;width:16px;height:16px;border-radius:50%;background:#fff;top:2px;left:2px;transition:.2s}
-.tog input:checked + s{background:var(--ok)} .tog input:checked + s:after{left:16px}
-.sel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:7px 10px;font-size:13px}
-.contagem{margin:16px 0 12px;color:var(--mut);font-size:13.5px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
-.limpar{background:none;border:0;color:#a594ff;cursor:pointer;font-size:13px;padding:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:16px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .15s,transform .15s}
-.card:hover{border-color:var(--line2);transform:translateY(-2px)}
-.card.ok{border-color:rgba(34,197,94,.5);box-shadow:0 0 0 1px rgba(34,197,94,.2)}
-.thumb{position:relative;display:block;aspect-ratio:16/9;background:#1a1a1f} .thumb img{width:100%;height:100%;object-fit:cover;display:block}
-.bd{position:absolute;bottom:8px;font-size:12px;font-weight:600;background:rgba(0,0,0,.82);padding:3px 8px;border-radius:6px}
-.bd.l{left:8px} .bd.r{right:8px}
-.rank{position:absolute;top:8px;left:8px;font-size:12px;font-weight:800;background:var(--acc);padding:3px 8px;border-radius:6px}
-.body{padding:14px;display:flex;flex-direction:column;gap:10px;flex:1}
-.head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
-.nome{font-weight:700;font-size:16.5px;line-height:1.3;min-width:0;overflow-wrap:anywhere}
-.lang{flex:none;font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--tx2);border:1px solid var(--line);background:var(--card2);padding:2px 7px;border-radius:6px}
-.tags1{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.cat{font-size:12px;font-weight:600;color:#c9bcff;background:var(--accbg);border:1px solid var(--accln);padding:2px 9px;border-radius:99px}
-.selo{font-size:12px;font-weight:600;color:var(--ok);background:var(--okbg);padding:2px 9px;border-radius:99px}
-.cresc{font-size:12px;font-weight:600;color:var(--up)}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.stats div{background:var(--card2);padding:8px 4px;text-align:center;min-width:0} .stats b{display:block;font-size:15px} .stats small{color:var(--mut);font-size:11px}
-.datas{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.datas div{border:1px solid var(--line);border-radius:10px;padding:7px 10px;display:flex;flex-direction:column}
-.datas small{color:var(--mut);font-size:10.5px;text-transform:uppercase;letter-spacing:.07em} .datas b{font-size:14px} .datas em{font-style:normal;color:var(--ok);font-size:12px}
-.temas{display:flex;flex-wrap:wrap;gap:6px} .tema{font-size:12px;color:var(--tx2);background:var(--card2);border:1px solid var(--line);padding:2px 8px;border-radius:6px}
-.tema em{font-style:normal;color:#a594ff}
-.sec{margin:2px 0 -4px;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
-.vids{list-style:none;margin:0;padding:0;font-size:13px}
-.vids li{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-top:1px solid var(--line)}
-.vids li a{color:var(--tx2);min-width:0;overflow-wrap:anywhere} .vids li span{flex:none;font-weight:600}
-.achado{margin:auto 0 0;font-size:12px;color:var(--mut)}
-.vazio{color:var(--mut);background:var(--panel);border:1px dashed var(--line2);border-radius:14px;padding:28px;text-align:center;grid-column:1/-1}
-details{margin-top:40px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
-summary{cursor:pointer;font-weight:600}
-.motivos{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.motivos span{font-size:13px;color:var(--tx2);background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:6px 11px} .motivos b{color:var(--tx);margin-right:6px}
-.como{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:10px;margin-top:12px}
-.como div{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px;font-size:13.5px;color:var(--tx2)} .como b{color:var(--tx);display:block;margin-bottom:3px}
-footer{margin-top:30px;color:var(--mut);font-size:12.5px}
-.erro{background:#2a1212;border:1px solid #5c2323;color:#ffb4b4;border-radius:12px;padding:14px;margin-top:20px;display:none}
-@media (max-width:980px){.kpis{grid-template-columns:repeat(3,1fr)}}
-@media (max-width:640px){.kpis{grid-template-columns:repeat(2,1fr)}.status{margin-left:0;width:100%}.tools{top:0;position:static}}
-</style>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-<header><div class="top">
-  <div class="logo"><b>◎</b>Niche Finder</div>
-  <nav class="nav"><a class="on" href="index.html">Canais</a><a href="validador.html">Validador</a></nav>
-  <div class="status"><span class="pill"><span class="dot" id="dot"></span><span id="st">Carregando…</span></span>
-  <button class="btn" id="recarregar" title="Buscar os dados mais novos agora">Atualizar</button></div>
-</div></header>
-
-<div class="wrap">
-  <section class="hero">
-    <h1>Canais <span>novos</span> que já estão performando</h1>
-    <p class="lead" id="lead">Só entram canais cujo <b>primeiro vídeo saiu nas últimas 3 semanas</b> e que já têm <b>pelo menos um vídeo longo com 50 mil views</b>. Em português, espanhol, inglês, alemão e francês.</p>
-    <div class="crit" id="crit"></div>
-  </section>
-
-  <div class="prog" id="prog"><div class="prog-l"><b id="prog-t"></b><small id="prog-s"></small></div><div class="bar"><i id="prog-b"></i></div></div>
-  <div class="erro" id="erro"></div>
-
-  <div class="kpis" id="kpis"></div>
-
-  <h2 class="t">Mapa dos nichos</h2>
-  <p class="ts">Quantos outliers (canal novo com vídeo de 50 mil+) cada nicho amplo tem. Clique num nicho para filtrar.</p>
-  <div class="mapa" id="mapa"></div>
-
-  <div class="tools">
-    <input class="busca" id="q" type="search" placeholder="Buscar canal, vídeo ou tema…">
-    <div class="seg" id="langs"></div>
-    <select class="sel" id="ordem" aria-label="Ordenar">
-      <option value="melhor">Melhor vídeo</option>
-      <option value="views">Mais views no canal</option>
-      <option value="cresc">Mais crescimento (24h)</option>
-      <option value="dia">Mais views por dia</option>
-      <option value="novo">1º vídeo mais recente</option>
-      <option value="insc">Mais inscritos</option>
-    </select>
-  </div>
-  <div class="contagem"><span id="cont"></span><button class="limpar" id="limpar">Limpar filtros</button></div>
-  <div class="grid" id="grid"></div>
-
-  <details>
-    <summary>Como ler esta página</summary>
-    <div class="como">
-      <div><b>Canal novo</b>O 1º vídeo do canal saiu nas últimas 3 semanas. A idade do canal não importa: vale a data do primeiro vídeo que está no ar.</div>
-      <div><b>Só outliers</b>Só aparece canal com pelo menos um vídeo longo de 50 mil views ou mais. Não é a soma: os outros vídeos podem ter menos. Canal novo abaixo disso fica “em observação”, fora da lista, e entra sozinho se um vídeo passar de 50 mil.</div>
-      <div><b>Só vídeos longos</b>Só contam vídeos de 4 minutos ou mais. Shorts não entram em nada.</div>
-      <div><b>Crescimento 24h</b>Quantas views o canal ganhou desde a medição de ~24 horas atrás. Aparece depois da 2ª rodada.</div>
-      <div><b>Temas</b>Palavras que se repetem nos títulos e em quantos % dos vídeos aparecem. Ajuda a ver o subnicho.</div>
-      <div><b>Nicho</b>O nicho amplo da busca que achou o canal. Um canal pode tocar em mais de um nicho.</div>
+<header class="hd">
+  <div class="hd-in">
+    <a class="marca" href="index.html"><span class="sq">NF</span><span>Niche Finder</span></a>
+    <nav class="abas"><a class="on" href="index.html">Canais</a><a href="validador.html">Validador</a></nav>
+    <div class="hd-dir">
+      <span class="vivo"><i id="dot"></i><span id="st">carregando…</span></span>
+      <button class="bt" id="recarregar" title="Buscar os dados mais novos agora (R)">↻ Atualizar</button>
     </div>
-  </details>
-  <details id="fora-box"><summary id="fora-t">Canais checados que ficaram de fora</summary><div class="motivos" id="motivos"></div></details>
-  <footer id="rodape"></footer>
+  </div>
+  <div class="prog" id="prog"><i id="prog-b"></i></div>
+</header>
+
+<div class="tick" id="tick"></div>
+
+<div class="app">
+  <aside class="lado" id="lado">
+    <div class="bloco">
+      <label class="busca"><span>⌕</span><input id="q" type="search" placeholder="Buscar canal, vídeo, tema" autocomplete="off"><kbd>/</kbd></label>
+    </div>
+    <div class="bloco">
+      <div class="rot">Idioma</div>
+      <div class="chips" id="langs"></div>
+    </div>
+    <div class="bloco">
+      <div class="rot">Nichos <span class="dica">clique para filtrar</span></div>
+      <div id="mapa"></div>
+    </div>
+    <div class="bloco crit">
+      <div class="rot">Critérios desta lista</div>
+      <ul id="crit"></ul>
+    </div>
+    <div class="bloco">
+      <div class="rot">Checados e descartados</div>
+      <ul class="fora" id="motivos"></ul>
+    </div>
+  </aside>
+
+  <main class="cont">
+    <div class="hero">
+      <h1>Canais novos que já estouraram</h1>
+      <p id="lead">Primeiro vídeo nas últimas <b>3 semanas</b> e pelo menos <b>um vídeo longo com 50 mil views</b>. PT · ES · EN · DE · FR. Atualiza sozinho.</p>
+    </div>
+    <div class="erro" id="erro"></div>
+    <div class="barra">
+      <button class="bt so-cel" id="abrir-filtros">Filtros</button>
+      <span class="cont-t" id="cont"></span>
+      <button class="link" id="limpar">limpar filtros</button>
+      <div class="barra-dir">
+        <select class="sel" id="ordem" aria-label="Ordenar">
+          <option value="melhor">Melhor vídeo</option>
+          <option value="ratio">Outlier × (views/vídeo ÷ inscritos)</option>
+          <option value="dia">Views por dia</option>
+          <option value="cresc">Crescimento 24h</option>
+          <option value="novo">1º vídeo mais recente</option>
+          <option value="views">Views do canal</option>
+          <option value="insc">Inscritos</option>
+        </select>
+        <div class="seg" id="modo"><button data-m="cards">Cards</button><button data-m="tabela">Tabela</button></div>
+      </div>
+    </div>
+    <div id="lista"></div>
+    <details class="como">
+      <summary>Como ler esta página</summary>
+      <dl>
+        <dt>Canal novo</dt><dd>O 1º vídeo que está no ar saiu nas últimas 3 semanas. A idade do canal não importa.</dd>
+        <dt>Outlier</dt><dd>Tem pelo menos UM vídeo longo (4 min+) com 50 mil views. Não é a soma. Canais novos abaixo disso ficam “em observação” e entram sozinhos se passarem.</dd>
+        <dt>Outlier ×</dt><dd>Média de views por vídeo dividida pelos inscritos (a métrica do Raj). 50× ou mais = o canal alcança muito além da própria base.</dd>
+        <dt>Crescimento 24h</dt><dd>Views ganhas desde a medição de ~24 h atrás. Aparece a partir da 2ª rodada.</dd>
+        <dt>Temas</dt><dd>Palavras que se repetem nos títulos e em quantos % dos vídeos aparecem.</dd>
+      </dl>
+    </details>
+    <footer id="rodape"></footer>
+  </main>
 </div>
+
+<div class="veu" id="veu"></div>
+<aside class="gaveta" id="gaveta" aria-hidden="true"></aside>
 
 <script>
 (function(){
 var LANGS={pt:"Português",es:"Espanhol",en:"Inglês",de:"Alemão",fr:"Francês"};
-var D=null, S={cat:"",lang:"",q:"",perf:false,ordem:"melhor"};
-try{var s=JSON.parse(localStorage.getItem("nf_estado")||"{}");for(var k in s)if(k in S)S[k]=s[k];}catch(e){}
-function salvar(){try{localStorage.setItem("nf_estado",JSON.stringify(S));}catch(e){}}
+var D=null,S={cat:"",lang:"",q:"",ordem:"melhor",modo:"cards"},aberto=null;
+try{var s=JSON.parse(localStorage.getItem("nf2")||"{}");for(var k in s)if(k in S)S[k]=s[k];}catch(e){}
+function salvar(){try{localStorage.setItem("nf2",JSON.stringify(S));}catch(e){}}
 function $(id){return document.getElementById(id);}
-function esc(s){return String(s==null?"?":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+function esc(s){return String(s==null?"?":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
 function fmt(n){if(n==null)return"?";var a=Math.abs(n);
   if(a>=1e6)return(n/1e6).toFixed(1).replace(/\.0$/,"").replace(".",",")+" mi";
   if(a>=1e3)return(n/1e3).toFixed(1).replace(/\.0$/,"").replace(".",",")+" mil";return String(n);}
-function fdata(s){if(!s)return"?";var p=s.slice(0,10).split("-");return p[2]+"/"+p[1]+"/"+p[0];}
-function haQuanto(iso){if(!iso)return"?";var m=Math.round((Date.now()-new Date(iso).getTime())/60000);
-  if(m<1)return"agora";if(m<60)return"há "+m+" min";var h=Math.round(m/60);if(h<48)return"há "+h+" h";return"há "+Math.round(h/24)+" dias";}
-function cresc(c){var h=c.historico||[];if(h.length<2)return null;var ult=h[h.length-1],lim=new Date(ult[0]).getTime()-864e5,base=h[0];
-  for(var i=0;i<h.length;i++){if(new Date(h[i][0]).getTime()<=lim)base=h[i];}return ult[1]-base[1];}
+function fdata(s){if(!s)return"?";var p=s.slice(0,10).split("-");return p[2]+"/"+p[1];}
+function ha(iso){if(!iso)return"?";var m=Math.round((Date.now()-new Date(iso).getTime())/6e4);
+  if(m<1)return"agora";if(m<60)return"há "+m+" min";var h=Math.round(m/60);if(h<48)return"há "+h+" h";return"há "+Math.round(h/24)+" d";}
+function cresc(c){var h=c.historico||[];if(h.length<2)return null;var u=h[h.length-1],lim=new Date(u[0]).getTime()-864e5,b=h[0];
+  for(var i=0;i<h.length;i++)if(new Date(h[i][0]).getTime()<=lim)b=h[i];return u[1]-b[1];}
+function ratio(c){if(!c.inscritos||!c.n_longos)return null;return (c.views_total/c.n_longos)/c.inscritos;}
+function fr(r){return r==null?"?":(r>=10?Math.round(r):r.toFixed(1).replace(".",","))+"×";}
+function dur(s){return s?Math.round(s/60)+" min":"";}
+function spark(h,w,hh,curto){h=h||[];if(h.length<2)return"<span class='sp-vazio'>"+(curto?"—":"sem histórico ainda")+"</span>";
+  var v=h.map(function(x){return x[1];}),mn=Math.min.apply(0,v),mx=Math.max.apply(0,v),r=mx-mn||1;
+  var pts=v.map(function(y,i){return (i*(w/(v.length-1))).toFixed(1)+","+(hh-2-(y-mn)/r*(hh-4)).toFixed(1);}).join(" ");
+  return"<svg class='sp' viewBox='0 0 "+w+" "+hh+"' preserveAspectRatio='none'><polyline points='"+pts+"'/></svg>";}
 
 function carregar(){
   fetch("dados.json?t="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();})
-  .then(function(d){
-    var c=d.criterios||(d.criterios={});c.bom_video=c.bom_video||50000;
-    // performando = pelo menos UM vídeo longo com bom_video views ou mais (não é a soma do canal)
+  .then(function(d){var c=d.criterios||(d.criterios={});c.bom_video=c.bom_video||50000;
     (d.canais||[]).forEach(function(x){x.performando=((x.melhor||{}).views||0)>=c.bom_video;});
-    // só outliers aparecem; os novos abaixo do corte ficam em observação (só o número)
-    if(d.em_observacao==null)d.em_observacao=(d.canais||[]).filter(function(x){return !x.performando;}).length;
+    if(d.em_observacao==null)d.em_observacao=(d.canais||[]).filter(function(x){return!x.performando;}).length;
     d.canais=(d.canais||[]).filter(function(x){return x.performando;});
     D=d;$("erro").style.display="none";tudo();})
-  .catch(function(e){$("erro").style.display="block";$("erro").textContent="Não consegui ler os dados agora ("+e.message+"). Tento de novo em 30 segundos.";});
+  .catch(function(e){$("erro").style.display="block";$("erro").textContent="Não consegui ler os dados agora ("+e.message+"). Tento de novo em 30 s.";});
 }
 
 function tudo(){
-  var c=D.criterios||{}, r=D.rodada||{}, rodando=r.status==="buscando";
-  $("dot").className="dot"+(rodando?" on":"");
-  $("st").textContent=rodando?"Buscando agora · "+(r.fase||""):"Atualizado "+haQuanto(D.atualizado);
-  $("crit").innerHTML=[["1º vídeo há até "+Math.round((c.dias_video||21)/7)+" semanas"],["Só vídeos de "+Math.round(c.min_duracao/60)+" min ou mais"],
-    ["Performando = 1 vídeo com "+fmt(c.bom_video)+"+ views"],["PT · ES · EN · DE · FR"],[Object.keys(D.categorias||{}).length+" nichos amplos"]]
-    .map(function(x,i){return"<span><i>"+(i+1)+"</i>"+esc(x[0])+"</span>";}).join("");
-  $("prog").className="prog"+(rodando?" on":"");
-  if(rodando){var p=r.total?Math.round(100*r.feito/r.total):0;$("prog-t").textContent=(r.fase||"")+(r.total?" — "+r.feito+" de "+r.total+" ("+p+"%)":"");
-    $("prog-s").textContent="Rodada começou "+haQuanto(r.inicio);$("prog-b").style.width=p+"%";}
-  var cs=D.canais||[], perf=cs.filter(function(x){return x.performando;});
-  var top=cs.slice().sort(function(a,b){return ((b.melhor||{}).views||0)-((a.melhor||{}).views||0);})[0];
-  var catsPerf={};perf.forEach(function(x){catsPerf[x.categoria]=1;});
-  $("kpis").innerHTML=
-    "<div class='kpi g'><b>"+cs.length+"</b><small>Outliers (vídeo de 50 mil+)</small></div>"+
-    "<div class='kpi'><b>"+Object.keys(catsPerf).length+"</b><small>Nichos com outlier</small></div>"+
-    "<div class='kpi'><b>"+fmt(D.em_observacao)+"</b><small>Em observação (abaixo de 50 mil)</small></div>"+
-    "<div class='kpi'><b>"+fmt(D.checados)+"</b><small>Canais checados</small></div>"+
-    "<div class='kpi'><b>"+(top?fmt((top.melhor||{}).views):"—")+"</b><small>Maior vídeo de canal novo</small><span class='s'>"+(top?esc(top.nome):"")+"</span></div>";
-  mapa(cs);langs(cs);lista();
-  var f=D.fora||{},tot=0;for(var k in f)tot+=f[k];
-  $("fora-t").textContent="Canais checados que ficaram de fora ("+fmt(tot)+")";
-  $("motivos").innerHTML=Object.keys(f).sort(function(a,b){return f[b]-f[a];}).map(function(k){return"<span><b>"+fmt(f[k])+"</b>"+esc(k)+"</span>";}).join("")||"<span>Nenhum ainda.</span>";
-  $("rodape").textContent="Dados do YouTube · última gravação em "+fdata(D.atualizado)+" às "+(D.atualizado||"").slice(11,16)+". A página busca dados novos a cada 30 segundos. O que o YouTube não informou aparece como “?”.";
+  var c=D.criterios,r=D.rodada||{},rod=r.status==="buscando",cs=D.canais||[];
+  $("dot").className=rod?"on":"";
+  $("st").textContent=rod?"buscando · "+(r.total?Math.round(100*r.feito/r.total)+"%":(r.fase||"")):"atualizado "+ha(D.atualizado);
+  $("prog").className="prog"+(rod?" on":"");$("prog-b").style.width=(rod&&r.total?Math.round(100*r.feito/r.total):0)+"%";
+  var top=cs.slice().sort(function(a,b){return(b.melhor.views||0)-(a.melhor.views||0);})[0];
+  var nichos={};cs.forEach(function(x){nichos[x.categoria]=1;});
+  var rs=cs.map(ratio).filter(function(x){return x!=null;}).sort(function(a,b){return b-a;});
+  $("tick").innerHTML=[["Outliers",cs.length,"g"],["Nichos com outlier",Object.keys(nichos).length],["Em observação",fmt(D.em_observacao)],
+    ["Canais checados",(D.checados||0).toLocaleString("pt-BR")],["Maior vídeo",top?fmt(top.melhor.views):"—","a",top?top.nome:""],["Maior outlier ×",rs.length?fr(rs[0]):"—"]]
+    .map(function(k){return"<div class='tk "+(k[2]||"")+"'><small>"+k[0]+"</small><b>"+k[1]+"</b>"+(k[3]?"<em>"+esc(k[3])+"</em>":"")+"</div>";}).join("");
+  $("crit").innerHTML=["1º vídeo há até "+Math.round((c.dias_video||21)/7)+" semanas","Só vídeos de "+Math.round((c.min_duracao||240)/60)+" min ou mais",
+    "1 vídeo com "+fmt(c.bom_video)+"+ views","Shorts não entram","Busca a cada 3 h · site a cada 30 s"].map(function(t){return"<li>"+esc(t)+"</li>";}).join("");
+  var f=D.fora||{};$("motivos").innerHTML=Object.keys(f).sort(function(a,b){return f[b]-f[a];}).map(function(k){return"<li><span>"+esc(k)+"</span><b>"+fmt(f[k])+"</b></li>";}).join("");
+  $("rodape").textContent="Dados do YouTube via yt-dlp · gravado em "+fdata(D.atualizado)+" às "+(D.atualizado||"").slice(11,16)+" · o que o YouTube não informou aparece como “?”.";
+  mapa(cs);langs(cs);lista();if(aberto)abrir(aberto,true);
 }
 
 function mapa(cs){
-  var cats=D.categorias||{}, por={};
-  Object.keys(cats).forEach(function(k){por[k]={n:0,p:0,max:0};});
-  cs.forEach(function(x){var o=por[x.categoria];if(!o)return;o.n++;if(x.performando)o.p++;o.max=Math.max(o.max,x.views_total||0);});
-  var maxP=1;for(var k in por)maxP=Math.max(maxP,por[k].p);
-  var ks=Object.keys(cats).sort(function(a,b){return por[b].p-por[a].p||por[b].n-por[a].n;});
-  $("mapa").innerHTML=ks.map(function(k){var o=por[k];return"<button class='nicho"+(S.cat===k?" on":"")+"' data-cat='"+esc(k)+"'>"+
-    "<span class='g'>"+esc(cats[k])+"</span><span class='n'>"+esc(k)+"</span>"+
-    "<span class='c'><span class='p'><b>"+o.p+"</b> "+(o.p===1?"outlier":"outliers")+"</span></span>"+
-    "<span class='meter'><i style='width:"+Math.round(100*o.p/maxP)+"%'></i></span></button>";}).join("");
-  Array.prototype.forEach.call(document.querySelectorAll(".nicho"),function(b){b.onclick=function(){S.cat=S.cat===b.dataset.cat?"":b.dataset.cat;salvar();mapa(D.canais||[]);lista();
-    document.querySelector(".tools").scrollIntoView({behavior:"smooth"});};});
+  var cats=D.categorias||{},por={},grupos={};
+  Object.keys(cats).forEach(function(k){por[k]=0;(grupos[cats[k]]=grupos[cats[k]]||[]).push(k);});
+  cs.forEach(function(x){if(x.categoria in por)por[x.categoria]++;});
+  var mx=1;for(var k in por)mx=Math.max(mx,por[k]);
+  $("mapa").innerHTML=Object.keys(grupos).map(function(g){
+    return"<div class='grp'>"+esc(g)+"</div>"+grupos[g].sort(function(a,b){return por[b]-por[a];}).map(function(k){
+      return"<button class='ni"+(S.cat===k?" on":"")+(por[k]?"":" zero")+"' data-cat='"+esc(k)+"'><span>"+esc(k)+"</span><b>"+por[k]+"</b><i style='width:"+Math.round(100*por[k]/mx)+"%'></i></button>";}).join("");}).join("");
+  [].forEach.call($("mapa").querySelectorAll(".ni"),function(b){b.onclick=function(){S.cat=S.cat===b.dataset.cat?"":b.dataset.cat;salvar();mapa(D.canais);lista();fecharLado();};});
 }
-
 function langs(cs){
   var n={};cs.forEach(function(x){n[x.idioma]=(n[x.idioma]||0)+1;});
-  $("langs").innerHTML="<button data-l=''"+(S.lang===""?" class='on'":"")+">Todos<em>"+cs.length+"</em></button>"+
-    Object.keys(LANGS).map(function(k){return"<button data-l='"+k+"'"+(S.lang===k?" class='on'":"")+">"+LANGS[k]+"<em>"+(n[k]||0)+"</em></button>";}).join("");
-  Array.prototype.forEach.call($("langs").querySelectorAll("button"),function(b){b.onclick=function(){S.lang=b.dataset.l;salvar();langs(D.canais||[]);lista();};});
+  $("langs").innerHTML="<button data-l=''"+(S.lang===""?" class='on'":"")+">Todos <em>"+cs.length+"</em></button>"+
+    Object.keys(LANGS).map(function(k){return"<button data-l='"+k+"'"+(S.lang===k?" class='on'":"")+" title='"+LANGS[k]+"'>"+k.toUpperCase()+" <em>"+(n[k]||0)+"</em></button>";}).join("");
+  [].forEach.call($("langs").querySelectorAll("button"),function(b){b.onclick=function(){S.lang=b.dataset.l;salvar();langs(D.canais);lista();};});
 }
-
-function lista(){
-  var cs=(D.canais||[]).filter(function(x){
-    if(S.cat&&x.categoria!==S.cat)return false;if(S.lang&&x.idioma!==S.lang)return false;
+var ORD={melhor:function(x){return x.melhor.views||0;},ratio:function(x){return ratio(x)||0;},dia:function(x){return x.views_dia||0;},
+  cresc:function(x){return cresc(x)||0;},novo:function(x){return-(x.dias_primeiro||0);},views:function(x){return x.views_total||0;},insc:function(x){return x.inscritos||0;}};
+function filtrados(){
+  var cs=(D.canais||[]).filter(function(x){if(S.cat&&x.categoria!==S.cat)return false;if(S.lang&&x.idioma!==S.lang)return false;
     if(S.q){var t=(x.nome+" "+(x.videos||[]).map(function(v){return v.titulo;}).join(" ")+" "+(x.palavras||[]).map(function(p){return p.termo;}).join(" ")+" "+x.categoria).toLowerCase();
       if(t.indexOf(S.q.toLowerCase())<0)return false;}return true;});
-  var f={views:function(x){return x.views_total||0;},cresc:function(x){return cresc(x)||0;},dia:function(x){return x.views_dia||0;},
-    novo:function(x){return -(x.dias_primeiro||0);},insc:function(x){return x.inscritos||0;},melhor:function(x){return (x.melhor||{}).views||0;}}[S.ordem]||function(x){return x.views_total||0;};
-  cs.sort(function(a,b){return f(b)-f(a);});
-  var filtros=[S.cat,S.lang&&LANGS[S.lang],S.q&&("“"+S.q+"”")].filter(Boolean);
-  $("cont").textContent="Mostrando "+cs.length+" de "+(D.canais||[]).length+" outliers"+(filtros.length?" · filtro: "+filtros.join(", "):"");
-  $("limpar").style.visibility=filtros.length?"visible":"hidden";
-  $("grid").innerHTML=cs.map(card).join("")||"<div class='vazio'>"+((D.canais||[]).length?"Nenhum canal com esses filtros.":"Nenhum outlier ainda: nenhum canal novo tem vídeo de 50 mil views até agora. A busca está rodando e a página se atualiza sozinha.")+"</div>";
+  var f=ORD[S.ordem]||ORD.melhor;return cs.sort(function(a,b){return f(b)-f(a);});
 }
-
-function card(x,i){
-  var m=x.melhor||{}, g=cresc(x), dur=m.dur?Math.round(m.dur/60):0;
-  var temas=(x.palavras||[]).slice(0,4).map(function(p){return"<span class='tema'>"+esc(p.termo)+" <em>"+p.pct+"%</em></span>";}).join("")||"<span class='tema'>sem tema repetido</span>";
-  var vids=(x.videos||[]).slice(0,4).map(function(v){return"<li><a href='https://youtu.be/"+esc(v.id)+"' target='_blank' rel='noopener'>"+esc(v.titulo)+"</a><span>"+fmt(v.views)+"</span></li>";}).join("");
-  return"<article class='card"+(x.performando?" ok":"")+"'>"+
-    "<a class='thumb' href='https://youtu.be/"+esc(m.id)+"' target='_blank' rel='noopener'><img loading='lazy' src='https://i.ytimg.com/vi/"+esc(m.id)+"/mqdefault.jpg' alt='Capa do vídeo mais visto'>"+
-    "<span class='rank'>#"+(i+1)+"</span><span class='bd l'>"+fmt(m.views)+" views</span>"+(dur?"<span class='bd r'>"+dur+" min</span>":"")+"</a>"+
-    "<div class='body'><div class='head'><a class='nome' href='"+esc(x.url)+"' target='_blank' rel='noopener'>"+esc(x.nome)+"</a><span class='lang'>"+esc((x.idioma||"?").toUpperCase())+"</span></div>"+
-    "<div class='tags1'><span class='cat'>"+esc(x.categoria)+"</span>"+(x.performando?"<span class='selo'>● Performando</span>":"")+(g?"<span class='cresc'>▲ +"+fmt(g)+" em 24h</span>":"")+"</div>"+
-    "<div class='stats'><div><b>"+fmt(x.views_total)+"</b><small>Views</small></div><div><b>"+fmt(x.inscritos)+"</b><small>Inscritos</small></div>"+
-    "<div><b>"+(x.n_longos==null?"?":x.n_longos)+"</b><small>Vídeos</small></div><div><b>"+fmt(x.views_dia)+"</b><small>Views/dia</small></div></div>"+
-    "<div class='datas'><div><small>1º vídeo</small><b>"+fdata(x.primeiro_video)+"</b><em>há "+(x.dias_primeiro==null?"?":x.dias_primeiro)+" dias</em></div>"+
-    "<div><small>Melhor vídeo</small><b>"+fmt(m.views)+" views</b><em>"+(dur?dur+" min":"")+"</em></div></div>"+
-    "<div class='temas'>"+temas+"</div><p class='sec'>Vídeos mais vistos</p><ol class='vids'>"+vids+"</ol>"+
-    "<a class='validar' href='validador.html?t="+encodeURIComponent(m.titulo||"")+"'>Validar este título em outros idiomas →</a>"+
-    "<p class='achado'>Achado buscando “"+esc(x.termo)+"”</p></div></article>";
+function lista(){
+  var cs=filtrados(),fs=[S.cat,S.lang&&LANGS[S.lang],S.q&&("“"+S.q+"”")].filter(Boolean);
+  $("cont").innerHTML="<b>"+cs.length+"</b> de "+(D.canais||[]).length+" outliers"+(fs.length?" · "+esc(fs.join(" · ")):"");
+  $("limpar").style.display=fs.length?"":"none";$("ordem").value=S.ordem;
+  [].forEach.call($("modo").children,function(b){b.className=b.dataset.m===S.modo?"on":"";});
+  if(!cs.length){$("lista").innerHTML="<div class='vazio'>"+((D.canais||[]).length?"Nenhum canal com esses filtros.":"Nenhum outlier ainda. A busca roda a cada 3 horas e a página se atualiza sozinha.")+"</div>";return;}
+  $("lista").innerHTML=S.modo==="tabela"?tabela(cs):"<div class='grade'>"+cs.map(card).join("")+"</div>";
+  [].forEach.call($("lista").querySelectorAll("[data-id]"),function(el){el.onclick=function(ev){if(ev.target.closest("a"))return;abrir(el.dataset.id);};});
 }
+function barras(vs,max){return(vs||[]).slice(0,3).map(function(v){return"<li><span class='bt-t'>"+esc(v.titulo)+"</span><span class='bt-v'>"+fmt(v.views)+"</span><i style='width:"+Math.max(2,Math.round(100*(v.views||0)/max))+"%'></i></li>";}).join("");}
+function card(x){
+  var m=x.melhor,r=ratio(x),g=cresc(x);
+  return"<article class='cd' data-id='"+esc(x.id)+"' tabindex='0'>"+
+    "<div class='cd-img'><img loading='lazy' src='https://i.ytimg.com/vi/"+esc(m.id)+"/mqdefault.jpg' alt=''><span class='pv'>"+fmt(m.views)+"</span>"+(m.dur?"<span class='pd'>"+dur(m.dur)+"</span>":"")+
+    (r!=null&&r>=50?"<span class='px'>"+fr(r)+"</span>":"")+"</div>"+
+    "<div class='cd-b'><div class='cd-h'><b class='cd-n'>"+esc(x.nome)+"</b><span class='tag'>"+esc((x.idioma||"?").toUpperCase())+"</span></div>"+
+    "<div class='cd-s'>"+esc(x.categoria)+" · 1º vídeo há "+(x.dias_primeiro==null?"?":x.dias_primeiro)+" d</div>"+
+    "<div class='met'><div><small>Inscritos</small><b>"+fmt(x.inscritos)+"</b></div><div><small>Vídeos</small><b>"+(x.n_longos==null?"?":x.n_longos)+"</b></div>"+
+    "<div><small>Views/dia</small><b>"+fmt(x.views_dia)+"</b></div><div><small>Outlier</small><b class='"+(r!=null&&r>=50?"am":"")+"'>"+fr(r)+"</b></div></div>"+
+    "<ul class='bars'>"+barras(x.videos,m.views||1)+"</ul>"+
+    "<div class='cd-f'>"+spark(x.historico,90,22)+(g?"<span class='up'>▲ "+fmt(g)+" / 24h</span>":"")+"<span class='mais'>detalhes →</span></div></div></article>";
+}
+function tabela(cs){
+  var cols=[["Canal",null],["Idioma",null],["Nicho",null],["Melhor vídeo","melhor"],["Outlier ×","ratio"],["Inscritos","insc"],["Views/dia","dia"],["24h","cresc"],["1º vídeo","novo"],["Tendência",null]];
+  return"<div class='tw'><table class='tb'><thead><tr>"+cols.map(function(c){return"<th"+(c[1]?" data-o='"+c[1]+"' class='ord"+(S.ordem===c[1]?" on":"")+"'":"")+">"+c[0]+(S.ordem===c[1]?" ↓":"")+"</th>";}).join("")+"</tr></thead><tbody>"+
+  cs.map(function(x){var r=ratio(x),g=cresc(x);return"<tr data-id='"+esc(x.id)+"'><td class='tn'><img src='https://i.ytimg.com/vi/"+esc(x.melhor.id)+"/default.jpg' alt=''><span>"+esc(x.nome)+"<small>"+esc(x.melhor.titulo)+"</small></span></td>"+
+    "<td><span class='tag'>"+esc((x.idioma||"?").toUpperCase())+"</span></td><td class='mut'>"+esc(x.categoria)+"</td><td class='n'>"+fmt(x.melhor.views)+"</td>"+
+    "<td class='n "+(r!=null&&r>=50?"am":"")+"'>"+fr(r)+"</td><td class='n'>"+fmt(x.inscritos)+"</td><td class='n'>"+fmt(x.views_dia)+"</td><td class='n up'>"+(g?"+"+fmt(g):"—")+"</td>"+
+    "<td class='n'>"+(x.dias_primeiro==null?"?":x.dias_primeiro+" d")+"</td><td>"+spark(x.historico,70,18,1)+"</td></tr>";}).join("")+"</tbody></table></div>";
+}
+function abrir(id,quieto){
+  var x=(D.canais||[]).filter(function(c){return c.id===id;})[0];if(!x){fechar();return;}aberto=id;
+  var m=x.melhor,r=ratio(x),g=cresc(x),mx=m.views||1;
+  $("gaveta").innerHTML="<div class='gv-top'><button class='bt' id='fechar'>✕ Fechar</button><span class='mut'>Esc</span></div>"+
+    "<a class='gv-img' href='https://youtu.be/"+esc(m.id)+"' target='_blank' rel='noopener'><img src='https://i.ytimg.com/vi/"+esc(m.id)+"/hqdefault.jpg' alt=''><span class='pv'>▶ "+fmt(m.views)+" views</span></a>"+
+    "<h2>"+esc(x.nome)+"</h2><div class='mut'>"+esc(LANGS[x.idioma]||x.idioma)+" · "+esc(x.categoria)+" · achado buscando “"+esc(x.termo)+"”</div>"+
+    "<div class='gv-met'><div><small>Melhor vídeo</small><b>"+fmt(m.views)+"</b></div><div><small>Outlier ×</small><b class='"+(r!=null&&r>=50?"am":"")+"'>"+fr(r)+"</b></div>"+
+    "<div><small>Inscritos</small><b>"+fmt(x.inscritos)+"</b></div><div><small>Views do canal</small><b>"+fmt(x.views_total)+"</b></div>"+
+    "<div><small>Vídeos longos</small><b>"+(x.n_longos==null?"?":x.n_longos)+"</b></div><div><small>Views/dia</small><b>"+fmt(x.views_dia)+"</b></div>"+
+    "<div><small>1º vídeo</small><b>"+fdata(x.primeiro_video)+"</b></div><div><small>Ganho 24h</small><b class='up'>"+(g?"+"+fmt(g):"—")+"</b></div></div>"+
+    "<div class='rot'>Views do canal ao longo das medições</div><div class='gv-sp'>"+spark(x.historico,320,60)+"</div>"+
+    "<div class='rot'>Vídeos mais vistos</div><ul class='bars grande'>"+(x.videos||[]).map(function(v){return"<li><a class='bt-t' href='https://youtu.be/"+esc(v.id)+"' target='_blank' rel='noopener'>"+esc(v.titulo)+"</a><span class='bt-v'>"+fmt(v.views)+"</span><i style='width:"+Math.max(2,Math.round(100*(v.views||0)/mx))+"%'></i></li>";}).join("")+"</ul>"+
+    "<div class='rot'>Temas que se repetem nos títulos</div><div class='temas'>"+((x.palavras||[]).slice(0,8).map(function(p){return"<span>"+esc(p.termo)+" <em>"+p.pct+"%</em></span>";}).join("")||"<span>sem tema repetido</span>")+"</div>"+
+    "<div class='gv-ac'><a class='bt pri' href='validador.html?t="+encodeURIComponent(m.titulo||"")+"'>Validar este título em 5 idiomas →</a><a class='bt' href='"+esc(x.url)+"' target='_blank' rel='noopener'>Abrir canal ↗</a></div>";
+  $("gaveta").className="gaveta on";$("gaveta").setAttribute("aria-hidden","false");$("veu").className="veu on";
+  $("fechar").onclick=fechar;if(!quieto)$("gaveta").scrollTop=0;
+}
+function fechar(){aberto=null;$("gaveta").className="gaveta";$("gaveta").setAttribute("aria-hidden","true");$("veu").className="veu"+($("lado").classList.contains("on")?" on":"");}
+function fecharLado(){$("lado").classList.remove("on");if(!aberto)$("veu").className="veu";}
 
-$("q").value=S.q;$("ordem").value=S.ordem;
-var tq;$("q").oninput=function(){clearTimeout(tq);tq=setTimeout(function(){S.q=$("q").value.trim();salvar();if(D)lista();},200);};
-$("ordem").onchange=function(){S.ordem=this.value;salvar();if(D)lista();};
-$("limpar").onclick=function(){S.cat="";S.lang="";S.q="";$("q").value="";salvar();if(D)tudo();};
+$("q").value=S.q;
+$("q").oninput=function(){S.q=this.value.trim();salvar();if(D)lista();};
+$("ordem").onchange=function(){S.ordem=this.value;salvar();lista();};
+[].forEach.call($("modo").children,function(b){b.onclick=function(){S.modo=b.dataset.m;salvar();lista();};});
+$("lista").addEventListener("click",function(e){var th=e.target.closest("th[data-o]");if(th){S.ordem=th.dataset.o;salvar();lista();}});
+$("limpar").onclick=function(){S.cat="";S.lang="";S.q="";$("q").value="";salvar();tudo();};
 $("recarregar").onclick=carregar;
+$("veu").onclick=function(){fechar();fecharLado();};
+$("abrir-filtros").onclick=function(){$("lado").classList.add("on");$("veu").className="veu on";};
+document.addEventListener("keydown",function(e){var tag=(e.target.tagName||"").toLowerCase();
+  if(e.key==="Escape"){fechar();fecharLado();if(tag==="input")e.target.blur();}
+  else if(tag!=="input"&&tag!=="select"){if(e.key==="/"){e.preventDefault();$("q").focus();}else if(e.key==="r"||e.key==="R")carregar();
+    else if(e.key==="Enter"&&e.target.dataset&&e.target.dataset.id)abrir(e.target.dataset.id);}});
 carregar();setInterval(carregar,30000);
 })();
 </script>
