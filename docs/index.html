@@ -125,13 +125,12 @@ footer{margin-top:30px;color:var(--mut);font-size:12.5px}
   <div class="kpis" id="kpis"></div>
 
   <h2 class="t">Mapa dos nichos</h2>
-  <p class="ts">Quantos canais novos e quantos performando em cada nicho amplo. Clique num nicho para filtrar.</p>
+  <p class="ts">Quantos outliers (canal novo com vídeo de 50 mil+) cada nicho amplo tem. Clique num nicho para filtrar.</p>
   <div class="mapa" id="mapa"></div>
 
   <div class="tools">
     <input class="busca" id="q" type="search" placeholder="Buscar canal, vídeo ou tema…">
     <div class="seg" id="langs"></div>
-    <label class="tog"><input type="checkbox" id="soPerf"><s></s>Só performando</label>
     <select class="sel" id="ordem" aria-label="Ordenar">
       <option value="melhor">Melhor vídeo</option>
       <option value="views">Mais views no canal</option>
@@ -148,7 +147,7 @@ footer{margin-top:30px;color:var(--mut);font-size:12.5px}
     <summary>Como ler esta página</summary>
     <div class="como">
       <div><b>Canal novo</b>O 1º vídeo do canal saiu nas últimas 3 semanas. A idade do canal não importa: vale a data do primeiro vídeo que está no ar.</div>
-      <div><b>Performando</b>O canal tem pelo menos um vídeo longo com 50 mil views ou mais. Não é a soma: os outros vídeos podem ter menos. Borda verde no card.</div>
+      <div><b>Só outliers</b>Só aparece canal com pelo menos um vídeo longo de 50 mil views ou mais. Não é a soma: os outros vídeos podem ter menos. Canal novo abaixo disso fica “em observação”, fora da lista, e entra sozinho se um vídeo passar de 50 mil.</div>
       <div><b>Só vídeos longos</b>Só contam vídeos de 4 minutos ou mais. Shorts não entram em nada.</div>
       <div><b>Crescimento 24h</b>Quantas views o canal ganhou desde a medição de ~24 horas atrás. Aparece depois da 2ª rodada.</div>
       <div><b>Temas</b>Palavras que se repetem nos títulos e em quantos % dos vídeos aparecem. Ajuda a ver o subnicho.</div>
@@ -182,6 +181,9 @@ function carregar(){
     var c=d.criterios||(d.criterios={});c.bom_video=c.bom_video||50000;
     // performando = pelo menos UM vídeo longo com bom_video views ou mais (não é a soma do canal)
     (d.canais||[]).forEach(function(x){x.performando=((x.melhor||{}).views||0)>=c.bom_video;});
+    // só outliers aparecem; os novos abaixo do corte ficam em observação (só o número)
+    if(d.em_observacao==null)d.em_observacao=(d.canais||[]).filter(function(x){return !x.performando;}).length;
+    d.canais=(d.canais||[]).filter(function(x){return x.performando;});
     D=d;$("erro").style.display="none";tudo();})
   .catch(function(e){$("erro").style.display="block";$("erro").textContent="Não consegui ler os dados agora ("+e.message+"). Tento de novo em 30 segundos.";});
 }
@@ -200,9 +202,9 @@ function tudo(){
   var top=cs.slice().sort(function(a,b){return ((b.melhor||{}).views||0)-((a.melhor||{}).views||0);})[0];
   var catsPerf={};perf.forEach(function(x){catsPerf[x.categoria]=1;});
   $("kpis").innerHTML=
-    "<div class='kpi'><b>"+cs.length+"</b><small>Canais novos</small></div>"+
-    "<div class='kpi g'><b>"+perf.length+"</b><small>Performando</small></div>"+
-    "<div class='kpi'><b>"+Object.keys(catsPerf).length+"</b><small>Nichos com canal performando</small></div>"+
+    "<div class='kpi g'><b>"+cs.length+"</b><small>Outliers (vídeo de 50 mil+)</small></div>"+
+    "<div class='kpi'><b>"+Object.keys(catsPerf).length+"</b><small>Nichos com outlier</small></div>"+
+    "<div class='kpi'><b>"+fmt(D.em_observacao)+"</b><small>Em observação (abaixo de 50 mil)</small></div>"+
     "<div class='kpi'><b>"+fmt(D.checados)+"</b><small>Canais checados</small></div>"+
     "<div class='kpi'><b>"+(top?fmt((top.melhor||{}).views):"—")+"</b><small>Maior vídeo de canal novo</small><span class='s'>"+(top?esc(top.nome):"")+"</span></div>";
   mapa(cs);langs(cs);lista();
@@ -220,7 +222,7 @@ function mapa(cs){
   var ks=Object.keys(cats).sort(function(a,b){return por[b].p-por[a].p||por[b].n-por[a].n;});
   $("mapa").innerHTML=ks.map(function(k){var o=por[k];return"<button class='nicho"+(S.cat===k?" on":"")+"' data-cat='"+esc(k)+"'>"+
     "<span class='g'>"+esc(cats[k])+"</span><span class='n'>"+esc(k)+"</span>"+
-    "<span class='c'><span><b>"+o.n+"</b> novos</span><span class='p'><b>"+o.p+"</b> performando</span></span>"+
+    "<span class='c'><span class='p'><b>"+o.p+"</b> "+(o.p===1?"outlier":"outliers")+"</span></span>"+
     "<span class='meter'><i style='width:"+Math.round(100*o.p/maxP)+"%'></i></span></button>";}).join("");
   Array.prototype.forEach.call(document.querySelectorAll(".nicho"),function(b){b.onclick=function(){S.cat=S.cat===b.dataset.cat?"":b.dataset.cat;salvar();mapa(D.canais||[]);lista();
     document.querySelector(".tools").scrollIntoView({behavior:"smooth"});};});
@@ -235,16 +237,16 @@ function langs(cs){
 
 function lista(){
   var cs=(D.canais||[]).filter(function(x){
-    if(S.cat&&x.categoria!==S.cat)return false;if(S.lang&&x.idioma!==S.lang)return false;if(S.perf&&!x.performando)return false;
+    if(S.cat&&x.categoria!==S.cat)return false;if(S.lang&&x.idioma!==S.lang)return false;
     if(S.q){var t=(x.nome+" "+(x.videos||[]).map(function(v){return v.titulo;}).join(" ")+" "+(x.palavras||[]).map(function(p){return p.termo;}).join(" ")+" "+x.categoria).toLowerCase();
       if(t.indexOf(S.q.toLowerCase())<0)return false;}return true;});
   var f={views:function(x){return x.views_total||0;},cresc:function(x){return cresc(x)||0;},dia:function(x){return x.views_dia||0;},
     novo:function(x){return -(x.dias_primeiro||0);},insc:function(x){return x.inscritos||0;},melhor:function(x){return (x.melhor||{}).views||0;}}[S.ordem]||function(x){return x.views_total||0;};
   cs.sort(function(a,b){return f(b)-f(a);});
-  var filtros=[S.cat,S.lang&&LANGS[S.lang],S.perf&&"só performando",S.q&&("“"+S.q+"”")].filter(Boolean);
-  $("cont").textContent="Mostrando "+cs.length+" de "+(D.canais||[]).length+" canais novos"+(filtros.length?" · filtro: "+filtros.join(", "):"");
+  var filtros=[S.cat,S.lang&&LANGS[S.lang],S.q&&("“"+S.q+"”")].filter(Boolean);
+  $("cont").textContent="Mostrando "+cs.length+" de "+(D.canais||[]).length+" outliers"+(filtros.length?" · filtro: "+filtros.join(", "):"");
   $("limpar").style.visibility=filtros.length?"visible":"hidden";
-  $("grid").innerHTML=cs.map(card).join("")||"<div class='vazio'>"+((D.canais||[]).length?"Nenhum canal com esses filtros.":"Ainda não apareceu nenhum canal novo. A busca está rodando — a página se atualiza sozinha.")+"</div>";
+  $("grid").innerHTML=cs.map(card).join("")||"<div class='vazio'>"+((D.canais||[]).length?"Nenhum canal com esses filtros.":"Nenhum outlier ainda: nenhum canal novo tem vídeo de 50 mil views até agora. A busca está rodando e a página se atualiza sozinha.")+"</div>";
 }
 
 function card(x,i){
@@ -264,11 +266,10 @@ function card(x,i){
     "<p class='achado'>Achado buscando “"+esc(x.termo)+"”</p></div></article>";
 }
 
-$("q").value=S.q;$("soPerf").checked=S.perf;$("ordem").value=S.ordem;
+$("q").value=S.q;$("ordem").value=S.ordem;
 var tq;$("q").oninput=function(){clearTimeout(tq);tq=setTimeout(function(){S.q=$("q").value.trim();salvar();if(D)lista();},200);};
-$("soPerf").onchange=function(){S.perf=this.checked;salvar();if(D)lista();};
 $("ordem").onchange=function(){S.ordem=this.value;salvar();if(D)lista();};
-$("limpar").onclick=function(){S.cat="";S.lang="";S.q="";S.perf=false;$("q").value="";$("soPerf").checked=false;salvar();if(D)tudo();};
+$("limpar").onclick=function(){S.cat="";S.lang="";S.q="";$("q").value="";salvar();if(D)tudo();};
 $("recarregar").onclick=carregar;
 carregar();setInterval(carregar,30000);
 })();

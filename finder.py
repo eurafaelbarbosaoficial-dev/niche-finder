@@ -141,12 +141,15 @@ def montar_dados(cache, info, cfg, a):
                        "id": cid, "url": f"https://www.youtube.com/channel/{cid}",
                        "dias_primeiro": d1, "views_dia": round((c.get("views_total") or 0) / max(d1, 1)),
                        "performando": ((c.get("melhor") or {}).get("views") or 0) >= a.bom_video})
+    # o site só mostra outliers (um vídeo com bom_video views ou mais); os outros ficam em observação
+    em_observacao = sum(1 for c in canais if not c["performando"])
+    canais = [c for c in canais if c["performando"]]
     return {"atualizado": agora().isoformat(), "rodada": info,
             "criterios": {"dias_video": a.dias_video, "bom_video": a.bom_video, "min_duracao": a.min_duracao,
                           "idiomas": ["pt", "es", "en", "de", "fr"]},
             "categorias": {k: v["grupo"] for k, v in cfg.items()},
             "checados": sum(1 for c in cache.values() if c.get("status") in ("novo", "fora")),
-            "fora": fora, "canais": canais}
+            "fora": fora, "em_observacao": em_observacao, "canais": canais}
 
 
 def publicar():
