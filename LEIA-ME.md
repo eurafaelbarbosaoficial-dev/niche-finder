@@ -2,7 +2,7 @@
 
 **Site:** https://eurafaelbarbosaoficial-dev.github.io/niche-finder/ · **Repositório:** https://github.com/eurafaelbarbosaoficial-dev/niche-finder
 
-Acha **canais novos** no YouTube, criados há até 30 dias, que já estão **performando**: têm pelo menos um vídeo
+Acha **canais novos** no YouTube (o 1º vídeo saiu nas últimas 3 semanas) que já estão **performando**: têm pelo menos um vídeo
 longo com 50 mil views ou mais. Não é a soma do canal. Procura em 17 nichos amplos e em PT, ES, EN, DE e FR, e mostra tudo num site em cards.
 Não usa a API do YouTube.
 
@@ -19,15 +19,14 @@ Não usa a API do YouTube.
 
 ## Regras da busca
 
-- **Canal novo:** criado há até 30 dias (data da aba "Sobre" do YouTube). Canal antigo que apagou os vídeos e
-  recomeçou fica de fora.
+- **Canal novo:** o 1º vídeo do canal saiu nas últimas 3 semanas (21 dias). A idade do canal não importa.
 - **Só vídeos longos:** 4 minutos ou mais. Shorts não entram.
 - **Performando:** pelo menos UM vídeo longo com 50 mil views ou mais. Os outros vídeos podem ter menos.
 - Canais com mais de 60 vídeos ficam de fora.
 - Canal já descartado nunca é checado de novo. Canal novo é medido de novo a cada rodada, para mostrar o
-  crescimento, até passar de 30 dias.
+  crescimento, até o 1º vídeo passar de 3 semanas.
 
-Para mudar um número: `finder.py --dias-canal 30 --bom-video 50000 --min-duracao 240`.
+Para mudar um número: `finder.py --dias-video 21 --bom-video 50000 --min-duracao 240`.
 
 ## Como o site fica sempre atualizado
 

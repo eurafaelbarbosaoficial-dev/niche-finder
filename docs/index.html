@@ -115,7 +115,7 @@ footer{margin-top:30px;color:var(--mut);font-size:12.5px}
 <div class="wrap">
   <section class="hero">
     <h1>Canais <span>novos</span> que já estão performando</h1>
-    <p class="lead" id="lead">Só entram canais <b>criados nos últimos 30 dias</b>, com <b>vídeos longos</b>, em português, espanhol, inglês, alemão e francês. Canal antigo que apagou os vídeos e recomeçou fica de fora.</p>
+    <p class="lead" id="lead">Só entram canais cujo <b>primeiro vídeo saiu nas últimas 3 semanas</b> e que já têm <b>pelo menos um vídeo longo com 50 mil views</b>. Em português, espanhol, inglês, alemão e francês.</p>
     <div class="crit" id="crit"></div>
   </section>
 
@@ -137,7 +137,7 @@ footer{margin-top:30px;color:var(--mut);font-size:12.5px}
       <option value="views">Mais views no canal</option>
       <option value="cresc">Mais crescimento (24h)</option>
       <option value="dia">Mais views por dia</option>
-      <option value="novo">Canal mais novo</option>
+      <option value="novo">1º vídeo mais recente</option>
       <option value="insc">Mais inscritos</option>
     </select>
   </div>
@@ -147,7 +147,7 @@ footer{margin-top:30px;color:var(--mut);font-size:12.5px}
   <details>
     <summary>Como ler esta página</summary>
     <div class="como">
-      <div><b>Canal novo</b>Criado há até 30 dias (data da aba “Sobre” do YouTube) e com o 1º vídeo também nos últimos 30 dias.</div>
+      <div><b>Canal novo</b>O 1º vídeo do canal saiu nas últimas 3 semanas. A idade do canal não importa: vale a data do primeiro vídeo que está no ar.</div>
       <div><b>Performando</b>O canal tem pelo menos um vídeo longo com 50 mil views ou mais. Não é a soma: os outros vídeos podem ter menos. Borda verde no card.</div>
       <div><b>Só vídeos longos</b>Só contam vídeos de 4 minutos ou mais. Shorts não entram em nada.</div>
       <div><b>Crescimento 24h</b>Quantas views o canal ganhou desde a medição de ~24 horas atrás. Aparece depois da 2ª rodada.</div>
@@ -190,7 +190,7 @@ function tudo(){
   var c=D.criterios||{}, r=D.rodada||{}, rodando=r.status==="buscando";
   $("dot").className="dot"+(rodando?" on":"");
   $("st").textContent=rodando?"Buscando agora · "+(r.fase||""):"Atualizado "+haQuanto(D.atualizado);
-  $("crit").innerHTML=[["Canal criado há até "+c.dias_canal+" dias"],["Só vídeos de "+Math.round(c.min_duracao/60)+" min ou mais"],
+  $("crit").innerHTML=[["1º vídeo há até "+Math.round((c.dias_video||21)/7)+" semanas"],["Só vídeos de "+Math.round(c.min_duracao/60)+" min ou mais"],
     ["Performando = 1 vídeo com "+fmt(c.bom_video)+"+ views"],["PT · ES · EN · DE · FR"],[Object.keys(D.categorias||{}).length+" nichos amplos"]]
     .map(function(x,i){return"<span><i>"+(i+1)+"</i>"+esc(x[0])+"</span>";}).join("");
   $("prog").className="prog"+(rodando?" on":"");
@@ -239,7 +239,7 @@ function lista(){
     if(S.q){var t=(x.nome+" "+(x.videos||[]).map(function(v){return v.titulo;}).join(" ")+" "+(x.palavras||[]).map(function(p){return p.termo;}).join(" ")+" "+x.categoria).toLowerCase();
       if(t.indexOf(S.q.toLowerCase())<0)return false;}return true;});
   var f={views:function(x){return x.views_total||0;},cresc:function(x){return cresc(x)||0;},dia:function(x){return x.views_dia||0;},
-    novo:function(x){return -(x.dias_canal||0);},insc:function(x){return x.inscritos||0;},melhor:function(x){return (x.melhor||{}).views||0;}}[S.ordem]||function(x){return x.views_total||0;};
+    novo:function(x){return -(x.dias_primeiro||0);},insc:function(x){return x.inscritos||0;},melhor:function(x){return (x.melhor||{}).views||0;}}[S.ordem]||function(x){return x.views_total||0;};
   cs.sort(function(a,b){return f(b)-f(a);});
   var filtros=[S.cat,S.lang&&LANGS[S.lang],S.perf&&"só performando",S.q&&("“"+S.q+"”")].filter(Boolean);
   $("cont").textContent="Mostrando "+cs.length+" de "+(D.canais||[]).length+" canais novos"+(filtros.length?" · filtro: "+filtros.join(", "):"");
@@ -258,8 +258,8 @@ function card(x,i){
     "<div class='tags1'><span class='cat'>"+esc(x.categoria)+"</span>"+(x.performando?"<span class='selo'>● Performando</span>":"")+(g?"<span class='cresc'>▲ +"+fmt(g)+" em 24h</span>":"")+"</div>"+
     "<div class='stats'><div><b>"+fmt(x.views_total)+"</b><small>Views</small></div><div><b>"+fmt(x.inscritos)+"</b><small>Inscritos</small></div>"+
     "<div><b>"+(x.n_longos==null?"?":x.n_longos)+"</b><small>Vídeos</small></div><div><b>"+fmt(x.views_dia)+"</b><small>Views/dia</small></div></div>"+
-    "<div class='datas'><div><small>Canal criado</small><b>"+fdata(x.criado)+"</b><em>há "+x.dias_canal+" dias</em></div>"+
-    "<div><small>1º vídeo</small><b>"+fdata(x.primeiro_video)+"</b><em>há "+(x.dias_primeiro==null?"?":x.dias_primeiro)+" dias</em></div></div>"+
+    "<div class='datas'><div><small>1º vídeo</small><b>"+fdata(x.primeiro_video)+"</b><em>há "+(x.dias_primeiro==null?"?":x.dias_primeiro)+" dias</em></div>"+
+    "<div><small>Melhor vídeo</small><b>"+fmt(m.views)+" views</b><em>"+(dur?dur+" min":"")+"</em></div></div>"+
     "<div class='temas'>"+temas+"</div><p class='sec'>Vídeos mais vistos</p><ol class='vids'>"+vids+"</ol>"+
     "<p class='achado'>Achado buscando “"+esc(x.termo)+"”</p></div></article>";
 }

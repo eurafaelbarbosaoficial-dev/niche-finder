@@ -1,4 +1,4 @@
-"""Niche Finder — acha CANAIS NOVOS (criados há até 30 dias) que já performam bem com vídeos longos, em vários nichos
+"""Niche Finder — acha CANAIS NOVOS (1º vídeo nas últimas 3 semanas) que já performam bem com vídeos longos, em vários nichos
 amplos e em PT, ES, EN, DE e FR. Grava docs/dados.json, que o site (docs/index.html) lê e mostra em cards.
 
 Uso:  python -I finder.py [--por-busca 20] [--dias-canal 30] [--bom-video 50000] [--min-duracao 240]
@@ -8,10 +8,9 @@ Como funciona (cada rodada):
 1. Busca no YouTube os termos de categorias.json (vídeos enviados no último mês).
 2. Para cada canal achado que ainda não foi descartado:
    - mais de 60 vídeos → fora para sempre (canal grande);
-   - 1º vídeo mais velho que 30 dias → fora para sempre (canal com vídeos antigos);
-   - data de criação (aba "Sobre") mais velha que 30 dias → fora para sempre (canal antigo que recomeçou);
+   - 1º vídeo mais velho que 3 semanas → fora para sempre (a idade do canal não importa);
    - senão é CANAL NOVO: mede views dos vídeos longos (4 min ou mais) e guarda o histórico.
-3. Canais novos já conhecidos são medidos de novo a cada rodada (views crescem) até passarem de 30 dias.
+3. Canais novos já conhecidos são medidos de novo a cada rodada (views crescem) até o 1º vídeo passar de 3 semanas.
 Só vídeos longos contam (Shorts e vídeos com menos de 4 min ficam de fora). Nada é inventado: o que o YouTube não
 informou fica vazio ("?" no site).
 """
@@ -100,8 +99,9 @@ def medir_videos(d, min_dur):
             "palavras": palavras_canal([v["titulo"] for v in longos])}
 
 
-def checar_novo(cid, dias_canal, min_dur):
-    """Primeira checagem de um canal. Devolve o registro (status: novo | fora | tentar)."""
+def checar_novo(cid, dias_video, min_dur):
+    """Primeira checagem de um canal. Devolve o registro (status: novo | fora | tentar).
+    Regra: o 1º vídeo do canal saiu há até `dias_video` dias (a idade do canal não importa)."""
     hoje = dt.date.today()
     d = lista_videos(cid)
     if d is None:
@@ -113,16 +113,13 @@ def checar_novo(cid, dias_canal, min_dur):
     if not ents:
         return {**base, "status": "tentar", "motivo": "sem vídeos na aba de vídeos"}
     primeiro, lang = data_video(ents[-1]["id"])
-    if primeiro and (hoje - primeiro).days > dias_canal:
-        return {**base, "status": "fora", "motivo": f"vídeos antigos (1º em {primeiro})"}
-    criado = data_criacao(cid)
-    if not criado:
-        return {**base, "status": "tentar", "motivo": "não consegui ler a data de criação"}
-    if (hoje - dt.date.fromisoformat(criado)).days > dias_canal:
-        return {**base, "status": "fora", "motivo": f"canal antigo (criado em {criado})"}
+    if not primeiro:
+        return {**base, "status": "tentar", "motivo": "não consegui ler a data do 1º vídeo"}
+    if (hoje - primeiro).days > dias_video:
+        return {**base, "status": "fora", "motivo": f"1º vídeo antigo (em {primeiro})"}
     if lang and not lang.startswith("en"):  # títulos originais, não os traduzidos pelo YouTube
         d = lista_videos(cid, lang) or d
-    return {**base, "status": "novo", "criado": criado, "primeiro_video": str(primeiro) if primeiro else None,
+    return {**base, "status": "novo", "primeiro_video": str(primeiro),
             "idioma": (lang or "?").split("-")[0], **medir_videos(d, min_dur)}
 
 
@@ -133,20 +130,19 @@ def montar_dados(cache, info, cfg, a):
         if c.get("status") == "fora":
             k = c["motivo"].split(" (")[0]
             fora[k] = fora.get(k, 0) + 1
-        if c.get("status") != "novo":
+        if c.get("status") != "novo" or not c.get("primeiro_video"):
             continue
-        dias = (hoje - dt.date.fromisoformat(c["criado"])).days
-        if dias > a.dias_canal:
+        d1 = (hoje - dt.date.fromisoformat(c["primeiro_video"])).days
+        if d1 > a.dias_video:
             continue
-        d1 = (hoje - dt.date.fromisoformat(c["primeiro_video"])).days if c.get("primeiro_video") else None
-        canais.append({**{k: c.get(k) for k in ("nome", "inscritos", "idioma", "categoria", "grupo", "termo", "criado",
+        canais.append({**{k: c.get(k) for k in ("nome", "inscritos", "idioma", "categoria", "grupo", "termo",
                                                 "primeiro_video", "n_longos", "views_total", "melhor", "videos",
                                                 "palavras", "historico", "visto_em")},
-                       "id": cid, "url": f"https://www.youtube.com/channel/{cid}", "dias_canal": dias,
-                       "dias_primeiro": d1, "views_dia": round((c.get("views_total") or 0) / max(d1 or dias, 1)),
+                       "id": cid, "url": f"https://www.youtube.com/channel/{cid}",
+                       "dias_primeiro": d1, "views_dia": round((c.get("views_total") or 0) / max(d1, 1)),
                        "performando": ((c.get("melhor") or {}).get("views") or 0) >= a.bom_video})
     return {"atualizado": agora().isoformat(), "rodada": info,
-            "criterios": {"dias_canal": a.dias_canal, "bom_video": a.bom_video, "min_duracao": a.min_duracao,
+            "criterios": {"dias_video": a.dias_video, "bom_video": a.bom_video, "min_duracao": a.min_duracao,
                           "idiomas": ["pt", "es", "en", "de", "fr"]},
             "categorias": {k: v["grupo"] for k, v in cfg.items()},
             "checados": sum(1 for c in cache.values() if c.get("status") in ("novo", "fora")),
@@ -168,7 +164,8 @@ def publicar():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--por-busca", type=int, default=20)
-    ap.add_argument("--dias-canal", type=int, default=30)
+    ap.add_argument("--dias-video", type=int, default=21,
+                    help="o 1º vídeo do canal saiu há até N dias (3 semanas = 21)")
     ap.add_argument("--bom-video", type=int, default=50000,
                     help="performando = o canal tem pelo menos UM vídeo longo com esse número de views ou mais")
     ap.add_argument("--min-duracao", type=int, default=240)
@@ -195,6 +192,10 @@ def rodada(a, trava):
     from concurrent.futures import ThreadPoolExecutor, as_completed
     cfg = ler(AQUI / "categorias.json", {})
     cache = ler(CACHE_F, {})
+    # regra antiga (idade do canal) não vale mais: quem saiu só por ela é checado de novo
+    for cid in [k for k, c in cache.items() if c.get("status") != "novo" and str(c.get("motivo", "")).startswith(
+            ("canal antigo", "não consegui ler a data de criação", "passou de 30 dias"))]:
+        del cache[cid]
     info = {"status": "buscando", "inicio": agora().isoformat(), "fase": "Buscando vídeos novos", "feito": 0, "total": 0}
     ultimo = {"push": 0.0}
 
@@ -241,14 +242,15 @@ def rodada(a, trava):
     def trabalho(cid):
         antigo = dict(cache.get(cid, {}))
         if antigo.get("status") == "novo":
-            if (dt.date.today() - dt.date.fromisoformat(antigo["criado"])).days > a.dias_canal:
-                return {**antigo, "status": "fora", "motivo": "passou de 30 dias"}
+            if not antigo.get("primeiro_video") or \
+                    (dt.date.today() - dt.date.fromisoformat(antigo["primeiro_video"])).days > a.dias_video:
+                return {**antigo, "status": "fora", "motivo": "1º vídeo passou de 3 semanas"}
             d = lista_videos(cid, antigo.get("idioma"))
             if d:
                 antigo.update(medir_videos(d, a.min_duracao))
             return antigo
         cat, grupo, termo = achados[cid]
-        return {**checar_novo(cid, a.dias_canal, a.min_duracao), "categoria": cat, "grupo": grupo,
+        return {**checar_novo(cid, a.dias_video, a.min_duracao), "categoria": cat, "grupo": grupo,
                 "termo": termo, "visto_em": dt.date.today().isoformat()}
 
     with ThreadPoolExecutor(a.paralelo) as ex:

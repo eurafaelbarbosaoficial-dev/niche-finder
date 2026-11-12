@@ -2,7 +2,7 @@
 
 O dono não é programador: explique em português simples. Leia o `LEIA-ME.md` antes de mexer.
 
-- O que é: acha canais NOVOS no YouTube (criados há até 30 dias, data da aba "Sobre") com pelo menos UM vídeo longo
+- O que é: acha canais NOVOS no YouTube (o 1º vídeo saiu nas últimas 3 semanas; a idade do canal não importa) com pelo menos UM vídeo longo
   (4 min ou mais) com 50 mil views ou mais. Não é a soma do canal. Shorts não entram. 17 nichos amplos
   (`categorias.json`) em PT, ES, EN, DE e FR.
 - Link do site: https://eurafaelbarbosaoficial-dev.github.io/niche-finder/
