@@ -1,0 +1,178 @@
+{
+ "slug": "lavagem-de-dinheiro-de",
+ "medidas": {
+  "id": "XgIo6SrSxS4",
+  "titulo": "Every Money Laundering Technique Explained",
+  "canal": "Econ in a Nutshell",
+  "views": 1125922,
+  "duracao": 671,
+  "idioma": "en",
+  "palavras": 1842,
+  "palavras_por_minuto": 165,
+  "capitulos": [
+   {
+    "ini": 0,
+    "titulo": "The boxes that fit the teller's window"
+   },
+   {
+    "ini": 54,
+    "titulo": "Why criminals need to launder money"
+   },
+   {
+    "ini": 92,
+    "titulo": "Placement, layering, integration"
+   },
+   {
+    "ini": 111,
+    "titulo": "Where the name really comes from"
+   },
+   {
+    "ini": 126,
+    "titulo": "1 The cash business"
+   },
+   {
+    "ini": 177,
+    "titulo": "2 Smurfing"
+   },
+   {
+    "ini": 219,
+    "titulo": "3 The casino"
+   },
+   {
+    "ini": 259,
+    "titulo": "4 Trade-based laundering"
+   },
+   {
+    "ini": 287,
+    "titulo": "The Black Market Peso Exchange"
+   },
+   {
+    "ini": 314,
+    "titulo": "5 Shell companies"
+   },
+   {
+    "ini": 339,
+    "titulo": "The Panama Papers"
+   },
+   {
+    "ini": 370,
+    "titulo": "6 Buy something expensive"
+   },
+   {
+    "ini": 388,
+    "titulo": "The 1MDB scandal"
+   },
+   {
+    "ini": 439,
+    "titulo": "7 A bank that looks the other way"
+   },
+   {
+    "ini": 500,
+    "titulo": "8 Underground banking"
+   },
+   {
+    "ini": 537,
+    "titulo": "9 Crypto"
+   },
+   {
+    "ini": 591,
+    "titulo": "Why they all get caught"
+   },
+   {
+    "ini": 599,
+    "titulo": "Al Capone and tax evasion"
+   },
+   {
+    "ini": 623,
+    "titulo": "How much money is laundered?"
+   },
+   {
+    "ini": 638,
+    "titulo": "Follow the money"
+   }
+  ]
+ },
+ "analise": {
+  "resumo": "Catálogo sequencial com abertura fria em caso real. 9 técnicas em ordem da mais antiga à mais nova, cada uma com a MESMA mini-estrutura (como funciona → exemplo do dia a dia → caso real com número e ano → 'a fraqueza' → como pega). Fecha amarrando tudo numa única ideia ('o dinheiro sempre deixa rastro') e volta à imagem do começo.",
+  "formato": "Catálogo sequencial (every [X] explained), narração em 3ª pessoa, explicativo",
+  "duracao_seg": 671,
+  "palavras_por_minuto": 165,
+  "gancho": {
+   "tipo": "Abertura fria em caso real (in medias res), sem apresentação do canal",
+   "como": "Cena visual concreta (caixas do tamanho exato do guichê do banco, cheias de dinheiro) → revela o banco gigante (HSBC) → número chocante (880 milhões; multa de 1,9 bilhão) → define o assunto em 1 frase → promessa do vídeo ('dezenas de jeitos… cada um tem uma fraqueza; vamos um por um, do mais antigo ao mais novo, e ver como cada um é pego').",
+   "duracao_seg": 54,
+   "por_que_funciona": "Gatilho de curiosidade + proibido; a promessa 'cada um tem uma fraqueza' cria um padrão que o espectador quer ver repetido até o fim (efeito completude)."
+  },
+  "blocos": [
+   {
+    "ini": 0,
+    "fim": 54,
+    "nome": "Gancho: caso real",
+    "funcao": "Prender com uma cena e um número; prometer o percurso",
+    "palavras_aprox": 150
+   },
+   {
+    "ini": 54,
+    "fim": 126,
+    "nome": "Contexto rápido",
+    "funcao": "Por que o problema existe (o dinheiro sujo é inútil) + o modelo em 3 passos (colocação, ocultação, integração) + uma curiosidade que desmonta um mito (origem do nome)",
+    "palavras_aprox": 200
+   },
+   {
+    "ini": 126,
+    "fim": 591,
+    "nome": "Catálogo: 9 itens",
+    "funcao": "O corpo do vídeo. Cada item ~45–60 s, do mais simples/antigo ao mais moderno",
+    "palavras_aprox": 1280,
+    "molde_do_item": [
+     "'Técnica número N, [nome curto]' (anúncio seco)",
+     "Como funciona em 2–3 frases, com exemplo do dia a dia (lava-jato, pizzaria, fichas de cassino)",
+     "Caso real com nome, ano e número (HSBC, Danske Bank, 1MDB, Panama Papers, Bitfinex)",
+     "'A fraqueza:' + uma palavra (física, padrões, preços, pessoas)",
+     "Como os investigadores pegam (1–2 frases)"
+    ],
+    "itens": [
+     "negócio de dinheiro vivo",
+     "smurfing (depósitos pequenos)",
+     "cassino",
+     "comércio exterior (nota fiscal falsa)",
+     "empresa de fachada (offshore)",
+     "comprar coisas caras (imóvel, arte)",
+     "banco que faz vista grossa",
+     "banco paralelo (hawala)",
+     "cripto"
+    ]
+   },
+   {
+    "ini": 591,
+    "fim": 655,
+    "nome": "Virada / síntese",
+    "funcao": "Responde 'qual é a melhor?' → 'nenhuma': todas têm a mesma fraqueza. Prova com Al Capone (preso por sonegação) e escala do problema (2–5% do PIB mundial; só 1% confiscado)",
+    "palavras_aprox": 170
+   },
+   {
+    "ini": 655,
+    "fim": 671,
+    "nome": "Fechamento",
+    "funcao": "Por que importa + volta à imagem do começo (ratos, restaurante vazio que nunca fecha) + CTA de 1 linha",
+    "palavras_aprox": 60
+   }
+  ],
+  "transicoes": "Secas e numeradas ('Technique number five…'). Dentro do item, a virada é sempre 'The weakness?'. Quase sem conectivos longos.",
+  "gatilhos": [
+   "proibido (como criminosos fazem)",
+   "curiosidade (cada truque)",
+   "justiça (todos são pegos)",
+   "números enormes",
+   "padrão repetido (completude)"
+  ],
+  "detalhes_de_estilo": [
+   "frases curtas",
+   "um número concreto por item",
+   "humor seco pontual ('um filme sobre fraude financiado por fraude')",
+   "mito desmontado (Al Capone e as lavanderias)"
+  ],
+  "cta": "Uma linha só no último segundo: 'Inscreva-se para não perder mais temas de economia'.",
+  "regra": "Copiar a ESTRUTURA (gancho em caso real → contexto → N itens com a mesma mini-estrutura → síntese → volta ao começo), nunca o texto. Os casos e números do roteiro novo precisam ter fonte."
+ }
+}
