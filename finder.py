@@ -92,11 +92,23 @@ def medir_videos(d, min_dur):
     longos = [{"id": e["id"], "titulo": e.get("title"), "views": e.get("view_count"), "dur": e.get("duration")}
               for e in ents if (e.get("duration") or 0) >= min_dur]
     views = [v["views"] for v in longos if v["views"] is not None]
-    return {"inscritos": d.get("channel_follower_count"), "n_longos": len(longos),
+    r = {"n_longos": len(longos),
             "views_total": sum(views) if views else 0,
             "melhor": max(longos, key=lambda v: v["views"] or 0) if longos else None,
             "videos": sorted(longos, key=lambda v: -(v["views"] or 0))[:5],
             "palavras": palavras_canal([v["titulo"] for v in longos])}
+    if d.get("channel_follower_count") is not None:  # com lang=fr/es/de o YouTube escreve "mil abonnés" e vem vazio
+        r["inscritos"] = d["channel_follower_count"]
+    return r
+
+
+def inscritos(cid):
+    """Inscritos lidos SEM idioma (a página em inglês o yt-dlp sempre entende)."""
+    try:
+        return json.loads(yt(["-J", "--flat-playlist", "--playlist-end", "1",
+                              f"https://www.youtube.com/channel/{cid}/videos"]) or "{}").get("channel_follower_count")
+    except Exception:
+        return None
 
 
 def checar_novo(cid, dias_video, min_dur):
@@ -251,6 +263,8 @@ def rodada(a, trava):
             d = lista_videos(cid, antigo.get("idioma"))
             if d:
                 antigo.update(medir_videos(d, a.min_duracao))
+                if antigo.get("inscritos") is None:
+                    antigo["inscritos"] = inscritos(cid)
             return antigo
         cat, grupo, termo = achados[cid]
         return {**checar_novo(cid, a.dias_video, a.min_duracao), "categoria": cat, "grupo": grupo,
