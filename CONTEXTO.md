@@ -70,6 +70,14 @@ O dono pede ("quero usar o Niche Finder nesta máquina nova") e o Claude faz, gu
 3. Na pasta: `powershell -ExecutionPolicy Bypass -File instalar.ps1` (Python, yt-dlp, Deno, tarefa a cada 3 h).
 4. Configurar o git (user.name eurafaelbarbosaoficial-dev e o e-mail noreply do GitHub, nunca o e-mail pessoal).
 5. Ler este arquivo; rodar `python -I finder.py --publicar 5` de teste e conferir se o site atualiza.
+5b. Clonar também `eurafaelbarbosaoficial-dev/estudos-de-mercado` (PRIVADO) em `Documents\estudos-de-mercado`: lá ficam as
+   skills do dono (`setup/skills/`: canal-dark, estudar, novela-americana, claude-youtube, watch-skill) e a memória do
+   Claude (`setup/memoria-claude/`). Copiar as skills para `%USERPROFILE%\.claude\skills\` e rodar `setup\instalar.ps1`.
+5c. **Backup privado** (fora do GitHub de propósito): `Documents\Backup Niche Finder\backup-privado-<data>.zip` — chave da
+   API do YouTube, prints do Studio, histórico dos canais e o vídeo final. O dono guarda no Drive/pendrive; na máquina nova,
+   descompactar DENTRO de `Documents\Niche Finder`. Sem o zip: criar outra chave no Google Cloud (projeto "Niche Finder").
+5d. Tarefas do Windows: o `instalar.ps1` cria "Niche Finder" (busca), "Niche Finder - Roteiros" (vigia) e
+   "Niche Finder - Pautas semanais". O Claude Code de linha de comando precisa de login uma vez (`claude`, /login).
 6. Na máquina antiga: apagar a tarefa "Niche Finder" (`Unregister-ScheduledTask -TaskName "Niche Finder" -Confirm:$false`),
    pelo Claude de lá ou pelo Agendador de Tarefas. Só uma máquina busca por vez.
 
