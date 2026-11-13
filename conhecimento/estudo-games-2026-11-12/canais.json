@@ -1,0 +1,1385 @@
+{
+ "info": {
+  "nicho": "games",
+  "semanas": 3,
+  "regra_bom": "melhor vídeo ≥ 50.000 views",
+  "n_buscas": 30,
+  "n_vistos": 430,
+  "periodo_busca": "mes",
+  "data": "2026-11-12"
+ },
+ "canais": [
+  {
+   "id": "UCS64i6xCOZBsOqFh9ypBUSg",
+   "nome": "Primary Source",
+   "inscritos": 80,
+   "url": "https://www.youtube.com/channel/UCS64i6xCOZBsOqFh9ypBUSg",
+   "descricao": "",
+   "idioma_real": "en",
+   "palavras": [
+    {
+     "termo": "documentary",
+     "videos": 5,
+     "pct": 15
+    },
+    {
+     "termo": "history",
+     "videos": 5,
+     "pct": 15
+    },
+    {
+     "termo": "germany",
+     "videos": 5,
+     "pct": 15
+    },
+    {
+     "termo": "from",
+     "videos": 5,
+     "pct": 15
+    },
+    {
+     "termo": "full documentary",
+     "videos": 4,
+     "pct": 12
+    },
+    {
+     "termo": "monster",
+     "videos": 4,
+     "pct": 12
+    },
+    {
+     "termo": "every",
+     "videos": 4,
+     "pct": 12
+    },
+    {
+     "termo": "demon",
+     "videos": 4,
+     "pct": 12
+    }
+   ],
+   "n_videos": 33,
+   "n_longos": 33,
+   "primeiro_video": "2026-10-29",
+   "dias_desde_primeiro": 14,
+   "views_total": 19495,
+   "views_mediana": 145,
+   "melhor": {
+    "id": "YbrHt9JcATk",
+    "titulo": "Every Weapon in Battlefield 1 — The Real History (Full Documentary)",
+    "views": 6900,
+    "dur": 11789
+   },
+   "views_por_dia": 1392,
+   "videos": [
+    {
+     "id": "YbrHt9JcATk",
+     "titulo": "Every Weapon in Battlefield 1 — The Real History (Full Documentary)",
+     "views": 6900,
+     "dur": 11789
+    },
+    {
+     "id": "aiHBWRIER_M",
+     "titulo": "From the Worker's Card to the Weapons Factory | Forced Labour in Nazi Germany — Full Documentary",
+     "views": 3800,
+     "dur": 10383
+    },
+    {
+     "id": "jkFM-gaur_w",
+     "titulo": "The SS: How Hitler's Bodyguard Became the Engine of the Holocaust",
+     "views": 1300,
+     "dur": 1268
+    },
+    {
+     "id": "a7Go3VvfJcY",
+     "titulo": "Hitler's Security State: The 10 Agencies That Watched, Hunted and Killed",
+     "views": 1000,
+     "dur": 1242
+    },
+    {
+     "id": "es7B3ouZoWU",
+     "titulo": "Beyond the Army: The 10 Organizations That Ran Nazi Germany",
+     "views": 897,
+     "dur": 982
+    },
+    {
+     "id": "W2OJpgRK0_0",
+     "titulo": "The Prussian War Machine: Every Weapon of the German Army, 1914–1918",
+     "views": 760,
+     "dur": 2543
+    }
+   ],
+   "idioma_busca": "en",
+   "termo": "video game history documentary",
+   "idioma": "en",
+   "aprovado": false
+  },
+  {
+   "id": "UCAEu1nj7fSckx-gcqHjhCmQ",
+   "nome": "Rabisco Gamer",
+   "inscritos": 599,
+   "url": "https://www.youtube.com/channel/UCAEu1nj7fSckx-gcqHjhCmQ",
+   "descricao": "Explicando coisas em alguns minutos.",
+   "idioma_real": "pt",
+   "palavras": [
+    {
+     "termo": "games",
+     "videos": 2,
+     "pct": 100
+    }
+   ],
+   "n_videos": 2,
+   "n_longos": 2,
+   "primeiro_video": "2026-11-01",
+   "dias_desde_primeiro": 11,
+   "views_total": 7222,
+   "views_mediana": 3611,
+   "melhor": {
+    "id": "BPQEpsNWpCc",
+    "titulo": "As Maiores Conquistas De Brasileiros Nos Games!",
+    "views": 7100,
+    "dur": 864
+   },
+   "views_por_dia": 657,
+   "videos": [
+    {
+     "id": "BPQEpsNWpCc",
+     "titulo": "As Maiores Conquistas De Brasileiros Nos Games!",
+     "views": 7100,
+     "dur": 864
+    },
+    {
+     "id": "hZudv33i2gE",
+     "titulo": "Os Vazamentos Mais Absurdos Da História Dos Games!",
+     "views": 122,
+     "dur": 1075
+    }
+   ],
+   "idioma_busca": "pt",
+   "termo": "história dos games",
+   "idioma": "pt",
+   "aprovado": false
+  },
+  {
+   "id": "UCfw1Zen_RM-eFAiDeX26e6g",
+   "nome": "Path no AR",
+   "inscritos": 88,
+   "url": "https://www.youtube.com/channel/UCfw1Zen_RM-eFAiDeX26e6g",
+   "descricao": "Notícias, lançamentos e curiosidades sobre o mundo dos games. 🎮 Aqui a gente fala de tudo que rola nos videogames, de grandes lançamentos a jogos que merecem sua atenção.\n",
+   "idioma_real": "pt",
+   "palavras": [
+    {
+     "termo": "segredos",
+     "videos": 2,
+     "pct": 67
+    },
+    {
+     "termo": "games",
+     "videos": 2,
+     "pct": 67
+    }
+   ],
+   "n_videos": 3,
+   "n_longos": 3,
+   "primeiro_video": "2026-10-27",
+   "dias_desde_primeiro": 16,
+   "views_total": 8700,
+   "views_mediana": 63,
+   "melhor": {
+    "id": "MLxTgX7fPTQ",
+    "titulo": "Os Segredos Mais Bizarros de Castlevania que Você Não Conhecia",
+    "views": 8600,
+    "dur": 1259
+   },
+   "views_por_dia": 544,
+   "videos": [
+    {
+     "id": "MLxTgX7fPTQ",
+     "titulo": "Os Segredos Mais Bizarros de Castlevania que Você Não Conhecia",
+     "views": 8600,
+     "dur": 1259
+    },
+    {
+     "id": "YXYaz0ScUbw",
+     "titulo": "Por que os jogos INDIES estão conquistando o mundo dos games?",
+     "views": 63,
+     "dur": 333
+    },
+    {
+     "id": "0fvyuZT4cNc",
+     "titulo": "Zelda: Os mistérios e segredos que fizeram história nos games",
+     "views": 37,
+     "dur": 1212
+    }
+   ],
+   "idioma_busca": "pt",
+   "termo": "segredos dos videogames",
+   "idioma": "pt",
+   "aprovado": false
+  },
+  {
+   "id": "UCyiyd359McH1_Y4QwdbRjjA",
+   "nome": "PsOnPlay",
+   "inscritos": 6,
+   "url": "https://www.youtube.com/channel/UCyiyd359McH1_Y4QwdbRjjA",
+   "descricao": "🎮 Bem-vindo ao PS ON Play! Seu próximo nível no universo gamer começa aqui!\n\nAqui você encontra tudo sobre o mundo dos games: melhores jogos de PS5, grandes lançamentos, gameplays, notícias, análises, dicas e muito mais!\n\n🔥 O que rola por aqui?\n\n🎮 Melhores jogos: listas e recomendações para descobri",
+   "idioma_real": "pt",
+   "palavras": [
+    {
+     "termo": "ps5",
+     "videos": 4,
+     "pct": 80
+    },
+    {
+     "termo": "jogos",
+     "videos": 3,
+     "pct": 60
+    },
+    {
+     "termo": "2026",
+     "videos": 3,
+     "pct": 60
+    },
+    {
+     "termo": "imersiva comentários",
+     "videos": 2,
+     "pct": 40
+    },
+    {
+     "termo": "gameplay imersiva",
+     "videos": 2,
+     "pct": 40
+    },
+    {
+     "termo": "comentários ps5",
+     "videos": 2,
+     "pct": 40
+    },
+    {
+     "termo": "melhores jogos",
+     "videos": 2,
+     "pct": 40
+    },
+    {
+     "termo": "modern warfare",
+     "videos": 2,
+     "pct": 40
+    }
+   ],
+   "n_videos": 5,
+   "n_longos": 5,
+   "primeiro_video": "2026-10-27",
+   "dias_desde_primeiro": 16,
+   "views_total": 812,
+   "views_mediana": 30,
+   "melhor": {
+    "id": "QWRn9W6Dq88",
+    "titulo": "🔥 TOP 10 MELHORES JOGOS DE PS5 PARA JOGAR EM 2026!",
+    "views": 707,
+    "dur": 673
+   },
+   "views_por_dia": 51,
+   "videos": [
+    {
+     "id": "QWRn9W6Dq88",
+     "titulo": "🔥 TOP 10 MELHORES JOGOS DE PS5 PARA JOGAR EM 2026!",
+     "views": 707,
+     "dur": 673
+    },
+    {
+     "id": "wzfgBnWtb4s",
+     "titulo": "🔥 OS 10 MELHORES JOGOS DE PS5 EM 2026 - MUNDO ABERTO (ANTES DO GTA 6 CHEGAR!)",
+     "views": 49,
+     "dur": 628
+    },
+    {
+     "id": "2VVlQaTp1yI",
+     "titulo": "🔥 JOGOS DE PS 5 MAIS ESPERADOS PARA 2026/2027",
+     "views": 30,
+     "dur": 850
+    },
+    {
+     "id": "wUTK6R24Nmg",
+     "titulo": "CALL OF DUTY: MODERN WARFARE 4 | PARTE 1 | GAMEPLAY IMERSIVA SEM COMENTÁRIOS (PS5)",
+     "views": 19,
+     "dur": 9462
+    },
+    {
+     "id": "9PNiMdyemSw",
+     "titulo": "CALL OF DUTY: MODERN WARFARE 4 | PARTE 2 | GAMEPLAY IMERSIVA SEM COMENTÁRIOS (PS5)",
+     "views": 7,
+     "dur": 10317
+    }
+   ],
+   "idioma_busca": "pt",
+   "termo": "jogos mais esperados",
+   "idioma": "pt",
+   "aprovado": false
+  },
+  {
+   "id": "UCgOfNWeRy57QusT69ZLwYyA",
+   "nome": "Nivel Hype",
+   "inscritos": 6,
+   "url": "https://www.youtube.com/channel/UCgOfNWeRy57QusT69ZLwYyA",
+   "descricao": "NIVEL HYPE: lo que viene en videojuegos… con lo bueno y sus pegas.\n\nCada mes, los juegos más esperados. Cada semana, los anuncios y tráileres que importan. Y cuando sale un juego grande, lo que dice la gente de verdad: prensa, foros y Steam. Con nuestro NIVEL HYPE de cada juego.\n\nGTA VI, Zelda, Worl",
+   "idioma_real": "es",
+   "palavras": [
+    {
+     "termo": "más",
+     "videos": 8,
+     "pct": 57
+    },
+    {
+     "termo": "noviembre",
+     "videos": 4,
+     "pct": 29
+    },
+    {
+     "termo": "lo",
+     "videos": 4,
+     "pct": 29
+    },
+    {
+     "termo": "1",
+     "videos": 4,
+     "pct": 29
+    },
+    {
+     "termo": "más esperado",
+     "videos": 3,
+     "pct": 21
+    },
+    {
+     "termo": "juegos más",
+     "videos": 3,
+     "pct": 21
+    },
+    {
+     "termo": "lo más",
+     "videos": 3,
+     "pct": 21
+    },
+    {
+     "termo": "gta 6",
+     "videos": 3,
+     "pct": 21
+    }
+   ],
+   "n_videos": 14,
+   "n_longos": 9,
+   "primeiro_video": "2026-10-29",
+   "dias_desde_primeiro": 14,
+   "views_total": 660,
+   "views_mediana": 8,
+   "melhor": {
+    "id": "UQgSkxO9PH0",
+    "titulo": "En pocas HORAS, Hogwarts Legacy parecerá REAL… y sin mods (DLSS 5)",
+    "views": 549,
+    "dur": 136
+   },
+   "views_por_dia": 47,
+   "videos": [
+    {
+     "id": "UQgSkxO9PH0",
+     "titulo": "En pocas HORAS, Hogwarts Legacy parecerá REAL… y sin mods (DLSS 5)",
+     "views": 549,
+     "dur": 136
+    },
+    {
+     "id": "FsPSFiishL8",
+     "titulo": "SE FILTRA TODO de ZELDA Ocarina of Time a días de su lanzamiento (y la primera reseña)",
+     "views": 22,
+     "dur": 165
+    },
+    {
+     "id": "gmpCt0V60CU",
+     "titulo": "Los 10 juegos MÁS ESPERADOS de 2027… y el nº 1 es un God of War SIN Kratos",
+     "views": 14,
+     "dur": 315
+    },
+    {
+     "id": "96Q69uTO0uE",
+     "titulo": "TERMINATOR ahora es PAPÁ NOEL… y el tráiler que ha ROTO el récord de Barbie",
+     "views": 11,
+     "dur": 307
+    },
+    {
+     "id": "ivEwB5cc9x8",
+     "titulo": "GTA 6, ZELDA y WoW en el MISMO MES 😱 Los juegos MÁS ESPERADOS de NOVIEMBRE 2026 (y sus PEGAS)",
+     "views": 11,
+     "dur": 316
+    },
+    {
+     "id": "f2VRW-S4x38",
+     "titulo": "Ya están aquí TRES de lo más esperado de noviembre… ¿y ahora cómo me divido en tres?",
+     "views": 10,
+     "dur": 224
+    }
+   ],
+   "idioma_busca": "es",
+   "termo": "juegos más esperados",
+   "idioma": "es",
+   "aprovado": false
+  },
+  {
+   "id": "UC5PWHciXgLGnqRYtzcRfxPA",
+   "nome": "TechPlay",
+   "inscritos": 17,
+   "url": "https://www.youtube.com/channel/UC5PWHciXgLGnqRYtzcRfxPA",
+   "descricao": "Welcome to TechPlay — Everything Gamers Need, in One Place.\n\nTechPlay is an independent gaming and technology platform covering the games we play, the stories behind them, and the industry shaping their future.\n\nOn this channel, we explore gaming history, tell fascinating stories from the world of v",
+   "idioma_real": "en",
+   "palavras": [],
+   "n_videos": 1,
+   "n_longos": 1,
+   "primeiro_video": "2026-11-03",
+   "dias_desde_primeiro": 9,
+   "views_total": 400,
+   "views_mediana": 400,
+   "melhor": {
+    "id": "u_WUruKS8Cw",
+    "titulo": "The History of Video Games in 10 minutes",
+    "views": 400,
+    "dur": 663
+   },
+   "views_por_dia": 44,
+   "videos": [
+    {
+     "id": "u_WUruKS8Cw",
+     "titulo": "The History of Video Games in 10 minutes",
+     "views": 400,
+     "dur": 663
+    }
+   ],
+   "idioma_busca": "en",
+   "termo": "video game history documentary",
+   "idioma": "en",
+   "aprovado": false
+  },
+  {
+   "id": "UCxnpUV40M-qKzv2S-vm98Fw",
+   "nome": "Zahid Hassan",
+   "inscritos": 145,
+   "url": "https://www.youtube.com/channel/UCxnpUV40M-qKzv2S-vm98Fw",
+   "descricao": "How to make",
+   "idioma_real": "en",
+   "palavras": [
+    {
+     "termo": "documentary",
+     "videos": 2,
+     "pct": 100
+    }
+   ],
+   "n_videos": 2,
+   "n_longos": 2,
+   "primeiro_video": "2026-11-03",
+   "dias_desde_primeiro": 9,
+   "views_total": 264,
+   "views_mediana": 132,
+   "melhor": {
+    "id": "ouXtv1l_GM8",
+    "titulo": "How a 22-Year-Old Turned Playing Cards Into Nintendo | Documentary",
+    "views": 180,
+    "dur": 503
+   },
+   "views_por_dia": 29,
+   "videos": [
+    {
+     "id": "ouXtv1l_GM8",
+     "titulo": "How a 22-Year-Old Turned Playing Cards Into Nintendo | Documentary",
+     "views": 180,
+     "dur": 503
+    },
+    {
+     "id": "NLPq5vAYHzM",
+     "titulo": "Charles Ponzi - The Con Man Whose Name Became a Scam | Documentary",
+     "views": 84,
+     "dur": 650
+    }
+   ],
+   "idioma_busca": "en",
+   "termo": "video game history documentary",
+   "idioma": "en",
+   "aprovado": false
+  },
+  {
+   "id": "UCErIXwUG6iB9oqOUKD0KPcw",
+   "nome": "La historia COMPLETA ",
+   "inscritos": 2,
+   "url": "https://www.youtube.com/channel/UCErIXwUG6iB9oqOUKD0KPcw",
+   "descricao": "",
+   "idioma_real": "es",
+   "palavras": [],
+   "n_videos": 1,
+   "n_longos": 1,
+   "primeiro_video": "2026-11-02",
+   "dias_desde_primeiro": 10,
+   "views_total": 283,
+   "views_mediana": 283,
+   "melhor": {
+    "id": "w1MeDXrhoI4",
+    "titulo": "La historia COMPLETA de los videojuegos en 19 minutos",
+    "views": 283,
+    "dur": 1180
+   },
+   "views_por_dia": 28,
+   "videos": [
+    {
+     "id": "w1MeDXrhoI4",
+     "titulo": "La historia COMPLETA de los videojuegos en 19 minutos",
+     "views": 283,
+     "dur": 1180
+    }
+   ],
+   "idioma_busca": "es",
+   "termo": "historia de los videojuegos",
+   "idioma": "es",
+   "aprovado": false
+  },
+  {
+   "id": "UCgyGEUs7NQSl5GeFtk83Ttg",
+   "nome": "Cyber Matrix GG",
+   "inscritos": 6,
+   "url": "https://www.youtube.com/channel/UCgyGEUs7NQSl5GeFtk83Ttg",
+   "descricao": "🎮 Do PS2 ao GTA VI: a história dos games que marcaram e dos que vêm aí.\n\nAqui no Cyber Matrix GG a gente revive os clássicos de mundo aberto, como Bully, GTA San Andreas, The Warriors e Need for Speed Underground, e mostra como eles moldaram os jogos de hoje.\n\nO que você encontra aqui:\n• Histórias, ",
+   "idioma_real": "pt",
+   "palavras": [
+    {
+     "termo": "história",
+     "videos": 4,
+     "pct": 44
+    },
+    {
+     "termo": "playstation",
+     "videos": 3,
+     "pct": 33
+    },
+    {
+     "termo": "ps2",
+     "videos": 3,
+     "pct": 33
+    },
+    {
+     "termo": "foi",
+     "videos": 3,
+     "pct": 33
+    },
+    {
+     "termo": "curiosidades",
+     "videos": 2,
+     "pct": 22
+    },
+    {
+     "termo": "jogos",
+     "videos": 2,
+     "pct": 22
+    },
+    {
+     "termo": "jogo",
+     "videos": 2,
+     "pct": 22
+    },
+    {
+     "termo": "2",
+     "videos": 2,
+     "pct": 22
+    }
+   ],
+   "n_videos": 9,
+   "n_longos": 9,
+   "primeiro_video": "2026-10-31",
+   "dias_desde_primeiro": 12,
+   "views_total": 171,
+   "views_mediana": 19,
+   "melhor": {
+    "id": "oyPBLYat1Uo",
+    "titulo": "VERDANSK FOI DESTRUÍDO E VOLTOU DUAS VEZES: A HISTÓRIA DO MAPA DO WARZONE",
+    "views": 61,
+    "dur": 380
+   },
+   "views_por_dia": 14,
+   "videos": [
+    {
+     "id": "oyPBLYat1Uo",
+     "titulo": "VERDANSK FOI DESTRUÍDO E VOLTOU DUAS VEZES: A HISTÓRIA DO MAPA DO WARZONE",
+     "views": 61,
+     "dur": 380
+    },
+    {
+     "id": "BorvTPnQ-Z4",
+     "titulo": "DLSS, FSR e PSSR: como a IA \"desenha\" os jogos do PS5 Pro e do PC",
+     "views": 25,
+     "dur": 478
+    },
+    {
+     "id": "y4OsFBwR2oc",
+     "titulo": "NEED FOR SPEED UNDERGROUND 2: A HISTÓRIA DO JOGO QUE MARCOU O PS2",
+     "views": 24,
+     "dur": 455
+    },
+    {
+     "id": "LoBEPHY0bGI",
+     "titulo": "PLAYSTATION 2 (PS2) POR DENTRO: O HARDWARE QUE VENDEU 160 MILHÕES",
+     "views": 20,
+     "dur": 398
+    },
+    {
+     "id": "gp9yeNwbXyU",
+     "titulo": "BULLY: 10 curiosidades do jogo da Rockstar que foi PROIBIDO no Brasil",
+     "views": 19,
+     "dur": 405
+    },
+    {
+     "id": "KSvdDmTldlI",
+     "titulo": "11  CURIOSIDADES DE GTA SAN ANDREAS QUE VOCÊ NÃO SABIA! 😱😱😱",
+     "views": 18,
+     "dur": 254
+    }
+   ],
+   "idioma_busca": "pt",
+   "termo": "a história de jogo",
+   "idioma": "pt",
+   "aprovado": false
+  },
+  {
+   "id": "UC99nnpWCgIklFun0xLfBa3Q",
+   "nome": "ThePixelSecrets",
+   "inscritos": 11,
+   "url": "https://www.youtube.com/channel/UC99nnpWCgIklFun0xLfBa3Q",
+   "descricao": "Video game secrets and gaming facts explained in under a minute. 🎮\n\nWhy does Mario have a mustache? What do the PlayStation buttons mean? Did blowing on cartridges ever actually work? Discover the stories, glitches and facts almost nobody knows about Nintendo, PlayStation, Sega, Atari, Minecraft, Po",
+   "idioma_real": "en",
+   "palavras": [],
+   "n_videos": 1,
+   "n_longos": 1,
+   "primeiro_video": "2026-11-01",
+   "dias_desde_primeiro": 11,
+   "views_total": 153,
+   "views_mediana": 153,
+   "melhor": {
+    "id": "_Bs9SYVRR8Y",
+    "titulo": "15 Video Game Secrets Almost Nobody Knows 🎮 #gaming #videogames",
+    "views": 153,
+    "dur": 520
+   },
+   "views_por_dia": 14,
+   "videos": [
+    {
+     "id": "_Bs9SYVRR8Y",
+     "titulo": "15 Video Game Secrets Almost Nobody Knows 🎮 #gaming #videogames",
+     "views": 153,
+     "dur": 520
+    }
+   ],
+   "idioma_busca": "es",
+   "termo": "secretos de videojuegos",
+   "idioma": "en",
+   "aprovado": false
+  },
+  {
+   "id": "UC6lDBp97aui3P64PrDlB41Q",
+   "nome": "Tecnossauro",
+   "inscritos": 72,
+   "url": "https://www.youtube.com/channel/UC6lDBp97aui3P64PrDlB41Q",
+   "descricao": "Todo dia às 18h, um segredo dos videogames e das coisas antigas! 🦕🎮\n\nComo a arminha do videogame acertava o pato? Assoprar a fita funcionava mesmo? Por que a tela do Game Boy era verde?\n\nAqui o Tecnossauro explica, rápido e de um jeito bem fácil, como funcionavam os videogames, aparelhos e brinquedo",
+   "idioma_real": "pt",
+   "palavras": [
+    {
+     "termo": "todo brasileiro",
+     "videos": 2,
+     "pct": 50
+    },
+    {
+     "termo": "videogames",
+     "videos": 2,
+     "pct": 50
+    },
+    {
+     "termo": "piratas",
+     "videos": 2,
+     "pct": 50
+    },
+    {
+     "termo": "antigos",
+     "videos": 2,
+     "pct": 50
+    },
+    {
+     "termo": "jogos",
+     "videos": 2,
+     "pct": 50
+    }
+   ],
+   "n_videos": 4,
+   "n_longos": 3,
+   "primeiro_video": "2026-11-01",
+   "dias_desde_primeiro": 11,
+   "views_total": 133,
+   "views_mediana": 29,
+   "melhor": {
+    "id": "LFM6h2x6QQQ",
+    "titulo": "7 SEGREDOS dos videogames antigos que te ENGANARAM 🎮",
+    "views": 49,
+    "dur": 279
+   },
+   "views_por_dia": 12,
+   "videos": [
+    {
+     "id": "LFM6h2x6QQQ",
+     "titulo": "7 SEGREDOS dos videogames antigos que te ENGANARAM 🎮",
+     "views": 49,
+     "dur": 279
+    },
+    {
+     "id": "BAnpUj_LV6A",
+     "titulo": "Os videogames PIRATAS que todo brasileiro teve 🎮🇧🇷",
+     "views": 34,
+     "dur": 254
+    },
+    {
+     "id": "A1Kb1G_loqc",
+     "titulo": "Os jogos PIRATAS do camelô que todo brasileiro comprou no PS2 💿🇧🇷",
+     "views": 25,
+     "dur": 234
+    },
+    {
+     "id": "A595yGKnYBs",
+     "titulo": "ADIVINHE O JOGO! 🎮 25 jogos antigos do Atari ao PlayStation (só quem viveu acerta tudo)",
+     "views": 25,
+     "dur": 667
+    }
+   ],
+   "idioma_busca": "pt",
+   "termo": "segredos dos videogames",
+   "idioma": "pt",
+   "aprovado": false
+  },
+  {
+   "id": "UCrq9MPP9nTc8fvrojfbHeLg",
+   "nome": "PoPollo ",
+   "inscritos": 58,
+   "url": "https://www.youtube.com/channel/UCrq9MPP9nTc8fvrojfbHeLg",
+   "descricao": "Un dato curioso nuevo cada día con el Pollo Racha 🐔🔥\n¡Suscríbete y no rompas la racha!\n\n#datoscuriosos #curiosidades #sabiasque #Shorts",
+   "idioma_real": "es",
+   "palavras": [
+    {
+     "termo": "te",
+     "videos": 2,
+     "pct": 100
+    },
+    {
+     "termo": "10",
+     "videos": 2,
+     "pct": 100
+    }
+   ],
+   "n_videos": 2,
+   "n_longos": 2,
+   "primeiro_video": "2026-11-04",
+   "dias_desde_primeiro": 8,
+   "views_total": 71,
+   "views_mediana": 35,
+   "melhor": {
+    "id": "AODCPlgXMfI",
+    "titulo": "10 CURIOSIDADES que NO SABÍAS 🤯 (La última te sorprenderá)",
+    "views": 39,
+    "dur": 402
+   },
+   "views_por_dia": 9,
+   "videos": [
+    {
+     "id": "AODCPlgXMfI",
+     "titulo": "10 CURIOSIDADES que NO SABÍAS 🤯 (La última te sorprenderá)",
+     "views": 39,
+     "dur": 402
+    },
+    {
+     "id": "NOFlxnGLxS4",
+     "titulo": "10 secretos de VIDEOJUEGOS que NO SABIAS (el último te asombrará)",
+     "views": 32,
+     "dur": 526
+    }
+   ],
+   "idioma_busca": "es",
+   "termo": "secretos de videojuegos",
+   "idioma": "es",
+   "aprovado": false
+  },
+  {
+   "id": "UCgSx5viWow5Fq2j3Op-xT0w",
+   "nome": "Bartolo Illiano",
+   "inscritos": 69,
+   "url": "https://www.youtube.com/channel/UCgSx5viWow5Fq2j3Op-xT0w",
+   "descricao": "",
+   "idioma_real": "es",
+   "palavras": [
+    {
+     "termo": "historia",
+     "videos": 3,
+     "pct": 33
+    },
+    {
+     "termo": "inteligencia artificial",
+     "videos": 2,
+     "pct": 22
+    },
+    {
+     "termo": "computadora",
+     "videos": 2,
+     "pct": 22
+    },
+    {
+     "termo": "funciona",
+     "videos": 2,
+     "pct": 22
+    },
+    {
+     "termo": "una",
+     "videos": 2,
+     "pct": 22
+    },
+    {
+     "termo": "más",
+     "videos": 2,
+     "pct": 22
+    },
+    {
+     "termo": "al",
+     "videos": 2,
+     "pct": 22
+    },
+    {
+     "termo": "tu",
+     "videos": 2,
+     "pct": 22
+    }
+   ],
+   "n_videos": 9,
+   "n_longos": 9,
+   "primeiro_video": "2026-10-28",
+   "dias_desde_primeiro": 15,
+   "views_total": 76,
+   "views_mediana": 7,
+   "melhor": {
+    "id": "Vgk605cj5Sg",
+    "titulo": "De la arena a la inteligencia artificial: cómo nace un chip",
+    "views": 19,
+    "dur": 582
+   },
+   "views_por_dia": 5,
+   "videos": [
+    {
+     "id": "Vgk605cj5Sg",
+     "titulo": "De la arena a la inteligencia artificial: cómo nace un chip",
+     "views": 19,
+     "dur": 582
+    },
+    {
+     "id": "EVPk1jx6Is0",
+     "titulo": "Cómo una guerra construyó tu computadora",
+     "views": 16,
+     "dur": 544
+    },
+    {
+     "id": "KtrW8eFYB4I",
+     "titulo": "Internet pasa bajo el mar: la historia de los cables que mantienen unido el mundo",
+     "views": 14,
+     "dur": 556
+    },
+    {
+     "id": "LIH1051y0QM",
+     "titulo": "Cómo un cuadradito le ganó a Hollywood: la historia de los videojuegos, de Pong al Amiga",
+     "views": 10,
+     "dur": 584
+    },
+    {
+     "id": "rDk9a7VkWjI",
+     "titulo": "Cómo funciona una computadora cuántica (y por qué no es una computadora más rápida)",
+     "views": 7,
+     "dur": 485
+    },
+    {
+     "id": "L3VIZQrQg3g",
+     "titulo": "La idea que todos daban por muerta: cómo la inteligencia artificial aprendió a pensar",
+     "views": 6,
+     "dur": 542
+    }
+   ],
+   "idioma_busca": "es",
+   "termo": "historia de los videojuegos",
+   "idioma": "es",
+   "aprovado": false
+  },
+  {
+   "id": "UCNrfHSWe9NIFo0iKpAURfaA",
+   "nome": "PRAXEN",
+   "inscritos": 3,
+   "url": "https://www.youtube.com/channel/UCNrfHSWe9NIFo0iKpAURfaA",
+   "descricao": "# PRAXEN – Precision Engineering\n\n🚀 **El futuro comienza con conocimiento.**\n\nBienvenido a **PRAXEN**, un espacio donde la tecnología, la innovación y los videojuegos se encuentran.\n\nExploramos el mundo digital para descubrir las herramientas, tendencias y experiencias que están transformando nuestr",
+   "idioma_real": "es",
+   "palavras": [],
+   "n_videos": 2,
+   "n_longos": 1,
+   "primeiro_video": "2026-11-08",
+   "dias_desde_primeiro": 4,
+   "views_total": 18,
+   "views_mediana": 9,
+   "melhor": {
+    "id": "xc9QhFeax4E",
+    "titulo": "ESTOS SON LOS JUEGOS MAS ESPERADOS DEL 2027",
+    "views": 17,
+    "dur": 426
+   },
+   "views_por_dia": 4,
+   "videos": [
+    {
+     "id": "xc9QhFeax4E",
+     "titulo": "ESTOS SON LOS JUEGOS MAS ESPERADOS DEL 2027",
+     "views": 17,
+     "dur": 426
+    },
+    {
+     "id": "crR8Onqu1zQ",
+     "titulo": "🚀 **¡El mundo cambia. Mantente un paso adelante!**",
+     "views": 1,
+     "dur": 120
+    }
+   ],
+   "idioma_busca": "es",
+   "termo": "juegos más esperados",
+   "idioma": "es",
+   "aprovado": false
+  },
+  {
+   "id": "UC_EJtNV260s9EVzwACMBBQQ",
+   "nome": "OriginTrail",
+   "inscritos": null,
+   "url": "https://www.youtube.com/channel/UC_EJtNV260s9EVzwACMBBQQ",
+   "descricao": "Every company has a story worth telling.\n\nFrom humble beginnings to billion-dollar empires, we explore the fascinating histories of the world's most iconic companies and brands.\n\nDiscover how companies like Nintendo, Apple, Disney, and LEGO got their start, the decisions that shaped their success, t",
+   "idioma_real": "en",
+   "palavras": [],
+   "n_videos": 1,
+   "n_longos": 1,
+   "primeiro_video": "2026-11-04",
+   "dias_desde_primeiro": 8,
+   "views_total": 29,
+   "views_mediana": 29,
+   "melhor": {
+    "id": "geldNaOjFIM",
+    "titulo": "The Incredible Rise of Nintendo: From Playing Cards to a Gaming Empire",
+    "views": 29,
+    "dur": 1226
+   },
+   "views_por_dia": 4,
+   "videos": [
+    {
+     "id": "geldNaOjFIM",
+     "titulo": "The Incredible Rise of Nintendo: From Playing Cards to a Gaming Empire",
+     "views": 29,
+     "dur": 1226
+    }
+   ],
+   "idioma_busca": "en",
+   "termo": "video game history documentary",
+   "idioma": "en",
+   "aprovado": false
+  },
+  {
+   "id": "UCXCSphPpaaktPr-1MefcH0g",
+   "nome": "Leleco Tech Games",
+   "inscritos": 3,
+   "url": "https://www.youtube.com/channel/UCXCSphPpaaktPr-1MefcH0g",
+   "descricao": "Tudo sobre Game aqui!\n\nAs melhores Promoções e Cupons da internet aqui.\nAcesse: https://leleco.tech/grupos\n \n",
+   "idioma_real": "pt",
+   "palavras": [
+    {
+     "termo": "jogos",
+     "videos": 3,
+     "pct": 100
+    },
+    {
+     "termo": "10",
+     "videos": 3,
+     "pct": 100
+    },
+    {
+     "termo": "10 jogos",
+     "videos": 2,
+     "pct": 67
+    }
+   ],
+   "n_videos": 3,
+   "n_longos": 3,
+   "primeiro_video": "2026-11-07",
+   "dias_desde_primeiro": 5,
+   "views_total": 9,
+   "views_mediana": 3,
+   "melhor": {
+    "id": "djLl5B6OWWQ",
+    "titulo": "Jogos PS5: os 10 lançamentos mais esperados (2 deles são um ABSURDO)",
+    "views": 4,
+    "dur": 882
+   },
+   "views_por_dia": 2,
+   "videos": [
+    {
+     "id": "djLl5B6OWWQ",
+     "titulo": "Jogos PS5: os 10 lançamentos mais esperados (2 deles são um ABSURDO)",
+     "views": 4,
+     "dur": 882
+    },
+    {
+     "id": "UdBBohWmAfo",
+     "titulo": "10 Jogos MODERNOS que RESGATAM a ESSÊNCIA dos ANOS 80 e 90. Bora jogar?",
+     "views": 3,
+     "dur": 847
+    },
+    {
+     "id": "5RQ0yciCj3s",
+     "titulo": "Você É Bom de Estratégia? 10 Jogos Que Vão Testar Sua Cabeça (O Melhor Fica Pro Final)",
+     "views": 2,
+     "dur": 842
+    }
+   ],
+   "idioma_busca": "pt",
+   "termo": "jogos mais esperados",
+   "idioma": "pt",
+   "aprovado": false
+  },
+  {
+   "id": "UCMvdL0vLw9XjFww8jquHpaA",
+   "nome": "Meu Mundo",
+   "inscritos": 22,
+   "url": "https://www.youtube.com/channel/UCMvdL0vLw9XjFww8jquHpaA",
+   "descricao": "vídeos novos todos sábado ou de domingo às 17h ok? ",
+   "idioma_real": "pt",
+   "palavras": [
+    {
+     "termo": "shadow fight",
+     "videos": 7,
+     "pct": 100
+    },
+    {
+     "termo": "fight 2",
+     "videos": 7,
+     "pct": 100
+    },
+    {
+     "termo": "nível",
+     "videos": 7,
+     "pct": 100
+    },
+    {
+     "termo": "2 nível",
+     "videos": 6,
+     "pct": 86
+    },
+    {
+     "termo": "nível 3",
+     "videos": 2,
+     "pct": 29
+    }
+   ],
+   "n_videos": 7,
+   "n_longos": 3,
+   "primeiro_video": "2026-10-24",
+   "dias_desde_primeiro": 19,
+   "views_total": 44,
+   "views_mediana": 4,
+   "melhor": {
+    "id": "a134-Z9oaXg",
+    "titulo": "A história do jogo de Shadow Fight 2  nível 1  ",
+    "views": 14,
+    "dur": 1148
+   },
+   "views_por_dia": 2,
+   "videos": [
+    {
+     "id": "a134-Z9oaXg",
+     "titulo": "A história do jogo de Shadow Fight 2  nível 1  ",
+     "views": 14,
+     "dur": 1148
+    },
+    {
+     "id": "sZFeFH7ARPY",
+     "titulo": "Shadow Fight 2 nível 2 ",
+     "views": 13,
+     "dur": 181
+    },
+    {
+     "id": "z2pK--pQFC8",
+     "titulo": "Shadow Fight 2 a continuação do nível 3 ",
+     "views": 5,
+     "dur": 174
+    },
+    {
+     "id": "zEF-vVjdggM",
+     "titulo": "Shadow Fight 2 nível 4  ",
+     "views": 4,
+     "dur": 123
+    },
+    {
+     "id": "xl3N4vekuKo",
+     "titulo": "Shadow fight 2 nível 3 ",
+     "views": 4,
+     "dur": 221
+    },
+    {
+     "id": "nQmBBXYy45M",
+     "titulo": "Shadow Fight 2 nível 6",
+     "views": 2,
+     "dur": 1654
+    }
+   ],
+   "idioma_busca": "pt",
+   "termo": "a história de jogo",
+   "idioma": "pt",
+   "aprovado": false
+  },
+  {
+   "id": "UCBZZvVpTAsjM7-UNB1d1Okg",
+   "nome": "64BITS",
+   "inscritos": null,
+   "url": "https://www.youtube.com/channel/UCBZZvVpTAsjM7-UNB1d1Okg",
+   "descricao": "64 BITS | Historia de los videojuegos\n\nLos videojuegos tienen una historia mucho más larga y fascinante de lo que imaginamos.\n\nEn 64 BITS viajamos a los orígenes de los videojuegos para descubrir cómo surgieron, quiénes estuvieron detrás de ellos y cómo evolucionaron hasta convertirse en una de las ",
+   "idioma_real": "es",
+   "palavras": [],
+   "n_videos": 1,
+   "n_longos": 1,
+   "primeiro_video": "2026-11-04",
+   "dias_desde_primeiro": 8,
+   "views_total": 18,
+   "views_mediana": 18,
+   "melhor": {
+    "id": "qGsSzylwAZ8",
+    "titulo": "Historia de los videojuegos 1: Cuando los ordenadores empezaron a jugar.",
+    "views": 18,
+    "dur": 387
+   },
+   "views_por_dia": 2,
+   "videos": [
+    {
+     "id": "qGsSzylwAZ8",
+     "titulo": "Historia de los videojuegos 1: Cuando los ordenadores empezaron a jugar.",
+     "views": 18,
+     "dur": 387
+    }
+   ],
+   "idioma_busca": "es",
+   "termo": "historia de los videojuegos",
+   "idioma": "es",
+   "aprovado": false
+  },
+  {
+   "id": "UCXm-neMcl0HMI6V-bko3IKA",
+   "nome": "Fax en Pausa",
+   "inscritos": 6,
+   "url": "https://www.youtube.com/channel/UCXm-neMcl0HMI6V-bko3IKA",
+   "descricao": "Encuentro cosas interesantes o raras en videojuegos y te las enseño.",
+   "idioma_real": null,
+   "palavras": [],
+   "n_videos": 1,
+   "n_longos": 1,
+   "primeiro_video": "2026-11-04",
+   "dias_desde_primeiro": 8,
+   "views_total": 14,
+   "views_mediana": 14,
+   "melhor": {
+    "id": "Xn2ZNye15dI",
+    "titulo": "8 detalles escondidos que no notaste en tus juegos favoritos",
+    "views": 14,
+    "dur": 276
+   },
+   "views_por_dia": 2,
+   "videos": [
+    {
+     "id": "Xn2ZNye15dI",
+     "titulo": "8 detalles escondidos que no notaste en tus juegos favoritos",
+     "views": 14,
+     "dur": 276
+    }
+   ],
+   "idioma_busca": "es",
+   "termo": "secretos de videojuegos",
+   "idioma": "?",
+   "aprovado": false
+  },
+  {
+   "id": "UCMsCerOLo3qE-yYQ-0Zvpfg",
+   "nome": "Marcado na história dos games",
+   "inscritos": null,
+   "url": "https://www.youtube.com/channel/UCMsCerOLo3qE-yYQ-0Zvpfg",
+   "descricao": "Bem-vindo ao Marcado na história dos games.\n\nAqui você encontra as histórias por trás dos jogos, empresas e personagens que marcaram gerações. Do nascimento das grandes franquias aos bastidores que poucos conhecem.\n\nHistórias reais do mundo dos games que deixaram sua marca.\n",
+   "idioma_real": "pt",
+   "palavras": [
+    {
+     "termo": "história",
+     "videos": 4,
+     "pct": 100
+    },
+    {
+     "termo": "kennedy resident",
+     "videos": 2,
+     "pct": 50
+    },
+    {
+     "termo": "resident evil",
+     "videos": 2,
+     "pct": 50
+    },
+    {
+     "termo": "história leon",
+     "videos": 2,
+     "pct": 50
+    },
+    {
+     "termo": "leon kennedy",
+     "videos": 2,
+     "pct": 50
+    },
+    {
+     "termo": "remake",
+     "videos": 2,
+     "pct": 50
+    }
+   ],
+   "n_videos": 4,
+   "n_longos": 4,
+   "primeiro_video": "2026-11-03",
+   "dias_desde_primeiro": 9,
+   "views_total": 12,
+   "views_mediana": 1,
+   "melhor": {
+    "id": "wm38PYrwwDQ",
+    "titulo": "ROCKSTAR GAMES: A HISTÓRIA DA EMPRESA POR TRÁS DE GTA 6 E OUTROS JOGOS QUE MARCARAM GERAÇÕES",
+    "views": 10,
+    "dur": 1666
+   },
+   "views_por_dia": 1,
+   "videos": [
+    {
+     "id": "wm38PYrwwDQ",
+     "titulo": "ROCKSTAR GAMES: A HISTÓRIA DA EMPRESA POR TRÁS DE GTA 6 E OUTROS JOGOS QUE MARCARAM GERAÇÕES",
+     "views": 10,
+     "dur": 1666
+    },
+    {
+     "id": "vw4-a6qMo88",
+     "titulo": "A HISTÓRIA DE KRATOS EM GOD OF WAR (2018)",
+     "views": 1,
+     "dur": 1255
+    },
+    {
+     "id": "iHcvXwHSMLM",
+     "titulo": "A HISTÓRIA DE LEON KENNEDY (RESIDENT EVIL 2 REMAKE)",
+     "views": 1,
+     "dur": 520
+    },
+    {
+     "id": "S8A_tE4WRn8",
+     "titulo": "A HISTÓRIA DE LEON KENNEDY EM RESIDENT EVIL 4 REMAKE",
+     "views": 0,
+     "dur": 836
+    }
+   ],
+   "idioma_busca": "pt",
+   "termo": "história dos games",
+   "idioma": "pt",
+   "aprovado": false
+  },
+  {
+   "id": "UCsgeI0ZP51gvZCWPOLJz8kA",
+   "nome": "as curiosidades da MEL",
+   "inscritos": null,
+   "url": "https://www.youtube.com/channel/UCsgeI0ZP51gvZCWPOLJz8kA",
+   "descricao": "",
+   "idioma_real": "pt",
+   "palavras": [
+    {
+     "termo": "curiosidades",
+     "videos": 3,
+     "pct": 100
+    },
+    {
+     "termo": "curiosidades penhasco",
+     "videos": 2,
+     "pct": 67
+    },
+    {
+     "termo": "penhasco roça",
+     "videos": 2,
+     "pct": 67
+    }
+   ],
+   "n_videos": 3,
+   "n_longos": 3,
+   "primeiro_video": "2026-11-02",
+   "dias_desde_primeiro": 10,
+   "views_total": 10,
+   "views_mediana": 5,
+   "melhor": {
+    "id": "RxIHWUiVS70",
+    "titulo": "Curiosidades dos jogos que eu jogo#eu tive que apagar a metade dos jogos",
+    "views": 5,
+    "dur": 1167
+   },
+   "views_por_dia": 1,
+   "videos": [
+    {
+     "id": "RxIHWUiVS70",
+     "titulo": "Curiosidades dos jogos que eu jogo#eu tive que apagar a metade dos jogos",
+     "views": 5,
+     "dur": 1167
+    },
+    {
+     "id": "QKEP-9gIybc",
+     "titulo": "Curiosidades do penhasco da roça#tinha areia  amovedisa ",
+     "views": 5,
+     "dur": 521
+    },
+    {
+     "id": "ydSk9YkXEgA",
+     "titulo": "Continuação # curiosidades do penhasco da roça ",
+     "views": 0,
+     "dur": 256
+    }
+   ],
+   "idioma_busca": "pt",
+   "termo": "curiosidades de jogos",
+   "idioma": "pt",
+   "aprovado": false
+  },
+  {
+   "id": "UCMSzBngYeGQzXqyRyElhbjw",
+   "nome": "sk3letonk",
+   "inscritos": null,
+   "url": "https://www.youtube.com/channel/UCMSzBngYeGQzXqyRyElhbjw",
+   "descricao": "VALVe GOD",
+   "idioma_real": "es",
+   "palavras": [],
+   "n_videos": 1,
+   "n_longos": 1,
+   "primeiro_video": "2026-10-29",
+   "dias_desde_primeiro": 14,
+   "views_total": 2,
+   "views_mediana": 2,
+   "melhor": {
+    "id": "WqTP5iDTWXY",
+    "titulo": "La Historia De Los Videojuegos y su Origen",
+    "views": 2,
+    "dur": 369
+   },
+   "views_por_dia": 0,
+   "videos": [
+    {
+     "id": "WqTP5iDTWXY",
+     "titulo": "La Historia De Los Videojuegos y su Origen",
+     "views": 2,
+     "dur": 369
+    }
+   ],
+   "idioma_busca": "es",
+   "termo": "historia de los videojuegos",
+   "idioma": "es",
+   "aprovado": false
+  }
+ ]
+}

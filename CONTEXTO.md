@@ -70,9 +70,13 @@ O dono pede ("quero usar o Niche Finder nesta máquina nova") e o Claude faz, gu
 3. Na pasta: `powershell -ExecutionPolicy Bypass -File instalar.ps1` (Python, yt-dlp, Deno, tarefa a cada 3 h).
 4. Configurar o git (user.name eurafaelbarbosaoficial-dev e o e-mail noreply do GitHub, nunca o e-mail pessoal).
 5. Ler este arquivo; rodar `python -I finder.py --publicar 5` de teste e conferir se o site atualiza.
-5b. Clonar também `eurafaelbarbosaoficial-dev/estudos-de-mercado` (PRIVADO) em `Documents\estudos-de-mercado`: lá ficam as
-   skills do dono (`setup/skills/`: canal-dark, estudar, novela-americana, claude-youtube, watch-skill) e a memória do
-   Claude (`setup/memoria-claude/`). Copiar as skills para `%USERPROFILE%\.claude\skills\` e rodar `setup\instalar.ps1`.
+5b. O `instalar.ps1` (desde 13/11) também clona `eurafaelbarbosaoficial-dev/estudos-de-mercado` (PRIVADO, precisa do
+   `gh auth login` antes) em `Documents\estudos-de-mercado`, roda o `setup\instalar.ps1` de lá (watch-skill, ffmpeg e
+   Demucs = a LUPA da edição, usada pelo `producao/estilo.py`), copia as skills do dono para `%USERPROFILE%\.claude\skills\`
+   e a memória do Claude para `%USERPROFILE%\.claude\projects\C--Users-<usuário>-Documents-Niche-Finder\memory\`.
+   **As conversas do Claude Code devem ser abertas na pasta `Documents\Niche Finder`** (é a ela que a memória está ligada).
+   A pasta `Documents\analise de nicho` é só histórico do começo (o estudo de games foi copiado para
+   `conhecimento/estudo-games-2026-11-12/`).
 5c. **Backup privado** (fora do GitHub de propósito): `Documents\Backup Niche Finder\backup-privado-<data>.zip` — chave da
    API do YouTube, prints do Studio, histórico dos canais e o vídeo final. O dono guarda no Drive/pendrive; na máquina nova,
    descompactar DENTRO de `Documents\Niche Finder`. Sem o zip: criar outra chave no Google Cloud (projeto "Niche Finder").
