@@ -492,7 +492,56 @@
      "copias_fracas": 0,
      "adjacentes_max": 1724929
     }
-   ]
+   ],
+   "sinais": {
+    "novos_ultimo_mes": 3,
+    "novos_ultimo_ano": 4,
+    "limite_busca": 20,
+    "canais": [
+     {
+      "canal": "Tuco Investe",
+      "inscritos": 26900,
+      "melhor_views": 92939,
+      "views_por_inscrito": 3.5
+     },
+     {
+      "canal": "Explicação sem Complicação",
+      "inscritos": 117000,
+      "melhor_views": 65436,
+      "views_por_inscrito": 0.6
+     },
+     {
+      "canal": "Eu explico2",
+      "inscritos": 17700,
+      "melhor_views": 2638,
+      "views_por_inscrito": 0.1
+     },
+     {
+      "canal": "PENINHA",
+      "inscritos": 28,
+      "melhor_views": 48,
+      "views_por_inscrito": 1.7
+     },
+     {
+      "canal": "Grana de Papel",
+      "inscritos": 43,
+      "melhor_views": 20,
+      "views_por_inscrito": 0.5
+     },
+     {
+      "canal": "FluxoFinanceiro",
+      "inscritos": 40,
+      "melhor_views": 0,
+      "views_por_inscrito": null
+     }
+    ],
+    "canal_pequeno_consegue": true,
+    "pequenos_com_sucesso": [
+     "Tuco Investe"
+    ],
+    "estagio": "saturando: muitas cópias fracas e vídeos novos todo mês",
+    "criterio": "estágio = critério nosso (vídeos novos no mês/ano e cópias com < 1.000 views); pequeno = < 100 mil inscritos com vídeo >= 50 mil"
+   }
   },
   {
    "idioma": "es",
@@ -968,7 +1017,32 @@
      "copias_fracas": 0,
      "adjacentes_max": 1677441
     }
-   ]
+   ],
+   "sinais": {
+    "novos_ultimo_mes": 12,
+    "novos_ultimo_ano": 12,
+    "limite_busca": 20,
+    "canais": [
+     {
+      "canal": "Explica2",
+      "inscritos": 83200,
+      "melhor_views": 114374,
+      "views_por_inscrito": 1.4
+     },
+     {
+      "canal": "Economía en Pocas Palabras",
+      "inscritos": 8,
+      "melhor_views": 916,
+      "views_por_inscrito": 114.5
+     }
+    ],
+    "canal_pequeno_consegue": true,
+    "pequenos_com_sucesso": [
+     "Explica2"
+    ],
+    "estagio": "crescendo: vários vídeos novos no último mês",
+    "criterio": "estágio = critério nosso (vídeos novos no mês/ano e cópias com < 1.000 views); pequeno = < 100 mil inscritos com vídeo >= 50 mil"
+   }
   },
   {
    "idioma": "en",
@@ -1444,7 +1518,59 @@
      "copias_fracas": 0,
      "adjacentes_max": 9554042
     }
-   ]
+   ],
+   "sinais": {
+    "novos_ultimo_mes": 20,
+    "novos_ultimo_ano": 20,
+    "limite_busca": 20,
+    "canais": [
+     {
+      "canal": "Econ in a Nutshell",
+      "inscritos": 5140,
+      "melhor_views": 1122022,
+      "views_por_inscrito": 218.3
+     },
+     {
+      "canal": "Egg Head Economics",
+      "inscritos": 6700,
+      "melhor_views": 657851,
+      "views_por_inscrito": 98.2
+     },
+     {
+      "canal": "Unhinged Explainer",
+      "inscritos": 10500,
+      "melhor_views": 412782,
+      "views_por_inscrito": 39.3
+     },
+     {
+      "canal": "The Money Professor",
+      "inscritos": 6010,
+      "melhor_views": 166808,
+      "views_por_inscrito": 27.8
+     },
+     {
+      "canal": "FinChronicle",
+      "inscritos": 4,
+      "melhor_views": 64,
+      "views_por_inscrito": 16.0
+     },
+     {
+      "canal": "MINDSET ECHOX",
+      "inscritos": 2,
+      "melhor_views": 20,
+      "views_por_inscrito": 10.0
+     }
+    ],
+    "canal_pequeno_consegue": true,
+    "pequenos_com_sucesso": [
+     "Econ in a Nutshell",
+     "Egg Head Economics",
+     "Unhinged Explainer",
+     "The Money Professor"
+    ],
+    "estagio": "saturando: muitas cópias fracas e vídeos novos todo mês",
+    "criterio": "estágio = critério nosso (vídeos novos no mês/ano e cópias com < 1.000 views); pequeno = < 100 mil inscritos com vídeo >= 50 mil"
+   }
   },
   {
    "idioma": "de",
@@ -1920,7 +2046,17 @@
      "copias_fracas": 0,
      "adjacentes_max": 1000355
     }
-   ]
+   ],
+   "sinais": {
+    "novos_ultimo_mes": 2,
+    "novos_ultimo_ano": 4,
+    "limite_busca": 20,
+    "canais": [],
+    "canal_pequeno_consegue": false,
+    "pequenos_com_sucesso": [],
+    "estagio": "vazio: ninguém faz neste idioma",
+    "criterio": "estágio = critério nosso (vídeos novos no mês/ano e cópias com < 1.000 views); pequeno = < 100 mil inscritos com vídeo >= 50 mil"
+   }
   },
   {
    "idioma": "fr",
@@ -2396,7 +2532,24 @@
      "copias_fracas": 0,
      "adjacentes_max": 4505226
     }
-   ]
+   ],
+   "sinais": {
+    "novos_ultimo_mes": 4,
+    "novos_ultimo_ano": 4,
+    "limite_busca": 20,
+    "canais": [
+     {
+      "canal": "Max Milo Éditions",
+      "inscritos": 149000,
+      "melhor_views": 14621,
+      "views_por_inscrito": 0.1
+     }
+    ],
+    "canal_pequeno_consegue": false,
+    "pequenos_com_sucesso": [],
+    "estagio": "crescendo: vários vídeos novos no último mês",
+    "criterio": "estágio = critério nosso (vídeos novos no mês/ano e cópias com < 1.000 views); pequeno = < 100 mil inscritos com vídeo >= 50 mil"
+   }
   }
  ],
  "dobras": []

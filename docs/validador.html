@@ -232,7 +232,12 @@ function hist(){var s=location.hash.slice(1)||(idx[0]||{}).slug;
   [].forEach.call($("hist").querySelectorAll(".hi"),function(b){b.onclick=function(){location.hash=b.dataset.s;};});}
 function melhor(g){return Math.max.apply(0,(g.buscas||[]).filter(function(b){return b.tipo!=="tema";}).map(function(b){return b.melhor_concorrente||0;}).concat([0]));}
 function painel(g){
-  return"<div class='pn' id='pn'><div class='pn-h'><div><h4>"+esc(g.titulo)+"</h4><p>"+esc(g.explica)+"</p></div>"+vd(g.veredito)+"</div>"+
+  var si=g.sinais,sh="";
+  if(si){var lim=function(n){return n>=(si.limite_busca||20)?n+"+":n;};
+    sh="<p class='mut' style='margin-top:6px'><b>Estágio:</b> "+esc(si.estagio)+" · vídeos novos no formato: "+lim(si.novos_ultimo_mes)+" no último mês, "+lim(si.novos_ultimo_ano)+" no último ano · "+
+      (si.canal_pequeno_consegue?"canal pequeno consegue ("+esc(si.pequenos_com_sucesso.join(", "))+")":"nenhum canal pequeno com sucesso visto")+"</p>"+
+      ((si.canais||[]).length?"<p class='mut'>"+si.canais.map(function(c){return esc(c.canal)+": "+(c.inscritos!=null?c.inscritos.toLocaleString("pt-BR"):"?")+" inscritos, melhor "+(c.melhor_views||0).toLocaleString("pt-BR")+" views"+(c.views_por_inscrito?" ("+c.views_por_inscrito+"× os inscritos)":"");}).join(" · ")+"</p>":"");}
+  return"<div class='pn' id='pn'><div class='pn-h'><div><h4>"+esc(g.titulo)+"</h4><p>"+esc(g.explica)+"</p>"+sh+"</div>"+vd(g.veredito)+"</div>"+
   (g.buscas||[]).map(function(b,bi){var tema=b.tipo==="tema",it=(b.itens||[]).filter(function(i){return i.conferido;}),key=g.k+"-"+bi,mostra=todos[key]?it:it.slice(0,4);
     return"<div class='bq'><div class='bq-t'><span class='tp2'>"+(tema?"Quanto o público procura o tema":"Quem já fez esse formato")+"</span><span class='q2'>“"+esc(b.busca)+"”</span></div>"+
     "<div class='kp2'>"+(tema?"":"<div><small>Já fizeram</small><b>"+b.concorrentes+"</b></div><div><small>Melhor deles</small><b>"+f(b.melhor_concorrente)+"</b></div>"+(b.copias_fracas?"<div><small>Cópias fracas</small><b class='dn'>"+b.copias_fracas+"</b></div>":""))+
@@ -242,7 +247,7 @@ function painel(g){
 }
 function render(rolar){
   var d=dado,o=d.origem||{},gs=[];
-  (d.idiomas||[]).forEach(function(l){gs.push({k:"i-"+l.idioma,tipo:"i",cod:l.idioma,titulo:NOME[l.idioma]||l.nome,veredito:l.veredito,explica:l.explica,buscas:l.buscas});});
+  (d.idiomas||[]).forEach(function(l){gs.push({k:"i-"+l.idioma,tipo:"i",cod:l.idioma,titulo:NOME[l.idioma]||l.nome,veredito:l.veredito,explica:l.explica,buscas:l.buscas,sinais:l.sinais});});
   (d.dobras||[]).forEach(function(x,i){gs.push({k:"d-"+i,tipo:"d",cod:(x.idioma||"").toUpperCase(),titulo:x.nome,nota:x.nota,veredito:x.veredito,explica:x.explica,buscas:x.buscas});});
   if(!sel||!gs.some(function(g){return g.k===sel;})){var op=gs.filter(function(g){return g.veredito==="oportunidade";})[0];sel=(op||gs[0]||{}).k;}
   function tile(g){var m=melhor(g);return"<button class='lt glow"+(g.k===sel?" on":"")+"' data-k='"+g.k+"'>"+(g.tipo==="i"?"<span class='cd'>"+g.cod.toUpperCase()+"</span><span class='nm'>"+esc(g.titulo)+"</span>":"<span class='nt'>"+esc(g.cod)+"</span><span class='tt'>"+esc(g.titulo)+"</span>")+

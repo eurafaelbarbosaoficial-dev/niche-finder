@@ -123,6 +123,48 @@ def avaliar(buscas, idioma, excluir, todas_molde=False):
                               "com outro ângulo." + sat)
 
 
+def sinais(bs, idioma):
+    """Sinais extras do formato num idioma (pedido do dono em 13/11, para subir o validador de 8 para 9):
+    - crescimento: quantos vídeos NOVOS no formato saíram no último mês e no último ano (busca filtrada por data);
+    - canal pequeno consegue? inscritos dos canais que fazem o formato e views do melhor vídeo de cada um;
+    - estágio (critério nosso): vazio / começando / crescendo / maduro / saturando."""
+    from cacador import yt
+    mol = [b for b in bs if b.get("tipo") == "molde"]
+    if not mol:
+        return None
+    q = mol[0]["busca"]
+    def novos(per):
+        res = buscar(q, 20, per)
+        return sum(1 for r in res if parecido(r.get("title") or "", q) and (r.get("duration") or 0) >= 240)
+    mes, ano = novos("mes"), novos("ano")
+    conc = [x for b in mol for x in b["itens"] if x["conferido"] and x["idioma_real"] == idioma and x["mesmo_formato"] and (x["dur"] or 0) >= 240]
+    canais = {}
+    for x in sorted(conc, key=lambda x: -(x["views"] or 0)):
+        if x.get("canal_id") and x["canal_id"] not in canais and len(canais) < 6:
+            try:
+                ins = json.loads(yt(["-J", "--flat-playlist", "--playlist-end", "1", f"https://www.youtube.com/channel/{x['canal_id']}/videos"]) or "{}").get("channel_follower_count")
+            except Exception:
+                ins = None
+            canais[x["canal_id"]] = {"canal": x["canal"], "inscritos": ins, "melhor_views": x["views"],
+                                     "views_por_inscrito": round(x["views"] / ins, 1) if ins and x["views"] else None}
+    pequenos_ok = [c for c in canais.values() if c["inscritos"] is not None and c["inscritos"] < 100_000 and (c["melhor_views"] or 0) >= BOM]
+    copias = sum(b.get("copias_fracas") or 0 for b in mol)
+    n = sum(b.get("concorrentes") or 0 for b in mol)
+    if n == 0:
+        est = "vazio: ninguém faz neste idioma"
+    elif copias >= 3 and mes >= 3:
+        est = "saturando: muitas cópias fracas e vídeos novos todo mês"
+    elif mes >= 3:
+        est = "crescendo: vários vídeos novos no último mês"
+    elif ano >= 3:
+        est = "maduro: feito ao longo do ano, pouco no último mês"
+    else:
+        est = "começando: poucos vídeos no formato"
+    return {"novos_ultimo_mes": mes, "novos_ultimo_ano": ano, "limite_busca": 20, "canais": list(canais.values()),
+            "canal_pequeno_consegue": bool(pequenos_ok), "pequenos_com_sucesso": [c["canal"] for c in pequenos_ok],
+            "estagio": est, "criterio": "estágio = critério nosso (vídeos novos no mês/ano e cópias com < 1.000 views); pequeno = < 100 mil inscritos com vídeo >= 50 mil"}
+
+
 def gravar(out):
     slug = out["slug"]
     SAIDA.mkdir(parents=True, exist_ok=True)
@@ -157,8 +199,9 @@ def main():
         print(f"[{idioma}] {len(qs)} busca(s)", flush=True)
         bs = velho.get(("i", idioma)) or [medir_busca(q, idioma, a.n, a.conferir) for q in qs]
         v, txt = avaliar(bs, idioma, excluir)
+        velhos_sinais = next((x.get("sinais") for x in (antigo or {}).get("idiomas", []) if x["idioma"] == idioma), None)
         out["idiomas"].append({"idioma": idioma, "nome": NOMES.get(idioma, idioma), "veredito": v, "explica": txt,
-                               "buscas": bs})
+                               "buscas": bs, "sinais": velhos_sinais if a.refazer else sinais(bs, idioma)})
         print(f"   → {v}", flush=True)
     for d in ped.get("dobras", []):
         idioma = d.get("idioma", "en")
