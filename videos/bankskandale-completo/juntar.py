@@ -50,31 +50,51 @@ def janela(cap, corta_cabeca):
 def main():
     saida = Path(sys.argv[1]) if len(sys.argv) > 1 else AQUI / "renders" / "bankskandale-completo.mp4"
     saida.parent.mkdir(parents=True, exist_ok=True)
-    partes = [(AMOSTRA, 0.0, 16.95, None)] + [(*x, None) for x in janela("k1b", False)] + [(AMOSTRA, 16.95, 28.3, None)] + [(*x, None) for x in janela("k1d", False)]
+    # capítulo 1: uma tomada contínua de voz (capitulo1.py → k1/), sem emendas de gravação
+    k1 = AQUI / "k1" / "renders" / "k1.mp4"
+    w1 = json.load(open(AQUI / "voz" / "bloco-1.palavras.json", encoding="utf-8"))
+    partes = [(k1, 0.0, min(dur(k1), w1[-1]["fim"] + CAUDA), None)]
     for n in range(2, 9):
         js = janela(f"k{n}", True)
         partes += [(*x, f"k{n}" if j == 0 else None) for j, x in enumerate(js)]
         if len(js) > 1:
             print(f"k{n}: {len(js) - 1} pausa(s) longa(s) encurtada(s)")
     cmd, filtros, rot = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y"], [], []
-    inicios, t = {"k1": 0.0}, 0.0
+    # o capítulo 1 tem 4 pedaços (amostra + partes novas): entre eles, transição suave (crossfade) + som de transição
+    N1 = 4 if all(p[3] is None for p in partes[:4]) else 1
+    X = 0.45
+    inicios, t, juncoes = {"k1": 0.0}, 0.0, []
     for i, (arq, a, b, cap) in enumerate(partes):
         cmd += ["-ss", f"{a:.3f}", "-to", f"{b:.3f}", "-i", str(arq)]
         d = b - a
+        if 0 < i < N1:
+            t -= X                      # o crossfade sobrepõe X segundos
+            juncoes.append(round(t, 2))
         if cap:
             inicios[cap] = round(t, 2)
         t += d
         filtros.append(f"[{i}:v]fps=30,scale=1920:1080,setsar=1,format=yuv420p[v{i}]")
-        filtros.append(f"[{i}:a]aresample=48000,aformat=channel_layouts=stereo,afade=t=in:d=0.03,afade=t=out:st={max(0, d - 0.08):.3f}:d=0.08[a{i}]")
+        fade = f",afade=t=in:d=0.03,afade=t=out:st={max(0, d - 0.08):.3f}:d=0.08" if i >= N1 else ""
+        filtros.append(f"[{i}:a]aresample=48000,aformat=channel_layouts=stereo{fade}[a{i}]")
+    # bloco do capítulo 1 com xfade/acrossfade
+    lv, la, comp = "v0", "a0", partes[0][2] - partes[0][1]
+    for i in range(1, N1):
+        filtros.append(f"[{lv}][v{i}]xfade=transition=fade:duration={X}:offset={comp - X:.3f}[xv{i}]")
+        filtros.append(f"[{la}][a{i}]acrossfade=d={X}:c1=tri:c2=tri[xa{i}]")
+        lv, la = f"xv{i}", f"xa{i}"
+        comp += (partes[i][2] - partes[i][1]) - X
+    rot.append(f"[{lv}][{la}]")
+    for i in range(N1, len(partes)):
         rot.append(f"[v{i}][a{i}]")
     n = len(partes)
-    filtros.append("".join(rot) + f"concat=n={n}:v=1:a=1[v][a0]")
-    # som de transição em cada capítulo novo
+    filtros.append("".join(rot) + f"concat=n={len(rot)}:v=1:a=1[v][a0x]")
+    # som de transição em cada capítulo novo e em cada junção do capítulo 1
     trans = AQUI / "comum" / "sfx" / "transicao.mp3"
-    mix = ["[a0]"]
-    for j, cap in enumerate([f"k{k}" for k in range(2, 9)]):
+    mix = ["[a0x]"]
+    marcas = [max(0, j - 0.1) for j in juncoes] + [max(0, inicios[f"k{k}"] - 0.05) for k in range(2, 9)]
+    for j, tm in enumerate(marcas):
         cmd += ["-i", str(trans)]
-        ms = int(max(0, inicios[cap] - 0.05) * 1000)
+        ms = int(tm * 1000)
         filtros.append(f"[{n + j}:a]aresample=48000,aformat=channel_layouts=stereo,atrim=0:1.6,volume=0.32,afade=t=out:st=1.1:d=0.5,adelay={ms}|{ms}[t{j}]")
         mix.append(f"[t{j}]")
     filtros.append("".join(mix) + f"amix=inputs={len(mix)}:normalize=0:duration=first[a]")
@@ -82,7 +102,7 @@ def main():
             "-c:a", "aac", "-b:a", "320k", "-movflags", "+faststart", str(saida)]
     subprocess.run(cmd, check=True)
     json.dump(inicios, open(saida.parent / "capitulos.json", "w", encoding="utf-8"), indent=1)
-    print("pronto:", saida, f"{dur(saida):.1f} s", inicios)
+    print("pronto:", saida, f"{dur(saida):.1f} s", inicios, "junções suaves em", juncoes)
 
 
 if __name__ == "__main__":

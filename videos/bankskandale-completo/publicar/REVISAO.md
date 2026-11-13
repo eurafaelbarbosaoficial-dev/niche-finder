@@ -2,8 +2,21 @@
 Veredito: **APROVADO COM AJUSTES** (nenhum problema alto; os médios são pausas naturais da fala e diferenças de
 transcrição, sem defeito no vídeo).
 
-Arquivo: `publicar/Alle-Geldwaesche-Skandale-der-Banken-erklaert.mp4`. Duração 12:05, 1920x1080, 30 fps,
+Arquivo: `publicar/Alle-Geldwaesche-Skandale-der-Banken-erklaert.mp4`. Duração 12:04, 1920x1080, 30 fps,
 H.264 + AAC 320k.
+
+## Corrigido depois que o dono assistiu (13/11, 12:25)
+- **Aos 17 s havia corte seco + emenda de voz.** O capítulo 1 juntava duas gravações diferentes (a da amostra e
+  uma nova) e trocava a cena noturna pelo documento num quadro só, cortando o som de transição no meio.
+- **Agora:**
+  - o capítulo 1 usa UMA tomada contínua de voz (`capitulo1.py`);
+  - as cenas da amostra foram reajustadas palavra por palavra a essa tomada;
+  - os cortes viraram um "dip" suave para a cor do papel, com o som de transição inteiro;
+  - a visão geral do iceberg acende a faixa de cada nível quando a voz fala dele.
+- **O revisor passou a pegar os dois casos:** corte seco (lista automática) e emenda de voz (regra 16 do agente).
+- **Ainda existem cortes de noite para papel com whoosh** nos capítulos 3, 4, 7 e 8, no mesmo estilo dos 5 s e
+  12 s que o dono aprovou na amostra. O revisor os lista como "corte seco com som de transição". Podem virar
+  "dip" suave se o dono quiser.
 
 ## Problemas restantes
 | # | tempo | área | gravidade | o que é | decisão |

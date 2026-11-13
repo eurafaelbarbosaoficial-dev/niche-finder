@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <script src="assets/js/perfect-freehand.js"></script>
+    <script src="assets/js/pincel.js"></script>
+    <script src="assets/js/motor.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #0d1322; }
+      #root { position: relative; width: 100%; height: 100%; }
+      #dip { position: absolute; inset: 0; background: #efe6d2; opacity: 0; z-index: 50; }
+      .fontes { position: absolute; left: -4000px; top: 0; opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="75.06" data-width="1920" data-height="1080">
+      <div id="datum" data-composition-id="datum" data-composition-src="compositions/datum.html" data-start="0.00" data-duration="5.17" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="razzia" data-composition-id="razzia" data-composition-src="compositions/razzia.html" data-start="5.17" data-duration="7.50" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="zentrale" data-composition-id="zentrale" data-composition-src="compositions/zentrale.html" data-start="12.67" data-duration="3.31" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="klischee" data-composition-id="klischee" data-composition-src="compositions/klischee.html" data-start="36.76" data-duration="5.58" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="konto" data-composition-id="konto" data-composition-src="compositions/konto.html" data-start="42.34" data-duration="5.69" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="parteb" data-composition-id="parteb" data-composition-src="compositions/parteb.html" data-start="15.98" data-duration="20.78" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="parted" data-composition-id="parted" data-composition-src="compositions/parted.html" data-start="48.03" data-duration="27.03" data-track-index="1" data-track-kind="graphics" data-width="1920" data-height="1080"></div>
+      <div id="dip" class="clip" data-start="0" data-duration="75.06" data-track-index="9"></div>
+      <div class="fontes"><span style="font: 700 20px 'Playfair Display'">Aa</span><span style="font: italic 700 20px 'Playfair Display'">Aa</span><span style="font: 700 20px Inter">Aa</span><span style="font: 600 20px Inter">Aa</span></div>
+      <audio id="vo" class="clip" src="assets/audio/narracao.mp3" data-start="0" data-duration="74.70" data-track-index="2" data-volume="1"></audio>
+      <audio id="sfx-0" class="clip" src="assets/sfx/martinshorn.mp3" data-start="0.0" data-duration="3.5" data-track-index="3" data-volume="0.38" data-fade-out="1.2"></audio>
+      <audio id="sfx-1" class="clip" src="assets/sfx/transicao.mp3" data-start="4.91" data-duration="1.2" data-track-index="4" data-volume="0.45" data-fade-out="0.4"></audio>
+      <audio id="sfx-2" class="clip" src="assets/sfx/pop.mp3" data-start="8.22" data-duration="0.7" data-track-index="5" data-volume="0.85"></audio>
+      <audio id="sfx-3" class="clip" src="assets/sfx/pop.mp3" data-start="8.67" data-duration="0.7" data-track-index="6" data-volume="0.85"></audio>
+      <audio id="sfx-4" class="clip" src="assets/sfx/pop.mp3" data-start="9.1" data-duration="0.7" data-track-index="7" data-volume="0.85"></audio>
+      <audio id="sfx-5" class="clip" src="assets/sfx/pop.mp3" data-start="9.53" data-duration="0.7" data-track-index="3" data-volume="0.85"></audio>
+      <audio id="sfx-6" class="clip" src="assets/sfx/transicao.mp3" data-start="12.39" data-duration="1.2" data-track-index="4" data-volume="0.4" data-fade-out="0.4"></audio>
+      <audio id="sfx-7" class="clip" src="assets/sfx/impacto.mp3" data-start="14.98" data-duration="2.0" data-track-index="5" data-volume="0.5" data-fade-out="0.8"></audio>
+      <audio id="sfx-8" class="clip" src="assets/sfx/carimbo.mp3" data-start="15.08" data-duration="0.6" data-track-index="6" data-volume="0.9"></audio>
+      <audio id="sfx-9" class="clip" src="assets/sfx/transicao.mp3" data-start="16.63" data-duration="1.2" data-track-index="7" data-volume="0.35" data-fade-out="0.4"></audio>
+      <audio id="sfx-10" class="clip" src="assets/sfx/pop.mp3" data-start="38.3" data-duration="0.7" data-track-index="3" data-volume="0.85"></audio>
+      <audio id="sfx-11" class="clip" src="assets/sfx/pop.mp3" data-start="39.19" data-duration="0.7" data-track-index="4" data-volume="0.85"></audio>
+      <audio id="sfx-12" class="clip" src="assets/sfx/pop.mp3" data-start="40.24" data-duration="0.7" data-track-index="5" data-volume="0.85"></audio>
+      <audio id="sfx-13" class="clip" src="assets/sfx/moedas.mp3" data-start="42.95" data-duration="2.4" data-track-index="6" data-volume="0.45" data-fade-out="0.6"></audio>
+      <audio id="sfx-14" class="clip" src="assets/sfx/riser.mp3" data-start="43.53" data-duration="1.7" data-track-index="7" data-volume="0.3" data-fade-out="0.3"></audio>
+      <audio id="sfx-15" class="clip" src="assets/sfx/caixa.mp3" data-start="45.2" data-duration="1.1" data-track-index="3" data-volume="0.5"></audio>
+      <audio id="sfx-16" class="clip" src="assets/sfx/impacto.mp3" data-start="46.09" data-duration="2.0" data-track-index="4" data-volume="0.8" data-fade-out="0.9"></audio>
+      <audio id="sfx-17" class="clip" src="assets/sfx/pop.mp3" data-start="23.08" data-duration="0.7" data-track-index="5" data-volume="0.85"></audio>
+      <audio id="sfx-18" class="clip" src="assets/sfx/pop.mp3" data-start="23.78" data-duration="0.7" data-track-index="6" data-volume="0.85"></audio>
+      <audio id="sfx-19" class="clip" src="assets/sfx/moedas.mp3" data-start="33.779999999999994" data-duration="2.0" data-track-index="7" data-volume="0.55" data-fade-out="0.6"></audio>
+      <audio id="sfx-20" class="clip" src="assets/sfx/pop.mp3" data-start="49.71" data-duration="0.7" data-track-index="3" data-volume="0.85"></audio>
+      <audio id="sfx-21" class="clip" src="assets/sfx/pop.mp3" data-start="50.89" data-duration="0.7" data-track-index="4" data-volume="0.85"></audio>
+      <audio id="sfx-22" class="clip" src="assets/sfx/transicao.mp3" data-start="51.61" data-duration="1.6" data-track-index="5" data-volume="0.32" data-fade-out="0.5"></audio>
+      <audio id="sfx-23" class="clip" src="assets/sfx/transicao.mp3" data-start="36.66" data-duration="1.6" data-track-index="6" data-volume="0.32" data-fade-out="0.5"></audio>
+      <audio id="sfx-24" class="clip" src="assets/sfx/whoosh.mp3" data-start="47.93" data-duration="0.6" data-track-index="7" data-volume="0.35"></audio>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.set("#dip", { opacity: 0 }, 0);
+      tl.to("#dip", { opacity: 1, duration: 0.22, ease: "power1.in" }, 15.76); tl.to("#dip", { opacity: 0, duration: 0.28, ease: "power1.out" }, 15.98);
+      tl.to("#dip", { opacity: 1, duration: 0.22, ease: "power1.in" }, 36.54); tl.to("#dip", { opacity: 0, duration: 0.28, ease: "power1.out" }, 36.76);
+      tl.to("#dip", { opacity: 1, duration: 0.22, ease: "power1.in" }, 47.81); tl.to("#dip", { opacity: 0, duration: 0.28, ease: "power1.out" }, 48.03);
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

@@ -431,6 +431,11 @@
       const y0 = yN(i) - 60;
       ctx.fillStyle = `rgba(31,58,85,${0.06 + i * 0.05})`; ctx.fillRect(0, Math.max(312, y0), 1920, 118);
       if (nv === i) { ctx.fillStyle = "rgba(184,80,58,.28)"; ctx.fillRect(0, Math.max(312, y0), 1920, 118); }
+      if (!nv && c.passos && c.passos[i - 1] != null && lt >= c.passos[i - 1]) {
+        // visão geral: a faixa do nível "acende" quando a voz fala dele
+        const k = 1 - seg(lt, c.passos[i - 1] + 0.5, c.passos[i - 1] + 2.2);
+        if (k > 0) { ctx.fillStyle = `rgba(184,80,58,${0.55 * k})`; ctx.fillRect(0, Math.max(312, y0), 1920, 118); }
+      }
       P.traco(ctx, P.linha([[400, y0 + 118], [1300, y0 + 118]], 40), { w: 3, cor: "rgba(31,58,85,.35)", seed: f + i * 3 });
     }
     ctx.restore();
@@ -735,7 +740,7 @@
     let px = 0, py = 0;
     (c.batidas || []).forEach((b, k) => {
       const u = ease.inOut(seg(lt, b, b + 0.32));
-      z += (k % 2 === 0 ? 0.08 : -0.06) * u;
+      z += (k % 2 === 0 ? 0.07 : -0.07) * u;  // entra e volta: o zoom não acumula ao longo da cena
       px += (k % 2 === 0 ? -1 : 1) * 46 * u; py += (k % 3 === 0 ? -1 : 1) * 22 * u;
     });
     ctx.setTransform(1, 0, 0, 1, 0, 0);

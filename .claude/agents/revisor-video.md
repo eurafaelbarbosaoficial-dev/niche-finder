@@ -101,7 +101,17 @@ Abra **todas** as folhas de contato com Read, uma por uma. Procure:
 13. **Personagem sem vida:** parado sem piscar ou respirar por mais de 2 s, ou sem reagir a uma virada da narração
     ("Aber", "doch", "mas", uma revelação) é **médio**.
 14. **Confusão:** a pessoa entende a cena sem som? Se não, falta pista visual.
-15. **Final:** termina numa imagem forte e legível, segurada de 1,5 a 2,5 s. Final que corta seco ou fica parado
+15. **Corte seco** (o dono pegou um em 13/11, aos 17 s): o relatório lista cada troca de cena feita num único
+    quadro, com o salto de luz.
+    - Corte seco de escuro para claro (ou o contrário) sem transição é **médio**.
+    - Se, além disso, o som de transição foi cortado no meio, é **alto**.
+    - Abra o quadro antes e depois de cada corte listado e confira se a cena nova continua o assunto da voz.
+16. **Emenda de voz** (o dono pegou uma em 13/11: depois do carimbo, a voz "mudava"):
+    - **Cada capítulo tem de usar UMA tomada contínua de narração.**
+    - Confira no projeto quais arquivos de voz entram em cada capítulo. Juntar duas gravações diferentes na mesma
+      fala é **alto**, mesmo com a mesma voz e o mesmo texto: a entonação muda e soa como corte.
+    - Pausa entre frases é natural. Troca de "tom" no meio do assunto não é.
+17. **Final:** termina numa imagem forte e legível, segurada de 1,5 a 2,5 s. Final que corta seco ou fica parado
     demais é **médio**.
 
 Quando um quadro parecer suspeito, gere ele em tamanho cheio e olhe antes de apontar:

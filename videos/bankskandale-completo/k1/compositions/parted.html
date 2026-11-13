@@ -1,0 +1,20 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #efe6d2; }
+    #cv-parted { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  </style>
+  <div id="root" data-composition-id="parted" data-width="1920" data-height="1080">
+    <canvas id="cv-parted" width="1920" height="1080"></canvas>
+  </div>
+  <script>
+    (function () {
+      const CENAS = [{"tipo": "lista", "em": "Wir haben", "titulo": "Wir haben durchgesehen:", "itens": ["Gerichtsakten", "Behördenberichte", "Leaks"], "passos": [0.62, 1.68, 2.86], "detetive": "pensa", "t0": 0.0, "t1": 3.73, "batidas": [1.86]}, {"tipo": "iceberg", "em": "Und es fängt harmlos an", "nivel": 0, "passos": [2.64, 5.72, 6.32, 8.26, 11.26, 16.16, 20.22], "titulo": "Der Eisberg der *Geldwäsche-Skandale*", "t0": 3.73, "t1": 28.03, "batidas": [2.02, 4.05, 6.08, 8.1, 10.12, 12.15, 14.17, 16.2, 18.23, 20.25, 22.28], "foco": [1450, 620]}];
+      const ctx = document.getElementById("cv-parted").getContext("2d");
+      const tl = gsap.timeline({ paused: true });
+      const r = { t: 0 };
+      tl.fromTo(r, { t: 0 }, { t: 27.030, duration: 27.030, ease: "none", onUpdate: () => Motor.desenhar(ctx, CENAS, r.t) }, 0);
+      Motor.desenhar(ctx, CENAS, 0);
+      window.__timelines["parted"] = tl;
+    })();
+  </script>
+</template>

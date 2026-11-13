@@ -1,0 +1,20 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #efe6d2; }
+    #cv-parteb { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+  </style>
+  <div id="root" data-composition-id="parteb" data-width="1920" data-height="1080">
+    <canvas id="cv-parteb" width="1920" height="1080"></canvas>
+  </div>
+  <script>
+    (function () {
+      const CENAS = [{"tipo": "documento", "em": "Der Verdacht", "cabecalho": "Razzia · 29.11.2018", "titulo": "Der Verdacht", "citacao": "Briefkastenfirmen in Steueroasen gründen", "passos": [3.72, 99], "detetive": "desconfia", "t0": 0.0, "t1": 6.2, "batidas": [1.86]}, {"tipo": "fluxo", "em": "und Geld aus Straftaten", "titulo": "Geld aus Straftaten *durchschleusen*", "nos": [{"texto": "Geld aus Straftaten", "icone": "notas"}, {"texto": "Briefkastenfirma", "icone": "documento"}, {"texto": "Bankkonto", "icone": "banco"}], "passos": [0.2, 0.9, 1.6, 99], "destacaFim": true, "t0": 6.2, "t1": 9.52, "batidas": []}, {"tipo": "local", "em": "Allein eine Konzerngesellschaft", "lugar": "Britische Jungferninseln", "data": "2016", "sub": "eine Konzerngesellschaft", "passos": [2.86, 4.0], "t0": 9.52, "t1": 14.7, "batidas": [1.73, 3.45]}, {"tipo": "numero", "em": "über", "valor": 900, "prefixo": "über ", "sufixo": "Kunden", "rotulo": "betreut von einer Gesellschaft", "icone": "documento", "passos": [0.1, 99, 99], "t0": 14.7, "t1": 17.4, "batidas": []}, {"tipo": "numero", "em": "Geschäftsvolumen", "valor": 311, "sufixo": "Mio. €", "rotulo": "Geschäftsvolumen", "icone": "notas", "passos": [0.4], "t0": 17.4, "t1": 21.779999999999998, "batidas": []}];
+      const ctx = document.getElementById("cv-parteb").getContext("2d");
+      const tl = gsap.timeline({ paused: true });
+      const r = { t: 0 };
+      tl.fromTo(r, { t: 0 }, { t: 20.780, duration: 20.780, ease: "none", onUpdate: () => Motor.desenhar(ctx, CENAS, r.t) }, 0);
+      Motor.desenhar(ctx, CENAS, 0);
+      window.__timelines["parteb"] = tl;
+    })();
+  </script>
+</template>

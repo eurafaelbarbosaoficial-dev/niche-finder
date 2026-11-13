@@ -1,0 +1,123 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #efe6d2; }
+    #kl-cv { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+    #kl-cap { position: absolute; left: 130px; top: 96px; color: #2b2420; font: 700 74px/1.08 "Playfair Display", serif; letter-spacing: -.01em; }
+    #kl-cap em { color: #b8503a; font-style: italic; }
+    .kl-lab { position: absolute; width: 360px; margin-left: -180px; text-align: center; color: #2b2420; font: 700 34px/1.15 Inter, sans-serif; }
+    #kl-l1 { left: 1150px; top: 588px; }
+    #kl-l2 { left: 1580px; top: 446px; }
+    #kl-l3 { left: 1470px; top: 906px; }
+  </style>
+  <div id="root" data-composition-id="klischee" data-width="1920" data-height="1080">
+    <canvas id="kl-cv" width="1920" height="1080"></canvas>
+    <div id="kl-cap" class="clip" data-start="0.00" data-duration="5.58">Die meisten denken<br />bei <em>Geldwäsche</em> an…</div>
+    <div id="kl-l1" class="kl-lab clip" data-start="1.95" data-duration="3.63">Dönerläden</div>
+    <div id="kl-l2" class="kl-lab clip" data-start="2.84" data-duration="2.74">Shisha-Bars</div>
+    <div id="kl-l3" class="kl-lab clip" data-start="3.89" data-duration="1.69">Koffer voller Bargeld</div>
+  </div>
+  <script>
+    (function () {
+      const P = window.Pincel, C = P.COR;
+      const cv = document.querySelector("#kl-cv"), ctx = cv.getContext("2d");
+      const papel = P.papel(1920, 1080);
+      const B = [
+        { x: 1150, y: 420, rx: 165, ry: 128, t: 1.6, s: 11 },
+        { x: 1580, y: 282, rx: 160, ry: 124, t: 2.5, s: 23 },
+        { x: 1470, y: 742, rx: 170, ry: 128, t: 3.6, s: 37 },
+      ];
+
+      function doner(x, y, sd) {
+        P.forma(ctx, [[x - 80, y + 30], [x - 70, y - 20], [x - 30, y - 52], [x + 30, y - 52], [x + 70, y - 20], [x + 80, y + 30]], { fill: "#e2b06a", sombra: "#c48f4c", brilho: "rgba(255,240,200,.35)", seed: sd });
+        P.forma(ctx, [[x - 66, y - 18], [x - 40, y - 46], [x - 10, y - 40], [x + 20, y - 50], [x + 52, y - 38], [x + 68, y - 16], [x + 30, y - 26], [x - 20, y - 22]], { fill: C.salvia, sombra: "#6e8a52", seed: sd + 1, w: 4.5 });
+        [[-34, -30], [6, -36], [40, -26]].forEach(([dx, dy], i) => P.forma(ctx, P.elipse(x + dx, y + dy, 14, 11, 9), { fill: "#c9553e", sombra: "#a23f2c", seed: sd + 2 + i, w: 4 }));
+        P.traco(ctx, [[x - 56, y - 6], [x, y - 14], [x + 56, y - 6]], { w: 7, cor: "#7a4a2a", seed: sd + 6 });
+        P.traco(ctx, [[x - 48, y + 8], [x, y + 2], [x + 48, y + 8]], { w: 4, cor: "#c48f4c", seed: sd + 7 });
+      }
+      function shisha(x, y, sd, t) {
+        P.membro(ctx, [[x + 14, y - 14], [x + 70, y + 8], [x + 74, y + 56], [x + 50, y + 76]], 7, "#5d4a3a", sd + 9);
+        P.forma(ctx, [[x - 9, y - 70], [x + 9, y - 70], [x + 11, y + 4], [x - 11, y + 4]], { fill: "#c9a05c", sombra: "#a07a3c", seed: sd, w: 4 });
+        P.forma(ctx, [[x - 28, y - 86], [x + 28, y - 86], [x + 16, y - 66], [x - 16, y - 66]], { fill: C.terracota, sombra: "#963d2b", seed: sd + 1, w: 4.5 });
+        P.forma(ctx, P.elipse(x, y + 42, 50, 46, 16), { fill: C.ardosia, sombra: C.ardosiaS, brilho: "rgba(255,255,255,.28)", seed: sd + 2 });
+        for (let i = 0; i < 2; i++) {
+          const u = ((t * 0.55 + i * 0.5) % 1), a = Math.sin(Math.PI * u) * 0.7;
+          const yy = y - 96 - u * 46, xx = x - 6 + i * 14;
+          P.traco(ctx, [[xx, yy + 16], [xx - 10, yy + 4], [xx + 2, yy - 8], [xx - 6, yy - 20]], { w: 5, cor: "#9a948c", alpha: a, seed: sd + 20 + i });
+        }
+      }
+      function koffer(x, y, sd) {
+        P.membro(ctx, [[x - 26, y - 46], [x - 22, y - 70], [x + 22, y - 70], [x + 26, y - 46]], 8, "#5a4636", sd + 9);
+        [[-56, -6], [-20, -14], [16, -8], [46, -16]].forEach(([dx, r], i) => P.forma(ctx, [[x + dx - 22, y - 84 - r], [x + dx + 22, y - 88 - r * 0.6], [x + dx + 24, y - 30], [x + dx - 20, y - 30]], { fill: "#9cbf86", sombra: "#7a9c66", seed: sd + i, w: 4 }));
+        P.forma(ctx, [[x - 92, y - 42], [x + 92, y - 42], [x + 96, y + 52], [x - 96, y + 52]], { fill: "#6a5240", sombra: "#4f3c2e", brilho: "rgba(255,230,200,.18)", seed: sd + 5 });
+        P.traco(ctx, [[x - 94, y - 16], [x + 94, y - 16]], { w: 4.5, seed: sd + 6 });
+        [-50, 50].forEach((dx, i) => P.forma(ctx, [[x + dx - 11, y - 24], [x + dx + 11, y - 24], [x + dx + 11, y - 6], [x + dx - 11, y - 6]], { fill: C.ocre, sombra: "#b98a2f", seed: sd + 7 + i, w: 3.5 }));
+        P.traco(ctx, [[x - 6, y + 22], [x + 6, y + 6], [x + 10, y + 22], [x - 4, y + 34]], { w: 4, cor: "#c9a05c", seed: sd + 12 });
+      }
+
+      function desenhar(t) {
+        const f = P.quadro(t);
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        ctx.drawImage(papel, 0, 0);
+        const z = 1 + 0.035 * P.ease.inOut(P.seg(t, 0, 5.6));
+        ctx.translate(800, 600); ctx.scale(z, z); ctx.translate(-800, -600);
+        P.brilhoSuave(ctx, 470, 760, 520, "rgba(232,180,80,0.30)");
+
+        [[650, 560, 11, 0.85], [712, 500, 17, 1.0], [790, 452, 23, 1.15]].forEach(([x, y, r, t0], i) => {
+          const s = P.ease.back(P.seg(t, t0, t0 + 0.22));
+          if (s <= 0) return;
+          ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
+          P.forma(ctx, P.elipse(0, 0, r, r, 10), { fill: C.nuvem, seed: f * 13 + i, w: 5 });
+          ctx.restore();
+        });
+        B.forEach((b, i) => {
+          const s = P.ease.back(P.seg(t, b.t, b.t + 0.42));
+          if (s <= 0) return;
+          const fl = Math.sin((t - b.t) * 2.1 + i) * 6;
+          ctx.save(); ctx.translate(b.x, b.y + fl); ctx.scale(s, s); ctx.rotate((1 - s) * -0.2); ctx.translate(-b.x, -b.y);
+          P.nuvem(ctx, b.x, b.y, b.rx, b.ry, f * 7 + b.s);
+          if (i === 0) doner(b.x, b.y + 10, f * 31 + 100);
+          if (i === 1) shisha(b.x - 16, b.y + 14, f * 31 + 200, t);
+          if (i === 2) koffer(b.x, b.y + 4, f * 31 + 300);
+          ctx.restore();
+        });
+
+        const subida = (1 - P.ease.out(P.seg(t, 0, 0.55))) * 180;
+        const chaves = [[0, 0], [0.8, -0.07], [1.55, 0.05], [2.45, 0.09], [3.55, 0.03], [4.6, -0.02]];
+        const st = {
+          respira: Math.sin(t * Math.PI * 2 / 2.6),
+          incl: P.keyed(t, chaves, 0.35),
+          inclCorpo: P.keyed(t - 0.14, chaves, 0.45) * 0.25,
+          olhar: P.keyed(t, [[0, [0, 0]], [0.75, [0.4, -0.9]], [1.55, [1, -0.3]], [2.45, [1, -0.9]], [3.55, [1, 0.5]], [4.6, [0.1, 0]]], 0.22),
+          pisca: P.piscar(t, [1.3, 3.05, 4.95]),
+          sobrancelha: P.keyed(t, [[0, 0], [0.8, 0.5], [1.55, 1], [2.45, 0.5], [3.55, 1], [4.6, 0.1]], 0.25),
+          boca: P.keyed(t, [[0, 0.3], [0.8, -0.1], [1.55, 0.5], [2.45, 0.2], [3.55, 0.7], [4.6, -0.3]], 0.25),
+          mao: P.keyed(t, [[0, 0], [0.7, 1], [4.3, 0.15]], 0.5),
+          cocar: P.seg(t, 1.0, 1.2) * (1 - P.seg(t, 2.2, 2.4)),
+        };
+        ctx.save(); ctx.translate(470, 1150 + subida); ctx.scale(0.98, 0.98);
+        P.detetive(ctx, st, t);
+        ctx.restore();
+
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        P.vinheta(ctx, 1920, 1080, 0.24);
+      }
+
+      const tl = gsap.timeline({ paused: true });
+      const relogio = { t: 0 };
+      tl.fromTo(relogio, { t: 0 }, { t: 5.6, duration: 5.6, ease: "none", onUpdate: () => desenhar(relogio.t) }, 0);
+      tl.fromTo("#kl-cap", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.15);
+      [["#kl-l1", 1.75], ["#kl-l2", 2.65], ["#kl-l3", 3.75]].forEach(([s, t0]) => {
+        tl.fromTo(s, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.3, ease: "power2.out" }, t0);
+      });
+      desenhar(0);
+      (function () {
+        const W = [[0.0, 0.0], [0.44, 0.03], [0.76, 0.35], [1.1, 0.69], [1.4, 1.01], [1.96, 1.61], [2.26, 1.91], [3.26, 2.93], [3.58, 3.29], [3.9, 3.61], [4.3, 4.03], [4.7, 4.47], [4.98, 4.79], [5.58, 5.6]], inner = tl, D = 5.580;
+        const wl = (x) => { for (let k = 0; k < W.length - 1; k++) { const [n0, o0] = W[k], [n1, o1] = W[k + 1]; if (x >= n0 && x <= n1) return o0 + (x - n0) * (o1 - o0) / Math.max(1e-6, n1 - n0); } return W[W.length - 1][1]; };
+        const outer = gsap.timeline({ paused: true }); const rr = { t: 0 };
+        outer.fromTo(rr, { t: 0 }, { t: D, duration: D, ease: "none", onUpdate: () => inner.seek(wl(rr.t), false) }, 0);
+        inner.seek(0, false);
+        window.__timelines["klischee"] = outer;
+      })();
+    })();
+  </script>
+</template>

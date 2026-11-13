@@ -313,6 +313,27 @@ def ritmo_visual(video, duracao):
             "plano_max_s": round(max(planos), 1) if planos else None}
 
 
+def cortes_secos(video, cortes):
+    """Para cada corte de cena: foi seco (a imagem troca num único quadro) e com salto forte de luz (escuro <-> claro)?
+    Corte seco entre cenas muito diferentes, sem transição, assusta e parece erro."""
+    import numpy as np
+    out = []
+    for c in cortes:
+        ini = max(0.0, c - 0.6)
+        b = subprocess.run(["ffmpeg", "-loglevel", "error", "-ss", f"{ini:.2f}", "-t", "1.4", "-i", video, "-vf", "scale=160:90,format=gray", "-f", "rawvideo", "-"],
+                           capture_output=True).stdout
+        f = np.frombuffer(b, dtype=np.uint8)
+        if len(f) < 160 * 90 * 4:
+            continue
+        f = f[: len(f) // (160 * 90) * 160 * 90].reshape(-1, 90, 160).astype(np.int16)
+        d = np.abs(np.diff(f, axis=0)).mean(axis=(1, 2))
+        k = int(np.argmax(d))
+        quadros_mudando = int((d > 0.25 * d[k]).sum())
+        luz = abs(float(f[: k + 1].mean()) - float(f[k + 1:].mean())) if k + 1 < len(f) else 0
+        out.append({"tempo": round(ini + (k + 1) / 30, 2), "seco": quadros_mudando <= 2, "salto_luz": round(luz, 1), "pico": round(float(d[k]), 1)})
+    return out
+
+
 def ritmo_fala(palavras):
     r = {"primeira_palavra": palavras[0]["ini"] if palavras else None, "silencios": [], "ppm": None}
     if not palavras:
@@ -492,6 +513,12 @@ def main():
 
     print("5/6 telas pretas, congeladas e ritmo visual…")
     R["ritmo"] = rv = ritmo_visual(a.video, tec["duracao"])
+    R["cortes"] = cs = cortes_secos(a.video, rv["cortes"])
+    for c in cs:
+        if c["seco"] and c["salto_luz"] >= 40:
+            achado("medio", c["tempo"], "retencao", f"Corte SECO em {c['tempo']} s com salto forte de luz ({c['salto_luz']} níveis): troca de cena sem transição. Conferir se tem som de transição; senão usar crossfade/whoosh.")
+        elif c["seco"]:
+            achado("baixo", c["tempo"], "visual", f"Corte seco em {c['tempo']} s (sem transição de imagem): conferir se o som acompanha a troca.")
     for x0, x1 in rv["lacunas"]:
         if x1 >= tec["duracao"] - 0.05 and x1 - x0 <= FIM_LIVRE:
             continue
@@ -542,6 +569,9 @@ def main():
     L += ["## Ritmo (retenção)", "",
           f"- Elementos novos na tela: {len(rv.get('eventos', []))} momentos · cortes de cena em {rv.get('cortes')} · plano médio {rv.get('plano_medio_s')} s (maior {rv.get('plano_max_s')} s)",
           f"- Trechos sem novidade de {SEM_NOVIDADE_MEDIO} s ou mais: {rv.get('lacunas') or 'nenhum'}"]
+    secos = [c for c in R.get("cortes", []) if c["seco"]]
+    if secos:
+        L += [f"- Cortes secos (troca num quadro só): " + ", ".join(f"{c['tempo']} s (luz {c['salto_luz']})" for c in secos)]
     if R.get("fala"):
         f_ = R["fala"]
         L += [f"- Voz começa em {f_['primeira_palavra']} s · {f_['ppm']} palavras/min · pausas de {SILENCIO_MEDIO} s ou mais: {[(x['de'], x['dur']) for x in f_['silencios']] or 'nenhuma'}"]
