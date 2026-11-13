@@ -45,7 +45,7 @@
     <div class="ctrl-l">
       <label class="srch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
         <input id="q" type="search" placeholder="Filtrar por canal, vídeo ou tema" autocomplete="off"><kbd>/</kbd></label>
-      <div class="segm" id="fonte"><button data-f="agora">Agora</button><button data-f="arquivo">Arquivo</button></div>
+      <div class="segm" id="fonte"><button data-f="agora">Agora</button><button data-f="subindo">Subindo</button><button data-f="arquivo">Arquivo</button></div>
       <div class="segm" id="langs"></div>
       <select class="drop" id="ordem" aria-label="Ordenar">
         <option value="melhor">↓ Melhor vídeo</option><option value="ratio">↓ Outlier ×</option><option value="dia">↓ Views por dia</option>
@@ -110,7 +110,7 @@ function carregar(){
     if(d.em_observacao==null)d.em_observacao=(d.canais||[]).filter(function(x){return!x.performando;}).length;
     d.canais=(d.canais||[]).filter(function(x){return x.performando;});
     if(S.fonte!=="arquivo"){D=d;$("erro").style.display="none";tudo();return;}
-    return fetch("arquivo.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():{canais:[]};}).then(function(a){d.canais=a.canais||[];D=d;$("erro").style.display="none";tudo();});})
+    return fetch((S.fonte==="subindo"?"subindo.json":"arquivo.json")+"?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():{canais:[]};}).then(function(a){d.canais=a.canais||[];D=d;$("erro").style.display="none";tudo();});})
   .catch(function(e){$("erro").style.display="block";$("erro").textContent="Não consegui ler os dados agora ("+e.message+"). Tento de novo em 30 s.";});
 }
 
@@ -153,7 +153,7 @@ function card(x){var m=x.melhor,r=ratio(x),g=cresc(x);
     "<div class='nums'><div><small>Inscritos</small><b>"+fmt(x.inscritos)+"</b></div><div><small>Vídeos</small><b>"+(x.n_longos==null?"?":x.n_longos)+"</b></div><div><small>Views/dia</small><b>"+fmt(x.views_dia)+"</b></div></div>"+
     "<div class='ft'>"+spark(x.historico,84,24)+(g?"<span class='up'>+"+fmt(g)+" 24h</span>":"")+"<span class='go'>Ver canal <span>→</span></span></div></div></article>";}
 function lista(){var cs=filtrados(),fs=[S.cat,S.lang&&LANGS[S.lang],S.q&&("“"+S.q+"”")].filter(Boolean);
-  $("cont").innerHTML="<b>"+cs.length+"</b> de "+(D.canais||[]).length+(S.fonte==="arquivo"?" outliers no arquivo (todos que já apareceram)":" outliers das últimas 3 semanas")+(fs.length?" · "+esc(fs.join(" · ")):"");$("limpar").style.display=fs.length?"":"none";$("ordem").value=S.ordem;
+  $("cont").innerHTML="<b>"+cs.length+"</b> de "+(D.canais||[]).length+(S.fonte==="arquivo"?" outliers no arquivo (todos que já apareceram)":S.fonte==="subindo"?" canais subindo (ainda abaixo de "+((D.criterios||{}).bom_video||50000).toLocaleString("pt-BR")+" views, mas crescendo rápido)":" outliers das últimas 3 semanas")+(fs.length?" · "+esc(fs.join(" · ")):"");$("limpar").style.display=fs.length?"":"none";$("ordem").value=S.ordem;
   $("grid").innerHTML=cs.length?cs.map(card).join(""):"<div class='vazio'>"+((D.canais||[]).length?"Nenhum canal com esses filtros.":"Nenhum outlier ainda. A busca roda a cada 3 horas.")+"</div>";
   UI.revelar($("grid").querySelectorAll(".card"));
   [].forEach.call($("grid").querySelectorAll(".card"),function(el){el.onclick=function(){abrir(el.dataset.id);};});}

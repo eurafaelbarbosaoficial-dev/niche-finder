@@ -32,6 +32,8 @@ DADOS_F = AQUI / "docs" / "dados.json"
 LOG_F = ESTADO / "log.txt"
 MESES = {m: i for i, m in enumerate("Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(), 1)}
 MAX_VIDEOS = 60
+# faixa "Subindo" (critério nosso, 13/11; ajustar com o dono): canal novo abaixo de bom_video que cresce rápido
+SUBINDO_MIN, SUBINDO_DIA, SUBINDO_RAZAO = 5000, 2000, 20
 
 
 def agora():
@@ -116,6 +118,18 @@ def medir_videos(d, min_dur):
     return r
 
 
+def relacionados(video_id):
+    """Canais dos vídeos recomendados ao lado de um vídeo (página do vídeo; sem API: ela não oferece isso)."""
+    try:
+        req = urllib.request.Request(f"https://www.youtube.com/watch?v={video_id}", headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120 Safari/537.36", "Accept-Language": "en"})
+        s = urllib.request.urlopen(req, timeout=30).read().decode("utf-8", errors="replace")
+        i = s.find("secondaryResults")
+        return list(dict.fromkeys(re.findall(r'"browseId":"(UC[\w-]{22})"', s[i:i + 800000]))) if i > 0 else []
+    except Exception:
+        return []
+
+
 def inscritos(cid):
     """Inscritos lidos SEM idioma (a página em inglês o yt-dlp sempre entende)."""
     try:
@@ -167,6 +181,26 @@ def montar_dados(cache, info, cfg, a):
                        "id": cid, "url": f"https://www.youtube.com/channel/{cid}",
                        "dias_primeiro": d1, "views_dia": round((c.get("views_total") or 0) / max(d1, 1)),
                        "performando": ((c.get("melhor") or {}).get("views") or 0) >= a.bom_video})
+    # SUBINDO: ainda abaixo de bom_video, mas crescendo rápido (critério nosso, ver SUBINDO_* no topo)
+    sub = []
+    for c in canais:
+        if c["performando"]:
+            continue
+        mv = (c.get("melhor") or {}).get("views") or 0
+        h = c.get("historico") or []
+        cresc = None
+        if len(h) >= 2:
+            t1, v1 = dt.datetime.fromisoformat(h[-1][0]), h[-1][1]
+            ant = [x for x in h if (t1 - dt.datetime.fromisoformat(x[0])).total_seconds() >= 12 * 3600]
+            if ant:
+                t0, v0 = dt.datetime.fromisoformat(ant[-1][0]), ant[-1][1]
+                cresc = round((v1 - v0) / max((t1 - t0).total_seconds() / 86400, 0.5))
+        razao = round(mv / c["inscritos"], 1) if c.get("inscritos") else None
+        if mv >= SUBINDO_MIN and ((cresc or 0) >= SUBINDO_DIA or (razao or 0) >= SUBINDO_RAZAO):
+            sub.append({**c, "crescimento_dia": cresc, "views_por_inscrito": razao})
+    sub.sort(key=lambda x: -((x["crescimento_dia"] or 0) + (x.get("views_dia") or 0)))
+    gravar(DADOS_F.parent / "subindo.json", {"atualizado": agora().isoformat(), "total": len(sub), "canais": sub[:80],
+                                            "criterio": f"melhor vídeo >= {SUBINDO_MIN} views e (+{SUBINDO_DIA} views/dia ou {SUBINDO_RAZAO}x views por inscrito)"})
     # o site só mostra outliers (um vídeo com bom_video views ou mais); os outros ficam em observação
     em_observacao = sum(1 for c in canais if not c["performando"])
     canais = [c for c in canais if c["performando"]]
@@ -281,6 +315,19 @@ def rodada(a, trava):
                 if i % 10 == 0:
                     salvar()
                 log(f"[{lang}] {cat}: “{termo}” → {len(res)} vídeos")
+        # BOLA DE NEVE: os vídeos que o YouTube recomenda ao lado de cada outlier trazem canais que a busca não mostra
+        outl = [(cid, c) for cid, c in cache.items() if c.get("status") == "novo" and ((c.get("melhor") or {}).get("views") or 0) >= a.bom_video]
+        info.update(fase=f"Bola de neve: relacionados de {len(outl)} outliers")
+        with ThreadPoolExecutor(a.paralelo) as ex:
+            futs = {ex.submit(relacionados, c["melhor"]["id"]): (cid, c) for cid, c in outl}
+            novos = 0
+            for f in as_completed(futs):
+                cid0, c0 = futs[f]
+                for cid in f.result() or []:
+                    if cid != cid0 and cid not in achados and cid not in cache:
+                        achados[cid] = (c0.get("categoria"), c0.get("grupo"), f"relacionado de {c0.get('nome')}")
+                        novos += 1
+        log(f"Bola de neve: +{novos} canais vindos dos relacionados de {len(outl)} outliers")
         gravar(busca_f, {"quando": time.time(), "achados": achados})
 
     # novos já conhecidos (para atualizar as views) + canais achados agora que ainda não foram descartados
