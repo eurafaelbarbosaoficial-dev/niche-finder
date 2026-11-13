@@ -62,3 +62,13 @@ Passo a passo de cada parte: `CLAUDE.md`. Instalar em máquina nova: `LEIA-ME.md
   pelas palavras/letras do título (ä ö ü ß = alemão).
 - Comparar tema por radical quase inteiro (não 6 letras): "Finanzisch" ≠ "Finanzagent".
 - Busca do tema precisa ser só o assunto (sem "erklärt"), senão exige palavras demais.
+
+## Quando o dono pedir para TROCAR DE MÁQUINA
+O dono pede ("quero usar o Niche Finder nesta máquina nova") e o Claude faz, guiando em português:
+1. `winget install Git.Git` (se faltar) e `winget install GitHub.cli`; o DONO faz o login (`gh auth login`) — nunca usar a senha dele.
+2. `git clone https://github.com/eurafaelbarbosaoficial-dev/niche-finder "%USERPROFILE%\Documents\Niche Finder"`.
+3. Na pasta: `powershell -ExecutionPolicy Bypass -File instalar.ps1` (Python, yt-dlp, Deno, tarefa a cada 3 h).
+4. Configurar o git (user.name eurafaelbarbosaoficial-dev e o e-mail noreply do GitHub, nunca o e-mail pessoal).
+5. Ler este arquivo; rodar `python -I finder.py --publicar 5` de teste e conferir se o site atualiza.
+6. Na máquina antiga: apagar a tarefa "Niche Finder" (`Unregister-ScheduledTask -TaskName "Niche Finder" -Confirm:$false`),
+   pelo Claude de lá ou pelo Agendador de Tarefas. Só uma máquina busca por vez.
