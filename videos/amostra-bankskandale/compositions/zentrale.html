@@ -6,7 +6,7 @@
     #ze-t1 { font: 700 32px/1 Inter, sans-serif; letter-spacing: .34em; text-transform: uppercase; color: #a9b8d6; }
     #ze-t2 { margin-top: 20px; font: 700 92px/1 "Playfair Display", serif; }
     #ze-t2 em { color: #e3b44c; font-style: italic; }
-    #ze-stempel { position: absolute; left: 50%; top: 560px; width: 820px; margin-left: -410px; padding: 26px 0 30px; text-align: center; border: 10px solid #d9473a; border-radius: 20px 6px 18px 8px / 8px 18px 6px 20px; outline: 3px solid #d9473a; outline-offset: 8px; color: #d9473a; font: 700 84px/1 "Playfair Display", serif; letter-spacing: .06em; background: rgba(26,34,56,.55); }
+    #ze-stempel { position: absolute; left: 50%; top: 560px; width: 820px; margin-left: -410px; padding: 26px 0 30px; text-align: center; border: 10px solid #d9473a; border-radius: 20px 6px 18px 8px / 8px 18px 6px 20px; outline: 3px solid #d9473a; outline-offset: 8px; color: #d9473a; font: 700 84px/1 "Playfair Display", serif; letter-spacing: .06em; background: rgba(22,28,46,.9); }
   </style>
   <div id="root" data-composition-id="zentrale" data-width="1920" data-height="1080">
     <canvas id="ze-cv" width="1920" height="1080"></canvas>
@@ -60,8 +60,8 @@
           const rr = P.rng(i * 17 + 3);
           for (let j = 0; j < 9; j++) if (rr() > 0.4) { ctx.fillStyle = "rgba(246,220,154,.75)"; ctx.fillRect(x + 14 + rr() * (w - 34), 1080 - h + 24 + rr() * (h - 60), 14, 10); }
         });
-        torre(700, 1110, 240, 880, "#2f4a78", "#22385e", 300, t);
-        torre(990, 1110, 260, 830, "#36558a", "#27416b", 400, t);
+        torre(700, 1110, 240, 740, "#2f4a78", "#22385e", 300, t);
+        torre(990, 1110, 260, 700, "#36558a", "#27416b", 400, t);
         // carros de polícia na base: luzes alternando
         const az = Math.max(0, Math.sin(t * Math.PI * 2 * 1.8)), vm = Math.max(0, Math.sin(t * Math.PI * 2 * 1.8 + Math.PI));
         ctx.globalCompositeOperation = "lighter";

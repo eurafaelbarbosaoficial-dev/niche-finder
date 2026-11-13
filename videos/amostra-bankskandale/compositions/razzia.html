@@ -45,14 +45,14 @@
           // chão
           P.traco(ctx, [[80, 965], [700, 958], [1300, 966], [1840, 960]], { w: 5, seed: f * 3 + 1 });
           for (let fila = 1; fila >= 0; fila--) {
-            for (let i = 0; i < 10; i++) {
+            for (let i = 0; i < (fila ? 9 : 10); i++) {
               const idx = fila * 10 + i, t0 = 0.2 + (fila ? 0.5 : 0) + i * 0.07;
               const u = P.ease.back(P.seg(t, t0, t0 + 0.35));
               if (u <= 0) continue;
               const x = 180 + i * 155 + (fila ? 78 : 0), y = 960 - (fila ? 70 : 0);
               const bob = Math.sin(t * 5.2 + idx * 1.7) * 2.5 * P.seg(t, 1.2, 1.6);
-              ctx.save(); ctx.translate(x, y + (1 - u) * 260 + bob); ctx.scale(fila ? 0.82 : 1, fila ? 0.82 : 1);
-              if (fila) ctx.globalAlpha = 0.92;
+              ctx.save(); ctx.translate(x, y - (1 - P.clamp(u, 0, 1)) * 60 + bob); ctx.scale(fila ? 0.82 : 1, fila ? 0.82 : 1);
+              ctx.globalAlpha = P.clamp(u, 0, 1) * (fila ? 0.92 : 1);
               P.policial(ctx, { respira: Math.sin(t * 2.4 + idx), piscadas: [1.6 + (idx % 5) * 0.7], olharX: Math.sin(idx) }, t, 50 + idx);
               ctx.restore();
             }

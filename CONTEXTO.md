@@ -106,7 +106,11 @@ O dono pede ("quero usar o Niche Finder nesta máquina nova") e o Claude faz, gu
   respiração, piscada, olhar, sobrancelha, cara zangada, boca e mão no queixo. Também: policial figurante
   (`Pincel.policial`), prédios (`Pincel.casa`), moedas (`Pincel.moeda`) e balões de pensamento (`Pincel.nuvem`).
   Cenas novas reaproveitam a biblioteca: copie `assets/js/` para o projeto novo.
-- **Sem música** por enquanto (não há gerador de música aqui); efeitos sonoros em `assets/sfx/`.
+- **Sem música** por enquanto (não há gerador de música aqui). Efeitos em `assets/sfx/`, com créditos em
+  `.media/audio/sfx/CREDITS.md`; os CC BY precisam de crédito na descrição do vídeo.
+- Amostra final aprovada pelo revisor: `renders/amostra-bankskandale-final.mp4`.
+- Próximo passo: o vídeo completo, ver `videos/PLANO-bankskandale-completo.md` (~14 min, ~12.700 créditos de voz,
+  8 capítulos).
 
 ## Agente revisor de vídeo (pedido do dono em 12/11)
 - `.claude/agents/revisor-video.md` + `revisor.py`. O agente roda depois de cada render e revisa três coisas:
@@ -114,5 +118,18 @@ O dono pede ("quero usar o Niche Finder nesta máquina nova") e o Claude faz, gu
   - narração × roteiro (transcrição com faster-whisper `medium`, local, palavra por palavra com o tempo);
   - volume: mix entre -16 e -12 LUFS, pico < -1 dBTP; efeito no máximo +3 LU acima da fala forte; música de 12 a
     30 LU abaixo da narração. Esses limites são critério nosso.
+- Antes de revisar: `python -I masterizar.py <mp4>` → `<nome>-final.mp4` em -14 LUFS (é ele que vai para o YouTube).
+- Retenção (pedido do dono: "não deve passar nada que diminua a retenção"):
+  - trechos sem elemento novo na tela (3 s = médio, 5 s = alto; o tremor do traço não conta como novidade);
+  - voz começando em até 1 s;
+  - silêncios na fala;
+  - palavras/min por idioma;
+  - efeito que some debaixo da voz (janelas de 50 ms);
+  - efeito com VOZ gravada;
+  - o que cada arquivo de efeito É de verdade na fonte.
+- Lições de 12/11:
+  - o "sirene.mp3" era um whoosh e o "whoosh.mp3" era um impacto (os arquivos estavam com o nome trocado);
+  - um "rubber stamp" baixado era uma pessoa FALANDO "rubber stamp";
+  - o revisor agora pega os dois casos.
 - Ele gera `<mp4>-revisao/RELATORIO.md` e as folhas de contato. O agente escreve o `REVISAO.md` com o veredito.
   Não corrige sozinho.

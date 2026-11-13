@@ -1,0 +1,1018 @@
+{
+ "video": "videos/amostra-bankskandale/renders/amostra-bankskandale-final.mp4",
+ "achados": [
+  {
+   "gravidade": "medio",
+   "tempo": 5.05,
+   "area": "audio",
+   "msg": "Efeito sfx-transicao-1 (transicao.mp3) chega a +5.9 LU da fala típica (limite +3): mais alto que a narração. Baixar o data-volume para ~0.32."
+  },
+  {
+   "gravidade": "medio",
+   "tempo": 12.5,
+   "area": "audio",
+   "msg": "Efeito sfx-transicao-2 (transicao.mp3) chega a +4.9 LU da fala típica (limite +3): mais alto que a narração. Baixar o data-volume para ~0.32."
+  },
+  {
+   "gravidade": "medio",
+   "tempo": 16.75,
+   "area": "audio",
+   "msg": "Efeito sfx-transicao-3 (transicao.mp3) chega a +3.8 LU da fala típica (limite +3): mais alto que a narração. Baixar o data-volume para ~0.32."
+  },
+  {
+   "gravidade": "baixo",
+   "tempo": null,
+   "area": "layout",
+   "msg": "[layout] Canvas content touches the frame edge (bottom)."
+  },
+  {
+   "gravidade": "baixo",
+   "tempo": null,
+   "area": "layout",
+   "msg": "[layout] Canvas content touches the frame edge (bottom)."
+  },
+  {
+   "gravidade": "baixo",
+   "tempo": null,
+   "area": "layout",
+   "msg": "[layout] Canvas content touches the frame edge (bottom)."
+  },
+  {
+   "gravidade": "baixo",
+   "tempo": 15.88,
+   "area": "retencao",
+   "msg": "Silêncio de 0.9 s na fala depois de «Bank.»: buraco que derruba retenção (cortar a pausa ou cobrir com som/imagem)."
+  }
+ ],
+ "tecnico": {
+  "duracao": 29.2,
+  "largura": 1920,
+  "altura": 1080,
+  "fps": 30.0,
+  "codec_video": "h264",
+  "tem_audio": true,
+  "codec_audio": "aac"
+ },
+ "mix": {
+  "I": -14.2,
+  "LRA": 3.8,
+  "pico_dbtp": -1.2,
+  "M_max": -9.6,
+  "M_mediana": -14.9,
+  "M_p90": -12.1
+ },
+ "camadas": [
+  {
+   "id": "vo",
+   "src": "assets/audio/narracao.mp3",
+   "tipo": "narracao",
+   "inicio": 0.0,
+   "duracao": 28.3,
+   "volume": 1.0,
+   "medida": {
+    "I": -22.5,
+    "LRA": 3.9,
+    "pico_dbtp": -1.4,
+    "M_max": -17.2,
+    "M_mediana": -23.3,
+    "M_p90": -20.3
+   }
+  },
+  {
+   "id": "sfx-martinshorn",
+   "src": "assets/sfx/martinshorn.mp3",
+   "tipo": "efeito",
+   "inicio": 0.0,
+   "duracao": 3.5,
+   "volume": 0.38,
+   "medida": {
+    "I": -19.7,
+    "LRA": 0.2,
+    "pico_dbtp": -9.6,
+    "M_max": -17.8,
+    "M_mediana": -19.4,
+    "M_p90": -17.9
+   },
+   "acima_da_fala_LU": 2.5
+  },
+  {
+   "id": "sfx-transicao-1",
+   "src": "assets/sfx/transicao.mp3",
+   "tipo": "efeito",
+   "inicio": 5.05,
+   "duracao": 1.2,
+   "volume": 0.45,
+   "medida": {
+    "I": -16.5,
+    "LRA": 0.0,
+    "pico_dbtp": -6.8,
+    "M_max": -14.4,
+    "M_mediana": -17.9,
+    "M_p90": -14.4
+   },
+   "acima_da_fala_LU": 5.9
+  },
+  {
+   "id": "sfx-pop-1",
+   "src": "assets/sfx/pop.mp3",
+   "tipo": "efeito",
+   "inicio": 8.3,
+   "duracao": 0.7,
+   "volume": 0.5,
+   "medida": {
+    "I": -27.3,
+    "LRA": 0.0,
+    "pico_dbtp": -9.2,
+    "M_max": -27.3,
+    "M_mediana": -27.3,
+    "M_p90": -27.3
+   },
+   "acima_da_fala_LU": -7.0
+  },
+  {
+   "id": "sfx-pop-2",
+   "src": "assets/sfx/pop.mp3",
+   "tipo": "efeito",
+   "inicio": 8.75,
+   "duracao": 0.7,
+   "volume": 0.42,
+   "medida": {
+    "I": -28.8,
+    "LRA": 0.0,
+    "pico_dbtp": -10.7,
+    "M_max": -28.8,
+    "M_mediana": -28.8,
+    "M_p90": -28.8
+   },
+   "acima_da_fala_LU": -8.5
+  },
+  {
+   "id": "sfx-pop-3",
+   "src": "assets/sfx/pop.mp3",
+   "tipo": "efeito",
+   "inicio": 9.2,
+   "duracao": 0.7,
+   "volume": 0.5,
+   "medida": {
+    "I": -27.3,
+    "LRA": 0.0,
+    "pico_dbtp": -9.2,
+    "M_max": -27.3,
+    "M_mediana": -27.3,
+    "M_p90": -27.3
+   },
+   "acima_da_fala_LU": -7.0
+  },
+  {
+   "id": "sfx-pop-4",
+   "src": "assets/sfx/pop.mp3",
+   "tipo": "efeito",
+   "inicio": 9.65,
+   "duracao": 0.7,
+   "volume": 0.42,
+   "medida": {
+    "I": -28.8,
+    "LRA": 0.0,
+    "pico_dbtp": -10.7,
+    "M_max": -28.8,
+    "M_mediana": -28.8,
+    "M_p90": -28.8
+   },
+   "acima_da_fala_LU": -8.5
+  },
+  {
+   "id": "sfx-transicao-2",
+   "src": "assets/sfx/transicao.mp3",
+   "tipo": "efeito",
+   "inicio": 12.5,
+   "duracao": 1.2,
+   "volume": 0.4,
+   "medida": {
+    "I": -17.6,
+    "LRA": 0.0,
+    "pico_dbtp": -7.8,
+    "M_max": -15.4,
+    "M_mediana": -18.9,
+    "M_p90": -15.4
+   },
+   "acima_da_fala_LU": 4.9
+  },
+  {
+   "id": "sfx-impacto-1",
+   "src": "assets/sfx/impacto.mp3",
+   "tipo": "efeito",
+   "inicio": 15.05,
+   "duracao": 2.0,
+   "volume": 0.5,
+   "medida": {
+    "I": -30.0,
+    "LRA": 0.0,
+    "pico_dbtp": -6.3,
+    "M_max": -21.5,
+    "M_mediana": -38.5,
+    "M_p90": -30.9
+   },
+   "acima_da_fala_LU": -1.2
+  },
+  {
+   "id": "sfx-carimbo",
+   "src": "assets/sfx/carimbo.mp3",
+   "tipo": "efeito",
+   "inicio": 15.16,
+   "duracao": 0.6,
+   "volume": 0.9,
+   "medida": {
+    "I": -23.8,
+    "LRA": 0.0,
+    "pico_dbtp": -1.5,
+    "M_max": -21.9,
+    "M_mediana": -21.9,
+    "M_p90": -21.9
+   },
+   "acima_da_fala_LU": -1.6
+  },
+  {
+   "id": "sfx-transicao-3",
+   "src": "assets/sfx/transicao.mp3",
+   "tipo": "efeito",
+   "inicio": 16.75,
+   "duracao": 1.2,
+   "volume": 0.35,
+   "medida": {
+    "I": -18.7,
+    "LRA": 0.0,
+    "pico_dbtp": -9.0,
+    "M_max": -16.5,
+    "M_mediana": -20.1,
+    "M_p90": -16.5
+   },
+   "acima_da_fala_LU": 3.8
+  },
+  {
+   "id": "sfx-pop-5",
+   "src": "assets/sfx/pop.mp3",
+   "tipo": "efeito",
+   "inicio": 18.55,
+   "duracao": 0.7,
+   "volume": 0.5,
+   "medida": {
+    "I": -27.3,
+    "LRA": 0.0,
+    "pico_dbtp": -9.2,
+    "M_max": -27.3,
+    "M_mediana": -27.3,
+    "M_p90": -27.3
+   },
+   "acima_da_fala_LU": -7.0
+  },
+  {
+   "id": "sfx-pop-6",
+   "src": "assets/sfx/pop.mp3",
+   "tipo": "efeito",
+   "inicio": 19.45,
+   "duracao": 0.7,
+   "volume": 0.45,
+   "medida": {
+    "I": -28.2,
+    "LRA": 0.0,
+    "pico_dbtp": -10.1,
+    "M_max": -28.2,
+    "M_mediana": -28.2,
+    "M_p90": -28.2
+   },
+   "acima_da_fala_LU": -7.9
+  },
+  {
+   "id": "sfx-pop-7",
+   "src": "assets/sfx/pop.mp3",
+   "tipo": "efeito",
+   "inicio": 20.55,
+   "duracao": 0.7,
+   "volume": 0.5,
+   "medida": {
+    "I": -27.3,
+    "LRA": 0.0,
+    "pico_dbtp": -9.2,
+    "M_max": -27.3,
+    "M_mediana": -27.3,
+    "M_p90": -27.3
+   },
+   "acima_da_fala_LU": -7.0
+  },
+  {
+   "id": "sfx-moedas",
+   "src": "assets/sfx/moedas.mp3",
+   "tipo": "efeito",
+   "inicio": 23.6,
+   "duracao": 2.4,
+   "volume": 0.7,
+   "medida": {
+    "I": -23.0,
+    "LRA": 0.0,
+    "pico_dbtp": -4.1,
+    "M_max": -19.4,
+    "M_mediana": -56.4,
+    "M_p90": -24.6
+   },
+   "acima_da_fala_LU": 0.9
+  },
+  {
+   "id": "sfx-riser",
+   "src": "assets/sfx/riser.mp3",
+   "tipo": "efeito",
+   "inicio": 24.2,
+   "duracao": 1.7,
+   "volume": 0.3,
+   "medida": {
+    "I": -33.0,
+    "LRA": 0.0,
+    "pico_dbtp": -17.7,
+    "M_max": -28.5,
+    "M_mediana": -35.1,
+    "M_p90": -29.8
+   },
+   "acima_da_fala_LU": -8.2
+  },
+  {
+   "id": "sfx-caixa",
+   "src": "assets/sfx/caixa.mp3",
+   "tipo": "efeito",
+   "inicio": 25.86,
+   "duracao": 1.1,
+   "volume": 0.5,
+   "medida": {
+    "I": -23.9,
+    "LRA": 0.0,
+    "pico_dbtp": -8.8,
+    "M_max": -23.0,
+    "M_mediana": -26.9,
+    "M_p90": -23.0
+   },
+   "acima_da_fala_LU": -2.7
+  },
+  {
+   "id": "sfx-impacto-2",
+   "src": "assets/sfx/impacto.mp3",
+   "tipo": "efeito",
+   "inicio": 26.75,
+   "duracao": 2.0,
+   "volume": 0.8,
+   "medida": {
+    "I": -25.9,
+    "LRA": 0.0,
+    "pico_dbtp": -2.2,
+    "M_max": -17.5,
+    "M_mediana": -34.4,
+    "M_p90": -26.9
+   },
+   "acima_da_fala_LU": 2.8
+  }
+ ],
+ "sem_musica": true,
+ "efeitos_no_mix": [
+  {
+   "id": "sfx-martinshorn",
+   "inicio": 0.0,
+   "ganho_LU": 24.9
+  },
+  {
+   "id": "sfx-transicao-1",
+   "inicio": 5.05,
+   "ganho_LU": 22.0
+  },
+  {
+   "id": "sfx-pop-1",
+   "inicio": 8.3,
+   "ganho_LU": 1.4
+  },
+  {
+   "id": "sfx-pop-2",
+   "inicio": 8.75,
+   "ganho_LU": 3.3
+  },
+  {
+   "id": "sfx-pop-3",
+   "inicio": 9.2,
+   "ganho_LU": 3.3
+  },
+  {
+   "id": "sfx-pop-4",
+   "inicio": 9.65,
+   "ganho_LU": 2.1
+  },
+  {
+   "id": "sfx-transicao-2",
+   "inicio": 12.5,
+   "ganho_LU": 35.1
+  },
+  {
+   "id": "sfx-impacto-1",
+   "inicio": 15.05,
+   "ganho_LU": 27.2
+  },
+  {
+   "id": "sfx-carimbo",
+   "inicio": 15.16,
+   "ganho_LU": 11.0
+  },
+  {
+   "id": "sfx-transicao-3",
+   "inicio": 16.75,
+   "ganho_LU": 26.5
+  },
+  {
+   "id": "sfx-pop-5",
+   "inicio": 18.55,
+   "ganho_LU": 9.2
+  },
+  {
+   "id": "sfx-pop-6",
+   "inicio": 19.45,
+   "ganho_LU": 3.8
+  },
+  {
+   "id": "sfx-pop-7",
+   "inicio": 20.55,
+   "ganho_LU": 10.0
+  },
+  {
+   "id": "sfx-moedas",
+   "inicio": 23.6,
+   "ganho_LU": 2.9
+  },
+  {
+   "id": "sfx-riser",
+   "inicio": 24.2,
+   "ganho_LU": 2.9
+  },
+  {
+   "id": "sfx-caixa",
+   "inicio": 25.86,
+   "ganho_LU": 52.9
+  },
+  {
+   "id": "sfx-impacto-2",
+   "inicio": 26.75,
+   "ganho_LU": 52.9
+  }
+ ],
+ "origem_efeitos": {
+  "assets/sfx/martinshorn.mp3": {
+   "descricao": "German fire engine",
+   "licenca": "cc0",
+   "fonte": "https://freesound.org/people/Breviceps/sounds/465700"
+  },
+  "assets/sfx/transicao.mp3": {
+   "descricao": "Impact",
+   "licenca": "cc0",
+   "fonte": "https://freesound.org/people/chriskalos/sounds/172779"
+  },
+  "assets/sfx/pop.mp3": {
+   "descricao": "Quick pop — element appear/spawn, chip/tag/badge in. Small precise accent, sync to the pop-in.",
+   "licenca": "embutido no HyperFrames",
+   "fonte": null
+  },
+  "assets/sfx/impacto.mp3": {
+   "descricao": "Deep Cinematic Impact",
+   "licenca": "by",
+   "fonte": "https://freesound.org/people/MeijstroAudio/sounds/377303"
+  },
+  "assets/sfx/carimbo.mp3": {
+   "descricao": "Stamp",
+   "licenca": "cc0",
+   "fonte": "https://freesound.org/people/kermite607/sounds/362624"
+  },
+  "assets/sfx/moedas.mp3": {
+   "descricao": "Gold coin clink (100 Rubles Witte) (High Quality)",
+   "licenca": "by",
+   "fonte": "https://freesound.org/people/Walking.With.Microphones/sounds/557223"
+  },
+  "assets/sfx/riser.mp3": {
+   "descricao": "Riser",
+   "licenca": "cc0",
+   "fonte": "https://freesound.org/people/Rizzard/sounds/561207"
+  },
+  "assets/sfx/caixa.mp3": {
+   "descricao": "Cash register",
+   "licenca": "cc0",
+   "fonte": "https://freesound.org/people/MaoDin204/sounds/721774"
+  }
+ },
+ "efeitos_com_fala": [],
+ "hyperframes": {
+  "ok": true,
+  "achados": [
+   {
+    "secao": "layout",
+    "nivel": "warning",
+    "msg": "Canvas content touches the frame edge (bottom)."
+   },
+   {
+    "secao": "layout",
+    "nivel": "warning",
+    "msg": "Canvas content touches the frame edge (bottom)."
+   },
+   {
+    "secao": "layout",
+    "nivel": "warning",
+    "msg": "Canvas content touches the frame edge (bottom)."
+   }
+  ]
+ },
+ "transcricao": {
+  "idioma_detectado": "de",
+  "texto": "Donnerstag, 29. November 2018, Frankfurt am Main. 170 Beamte von Staatsanwaltschaft, BKA, Steuerfahndung und Bundespolizei durchsuchen sechs Gebäude. Eines davon? Die Zentrale der Deutschen Bank. Die meisten denken bei Geldwäsche an Dönerläden, Shisha -Bars und Koffer voller Bargeld. Aber am Ende landet jeder schmutzige Euro an demselben Ort. Auf einem Bankkonto.",
+  "palavras": [
+   {
+    "p": "Donnerstag,",
+    "ini": 0.0,
+    "fim": 0.86,
+    "conf": 0.96
+   },
+   {
+    "p": "29.",
+    "ini": 0.94,
+    "fim": 1.62,
+    "conf": 0.99
+   },
+   {
+    "p": "November",
+    "ini": 1.76,
+    "fim": 2.3,
+    "conf": 0.94
+   },
+   {
+    "p": "2018,",
+    "ini": 2.3,
+    "fim": 3.54,
+    "conf": 0.88
+   },
+   {
+    "p": "Frankfurt",
+    "ini": 4.04,
+    "fim": 4.34,
+    "conf": 0.99
+   },
+   {
+    "p": "am",
+    "ini": 4.34,
+    "fim": 4.58,
+    "conf": 0.99
+   },
+   {
+    "p": "Main.",
+    "ini": 4.58,
+    "fim": 4.92,
+    "conf": 1.0
+   },
+   {
+    "p": "170",
+    "ini": 5.48,
+    "fim": 6.06,
+    "conf": 0.97
+   },
+   {
+    "p": "Beamte",
+    "ini": 6.06,
+    "fim": 6.6,
+    "conf": 0.99
+   },
+   {
+    "p": "von",
+    "ini": 6.6,
+    "fim": 6.9,
+    "conf": 0.99
+   },
+   {
+    "p": "Staatsanwaltschaft,",
+    "ini": 6.9,
+    "fim": 7.86,
+    "conf": 1.0
+   },
+   {
+    "p": "BKA,",
+    "ini": 8.12,
+    "fim": 8.5,
+    "conf": 0.98
+   },
+   {
+    "p": "Steuerfahndung",
+    "ini": 8.86,
+    "fim": 9.68,
+    "conf": 0.99
+   },
+   {
+    "p": "und",
+    "ini": 9.68,
+    "fim": 10.0,
+    "conf": 0.99
+   },
+   {
+    "p": "Bundespolizei",
+    "ini": 10.0,
+    "fim": 11.18,
+    "conf": 1.0
+   },
+   {
+    "p": "durchsuchen",
+    "ini": 11.18,
+    "fim": 11.74,
+    "conf": 0.98
+   },
+   {
+    "p": "sechs",
+    "ini": 11.74,
+    "fim": 12.12,
+    "conf": 0.59
+   },
+   {
+    "p": "Gebäude.",
+    "ini": 12.12,
+    "fim": 12.66,
+    "conf": 1.0
+   },
+   {
+    "p": "Eines",
+    "ini": 13.12,
+    "fim": 13.4,
+    "conf": 0.98
+   },
+   {
+    "p": "davon?",
+    "ini": 13.4,
+    "fim": 13.78,
+    "conf": 1.0
+   },
+   {
+    "p": "Die",
+    "ini": 14.22,
+    "fim": 14.36,
+    "conf": 0.98
+   },
+   {
+    "p": "Zentrale",
+    "ini": 14.36,
+    "fim": 14.88,
+    "conf": 0.99
+   },
+   {
+    "p": "der",
+    "ini": 14.88,
+    "fim": 15.14,
+    "conf": 1.0
+   },
+   {
+    "p": "Deutschen",
+    "ini": 15.14,
+    "fim": 15.46,
+    "conf": 0.97
+   },
+   {
+    "p": "Bank.",
+    "ini": 15.46,
+    "fim": 15.88,
+    "conf": 1.0
+   },
+   {
+    "p": "Die",
+    "ini": 16.78,
+    "fim": 16.98,
+    "conf": 0.99
+   },
+   {
+    "p": "meisten",
+    "ini": 16.98,
+    "fim": 17.3,
+    "conf": 0.98
+   },
+   {
+    "p": "denken",
+    "ini": 17.3,
+    "fim": 17.64,
+    "conf": 1.0
+   },
+   {
+    "p": "bei",
+    "ini": 17.64,
+    "fim": 17.96,
+    "conf": 0.98
+   },
+   {
+    "p": "Geldwäsche",
+    "ini": 17.96,
+    "fim": 18.56,
+    "conf": 0.99
+   },
+   {
+    "p": "an",
+    "ini": 18.56,
+    "fim": 18.86,
+    "conf": 1.0
+   },
+   {
+    "p": "Dönerläden,",
+    "ini": 18.86,
+    "fim": 19.64,
+    "conf": 0.98
+   },
+   {
+    "p": "Shisha",
+    "ini": 19.86,
+    "fim": 20.24,
+    "conf": 0.96
+   },
+   {
+    "p": "-Bars",
+    "ini": 20.24,
+    "fim": 20.56,
+    "conf": 0.96
+   },
+   {
+    "p": "und",
+    "ini": 20.56,
+    "fim": 20.98,
+    "conf": 0.99
+   },
+   {
+    "p": "Koffer",
+    "ini": 20.98,
+    "fim": 21.42,
+    "conf": 0.99
+   },
+   {
+    "p": "voller",
+    "ini": 21.42,
+    "fim": 21.72,
+    "conf": 0.99
+   },
+   {
+    "p": "Bargeld.",
+    "ini": 21.72,
+    "fim": 22.24,
+    "conf": 0.98
+   },
+   {
+    "p": "Aber",
+    "ini": 22.86,
+    "fim": 23.1,
+    "conf": 0.98
+   },
+   {
+    "p": "am",
+    "ini": 23.1,
+    "fim": 23.28,
+    "conf": 0.99
+   },
+   {
+    "p": "Ende",
+    "ini": 23.28,
+    "fim": 23.62,
+    "conf": 1.0
+   },
+   {
+    "p": "landet",
+    "ini": 23.62,
+    "fim": 24.1,
+    "conf": 1.0
+   },
+   {
+    "p": "jeder",
+    "ini": 24.1,
+    "fim": 24.38,
+    "conf": 1.0
+   },
+   {
+    "p": "schmutzige",
+    "ini": 24.38,
+    "fim": 25.02,
+    "conf": 1.0
+   },
+   {
+    "p": "Euro",
+    "ini": 25.02,
+    "fim": 25.36,
+    "conf": 1.0
+   },
+   {
+    "p": "an",
+    "ini": 25.36,
+    "fim": 25.64,
+    "conf": 0.99
+   },
+   {
+    "p": "demselben",
+    "ini": 25.64,
+    "fim": 26.22,
+    "conf": 0.96
+   },
+   {
+    "p": "Ort.",
+    "ini": 26.22,
+    "fim": 26.52,
+    "conf": 1.0
+   },
+   {
+    "p": "Auf",
+    "ini": 26.9,
+    "fim": 27.1,
+    "conf": 1.0
+   },
+   {
+    "p": "einem",
+    "ini": 27.1,
+    "fim": 27.36,
+    "conf": 1.0
+   },
+   {
+    "p": "Bankkonto.",
+    "ini": 27.36,
+    "fim": 28.06,
+    "conf": 0.99
+   }
+  ]
+ },
+ "comparacao": {
+  "palavras_roteiro": 51,
+  "palavras_ouvidas": 51,
+  "wer": 0.0,
+  "diferencas": [],
+  "baixa_confianca": []
+ },
+ "fala": {
+  "primeira_palavra": 0.0,
+  "silencios": [
+   {
+    "de": 15.88,
+    "ate": 16.78,
+    "dur": 0.9,
+    "depois_de": "Bank."
+   }
+  ],
+  "ppm": 109
+ },
+ "ritmo": {
+  "eventos": [
+   1.0,
+   1.3,
+   1.4,
+   1.9,
+   2.0,
+   2.1,
+   2.2,
+   2.3,
+   3.0,
+   5.4,
+   5.5,
+   5.6,
+   5.7,
+   5.8,
+   5.9,
+   6.0,
+   6.1,
+   6.2,
+   6.3,
+   6.4,
+   6.5,
+   6.6,
+   6.7,
+   6.8,
+   6.9,
+   7.0,
+   8.4,
+   8.5,
+   8.6,
+   8.8,
+   8.9,
+   9.0,
+   9.1,
+   9.3,
+   9.4,
+   9.5,
+   9.7,
+   9.8,
+   9.9,
+   10.0,
+   10.3,
+   10.4,
+   10.5,
+   10.6,
+   10.7,
+   10.8,
+   10.9,
+   11.0,
+   11.1,
+   11.2,
+   11.3,
+   11.4,
+   11.5,
+   11.6,
+   12.8,
+   12.9,
+   13.0,
+   13.1,
+   13.3,
+   14.2,
+   14.4,
+   15.2,
+   15.3,
+   15.4,
+   15.5,
+   16.8,
+   16.9,
+   17.0,
+   17.1,
+   17.2,
+   17.3,
+   17.4,
+   17.5,
+   17.6,
+   17.9,
+   18.0,
+   18.1,
+   18.2,
+   18.3,
+   18.6,
+   18.7,
+   18.8,
+   18.9,
+   19.0,
+   19.1,
+   19.5,
+   19.6,
+   19.7,
+   19.8,
+   19.9,
+   20.0,
+   20.1,
+   20.2,
+   20.3,
+   20.6,
+   20.7,
+   20.8,
+   20.9,
+   21.0,
+   21.2,
+   21.5,
+   21.6,
+   21.7,
+   21.8,
+   21.9,
+   22.6,
+   22.7,
+   22.8,
+   22.9,
+   23.0,
+   23.1,
+   23.2,
+   23.3,
+   23.4,
+   23.5,
+   23.6,
+   23.7,
+   23.8,
+   23.9,
+   24.0,
+   24.1,
+   24.2,
+   24.4,
+   24.5,
+   24.6,
+   24.7,
+   24.8,
+   25.0,
+   25.1,
+   25.2,
+   25.3,
+   25.4,
+   25.6,
+   25.7,
+   25.9,
+   26.7,
+   26.8,
+   26.9,
+   27.0,
+   27.1,
+   27.2,
+   27.3
+  ],
+  "cortes": [
+   5.2,
+   12.6,
+   16.8
+  ],
+  "lacunas": [],
+  "plano_medio_s": 7.3,
+  "plano_max_s": 12.4
+ },
+ "visual": {
+  "pretos": [],
+  "congelados": []
+ },
+ "folhas": [
+  "videos\\amostra-bankskandale\\renders\\amostra-bankskandale-final-revisao\\quadros\\folha-01.jpg",
+  "videos\\amostra-bankskandale\\renders\\amostra-bankskandale-final-revisao\\quadros\\folha-02.jpg",
+  "videos\\amostra-bankskandale\\renders\\amostra-bankskandale-final-revisao\\quadros\\folha-03.jpg",
+  "videos\\amostra-bankskandale\\renders\\amostra-bankskandale-final-revisao\\quadros\\folha-04.jpg",
+  "videos\\amostra-bankskandale\\renders\\amostra-bankskandale-final-revisao\\quadros\\folha-05.jpg"
+ ]
+}
