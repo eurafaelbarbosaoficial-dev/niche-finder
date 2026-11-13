@@ -55,3 +55,8 @@ Regra do dono: **nada de hipótese**. Todo candidato vem de dado real; o Claude 
 `python -I producao/produzir.py novo <slug-roteiro> <pasta> --ref econ-in-a-nutshell`. Antes da voz: revisor de roteiro.
 Cenas: agente `diretor-de-cenas`. Depois do render: `rodar <pasta> revisar` + agente `revisor-video` + `estilo comparar`.
 Cada erro novo vira lição (`producao/licoes.py adicionar`). Ao postar: url e data em `producao/projetos.json`.
+
+## Canal novo (aba Roteiro organizada por canal, 13/11)
+Cada canal tem uma entrada em `producao/canais.json` (id = projeto das pautas, nome, idioma, país, tema, molde,
+origem, referência, estruturas usadas, adaptações culturais). Depois de criar/alterar: `python -I producao/roteiros_site.py`
+(o `roteiro.py publicar` já roda). Estruturas novas entram no "Banco de estruturas" e podem ser reaproveitadas.

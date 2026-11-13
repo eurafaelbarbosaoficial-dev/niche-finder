@@ -1,0 +1,28 @@
+{
+ "idioma": "de",
+ "tema": "Geldwäsche (lavagem de dinheiro)",
+ "regra": "Adaptar, não traduzir: o roteiro em alemão usa os casos, as comparações e as palavras que o público alemão já consome. Tudo abaixo veio de vídeos alemães com muitas views e do autocompletar do YouTube alemão. Antes de publicar, conferir cada fato na fonte primária.",
+ "como_o_publico_local_enquadra": [
+  {"dado": "O enquadramento que mais aparece é 'a Alemanha é um paraíso para lavadores de dinheiro'.", "fonte": "ZDFzoom 'Leichtes Spiel für kriminelle Geldwäscher' (1 mi views), título do capítulo 13:44; Die Spur 'Der Aufstieg des Ali C.' (730 mil), 1:00"},
+  {"dado": "Comparação com outros países pelo limite de pagamento em dinheiro vivo: Alemanha sem limite; Espanha 2.500 €, Itália 1.000 €, Grécia 500 €.", "fonte": "ZDFzoom, 0:40 (conferir valores atuais antes de usar)"},
+  {"dado": "Comprar carro com dinheiro vivo: identificação só acima de 10.000 €.", "fonte": "ZDFzoom, 1:23"},
+  {"dado": "Imóveis são apontados como destino principal; o registro de transparência ('Transparenzregister') aparece como vazio/ineficaz.", "fonte": "ZDFzoom, 3:53 e 5:59"},
+  {"dado": "Caso local famoso: Ali C., de Hamburgo, que lavou dinheiro para rockers, Mocro-Mafia e máfia irlandesa.", "fonte": "Die Spur, 1:00 e 12:13"}
+ ],
+ "palavras_que_o_publico_digita": {
+  "fonte": "autocompletar do YouTube alemão para 'geldwäsche' (validacoes/candidatos/every-money-laundering.json)",
+  "termos": ["geldwäsche deutschland", "geldwäsche erklärt", "dönerläden geldwäsche", "geldwäsche casino", "dubai geldwäsche", "deutsche bank geldwäsche", "geldwäsche barbershop", "geldwäsche gold", "finanzagent geldwäsche", "geldwäsche strafrecht", "geldwäsche doku", "breaking bad geldwäsche"]
+ },
+ "videos_locais_que_funcionam": [
+  {"titulo": "Leichtes Spiel für kriminelle Geldwäscher | ZDFzoom", "views": 1000355, "formato": "documentário investigativo"},
+  {"titulo": "Geldwäsche-König: Der Aufstieg des Ali C. (1/2) | Die Spur", "views": 730437, "formato": "ascensão e queda"},
+  {"titulo": "Geldwäsche - \"Breaking Bad\" in echt?", "views": 359505, "formato": "explicação com referência de série"},
+  {"titulo": "Geldwasche einfach erklärt! (Mit vielen anschaulichen Beispielen)", "views": 340310, "formato": "explicação didática"}
+ ],
+ "o_que_muda_no_roteiro_alemao": [
+  "Gancho com caso alemão ou europeu em vez de caso americano (ex.: Ali C., Danske Bank, imóveis) — escolher entre os casos acima.",
+  "Usar a comparação de limites de dinheiro vivo entre países (o público local já reage a ela).",
+  "Itens do catálogo na ordem do que o público digita: Dönerläden/Barbershops, Casino, Gold, Immobilien, Dubai, Finanzagenten.",
+  "Vocabulário local: 'Bargeld', 'Barzahlung', 'Finanzagent', 'Transparenzregister', 'Vermögensabschöpfung'."
+ ]
+}

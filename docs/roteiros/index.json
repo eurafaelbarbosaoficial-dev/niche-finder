@@ -5,7 +5,11 @@
   "formato": "Iceberg (níveis do raso ao profundo), narração em 2ª pessoa, investigativo",
   "views": 4505350,
   "titulo": "Alle Geldwäsche-Skandale der Banken erklärt",
-  "idioma": "de"
+  "idioma": "de",
+  "tipo": "roteiro",
+  "projeto": "every-money-laundering",
+  "estrutura": "estrutura-iceberg",
+  "canais_que_usam": []
  },
  {
   "slug": "lavagem-de-dinheiro-de",
@@ -13,7 +17,13 @@
   "formato": "Catálogo sequencial (every [X] explained), narração em 3ª pessoa, explicativo",
   "views": 1125922,
   "titulo": null,
-  "idioma": null
+  "idioma": null,
+  "tipo": "estrutura",
+  "projeto": null,
+  "estrutura": null,
+  "canais_que_usam": [
+   "every-money-laundering"
+  ]
  },
  {
   "slug": "estrutura-iceberg",
@@ -21,7 +31,13 @@
   "formato": "Iceberg (níveis do raso ao profundo), narração em 2ª pessoa, investigativo",
   "views": 4505350,
   "titulo": null,
-  "idioma": null
+  "idioma": null,
+  "tipo": "estrutura",
+  "projeto": null,
+  "estrutura": null,
+  "canais_que_usam": [
+   "every-money-laundering"
+  ]
  },
  {
   "slug": "estrutura-documentario",
@@ -29,7 +45,13 @@
   "formato": "Documentário investigativo (problema → teste → especialistas → poder público → solução)",
   "views": 1000359,
   "titulo": null,
-  "idioma": null
+  "idioma": null,
+  "tipo": "estrutura",
+  "projeto": null,
+  "estrutura": null,
+  "canais_que_usam": [
+   "every-money-laundering"
+  ]
  },
  {
   "slug": "estrutura-ascensao-queda",
@@ -37,7 +59,13 @@
   "formato": "Biografia em ascensão e queda (abre no auge → volta ao começo → sobe → cai)",
   "views": 730437,
   "titulo": null,
-  "idioma": null
+  "idioma": null,
+  "tipo": "estrutura",
+  "projeto": null,
+  "estrutura": null,
+  "canais_que_usam": [
+   "every-money-laundering"
+  ]
  },
  {
   "slug": "estrutura-passo-a-passo",
@@ -45,6 +73,12 @@
   "formato": "Passo a passo cronológico em capítulos ('How X actually works')",
   "views": 4904288,
   "titulo": null,
-  "idioma": null
+  "idioma": null,
+  "tipo": "estrutura",
+  "projeto": null,
+  "estrutura": null,
+  "canais_que_usam": [
+   "every-money-laundering"
+  ]
  }
 ]

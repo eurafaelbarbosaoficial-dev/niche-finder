@@ -41,6 +41,25 @@
 .rb-f{padding:0 18px 14px;font-size:12px;color:var(--mut)} .rb-f a{color:var(--az);text-decoration:underline}
 .copiar{margin-top:14px}
 .vazio{margin-top:30px}
+.cbar{display:flex;gap:10px;overflow-x:auto;margin-top:34px;padding-bottom:4px;scrollbar-width:none}
+.cbar button{flex:none;display:flex;align-items:center;gap:10px;border:1px solid var(--ln);background:var(--card);border-radius:14px;padding:10px 16px;cursor:pointer;box-shadow:var(--sh);text-align:left;transition:transform .2s var(--ease),box-shadow .2s}
+.cbar button:hover{transform:translateY(-2px);box-shadow:var(--sh2)} .cbar button.on{border-color:var(--lm);box-shadow:0 0 0 1px var(--lm) inset}
+.cbar b{display:block;font-weight:500;font-size:14.5px} .cbar small{color:var(--mut);font-size:12px}
+.cbar .ic{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:700;font-size:12px;flex:none}
+.canal{margin-top:22px;border-radius:18px;background:var(--card);border:1px solid var(--ln);box-shadow:var(--sh);padding:20px 22px}
+.canal h2{margin:0;font-size:24px;font-weight:700;letter-spacing:-.02em} .canal .ln2{color:var(--mut);font-size:14px;margin-top:4px}
+.canal .kv4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:14px}
+.canal .kv4 div{background:var(--in);border-radius:12px;padding:10px 12px} .canal .kv4 small{display:block;color:var(--mut);font-size:12px} .canal .kv4 b{font-weight:500;font-size:14px}
+.gr{margin-top:26px} .gr h4{margin:0 0 10px;font-size:17px;font-weight:700;display:flex;gap:8px;align-items:baseline} .gr h4 span{font-size:13px;color:var(--mut);font-weight:400}
+.gr .lst{margin-top:0;flex-wrap:wrap}
+.lst .et{display:inline-block;margin-top:6px;font-size:11.5px;font-weight:500;padding:2px 8px;border-radius:6px;background:var(--s2);color:var(--tx2)}
+.lst .et.ok{background:rgba(11,128,67,.12);color:var(--up)}
+.adp{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.adp .cx ul{margin:6px 0 0;padding-left:18px} .adp .cx li{margin:3px 0;font-size:13.5px}
+.adp .tm{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px} .adp .tm span{font-size:12.5px;background:var(--in);border-radius:999px;padding:3px 10px}
+.prox{display:flex;flex-direction:column;gap:6px} .prox div{display:flex;justify-content:space-between;gap:10px;background:var(--card);border:1px solid var(--ln);border-radius:12px;padding:10px 14px;font-size:14px}
+.prox small{color:var(--mut)}
+@media(max-width:820px){.canal .kv4,.adp{grid-template-columns:1fr 1fr}}
 @media(max-width:820px){.ref,.dois{grid-template-columns:1fr}.kpi3{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
@@ -56,6 +75,8 @@
     <h1 class="h1">A estrutura de quem <em>estourou</em>, com o seu tema.</h1>
     <p class="sub">O vídeo de referência é desmontado: gancho, blocos com tempo, ritmo, transições, gatilhos e fechamento. O roteiro novo segue o mesmo mapa, bloco por bloco — <b>copia a estrutura, nunca o texto</b>, e os fatos têm fonte.</p>
   </section>
+  <div class="cbar rv" id="cbar"></div>
+  <div id="painel"></div>
   <div class="lst rv" id="lst"></div>
   <div id="det"><div class="vazio">Carregando…</div></div>
 </main>
@@ -66,9 +87,45 @@ var idx=[];function $(i){return document.getElementById(i);}
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
 function f(n){if(n==null)return"—";if(n>=1e6)return(n/1e6).toFixed(1).replace(/\.0$/,"").replace(".",",")+" mi";if(n>=1e3)return(n/1e3).toFixed(1).replace(/\.0$/,"").replace(".",",")+" mil";return String(n);}
 function mm(s){s=Math.round(s||0);return Math.floor(s/60)+":"+String(s%60).padStart(2,"0");}
-function lista(){var s=location.hash.slice(1)||(idx[0]||{}).slug;
-  $("lst").innerHTML=idx.map(function(x){return"<button class='"+(x.slug===s?"on":"")+"' data-s='"+esc(x.slug)+"'><b>"+esc(x.titulo||x.formato||x.referencia)+"</b><small>ref: "+esc(x.referencia)+(x.views?" · "+f(x.views)+" views":"")+"</small></button>";}).join("");
-  [].forEach.call($("lst").querySelectorAll("button"),function(b){b.onclick=function(){location.hash=b.dataset.s;};});}
+var C=[],CAL=null,EST=null,ETN={roteiro:"Roteiro escrito",revisao_roteiro:"Roteiro revisado",voz:"Voz pronta",montagem:"Renderizado",revisao_video:"Vídeo revisado",pronto:"Pronto p/ postar",publicado:"Publicado"};
+var LG={de:"Alemão",es:"Espanhol",pt:"Português",en:"Inglês",fr:"Francês",it:"Italiano"};
+function est(){var h=new URLSearchParams(location.hash.slice(1).indexOf("=")>=0?location.hash.slice(1):"");var c=h.get("c"),sl=h.get("s");
+  if(!c&&location.hash.length>1&&location.hash.indexOf("=")<0){sl=location.hash.slice(1);var it=idx.filter(function(x){return x.slug===sl;})[0];c=it&&it.projeto||(C[0]||{}).id;}
+  return{c:c||(C[0]||{}).id||"banco",s:sl};}
+function ir(c,sl){location.hash="c="+encodeURIComponent(c)+(sl?"&s="+encodeURIComponent(sl):"");}
+function cor(t){var h=0;for(var i=0;i<(t||"").length;i++)h=(h*31+t.charCodeAt(i))%360;return"hsl("+h+" 55% 42%)";}
+function etapa(slug){var c=((EST||{}).cards||[]).filter(function(k){return k.roteiro===slug;})[0];return c?c.etapa:"roteiro";}
+function botao(x,cur){var e=x.tipo==="roteiro"?etapa(x.slug):null;
+  return"<button class='"+(x.slug===cur?"on":"")+"' data-s='"+esc(x.slug)+"'><b>"+esc(x.titulo||x.formato||x.referencia)+"</b><small>"+(x.tipo==="roteiro"?esc((x.idioma||"").toUpperCase())+" · estrutura: "+esc((x.estrutura||"").replace("estrutura-","")):"ref: "+esc(x.referencia)+(x.views?" · "+f(x.views)+" views":""))+"</small>"+
+    (e?"<span class='et"+(e==="pronto"||e==="publicado"?" ok":"")+"'>"+esc(ETN[e]||e)+"</span>":"")+"</button>";}
+function lista(){var st=est();
+  $("cbar").innerHTML=C.map(function(c){return"<button class='"+(st.c===c.id?"on":"")+"' data-c='"+esc(c.id)+"'><span class='ic' style='background:"+cor(c.nome)+"'>"+esc((c.idioma||"").toUpperCase())+"</span><span><b>"+esc(c.nome)+"</b><small>"+esc(LG[c.idioma]||c.idioma)+" · "+c.n_roteiros+" roteiro(s)</small></span></button>";}).join("")+
+    "<button class='"+(st.c==="banco"?"on":"")+"' data-c='banco'><span class='ic' style='background:var(--tx)'>▦</span><span><b>Banco de estruturas</b><small>todas as estruturas estudadas</small></span></button>";
+  [].forEach.call($("cbar").querySelectorAll("button"),function(b){b.onclick=function(){ir(b.dataset.c);};});
+  var h="",cur=st.s;
+  if(st.c==="banco"){var es=idx.filter(function(x){return x.tipo!=="roteiro";});cur=cur||(es[0]||{}).slug;
+    h="<div class='gr'><h4>Banco de estruturas <span>serve para qualquer canal: escolha a que combina com o tema e alterne entre vídeos</span></h4><div class='lst'>"+es.map(function(x){return botao(x,cur);}).join("")+"</div></div>";}
+  else{var c=C.filter(function(k){return k.id===st.c;})[0]||{};
+    var rs=idx.filter(function(x){return x.tipo==="roteiro"&&x.projeto===c.id;}),es=idx.filter(function(x){return(c.estruturas||[]).indexOf(x.slug)>=0;});
+    cur=cur||(rs[0]||es[0]||{}).slug;
+    h="<div class='canal rv vis'><h2>"+esc(c.nome)+"</h2><div class='ln2'>"+esc(c.tema)+"</div><div class='kv4'><div><small>Idioma</small><b>"+esc(LG[c.idioma]||c.idioma)+" · "+esc(c.pais||"")+"</b></div><div><small>Molde do título</small><b>"+esc(c.molde)+"</b></div><div><small>Vídeo que deu origem</small><b>"+esc(c.origem)+"</b></div><div><small>Roteiros</small><b>"+rs.length+"</b></div></div></div>"+
+      "<div class='gr'><h4>Roteiros do canal <span>clique para ler · a etapa vem da esteira de produção</span></h4><div class='lst'>"+(rs.map(function(x){return botao(x,cur);}).join("")||"<p class='mut'>Nenhum roteiro ainda. Peça um na aba Produção (Fazer roteiro).</p>")+"</div></div>"+
+      "<div class='gr'><h4>Estruturas deste canal <span>"+es.length+" estruturas validadas, para alternar e não cair em conteúdo repetitivo</span></h4><div class='lst'>"+es.map(function(x){return botao(x,cur);}).join("")+"</div></div>"+
+      "<div class='gr' id='adp-box'></div><div class='gr' id='prox-box'></div>";}
+  $("painel").innerHTML=h;
+  [].forEach.call($("painel").querySelectorAll(".lst button"),function(b){b.onclick=function(){ir(st.c,b.dataset.s);setTimeout(function(){$("det").scrollIntoView({behavior:"smooth"});},60);};});
+  $("lst").innerHTML="";
+  if(st.c!=="banco"){var c2=C.filter(function(k){return k.id===st.c;})[0]||{};adaptacoes(c2);proximos(c2);}
+  return cur;}
+function adaptacoes(c){var ns=c.adaptacoes||[];if(!ns.length)return;
+  Promise.all(ns.map(function(n){return fetch("roteiros/adaptacoes/"+n+".json?t="+Date.now()).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;});})).then(function(as){
+    as=as.filter(Boolean);if(!as.length||!$("adp-box"))return;
+    $("adp-box").innerHTML="<h4>Adaptação cultural <span>adaptar, não traduzir: casos e palavras do público "+esc((LG[c.idioma]||"").toLowerCase())+", com dado</span></h4><div class='adp'>"+as.map(function(a){var p=a.palavras_que_o_publico_digita||{},m=a.o_que_muda_no_roteiro_alemao||a.o_que_muda_no_roteiro||[],v=a.videos_locais_que_funcionam||[];
+      return"<div class='cx'><h4>"+esc(a.tema)+"</h4><p class='mut' style='font-size:12.5px;margin:0'>O público digita:</p><div class='tm'>"+(p.termos||[]).slice(0,10).map(function(t){return"<span>"+esc(t)+"</span>";}).join("")+"</div>"+
+        (v.length?"<p class='mut' style='font-size:12.5px;margin:10px 0 0'>Vídeos locais que funcionam:</p><ul>"+v.slice(0,4).map(function(x){return"<li>"+esc(x.titulo)+(x.views?" · "+f(x.views)+" views":"")+"</li>";}).join("")+"</ul>":"")+
+        (m.length?"<p class='mut' style='font-size:12.5px;margin:10px 0 0'>O que muda no roteiro:</p><ul>"+m.slice(0,4).map(function(x){return"<li>"+esc(x)+"</li>";}).join("")+"</ul>":"")+"</div>";}).join("")+"</div>";});}
+function proximos(c){if(!CAL||CAL.projeto!==c.id||!$("prox-box"))return;var it=(CAL.itens||[]).filter(function(i){return i.status!=="pronto";}).slice(0,6);if(!it.length)return;
+  $("prox-box").innerHTML="<h4>Próximos temas <span>do calendário (aba Produção), na ordem dos dados</span></h4><div class='prox'>"+it.map(function(i){return"<div><span><b style='font-weight:500'>"+esc(i.titulo||i.tema)+"</b>"+(i.tema_pt?" · <small>"+esc(i.tema_pt)+"</small>":"")+"<br><small>"+esc(i.dado)+"</small></span><small>"+esc(i.status)+(i.data?" · "+esc(i.data.slice(8,10)+"/"+i.data.slice(5,7)):"")+"</small></div>";}).join("")+"</div>";}
 function render(d){var m=d.medidas||{},a=d.analise||{},r=d.roteiro,tot=a.duracao_seg||m.duracao||1;
   var h="<div class='ref'><a href='https://youtu.be/"+esc(m.id)+"' target='_blank' rel='noopener'><img src='https://i.ytimg.com/vi/"+esc(m.id)+"/hqdefault.jpg' alt=''></a><div><div class='mut' style='font-size:12.5px'>Vídeo de referência</div><h2>"+esc(m.titulo)+"</h2>"+
    "<div class='kpi3'><div><small>Views</small><b>"+f(m.views)+"</b></div><div><small>Duração</small><b>"+mm(m.duracao)+"</b></div><div><small>Palavras/min</small><b>"+(m.palavras_por_minuto||"—")+"</b></div><div><small>Palavras</small><b>"+f(m.palavras)+"</b></div></div>"+
@@ -88,10 +145,11 @@ function render(d){var m=d.medidas||{},a=d.analise||{},r=d.roteiro,tot=a.duracao
   $("det").innerHTML=h;
   [].forEach.call($("det").querySelectorAll(".linha div"),function(x){x.onclick=function(){$("b"+x.dataset.i).scrollIntoView({behavior:"smooth",block:"center"});};});
   if($("cp"))$("cp").onclick=function(){var t=(r.blocos||[]).map(function(b){return b.texto;}).join("\n\n");navigator.clipboard.writeText(t).then(function(){$("cp").textContent="Copiado ✓";});};}
-function abrir(){var s=location.hash.slice(1)||(idx[0]||{}).slug;lista();if(!s){$("det").innerHTML="<div class='vazio'>Nenhum roteiro ainda.</div>";return;}
+function abrir(){var s=lista();if(!s){$("det").innerHTML="<div class='vazio'>Nada aqui ainda.</div>";return;}
   fetch("roteiros/"+encodeURIComponent(s)+".json?t="+Date.now()).then(function(r){return r.json();}).then(render).catch(function(){$("det").innerHTML="<div class='vazio'>Não achei.</div>";});}
 UI.pilula(document.querySelector(".tabs"));UI.revelar(document.querySelectorAll(".rv"));
-fetch("roteiros/index.json?t="+Date.now()).then(function(r){return r.ok?r.json():[];}).catch(function(){return[];}).then(function(d){idx=d||[];abrir();});
+function pega(u,v){return fetch(u+"?t="+Date.now()).then(function(r){return r.ok?r.json():v;}).catch(function(){return v;});}
+Promise.all([pega("roteiros/index.json",[]),pega("canais.json",[]),pega("calendario.json",null),pega("esteira.json",null)]).then(function(r){idx=r[0]||[];C=r[1]||[];CAL=r[2];EST=r[3];abrir();});
 window.addEventListener("hashchange",abrir);
 })();
 </script>
