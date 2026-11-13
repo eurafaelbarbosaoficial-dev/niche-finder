@@ -24,6 +24,15 @@ Regras:
 
 Se faltar algum, procure na pasta do projeto antes de perguntar.
 
+## Passo 0a. Ler as lições de vídeos anteriores
+
+```
+python -I producao/licoes.py listar
+```
+
+Cada lição é um erro que já aconteceu. O `RELATORIO.md` traz a lista com caixinhas: confira **uma por uma** e
+marque no `REVISAO.md` (seção "Lições") se passou ou falhou, com o tempo. Lição que falhou de novo é **alto**.
+
 ## Passo 0. Masterizar (se ainda não foi feito)
 
 Se o arquivo não termina em `-final.mp4`, rode `python -I masterizar.py <mp4>`. Isso deixa o volume geral em
@@ -143,6 +152,17 @@ Veredito:
 - **APROVADO:** no máximo baixos.
 
 Não suavize o veredito.
+
+## Passo 5. Ensinar o próximo vídeo (feedback loop)
+
+Para cada problema **alto ou médio NOVO** (que não está nas lições), grave uma lição:
+
+```
+python -I producao/licoes.py adicionar --etapa <roteiro|voz|montagem|imagem|som|publicar> --gravidade <alto|medio>   --origem "<vídeo>, <tempo>" --problema "<o que deu errado, com o número>"   --regra "<a regra para não repetir>" --conferir "<como conferir: comando ou o que olhar>"
+```
+
+Depois rode `python -I producao/licoes.py site`. Também grave como lição o que o **dono** corrigir depois de
+assistir: o que o dono pegou e o revisor deixou passar é o mais importante.
 
 Responda ao dono em 5 a 10 linhas: o veredito, os problemas altos e médios com o tempo, e o caminho do
 `REVISAO.md`. Não corrija nada sozinho: quem decide é o dono.

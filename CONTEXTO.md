@@ -156,3 +156,23 @@ O dono pede ("quero usar o Niche Finder nesta máquina nova") e o Claude faz, gu
   - vídeo de ~12 min.
 - **Som:** o arquivo `moedas` original era baixo demais (o "clink" é curto). Foi comprimido e amplificado: o crédito
   CC BY diz "bearbeitet".
+
+## Linha de produção com "feedback loop" (pedido do dono em 13/11, a partir do Raj vídeo 29)
+Pasta `producao/`. Aba **Produção** no site (`docs/producao.html`).
+- **Lições do revisor** (`producao/licoes.json`, `licoes.py`): cada erro que o revisor (ou o dono) acha vira
+  regra + "como conferir". O `montar.py` mostra as lições antes de montar; o `revisor.py` põe a lista com caixinhas
+  no RELATORIO; os agentes `revisor-video` e `revisor-roteiro` gravam lições novas. Lição que falha de novo = alto.
+- **Revisor de roteiro** (`producao/revisor_roteiro.py` + agente `.claude/agents/revisor-roteiro.md`): ANTES da voz.
+  Mede a duração (voz alemã medida: 126 palavras/min; acertou 11,9 min × 12:04 reais), links, números × fontes do
+  bloco, frases longas, gancho, risco jurídico. Gera `roteiros/<slug>/REVISAO-ROTEIRO.md`.
+- **Bíblia visual** (`producao/biblia.py <canal> <slug>`): baixa thumbs + os vídeos mais vistos da referência e
+  mede (trocas de cena/min, plano médio, paleta). Resultado em `referencias/<slug>/` + `biblia-visual.md`.
+  Econ in a Nutshell: 14,9–17,4 trocas/min (plano 3,4–4 s); o NOSSO vídeo: 3,1/min (18,6 s) → lição L013.
+- **Calendário** (`producao/calendario.py <projeto> --ref <ref> --feitos "..."`): pautas fortes/boas + vídeos do
+  canal de referência acima da mediana ("a medir"), nos dias/hora escolhidos (padrão sáb e qua, 17:00 Alemanha).
+- **Esteira** (`producao/esteira.py`, `producao/projetos.json`): ideia → roteiro → revisão → voz → montagem →
+  revisão do vídeo → pronto → publicado, lida dos arquivos. Botão "Nova ideia" abre issue com rótulo `ideia`; o
+  `vigia.py` mede a ideia com dados e refaz a esteira a cada 10 min. Quando postar, preencher `publicado_em` e `url`
+  no `projetos.json`.
+- Shorts: o dono decidiu não fazer por enquanto. Canal como vitrine de produto: para depois.
+- Canal: nome sugerido "Geld im Dunkeln" (aguardando o dono); arte em `videos/bankskandale-completo/publicar/`.

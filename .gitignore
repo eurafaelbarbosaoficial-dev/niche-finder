@@ -29,3 +29,6 @@ videos/bankskandale-completo/k*/.media/
 videos/bankskandale-completo/thumb/assets/
 videos/bankskandale-completo/render-*.log
 videos/**/publicar/*.mp4
+
+referencias/*/_videos/
+referencias/*/_tmp_grade/

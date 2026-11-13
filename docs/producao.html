@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Niche Finder — Produção</title>
+<meta name="theme-color" content="#060607">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+<style>
+.topo{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.sec2{margin:52px 0 14px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap} .sec2 h3{margin:0;font-size:22px;letter-spacing:-.025em;font-weight:600} .sec2 span{color:var(--mut);font-size:13.5px}
+.quadro{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,1fr);gap:10px;overflow-x:auto;padding-bottom:8px}
+.col{background:var(--s1);border:1px solid var(--ln);border-radius:18px;padding:12px;min-height:180px}
+.col h4{margin:0 0 10px;font:500 12px var(--mono);color:var(--mut);display:flex;justify-content:space-between;letter-spacing:.02em}
+.col h4 b{color:var(--tx2);font-weight:500}
+.tk{background:rgba(16,16,18,.85);border:1px solid var(--ln2);border-radius:14px;padding:12px 13px;margin-bottom:8px}
+.tk b{display:block;font-size:14px;font-weight:500;line-height:1.3}
+.tk small{display:block;color:var(--mut);font-size:12px;margin-top:6px}
+.tk .tag{display:inline-block;font:500 11px var(--mono);border-radius:999px;padding:2px 8px;margin-top:8px;border:1px solid var(--ln2);color:var(--tx2)}
+.tk .tag.lm{color:var(--lm);border-color:var(--lmln);background:var(--lmbg)}
+.tk .tag.az{color:var(--az);border-color:rgba(125,211,252,.35)}
+.tk .pas{display:flex;gap:3px;margin-top:10px} .tk .pas i{flex:1;height:4px;border-radius:2px;background:var(--s3)} .tk .pas i.ok{background:var(--lm)}
+.tk button{margin-top:10px;font-size:12.5px;padding:7px 12px}
+.cal{display:flex;flex-direction:column;gap:8px}
+.ci{display:grid;grid-template-columns:120px minmax(0,1fr) auto;gap:14px;align-items:center;background:var(--s1);border:1px solid var(--ln);border-radius:16px;padding:12px 16px}
+.ci .dt{font:600 15px var(--mono)} .ci .dt small{display:block;font:12px var(--mono);color:var(--mut)}
+.ci b{font-weight:500} .ci p{margin:4px 0 0;color:var(--mut);font-size:12.5px}
+.lic{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:10px}
+.li{background:var(--s1);border:1px solid var(--ln);border-radius:16px;padding:14px 16px}
+.li .h{display:flex;gap:8px;align-items:center;font:500 11.5px var(--mono);color:var(--mut)}
+.li .g{border-radius:999px;padding:1px 8px;border:1px solid var(--ln2)} .li .g.alto{color:var(--dn);border-color:rgba(251,113,133,.4)} .li .g.medio{color:var(--am);border-color:rgba(251,191,36,.4)}
+.li b{display:block;margin-top:8px;font-weight:500;font-size:14px;line-height:1.35} .li p{margin:6px 0 0;color:var(--mut);font-size:12.5px}
+.filtro{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px} .filtro button{font-size:12.5px;padding:6px 12px}
+.filtro button.on{background:var(--lm);color:#000;border-color:var(--lm)}
+.nota2{color:var(--mut);font-size:13px;margin-top:12px;max-width:90ch}
+@media(max-width:700px){.ci{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="fundo"><i></i><i></i><i></i></div>
+<nav class="nav">
+  <a class="mk" href="index.html"><b>NF</b><span>Niche Finder</span></a>
+  <div class="tabs"><a href="index.html">Canais</a><a href="validador.html">Validador</a><a href="roteiro.html">Roteiro</a><a class="on" href="producao.html">Produção</a></div>
+</nav>
+<main class="wrap">
+  <section class="rv topo">
+    <div>
+      <span class="eyebrow">Esteira de produção</span>
+      <h1 class="h1">Da ideia ao <em>vídeo postado</em>.</h1>
+      <p class="sub">Cada vídeo anda sozinho pelas etapas conforme os arquivos ficam prontos. O revisor confere cada etapa — e cada erro que ele acha vira uma lição que o próximo vídeo já segue.</p>
+    </div>
+    <button class="btn pri" id="nova">+ Nova ideia</button>
+  </section>
+
+  <div class="sec2 rv"><h3>Esteira</h3><span id="resumo"></span></div>
+  <div class="quadro rv" id="quadro"></div>
+
+  <div class="sec2 rv"><h3>Calendário de postagem</h3><span id="regra"></span></div>
+  <div class="cal" id="cal"></div>
+
+  <div class="sec2 rv"><h3>O que o revisor já aprendeu</h3><span id="nlic"></span></div>
+  <div class="filtro" id="filtro"></div>
+  <div class="lic" id="lic"></div>
+</main>
+<script src="ui.js"></script>
+<script>
+(function(){
+var REPO="https://github.com/eurafaelbarbosaoficial-dev/niche-finder";
+var NOME={ideia:"Ideia",roteiro:"Roteiro",revisao_roteiro:"Revisão do roteiro",voz:"Voz",montagem:"Montagem",revisao_video:"Revisão do vídeo",pronto:"Pronto p/ postar",publicado:"Publicado"};
+var ETN={roteiro:"Roteiro",voz:"Voz",montagem:"Montagem",imagem:"Imagem",som:"Som",publicar:"Publicar"};
+var DS=["dom","seg","ter","qua","qui","sex","sáb"];
+function $(i){return document.getElementById(i);}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function dia(d){if(!d)return"";var x=new Date(d+"T12:00:00");return DS[x.getDay()]+" "+String(x.getDate()).padStart(2,"0")+"/"+String(x.getMonth()+1).padStart(2,"0");}
+function pedir(t,pt){var txt="Leia o CONTEXTO.md. Escreva o roteiro do vídeo \""+t+"\""+(pt?" ("+pt+")":"")+" para o canal do projeto every-money-laundering (mesmo canal, alemão). Siga o calendário em producao/, escolha uma das 5 estruturas validadas (alterne com o vídeo anterior), adapte ao público alemão com dados, pesquise os fatos com fonte, rode o revisor de roteiro (producao/revisor_roteiro.py + agente revisor-roteiro) e publique na aba Roteiro.";
+  window.open(REPO+"/issues/new?labels=roteiro&title="+encodeURIComponent("Roteiro: "+t)+"&body="+encodeURIComponent(txt),"_blank","noopener");}
+$("nova").onclick=function(){
+  var corpo="Tema da ideia (pode ser em português):\n\n\nPor que acho que funciona (opcional, um link de vídeo ajuda):\n\n\n---\nO Claude mede a ideia com dados (pautas.py) antes de entrar no calendário. Ideia sem dado não vira vídeo.";
+  window.open(REPO+"/issues/new?labels=ideia&title="+encodeURIComponent("Ideia: ")+"&body="+encodeURIComponent(corpo),"_blank","noopener");};
+function esteira(d){var et=d.etapas,cs=d.cards||[];
+  $("resumo").textContent=cs.length+" vídeos · "+cs.filter(function(c){return c.etapa==="pronto";}).length+" pronto(s) para postar";
+  $("quadro").innerHTML=et.map(function(e){var cc=cs.filter(function(c){return c.etapa===e;});
+    return"<div class='col'><h4><b>"+NOME[e]+"</b><span>"+cc.length+"</span></h4>"+cc.map(function(c){
+      var pas=c.passos?"<div class='pas'>"+et.map(function(x){return"<i class='"+(c.passos[x]?"ok":"")+"' title='"+NOME[x]+"'></i>";}).join("")+"</div>":"";
+      var tag=c.data?"<span class='tag lm'>"+dia(c.data)+(c.hora?" · "+esc(c.hora):"")+"</span> ":"";
+      if(c.origem)tag+="<span class='tag az'>"+esc(c.origem)+(c.status?" · "+esc(c.status):"")+"</span>";
+      var btn=(e==="ideia"&&c.status==="validado")?"<button class='btn' data-t='"+esc(c.titulo)+"' data-pt='"+esc(c.tema_pt||"")+"'>Fazer roteiro</button>":"";
+      if(c.issue)btn="<a class='btn' style='margin-top:10px' href='"+esc(c.issue)+"' target='_blank' rel='noopener'>Ver ideia ↗</a>";
+      return"<div class='tk'><b>"+esc(c.titulo)+"</b>"+(c.tema_pt?"<small>"+esc(c.tema_pt)+"</small>":"")+(c.dado?"<small>"+esc(c.dado)+"</small>":"")+(c.obs?"<small>"+esc(c.obs)+"</small>":"")+tag+pas+btn+"</div>";}).join("")+"</div>";}).join("");
+  [].forEach.call($("quadro").querySelectorAll("button[data-t]"),function(b){b.onclick=function(){pedir(b.dataset.t,b.dataset.pt);b.textContent="Confirme no GitHub ↗";};});}
+function calendario(c){$("regra").textContent=c.regra||"";
+  $("cal").innerHTML=(c.itens||[]).map(function(i){return"<div class='ci'><div class='dt'>"+(i.data?dia(i.data):"—")+"<small>"+esc(i.hora_de||"")+"</small></div><div><b>"+esc(i.titulo||i.tema)+"</b>"+(i.tema_pt?" <span class='mut'>· "+esc(i.tema_pt)+"</span>":"")+"<p>"+esc(i.dado)+"</p></div><span class='tag'>"+esc(i.status)+"</span></div>";}).join("")||"<p class='mut'>Sem calendário ainda.</p>";}
+var LIC=[],FIL="";
+function licoes(){var ls=LIC.filter(function(l){return!FIL||l.etapa===FIL;});
+  $("nlic").textContent=LIC.length+" lições · cada uma é um erro que não volta";
+  $("filtro").innerHTML=["",].concat(Object.keys(ETN)).map(function(k){return"<button class='btn"+(k===FIL?" on":"")+"' data-k='"+k+"'>"+(k?ETN[k]:"Todas")+"</button>";}).join("");
+  [].forEach.call($("filtro").querySelectorAll("button"),function(b){b.onclick=function(){FIL=b.dataset.k;licoes();};});
+  $("lic").innerHTML=ls.map(function(l){return"<div class='li'><div class='h'><span>"+esc(l.id)+"</span><span class='g "+esc(l.gravidade)+"'>"+esc(l.gravidade)+"</span><span>"+esc(ETN[l.etapa]||l.etapa)+"</span><span>"+esc(l.data)+"</span></div><b>"+esc(l.regra)+"</b><p>Por quê: "+esc(l.problema)+"</p><p>Conferir: "+esc(l.conferir)+"</p></div>";}).join("");}
+UI.pilula(document.querySelector(".tabs"));UI.revelar(document.querySelectorAll(".rv"));
+function get(u){return fetch(u+"?t="+Date.now()).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;});}
+get("esteira.json").then(function(d){if(d)esteira(d);else $("quadro").innerHTML="<p class='mut'>Sem dados.</p>";});
+get("calendario.json").then(function(c){calendario(c||{});});
+get("licoes.json").then(function(l){LIC=l||[];licoes();});
+})();
+</script>
+</body>
+</html>

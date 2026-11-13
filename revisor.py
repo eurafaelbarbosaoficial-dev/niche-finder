@@ -584,6 +584,12 @@ def main():
     for x in R["achados"]:
         t = f"{x['tempo']:.2f}s" if x["tempo"] is not None else "—"
         L.append(f"- **{x['gravidade']}** · {t} · {x['area']}: {x['msg']}")
+    # lições de vídeos anteriores (feedback loop): o agente confere cada uma e marca ok/falhou no REVISAO.md
+    arq = Path(__file__).resolve().parent / "producao" / "licoes.json"
+    if arq.exists():
+        ls = [l for l in json.loads(arq.read_text(encoding="utf-8")) if l["etapa"] != "roteiro"]
+        L += ["", "## Lições de vídeos anteriores (conferir uma por uma)", ""]
+        L += [f"- [ ] **{l['id']}** ({l['gravidade']}) {l['regra']} — conferir: {l['conferir']}" for l in ls]
     L += ["", "## Folhas de contato", ""] + [f"- {f}" for f in R["folhas"]]
     Path(saida, "RELATORIO.md").write_text("\n".join(L) + "\n", encoding="utf-8")
     print(f"\npronto: {saida}")

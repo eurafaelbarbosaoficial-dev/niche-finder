@@ -1,0 +1,144 @@
+{
+ "slug": "bankskandale-de",
+ "titulo": "Alle Geldwäsche-Skandale der Banken erklärt",
+ "idioma": "de",
+ "palavras": 1502,
+ "ppm_usado": 126,
+ "duracao_estimada_min": 11.9,
+ "fontes": 30,
+ "fontes_quebradas": 5,
+ "blocos": [
+  {
+   "bloco": "Gancho: Razzia in Frankfurt + Karte des Eisbergs",
+   "palavras": 148,
+   "seg_estimado": 70,
+   "fontes": 2,
+   "numeros_nao_achados": []
+  },
+  {
+   "bloco": "Ebene 1: Die Bank auf deinem Handy (N26)",
+   "palavras": 171,
+   "seg_estimado": 81,
+   "fontes": 3,
+   "numeros_nao_achados": []
+  },
+  {
+   "bloco": "Ebene 2: Die Banken, die wegschauen (ING, Commerzbank)",
+   "palavras": 204,
+   "seg_estimado": 97,
+   "fontes": 6,
+   "numeros_nao_achados": []
+  },
+  {
+   "bloco": "Ebene 3: Die Deutsche Bank (Spiegelgeschäfte, Epstein, FinCEN Files)",
+   "palavras": 302,
+   "seg_estimado": 144,
+   "fontes": 6,
+   "numeros_nao_achados": []
+  },
+  {
+   "bloco": "Ebene 4: Die Bank der Kartelle (HSBC, TD Bank)",
+   "palavras": 204,
+   "seg_estimado": 97,
+   "fontes": 4,
+   "numeros_nao_achados": []
+  },
+  {
+   "bloco": "Ebene 5: Eine Filiale, 200 Milliarden Euro (Danske Bank Estland)",
+   "palavras": 191,
+   "seg_estimado": 91,
+   "fontes": 5,
+   "numeros_nao_achados": [
+    "881"
+   ]
+  },
+  {
+   "bloco": "Der Grund: Die Bank, die selbst das Verbrechen war (BCCI)",
+   "palavras": 147,
+   "seg_estimado": 70,
+   "fontes": 2,
+   "numeros_nao_achados": []
+  },
+  {
+   "bloco": "Fecho: Strafe zahlen, weitermachen",
+   "palavras": 135,
+   "seg_estimado": 64,
+   "fontes": 4,
+   "numeros_nao_achados": []
+  }
+ ],
+ "achados": [
+  {
+   "gravidade": "baixo",
+   "bloco": "fontes",
+   "msg": "O site bloqueia acesso automático (código 503); abrir no navegador para conferir: https://money.cnn.com/2012/12/12/news/companies/hsbc-money-laundering"
+  },
+  {
+   "gravidade": "baixo",
+   "bloco": "fontes",
+   "msg": "O site bloqueia acesso automático (código 403); abrir no navegador para conferir: https://nltimes.nl/2018/09/04/ing-pays-eu775-million-settlement-facilitating-money-laundering"
+  },
+  {
+   "gravidade": "baixo",
+   "bloco": "fontes",
+   "msg": "O site bloqueia acesso automático (código 403); abrir no navegador para conferir: https://www.axios.com/2020/07/07/deutsche-bank-new-york-jeffrey-epstein"
+  },
+  {
+   "gravidade": "baixo",
+   "bloco": "fontes",
+   "msg": "O site bloqueia acesso automático (código 403); abrir no navegador para conferir: https://www.fintechfutures.com/regulatory-actions/n26-fined-9-2m-by-bafin-over-late-submission-of-suspected-money-laundering-reports-in-2022"
+  },
+  {
+   "gravidade": "baixo",
+   "bloco": "fontes",
+   "msg": "O site bloqueia acesso automático (código 403); abrir no navegador para conferir: https://www.steptoe.com/en/news-publications/commerzbank-1-45b-settlement-ofac-continues-scrutinizing-foreign-banks.html"
+  },
+  {
+   "gravidade": "baixo",
+   "bloco": "Ebene 2: Die Banken, die wegschauen (ING, Commerzbank)",
+   "msg": "Frase de 30 palavras (máx. 28): \"Der andere Teil wegen Geldwäsche-Regeln: Über die New Yorker Filiale liefen laut US-Justiz…\""
+  },
+  {
+   "gravidade": "baixo",
+   "bloco": "Ebene 2: Die Banken, die wegschauen (ING, Commerzbank)",
+   "msg": "Palavras repetidas no bloco: millionen ×6"
+  },
+  {
+   "gravidade": "baixo",
+   "bloco": "Ebene 3: Die Deutsche Bank (Spiegelgeschäfte, Epstein, FinCEN Files)",
+   "msg": "Palavras repetidas no bloco: bank ×10, dollar ×9, kein ×5, rund ×5, millionen ×5"
+  },
+  {
+   "gravidade": "baixo",
+   "bloco": "Ebene 4: Die Bank der Kartelle (HSBC, TD Bank)",
+   "msg": "Palavras repetidas no bloco: bank ×5, dollar ×5"
+  },
+  {
+   "gravidade": "conferir",
+   "bloco": "Ebene 5: Eine Filiale, 200 Milliarden Euro (Danske Bank Estland)",
+   "msg": "Números que não achei nas fontes do bloco (podem estar escritos de outro jeito): 881"
+  },
+  {
+   "gravidade": "baixo",
+   "bloco": "Ebene 5: Eine Filiale, 200 Milliarden Euro (Danske Bank Estland)",
+   "msg": "Palavras repetidas no bloco: bank ×5"
+  },
+  {
+   "gravidade": "baixo",
+   "bloco": "Der Grund: Die Bank, die selbst das Verbrechen war (BCCI)",
+   "msg": "Palavras repetidas no bloco: bank ×8"
+  }
+ ],
+ "licoes": [
+  {
+   "id": "L010",
+   "data": "2026-11-12",
+   "etapa": "roteiro",
+   "gravidade": "alto",
+   "origem": "Amostra Bankskandale",
+   "problema": "Apareceu na tela um '€ 1.000.000' que não existia no roteiro.",
+   "regra": "Todo número na tela e na thumb vem do roteiro e da fonte dele. Nada inventado.",
+   "conferir": "revisor_roteiro.py: números × fontes; revisor de vídeo: item 8."
+  }
+ ]
+}

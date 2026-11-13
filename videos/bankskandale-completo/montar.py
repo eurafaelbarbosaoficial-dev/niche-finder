@@ -39,8 +39,20 @@ def achar(palavras, frase, cursor):
     raise SystemExit(f"Não achei «{frase}» depois da palavra {cursor} ({' '.join(ws[cursor:cursor + 12])}…)")
 
 
+def licoes():
+    """Mostra as lições do revisor antes de montar (feedback loop): o erro de um vídeo não volta no próximo."""
+    arq = Path(__file__).resolve().parents[2] / "producao" / "licoes.json"
+    if not arq.exists():
+        return
+    ls = [l for l in json.loads(arq.read_text(encoding="utf-8")) if l["etapa"] in ("voz", "montagem", "imagem", "som")]
+    print(f"LIÇÕES DO REVISOR ({len(ls)}) — seguir na montagem:")
+    for l in ls:
+        print(f"  [{l['id']}] {l['regra']}")
+
+
 def main():
     cap = sys.argv[1]
+    licoes()
     spec = CAPITULOS[cap]
     global INICIO_VOZ
     INICIO_VOZ = spec.get("abertura", INICIO_VOZ)
