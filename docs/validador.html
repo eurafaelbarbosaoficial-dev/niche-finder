@@ -117,7 +117,7 @@
 .pc-br{display:flex;align-items:center;gap:12px;margin-top:6px} .pc-bar{flex:0 1 260px;height:8px;border-radius:9px;background:var(--s2);overflow:hidden}
 .pc-bar i{display:block;height:100%;border-radius:9px;background:linear-gradient(90deg,rgba(212,255,58,.5),var(--lm))} .pc-br span{font-size:13px;color:var(--tx2)} .pc-br b{color:var(--tx);font-weight:600}
 .pc-mt{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--mut)} .pc-src{color:var(--dim)}
-.pedir-rt{margin:0 0 12px} .pc-x{display:none;grid-column:1/-1;border-top:1px solid var(--ln);padding:14px 6px 4px} .pc.on .pc-x{display:block;animation:sobe .4s var(--ease)}
+.rt-ac{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 14px} .rt-n{flex:1 1 260px;font-size:12.5px;color:var(--mut)} .pc-x{display:none;grid-column:1/-1;border-top:1px solid var(--ln);padding:14px 6px 4px} .pc.on .pc-x{display:block;animation:sobe .4s var(--ease)}
 .pc-x p{margin:0 0 6px;font-size:14px;color:var(--tx2)} .pc-x h6{margin:16px 0 8px;font-size:13px;font-weight:500;color:var(--mut)} .pc-x h6.ok,.ok{color:var(--up)}
 .vg{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:8px}
 .vc{display:flex;gap:12px;align-items:center;padding:8px;border-radius:14px;border:1px solid var(--ln);background:var(--s1);transition:border-color .2s,background .2s;min-width:0}
@@ -192,7 +192,9 @@ function pautas(slug){fetch("pautas/"+encodeURIComponent(slug)+".json?t="+Date.n
       "<h5>"+esc(x.tema)+"</h5>"+(x.tema_pt?"<div class='pc-pt'>"+esc(x.tema_pt)+"</div>":"")+
       "<div class='pc-br'><div class='pc-bar'><i style='width:"+pct+"%'></i></div><span><b>"+f(x.demanda_max)+"</b> views no maior vídeo do tema</span></div>"+
       "<div class='pc-mt'><span>"+(x.concorrentes?x.concorrentes+" já fizeram no formato":"Ninguém fez no formato")+"</span><span>Procura "+x.procura+"/10</span><span class='pc-src'>"+esc(FT[x.fonte]||x.fonte)+"</span></div></div>"+
-      "<div class='pc-x'><button class='btn pri pedir-rt' data-t='"+esc(x.tema)+"' data-pt='"+esc(x.tema_pt||"")+"' data-g='"+esc(x.grupo||"pauta")+"'>Copiar pedido de roteiro</button>"+
+      "<div class='pc-x'><div class='rt-ac'><button class='btn pri pedir-rt' data-t='"+esc(x.tema)+"' data-pt='"+esc(x.tema_pt||"")+"' data-g='"+esc(x.grupo||"pauta")+"'>Fazer roteiro</button>"+
+      "<button class='btn pedir-rt' data-modo='copiar' data-t='"+esc(x.tema)+"' data-pt='"+esc(x.tema_pt||"")+"' data-g='"+esc(x.grupo||"pauta")+"'>Copiar pedido</button>"+
+      "<span class='rt-n'>“Fazer roteiro” abre o pedido no GitHub: confirme com “Create” e o notebook escreve o roteiro sozinho (~15–30 min, aparece na aba Roteiro).</span></div>"+
       "<p>"+esc(x.explica)+"</p><p class='mut'>De onde veio: "+esc(x.evidencia)+(x.relacao?" · "+esc(x.relacao)+" → "+esc(x.onde):"")+"</p>"+
       "<h6>Os maiores vídeos sobre o tema em "+esc(LG)+"</h6><div class='vg'>"+((x.tema_videos||[]).map(vcard).join("")||"<p class='mut'>Nenhum vídeo sobre o tema achado no idioma.</p>")+"</div>"+
       ((x.molde_videos||[]).length?"<h6>Quem já fez nesse formato</h6><div class='vg'>"+x.molde_videos.map(vcard).join("")+"</div>":"<h6 class='ok'>Ninguém fez nesse formato em "+esc(LG)+" — espaço livre</h6>")+"</div></article>";}
@@ -219,7 +221,9 @@ function pautas(slug){fetch("pautas/"+encodeURIComponent(slug)+".json?t="+Date.n
     var txt="Leia o CONTEXTO.md. Escreva o roteiro do vídeo \""+b.dataset.t+"\""+(b.dataset.pt?" ("+b.dataset.pt+")":"")+" em "+LG+", para o projeto \""+p.slug+"\" do Niche Finder"+
       (b.dataset.g==="dobra"?" (é um nicho novo: canal novo, mesmo formato)":" (mesmo canal)")+". Use as pautas em docs/pautas/"+p.slug+".json, escolha uma das 5 estruturas de roteiro validadas em roteiros/ (alterne com os vídeos anteriores),"+
       " adapte para o público "+LG.toLowerCase()+" com os dados de roteiros/adaptacao-"+p.idioma+"-*.json (se não existir para este tema, monte antes com dados), pesquise os fatos com fonte e publique na aba Roteiro.";
-    (navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(function(){b.textContent="Copiado ✓ — cole no Claude Code";setTimeout(function(){b.textContent="Copiar pedido de roteiro";},2500);},function(){prompt("Copie o pedido:",txt);});};});
+    if(b.dataset.modo==="copiar"){(navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(function(){b.textContent="Copiado ✓";setTimeout(function(){b.textContent="Copiar pedido";},2500);},function(){prompt("Copie o pedido:",txt);});return;}
+    window.open("https://github.com/eurafaelbarbosaoficial-dev/niche-finder/issues/new?labels=roteiro&title="+encodeURIComponent("Roteiro: "+b.dataset.t+(b.dataset.pt?" ("+b.dataset.pt+")":""))+"&body="+encodeURIComponent(txt),"_blank","noopener");
+    b.textContent="Confirme no GitHub ↗";setTimeout(function(){b.textContent="Fazer roteiro";},4000);};});
   UI.revelar(el.querySelectorAll(".bloco-sec"));});}
 function hist(){var s=location.hash.slice(1)||(idx[0]||{}).slug;
   $("hist").innerHTML=idx.map(function(x){var r=x.resumo||{};return"<button class='hi"+(x.slug===s?" on":"")+"' data-s='"+esc(x.slug)+"'><b>"+esc(x.titulo||x.slug)+"</b><small>"+esc(x.data)+"</small><span class='dots'>"+

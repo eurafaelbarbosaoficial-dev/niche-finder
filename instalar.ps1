@@ -30,4 +30,10 @@ $acao = New-ScheduledTaskAction -Execute "cmd.exe" -Argument "/c `"$pasta\rodar.
 $gatilho = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes($InicioMin) -RepetitionInterval (New-TimeSpan -Hours $Horas)
 $config = New-ScheduledTaskSettingsSet -StartWhenAvailable -MultipleInstances IgnoreNew -ExecutionTimeLimit (New-TimeSpan -Hours 6) -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
 Register-ScheduledTask -TaskName "Niche Finder" -Action $acao -Trigger $gatilho -Settings $config -Description "Busca canais novos no YouTube e publica o site" -Force | Out-Null
+Write-Host "   + Tarefa 'Niche Finder - Roteiros' (vigia dos pedidos de roteiro, a cada 10 min)..."
+$acao2 = New-ScheduledTaskAction -Execute "cmd.exe" -Argument "/c `"$pasta\vigia.bat`"" -WorkingDirectory $pasta
+$gatilho2 = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes($InicioMin) -RepetitionInterval (New-TimeSpan -Minutes 10)
+$config2 = New-ScheduledTaskSettingsSet -StartWhenAvailable -MultipleInstances IgnoreNew -ExecutionTimeLimit (New-TimeSpan -Hours 2) -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
+Register-ScheduledTask -TaskName "Niche Finder - Roteiros" -Action $acao2 -Trigger $gatilho2 -Settings $config2 -Description "Escreve roteiros pedidos pelo botao do site" -Force | Out-Null
 Write-Host "Pronto. A primeira busca comeca em $InicioMin minutos." -ForegroundColor Green
+Write-Host "Para o botao 'Fazer roteiro' funcionar: abra um terminal, rode 'claude' e faca /login uma vez." -ForegroundColor Yellow

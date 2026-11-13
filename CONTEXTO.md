@@ -72,3 +72,13 @@ O dono pede ("quero usar o Niche Finder nesta máquina nova") e o Claude faz, gu
 5. Ler este arquivo; rodar `python -I finder.py --publicar 5` de teste e conferir se o site atualiza.
 6. Na máquina antiga: apagar a tarefa "Niche Finder" (`Unregister-ScheduledTask -TaskName "Niche Finder" -Confirm:$false`),
    pelo Claude de lá ou pelo Agendador de Tarefas. Só uma máquina busca por vez.
+
+## Botão "Fazer roteiro" (feito em 12/11, à noite)
+- No Validador → Próximos vídeos, cada tema tem "Fazer roteiro" (abre uma issue no GitHub com rótulo `roteiro` e o
+  pedido completo; o dono confirma com "Create") e "Copiar pedido" (para colar numa conversa).
+- `vigia.py` (tarefa do Windows "Niche Finder - Roteiros", a cada 10 min, via `vigia.bat`) pega o pedido mais antigo,
+  roda o Claude Code sozinho (`claude -p`, sem perguntas) na pasta, publica o roteiro e fecha a issue com o resumo.
+- PRECISA: o Claude Code de linha de comando logado UMA vez pelo dono (`claude` no terminal → /login). Em 12/11 ainda
+  não estava logado ("Not logged in"). Log em `estado/vigia.txt`.
+- Bug corrigido em 12/11: em português o YouTube escreve "3,6 mil" e o yt-dlp lia 36 → nenhum canal brasileiro
+  chegava a 50 mil. Agora as views vêm sempre da página em inglês (finder.lista_videos).
