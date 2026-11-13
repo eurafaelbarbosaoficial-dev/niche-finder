@@ -36,3 +36,8 @@ referencias/*/_tmp_grade/
 videos/*/thumbs/.hyperframes/
 videos/*/thumbs/assets/
 estado/youtube-api.txt
+estado/desempenho.ultima
+**/.waveform-cache/
+referencias/*/thumbs/
+videos/*/arte-*/assets/
+videos/*/arte-*/*.json
