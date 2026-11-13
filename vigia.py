@@ -44,9 +44,14 @@ def atualizar_esteira():
     try:
         subprocess.run([sys.executable, "-I", str(AQUI / "producao" / "esteira.py")], capture_output=True, cwd=AQUI, timeout=120)
         subprocess.run([sys.executable, "-I", str(AQUI / "producao" / "licoes.py"), "site"], capture_output=True, cwd=AQUI, timeout=60)
-        mud = subprocess.run(["git", "status", "--porcelain", "docs/esteira.json", "docs/licoes.json"], capture_output=True, text=True, cwd=AQUI).stdout.strip()
+        # desempenho dos nossos vídeos: no máximo a cada 3 h
+        marca = ESTADO / "desempenho.ultima"
+        if not marca.exists() or time.time() - marca.stat().st_mtime > 3 * 3600:
+            subprocess.run([sys.executable, "-I", str(AQUI / "producao" / "desempenho.py"), "medir"], capture_output=True, cwd=AQUI, timeout=600)
+            marca.write_text(str(time.time()))
+        mud = subprocess.run(["git", "status", "--porcelain", "docs/esteira.json", "docs/licoes.json", "docs/desempenho.json"], capture_output=True, text=True, cwd=AQUI).stdout.strip()
         if mud:
-            subprocess.run(["git", "add", "docs/esteira.json", "docs/licoes.json"], cwd=AQUI)
+            subprocess.run(["git", "add", "docs/esteira.json", "docs/licoes.json", "docs/desempenho.json"], cwd=AQUI)
             subprocess.run(["git", "commit", "-qm", "Esteira atualizada"], cwd=AQUI)
             subprocess.run(["git", "pull", "-q", "--rebase"], cwd=AQUI)
             subprocess.run(["git", "push", "-q"], cwd=AQUI)

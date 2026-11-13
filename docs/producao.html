@@ -58,6 +58,9 @@
   <div class="sec2 rv"><h3>Esteira</h3><span id="resumo"></span></div>
   <div class="quadro rv" id="quadro"></div>
 
+  <div class="sec2 rv"><h3>Como foram nossos vídeos</h3><span>números públicos a cada 3 h · retenção e cliques: print do YouTube Studio</span></div>
+  <div class="cal" id="desemp"></div>
+
   <div class="sec2 rv"><h3>Calendário de postagem</h3><span id="regra"></span></div>
   <div class="cal" id="cal"></div>
 
@@ -104,6 +107,14 @@ function get(u){return fetch(u+"?t="+Date.now()).then(function(r){return r.ok?r.
 get("esteira.json").then(function(d){if(d)esteira(d);else $("quadro").innerHTML="<p class='mut'>Sem dados.</p>";});
 get("calendario.json").then(function(c){calendario(c||{});});
 get("licoes.json").then(function(l){LIC=l||[];licoes();});
+function fn(n){if(n==null)return"—";if(n>=1e6)return(n/1e6).toFixed(1).replace(".",",")+" mi";if(n>=1e3)return(n/1e3).toFixed(1).replace(".",",")+" mil";return String(n);}
+get("desempenho.json").then(function(d){d=d||[];
+  $("desemp").innerHTML=d.length?d.map(function(v){var st=v.studio||{};
+    return"<div class='ci'><div class='dt'>"+fn(v.agora.views)+"<small>views · "+Math.round(v.horas_no_ar)+" h no ar</small></div><div><b><a href='"+esc(v.url)+"' target='_blank' rel='noopener'>"+esc(v.titulo)+"</a></b>"+
+      "<p>24 h: "+fn(v.views_24h)+" · 48 h: "+fn(v.views_48h)+" · 7 dias: "+fn(v.views_7d)+" · curtidas "+fn(v.agora.curtidas)+" · comentários "+fn(v.agora.comentarios)+
+      (v.mediana_referencia?" · régua: mediana do canal de referência "+fn(v.mediana_referencia):"")+"</p>"+
+      (st.ctr_pct!=null?"<p>Studio ("+esc(st.data)+"): cliques na thumb "+st.ctr_pct+"% · retenção média "+st.retencao_pct+"% · duração média "+esc(st.duracao_media)+"</p>":"<p>Falta o print do YouTube Studio (cliques e retenção).</p>")+
+      "</div><span class='tag'>no ar</span></div>";}).join(""):"<p class='mut'>Nenhum vídeo postado ainda. Quando postar, mande o link ao Claude.</p>";});
 })();
 </script>
 </body>
