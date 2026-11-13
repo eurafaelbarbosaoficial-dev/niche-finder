@@ -23,7 +23,7 @@ YTDLP = str(BIN / "yt-dlp.exe") if (BIN / "yt-dlp.exe").exists() else "yt-dlp"
 
 
 def yt(*a, **kw):
-    return subprocess.run([YTDLP, "--no-warnings", *a], capture_output=True, text=True, encoding="utf-8", errors="replace", **kw)
+    return subprocess.run([YTDLP, "--no-warnings", "--encoding", "utf-8", *a], capture_output=True, text=True, encoding="utf-8", errors="replace", **kw)
 
 
 def canal_url(c):

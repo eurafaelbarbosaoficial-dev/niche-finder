@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Niche Finder — Produção</title>
-<meta name="theme-color" content="#060607">
+<meta name="theme-color" content="#ffffff">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="estilo.css?v=3">
 <style>
 .topo{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
 .sec2{margin:52px 0 14px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap} .sec2 h3{margin:0;font-size:22px;letter-spacing:-.025em;font-weight:600} .sec2 span{color:var(--mut);font-size:13.5px}
 .quadro{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,1fr);gap:10px;overflow-x:auto;padding-bottom:8px}
-.col{background:var(--s1);border:1px solid var(--ln);border-radius:18px;padding:12px;min-height:180px}
+.col{background:var(--in);border:1px solid var(--ln);border-radius:18px;padding:12px;min-height:180px}
 .col h4{margin:0 0 10px;font:500 12px var(--mono);color:var(--mut);display:flex;justify-content:space-between;letter-spacing:.02em}
 .col h4 b{color:var(--tx2);font-weight:500}
-.tk{background:rgba(16,16,18,.85);border:1px solid var(--ln2);border-radius:14px;padding:12px 13px;margin-bottom:8px}
+.tk{background:var(--card);border:1px solid var(--ln);box-shadow:var(--sh);border-radius:14px;padding:12px 13px;margin-bottom:8px}
 .tk b{display:block;font-size:14px;font-weight:500;line-height:1.3}
 .tk small{display:block;color:var(--mut);font-size:12px;margin-top:6px}
 .tk .tag{display:inline-block;font:500 11px var(--mono);border-radius:999px;padding:2px 8px;margin-top:8px;border:1px solid var(--ln2);color:var(--tx2)}
@@ -34,7 +34,7 @@
 .li .g{border-radius:999px;padding:1px 8px;border:1px solid var(--ln2)} .li .g.alto{color:var(--dn);border-color:rgba(251,113,133,.4)} .li .g.medio{color:var(--am);border-color:rgba(251,191,36,.4)}
 .li b{display:block;margin-top:8px;font-weight:500;font-size:14px;line-height:1.35} .li p{margin:6px 0 0;color:var(--mut);font-size:12.5px}
 .filtro{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px} .filtro button{font-size:12.5px;padding:6px 12px}
-.filtro button.on{background:var(--lm);color:#000;border-color:var(--lm)}
+.filtro button.on{background:var(--lm);color:#fff;border-color:var(--lm)}
 .nota2{color:var(--mut);font-size:13px;margin-top:12px;max-width:90ch}
 @media(max-width:700px){.ci{grid-template-columns:1fr}}
 </style>
@@ -68,7 +68,7 @@
   <div class="filtro" id="filtro"></div>
   <div class="lic" id="lic"></div>
 </main>
-<script src="ui.js"></script>
+<script src="ui.js?v=3"></script>
 <script>
 (function(){
 var REPO="https://github.com/eurafaelbarbosaoficial-dev/niche-finder";

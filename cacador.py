@@ -49,7 +49,7 @@ def sp_filtro(periodo, ordem=None):
 
 def yt(args, tentativas=3):
     for i in range(tentativas):
-        p = subprocess.run([*YTDLP_CMD, "--no-warnings", *args], capture_output=True, text=True,
+        p = subprocess.run([*YTDLP_CMD, "--no-warnings", "--encoding", "utf-8", *args], capture_output=True, text=True,
                            encoding="utf-8", errors="replace", env=ENV)
         if p.returncode == 0 or p.stdout.strip():
             time.sleep(PAUSA)

@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Niche Finder</title>
-<meta name="theme-color" content="#060607">
+<meta name="theme-color" content="#ffffff">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="estilo.css?v=3">
 </head>
 <body>
 <div class="fundo"><i></i><i></i><i></i></div>
-<svg width="0" height="0" style="position:absolute"><defs><linearGradient id="gsp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D4FF3A" stop-opacity=".35"/><stop offset="1" stop-color="#D4FF3A" stop-opacity="0"/></linearGradient></defs></svg>
+<svg width="0" height="0" style="position:absolute"><defs><linearGradient id="gsp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff0033" stop-opacity=".35"/><stop offset="1" stop-color="#ff0033" stop-opacity="0"/></linearGradient></defs></svg>
 
 <nav class="nav">
   <a class="mk" href="index.html"><b>NF</b><span>Niche Finder</span></a>
@@ -71,7 +71,7 @@
 <div class="cmd" id="cmd" role="dialog" aria-label="Busca rápida"><input id="cmd-q" placeholder="Ir para um canal, nicho ou idioma…" autocomplete="off"><ul id="cmd-l"></ul>
   <div class="pe"><span><kbd>↑</kbd> <kbd>↓</kbd> navegar</span><span><kbd>Enter</kbd> abrir</span><span><kbd>Esc</kbd> fechar</span></div></div>
 
-<script src="ui.js"></script>
+<script src="ui.js?v=3"></script>
 <script>
 (function(){
 var LANGS={pt:"Português",es:"Espanhol",en:"Inglês",de:"Alemão",fr:"Francês"};
@@ -160,7 +160,7 @@ function lista(){var cs=filtrados(),fs=[S.cat,S.lang&&LANGS[S.lang],S.q&&("“"+
 function grafico(h){h=h||[];if(h.length<2)return"<div class='mut' style='padding:30px 0;text-align:center'>O gráfico aparece a partir da 2ª medição.</div>";
   var w=600,hh=120,v=h.map(function(x){return x[1];}),mn=Math.min.apply(0,v),mx=Math.max.apply(0,v),r=mx-mn||1;
   var p=v.map(function(y,i){return[(i*(w/(v.length-1))).toFixed(1),(hh-6-(y-mn)/r*(hh-14)).toFixed(1)];}),l="M"+p.map(function(q){return q.join(",");}).join(" L");
-  return"<svg viewBox='0 0 "+w+" "+hh+"' preserveAspectRatio='none'><path d='"+l+" L"+w+","+hh+" L0,"+hh+" Z' fill='url(#gsp)'/><path d='"+l+"' fill='none' stroke='#D4FF3A' stroke-width='2' vector-effect='non-scaling-stroke'/></svg>"+
+  return"<svg viewBox='0 0 "+w+" "+hh+"' preserveAspectRatio='none'><path d='"+l+" L"+w+","+hh+" L0,"+hh+" Z' fill='url(#gsp)'/><path d='"+l+"' fill='none' stroke='#ff0033' stroke-width='2' vector-effect='non-scaling-stroke'/></svg>"+
     "<div style='display:flex;justify-content:space-between;font:12px var(--mono);color:var(--mut);margin-top:6px'><span>"+fdata(h[0][0])+" · "+fmt(v[0])+"</span><span>"+fdata(h[h.length-1][0])+" · "+fmt(v[v.length-1])+"</span></div>";}
 function abrir(id,quieto){var x=(D.canais||[]).filter(function(c){return c.id===id;})[0];if(!x)return;aberto=id;
   var m=x.melhor,r=ratio(x),g=cresc(x),mx=m.views||1;

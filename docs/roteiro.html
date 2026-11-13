@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Niche Finder — Roteiro</title>
-<meta name="theme-color" content="#060607">
+<meta name="theme-color" content="#ffffff">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="estilo.css?v=3">
 <style>
 .lst{display:flex;gap:10px;overflow-x:auto;margin-top:40px}
 .lst button{flex:none;width:300px;text-align:left;border:1px solid var(--ln);background:var(--s1);border-radius:16px;padding:14px 16px;cursor:pointer}
@@ -21,9 +21,9 @@
 .res{margin-top:14px;color:var(--tx2);font-size:15px;max-width:80ch}
 .sec2{margin:48px 0 14px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap} .sec2 h3{margin:0;font-size:22px;letter-spacing:-.025em;font-weight:600} .sec2 span{color:var(--mut);font-size:13.5px}
 .linha{position:relative;height:46px;border-radius:12px;background:var(--s1);border:1px solid var(--ln);overflow:hidden;display:flex}
-.linha div{position:relative;border-right:1px solid rgba(0,0,0,.5);display:flex;align-items:center;padding:0 8px;font:500 11.5px var(--mono);color:#000;white-space:nowrap;overflow:hidden;cursor:pointer;transition:filter .2s}
-.linha div:hover{filter:brightness(1.15)} .linha div:nth-child(5n+1){background:var(--lm)} .linha div:nth-child(5n+2){background:#A3E635} .linha div:nth-child(5n+3){background:#7DD3FC}
-.linha div:nth-child(5n+4){background:#F9A8D4} .linha div:nth-child(5n+5){background:#FDE68A}
+.linha div{position:relative;border-right:2px solid var(--card);display:flex;align-items:center;padding:0 8px;font:500 11.5px var(--mono);color:#fff;white-space:nowrap;overflow:hidden;cursor:pointer;transition:filter .2s}
+.linha div:hover{filter:brightness(1.15)} .linha div:nth-child(5n+1){background:var(--lm)} .linha div:nth-child(5n+2){background:#065fd4} .linha div:nth-child(5n+3){background:#0b8043}
+.linha div:nth-child(5n+4){background:#8e24aa} .linha div:nth-child(5n+5){background:#c26400}
 .tempo{display:flex;justify-content:space-between;font:11px var(--mono);color:var(--dim);margin-top:6px}
 .gancho{border-radius:18px;border:1px solid var(--lmln);background:var(--lmbg);padding:18px 20px;margin-top:14px}
 .gancho b{color:var(--lm)} .gancho p{margin:8px 0 0;color:var(--tx2)}
@@ -35,7 +35,7 @@
 .dois{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
 .cx{border-radius:16px;border:1px solid var(--ln);background:var(--s1);padding:14px 18px} .cx h4{margin:0 0 6px;font-size:13px;color:var(--mut);font-weight:500} .cx p,.cx li{color:var(--tx2);font-size:14px} .cx ul{margin:0;padding-left:18px}
 .rt{display:flex;flex-direction:column;gap:10px;margin-top:14px}
-.rb{border-radius:18px;border:1px solid var(--ln);background:rgba(16,16,18,.7);overflow:hidden}
+.rb{border-radius:18px;border:1px solid var(--ln);background:var(--card);overflow:hidden}
 .rb-h{display:flex;justify-content:space-between;gap:10px;padding:12px 18px;border-bottom:1px solid var(--ln);flex-wrap:wrap} .rb-h b{font-size:14.5px} .rb-h span{font:12px var(--mono);color:var(--lm)}
 .rb-t{padding:14px 18px;font-size:16px;line-height:1.7;white-space:pre-wrap}
 .rb-f{padding:0 18px 14px;font-size:12px;color:var(--mut)} .rb-f a{color:var(--az);text-decoration:underline}
@@ -59,7 +59,7 @@
   <div class="lst rv" id="lst"></div>
   <div id="det"><div class="vazio">Carregando…</div></div>
 </main>
-<script src="ui.js"></script>
+<script src="ui.js?v=3"></script>
 <script>
 (function(){
 var idx=[];function $(i){return document.getElementById(i);}
