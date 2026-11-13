@@ -82,3 +82,8 @@ O dono pede ("quero usar o Niche Finder nesta máquina nova") e o Claude faz, gu
   não estava logado ("Not logged in"). Log em `estado/vigia.txt`.
 - Bug corrigido em 12/11: em português o YouTube escreve "3,6 mil" e o yt-dlp lia 36 → nenhum canal brasileiro
   chegava a 50 mil. Agora as views vêm sempre da página em inglês (finder.lista_videos).
+- 12/11 22:05: 1º ROTEIRO PRONTO pelo botão (issue #1, ~8 min): "Alle Geldwäsche-Skandale der Banken erklärt"
+  (`roteiros/bankskandale-de/`), estrutura iceberg, 6 níveis (N26 → ING/Commerzbank → Deutsche Bank → HSBC/TD → Danske →
+  BCCI), ~1.500 palavras (~9 min), 32 links de fonte, adaptação `roteiros/adaptacao-de-bankskandale.json`.
+- Estilo de produção escolhido pelos dados: animação 2D simples em SVG com personagem mascote (como o vídeo de
+  referência de 1,1 mi), feita por código (HyperFrames/Remotion). Próximo: amostra de 15–20 s para o dono aprovar.
