@@ -44,3 +44,4 @@ videos/*/arte-*/*.json
 prints-studio/
 estado/prints-processados.json
 estado/meus-canais.json
+videos/*/thumbs/
