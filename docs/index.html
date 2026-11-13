@@ -8,10 +8,59 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="estilo.css?v=3">
+<link rel="stylesheet" href="estilo.css?v=5">
+<style>
+/* Canais no formato da página inicial do YouTube: menu lateral, busca + chips, grade de vídeos */
+.yt{display:grid;grid-template-columns:236px minmax(0,1fr);gap:28px;max-width:1760px;margin:0 auto;padding:68px 24px 60px}
+.side{position:sticky;top:68px;align-self:start;max-height:calc(100vh - 80px);overflow-y:auto;scrollbar-width:thin;padding-bottom:20px}
+.sg{padding:10px 0;border-bottom:1px solid var(--ln)} .sg:last-child{border:0}
+.sg h5{margin:4px 12px 6px;font-size:15px;font-weight:500;color:var(--tx)}
+.si{display:flex;align-items:center;gap:16px;width:100%;border:0;background:none;padding:9px 12px;border-radius:10px;font-size:14px;color:var(--tx);cursor:pointer;text-align:left;transition:background .15s}
+.si:hover{background:var(--s2)} .si.on{background:var(--s2);font-weight:500}
+.si svg{width:22px;height:22px;flex:none} .si em{margin-left:auto;font-style:normal;font-size:12.5px;color:var(--mut)}
+.si .fl{width:22px;text-align:center;font-size:12px;font-weight:700;color:var(--mut)}
+.sv{display:flex;justify-content:space-between;align-items:baseline;padding:6px 12px;font-size:13.5px;color:var(--mut)} .sv b{color:var(--tx);font-size:15px;font-weight:500}
+.sv b.lm{color:var(--lm)} .stt{padding:8px 12px;font-size:12.5px;color:var(--mut);display:flex;align-items:center;gap:8px}
+.stt i{width:8px;height:8px;border-radius:50%;background:var(--dim)} .stt i.on{background:var(--up);box-shadow:0 0 8px var(--up);animation:pl 1.4s infinite}
+.feed{min-width:0}
+.topo{position:sticky;top:56px;z-index:30;background:var(--bg);padding:12px 0 6px;display:flex;gap:10px;align-items:center}
+.topo .srch{max-width:640px;height:42px;background:var(--card);border:1px solid var(--ln2);box-shadow:none}
+.topo .srch:focus-within{border-color:var(--az);box-shadow:0 0 0 1px var(--az) inset}
+.topo .drop{margin-left:auto;background:var(--s2)}
+.chips{display:flex;gap:10px;overflow-x:auto;padding:6px 0 16px;scrollbar-width:none;mask-image:linear-gradient(90deg,#000 94%,transparent)} .chips::-webkit-scrollbar{display:none}
+.chips button{flex:none;border:0;background:var(--s2);color:var(--tx);padding:7px 12px;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;transition:background .15s}
+.chips button:hover{background:var(--s3)} .chips button.on{background:var(--tx);color:var(--bg)}
+.chips button b{font-weight:400;opacity:.6;margin-left:6px} .chips .zero{opacity:.45}
+.info{margin:0 0 14px}
+.shelf{margin:4px 0 30px} .shelf h3{margin:0 0 4px;font-size:20px;font-weight:700} .shelf p{margin:0 0 12px;color:var(--mut);font-size:13.5px}
+.shelf .mo-c{max-height:88px;overflow:hidden} .shelf .mo{display:flex;flex-direction:column}
+.shelf .alta{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(270px,320px);overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}
+.ytg{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,310px),1fr));gap:40px 16px}
+.v{cursor:pointer;opacity:0;transform:translateY(12px);transition:opacity .5s var(--ease),transform .5s var(--ease);outline:0}
+.v.vis{opacity:1;transform:none}
+.v .th{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:var(--s2);transition:border-radius .2s}
+.v:hover .th{border-radius:4px} .v .th img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s var(--ease)} .v:hover .th img{transform:scale(1.03)}
+.v .du{position:absolute;right:8px;bottom:8px;background:rgba(0,0,0,.82);color:#fff;font-size:12px;font-weight:500;padding:2px 5px;border-radius:4px}
+.v .xb{position:absolute;left:8px;top:8px;background:var(--lm);color:#fff;font-size:12px;font-weight:700;padding:2px 7px;border-radius:4px}
+.v .vw{position:absolute;left:8px;bottom:8px;background:rgba(0,0,0,.82);color:#fff;font-size:12px;font-weight:500;padding:2px 6px;border-radius:4px}
+.v .lin{display:flex;gap:12px;margin-top:12px}
+.av{flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:500;font-size:15px}
+.v h3{margin:0;font-size:16px;font-weight:500;line-height:1.375;color:var(--tx);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.v .cn{font-size:14px;color:var(--mut);margin-top:4px} .v .mt{font-size:14px;color:var(--mut)}
+.v .tg2{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap} .v .tg2 span{font-size:12px;background:var(--s2);color:var(--tx2);padding:3px 8px;border-radius:6px;font-weight:500}
+.v .tg2 .g{color:var(--up)}
+.v:focus-visible .th{box-shadow:0 0 0 3px var(--az)}
+.como{margin-top:56px}
+@media (max-width:1000px){
+  .yt{grid-template-columns:1fr;padding-top:64px;gap:0}
+  .side{position:static;max-height:none;display:flex;gap:8px;overflow-x:auto;padding:8px 0;scrollbar-width:none}
+  .sg{border:0;padding:0;flex:none} .sg > div{display:flex;gap:6px} .sg h5,.sg.res{display:none}
+  .si{width:auto;white-space:nowrap;background:var(--s2);padding:7px 12px;gap:8px} .si.on{background:var(--tx);color:var(--bg)} .si.on em,.si.on .fl{color:inherit}
+  .topo{top:52px}
+}
+</style>
 </head>
 <body>
-<div class="fundo"><i></i><i></i><i></i></div>
 <svg width="0" height="0" style="position:absolute"><defs><linearGradient id="gsp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff0033" stop-opacity=".35"/><stop offset="1" stop-color="#ff0033" stop-opacity="0"/></linearGradient></defs></svg>
 
 <nav class="nav">
@@ -21,57 +70,56 @@
   <button class="ck" id="abrir-cmd"><span>Buscar</span><kbd>Ctrl K</kbd></button>
 </nav>
 
-<main class="wrap">
-  <section class="rv">
-    <span class="eyebrow" id="eyebrow">● ao vivo</span>
-    <h1 class="h1">Canais que <em>estouraram</em> nas últimas 3 semanas.</h1>
-    <p class="sub">Primeiro vídeo há no máximo <b>21 dias</b> e pelo menos <b>um vídeo longo com 50 mil views</b>. Garimpados em português, espanhol, inglês, alemão e francês — a lista se atualiza sozinha.</p>
-  </section>
-  <div class="erro" id="erro"></div>
+<div class="yt">
+  <aside class="side" id="side">
+    <div class="sg"><h5>Ver</h5><div id="fonte">
+      <button class="si" data-f="agora"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c1 4 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-5 1-9z"/></svg><span>Em alta agora</span></button>
+      <button class="si" data-f="subindo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg><span>Subindo</span></button>
+      <button class="si" data-f="arquivo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="5" rx="1"/><path d="M5 9v10h14V9M10 13h4"/></svg><span>Arquivo</span></button>
+    </div></div>
+    <div class="sg"><h5>Idioma</h5><div id="langs"></div></div>
+    <div class="sg res"><h5>Resumo</h5>
+      <div class="sv"><span>Outliers agora</span><b class="lm" id="k-out">0</b></div>
+      <div class="sv"><span>Maior outlier ×</span><b id="k-x">—</b></div>
+      <div class="sv"><span>Em observação</span><b id="k-obs">0</b></div>
+      <div class="sv"><span>Canais checados</span><b id="k-chk">0</b></div>
+      <div class="stt"><i id="dot2"></i><span id="eyebrow">…</span></div>
+    </div>
+    <div class="sg res"><h5>Outliers por idioma</h5><div class="rows" id="t-lang" style="padding:0 12px"></div></div>
+  </aside>
 
-  <section class="bento" id="bento">
-    <a class="tile foto w6 h2 glow rv" id="t-top"><img id="t-top-img" alt=""><div class="in"><span class="eyebrow">maior vídeo de canal novo</span><b id="t-top-tit">—</b><span class="x" id="t-top-sub"></span></div></a>
-    <div class="tile glow rv"><small>Outliers agora</small><span class="big lm" id="k-out">0</span><div class="x">canais com vídeo de 50 mil+</div></div>
-    <div class="tile glow rv"><small>Maior outlier ×</small><span class="big" id="k-x">—</span><div class="x">views/vídeo ÷ inscritos</div></div>
-    <div class="tile glow rv"><small>Em observação</small><span class="big" id="k-obs">0</span><div class="x">novos, ainda abaixo de 50 mil</div></div>
-    <div class="tile glow rv"><small>Canais checados</small><span class="big" id="k-chk">0</span><div class="x" id="k-fora"></div></div>
-    <div class="tile w6 glow rv"><small>Outliers por idioma</small><div class="rows" id="t-lang"></div></div>
-    <div class="tile w6 glow rv"><small>Nichos que mais estouram</small><div class="rows" id="t-nicho"></div></div>
-  </section>
-
-  <section class="alta rv" id="alta-box" style="display:none"><div class="st2"><h3>Moldes em alta</h3><span>a mesma estrutura de título em canais novos diferentes = formato que está pegando</span></div><div class="alta" id="alta"></div></section>
-
-  <section class="ctrl" id="ctrl">
-    <div class="ctrl-l">
+  <main class="feed">
+    <div class="topo">
       <label class="srch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <input id="q" type="search" placeholder="Filtrar por canal, vídeo ou tema" autocomplete="off"><kbd>/</kbd></label>
-      <div class="segm" id="fonte"><button data-f="agora">Agora</button><button data-f="subindo">Subindo</button><button data-f="arquivo">Arquivo</button></div>
-      <div class="segm" id="langs"></div>
+        <input id="q" type="search" placeholder="Pesquisar canal, vídeo ou tema" autocomplete="off"><kbd>/</kbd></label>
       <select class="drop" id="ordem" aria-label="Ordenar">
-        <option value="melhor">↓ Melhor vídeo</option><option value="ratio">↓ Outlier ×</option><option value="dia">↓ Views por dia</option>
-        <option value="cresc">↓ Crescimento 24h</option><option value="novo">↓ Mais recente</option><option value="insc">↓ Inscritos</option>
+        <option value="melhor">Melhor vídeo</option><option value="ratio">Outlier ×</option><option value="dia">Views por dia</option>
+        <option value="cresc">Crescimento 24h</option><option value="novo">Mais recente</option><option value="insc">Inscritos</option>
       </select>
     </div>
-    <div class="rail" id="rail"></div>
-  </section>
-  <div class="info"><span id="cont"></span><button class="lnk" id="limpar">Limpar filtros</button></div>
-  <section class="grid" id="grid"></section>
+    <div class="chips" id="rail"></div>
+    <div class="erro" id="erro"></div>
+    <section class="shelf" id="alta-box" style="display:none"><h3>Moldes em alta</h3><p>A mesma estrutura de título em canais novos diferentes = formato que está pegando.</p><div class="alta" id="alta"></div></section>
+    <div class="info"><span id="cont"></span><button class="lnk" id="limpar">Limpar filtros</button></div>
+    <section class="ytg" id="grid"></section>
 
-  <section class="como rv">
-    <div><b>Canal novo</b><p>O 1º vídeo que está no ar saiu há no máximo 3 semanas. A idade da conta não importa.</p></div>
-    <div><b>Outlier</b><p>Pelo menos UM vídeo longo (4 min+) com 50 mil views. Não é a soma do canal. Shorts não contam.</p></div>
-    <div><b>Outlier ×</b><p>Média de views por vídeo ÷ inscritos. Acima de 50× o canal alcança muito além da própria base.</p></div>
-    <div><b>Atalhos</b><p><kbd>Ctrl K</kbd> busca rápida · <kbd>/</kbd> filtrar · <kbd>Esc</kbd> fechar · <kbd>R</kbd> atualizar</p></div>
-  </section>
-  <footer id="rodape"></footer>
-</main>
+    <section class="como">
+      <div><b>Canal novo</b><p>O 1º vídeo que está no ar saiu há no máximo 3 semanas. A idade da conta não importa.</p></div>
+      <div><b>Outlier</b><p>Pelo menos UM vídeo longo (4 min+) com 50 mil views. Não é a soma do canal. Shorts não contam.</p></div>
+      <div><b>Subindo</b><p>Ainda abaixo de 50 mil, mas crescendo rápido (critério nosso).</p></div>
+      <div><b>Atalhos</b><p><kbd>Ctrl K</kbd> busca rápida · <kbd>/</kbd> pesquisar · <kbd>Esc</kbd> fechar · <kbd>R</kbd> atualizar</p></div>
+    </section>
+    <footer id="rodape"></footer>
+  </main>
+</div>
+
 
 <div class="veu" id="veu"></div>
 <section class="folha" id="folha" aria-hidden="true"></section>
 <div class="cmd" id="cmd" role="dialog" aria-label="Busca rápida"><input id="cmd-q" placeholder="Ir para um canal, nicho ou idioma…" autocomplete="off"><ul id="cmd-l"></ul>
   <div class="pe"><span><kbd>↑</kbd> <kbd>↓</kbd> navegar</span><span><kbd>Enter</kbd> abrir</span><span><kbd>Esc</kbd> fechar</span></div></div>
 
-<script src="ui.js?v=3"></script>
+<script src="ui.js?v=5"></script>
 <script>
 (function(){
 var LANGS={pt:"Português",es:"Espanhol",en:"Inglês",de:"Alemão",fr:"Francês"};
@@ -117,46 +165,44 @@ function carregar(){
 function tudo(){
   var r=D.rodada||{},rod=r.status==="buscando",cs=D.canais||[];
   $("dot").className=rod?"on":"";$("st").textContent=rod?"buscando "+(r.total?Math.round(100*r.feito/r.total)+"%":""):ha(D.atualizado);
-  $("eyebrow").textContent=rod?"● buscando agora · "+(r.total?r.feito+" de "+r.total:""):"● atualizado "+ha(D.atualizado);
-  var top=cs.slice().sort(function(a,b){return(b.melhor.views||0)-(a.melhor.views||0);})[0];
-  if(top){$("t-top-img").src="https://i.ytimg.com/vi/"+top.melhor.id+"/hqdefault.jpg";$("t-top-tit").textContent=top.melhor.titulo;
-    $("t-top-sub").textContent=fmt(top.melhor.views)+" views · "+top.nome+" · "+(LANGS[top.idioma]||top.idioma);$("t-top").onclick=function(){abrir(top.id);};}
+  $("eyebrow").textContent=rod?"buscando agora · "+(r.total?r.feito+" de "+r.total:""):"atualizado "+ha(D.atualizado);$("dot2").className=rod?"on":"";
   var rs=cs.map(ratio).filter(function(x){return x!=null;}).sort(function(a,b){return b-a;});
   UI.contar($("k-out"),cs.length,String);UI.contar($("k-obs"),D.em_observacao||0,ful);UI.contar($("k-chk"),D.checados||0,ful);
   $("k-x").textContent=rs.length?fr(rs[0]):"—";
-  var f=D.fora||{},tf=0;for(var k in f)tf+=f[k];$("k-fora").textContent=ful(tf)+" descartados (antigos ou grandes)";
+
   var nl={};cs.forEach(function(x){nl[x.idioma]=(nl[x.idioma]||0)+1;});var ml=Math.max.apply(0,[1].concat(Object.keys(nl).map(function(k){return nl[k];})));
   $("t-lang").innerHTML=Object.keys(LANGS).map(function(k){return"<div class='rw'><span>"+LANGS[k]+"</span><span class='tr'><i data-w='"+Math.round(100*(nl[k]||0)/ml)+"'></i></span><b>"+(nl[k]||0)+"</b></div>";}).join("");
-  var nn={};cs.forEach(function(x){nn[x.categoria]=(nn[x.categoria]||0)+1;});var kn=Object.keys(nn).sort(function(a,b){return nn[b]-nn[a];}).slice(0,5),mn=nn[kn[0]]||1;
-  $("t-nicho").innerHTML=kn.map(function(k){return"<div class='rw'><span style='white-space:nowrap;overflow:hidden;text-overflow:ellipsis'>"+esc(k)+"</span><span class='tr'><i data-w='"+Math.round(100*nn[k]/mn)+"'></i></span><b>"+nn[k]+"</b></div>";}).join("")||"<div class='x'>Nenhum ainda.</div>";
   setTimeout(function(){[].forEach.call(document.querySelectorAll(".tr i"),function(i){i.style.width=i.dataset.w+"%";});},120);
   $("rodape").textContent="Dados do YouTube · gravado em "+fdata(D.atualizado)+" às "+(D.atualizado||"").slice(11,16)+" · o que o YouTube não informou aparece como ?";
   langs(cs);rail(cs);lista();if(aberto)abrir(aberto,true);
 }
 function langs(cs){var n={};cs.forEach(function(x){n[x.idioma]=(n[x.idioma]||0)+1;});
-  $("langs").innerHTML="<button data-l=''"+(S.lang===""?" class='on'":"")+">Todos<em>"+cs.length+"</em></button>"+
-    Object.keys(LANGS).map(function(k){return"<button data-l='"+k+"'"+(S.lang===k?" class='on'":"")+" title='"+LANGS[k]+"'>"+k.toUpperCase()+"<em>"+(n[k]||0)+"</em></button>";}).join("");
-  [].forEach.call($("langs").querySelectorAll("button"),function(b){b.onclick=function(){S.lang=b.dataset.l;salvar();langs(D.canais);lista();};});UI.pilula($("langs"));}
+  $("langs").innerHTML="<button class='si"+(S.lang===""?" on":"")+"' data-l=''><span class='fl'>●</span><span>Todos</span><em>"+cs.length+"</em></button>"+
+    Object.keys(LANGS).map(function(k){return"<button class='si"+(S.lang===k?" on":"")+"' data-l='"+k+"'><span class='fl'>"+k.toUpperCase()+"</span><span>"+LANGS[k]+"</span><em>"+(n[k]||0)+"</em></button>";}).join("");
+  [].forEach.call($("langs").querySelectorAll("button"),function(b){b.onclick=function(){S.lang=b.dataset.l;salvar();langs(D.canais);lista();};});}
 function rail(cs){var cats=D.categorias||{},n={};cs.forEach(function(x){n[x.categoria]=(n[x.categoria]||0)+1;});
   var ks=Object.keys(cats).sort(function(a,b){return(n[b]||0)-(n[a]||0);});
-  $("rail").innerHTML="<button data-c=''"+(S.cat===""?" class='on'":"")+">Todos os nichos</button>"+ks.map(function(k){return"<button data-c='"+esc(k)+"' class='"+(S.cat===k?"on":"")+(n[k]?"":" zero")+"'>"+esc(k)+"<b>"+(n[k]||0)+"</b></button>";}).join("");
+  $("rail").innerHTML="<button data-c=''"+(S.cat===""?" class='on'":"")+">Tudo</button>"+ks.map(function(k){return"<button data-c='"+esc(k)+"' class='"+(S.cat===k?"on":"")+(n[k]?"":" zero")+"'>"+esc(k)+"<b>"+(n[k]||0)+"</b></button>";}).join("");
   [].forEach.call($("rail").querySelectorAll("button"),function(b){b.onclick=function(){S.cat=b.dataset.c;salvar();rail(D.canais);lista();};});}
 var ORD={melhor:function(x){return x.melhor.views||0;},ratio:function(x){return ratio(x)||0;},dia:function(x){return x.views_dia||0;},
   cresc:function(x){return cresc(x)||0;},novo:function(x){return-(x.dias_primeiro||0);},insc:function(x){return x.inscritos||0;}};
 function filtrados(){var cs=(D.canais||[]).filter(function(x){if(S.cat&&x.categoria!==S.cat)return false;if(S.lang&&x.idioma!==S.lang)return false;
     if(S.q){var t=(x.nome+" "+(x.videos||[]).map(function(v){return v.titulo;}).join(" ")+" "+(x.palavras||[]).map(function(p){return p.termo;}).join(" ")+" "+x.categoria).toLowerCase();if(t.indexOf(S.q.toLowerCase())<0)return false;}return true;});
   var f=ORD[S.ordem]||ORD.melhor;return cs.sort(function(a,b){return f(b)-f(a);});}
-function card(x){var m=x.melhor,r=ratio(x),g=cresc(x);
-  return"<article class='card glow' data-id='"+esc(x.id)+"' tabindex='0'><div class='im'><img loading='lazy' src='https://i.ytimg.com/vi/"+esc(m.id)+"/mqdefault.jpg' alt=''>"+
-    "<span class='bdg v'>▶ "+fmt(m.views)+"</span>"+(m.dur?"<span class='bdg d'>"+Math.round(m.dur/60)+" min</span>":"")+(r!=null&&r>=50?"<span class='bdg x'>"+fr(r)+"</span>":"")+"</div>"+
-    "<div class='bd'><h3><span>"+esc(x.nome)+"</span><span class='lg'>"+esc((x.idioma||"?").toUpperCase())+"</span></h3><div class='meta'>"+esc(x.categoria)+" · começou há "+(x.dias_primeiro==null?"?":x.dias_primeiro)+" dias</div>"+
-    "<div class='nums'><div><small>Inscritos</small><b>"+fmt(x.inscritos)+"</b></div><div><small>Vídeos</small><b>"+(x.n_longos==null?"?":x.n_longos)+"</b></div><div><small>Views/dia</small><b>"+fmt(x.views_dia)+"</b></div></div>"+
-    "<div class='ft'>"+spark(x.historico,84,24)+(g?"<span class='up'>+"+fmt(g)+" 24h</span>":"")+"<span class='go'>Ver canal <span>→</span></span></div></div></article>";}
+function cor(t){var h=0;for(var i=0;i<(t||"").length;i++)h=(h*31+t.charCodeAt(i))%360;return"hsl("+h+" 55% 42%)";}
+function card(x){var m=x.melhor,r=ratio(x),g=cresc(x),ini=((x.nome||"?").trim()[0]||"?").toUpperCase();
+  return"<article class='v' data-id='"+esc(x.id)+"' tabindex='0'><div class='th'><img loading='lazy' src='https://i.ytimg.com/vi/"+esc(m.id)+"/mqdefault.jpg' alt=''>"+
+    (r!=null&&r>=50?"<span class='xb'>"+fr(r)+" outlier</span>":"")+"<span class='vw'>▶ "+fmt(m.views)+"</span>"+(m.dur?"<span class='du'>"+Math.floor(m.dur/60)+":"+String(m.dur%60).padStart(2,"0")+"</span>":"")+"</div>"+
+    "<div class='lin'><span class='av' style='background:"+cor(x.nome)+"'>"+esc(ini)+"</span><div style='min-width:0'>"+
+    "<h3 title='"+esc(m.titulo)+"'>"+esc(m.titulo)+"</h3><div class='cn'>"+esc(x.nome)+"</div>"+
+    "<div class='mt'>"+fmt(x.inscritos)+" inscritos · começou há "+(x.dias_primeiro==null?"?":x.dias_primeiro)+" dias</div>"+
+    "<div class='tg2'><span>"+esc((x.idioma||"?").toUpperCase())+"</span><span>"+esc(x.categoria)+"</span><span>"+fmt(x.views_dia)+"/dia</span>"+(g?"<span class='g'>+"+fmt(g)+" em 24h</span>":"")+"</div>"+
+    "</div></div></article>";}
 function lista(){var cs=filtrados(),fs=[S.cat,S.lang&&LANGS[S.lang],S.q&&("“"+S.q+"”")].filter(Boolean);
   $("cont").innerHTML="<b>"+cs.length+"</b> de "+(D.canais||[]).length+(S.fonte==="arquivo"?" outliers no arquivo (todos que já apareceram)":S.fonte==="subindo"?" canais subindo (ainda abaixo de "+((D.criterios||{}).bom_video||50000).toLocaleString("pt-BR")+" views, mas crescendo rápido)":" outliers das últimas 3 semanas")+(fs.length?" · "+esc(fs.join(" · ")):"");$("limpar").style.display=fs.length?"":"none";$("ordem").value=S.ordem;
   $("grid").innerHTML=cs.length?cs.map(card).join(""):"<div class='vazio'>"+((D.canais||[]).length?"Nenhum canal com esses filtros.":"Nenhum outlier ainda. A busca roda a cada 3 horas.")+"</div>";
-  UI.revelar($("grid").querySelectorAll(".card"));
-  [].forEach.call($("grid").querySelectorAll(".card"),function(el){el.onclick=function(){abrir(el.dataset.id);};});}
+  UI.revelar($("grid").querySelectorAll(".v"));
+  [].forEach.call($("grid").querySelectorAll(".v"),function(el){el.onclick=function(){abrir(el.dataset.id);};});}
 function grafico(h){h=h||[];if(h.length<2)return"<div class='mut' style='padding:30px 0;text-align:center'>O gráfico aparece a partir da 2ª medição.</div>";
   var w=600,hh=120,v=h.map(function(x){return x[1];}),mn=Math.min.apply(0,v),mx=Math.max.apply(0,v),r=mx-mn||1;
   var p=v.map(function(y,i){return[(i*(w/(v.length-1))).toFixed(1),(hh-6-(y-mn)/r*(hh-14)).toFixed(1)];}),l="M"+p.map(function(q){return q.join(",");}).join(" L");
@@ -212,8 +258,8 @@ document.addEventListener("keydown",function(e){var tag=(e.target.tagName||"").t
   if(tag==="input"||tag==="select"||tag==="textarea")return;
   if(e.key==="/"){e.preventDefault();$("q").focus();}else if(e.key==="r"||e.key==="R")carregar();
   else if(e.key==="Enter"&&e.target.dataset&&e.target.dataset.id)abrir(e.target.dataset.id);});
-[].forEach.call($("fonte").children,function(b){b.className=b.dataset.f===S.fonte?"on":"";b.onclick=function(){S.fonte=b.dataset.f;salvar();[].forEach.call($("fonte").children,function(x){x.className=x.dataset.f===S.fonte?"on":"";});UI.pilula($("fonte"));carregar();};});
-UI.pilula($("fonte"));UI.pilula(document.querySelector(".tabs"));UI.revelar(document.querySelectorAll(".rv"));
+[].forEach.call($("fonte").children,function(b){b.classList.toggle("on",b.dataset.f===S.fonte);b.onclick=function(){S.fonte=b.dataset.f;salvar();[].forEach.call($("fonte").children,function(x){x.classList.toggle("on",x.dataset.f===S.fonte);});carregar();window.scrollTo({top:0,behavior:"smooth"});};});
+UI.pilula(document.querySelector(".tabs"));
 carregar();carregarCl();setInterval(carregar,30000);setInterval(carregarCl,300000);
 })();
 </script>
