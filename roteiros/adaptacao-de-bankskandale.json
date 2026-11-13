@@ -1,0 +1,29 @@
+{
+ "idioma": "de",
+ "tema": "Geldwäsche-Skandale der Banken (escândalos de lavagem nos bancos)",
+ "data": "2026-11-12",
+ "regra": "Adaptar, não traduzir. Tudo abaixo saiu do YouTube alemão (busca com views e autocompletar, coletados em 12/11/2026) e complementa roteiros/adaptacao-de-lavagem.json (tema geral).",
+ "palavras_que_o_publico_digita": {
+  "fonte": "autocompletar do YouTube alemão (cacador.autocompletar, hl=de, gl=DE), 12/11/2026",
+  "termos": ["deutsche bank geldwäsche", "deutsche bank zdf", "bank betrug", "bankenskandal", "bankenskandale", "hsbc bank doku", "n26 betrug", "danske bank scandal"],
+  "leitura": "O público alemão liga 'Geldwäsche + Bank' quase só à Deutsche Bank (é a 1ª sugestão para 'bank geldwäsche' e 'geldwäsche bank'). 'Commerzbank geldwäsche' não gera sugestão própria."
+ },
+ "videos_locais_que_funcionam": [
+  {"titulo": "Das Versagen der Deutschen Bank", "canal": "Simplicissimus", "views": 2316610, "dur_seg": 2093, "id": "jCeqnoVXdC4", "leitura": "Deutsche Bank é o maior ímã do tema em alemão"},
+  {"titulo": "So wird illegales Geld in Frankfurt sauber gemacht!", "canal": "Hessischer Rundfunk / Finanzfluss", "views": 438758, "dur_seg": 685, "id": "FQcEhXaAeGk", "leitura": "Frankfurt como praça financeira funciona como cenário local"},
+  {"titulo": "Wie HSBC 881 Millionen Dollar für Kartelle wusch", "canal": "Money Explained", "views": 297536, "dur_seg": 884, "id": "ewqkcHGmg0E", "leitura": "caso estrangeiro (HSBC) funciona em alemão quando tem número e cartel"},
+  {"titulo": "Verdacht auf Geldwäsche: Razzia bei der Deutschen Bank", "canal": "tagesschau", "views": 202317, "dur_seg": 274, "id": "SDHF3EuUdnQ", "leitura": "a Razzia de 2018 é memória coletiva → serve de gancho"},
+  {"titulo": "ARTE: Neobanken: Abzocke, illegaler Handel und betrogene Kunden", "canal": "ARTEde", "views": 147412, "dur_seg": 1225, "id": "gx4eJS5aasw", "leitura": "neobancos (N26) interessam → camada de entrada do iceberg"},
+  {"titulo": "FinCEN money laundering leaks: Deutsche Bank is under fire", "canal": "DW News", "views": 81059, "dur_seg": 412, "id": "UVXQsq1jflU", "leitura": "FinCEN Files ligados à Deutsche Bank"},
+  {"titulo": "Das Versagen der Deutschen Bank im Fall Epstein", "canal": "Dominik", "views": 25270, "dur_seg": 1815, "id": "u2OAAF_mv9I", "leitura": "Epstein + Deutsche Bank tem procura própria"}
+ ],
+ "concorrencia_no_molde": "Nenhum vídeo alemão 'alle Geldwäsche-Skandale der Banken erklärt' (docs/pautas/every-money-laundering.json: concorrentes 0, demanda máx. 202.317, veredito forte). Danske Bank em alemão quase não tem vídeo (maior: 4.889 views, Bloomberg) → espaço.",
+ "o_que_muda_no_roteiro_alemao": [
+  "Gancho: a Razzia na Deutsche Bank em Frankfurt (29/11/2018), não o HSBC (já usado no vídeo-base americano e no catálogo).",
+  "Deutsche Bank recebe a camada maior (é o que o alemão digita e o vídeo de 2,3 mi).",
+  "Começar perto do espectador: o banco do celular (N26/BaFin) antes dos casos estrangeiros.",
+  "Vocabulário: Razzia, Staatsanwaltschaft, BaFin, Verdachtsmeldung, Bußgeld, Bargeld, Briefkastenfirma, Finanzplatz Frankfurt.",
+  "Números no formato alemão (1,9 Milliarden Dollar) e valores na moeda da fonte (sem converter para não inventar câmbio).",
+  "Distinguir Geldwäsche de Betrug: Wirecard e Cum-Ex são fraude/fiscal, não entram (o público alemão confunde; ficam fora para não errar)."
+ ]
+}

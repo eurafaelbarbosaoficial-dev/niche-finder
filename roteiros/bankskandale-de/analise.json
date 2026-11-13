@@ -1,0 +1,26 @@
+{
+ "resumo": "Iceberg: começa nas técnicas mais simples e conhecidas (topo) e desce camada por camada até as mais sofisticadas e obscuras (fundo). Cada camada é mais complexa. Narração investigativa: 'fomos atrás de livros, processos do FBI e grupos de Telegram'. (Mapa copiado de roteiros/estrutura-iceberg; neste roteiro as camadas são bancos, do mais próximo do espectador ao banco que era o próprio crime.)",
+ "formato": "Iceberg (níveis do raso ao profundo), narração em 2ª pessoa, investigativo",
+ "duracao_seg": 2657,
+ "palavras_por_minuto": 178,
+ "dark": "Sim. Funciona só com narração e imagens/animação.",
+ "gancho": {
+  "tipo": "Notícia recorde + promessa do percurso",
+  "como": "Manchete real (recorde europeu: 25 milhões em espécie apreendidos na Espanha) → todo criminoso tem o mesmo problema → 'a gente acha que sabe como funciona, mas será?' → prova de pesquisa (livros, processos do FBI, Telegram) → mapa: 'começa com truques artesanais… e termina em redes de milhares de empresas criadas por gente de Harvard' → 'apresento o iceberg da lavagem'.",
+  "duracao_seg": 62,
+  "por_que_funciona": "Contradiz o que o viewer acha que sabe (curiosidade) + promessa de descer até o fundo (completude)."
+ },
+ "blocos": [
+  {"ini": 0, "fim": 62, "nome": "Gancho: notícia + mapa", "funcao": "Fato recente e grande; prometer do raso ao profundo", "palavras_aprox": 180},
+  {"ini": 62, "fim": 600, "nome": "Camada 1: o golpista pequeno", "funcao": "Problema concreto em 2ª pessoa ('você recebeu transferências de golpe, e agora?') → truques artesanais (contas laranja, identidade roubada, apostas, kebab)", "palavras_aprox": 1600},
+  {"ini": 600, "fim": 1500, "nome": "Camada 2: fachadas e mercados paralelos", "funcao": "Duas contabilidades, cassinos, vagas de emprego falsas (mulas), números redondos que denunciam", "palavras_aprox": 2700},
+  {"ini": 1500, "fim": 2300, "nome": "Camada 3: estruturas profissionais", "funcao": "Cartel de Cali, offshores, dono oculto, empréstimos garantidos, cripto e games (Roblox)", "palavras_aprox": 2400},
+  {"ini": 2300, "fim": 2600, "nome": "Fundo: o maior esquema descoberto", "funcao": "O caso mais sofisticado (milhares de empresas fictícias em cadeia)", "palavras_aprox": 850},
+  {"ini": 2600, "fim": 2657, "nome": "Fecho: lavar para chegar ao poder", "funcao": "Escobar candidato e Joe Kennedy: a lavagem como porta para o poder", "palavras_aprox": 170}
+ ],
+ "transicoes": "Pergunta-problema no começo de cada camada ('e se o dinheiro for muito mais?'), sempre em 2ª pessoa.",
+ "gatilhos": ["proibido", "curiosidade crescente", "identidade (o viewer 'joga' de criminoso)", "números recordes", "história de poder no fim"],
+ "detalhes_de_estilo": ["2ª pessoa o tempo todo", "prova de pesquisa citada", "humor", "casos reais com nomes"],
+ "cta": "Patrocínio integrado no começo; final sem CTA.",
+ "regra": "Ordenar do mais simples e conhecido ao mais sofisticado e obscuro; cada camada começa com um problema que a anterior não resolve."
+}

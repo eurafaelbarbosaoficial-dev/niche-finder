@@ -1,0 +1,190 @@
+{
+ "slug": "bankskandale-de",
+ "medidas": {
+  "id": "iL5LC0a7KJY",
+  "titulo": "L'iceberg de l'argent sale",
+  "canal": "Micode",
+  "views": 4505350,
+  "duracao": 2657,
+  "idioma": "fr",
+  "palavras": 7883,
+  "palavras_por_minuto": 178,
+  "capitulos": []
+ },
+ "analise": {
+  "resumo": "Iceberg: começa nas técnicas mais simples e conhecidas (topo) e desce camada por camada até as mais sofisticadas e obscuras (fundo). Cada camada é mais complexa. Narração investigativa: 'fomos atrás de livros, processos do FBI e grupos de Telegram'. (Mapa copiado de roteiros/estrutura-iceberg; neste roteiro as camadas são bancos, do mais próximo do espectador ao banco que era o próprio crime.)",
+  "formato": "Iceberg (níveis do raso ao profundo), narração em 2ª pessoa, investigativo",
+  "duracao_seg": 2657,
+  "palavras_por_minuto": 178,
+  "dark": "Sim. Funciona só com narração e imagens/animação.",
+  "gancho": {
+   "tipo": "Notícia recorde + promessa do percurso",
+   "como": "Manchete real (recorde europeu: 25 milhões em espécie apreendidos na Espanha) → todo criminoso tem o mesmo problema → 'a gente acha que sabe como funciona, mas será?' → prova de pesquisa (livros, processos do FBI, Telegram) → mapa: 'começa com truques artesanais… e termina em redes de milhares de empresas criadas por gente de Harvard' → 'apresento o iceberg da lavagem'.",
+   "duracao_seg": 62,
+   "por_que_funciona": "Contradiz o que o viewer acha que sabe (curiosidade) + promessa de descer até o fundo (completude)."
+  },
+  "blocos": [
+   {
+    "ini": 0,
+    "fim": 62,
+    "nome": "Gancho: notícia + mapa",
+    "funcao": "Fato recente e grande; prometer do raso ao profundo",
+    "palavras_aprox": 180
+   },
+   {
+    "ini": 62,
+    "fim": 600,
+    "nome": "Camada 1: o golpista pequeno",
+    "funcao": "Problema concreto em 2ª pessoa ('você recebeu transferências de golpe, e agora?') → truques artesanais (contas laranja, identidade roubada, apostas, kebab)",
+    "palavras_aprox": 1600
+   },
+   {
+    "ini": 600,
+    "fim": 1500,
+    "nome": "Camada 2: fachadas e mercados paralelos",
+    "funcao": "Duas contabilidades, cassinos, vagas de emprego falsas (mulas), números redondos que denunciam",
+    "palavras_aprox": 2700
+   },
+   {
+    "ini": 1500,
+    "fim": 2300,
+    "nome": "Camada 3: estruturas profissionais",
+    "funcao": "Cartel de Cali, offshores, dono oculto, empréstimos garantidos, cripto e games (Roblox)",
+    "palavras_aprox": 2400
+   },
+   {
+    "ini": 2300,
+    "fim": 2600,
+    "nome": "Fundo: o maior esquema descoberto",
+    "funcao": "O caso mais sofisticado (milhares de empresas fictícias em cadeia)",
+    "palavras_aprox": 850
+   },
+   {
+    "ini": 2600,
+    "fim": 2657,
+    "nome": "Fecho: lavar para chegar ao poder",
+    "funcao": "Escobar candidato e Joe Kennedy: a lavagem como porta para o poder",
+    "palavras_aprox": 170
+   }
+  ],
+  "transicoes": "Pergunta-problema no começo de cada camada ('e se o dinheiro for muito mais?'), sempre em 2ª pessoa.",
+  "gatilhos": [
+   "proibido",
+   "curiosidade crescente",
+   "identidade (o viewer 'joga' de criminoso)",
+   "números recordes",
+   "história de poder no fim"
+  ],
+  "detalhes_de_estilo": [
+   "2ª pessoa o tempo todo",
+   "prova de pesquisa citada",
+   "humor",
+   "casos reais com nomes"
+  ],
+  "cta": "Patrocínio integrado no começo; final sem CTA.",
+  "regra": "Ordenar do mais simples e conhecido ao mais sofisticado e obscuro; cada camada começa com um problema que a anterior não resolve."
+ },
+ "roteiro": {
+  "titulo": "Alle Geldwäsche-Skandale der Banken erklärt",
+  "idioma": "de",
+  "nota": "Estrutura Iceberg (alterna com o catálogo do vídeo-base) · ~1.500 palavras ≈ 9 min a 165 p/min (referência catálogo: 11 min) · adaptação: roteiros/adaptacao-de-bankskandale.json · valores na moeda da fonte, sem câmbio inventado",
+  "estrutura": "estrutura-iceberg",
+  "pauta": {
+   "tema": "Geldwäsche-Skandale der Banken",
+   "fonte": "B",
+   "evidencia": "autocompletar DE 'deutsche bank geldwäsche'; tagesschau 'Verdacht auf Geldwäsche: Razzia bei der Deutschen Bank' 202.317 views",
+   "projeto": "every-money-laundering",
+   "onde": "mesmo canal"
+  },
+  "blocos": [
+   {
+    "bloco": "Gancho: Razzia in Frankfurt + Karte des Eisbergs",
+    "segue": "Gancho: notícia + mapa (0:00–1:00)",
+    "texto": "Donnerstag, 29. November 2018. Frankfurt am Main. 170 Beamte von Staatsanwaltschaft, BKA, Steuerfahndung und Bundespolizei durchsuchen sechs Gebäude. Eines davon: die Zentrale der Deutschen Bank. Der Verdacht: Mitarbeiter sollen Kunden geholfen haben, Briefkastenfirmen in Steueroasen zu gründen – und Geld aus Straftaten durchzuschleusen. Allein eine Konzerngesellschaft auf den Britischen Jungferninseln soll 2016 über 900 Kunden betreut haben. Geschäftsvolumen: 311 Millionen Euro.\n\nDie meisten denken bei Geldwäsche an Dönerläden, Shisha-Bars und Koffer voller Bargeld. Aber am Ende landet jeder schmutzige Euro an demselben Ort: auf einem Bankkonto. Wir haben Gerichtsakten, Behördenberichte und Leaks durchgesehen. Und es fängt harmlos an – mit der Bank auf deinem Handy. Dann geht es zu Banken, die einfach wegschauen. Zu einer Bank, die Kartellgeld in Kisten annahm. Zu einer einzigen Filiale, durch die 200 Milliarden Euro flossen. Und ganz unten: zu einer Bank, die selbst das Verbrechen war. Das ist der Eisberg der Geldwäsche-Skandale.",
+    "fontes": [
+     "https://www.lto.de/recht/kanzleien-unternehmen/k/deutsche-bank-durchsuchung-verdacht-geldwaesche-staatsanwaltschaft-frankfurt-panama-papers",
+     "https://www.db.com/files/news/documents/29.11.2018_Presseinfo_Staatswaltschaft.pdf"
+    ]
+   },
+   {
+    "bloco": "Ebene 1: Die Bank auf deinem Handy (N26)",
+    "segue": "Camada 1: o problema concreto em 2ª pessoa, o caso mais próximo do espectador",
+    "texto": "Stell dir vor, du hast Geld aus einem Betrug. Ein paar tausend Euro. Bar einzahlen fällt auf. Also brauchst du ein Konto – am besten eins, das man schnell per App eröffnet.\n\nGenau hier sitzt die wichtigste Regel des ganzen Videos: Banken sind gesetzlich verpflichtet, verdächtige Zahlungen zu melden. Das nennt man Verdachtsmeldung. Die Bank muss nicht beweisen, dass etwas kriminell ist. Sie muss nur melden. Und zwar rechtzeitig.\n\nDie Berliner Smartphone-Bank N26 hat genau das nicht geschafft. 2021 verhängte die Finanzaufsicht BaFin ein Bußgeld von 4,25 Millionen Euro wegen verspäteter Verdachtsmeldungen. Dazu kam ein Sonderbeauftragter im Haus – und eine Obergrenze: höchstens 50.000 Neukunden pro Monat. Für eine Bank, die vom Wachstum lebt, ist das wie eine Vollbremsung.\n\nUnd 2024? Das nächste Bußgeld: 9,2 Millionen Euro. Der Vorwurf: Auch 2022 seien Verdachtsfälle systematisch zu spät gemeldet worden.\n\nDas ist die Spitze des Eisbergs. Niemand behauptet, dass N26 selbst Geld gewaschen hat. Der Fehler ist kleiner – und trotzdem gefährlich: Wenn die Meldung zu spät kommt, ist das Geld längst weiter.",
+    "fontes": [
+     "https://www.it-finanzmagazin.de/bankenaufsicht-bafin-verhaengt-92-millionen-euro-geldbusse-gegen-n26-210524/",
+     "https://www.fintechfutures.com/regulatory-actions/n26-fined-9-2m-by-bafin-over-late-submission-of-suspected-money-laundering-reports-in-2022",
+     "https://heise.de/-9728416"
+    ]
+   },
+   {
+    "bloco": "Ebene 2: Die Banken, die wegschauen (ING, Commerzbank)",
+    "segue": "Camada 2: problema que a camada anterior não resolve (o dinheiro é maior, precisa de um banco grande)",
+    "texto": "Aber was, wenn es nicht um ein paar tausend Euro geht, sondern um Hunderte Millionen? Dann reicht keine App. Dann brauchst du eine große, seriöse Bank mit Zugang zur ganzen Welt.\n\nNiederlande, September 2018. Die ING, eine der größten Banken Europas, zahlt 775 Millionen Euro, um ein Strafverfahren zu beenden: 675 Millionen Strafe und 100 Millionen Rückzahlung von Gewinnen. Die Staatsanwaltschaft sagt, die Bank habe jahrelang und strukturell gegen die Geldwäsche-Regeln verstoßen. Sie hat nicht geprüft, wem die Konten ihrer Kunden wirklich gehören. Ein Beispiel: Von einem ING-Konto flossen rund 55 Millionen Dollar des Telekomkonzerns VimpelCom an eine Firma in Gibraltar. Diese Firma wird Gulnara Karimowa zugerechnet, der ältesten Tochter des damaligen Präsidenten von Usbekistan. VimpelCom selbst hatte schon 2016 wegen Bestechung in Usbekistan 795 Millionen Dollar gezahlt. Schmiergeld – ganz normal per Überweisung.\n\nUnd Deutschland? März 2015. Die Commerzbank zahlt in den USA 1,45 Milliarden Dollar. Ein Teil davon wegen Iran-Sanktionen. Der andere Teil wegen Geldwäsche-Regeln: Über die New Yorker Filiale liefen laut US-Justiz mehr als 1,6 Milliarden Dollar an verdächtigen Zahlungen, die mit dem Bilanzbetrug beim japanischen Konzern Olympus zusammenhingen.\n\nDas Muster auf dieser Ebene: Die Bank wäscht nicht selbst. Sie macht einfach die Tür auf. Und schaut nicht hin, wer hindurchgeht.",
+    "fontes": [
+     "https://www.prosecutionservice.nl/latest/news/2018/09/04/ing-pays-775-million-due-to-serious-shortcomings-in-money-laundering-prevention",
+     "https://nltimes.nl/2018/09/04/ing-pays-eu775-million-settlement-facilitating-money-laundering",
+     "https://www.occrp.org/en/investigations/4958-vimpelcom-fined-us-795-million-over-uzbekistan-telecoms-bribes",
+     "https://www.themoscowtimes.com/2015/08/13/us-asks-europe-to-seize-1-billion-in-russian-telecoms-bribery-case-a48962",
+     "https://fortune.com/2015/03/12/commerzbank-to-pay-1-45-billion-to-resolve-probes-on-iran-olympus/",
+     "https://www.steptoe.com/en/news-publications/commerzbank-1-45b-settlement-ofac-continues-scrutinizing-foreign-banks.html"
+    ]
+   },
+   {
+    "bloco": "Ebene 3: Die Deutsche Bank (Spiegelgeschäfte, Epstein, FinCEN Files)",
+    "segue": "Camada 3: estruturas profissionais (o banco como engrenagem) — maior camada, porque é o que o público alemão mais busca",
+    "texto": "Jetzt wird es professionell. Denn was, wenn du nicht nur Geld verstecken willst, sondern Milliarden aus einem ganzen Land herausbringen musst? Dann brauchst du keine Tür. Dann brauchst du eine Maschine.\n\nMoskau, London, New York. Zwischen 2011 und 2015 kauft ein Kunde bei der Deutschen Bank in Moskau russische Aktien – in Rubel. Fast gleichzeitig verkauft eine verbundene Firma dieselben Aktien bei der Deutschen Bank in London – gegen Dollar. Unterm Strich: kein Gewinn, kein Verlust, kein wirtschaftlicher Sinn. Nur eines passiert: Rubel werden zu Dollar und landen im Ausland. Man nennt das Spiegelgeschäfte. Rund 10 Milliarden Dollar sollen so aus Russland geflossen sein. Im Januar 2017 zahlte die Deutsche Bank dafür rund 630 Millionen Dollar: 425 Millionen an die New Yorker Finanzaufsicht und 163 Millionen Pfund an die britische FCA. Die Briten schrieben, die Kontrollen seien schwach gewesen und die Compliance-Leute überlastet.\n\nJuli 2020. Wieder New York, wieder die Deutsche Bank. 150 Millionen Dollar Strafe. Diesmal geht es um einen Kunden, den die Bank 2013 aufgenommen hatte: Jeffrey Epstein. Laut Aufsicht hat die Bank Hunderte Transaktionen über Millionen Dollar nicht genauer geprüft – darunter Bargeldabhebungen von insgesamt mehr als 800.000 Dollar in rund vier Jahren. Im selben Bescheid: die Geschäftsbeziehungen zu zwei anderen Banken. Eine davon heißt Danske Bank Estland. Merk dir den Namen.\n\nUnd zwei Monate später, September 2020, die FinCEN Files. Ein Leak von über 2.000 geheimen Verdachtsmeldungen amerikanischer Banken. Rund 2 Billionen Dollar an verdächtigen Zahlungen. Der größte Anteil: die Deutsche Bank, mit rund 1,3 Billionen Dollar. Wichtig: Eine Verdachtsmeldung ist kein Beweis für ein Verbrechen. Sie zeigt nur, dass die Bank selbst etwas komisch fand – und das Geld trotzdem weitergeleitet hat.\n\nUnd damit sind wir wieder bei der Razzia in Frankfurt vom Anfang. Bei der Deutschen Bank ist es kein einzelner Skandal. Es ist eine Reihe.",
+    "fontes": [
+     "https://www.euronews.com/2017/01/31/deutsche-bank-fined-over-russian-money-laundering",
+     "https://www.thelocal.de/20170131/deutsche-bank-handed-huge-fine-over-russian-money-laundering",
+     "https://www.dfs.ny.gov/reports_and_publications/press_releases/pr202007071",
+     "https://www.axios.com/2020/07/07/deutsche-bank-new-york-jeffrey-epstein",
+     "https://www.icij.org/investigations/fincen-files/mining-sars-data/",
+     "https://finews.asia/finance/32765-fincen-files-leader-deutsche-bank"
+    ]
+   },
+   {
+    "bloco": "Ebene 4: Die Bank der Kartelle (HSBC, TD Bank)",
+    "segue": "Camada 3 (continuação): o caso mais conhecido internacionalmente, com cena visual",
+    "texto": "Bisher ging es um Kontrollen, die versagt haben. Aber was, wenn das Geld direkt aus dem Drogenhandel kommt – in bar, in Mengen, die man nicht übersehen kann?\n\nMexiko, Ende der 2000er. Drogenhändler lassen sich Kisten bauen. Nicht irgendwelche Kisten: Sie haben exakt die Maße der Schalterfenster der Bank HSBC in Mexiko. Damit das Bargeld genau durch den Schalter passt. Manchmal werden an einem einzigen Tag Hunderttausende Dollar in bar auf ein einziges Konto eingezahlt.\n\nLaut US-Justiz haben das Sinaloa-Kartell aus Mexiko, das Norte-del-Valle-Kartell aus Kolumbien und andere Händler zwischen 2006 und 2010 mindestens 881 Millionen Dollar über HSBC Bank USA gewaschen. Im Dezember 2012 zahlt HSBC 1,9 Milliarden Dollar. Doch die Bank wird nicht angeklagt. Und keine einzige Person auch nicht. Stattdessen eine Vereinbarung: Wenn ihr euch fünf Jahre benehmt, lassen wir die Anklage fallen.\n\nZwölf Jahre später ändert sich etwas. Oktober 2024: Die kanadische TD Bank bekennt sich in den USA schuldig. Sie ist laut US-Justiz die erste Bank, die sich dort der Verschwörung zur Geldwäsche schuldig bekennt. Über ihre Konten konnten drei Geldwäsche-Netzwerke mehr als 670 Millionen Dollar bewegen. Strafe: rund 3 Milliarden Dollar – dazu eine Obergrenze für ihr US-Geschäft. Wieder dieses Wort: Obergrenze. Wie bei N26. Nur tausendmal größer.",
+    "fontes": [
+     "https://www.justice.gov/archive/usao/nye/pr/2012/2012dec11.html",
+     "https://money.cnn.com/2012/12/12/news/companies/hsbc-money-laundering",
+     "https://www.nbcnews.com/business/business-news/td-bank-pleads-guilty-money-laundering-case-will-pay-3-billion-penalti-rcna174912",
+     "https://news.bloomberglaw.com/banking-law/td-will-plead-guilty-to-money-laundering-charges-in-nj-court"
+    ]
+   },
+   {
+    "bloco": "Ebene 5: Eine Filiale, 200 Milliarden Euro (Danske Bank Estland)",
+    "segue": "Fundo (1ª parte): o maior esquema descoberto",
+    "texto": "881 Millionen klingt viel. Aber was, wenn das Geld nicht in Kisten kommt, sondern einfach als Überweisung – Tag für Tag, über Jahre, aus Russland und anderen Ländern der ehemaligen Sowjetunion?\n\nErinnerst du dich an den Namen aus dem Epstein-Bescheid? Danske Bank, Dänemarks größte Bank. Sie hat eine kleine Filiale in Tallinn, Estland. Zwischen 2007 und 2015 betreut diese Filiale Kunden, die gar nicht in Estland wohnen: die sogenannten Nicht-Residenten. Rund 10.000 Kunden in diesem Portfolio. Dazu prüft die Bank später noch etwa 5.000 weitere. Durch diese eine Filiale fließen rund 200 Milliarden Euro. Der Untersuchungsbericht der Bank von 2018 kommt zum Ergebnis: Ein großer Teil davon ist verdächtig.\n\nWie kam das raus? Durch einen einzigen Mitarbeiter. Howard Wilkinson, Brite, Händler in der Filiale. Ende 2013 schickt er eine Warnung an Vorstand, Compliance und interne Revision. Es dauert fast fünf Jahre, bis die ganze Geschichte öffentlich ist. Im September 2018 tritt Danske-Chef Thomas Borgen zurück.\n\nDezember 2022: Danske Bank bekennt sich in den USA des Bankbetrugs schuldig und gibt rund 2 Milliarden Dollar ab. Und die Manager? Die Anklagen gegen Borgen und zwei weitere Ex-Manager in Dänemark wurden 2021 fallen gelassen.",
+    "fontes": [
+     "https://danskebank.com/news-and-insights/news-archive/press-releases/2018/pr19092018",
+     "https://news.err.ee/862450",
+     "https://www.gulf-times.com/story/613532/Danske-Bank-whistleblower-says-European-bank-handl",
+     "https://www.americanbanker.com/articles/danske-bank-pleads-guilty-to-u-s-fraud-will-forfeit-2-billion",
+     "https://en.wikipedia.org/wiki/Danske_Bank_money_laundering_scandal"
+    ]
+   },
+   {
+    "bloco": "Der Grund: Die Bank, die selbst das Verbrechen war (BCCI)",
+    "segue": "Fundo (2ª parte): o caso mais obscuro — o banco não falha, o banco É o esquema",
+    "texto": "Auf allen Ebenen bisher gab es eine Bank und Kriminelle, die sie benutzt haben. Ganz unten im Eisberg fällt diese Trennung weg.\n\n5. Juli 1991. Aufsichtsbehörden schließen weltweit eine Bank: die BCCI, Bank of Credit and Commerce International. Gegründet von dem pakistanischen Banker Agha Hasan Abedi, aktiv in 73 Ländern. Ein späterer Bericht des US-Senats listet auf, was diese Bank getan hat: Geldwäsche in Europa, Afrika, Asien und Amerika. Unterstützung von Terrorismus. Waffenhandel. Der Verkauf von Nukleartechnologie. Heimliche Käufe von Banken und Immobilien. Die BCCI führte sogar ein Konto für Panamas Diktator Manuel Noriega.\n\nDer Senat beschreibt die Bank als ein ‚kunstvolles Spinnennetz‘ aus Firmen, verbunden über eine ‚undurchdringliche Reihe von Holdinggesellschaften‘. Sein Fazit: Eine Bank, die praktisch keiner Regierung unterstand, war ‚ein ideales Werkzeug‘ für die Verbrechen anderer.\n\nDas ist der Boden des Eisbergs: keine Bank, die wegschaut. Sondern eine Bank, die genau dafür gebaut war.",
+    "fontes": [
+     "https://irp.fas.org/congress/1992_rpt/bcci/01exec.htm",
+     "https://www.int-comp.org/insight/the-bcci-scandal/"
+    ]
+   },
+   {
+    "bloco": "Fecho: Strafe zahlen, weitermachen",
+    "segue": "Fecho: a lição de poder (como no iceberg) + volta à imagem do começo; CTA de 1 linha",
+    "texto": "Wenn du jetzt von oben nach unten schaust, siehst du ein Muster. Die Banken zahlen. Millionen, Milliarden. Aber Menschen landen selten vor Gericht. Bei HSBC wurde niemand angeklagt. Bei Danske wurden die Anklagen fallen gelassen. Für eine große Bank ist eine Strafe oft ein Kostenpunkt.\n\nUnd Deutschland? Eine Studie für das Bundesfinanzministerium hat geschätzt, dass hier pro Jahr mehr als 100 Milliarden Euro gewaschen werden könnten. Die Zahl ist umstritten – Forscher sagen, belastbare Daten gibt es dafür nicht. Aber selbst wenn es nur ein Bruchteil ist: Irgendwo muss dieses Geld durch. Und es geht fast immer durch eine Bank.\n\nDeshalb stehen 2018 170 Beamte in der Zentrale einer Bank in Frankfurt. Nicht in einer Shisha-Bar.\n\nWenn du wissen willst, wie die Tricks der Geldwäscher selbst funktionieren – alle Methoden erklärt –, abonnier den Kanal.",
+    "fontes": [
+     "https://www.thelocal.com/20160421/over-100-billion-laundered-in-germany-every-year-report",
+     "https://www.uni-trier.de/fileadmin/fb4/prof/VWL/EWF/Research_Papers/2025-03.pdf",
+     "https://money.cnn.com/2012/12/12/news/companies/hsbc-money-laundering",
+     "https://en.wikipedia.org/wiki/Danske_Bank_money_laundering_scandal"
+    ]
+   }
+  ]
+ }
+}
