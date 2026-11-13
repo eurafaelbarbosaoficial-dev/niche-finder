@@ -77,7 +77,7 @@ def main():
         d = c["t1"] - c["t0"]
         # só eventos GRANDES contam (linha de texto pequena não segura o olho)
         GRANDES = {"numero": {0, 3}, "titulo": {0, 1}, "documento": {0, 1}, "lista": set(), "local": set(), "banco": {1},
-                   "celular": {0}, "iceberg": set(), "detetive": {0}, "balanca": {0}, "carta": set(), "rota": set()}
+                   "celular": {0}, "iceberg": set(), "detetive": {0}, "balanca": {0}, "carta": set(), "rota": set(), "tempo": set(), "comparar": set()}
         idx = GRANDES.get(c["tipo"])
         grandes = [p_ for j, p_ in enumerate(c["passos"]) if p_ is not None and 0 <= p_ < d and (idx is None or j in idx)]
         evs = sorted([0.0] + grandes + ([grandes[0] + 1.4] if c["tipo"] == "numero" and grandes else []) + [d])
@@ -86,6 +86,8 @@ def main():
             if b_ - a_ > 2.8:
                 n = int((b_ - a_) / 2.2)
                 bat += [round(a_ + (b_ - a_) * (k + 1) / (n + 1), 2) for k in range(n)]
+        if c["tipo"] == "iceberg":
+            bat = []  # o iceberg já tem câmera própria; zoom extra corta o título no topo
         c["batidas"] = bat
         c["passos_b"] = bat
 

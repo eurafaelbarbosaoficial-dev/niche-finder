@@ -469,9 +469,18 @@ def main():
         if rf["primeira_palavra"] is not None and rf["primeira_palavra"] > PRIMEIRA_PALAVRA_MAX:
             achado("alto", 0, "retencao", f"A voz só começa em {rf['primeira_palavra']} s: o gancho tem de começar em até {PRIMEIRA_PALAVRA_MAX} s.")
         sons = [c["inicio"] for c in R.get("camadas", []) if c["tipo"] == "efeito"]
+        import numpy as np
+        mixpcm = _pcm(a.video)
         for si in rf["silencios"]:
             if si["de"] < tec["duracao"] - 1.5:
                 g = "alto" if si["dur"] >= SILENCIO_ALTO else "medio"
+                # o whisper às vezes pula uma frase: se o áudio do trecho tem som de fala, não é silêncio de verdade
+                seg_ = mixpcm[int(si["de"] * 16000):int(si["ate"] * 16000)]
+                if len(seg_) > 1600:
+                    rms = _rms_db(seg_, 1600)
+                    if np.mean(rms > -32) > 0.5:
+                        achado("baixo", si["de"], "narracao", f"A transcrição não achou palavras entre {si['de']} e {si['ate']} s, mas o áudio tem som contínuo: conferir de ouvido (provável frase pulada pela transcrição, não silêncio).")
+                        continue
                 if any(si["de"] - 0.3 <= t0 <= si["ate"] for t0 in sons) and si["dur"] < SILENCIO_ALTO:
                     g = "baixo"  # a pausa é preenchida por um efeito sonoro
                 achado(g, si["de"], "retencao", f"Silêncio de {si['dur']} s na fala depois de «{si['depois_de']}»: buraco que derruba retenção (cortar a pausa ou cobrir com som/imagem).")

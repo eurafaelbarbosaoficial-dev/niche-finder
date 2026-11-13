@@ -1,0 +1,184 @@
+# Relatório automático: bankskandale-completo-final.mp4
+
+- Duração 725.4 s · 1920x1080 · 30.0 fps · vídeo h264 · áudio aac
+- Mix final: -14.2 LUFS (faixa-alvo -16.0 a -12.0) · pico -1.6 dBTP · LRA 3.9 LU
+
+## Narração × roteiro
+
+- 1520 palavras no roteiro, 1512 ouvidas · diferença 2.5%
+- Transcrição: Donnerstag, 29. November 2018, Frankfurt am Main. 170 Beamte von Staatsanwaltschaft, BKA, Steuerfahndung und Bundespolizei durchsuchen sechs Gebäude. Eines davon die Zentrale der Deutschen Bank. Der Verdacht, Mitarbeiter sollen Kunden geholfen haben, Briefkastenfirmen in Steueroasen zu gründen und Geld aus Straftaten durchzuschleusen. Alleine eine Konzerngesellschaft auf den britischen Jungferninseln soll 2016 über 900 Kunden betreut haben. Geschäftsvolumen? 311 Millionen Euro. Meisten denken bei Geldwäsche an Dönerläden, Shisha -Bars und Koffer voller Bargeld. Aber am Ende landet jeder schmutzige Euro an demselben Ort. Auf einem Bankkonto. Wir haben Gerichtsakten, Behördenberichte und Leaks durchgesehen. Und es fängt harmlos an. Mit der Bank auf deinem Handy. Dann geht es zu Banken, die einfach wegschauen. Zu einer Bank, die Kartellgeld in Kisten annahm. Zu einer einzigen Filiale, durch die 200 Milliarden Euro flossen. Und ganz unten, zu einer Bank, die selbst das verbrechen war. Das ist der Eisberg der Geldwäsche -Skandale. Stell dir vor, du hast Geld aus einem Betrug. Ein paar tausend Euro. Bareinzahlen fällt auf. Also brauchst du ein Konto. Am besten eins, das man schnell per App eröffnet. Genau hier sitzt die wichtigste Regel des ganzen Videos. Banken sind gesetzlich verpflichtet, verdächtige Zahlungen zu melden. Das nennt man Verdachtsmeldung. Die Bank muss nicht beweisen, dass etwas kriminell ist. Sie muss nur melden. Und zwar rechtzeitig. Die Berliner Smartphone -Bank N26 hat genau das nicht geschafft. 2021 verhängte die Finanzaufsicht BaFin ein Bußgeld von 4 ,25 Millionen Euro wegen verspäteter Verdachtsmeldungen. Dazu kam ein Sonderbeauftragter im Haus. Und eine Obergrenze. Höchstens 50 .000 Neukunden pro Monat. Für eine Bank, die vom Wachstum lebt, ist das wie eine Vollbremsung. Und 2024? Das nächste Bußgeld. 9 ,2 Millionen Euro. Der Vorwurf? Auch 2022 seien Verdachtsfälle systematisch zu spät gemeldet worden. Das ist die Spitze des Eisbergs. Niemand behauptet, dass N26 selbst Geld gewaschen hat. Der Fehler ist kleiner und trotzdem gefährlich. Wenn die Meldung zu spät kommt, ist das Geld längst weiter. Aber was, wenn es nicht um ein paar Tausend Euro geht, sondern um hunderte Millionen? Dann reicht keine App. Dann brauchst du eine große, seriöse Bank mit Zugang zur ganzen Welt. Niederlande. September 2018. Die ING, eine der größten Banken Europas, zahlt 775 Millionen Euro, um ein Strafverfahren zu beenden. 675 Millionen Strafe und 100 Millionen Rückzahlung von Gewinnen. Die Staatsanwaltschaft sagt, die Bank habe jahrelang und strukturell gegen die Geldwäscheregeln verstoßen. Sie hat nicht geprüft, wen die Konten ihrer Kunden wirklich gehören. Ein Beispiel. Von einem ING -Konto flossen rund 55 Millionen Dollar des Telekom -Konzerns Wimpelkomm an eine Firma in Gibraltar. Diese Firma wird Gulnara Karimova zugerechnet, der ältesten Tochter des damaligen Präsidenten von Usbekistan. Wimpelkomm selbst hatte schon 2016 wegen Bestechung in Usbekistan 795 Millionen Dollar gezahlt. Schmiergeld. Ganz normal per Überweisung. Und Deutschland? März 2015. E -Commerzbank zahlt in den USA 1 ,45 Milliarden Dollar. Ein Teil davon wegen Iransanktionen. Der andere Teil wegen Geldwäscheregeln. Über die New Yorker Filiale liefen laut US -Justiz mehr als 1 ,6 Milliarden Dollar an verdächtigen Zahlungen, die mit dem Bilanzbetrug beim japanischen Konzern Olympus zusammenhingen. Das Muster auf dieser Ebene? Die Bank wäscht nicht selbst. Sie macht einfach die Tür auf und schaut nicht hin, wer hindurchgeht. Jetzt wird es professionell. Denn was, wenn du nicht nur Geld verstecken willst, sondern Milliarden aus einem ganzen Land herausbringen musst? Dann brauchst du keine Tür. Dann brauchst du eine Maschine. Moskau, London, New York. Zwischen 2011 und 2015 kauft ein Kunde bei der Deutschen Bank in Moskau russische Aktien. In Rubel. Fast gleichzeitig verkauft eine verbundene Firma dieselben Aktien bei der Deutschen Bank in London. Gegen Dollar. Unterm Strich? Kein Gewinn, kein Verlust, kein wirtschaftlicher Sinn. Nur eines passiert. Rubel werden zu Dollar und landen im Ausland. Man nennt das Spiegelgeschäfte. Rund 10 Milliarden Dollar sollen so aus Russland geflossen sein. Im Januar 2017 zahlte die Deutsche Bank dafür rund 630 Millionen Dollar. 425 Millionen an die New Yorker Finanzaufsicht und 163 Millionen Pfund an die britische FCA. Die Briten schrieben, die Kontrollen seien schwach gewesen und die Compliance -Leute überlastet. Wieder New York. Wieder die Deutsche Bank. 50 Millionen Dollar Strafe. Diesmal geht es um einen Kunden, den die Bank 2013 aufgenommen hatte. Jeffrey Epstein. Laut Aufsicht hat die Bank hunderte Transaktionen über Millionen Dollar nicht genauer geprüft. Darunter Bargeldabhebungen von insgesamt mehr als 800 .000 Dollar in rund vier Jahren. Im selben Bescheid die Geschäftsbeziehungen zu zwei anderen Banken. Eine davon heißt Danske Bank Estland. Merkt ihr den Namen? Und zwei Monate später, September 2020, die FinCEN Fires. Ein Leak von über 2000 geheimen Verdachtsmeldungen amerikanischer Banken. Rund zwei Billionen Dollar an verdächtigen Zahlungen. Der größte Anteil? Die Deutsche Bank. Mit rund 1 ,3 Billionen Dollar. Wichtig! Eine Verdachtsmeldung ist kein Beweis für ein Verbrechen. Sie zeigt nur, dass die Bank selbst etwas komisch fand und das Geld trotzdem weitergeleitet hat. Und damit sind wir wieder bei der Razzia in Frankfurt vom Anfang. Bei der Deutschen Bank ist es kein einzelner Skandal. Es ist eine Reihe. Bisher ging es um Kontrollen, die versagt haben. Aber was, wenn das Geld direkt aus dem Drogenhandel kommt? In Bar, in Mengen, die man nicht übersehen kann. Mexiko. Ende der 2000er. Drogenhändler lassen sich Kisten bauen. Nicht irgendwelche Kisten. Sie haben exakt die Maße der Schalterfenster der Bank HSBC in Mexiko. Damit das Bargeld genau durch den Schalter passt. Manchmal werden an einem einzigen Tag 100 .000 Dollar in Bar auf ein einziges Konto eingezahlt. Laut US -Justiz haben das Sinaloa -Kartell aus Mexiko, das Norte del Valle -Kartell aus Kolumbien und andere Händler zwischen 2006 und 2010 mindestens 881 Millionen Dollar über HSBC Bank USA gewaschen. Im Dezember 2012 zahlt HSBC 1 ,9 Milliarden Dollar. Doch die Bank wird nicht angeklagt. Und keine einzige Person. Auch nicht. Stattdessen eine Vereinbarung. Wenn ihr euch fünf Jahre benehmt, lassen wir die Anklage fallen. Zwölf Jahre später ändert sich etwas. Die kanadische TD Bank bekennt sich in den USA schuldig. Sie ist laut US -Justiz die erste Bank, die sich dort der Verschwörung zur Geldwäsche schuldig bekennt. Über ihre Konten konnten drei Geldwäschennetzwerke mehr als 670 Millionen Dollar bewegen. Strafe? Rund drei Milliarden Dollar. Dazu eine Obergrenze für ihr US -Geschäft. Wieder dieses Wort. Obergrenze. Wie bei N26. Nur tausendmal größer. 881 Millionen klingt viel. Aber was, wenn das Geld nicht in Kisten kommt, sondern einfach als Überweisung. Tag für Tag. Über Jahre. Aus Russland und anderen Ländern der ehemaligen Sowjetunion. Erinnerst du dich an den Namen aus dem Appstein Bescheid? Danske Bank. Dänemarks größte Bank. Sie hat eine kleine Filiale in Tallinn. Estland. Zwischen 2007 und 2015 betreut diese Filiale Kunden, die gar nicht in Estland wohnen. Die sogenannten Nicht -Residenten. Rund 10 .000 Kunden in diesem Portfolio. Dazu prüft die Bank später noch etwa 5 .000 weitere. Durch diese eine Filiale fließen rund 200 Milliarden Euro. Der Untersuchungsbericht der Bank von 2018 kommt zum Ergebnis, ein großer Teil davon ist verdächtig. Wie kam das raus? Durch einen einzigen Mitarbeiter. Howard Wilkinson. Brite. Händler in der Filiale. Ende 2013 schickt er eine Warnung an Vorstand, Compliance und interne Revision. Es dauert fast fünf Jahre, bis die ganze Geschichte öffentlich ist. Im September 2018 tritt Danske Chef Thomas Borgen zurück. Dezember 2022. Danske Bank bekennt sich in den USA des Bankbetrugs schuldig und gibt rund zwei Milliarden Dollar ab. Und die Manager? Die Anklagen gegen Borgen und zwei weitere Ex -Manager in Dänemark wurden 2021 fallen gelassen. Auf allen Ebenen bisher gab es eine Bank und Kriminelle, die sie benutzt haben. Ganz unten im Eisberg fällt diese Trennung weg. 5. Juli 1991. Aufsichtsbehörden schließen weltweit eine Bank. Die BCCI. Bank of Credit and Commerce International. Gegründet von dem pakistanischen Banker Agha Hassan Abedi. Aktiv in 73 Ländern. Ein späterer Bericht des US -Senats listet auf, was diese Bank getan hat. Geldwäsche in Europa, Afrika, Asien und Amerika. Unterstützung von Terrorismus. Waffenhandel. Der Verkauf von Nukleartechnologie. Heimliche Käufe von Banken und Immobilien. Die BCCI führte sogar ein Konto für Panamas Diktator Manuel Noriega. Der Senat beschreibt die Bank als ein kunstvolles Spinnennetz aus Firmen, verbunden über eine undurchdringliche Reihe von Holding -Gesellschaften. Sein Fazit? Eine Bank, die praktisch keiner Regierung unterstand, war ein ideales Werkzeug für die Verbrechen anderer. Das ist der Boden des Eisbergs. Keine Bank, die wegschaut. Sondern eine Bank, die genau dafür gebaut war. Wenn du jetzt von oben nach unten schaust, siehst du ein Muster. Die Banken zahlen. Millionen. Milliarden. Aber Menschen landen selten vor Gericht. Bei HSBC wurde niemand angeklagt. Bei Danske wurden die Anklagen fallen gelassen. Für eine große Bank ist eine Strafe oft ein Kostenpunkt. Und Deutschland? Eine Studie für das Bundesfinanzministerium hat geschätzt, dass hier pro Jahr mehr als 100 Milliarden Euro gewaschen werden könnten. Die Zahl ist umstritten. Forscher sagen, belastbare Daten gibt es dafür nicht. Aber selbst wenn es nur ein Bruchteil ist, irgendwo muss dieses Geld durch. Und es geht fast immer durch eine Bank. Deshalb stehen 2018 170 Beamte in der Zentrale einer Bank in Frankfurt. Nicht in einer Shisha -Bar. Wenn du wissen willst, wie die Tricks der Geldwäscher selbst funktionieren, alle Methoden erklärt, abonnier den Kanal.
+
+## Ritmo (retenção)
+
+- Elementos novos na tela: 2845 momentos · cortes de cena em [5.2, 12.6, 16.8, 144.1, 238.9, 242.3, 269.0, 273.2, 327.0, 331.9, 362.3, 367.6, 392.7, 396.4, 600.4, 603.8, 609.7, 642.9, 651.9, 711.1, 716.9] · plano médio 33.0 s (maior 204.0 s)
+- Trechos sem novidade de 3.0 s ou mais: nenhum
+- Voz começa em 0.0 s · 125 palavras/min · pausas de 0.9 s ou mais: [(15.9, 1.46), (75.44, 1.96), (109.5, 0.98), (118.5, 1.0), (157.0, 2.08), (235.86, 1.02), (258.36, 2.1), (326.96, 1.76), (331.62, 0.96), (340.58, 0.98), (400.98, 1.8), (412.14, 0.98), (414.72, 1.0), (469.28, 2.5), (501.04, 2.06), (593.86, 2.06), (667.26, 1.54)]
+
+## Achados automáticos
+
+- **medio** · 15.90s · retencao: Silêncio de 1.46 s na fala depois de «Bank.»: buraco que derruba retenção (cortar a pausa ou cobrir com som/imagem).
+- **medio** · 26.76s · narracao: Palavra trocada: roteiro «allein» × ouvido «alleine» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 38.54s · narracao: Palavra faltou: roteiro «die» × ouvido «» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 82.10s · narracao: Palavra trocada: roteiro «bar einzahlen» × ouvido «bareinzahlen» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 193.02s · narracao: Palavra trocada: roteiro «geldwäsche regeln» × ouvido «geldwäscheregeln» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 196.22s · narracao: Palavra trocada: roteiro «wem» × ouvido «wen» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 204.08s · narracao: Palavra trocada: roteiro «telekomkonzerns vimpelcom» × ouvido «telekom konzerns wimpelkomm» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 209.68s · narracao: Palavra trocada: roteiro «karimowa» × ouvido «karimova» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 215.32s · narracao: Palavra trocada: roteiro «vimpelcom» × ouvido «wimpelkomm» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 229.72s · narracao: Palavra trocada: roteiro «die» × ouvido «e» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 235.48s · narracao: Palavra trocada: roteiro «iran sanktionen» × ouvido «iransanktionen» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 238.14s · narracao: Palavra trocada: roteiro «geldwäsche regeln» × ouvido «geldwäscheregeln» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 328.72s · narracao: Palavra faltou: roteiro «juli 2020» × ouvido «» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 332.58s · narracao: Palavra trocada: roteiro «150» × ouvido «50» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 340.58s · retencao: Silêncio de 0.98 s na fala depois de «Epstein.»: buraco que derruba retenção (cortar a pausa ou cobrir com som/imagem).
+- **medio** · 361.16s · narracao: Palavra trocada: roteiro «merk dir» × ouvido «merkt ihr» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 366.92s · narracao: Palavra trocada: roteiro «files» × ouvido «fires» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 369.06s · narracao: Palavra trocada: roteiro «2 000» × ouvido «2000» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 373.50s · narracao: Palavra trocada: roteiro «2» × ouvido «zwei» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 412.14s · retencao: Silêncio de 0.98 s na fala depois de «kann.»: buraco que derruba retenção (cortar a pausa ou cobrir com som/imagem).
+- **medio** · 414.72s · retencao: Silêncio de 1.0 s na fala depois de «2000er.»: buraco que derruba retenção (cortar a pausa ou cobrir com som/imagem).
+- **medio** · 429.76s · narracao: Palavra trocada: roteiro «hunderttausende» × ouvido «100 000» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 471.78s · narracao: Palavra faltou: roteiro «oktober 2024» × ouvido «» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 484.22s · narracao: Palavra trocada: roteiro «geldwäsche netzwerke» × ouvido «geldwäschennetzwerke» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 490.12s · narracao: Palavra trocada: roteiro «3» × ouvido «drei» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 518.26s · narracao: Palavra trocada: roteiro «epstein» × ouvido «appstein» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 583.84s · narracao: Palavra trocada: roteiro «2» × ouvido «zwei» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 616.68s · narracao: Palavra trocada: roteiro «hasan» × ouvido «hassan» (conferir de ouvido: pode ser a transcrição).
+- **medio** · 650.62s · narracao: Palavra trocada: roteiro «holdinggesellschaften» × ouvido «holding gesellschaften» (conferir de ouvido: pode ser a transcrição).
+- **baixo** · 75.44s · narracao: A transcrição não achou palavras entre 75.44 e 77.4 s, mas o áudio tem som contínuo: conferir de ouvido (provável frase pulada pela transcrição, não silêncio).
+- **baixo** · 109.50s · narracao: A transcrição não achou palavras entre 109.5 e 110.48 s, mas o áudio tem som contínuo: conferir de ouvido (provável frase pulada pela transcrição, não silêncio).
+- **baixo** · 118.50s · narracao: A transcrição não achou palavras entre 118.5 e 119.5 s, mas o áudio tem som contínuo: conferir de ouvido (provável frase pulada pela transcrição, não silêncio).
+- **baixo** · 157.00s · narracao: A transcrição não achou palavras entre 157.0 e 159.08 s, mas o áudio tem som contínuo: conferir de ouvido (provável frase pulada pela transcrição, não silêncio).
+- **baixo** · 235.86s · narracao: A transcrição não achou palavras entre 235.86 e 236.88 s, mas o áudio tem som contínuo: conferir de ouvido (provável frase pulada pela transcrição, não silêncio).
+- **baixo** · 258.36s · narracao: A transcrição não achou palavras entre 258.36 e 260.46 s, mas o áudio tem som contínuo: conferir de ouvido (provável frase pulada pela transcrição, não silêncio).
+- **baixo** · 326.96s · narracao: A transcrição não achou palavras entre 326.96 e 328.72 s, mas o áudio tem som contínuo: conferir de ouvido (provável frase pulada pela transcrição, não silêncio).
+- **baixo** · 331.62s · narracao: A transcrição não achou palavras entre 331.62 e 332.58 s, mas o áudio tem som contínuo: conferir de ouvido (provável frase pulada pela transcrição, não silêncio).
+- **baixo** · 400.98s · narracao: A transcrição não achou palavras entre 400.98 e 402.78 s, mas o áudio tem som contínuo: conferir de ouvido (provável frase pulada pela transcrição, não silêncio).
+- **baixo** · 469.28s · narracao: A transcrição não achou palavras entre 469.28 e 471.78 s, mas o áudio tem som contínuo: conferir de ouvido (provável frase pulada pela transcrição, não silêncio).
+- **baixo** · 501.04s · narracao: A transcrição não achou palavras entre 501.04 e 503.1 s, mas o áudio tem som contínuo: conferir de ouvido (provável frase pulada pela transcrição, não silêncio).
+- **baixo** · 593.86s · narracao: A transcrição não achou palavras entre 593.86 e 595.92 s, mas o áudio tem som contínuo: conferir de ouvido (provável frase pulada pela transcrição, não silêncio).
+- **baixo** · 667.26s · narracao: A transcrição não achou palavras entre 667.26 e 668.8 s, mas o áudio tem som contínuo: conferir de ouvido (provável frase pulada pela transcrição, não silêncio).
+
+## Folhas de contato
+
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-01.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-02.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-03.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-04.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-05.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-06.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-07.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-08.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-09.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-10.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-11.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-12.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-13.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-14.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-15.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-16.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-17.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-18.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-19.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-20.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-21.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-22.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-23.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-24.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-25.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-26.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-27.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-28.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-29.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-30.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-31.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-32.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-33.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-34.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-35.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-36.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-37.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-38.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-39.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-40.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-41.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-42.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-43.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-44.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-45.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-46.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-47.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-48.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-49.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-50.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-51.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-52.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-53.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-54.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-55.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-56.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-57.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-58.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-59.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-60.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-61.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-62.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-63.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-64.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-65.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-66.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-67.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-68.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-69.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-70.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-71.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-72.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-73.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-74.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-75.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-76.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-77.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-78.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-79.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-80.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-81.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-82.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-83.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-84.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-85.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-86.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-87.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-88.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-89.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-90.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-91.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-92.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-93.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-94.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-95.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-96.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-97.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-98.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-99.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-100.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-101.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-102.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-103.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-104.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-105.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-106.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-107.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-108.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-109.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-110.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-111.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-112.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-113.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-114.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-115.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-116.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-117.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-118.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-119.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-120.jpg
+- videos\bankskandale-completo\renders\bankskandale-completo-final-revisao\quadros\folha-121.jpg

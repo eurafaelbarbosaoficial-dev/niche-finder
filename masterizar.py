@@ -22,7 +22,8 @@ def main():
     m = json.loads(re.findall(r"\{[^{}]*\}", r.stderr)[-1])
     print(f"antes: {m['input_i']} LUFS, pico {m['input_tp']} dBTP")
     f2 = (f"{filtro}:measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}"
-          f":measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true")
+          f":measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true"
+          f",aresample=192000,alimiter=limit=0.82:attack=2:release=60:level=false,aresample=48000")  # garante o pico verdadeiro < -1,5 dBTP
     subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", str(ent), "-c:v", "copy", "-af", f2,
                     "-ar", "48000", "-c:a", "aac", "-b:a", "320k", "-movflags", "+faststart", str(sai)], check=True)
     r = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(sai), "-af", "ebur128=peak=true", "-f", "null", "-"],

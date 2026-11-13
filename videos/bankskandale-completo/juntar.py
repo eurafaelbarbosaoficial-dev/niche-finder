@@ -15,7 +15,8 @@ sys.path.insert(0, str(AQUI))
 from cenas import CAPITULOS  # noqa: E402
 
 AMOSTRA = AQUI.parent / "amostra-bankskandale" / "renders" / "amostra-bankskandale.mp4"
-CAUDA, CABECA = 0.4, 1.15
+CAUDA, CABECA = 0.3, 1.75
+PAUSA_MAX, PAUSA_FICA = 1.4, 0.7   # pausa na fala maior que 1,4 s vira 0,7 s
 
 
 def dur(p):
@@ -30,15 +31,31 @@ def janela(cap, corta_cabeca):
     arq = AQUI / cap / "renders" / f"{cap}.mp4"
     a = max(0.0, ini_voz + w[0]["ini"] - CABECA) if corta_cabeca else 0.0
     b = min(dur(arq), ini_voz + w[-1]["fim"] + CAUDA)
-    return arq, a, b
+    # pausas longas medidas no próprio áudio da narração (o whisper estica a última palavra sobre o silêncio)
+    import re
+    err = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(AQUI / spec["voz"]), "-af", f"silencedetect=noise=-38dB:d={PAUSA_MAX}", "-f", "null", "-"],
+                         capture_output=True, text=True, encoding="utf-8", errors="replace").stderr
+    sil = list(zip([float(x) for x in re.findall(r"silence_start: ([\d.]+)", err)], [float(x) for x in re.findall(r"silence_end: ([\d.]+)", err)]))
+    trechos, ini = [], a
+    for s0, s1 in sil:
+        x0, x1 = ini_voz + s0, ini_voz + s1
+        if x0 <= a + 0.5 or x1 >= b - 0.5:
+            continue  # começo/fim: já cortados acima
+        trechos.append((ini, x0 + PAUSA_FICA / 2))
+        ini = x1 - PAUSA_FICA / 2
+    trechos.append((ini, b))
+    return [(arq, x, y) for x, y in trechos]
 
 
 def main():
     saida = Path(sys.argv[1]) if len(sys.argv) > 1 else AQUI / "renders" / "bankskandale-completo.mp4"
     saida.parent.mkdir(parents=True, exist_ok=True)
-    partes = [(AMOSTRA, 0.0, 16.95, None), (*janela("k1b", False), None), (AMOSTRA, 16.95, 28.3, None), (*janela("k1d", False), None)]
+    partes = [(AMOSTRA, 0.0, 16.95, None)] + [(*x, None) for x in janela("k1b", False)] + [(AMOSTRA, 16.95, 28.3, None)] + [(*x, None) for x in janela("k1d", False)]
     for n in range(2, 9):
-        partes.append((*janela(f"k{n}", True), f"k{n}"))
+        js = janela(f"k{n}", True)
+        partes += [(*x, f"k{n}" if j == 0 else None) for j, x in enumerate(js)]
+        if len(js) > 1:
+            print(f"k{n}: {len(js) - 1} pausa(s) longa(s) encurtada(s)")
     cmd, filtros, rot = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y"], [], []
     inicios, t = {"k1": 0.0}, 0.0
     for i, (arq, a, b, cap) in enumerate(partes):

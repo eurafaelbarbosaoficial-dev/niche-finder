@@ -1,0 +1,509 @@
+{
+ "video": "videos/bankskandale-completo/k1b/renders/k1b.mp4",
+ "achados": [
+  {
+   "gravidade": "alto",
+   "tempo": null,
+   "area": "narracao",
+   "msg": "65.0% das palavras diferem do roteiro (limite 8%)."
+  },
+  {
+   "gravidade": "medio",
+   "tempo": 0,
+   "area": "audio",
+   "msg": "Volume geral -19.6 LUFS, fora da faixa -16.0 a -12.0 (o YouTube normaliza perto de -14)."
+  },
+  {
+   "gravidade": "medio",
+   "tempo": 0.0,
+   "area": "narracao",
+   "msg": "Palavra faltou: roteiro «blocos texto» × ouvido «» (conferir de ouvido: pode ser a transcrição)."
+  },
+  {
+   "gravidade": "medio",
+   "tempo": 0.7,
+   "area": "retencao",
+   "msg": "3.6 s sem nada novo na tela (0.7–4.3 s): a pessoa perde o interesse. Colocar um elemento, um movimento de câmera ou uma reação do personagem."
+  },
+  {
+   "gravidade": "medio",
+   "tempo": 11.0,
+   "area": "retencao",
+   "msg": "4.1 s sem nada novo na tela (11.0–15.1 s): a pessoa perde o interesse. Colocar um elemento, um movimento de câmera ou uma reação do personagem."
+  },
+  {
+   "gravidade": "medio",
+   "tempo": 20.98,
+   "area": "narracao",
+   "msg": "Palavra faltou: roteiro «texto wir haben gerichtsakten behördenberichte und leaks durchgesehen und es fängt harmlos an mit der bank auf deinem handy dann geht es zu banken die einfach wegschauen zu einer bank die kartellgeld in kisten annahm zu einer einzigen filiale durch die 200 milliarden euro flossen und ganz unten zu einer bank die selbst das verbrechen war das ist der eisberg der geldwäsche skandale» × ouvido «» (conferir de ouvido: pode ser a transcrição)."
+  },
+  {
+   "gravidade": "baixo",
+   "tempo": null,
+   "area": "layout",
+   "msg": "[layout] Canvas content touches the frame edge (bottom)."
+  }
+ ],
+ "tecnico": {
+  "duracao": 22.27,
+  "largura": 1920,
+  "altura": 1080,
+  "fps": 30.0,
+  "codec_video": "h264",
+  "tem_audio": true,
+  "codec_audio": "aac"
+ },
+ "mix": {
+  "I": -19.6,
+  "LRA": 2.7,
+  "pico_dbtp": -1.7,
+  "M_max": -15.4,
+  "M_mediana": -20.2,
+  "M_p90": -17.4
+ },
+ "camadas": [
+  {
+   "id": "vo",
+   "src": "assets/audio/narracao.mp3",
+   "tipo": "narracao",
+   "inicio": 0.35,
+   "duracao": 21.0,
+   "volume": 1.0,
+   "medida": {
+    "I": -22.6,
+    "LRA": 2.6,
+    "pico_dbtp": -1.6,
+    "M_max": -18.0,
+    "M_mediana": -23.1,
+    "M_p90": -20.4
+   }
+  },
+  {
+   "id": "sfx-0",
+   "src": "assets/sfx/pop.mp3",
+   "tipo": "efeito",
+   "inicio": 7.61,
+   "duracao": 0.7,
+   "volume": 0.4,
+   "medida": {
+    "I": -29.2,
+    "LRA": 0.0,
+    "pico_dbtp": -11.1,
+    "M_max": -29.2,
+    "M_mediana": -29.2,
+    "M_p90": -29.2
+   },
+   "acima_da_fala_LU": -8.8
+  },
+  {
+   "id": "sfx-1",
+   "src": "assets/sfx/pop.mp3",
+   "tipo": "efeito",
+   "inicio": 8.31,
+   "duracao": 0.7,
+   "volume": 0.4,
+   "medida": {
+    "I": -29.2,
+    "LRA": 0.0,
+    "pico_dbtp": -11.1,
+    "M_max": -29.2,
+    "M_mediana": -29.2,
+    "M_p90": -29.2
+   },
+   "acima_da_fala_LU": -8.8
+  },
+  {
+   "id": "sfx-2",
+   "src": "assets/sfx/moedas.mp3",
+   "tipo": "efeito",
+   "inicio": 18.43,
+   "duracao": 2.0,
+   "volume": 0.45,
+   "medida": {
+    "I": -25.1,
+    "LRA": 0.0,
+    "pico_dbtp": -8.0,
+    "M_max": -23.3,
+    "M_mediana": -57.1,
+    "M_p90": -23.3
+   },
+   "acima_da_fala_LU": -2.9
+  }
+ ],
+ "sem_musica": true,
+ "efeitos_no_mix": [
+  {
+   "id": "sfx-0",
+   "inicio": 7.61,
+   "ganho_LU": 8.4
+  },
+  {
+   "id": "sfx-1",
+   "inicio": 8.31,
+   "ganho_LU": 13.8
+  },
+  {
+   "id": "sfx-2",
+   "inicio": 18.43,
+   "ganho_LU": 1.7
+  }
+ ],
+ "origem_efeitos": {
+  "assets/sfx/pop.mp3": {
+   "descricao": "Quick pop — element appear/spawn, chip/tag/badge in. Small precise accent, sync to the pop-in.",
+   "licenca": "embutido no HyperFrames",
+   "fonte": null
+  },
+  "assets/sfx/moedas.mp3": {
+   "descricao": "Gold coin clink (100 Rubles Witte) (High Quality)",
+   "licenca": "by",
+   "fonte": "https://freesound.org/people/Walking.With.Microphones/sounds/557223"
+  }
+ },
+ "efeitos_com_fala": [],
+ "hyperframes": {
+  "ok": true,
+  "achados": [
+   {
+    "secao": "layout",
+    "nivel": "warning",
+    "msg": "Canvas content touches the frame edge (bottom)."
+   }
+  ]
+ },
+ "transcricao": {
+  "idioma_detectado": "de",
+  "texto": "Der Verdacht? Mitarbeiter sollen Kunden geholfen haben, Briefkastenfirmen in Steueroasen zu gründen und Geld aus Straftaten durchzuschleusen. Allein eine Konzerngesellschaft auf den britischen Jungferninseln soll 2016 über 900 Kunden betreut haben. Geschäftsvolumen 311 Millionen Euro.",
+  "palavras": [
+   {
+    "p": "Der",
+    "ini": 0.0,
+    "fim": 0.54,
+    "conf": 0.92
+   },
+   {
+    "p": "Verdacht?",
+    "ini": 0.54,
+    "fim": 0.98,
+    "conf": 0.99
+   },
+   {
+    "p": "Mitarbeiter",
+    "ini": 1.66,
+    "fim": 1.96,
+    "conf": 0.96
+   },
+   {
+    "p": "sollen",
+    "ini": 1.96,
+    "fim": 2.54,
+    "conf": 1.0
+   },
+   {
+    "p": "Kunden",
+    "ini": 2.54,
+    "fim": 2.94,
+    "conf": 0.98
+   },
+   {
+    "p": "geholfen",
+    "ini": 2.94,
+    "fim": 3.46,
+    "conf": 1.0
+   },
+   {
+    "p": "haben,",
+    "ini": 3.46,
+    "fim": 3.76,
+    "conf": 1.0
+   },
+   {
+    "p": "Briefkastenfirmen",
+    "ini": 4.04,
+    "fim": 5.04,
+    "conf": 0.95
+   },
+   {
+    "p": "in",
+    "ini": 5.04,
+    "fim": 5.24,
+    "conf": 1.0
+   },
+   {
+    "p": "Steueroasen",
+    "ini": 5.24,
+    "fim": 6.14,
+    "conf": 0.9
+   },
+   {
+    "p": "zu",
+    "ini": 6.14,
+    "fim": 6.28,
+    "conf": 0.99
+   },
+   {
+    "p": "gründen",
+    "ini": 6.28,
+    "fim": 6.66,
+    "conf": 1.0
+   },
+   {
+    "p": "und",
+    "ini": 6.66,
+    "fim": 7.28,
+    "conf": 0.66
+   },
+   {
+    "p": "Geld",
+    "ini": 7.28,
+    "fim": 7.7,
+    "conf": 1.0
+   },
+   {
+    "p": "aus",
+    "ini": 7.7,
+    "fim": 7.94,
+    "conf": 1.0
+   },
+   {
+    "p": "Straftaten",
+    "ini": 7.94,
+    "fim": 8.66,
+    "conf": 0.99
+   },
+   {
+    "p": "durchzuschleusen.",
+    "ini": 8.66,
+    "fim": 9.52,
+    "conf": 0.98
+   },
+   {
+    "p": "Allein",
+    "ini": 9.94,
+    "fim": 10.38,
+    "conf": 0.98
+   },
+   {
+    "p": "eine",
+    "ini": 10.38,
+    "fim": 10.68,
+    "conf": 0.99
+   },
+   {
+    "p": "Konzerngesellschaft",
+    "ini": 10.68,
+    "fim": 11.74,
+    "conf": 0.91
+   },
+   {
+    "p": "auf",
+    "ini": 11.74,
+    "fim": 11.98,
+    "conf": 1.0
+   },
+   {
+    "p": "den",
+    "ini": 11.98,
+    "fim": 12.12,
+    "conf": 1.0
+   },
+   {
+    "p": "britischen",
+    "ini": 12.12,
+    "fim": 12.62,
+    "conf": 0.96
+   },
+   {
+    "p": "Jungferninseln",
+    "ini": 12.62,
+    "fim": 13.8,
+    "conf": 0.83
+   },
+   {
+    "p": "soll",
+    "ini": 13.8,
+    "fim": 13.96,
+    "conf": 1.0
+   },
+   {
+    "p": "2016",
+    "ini": 13.96,
+    "fim": 14.86,
+    "conf": 1.0
+   },
+   {
+    "p": "über",
+    "ini": 14.86,
+    "fim": 15.52,
+    "conf": 1.0
+   },
+   {
+    "p": "900",
+    "ini": 15.52,
+    "fim": 16.18,
+    "conf": 1.0
+   },
+   {
+    "p": "Kunden",
+    "ini": 16.18,
+    "fim": 16.56,
+    "conf": 1.0
+   },
+   {
+    "p": "betreut",
+    "ini": 16.56,
+    "fim": 17.14,
+    "conf": 0.99
+   },
+   {
+    "p": "haben.",
+    "ini": 17.14,
+    "fim": 17.36,
+    "conf": 1.0
+   },
+   {
+    "p": "Geschäftsvolumen",
+    "ini": 17.84,
+    "fim": 18.68,
+    "conf": 0.97
+   },
+   {
+    "p": "311",
+    "ini": 18.68,
+    "fim": 20.06,
+    "conf": 0.68
+   },
+   {
+    "p": "Millionen",
+    "ini": 20.06,
+    "fim": 20.48,
+    "conf": 0.97
+   },
+   {
+    "p": "Euro.",
+    "ini": 20.48,
+    "fim": 20.98,
+    "conf": 0.97
+   }
+  ]
+ },
+ "comparacao": {
+  "palavras_roteiro": 100,
+  "palavras_ouvidas": 35,
+  "wer": 0.65,
+  "diferencas": [
+   {
+    "tempo": 0.0,
+    "tipo": "faltou",
+    "roteiro": "blocos texto",
+    "ouvido": ""
+   },
+   {
+    "tempo": 20.98,
+    "tipo": "faltou",
+    "roteiro": "texto wir haben gerichtsakten behördenberichte und leaks durchgesehen und es fängt harmlos an mit der bank auf deinem handy dann geht es zu banken die einfach wegschauen zu einer bank die kartellgeld in kisten annahm zu einer einzigen filiale durch die 200 milliarden euro flossen und ganz unten zu einer bank die selbst das verbrechen war das ist der eisberg der geldwäsche skandale",
+    "ouvido": ""
+   }
+  ],
+  "baixa_confianca": []
+ },
+ "fala": {
+  "primeira_palavra": 0.0,
+  "silencios": [],
+  "ppm": 100
+ },
+ "ritmo": {
+  "eventos": [
+   0.4,
+   0.5,
+   0.6,
+   0.7,
+   4.3,
+   6.7,
+   6.8,
+   6.9,
+   7.0,
+   7.1,
+   7.2,
+   7.3,
+   7.5,
+   8.2,
+   8.4,
+   8.5,
+   8.6,
+   8.7,
+   9.0,
+   9.3,
+   9.4,
+   9.7,
+   10.1,
+   10.2,
+   10.3,
+   10.4,
+   10.5,
+   10.6,
+   10.7,
+   10.8,
+   10.9,
+   11.0,
+   15.1,
+   15.2,
+   15.3,
+   15.4,
+   15.5,
+   15.6,
+   15.7,
+   15.8,
+   15.9,
+   16.0,
+   16.1,
+   16.2,
+   16.3,
+   16.4,
+   16.5,
+   16.6,
+   18.0,
+   18.1,
+   18.2,
+   18.3,
+   18.4,
+   18.5,
+   18.6,
+   18.7,
+   18.8,
+   18.9,
+   19.0,
+   19.1,
+   19.2,
+   19.3,
+   19.4,
+   19.5,
+   19.6,
+   19.7,
+   19.8
+  ],
+  "cortes": [],
+  "lacunas": [
+   [
+    0.7,
+    4.3
+   ],
+   [
+    11.0,
+    15.1
+   ]
+  ],
+  "plano_medio_s": 22.3,
+  "plano_max_s": 22.3
+ },
+ "visual": {
+  "pretos": [],
+  "congelados": []
+ },
+ "folhas": [
+  "videos\\bankskandale-completo\\k1b\\renders\\k1b-revisao\\quadros\\folha-01.jpg",
+  "videos\\bankskandale-completo\\k1b\\renders\\k1b-revisao\\quadros\\folha-02.jpg",
+  "videos\\bankskandale-completo\\k1b\\renders\\k1b-revisao\\quadros\\folha-03.jpg",
+  "videos\\bankskandale-completo\\k1b\\renders\\k1b-revisao\\quadros\\folha-04.jpg"
+ ]
+}

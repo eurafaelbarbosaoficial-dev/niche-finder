@@ -28,7 +28,15 @@ postar de manhã. Ele autorizou tudo (gastar créditos de voz, decidir, editar).
 - Fotografar cada cena a 85% da duração (`python -I fotos.py kN`) pegou 8 defeitos de layout antes do render.
 - Render: ~20 s de processamento por segundo de vídeo neste PC, quando roda junto com outras tarefas.
 
-## Próximos passos
+## Status em 13/11, 11:30: PRONTO PARA POSTAR
+- Vídeo: `publicar/Alle-Geldwaesche-Skandale-der-Banken-erklaert.mp4` (12:05, -14,2 LUFS). Também tem
+  `thumbnail.jpg`, `DESCRICAO.txt` (título, capítulos, fontes, créditos), `TAGS.txt` e `REVISAO.md` (veredito do
+  revisor: aprovado com ajustes, 0 problemas altos).
+- O notebook reiniciou às ~08:00. Nada se perdeu: os renders estavam salvos, só a revisão foi refeita.
+- Ajustes futuros: editar `cenas.py` ou `comum/js/motor.js`, rodar `montar.py kN`, `renderizar.sh kN` e
+  `remixar.py kN`, depois `juntar.py` e `masterizar.py`. Só o capítulo mexido é renderizado de novo.
+
+## Próximos passos (feitos)
 1. Renderizar k4…k8: `./renderizar.sh k4 k5 k6 k7 k8`, depois de `python -I montar.py kN` para cada um.
 2. `python -I juntar.py`, depois `python -I ../../masterizar.py renders/bankskandale-completo.mp4`.
 3. Revisor:
