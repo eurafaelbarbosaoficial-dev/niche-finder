@@ -39,19 +39,75 @@ def gh(*args):
     return p.stdout
 
 
+def novos_canais():
+    """Botão "Adicionar canal" da aba Meus canais: issue com rótulo "meu-canal", corpo com 'Projeto: <id>' e o link.
+    Grava o link em producao/canais.json (o canal passa a ser medido a cada 3 h) e fecha a issue."""
+    import re
+    pedidos = json.loads(gh("issue", "list", "--label", "meu-canal", "--state", "open", "--json", "number,title,body") or "[]")
+    if not pedidos:
+        return
+    arq = AQUI / "producao" / "canais.json"
+    canais = json.loads(arq.read_text(encoding="utf-8"))
+    for p in pedidos:
+        txt = (p.get("title") or "") + "\n" + (p.get("body") or "")
+        link = re.search(r"(https?://(?:www\.)?youtube\.com/[^\s)]+|@[\w.\-]+|UC[\w-]{22})", txt)
+        proj = re.search(r"Projeto:\s*([\w\-]+)", txt)
+        alvo = next((c for c in canais if proj and c["id"] == proj.group(1)), None)
+        if not link or not alvo:
+            gh("issue", "comment", str(p["number"]), "--body", "⚠️ Não achei o link do canal ou o projeto no pedido. Edite e deixe o link do canal no corpo.")
+            continue
+        alvo["youtube"] = link.group(1)
+        alvo.pop("youtube_id", None)
+        arq.write_text(json.dumps(canais, ensure_ascii=False, indent=1), encoding="utf-8")
+        subprocess.run([sys.executable, "-I", str(AQUI / "producao" / "roteiros_site.py")], capture_output=True, cwd=AQUI, timeout=120)
+        subprocess.run([sys.executable, "-I", str(AQUI / "producao" / "meus_canais.py")], capture_output=True, cwd=AQUI, timeout=900)
+        gh("issue", "comment", str(p["number"]), "--body", f"✅ Canal ligado ao projeto {alvo['id']}. Ele é medido a cada 3 h na aba Meus canais.")
+        gh("issue", "close", str(p["number"]))
+        log(f"Canal ligado: {alvo['id']} → {link.group(1)}")
+
+
+def ler_prints():
+    """Prints novos do YouTube Studio na pasta privada prints-studio/<canal>/: o Claude lê e grava os números."""
+    sys.path.insert(0, str(AQUI / "producao"))
+    import studio
+    novos = studio.pendentes()
+    if not novos:
+        return
+    claude = achar_claude()
+    if not claude:
+        return
+    lista = "\n".join(f"- {f} (canal: {f.parent.name})" for f in novos)
+    instr = ("Leia o CONTEXTO.md. Prints NOVOS do YouTube Studio do dono (pasta privada; NÃO copie as imagens para o git):\n" + lista +
+             "\n\nPara cada imagem: abra com o Read e grave SÓ os números que aparecem no print com "
+             "`python -I producao/studio.py adicionar <canal> '<json>'` (formato no topo de producao/studio.py; data = data do arquivo "
+             "ou a que aparece no print). Em 'leitura', 2–3 frases: dado primeiro, depois o que fazer (marcado como hipótese). "
+             "Se a retenção ou os cliques mostrarem um problema claro (ex.: queda forte nos primeiros 30 s), grave uma lição com "
+             "`python -I producao/licoes.py adicionar …`. No fim rode `python -I producao/meus_canais.py` e "
+             "`python -I producao/studio.py marcar <arquivos>`. Responda em 3 linhas com o resumo.")
+    log(f"prints do Studio: {len(novos)} novo(s)")
+    r = subprocess.run([claude, "-p", instr, "--permission-mode", "acceptEdits",
+                        "--allowedTools", "Read,Write,Edit,Glob,Grep,Bash(python:*),Bash(ls:*)"],
+                       capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=AQUI, timeout=30 * 60)
+    log(f"prints: {(r.stdout or r.stderr or '').strip()[-300:]}")
+
+
 def atualizar_esteira():
     """Refaz docs/esteira.json (aba Produção) e publica se mudou."""
     try:
         subprocess.run([sys.executable, "-I", str(AQUI / "producao" / "esteira.py")], capture_output=True, cwd=AQUI, timeout=120)
         subprocess.run([sys.executable, "-I", str(AQUI / "producao" / "licoes.py"), "site"], capture_output=True, cwd=AQUI, timeout=60)
-        # desempenho dos nossos vídeos: no máximo a cada 3 h
+        novos_canais()
+        # desempenho dos nossos vídeos e canais: no máximo a cada 3 h
         marca = ESTADO / "desempenho.ultima"
         if not marca.exists() or time.time() - marca.stat().st_mtime > 3 * 3600:
             subprocess.run([sys.executable, "-I", str(AQUI / "producao" / "desempenho.py"), "medir"], capture_output=True, cwd=AQUI, timeout=600)
+            subprocess.run([sys.executable, "-I", str(AQUI / "producao" / "meus_canais.py")], capture_output=True, cwd=AQUI, timeout=900)
             marca.write_text(str(time.time()))
-        mud = subprocess.run(["git", "status", "--porcelain", "docs/esteira.json", "docs/licoes.json", "docs/desempenho.json"], capture_output=True, text=True, cwd=AQUI).stdout.strip()
+        ler_prints()
+        arqs = ["docs/esteira.json", "docs/licoes.json", "docs/desempenho.json", "docs/meus-canais.json", "producao/studio.json", "producao/canais.json", "docs/canais.json"]
+        mud = subprocess.run(["git", "status", "--porcelain", *arqs], capture_output=True, text=True, cwd=AQUI).stdout.strip()
         if mud:
-            subprocess.run(["git", "add", "docs/esteira.json", "docs/licoes.json", "docs/desempenho.json"], cwd=AQUI)
+            subprocess.run(["git", "add", *[a for a in arqs if (AQUI / a).exists()]], cwd=AQUI)
             subprocess.run(["git", "commit", "-qm", "Esteira atualizada"], cwd=AQUI)
             subprocess.run(["git", "pull", "-q", "--rebase"], cwd=AQUI)
             subprocess.run(["git", "push", "-q"], cwd=AQUI)

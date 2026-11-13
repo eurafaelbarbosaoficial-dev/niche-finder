@@ -204,3 +204,13 @@ Pasta `producao/`. Aba **Produção** no site (`docs/producao.html`).
 - **Pautas semanais** (`producao/semanal.py`, `semanal.bat`): coleta + medida + matriz de validação (Raj 25, nota do
   Claude marcada como opinião) + árvore editorial + calendário. A tarefa do Windows precisa ser criada pelo dono:
   `powershell -ExecutionPolicy Bypass -File producao\agendar-semanal.ps1` (o instalar.ps1 já cria em máquina nova).
+
+## Aba "Meus canais" (pedido do dono em 13/11)
+- `docs/meus-canais.html` + `producao/meus_canais.py`: cada canal de `producao/canais.json` com o campo `youtube` é medido
+  a cada 3 h pela API (inscritos, views, vídeos; por vídeo: views, +24 h, curtidas, comentários e os últimos comentários,
+  sem o nome do autor). Histórico em `estado/meus-canais.json`.
+- Ligar o link do canal: botão "Adicionar link do canal" → issue com rótulo `meu-canal` → o vigia grava o link.
+- **Prints do YouTube Studio** (retenção, cliques na thumb, origem do público): o repositório é PÚBLICO, então os prints
+  vão para a pasta PRIVADA `prints-studio/<id-do-canal>/` (fora do git). O vigia acha prints novos, o Claude lê cada
+  imagem e grava só os números que aparecem (`producao/studio.py adicionar`) em `producao/studio.json`; problemas claros
+  viram lição. O site avisa quando o último print tem 2 dias ou mais. O dono também pode mandar os prints na conversa.

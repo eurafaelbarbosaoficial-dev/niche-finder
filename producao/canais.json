@@ -8,7 +8,17 @@
   "molde": "alle {X} erklärt",
   "origem": "Every Money Laundering Technique Explained (Econ in a Nutshell, 1,1 mi)",
   "referencia": "econ-in-a-nutshell",
-  "estruturas": ["lavagem-de-dinheiro-de", "estrutura-iceberg", "estrutura-documentario", "estrutura-ascensao-queda", "estrutura-passo-a-passo"],
-  "adaptacoes": ["adaptacao-de-lavagem", "adaptacao-de-bankskandale"]
+  "estruturas": [
+   "lavagem-de-dinheiro-de",
+   "estrutura-iceberg",
+   "estrutura-documentario",
+   "estrutura-ascensao-queda",
+   "estrutura-passo-a-passo"
+  ],
+  "adaptacoes": [
+   "adaptacao-de-lavagem",
+   "adaptacao-de-bankskandale"
+  ],
+  "youtube": null
  }
 ]

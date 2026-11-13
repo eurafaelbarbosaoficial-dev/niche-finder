@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Niche Finder — Meus canais</title>
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="estilo.css?v=5">
+<style>
+.wrap{max-width:1400px}
+.topo2{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.topo2 h1{margin:8px 0 0;font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-.03em}
+.topo2 p{margin:6px 0 0;color:var(--mut);max-width:70ch}
+.ch{margin-top:26px;background:var(--card);border:1px solid var(--ln);border-radius:20px;box-shadow:var(--sh);overflow:hidden}
+.ch-h{display:flex;gap:16px;align-items:center;padding:20px 22px;flex-wrap:wrap}
+.ch-h img,.ch-h .av{width:72px;height:72px;border-radius:50%;flex:none;object-fit:cover}
+.ch-h .av{display:grid;place-items:center;color:#fff;font-size:26px;font-weight:700}
+.ch-h h2{margin:0;font-size:24px;font-weight:700;letter-spacing:-.02em} .ch-h .sub2{color:var(--mut);font-size:14px;margin-top:2px}
+.ch-h .acoes{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+.kp{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;padding:0 22px 18px}
+.kp div{background:var(--in);border-radius:14px;padding:12px 14px} .kp small{display:block;color:var(--mut);font-size:12.5px}
+.kp b{display:block;font-size:24px;font-weight:700;letter-spacing:-.02em;margin-top:2px} .kp em{font-style:normal;font-size:13px;color:var(--up);font-weight:500}
+.aviso{margin:0 22px 18px;border-radius:12px;padding:10px 14px;font-size:14px;background:var(--in)} .aviso.atr{background:rgba(255,0,51,.07);color:var(--lm)}
+.sec3{padding:4px 22px 22px} .sec3 h3{margin:10px 0 12px;font-size:18px;font-weight:700} .sec3 h3 span{font-size:13px;color:var(--mut);font-weight:400;margin-left:6px}
+.vg{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:22px 16px}
+.vv .th{display:block;position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:var(--s2)} .vv .th img{width:100%;height:100%;object-fit:cover;display:block}
+.vv .du{position:absolute;right:8px;bottom:8px;background:rgba(0,0,0,.82);color:#fff;font-size:12px;padding:2px 5px;border-radius:4px}
+.vv h4{margin:10px 0 4px;font-size:15px;font-weight:500;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vv .mt{font-size:13.5px;color:var(--mut)} .vv .st3{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.vv .st3 span{font-size:12.5px;background:var(--s2);border-radius:6px;padding:3px 8px;font-weight:500} .vv .st3 .g{color:var(--up)}
+.vv details{margin-top:8px} .vv summary{cursor:pointer;font-size:13px;color:var(--az);font-weight:500}
+.cm{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:6px;max-height:260px;overflow:auto}
+.cm li{background:var(--in);border-radius:10px;padding:8px 10px;font-size:13.5px} .cm small{display:block;color:var(--mut);font-size:12px;margin-top:2px}
+.sd{display:flex;flex-direction:column;gap:10px}
+.sd .it{border:1px solid var(--ln);border-radius:14px;padding:12px 14px}
+.sd .it .hh{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13.5px;color:var(--mut)} .sd .it .hh b{color:var(--tx);font-weight:500}
+.sd .mm{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px} .sd .mm span{font-size:12.5px;background:var(--in);border-radius:6px;padding:3px 9px} .sd .mm b{font-weight:700}
+.sd p{margin:8px 0 0;font-size:14px;color:var(--tx2)}
+.modal{position:fixed;inset:0;background:var(--veu);display:none;align-items:center;justify-content:center;z-index:90;padding:16px}
+.modal.on{display:flex} .modal .bx{background:var(--card);border-radius:18px;max-width:620px;width:100%;padding:22px;box-shadow:var(--sh2)}
+.modal h3{margin:0 0 10px} .modal ol{padding-left:20px;line-height:1.6} .modal code{background:var(--in);padding:2px 6px;border-radius:6px;font-size:13px;word-break:break-all}
+.vazio2{padding:30px 22px;color:var(--mut)}
+@media(max-width:700px){.kp{grid-template-columns:1fr 1fr}.ch-h .acoes{margin-left:0}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="mk" href="index.html"><b>NF</b><span>Niche Finder</span></a>
+  <div class="tabs"><a href="index.html">Canais</a><a href="validador.html">Validador</a><a href="roteiro.html">Roteiro</a><a href="producao.html">Produção</a><a class="on" href="meus-canais.html">Meus canais</a></div>
+</nav>
+<main class="wrap">
+  <section class="topo2 rv">
+    <div><span class="eyebrow" id="atual">…</span><h1>Meus canais</h1>
+      <p>Os nossos canais, medidos sozinhos a cada 3 horas pela API do YouTube: inscritos, views, curtidas e comentários de cada vídeo. Retenção e cliques na thumb vêm dos prints do YouTube Studio que você manda a cada 48 h.</p></div>
+    <button class="btn pri" id="novo">+ Adicionar canal</button>
+  </section>
+  <div id="lista"><div class="vazio2">Carregando…</div></div>
+</main>
+<div class="modal" id="modal"><div class="bx">
+  <h3>Como mandar os prints do YouTube Studio</h3>
+  <p class="mut" style="margin:0 0 8px">Os prints ficam numa pasta <b>privada</b> do seu notebook (o site é público; as imagens não vão para a internet).</p>
+  <ol>
+    <li>No YouTube Studio, tire o print (<b>Windows + Shift + S</b>) de:
+      <br>• Visão geral do canal · • de cada vídeo: <b>Alcance</b> (impressões e taxa de cliques) e <b>Engajamento</b> (retenção e duração média).</li>
+    <li>Cole no Paint e salve (PNG) na pasta:<br><code id="pasta"></code></li>
+    <li>Em até 10 minutos o sistema lê os prints e os números aparecem aqui. Repita a cada 48 h.</li>
+  </ol>
+  <p class="mut" style="font-size:13px">Também pode mandar os prints direto na conversa com o Claude.</p>
+  <button class="btn" id="fecha">Fechar</button></div></div>
+<script src="ui.js?v=5"></script>
+<script>
+(function(){
+var REPO="https://github.com/eurafaelbarbosaoficial-dev/niche-finder";
+var LG={de:"Alemão",es:"Espanhol",pt:"Português",en:"Inglês",fr:"Francês"};
+function $(i){return document.getElementById(i);}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+function fn(n){if(n==null)return"—";if(n>=1e6)return(n/1e6).toFixed(1).replace(".",",")+" mi";if(n>=1e3)return(n/1e3).toFixed(1).replace(".",",")+" mil";return String(n);}
+function ha(iso){if(!iso)return"?";var m=Math.round((Date.now()-new Date(iso).getTime())/6e4);if(m<60)return"há "+m+" min";var h=Math.round(m/60);if(h<48)return"há "+h+" h";return"há "+Math.round(h/24)+" dias";}
+function cor(t){var h=0;for(var i=0;i<(t||"").length;i++)h=(h*31+t.charCodeAt(i))%360;return"hsl("+h+" 55% 42%)";}
+function pedirLink(id,nome){var corpo="Projeto: "+id+"\n\nLink do canal no YouTube (ex.: https://www.youtube.com/@NomeDoCanal):\n\n";
+  window.open(REPO+"/issues/new?labels=meu-canal&title="+encodeURIComponent("Canal: "+nome)+"&body="+encodeURIComponent(corpo),"_blank","noopener");}
+function studio(s){if(!s||!s.length)return"<p class='mut' style='margin:0'>Nenhum print ainda.</p>";
+  return"<div class='sd'>"+s.slice().reverse().slice(0,12).map(function(x){var m=x.metricas||{},o=m.origens||{};
+    var ch=[["cliques na thumb",m.ctr_pct!=null?m.ctr_pct+"%":null],["impressões",m.impressoes!=null?fn(m.impressoes):null],["retenção média",m.retencao_media_pct!=null?m.retencao_media_pct+"%":null],
+      ["duração média",m.duracao_media],["views",m.views!=null?fn(m.views):null],["horas assistidas",m.horas_assistidas],["inscritos ganhos",m.inscritos_ganhos]].filter(function(k){return k[1]!=null&&k[1]!=="";});
+    return"<div class='it'><div class='hh'><span><b>"+esc(x.video||"canal")+"</b> · "+esc(x.periodo||"")+"</span><span>"+esc(x.data||"")+"</span></div>"+
+      "<div class='mm'>"+ch.map(function(k){return"<span>"+k[0]+": <b>"+esc(k[1])+"</b></span>";}).join("")+Object.keys(o).map(function(k){return"<span>"+esc(k)+": <b>"+esc(o[k])+"%</b></span>";}).join("")+"</div>"+
+      ((m.quedas||[]).length?"<p>Quedas: "+esc(m.quedas.join(" · "))+"</p>":"")+(x.leitura?"<p>"+esc(x.leitura)+"</p>":"")+"</div>";}).join("")+"</div>";}
+function canal(c){
+  var s=c.studio||[],ult=s.length?s[s.length-1].data:null,dias=ult?Math.floor((Date.now()-new Date(ult+"T12:00:00").getTime())/864e5):null;
+  var av=c.foto?"<img src='"+esc(c.foto)+"' alt=''>":"<span class='av' style='background:"+cor(c.nome)+"'>"+esc((c.nome||"?")[0])+"</span>";
+  var h="<section class='ch rv'><div class='ch-h'>"+av+"<div><h2>"+esc(c.nome_youtube||c.nome)+"</h2><div class='sub2'>"+esc(LG[c.idioma]||c.idioma||"")+" · projeto "+esc(c.id)+(c.atualizado?" · medido "+ha(c.atualizado):"")+"</div></div>"+
+    "<div class='acoes'>"+(c.youtube?"<a class='btn' href='"+esc(/^http/.test(c.youtube)?c.youtube:"https://www.youtube.com/"+c.youtube)+"' target='_blank' rel='noopener'>Abrir no YouTube ↗</a>":"")+
+    "<button class='btn' data-link='"+esc(c.id)+"' data-nome='"+esc(c.nome)+"'>"+(c.youtube?"Trocar link":"Adicionar link do canal")+"</button><button class='btn pri' data-print='1'>Enviar print do Studio</button></div></div>";
+  if(c.sem_link)return h+"<div class='vazio2'>Este canal ainda não tem o link do YouTube. Clique em <b>Adicionar link do canal</b>: o sistema passa a medir a cada 3 h.</div>"+
+    "<div class='sec3'><h3>YouTube Studio <span>números dos prints</span></h3>"+studio(s)+"</div></section>";
+  if(c.erro)return h+"<div class='aviso atr'>Não consegui medir: "+esc(c.erro)+"</div></section>";
+  h+="<div class='kp'><div><small>Inscritos</small><b>"+fn(c.inscritos)+"</b>"+(c.inscritos_24h?"<em>+"+fn(c.inscritos_24h)+" em 24 h</em>":"")+"</div>"+
+    "<div><small>Views totais</small><b>"+fn(c.views)+"</b>"+(c.views_24h?"<em>+"+fn(c.views_24h)+" em 24 h</em>":"")+"</div>"+
+    "<div><small>Vídeos</small><b>"+fn(c.n_videos)+"</b></div><div><small>Último print do Studio</small><b>"+(ult?esc(ult.slice(8,10)+"/"+ult.slice(5,7)):"—")+"</b></div></div>";
+  h+=(dias==null||dias>=2)?"<div class='aviso atr'>"+(dias==null?"Ainda sem print do YouTube Studio.":"Último print há "+dias+" dias.")+" Mande os prints de retenção e cliques (a cada 48 h).</div>":"";
+  var vs=(c.videos||[]).slice().sort(function(a,b){return b.postado<a.postado?-1:1;});
+  h+="<div class='sec3'><h3>Vídeos <span>"+vs.length+" · números públicos</span></h3><div class='vg'>"+(vs.map(function(v){var cms=v.ultimos_comentarios||[];
+    return"<div class='vv'><a class='th' href='https://youtu.be/"+esc(v.id)+"' target='_blank' rel='noopener'><img loading='lazy' src='https://i.ytimg.com/vi/"+esc(v.id)+"/mqdefault.jpg' alt=''>"+(v.dur?"<span class='du'>"+Math.floor(v.dur/60)+":"+String(v.dur%60).padStart(2,"0")+"</span>":"")+"</a>"+
+      "<h4>"+esc(v.titulo)+"</h4><div class='mt'>postado "+ha(v.postado)+"</div><div class='st3'><span>▶ "+fn(v.views)+"</span>"+(v.views_24h?"<span class='g'>+"+fn(v.views_24h)+" em 24 h</span>":"")+
+      "<span>👍 "+fn(v.curtidas)+"</span><span>💬 "+fn(v.comentarios)+"</span></div>"+
+      (cms.length?"<details><summary>Ver "+cms.length+" comentários recentes</summary><ul class='cm'>"+cms.map(function(k){return"<li>"+esc(k.texto)+"<small>"+ha(k.quando)+(k.curtidas?" · 👍 "+k.curtidas:"")+"</small></li>";}).join("")+"</ul></details>":"")+"</div>";}).join("")||"<p class='mut'>Nenhum vídeo publicado ainda.</p>")+"</div></div>";
+  h+="<div class='sec3'><h3>YouTube Studio <span>números dos prints (retenção, cliques, origem do público)</span></h3>"+studio(s)+"</div></section>";
+  return h;}
+function carregar(){fetch((new URLSearchParams(location.search).get("dados")||"meus-canais")+".json?t="+Date.now()).then(function(r){return r.ok?r.json():{canais:[]};}).catch(function(){return{canais:[]};}).then(function(d){
+  $("atual").textContent=d.atualizado?"● medido "+ha(d.atualizado):"● aguardando a 1ª medição";
+  $("lista").innerHTML=(d.canais||[]).map(canal).join("")||"<div class='vazio2'>Nenhum canal cadastrado.</div>";
+  [].forEach.call(document.querySelectorAll("[data-link]"),function(b){b.onclick=function(){pedirLink(b.dataset.link,b.dataset.nome);};});
+  [].forEach.call(document.querySelectorAll("[data-print]"),function(b){b.onclick=function(){$("modal").classList.add("on");};});
+  UI.revelar(document.querySelectorAll(".rv"));});}
+$("pasta").textContent="C:\\Users\\Vaio\\Documents\\Niche Finder\\prints-studio\\<id do canal>\\";
+$("fecha").onclick=function(){$("modal").classList.remove("on");};$("modal").onclick=function(e){if(e.target===this)this.classList.remove("on");};
+$("novo").onclick=function(){alert("Para um canal NOVO: primeiro ele precisa existir como projeto (validador + pautas). Peça ao Claude para criar o projeto do canal; depois use 'Adicionar link do canal' no cartão dele.");};
+UI.pilula(document.querySelector(".tabs"));carregar();setInterval(carregar,300000);
+})();
+</script>
+</body>
+</html>
