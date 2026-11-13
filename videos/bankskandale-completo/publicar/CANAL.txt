@@ -1,0 +1,22 @@
+CANAL — dados para criar (13/11/2026)
+
+NOME: Geld im Dunkeln        (@GeldImDunkeln — o @ estava livre em 13/11; nenhum canal com esse nome na busca)
+  Reservas (também livres em 13/11): Schwarzgeld-Akte (@SchwarzgeldAkte) · Das Geldnetz (@DasGeldNetz)
+  Evitar: "Der Gelddetektiv", "Finanzkrimi", "Geldakte", "Geldspur" (já existem canais com esses nomes)
+
+DESCRIÇÃO (4 palavras): Geldwäsche und Bankenskandale erklärt.
+
+FOTO DE PERFIL: perfil.png (1080x1080; o YouTube corta em círculo)
+BANNER: banner.png (2560x1440; logo + "ABONNIEREN" dentro da área segura do celular)
+THUMB DO VÍDEO: thumbnail.jpg (a antiga ficou em thumbnail-antiga.jpg)
+
+TAGS: o canal modelado (Econ in a Nutshell) usa muitas tags em CADA VÍDEO (ex.: 'money laundering',
+  'money laundering explained', 'HSBC cartel'...). As do nosso vídeo estão em TAGS.txt.
+  Palavras-chave do canal (Configurações > Canal), sugestão: Geldwäsche, Bankenskandal, Deutsche Bank,
+  Wirtschaftskriminalität, Finanzen erklärt
+
+HORÁRIO: agendar para sábado 14/11, 17:00 na Alemanha (= 13:00 em Brasília).
+  Base: não existe horário comprovado — os estudos se contradizem e o canal modelado posta em horários
+  aleatórios (14:48, 03:41, 19:43, 16:27, 07:25 de Berlim nos 5 vídeos medidos). 17:00 de sábado fica dentro
+  da faixa citada para fim de semana e antes do pico da noite. Depois de 4–5 vídeos, usar o horário que o
+  YouTube Studio mostra em "Quando seus espectadores estão no YouTube".
