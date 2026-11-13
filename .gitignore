@@ -17,3 +17,4 @@ videos/*/.hyperframes/
 videos/*/renders/*.mp4
 videos/*/renders/*-revisao/quadros/
 videos/*/node_modules/
+videos/*/.thumbnails/
