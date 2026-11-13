@@ -41,12 +41,12 @@ if (Test-Path "$estudos\setup\instalar.ps1") {
 
 if ($SemTarefa) { Write-Host "4/4 Tarefa do Windows: pulada (-SemTarefa)."; exit 0 }
 Write-Host "4/4 Tarefa do Windows 'Niche Finder' (a cada $Horas horas)..."
-$acao = New-ScheduledTaskAction -Execute "cmd.exe" -Argument "/c `"$pasta\rodar.bat`"" -WorkingDirectory $pasta
+$acao = New-ScheduledTaskAction -Execute "wscript.exe" -Argument "`"$pasta\oculto.vbs`" rodar.bat" -WorkingDirectory $pasta
 $gatilho = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes($InicioMin) -RepetitionInterval (New-TimeSpan -Hours $Horas)
 $config = New-ScheduledTaskSettingsSet -StartWhenAvailable -MultipleInstances IgnoreNew -ExecutionTimeLimit (New-TimeSpan -Hours 6) -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
 Register-ScheduledTask -TaskName "Niche Finder" -Action $acao -Trigger $gatilho -Settings $config -Description "Busca canais novos no YouTube e publica o site" -Force | Out-Null
 Write-Host "   + Tarefa 'Niche Finder - Roteiros' (vigia dos pedidos de roteiro, a cada 10 min)..."
-$acao2 = New-ScheduledTaskAction -Execute "cmd.exe" -Argument "/c `"$pasta\vigia.bat`"" -WorkingDirectory $pasta
+$acao2 = New-ScheduledTaskAction -Execute "wscript.exe" -Argument "`"$pasta\oculto.vbs`" vigia.bat" -WorkingDirectory $pasta
 $gatilho2 = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes($InicioMin) -RepetitionInterval (New-TimeSpan -Minutes 10)
 $config2 = New-ScheduledTaskSettingsSet -StartWhenAvailable -MultipleInstances IgnoreNew -ExecutionTimeLimit (New-TimeSpan -Hours 2) -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
 Register-ScheduledTask -TaskName "Niche Finder - Roteiros" -Action $acao2 -Trigger $gatilho2 -Settings $config2 -Description "Escreve roteiros pedidos pelo botao do site" -Force | Out-Null
