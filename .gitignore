@@ -32,3 +32,6 @@ videos/**/publicar/*.mp4
 
 referencias/*/_videos/
 referencias/*/_tmp_grade/
+
+videos/*/thumbs/.hyperframes/
+videos/*/thumbs/assets/

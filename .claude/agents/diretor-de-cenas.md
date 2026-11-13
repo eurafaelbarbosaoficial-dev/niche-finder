@@ -44,7 +44,7 @@ python -I producao/produzir.py rodar <pasta> fotos
    - "⚠ cena longa": divida a cena;
    - "⚠ X s sem novidade": acrescente um passo ou uma cena;
    - o ritmo planejado × o alvo: a cena média tem de ficar a ±20% do alvo.
-2. Abra **todas** as fotos (`kN/fotos/*.jpg`) com o Read e corrija:
+2. O `fotos` imprime o caminho da folha de contato (contact-sheet) de cada capítulo: abra **todas** com o Read e corrija:
    - texto em cima de texto, de ícone ou do detetive;
    - texto cortado ou fora da margem;
    - palavra errada ou com acento errado.

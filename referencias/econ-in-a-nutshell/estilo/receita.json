@@ -1,0 +1,174 @@
+{
+ "fonte": "https://www.youtube.com/watch?v=XgIo6SrSxS4",
+ "duracao": 671.0,
+ "ritmo": {
+  "video": "C:\\Users\\Vaio\\Documents\\Niche Finder\\referencias\\econ-in-a-nutshell\\_videos\\video.mp4",
+  "fps": 30.0,
+  "inicio": 0,
+  "duracao": 671.3,
+  "cenas_total": 173,
+  "trocas_por_min": 15.37,
+  "duracao_cena": {
+   "media": 3.88,
+   "mediana": 3.7,
+   "desvio": 1.75,
+   "cv": 0.45,
+   "p10": 2.0,
+   "p25": 2.67,
+   "p75": 4.87,
+   "p90": 6.09,
+   "min": 0.73,
+   "max": 9.67
+  },
+  "histograma": {
+   "0–1 s": 3,
+   "1–2 s": 14,
+   "2–3 s": 42,
+   "3–4 s": 44,
+   "4–5 s": 32,
+   "5–7 s": 28,
+   "7–10 s": 10,
+   "10–15 s": 0,
+   "15–30 s": 0,
+   "30–+ s": 0
+  },
+  "transicoes": {
+   "corte seco": {
+    "n": 167,
+    "fracao": 0.971,
+    "quadros_medio": 1
+   },
+   "transição em movimento": {
+    "n": 5,
+    "fracao": 0.029,
+    "quadros_medio": 40.4
+   }
+  },
+  "movimentos_de_camera": 163,
+  "elementos_entrando": 0,
+  "tendencia_seg_por_min": 0.023,
+  "curva_trocas_por_30s": [
+   7,
+   10,
+   8,
+   8,
+   8,
+   10,
+   7,
+   8,
+   7,
+   7,
+   8,
+   6,
+   7,
+   7,
+   8,
+   5,
+   6,
+   9,
+   7,
+   10,
+   9,
+   9,
+   1
+  ]
+ },
+ "trechos": {
+  "gancho": {
+   "pasta": "C:\\Users\\Vaio\\Documents\\estudos-de-mercado\\estudos\\econ_in_a_nutshell\\videos\\20261028_xgio6srsxs4\\lupa_0m00_3m00",
+   "duracao": 180.0,
+   "cortes_por_min": 16.0,
+   "plano": {
+    "medio": 3.67,
+    "p25": 2.52,
+    "mediana": 3.3,
+    "p75": 4.6,
+    "maior": 7.7
+   },
+   "transicoes": {
+    "corte seco": 1.0
+   },
+   "efeitos_camera_por_min": 0.0,
+   "efeitos_camera": {},
+   "camera_tempo": {
+    "leve": 0.11,
+    "parada": 0.88,
+    "afastando": 0.0
+   },
+   "sons_por_min": 31.7,
+   "sons": {
+    "médio (pop, plim, batida)": 41,
+    "agudo (whoosh, chiado, estalo)": 54
+   },
+   "cortes_com_som": 0.0,
+   "musica": {
+    "bpm": 68.18181818181819,
+    "confianca": 0.0
+   }
+  },
+  "meio": {
+   "pasta": "C:\\Users\\Vaio\\Documents\\estudos-de-mercado\\estudos\\econ_in_a_nutshell\\videos\\20261028_xgio6srsxs4\\lupa_4m06_7m06",
+   "duracao": 180.0,
+   "cortes_por_min": 14.3,
+   "plano": {
+    "medio": 4.09,
+    "p25": 3.04,
+    "mediana": 4.0,
+    "p75": 5.08,
+    "maior": 8.3
+   },
+   "transicoes": {
+    "corte seco": 0.95,
+    "corte com borrão": 0.05
+   },
+   "efeitos_camera_por_min": 0.0,
+   "efeitos_camera": {},
+   "camera_tempo": {
+    "parada": 0.92,
+    "leve": 0.08
+   },
+   "sons_por_min": 32.0,
+   "sons": {
+    "médio (pop, plim, batida)": 57,
+    "agudo (whoosh, chiado, estalo)": 39
+   },
+   "cortes_com_som": 0.0,
+   "musica": {
+    "bpm": 68.18181818181819,
+    "confianca": 0.0
+   }
+  },
+  "final": {
+   "pasta": "C:\\Users\\Vaio\\Documents\\estudos-de-mercado\\estudos\\econ_in_a_nutshell\\videos\\20261028_xgio6srsxs4\\lupa_8m11_11m11",
+   "duracao": 180.0,
+   "cortes_por_min": 15.7,
+   "plano": {
+    "medio": 3.75,
+    "p25": 2.35,
+    "mediana": 3.52,
+    "p75": 4.89,
+    "maior": 9.0
+   },
+   "transicoes": {
+    "corte seco": 1.0
+   },
+   "efeitos_camera_por_min": 0.0,
+   "efeitos_camera": {},
+   "camera_tempo": {
+    "parada": 0.84,
+    "panorâmica": 0.0,
+    "leve": 0.16
+   },
+   "sons_por_min": 34.0,
+   "sons": {
+    "agudo (whoosh, chiado, estalo)": 42,
+    "médio (pop, plim, batida)": 60
+   },
+   "cortes_com_som": 0.04,
+   "musica": {
+    "bpm": 170.45454545454547,
+    "confianca": 0.01
+   }
+  }
+ }
+}
