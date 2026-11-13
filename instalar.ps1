@@ -51,5 +51,6 @@ $gatilho2 = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes($InicioMin)
 $config2 = New-ScheduledTaskSettingsSet -StartWhenAvailable -MultipleInstances IgnoreNew -ExecutionTimeLimit (New-TimeSpan -Hours 2) -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
 Register-ScheduledTask -TaskName "Niche Finder - Roteiros" -Action $acao2 -Trigger $gatilho2 -Settings $config2 -Description "Escreve roteiros pedidos pelo botao do site" -Force | Out-Null
 & (Join-Path $pasta "producao\agendar-semanal.ps1")
+& (Join-Path $pasta "producao\agendar-backup.ps1")
 Write-Host "Pronto. A primeira busca comeca em $InicioMin minutos." -ForegroundColor Green
 Write-Host "Para o botao 'Fazer roteiro' funcionar: abra um terminal, rode 'claude' e faca /login uma vez." -ForegroundColor Yellow

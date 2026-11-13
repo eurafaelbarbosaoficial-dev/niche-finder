@@ -81,7 +81,7 @@ O dono pede ("quero usar o Niche Finder nesta máquina nova") e o Claude faz, gu
    API do YouTube, prints do Studio, histórico dos canais e o vídeo final. O dono guarda no Drive/pendrive; na máquina nova,
    descompactar DENTRO de `Documents\Niche Finder`. Sem o zip: criar outra chave no Google Cloud (projeto "Niche Finder").
 5d. Tarefas do Windows: o `instalar.ps1` cria "Niche Finder" (busca), "Niche Finder - Roteiros" (vigia) e
-   "Niche Finder - Pautas semanais". O Claude Code de linha de comando precisa de login uma vez (`claude`, /login).
+   "Niche Finder - Pautas semanais" e "Niche Finder - Backup" (segunda 4h: producao/backup.py → GitHub privado + zip local). O Claude Code de linha de comando precisa de login uma vez (`claude`, /login).
 6. Na máquina antiga: apagar a tarefa "Niche Finder" (`Unregister-ScheduledTask -TaskName "Niche Finder" -Confirm:$false`),
    pelo Claude de lá ou pelo Agendador de Tarefas. Só uma máquina busca por vez.
 

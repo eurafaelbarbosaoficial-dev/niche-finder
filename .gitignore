@@ -45,3 +45,4 @@ prints-studio/
 estado/prints-processados.json
 estado/meus-canais.json
 videos/*/thumbs/
+estado/backup.txt
