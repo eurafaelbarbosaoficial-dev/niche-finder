@@ -6,7 +6,7 @@ NOME: Geld im Dunkeln        (@GeldImDunkeln — o @ estava livre em 13/11; nenh
 
 DESCRIÇÃO (4 palavras): Geldwäsche und Bankenskandale erklärt.
 
-FOTO DE PERFIL: perfil.png (olhando para frente) ou perfil2.png (lupa no olho) — 1080x1080, fundo azul-noite do canal
+FOTO DE PERFIL: perfil.png (lupa no olho, escolhida pelo dono em 13/11) — 1080x1080, fundo azul-noite do canal
 BANNER: banner.png (2560x1440; mesmo fundo da logo, só "ABONNIEREN" no centro)
 THUMB DO VÍDEO: thumbnail.jpg (a antiga ficou em thumbnail-antiga.jpg)
 
