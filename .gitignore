@@ -11,3 +11,9 @@ estado/ultima_busca.json
 estado/rodando.lock
 estado/vigia.txt
 estado/vigia.lock
+
+# Videos: o codigo vai para o GitHub; MP4 e quadros de previa sao gerados de novo
+videos/*/.hyperframes/
+videos/*/renders/*.mp4
+videos/*/renders/*-revisao/quadros/
+videos/*/node_modules/

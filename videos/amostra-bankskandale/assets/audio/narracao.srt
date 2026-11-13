@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:01,828
+Donnerstag, 29.
+
+2
+00:00:01,828 --> 00:00:03,269
+November 2018.
+
+3
+00:00:03,269 --> 00:00:05,351
+Frankfurt am Main.
+
+4
+00:00:05,351 --> 00:00:08,305
+170 Beamte von Staatsanwaltschaft, BKA,
+
+5
+00:00:08,305 --> 00:00:12,776
+Steuerfahndung und Bundespolizei durchsuchen sechs Gebäude.
+
+6
+00:00:12,776 --> 00:00:16,946
+Eines davon: die Zentrale der Deutschen Bank.
+
+7
+00:00:16,946 --> 00:00:19,273
+Die meisten denken bei Geldwäsche an Dönerläden,
+
+8
+00:00:19,273 --> 00:00:22,546
+Shisha-Bars und Koffer voller Bargeld.
+
+9
+00:00:22,546 --> 00:00:27,734
+Aber am Ende landet jeder schmutzige Euro an demselben Ort: auf einem Bankkonto.

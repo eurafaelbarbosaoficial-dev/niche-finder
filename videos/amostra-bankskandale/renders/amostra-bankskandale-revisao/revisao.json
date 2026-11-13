@@ -1,0 +1,671 @@
+{
+ "video": "videos/amostra-bankskandale/renders/amostra-bankskandale.mp4",
+ "achados": [
+  {
+   "gravidade": "medio",
+   "tempo": 0,
+   "area": "audio",
+   "msg": "Volume geral -18.8 LUFS, fora da faixa -16.0 a -12.0 (o YouTube normaliza perto de -14)."
+  },
+  {
+   "gravidade": "medio",
+   "tempo": 5.05,
+   "area": "audio",
+   "msg": "Efeito sfx-whoosh-1 (whoosh.mp3) chega a +5.9 LU da fala típica (limite +3): mais alto que a narração. Baixar o data-volume para ~0.32."
+  },
+  {
+   "gravidade": "medio",
+   "tempo": 12.5,
+   "area": "audio",
+   "msg": "Efeito sfx-whoosh-2 (whoosh.mp3) chega a +4.9 LU da fala típica (limite +3): mais alto que a narração. Baixar o data-volume para ~0.32."
+  },
+  {
+   "gravidade": "medio",
+   "tempo": 16.75,
+   "area": "audio",
+   "msg": "Efeito sfx-whoosh-3 (whoosh.mp3) chega a +3.8 LU da fala típica (limite +3): mais alto que a narração. Baixar o data-volume para ~0.32."
+  },
+  {
+   "gravidade": "baixo",
+   "tempo": null,
+   "area": "layout",
+   "msg": "[layout] Canvas content touches the frame edge (bottom)."
+  },
+  {
+   "gravidade": "baixo",
+   "tempo": null,
+   "area": "layout",
+   "msg": "[layout] Canvas content touches the frame edge (bottom)."
+  },
+  {
+   "gravidade": "baixo",
+   "tempo": null,
+   "area": "layout",
+   "msg": "[layout] Canvas content touches the frame edge (bottom)."
+  }
+ ],
+ "tecnico": {
+  "duracao": 29.2,
+  "largura": 1920,
+  "altura": 1080,
+  "fps": 30.0,
+  "codec_video": "h264",
+  "tem_audio": true,
+  "codec_audio": "aac"
+ },
+ "mix": {
+  "I": -18.8,
+  "LRA": 4.3,
+  "pico_dbtp": -1.4,
+  "M_max": -12.7,
+  "M_mediana": -20.1,
+  "M_p90": -16.5
+ },
+ "camadas": [
+  {
+   "id": "vo",
+   "src": "assets/audio/narracao.mp3",
+   "tipo": "narracao",
+   "inicio": 0.0,
+   "duracao": 28.3,
+   "volume": 1.0,
+   "medida": {
+    "I": -22.5,
+    "LRA": 3.9,
+    "pico_dbtp": -1.4,
+    "M_max": -17.2,
+    "M_mediana": -23.3,
+    "M_p90": -20.3
+   }
+  },
+  {
+   "id": "sfx-sirene",
+   "src": "assets/sfx/sirene.mp3",
+   "tipo": "efeito",
+   "inicio": 0.15,
+   "duracao": 0.58,
+   "volume": 0.35,
+   "medida": {
+    "I": -24.4,
+    "LRA": 0.0,
+    "pico_dbtp": -11.2,
+    "M_max": -24.4,
+    "M_mediana": -24.4,
+    "M_p90": -24.4
+   },
+   "acima_da_fala_LU": -4.1
+  },
+  {
+   "id": "sfx-whoosh-1",
+   "src": "assets/sfx/whoosh.mp3",
+   "tipo": "efeito",
+   "inicio": 5.05,
+   "duracao": 1.2,
+   "volume": 0.45,
+   "medida": {
+    "I": -16.5,
+    "LRA": 0.0,
+    "pico_dbtp": -6.8,
+    "M_max": -14.4,
+    "M_mediana": -17.9,
+    "M_p90": -14.4
+   },
+   "acima_da_fala_LU": 5.9
+  },
+  {
+   "id": "sfx-pop-1",
+   "src": "assets/sfx/pop.mp3",
+   "tipo": "efeito",
+   "inicio": 8.3,
+   "duracao": 0.7,
+   "volume": 0.5,
+   "medida": {
+    "I": -27.3,
+    "LRA": 0.0,
+    "pico_dbtp": -9.2,
+    "M_max": -27.3,
+    "M_mediana": -27.3,
+    "M_p90": -27.3
+   },
+   "acima_da_fala_LU": -7.0
+  },
+  {
+   "id": "sfx-pop-2",
+   "src": "assets/sfx/pop.mp3",
+   "tipo": "efeito",
+   "inicio": 8.75,
+   "duracao": 0.7,
+   "volume": 0.42,
+   "medida": {
+    "I": -28.8,
+    "LRA": 0.0,
+    "pico_dbtp": -10.7,
+    "M_max": -28.8,
+    "M_mediana": -28.8,
+    "M_p90": -28.8
+   },
+   "acima_da_fala_LU": -8.5
+  },
+  {
+   "id": "sfx-pop-3",
+   "src": "assets/sfx/pop.mp3",
+   "tipo": "efeito",
+   "inicio": 9.2,
+   "duracao": 0.7,
+   "volume": 0.5,
+   "medida": {
+    "I": -27.3,
+    "LRA": 0.0,
+    "pico_dbtp": -9.2,
+    "M_max": -27.3,
+    "M_mediana": -27.3,
+    "M_p90": -27.3
+   },
+   "acima_da_fala_LU": -7.0
+  },
+  {
+   "id": "sfx-pop-4",
+   "src": "assets/sfx/pop.mp3",
+   "tipo": "efeito",
+   "inicio": 9.65,
+   "duracao": 0.7,
+   "volume": 0.42,
+   "medida": {
+    "I": -28.8,
+    "LRA": 0.0,
+    "pico_dbtp": -10.7,
+    "M_max": -28.8,
+    "M_mediana": -28.8,
+    "M_p90": -28.8
+   },
+   "acima_da_fala_LU": -8.5
+  },
+  {
+   "id": "sfx-whoosh-2",
+   "src": "assets/sfx/whoosh.mp3",
+   "tipo": "efeito",
+   "inicio": 12.5,
+   "duracao": 1.2,
+   "volume": 0.4,
+   "medida": {
+    "I": -17.6,
+    "LRA": 0.0,
+    "pico_dbtp": -7.8,
+    "M_max": -15.4,
+    "M_mediana": -18.9,
+    "M_p90": -15.4
+   },
+   "acima_da_fala_LU": 4.9
+  },
+  {
+   "id": "sfx-impacto-1",
+   "src": "assets/sfx/impacto.mp3",
+   "tipo": "efeito",
+   "inicio": 15.05,
+   "duracao": 2.0,
+   "volume": 0.7,
+   "medida": {
+    "I": -27.1,
+    "LRA": 0.0,
+    "pico_dbtp": -3.4,
+    "M_max": -18.6,
+    "M_mediana": -35.6,
+    "M_p90": -28.0
+   },
+   "acima_da_fala_LU": 1.7
+  },
+  {
+   "id": "sfx-whoosh-3",
+   "src": "assets/sfx/whoosh.mp3",
+   "tipo": "efeito",
+   "inicio": 16.75,
+   "duracao": 1.2,
+   "volume": 0.35,
+   "medida": {
+    "I": -18.7,
+    "LRA": 0.0,
+    "pico_dbtp": -9.0,
+    "M_max": -16.5,
+    "M_mediana": -20.1,
+    "M_p90": -16.5
+   },
+   "acima_da_fala_LU": 3.8
+  },
+  {
+   "id": "sfx-pop-5",
+   "src": "assets/sfx/pop.mp3",
+   "tipo": "efeito",
+   "inicio": 18.55,
+   "duracao": 0.7,
+   "volume": 0.5,
+   "medida": {
+    "I": -27.3,
+    "LRA": 0.0,
+    "pico_dbtp": -9.2,
+    "M_max": -27.3,
+    "M_mediana": -27.3,
+    "M_p90": -27.3
+   },
+   "acima_da_fala_LU": -7.0
+  },
+  {
+   "id": "sfx-pop-6",
+   "src": "assets/sfx/pop.mp3",
+   "tipo": "efeito",
+   "inicio": 19.45,
+   "duracao": 0.7,
+   "volume": 0.45,
+   "medida": {
+    "I": -28.2,
+    "LRA": 0.0,
+    "pico_dbtp": -10.1,
+    "M_max": -28.2,
+    "M_mediana": -28.2,
+    "M_p90": -28.2
+   },
+   "acima_da_fala_LU": -7.9
+  },
+  {
+   "id": "sfx-pop-7",
+   "src": "assets/sfx/pop.mp3",
+   "tipo": "efeito",
+   "inicio": 20.55,
+   "duracao": 0.7,
+   "volume": 0.5,
+   "medida": {
+    "I": -27.3,
+    "LRA": 0.0,
+    "pico_dbtp": -9.2,
+    "M_max": -27.3,
+    "M_mediana": -27.3,
+    "M_p90": -27.3
+   },
+   "acima_da_fala_LU": -7.0
+  },
+  {
+   "id": "sfx-moedas",
+   "src": "assets/sfx/moedas.mp3",
+   "tipo": "efeito",
+   "inicio": 23.6,
+   "duracao": 2.4,
+   "volume": 0.45,
+   "medida": {
+    "I": -25.1,
+    "LRA": 0.0,
+    "pico_dbtp": -8.0,
+    "M_max": -23.3,
+    "M_mediana": -57.1,
+    "M_p90": -23.3
+   },
+   "acima_da_fala_LU": -3.0
+  },
+  {
+   "id": "sfx-impacto-2",
+   "src": "assets/sfx/impacto.mp3",
+   "tipo": "efeito",
+   "inicio": 26.75,
+   "duracao": 2.0,
+   "volume": 0.8,
+   "medida": {
+    "I": -25.9,
+    "LRA": 0.0,
+    "pico_dbtp": -2.2,
+    "M_max": -17.5,
+    "M_mediana": -34.4,
+    "M_p90": -26.9
+   },
+   "acima_da_fala_LU": 2.8
+  }
+ ],
+ "sem_musica": true,
+ "hyperframes": {
+  "ok": true,
+  "achados": [
+   {
+    "secao": "layout",
+    "nivel": "warning",
+    "msg": "Canvas content touches the frame edge (bottom)."
+   },
+   {
+    "secao": "layout",
+    "nivel": "warning",
+    "msg": "Canvas content touches the frame edge (bottom)."
+   },
+   {
+    "secao": "layout",
+    "nivel": "warning",
+    "msg": "Canvas content touches the frame edge (bottom)."
+   }
+  ]
+ },
+ "transcricao": {
+  "idioma_detectado": "de",
+  "texto": "Donnerstag, 29. November 2018, Frankfurt am Main. 170 Beamte von Staatsanwaltschaft, BKA, Steuerfahndung und Bundespolizei durchsuchen sechs Gebäude. Eines davon, die Zentrale der Deutschen Bank. Die meisten denken bei Geldwäsche an Dönerläden, Shisha -Bars und Koffer voller Bargeld. Aber am Ende landet jeder schmutzige Euro an demselben Ort, auf einem Bankkonto.",
+  "palavras": [
+   {
+    "p": "Donnerstag,",
+    "ini": 0.0,
+    "fim": 0.86,
+    "conf": 0.98
+   },
+   {
+    "p": "29.",
+    "ini": 0.94,
+    "fim": 1.64,
+    "conf": 0.98
+   },
+   {
+    "p": "November",
+    "ini": 1.78,
+    "fim": 2.3,
+    "conf": 0.93
+   },
+   {
+    "p": "2018,",
+    "ini": 2.3,
+    "fim": 3.52,
+    "conf": 0.93
+   },
+   {
+    "p": "Frankfurt",
+    "ini": 4.04,
+    "fim": 4.34,
+    "conf": 0.99
+   },
+   {
+    "p": "am",
+    "ini": 4.34,
+    "fim": 4.58,
+    "conf": 0.99
+   },
+   {
+    "p": "Main.",
+    "ini": 4.58,
+    "fim": 4.96,
+    "conf": 1.0
+   },
+   {
+    "p": "170",
+    "ini": 5.48,
+    "fim": 6.06,
+    "conf": 0.98
+   },
+   {
+    "p": "Beamte",
+    "ini": 6.06,
+    "fim": 6.6,
+    "conf": 0.99
+   },
+   {
+    "p": "von",
+    "ini": 6.6,
+    "fim": 6.9,
+    "conf": 0.99
+   },
+   {
+    "p": "Staatsanwaltschaft,",
+    "ini": 6.9,
+    "fim": 7.86,
+    "conf": 1.0
+   },
+   {
+    "p": "BKA,",
+    "ini": 8.12,
+    "fim": 8.5,
+    "conf": 0.98
+   },
+   {
+    "p": "Steuerfahndung",
+    "ini": 8.88,
+    "fim": 9.68,
+    "conf": 0.99
+   },
+   {
+    "p": "und",
+    "ini": 9.68,
+    "fim": 10.0,
+    "conf": 0.99
+   },
+   {
+    "p": "Bundespolizei",
+    "ini": 10.0,
+    "fim": 11.18,
+    "conf": 1.0
+   },
+   {
+    "p": "durchsuchen",
+    "ini": 11.18,
+    "fim": 11.74,
+    "conf": 0.99
+   },
+   {
+    "p": "sechs",
+    "ini": 11.74,
+    "fim": 12.12,
+    "conf": 0.55
+   },
+   {
+    "p": "Gebäude.",
+    "ini": 12.12,
+    "fim": 12.66,
+    "conf": 1.0
+   },
+   {
+    "p": "Eines",
+    "ini": 13.14,
+    "fim": 13.4,
+    "conf": 0.98
+   },
+   {
+    "p": "davon,",
+    "ini": 13.4,
+    "fim": 13.78,
+    "conf": 1.0
+   },
+   {
+    "p": "die",
+    "ini": 14.24,
+    "fim": 14.38,
+    "conf": 1.0
+   },
+   {
+    "p": "Zentrale",
+    "ini": 14.38,
+    "fim": 14.88,
+    "conf": 0.98
+   },
+   {
+    "p": "der",
+    "ini": 14.88,
+    "fim": 15.12,
+    "conf": 1.0
+   },
+   {
+    "p": "Deutschen",
+    "ini": 15.12,
+    "fim": 15.46,
+    "conf": 0.97
+   },
+   {
+    "p": "Bank.",
+    "ini": 15.46,
+    "fim": 15.86,
+    "conf": 1.0
+   },
+   {
+    "p": "Die",
+    "ini": 16.78,
+    "fim": 16.98,
+    "conf": 1.0
+   },
+   {
+    "p": "meisten",
+    "ini": 16.98,
+    "fim": 17.3,
+    "conf": 0.98
+   },
+   {
+    "p": "denken",
+    "ini": 17.3,
+    "fim": 17.64,
+    "conf": 1.0
+   },
+   {
+    "p": "bei",
+    "ini": 17.64,
+    "fim": 17.96,
+    "conf": 0.99
+   },
+   {
+    "p": "Geldwäsche",
+    "ini": 17.96,
+    "fim": 18.56,
+    "conf": 1.0
+   },
+   {
+    "p": "an",
+    "ini": 18.56,
+    "fim": 18.86,
+    "conf": 1.0
+   },
+   {
+    "p": "Dönerläden,",
+    "ini": 18.86,
+    "fim": 19.66,
+    "conf": 0.98
+   },
+   {
+    "p": "Shisha",
+    "ini": 19.86,
+    "fim": 20.24,
+    "conf": 0.96
+   },
+   {
+    "p": "-Bars",
+    "ini": 20.24,
+    "fim": 20.56,
+    "conf": 0.96
+   },
+   {
+    "p": "und",
+    "ini": 20.56,
+    "fim": 20.98,
+    "conf": 0.99
+   },
+   {
+    "p": "Koffer",
+    "ini": 20.98,
+    "fim": 21.42,
+    "conf": 0.99
+   },
+   {
+    "p": "voller",
+    "ini": 21.42,
+    "fim": 21.74,
+    "conf": 0.99
+   },
+   {
+    "p": "Bargeld.",
+    "ini": 21.74,
+    "fim": 22.24,
+    "conf": 0.99
+   },
+   {
+    "p": "Aber",
+    "ini": 22.86,
+    "fim": 23.1,
+    "conf": 0.98
+   },
+   {
+    "p": "am",
+    "ini": 23.1,
+    "fim": 23.28,
+    "conf": 1.0
+   },
+   {
+    "p": "Ende",
+    "ini": 23.28,
+    "fim": 23.62,
+    "conf": 1.0
+   },
+   {
+    "p": "landet",
+    "ini": 23.62,
+    "fim": 24.1,
+    "conf": 1.0
+   },
+   {
+    "p": "jeder",
+    "ini": 24.1,
+    "fim": 24.38,
+    "conf": 1.0
+   },
+   {
+    "p": "schmutzige",
+    "ini": 24.38,
+    "fim": 25.0,
+    "conf": 1.0
+   },
+   {
+    "p": "Euro",
+    "ini": 25.0,
+    "fim": 25.36,
+    "conf": 1.0
+   },
+   {
+    "p": "an",
+    "ini": 25.36,
+    "fim": 25.64,
+    "conf": 1.0
+   },
+   {
+    "p": "demselben",
+    "ini": 25.64,
+    "fim": 26.22,
+    "conf": 0.97
+   },
+   {
+    "p": "Ort,",
+    "ini": 26.22,
+    "fim": 26.54,
+    "conf": 1.0
+   },
+   {
+    "p": "auf",
+    "ini": 26.9,
+    "fim": 27.12,
+    "conf": 1.0
+   },
+   {
+    "p": "einem",
+    "ini": 27.12,
+    "fim": 27.34,
+    "conf": 0.99
+   },
+   {
+    "p": "Bankkonto.",
+    "ini": 27.34,
+    "fim": 28.06,
+    "conf": 0.99
+   }
+  ]
+ },
+ "comparacao": {
+  "palavras_roteiro": 51,
+  "palavras_ouvidas": 51,
+  "wer": 0.0,
+  "diferencas": [],
+  "baixa_confianca": []
+ },
+ "visual": {
+  "pretos": [],
+  "congelados": []
+ },
+ "folhas": [
+  "videos\\amostra-bankskandale\\renders\\amostra-bankskandale-revisao\\quadros\\folha-01.jpg",
+  "videos\\amostra-bankskandale\\renders\\amostra-bankskandale-revisao\\quadros\\folha-02.jpg",
+  "videos\\amostra-bankskandale\\renders\\amostra-bankskandale-revisao\\quadros\\folha-03.jpg",
+  "videos\\amostra-bankskandale\\renders\\amostra-bankskandale-revisao\\quadros\\folha-04.jpg",
+  "videos\\amostra-bankskandale\\renders\\amostra-bankskandale-revisao\\quadros\\folha-05.jpg"
+ ]
+}

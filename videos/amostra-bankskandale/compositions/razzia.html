@@ -1,0 +1,97 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #efe6d2; }
+    #rz-cv { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+    #rz-num { position: absolute; left: 130px; top: 90px; display: flex; align-items: baseline; gap: 26px; color: #2b2420; }
+    #rz-170 { font: 700 230px/0.9 "Playfair Display", serif; letter-spacing: -.02em; font-variant-numeric: lining-nums tabular-nums; }
+    #rz-beamte { font: 700 italic 92px/1 "Playfair Display", serif; color: #b8503a; }
+    #rz-chips { position: absolute; right: 120px; top: 120px; width: 640px; display: flex; flex-direction: column; gap: 22px; align-items: flex-end; }
+    .rz-chip { display: inline-flex; align-items: center; gap: 14px; padding: 16px 30px; background: #fbf7ee; border: 4px solid #2b2420; border-radius: 255px 18px 225px 18px / 18px 225px 18px 255px; box-shadow: 6px 8px 0 rgba(70,45,20,.16); font: 700 38px/1 Inter, sans-serif; color: #2b2420; }
+    .rz-chip i { width: 18px; height: 18px; border-radius: 50%; background: #4a6a8a; display: inline-block; border: 3px solid #2b2420; }
+    #rz-k1 { rotate: -2deg; } #rz-k2 { rotate: 1.5deg; } #rz-k3 { rotate: -1deg; } #rz-k4 { rotate: 2deg; }
+    #rz-label { position: absolute; left: 130px; top: 110px; color: #2b2420; font: 700 96px/1 "Playfair Display", serif; }
+    #rz-label em { color: #b8503a; font-style: italic; }
+  </style>
+  <div id="root" data-composition-id="razzia" data-width="1920" data-height="1080">
+    <canvas id="rz-cv" width="1920" height="1080"></canvas>
+    <div id="rz-num" class="clip" data-start="0" data-duration="5.3"><span id="rz-170">0</span><span id="rz-beamte">Beamte</span></div>
+    <div id="rz-chips" class="clip" data-start="2.9" data-duration="2.5">
+      <div id="rz-k1" class="rz-chip"><i></i>Staatsanwaltschaft</div>
+      <div id="rz-k2" class="rz-chip"><i></i>BKA</div>
+      <div id="rz-k3" class="rz-chip"><i></i>Steuerfahndung</div>
+      <div id="rz-k4" class="rz-chip"><i></i>Bundespolizei</div>
+    </div>
+    <div id="rz-label" class="clip" data-start="5.2" data-duration="2.23"><em>6 Gebäude</em> durchsucht</div>
+  </div>
+  <script>
+    (function () {
+      const P = window.Pincel;
+      const cv = document.querySelector("#rz-cv"), ctx = cv.getContext("2d");
+      const papel = P.papel(1920, 1080);
+      const CASAS = [
+        [150, 230, 300, "#e8d3a8", "#cdb385", "agudo"], [420, 260, 380, "#c9d3c0", "#a9b59f", "plano"], [720, 220, 280, "#e6c0a8", "#c99f86", "agudo"],
+        [980, 280, 420, "#cfd8e3", "#aab6c6", "plano"], [1300, 230, 320, "#efd9b0", "#d1b98c", "agudo"], [1570, 230, 360, "#d8c3d6", "#b9a3b7", "plano"],
+      ];
+
+      function desenhar(t) {
+        const f = P.quadro(t);
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        ctx.drawImage(papel, 0, 0);
+        // fase 1 (0–5.2): os 170 policiais
+        const sai = P.ease.inOut(P.seg(t, 4.85, 5.3));
+        if (sai < 1) {
+          ctx.save(); ctx.translate(0, sai * 700);
+          P.brilhoSuave(ctx, 760, 1000, 700, "rgba(74,106,138,0.20)");
+          // chão
+          P.traco(ctx, [[80, 965], [700, 958], [1300, 966], [1840, 960]], { w: 5, seed: f * 3 + 1 });
+          for (let fila = 1; fila >= 0; fila--) {
+            for (let i = 0; i < 10; i++) {
+              const idx = fila * 10 + i, t0 = 0.2 + (fila ? 0.5 : 0) + i * 0.07;
+              const u = P.ease.back(P.seg(t, t0, t0 + 0.35));
+              if (u <= 0) continue;
+              const x = 180 + i * 155 + (fila ? 78 : 0), y = 960 - (fila ? 70 : 0);
+              const bob = Math.sin(t * 5.2 + idx * 1.7) * 2.5 * P.seg(t, 1.2, 1.6);
+              ctx.save(); ctx.translate(x, y + (1 - u) * 260 + bob); ctx.scale(fila ? 0.82 : 1, fila ? 0.82 : 1);
+              if (fila) ctx.globalAlpha = 0.92;
+              P.policial(ctx, { respira: Math.sin(t * 2.4 + idx), piscadas: [1.6 + (idx % 5) * 0.7], olharX: Math.sin(idx) }, t, 50 + idx);
+              ctx.restore();
+            }
+          }
+          ctx.restore();
+        }
+        // fase 2 (5.05–7.43): 6 prédios revistados, cada um ganha um círculo vermelho de marcador
+        CASAS.forEach(([x, w, h, cor, sombra, tipo], i) => {
+          const t0 = 5.05 + i * 0.1, u = P.ease.back(P.seg(t, t0, t0 + 0.4));
+          if (u <= 0) return;
+          ctx.save(); ctx.translate(x + w / 2, 980); ctx.scale(1, u); ctx.translate(-(x + w / 2), -980);
+          P.casa(ctx, x, 980, w, h, cor, sombra, 300 + i, t, tipo);
+          ctx.restore();
+          const c = P.ease.inOut(P.seg(t, 5.75 + i * 0.12, 6.05 + i * 0.12));
+          if (c > 0) {
+            const cx = x + w / 2, topo = 980 - h - (tipo === "agudo" ? w * 0.42 : 14) - 40;
+            const visto = [[cx - 46, topo - 10], [cx - 14, topo + 24], [cx + 54, topo - 58]];
+            P.traco(ctx, P.parcial(P.linha(visto, 8), c), { w: 16, cor: "#c0392b", seed: f * 5 + i });
+          }
+        });
+        if (t > 5.0) P.traco(ctx, [[60, 982], [960, 976], [1860, 982]], { w: 5, seed: f * 3 + 2 });
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        P.vinheta(ctx, 1920, 1080, 0.22);
+      }
+
+      const tl = gsap.timeline({ paused: true });
+      const relogio = { t: 0 }, cont = { v: 0 };
+      const num = document.querySelector("#rz-170");
+      tl.fromTo(relogio, { t: 0 }, { t: 7.43, duration: 7.43, ease: "none", onUpdate: () => desenhar(relogio.t) }, 0);
+      tl.fromTo("#rz-num", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0);
+      tl.fromTo(cont, { v: 0 }, { v: 170, duration: 1.4, ease: "power2.out", onUpdate: () => { num.textContent = Math.round(cont.v); } }, 0.05);
+      ["#rz-k1", "#rz-k2", "#rz-k3", "#rz-k4"].forEach((s, i) => {
+        tl.fromTo(s, { opacity: 0, x: 60, scale: 0.85 }, { opacity: 1, x: 0, scale: 1, duration: 0.35, ease: "back.out(2)" }, 2.95 + i * 0.45);
+      });
+      tl.to("#rz-num", { opacity: 0, y: -40, duration: 0.3, ease: "power2.in" }, 4.85);
+      tl.to("#rz-chips", { opacity: 0, x: 60, duration: 0.3, ease: "power2.in" }, 4.95);
+      tl.fromTo("#rz-label", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.45, ease: "power3.out" }, 5.3);
+      desenhar(0);
+      window.__timelines["razzia"] = tl;
+    })();
+  </script>
+</template>

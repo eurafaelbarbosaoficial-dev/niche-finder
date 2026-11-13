@@ -85,5 +85,34 @@ O dono pede ("quero usar o Niche Finder nesta máquina nova") e o Claude faz, gu
 - 12/11 22:05: 1º ROTEIRO PRONTO pelo botão (issue #1, ~8 min): "Alle Geldwäsche-Skandale der Banken erklärt"
   (`roteiros/bankskandale-de/`), estrutura iceberg, 6 níveis (N26 → ING/Commerzbank → Deutsche Bank → HSBC/TD → Danske →
   BCCI), ~1.500 palavras (~9 min), 32 links de fonte, adaptação `roteiros/adaptacao-de-bankskandale.json`.
-- Estilo de produção escolhido pelos dados: animação 2D simples em SVG com personagem mascote (como o vídeo de
-  referência de 1,1 mi), feita por código (HyperFrames/Remotion). Próximo: amostra de 15–20 s para o dono aprovar.
+- Estilo de produção escolhido pelos dados: animação 2D com personagem mascote (como o vídeo de referência de 1,1 mi),
+  feita por código (HyperFrames).
+
+## Produção de vídeo (amostra aprovada em 12/11, à noite)
+- Amostra: `videos/amostra-bankskandale/` (HyperFrames 0.9.40), 29 s, abertura do roteiro Bankskandale.
+  Render final em `renders/amostra-bankskandale.mp4`.
+- **Voz:** ElevenLabs **v4** via a API que o dono manda na hora (ai84.pro em 12/11). **A CHAVE NUNCA É SALVA**: o
+  dono troca de app e manda uma chave nova por sessão. Voz usada: "Alexander - Deep TV Narrator"
+  (`kkJxCnlRCckmfFvzDW5Q`). O dono achou a narração "excelente": manter essa voz. A API exige o cabeçalho
+  `User-Agent: curl/8.5.0` (o do Python leva 403).
+- **Estilo aprovado pelo dono** (a 1ª versão em SVG "tinha cara de HyperFrames"; ele quer canal de alta barreira,
+  confortável de assistir):
+  - tudo desenhado em **Canvas 2D** com `assets/js/pincel.js`, a biblioteca do canal;
+  - traço de pincel com pressão (`assets/js/perfect-freehand.js`, MIT), linha que "ferve" a 12 fps;
+  - papel com textura, luz única vinda de cima/esquerda e paleta quente apagada (ocre, terracota, ardósia, sálvia,
+    tinta #2b2420);
+  - títulos em Playfair Display; rótulos em Inter.
+- **Personagem fixo:** o detetive (`Pincel.detetive`), de sobretudo, chapéu e gravata terracota. O rig tem
+  respiração, piscada, olhar, sobrancelha, cara zangada, boca e mão no queixo. Também: policial figurante
+  (`Pincel.policial`), prédios (`Pincel.casa`), moedas (`Pincel.moeda`) e balões de pensamento (`Pincel.nuvem`).
+  Cenas novas reaproveitam a biblioteca: copie `assets/js/` para o projeto novo.
+- **Sem música** por enquanto (não há gerador de música aqui); efeitos sonoros em `assets/sfx/`.
+
+## Agente revisor de vídeo (pedido do dono em 12/11)
+- `.claude/agents/revisor-video.md` + `revisor.py`. O agente roda depois de cada render e revisa três coisas:
+  - imagem quadro a quadro (texto sobre o personagem, personagem quebrado, cortes);
+  - narração × roteiro (transcrição com faster-whisper `medium`, local, palavra por palavra com o tempo);
+  - volume: mix entre -16 e -12 LUFS, pico < -1 dBTP; efeito no máximo +3 LU acima da fala forte; música de 12 a
+    30 LU abaixo da narração. Esses limites são critério nosso.
+- Ele gera `<mp4>-revisao/RELATORIO.md` e as folhas de contato. O agente escreve o `REVISAO.md` com o veredito.
+  Não corrige sozinho.

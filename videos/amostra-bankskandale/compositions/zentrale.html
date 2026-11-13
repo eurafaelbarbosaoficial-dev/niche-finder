@@ -1,0 +1,91 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #1a2238; }
+    #ze-cv { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+    #ze-titel { position: absolute; left: 0; right: 0; top: 84px; text-align: center; color: #f4ecdc; text-shadow: 0 4px 30px rgba(10,14,30,.7); }
+    #ze-t1 { font: 700 32px/1 Inter, sans-serif; letter-spacing: .34em; text-transform: uppercase; color: #a9b8d6; }
+    #ze-t2 { margin-top: 20px; font: 700 92px/1 "Playfair Display", serif; }
+    #ze-t2 em { color: #e3b44c; font-style: italic; }
+    #ze-stempel { position: absolute; left: 50%; top: 560px; width: 820px; margin-left: -410px; padding: 26px 0 30px; text-align: center; border: 10px solid #d9473a; border-radius: 20px 6px 18px 8px / 8px 18px 6px 20px; outline: 3px solid #d9473a; outline-offset: 8px; color: #d9473a; font: 700 84px/1 "Playfair Display", serif; letter-spacing: .06em; background: rgba(26,34,56,.55); }
+  </style>
+  <div id="root" data-composition-id="zentrale" data-width="1920" data-height="1080">
+    <canvas id="ze-cv" width="1920" height="1080"></canvas>
+    <div id="ze-titel" class="clip" data-start="0" data-duration="4.17">
+      <div id="ze-t1">Eines davon</div>
+      <div id="ze-t2">Die Zentrale der <em>Deutschen Bank</em></div>
+    </div>
+    <div id="ze-stempel" class="clip" data-start="2.2" data-duration="1.97">RAZZIA · 29.11.2018</div>
+  </div>
+  <script>
+    (function () {
+      const P = window.Pincel;
+      const cv = document.querySelector("#ze-cv"), ctx = cv.getContext("2d");
+      const papel = P.papel(1920, 1080, "#8a8577");
+      const R = P.rng(77);
+      const viz = [];
+      for (let x = -60; x < 1980;) { const w = 140 + R() * 160; if (x > 600 && x < 1320) { x = 1320; continue; } viz.push([x, w, 220 + R() * 300]); x += w + 4; }
+
+      function torre(x, base, w, h, cor, sombra, sd, t) {
+        const f = P.quadro(t);
+        const pts = P.poli([[x, base], [x, base - h + 50], [x + w, base - h], [x + w, base]], 30);
+        P.forma(ctx, pts, { fill: cor, sombra, brilho: "rgba(180,210,255,.2)", seed: f * 17 + sd, sdx: -w * 0.3, sdy: 0, w: 6, inkCor: "#0c1020" });
+        ctx.save(); ctx.beginPath(); P.caminho(ctx, pts, true); ctx.clip();
+        for (let i = 0; i < 26; i++) P.traco(ctx, [[x, base - 50 - i * 34], [x + w, base - 85 - i * 34]], { w: 2.4, cor: "rgba(160,195,255,.32)", seed: f * 3 + sd + i });
+        const rr = P.rng(sd);
+        for (let i = 0; i < 70; i++) { const wx = x + 12 + rr() * (w - 30), wy = base - 40 - rr() * (h - 100); ctx.fillStyle = rr() > 0.45 ? "rgba(246,220,154,.9)" : "rgba(160,195,255,.5)"; ctx.fillRect(wx, wy, 14, 9); }
+        ctx.restore();
+      }
+      function feixe(x, ang, alpha) {
+        ctx.save(); ctx.translate(x, 1100); ctx.rotate(ang);
+        const g = ctx.createLinearGradient(0, 0, 0, -1300);
+        g.addColorStop(0, `rgba(250,240,215,${alpha})`); g.addColorStop(1, "rgba(250,240,215,0)");
+        ctx.fillStyle = g; ctx.beginPath(); ctx.moveTo(-26, 0); ctx.lineTo(26, 0); ctx.lineTo(150, -1300); ctx.lineTo(-150, -1300); ctx.closePath(); ctx.fill();
+        ctx.restore();
+      }
+
+      function desenhar(t) {
+        const f = P.quadro(t);
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        ctx.fillStyle = "#171e33"; ctx.fillRect(0, 0, 1920, 1080);
+        P.brilhoSuave(ctx, 960, 200, 1000, "rgba(64,86,135,0.7)");
+        const [sx, sy] = P.tremor(t, 2.4, 0.4, 16, 3);
+        const z = 1 + 0.14 * P.ease.inOut(P.seg(t, 0, 4.17));
+        ctx.translate(960 + sx, 700 + sy); ctx.scale(z, z); ctx.translate(-960, -700);
+        ctx.globalCompositeOperation = "lighter";
+        feixe(560, -0.38 + 0.3 * Math.sin(t * 1.6), 0.16);
+        feixe(1360, 0.36 - 0.3 * Math.sin(t * 1.6 + 0.8), 0.16);
+        ctx.globalCompositeOperation = "source-over";
+        viz.forEach(([x, w, h], i) => {
+          P.forma(ctx, P.ret(x, 1080 - h, w, h + 60), { fill: "#1d2640", sombra: "#151c32", seed: f * 7 + i, w: 4, inkCor: "#0c1020" });
+          const rr = P.rng(i * 17 + 3);
+          for (let j = 0; j < 9; j++) if (rr() > 0.4) { ctx.fillStyle = "rgba(246,220,154,.75)"; ctx.fillRect(x + 14 + rr() * (w - 34), 1080 - h + 24 + rr() * (h - 60), 14, 10); }
+        });
+        torre(700, 1110, 240, 880, "#2f4a78", "#22385e", 300, t);
+        torre(990, 1110, 260, 830, "#36558a", "#27416b", 400, t);
+        // carros de polícia na base: luzes alternando
+        const az = Math.max(0, Math.sin(t * Math.PI * 2 * 1.8)), vm = Math.max(0, Math.sin(t * Math.PI * 2 * 1.8 + Math.PI));
+        ctx.globalCompositeOperation = "lighter";
+        [[620, 1060], [1000, 1075], [1340, 1060]].forEach(([x, y], i) => {
+          P.brilhoSuave(ctx, x - 30, y, 260, `rgba(61,123,255,${0.55 * (i % 2 ? vm : az)})`);
+          P.brilhoSuave(ctx, x + 30, y, 260, `rgba(229,72,77,${0.45 * (i % 2 ? az : vm)})`);
+        });
+        ctx.globalCompositeOperation = "source-over";
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        ctx.globalCompositeOperation = "overlay"; ctx.globalAlpha = 0.5; ctx.drawImage(papel, 0, 0);
+        ctx.globalCompositeOperation = "source-over"; ctx.globalAlpha = 1;
+        P.vinheta(ctx, 1920, 1080, 0.5);
+      }
+
+      const tl = gsap.timeline({ paused: true });
+      const relogio = { t: 0 };
+      tl.fromTo(relogio, { t: 0 }, { t: 4.17, duration: 4.17, ease: "none", onUpdate: () => desenhar(relogio.t) }, 0);
+      tl.fromTo("#ze-t1", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.05);
+      tl.fromTo("#ze-t2", { opacity: 0, y: 36 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 1.0);
+      tl.fromTo("#ze-stempel", { opacity: 0, scale: 2.2, rotation: -12 }, { opacity: 0.95, scale: 1, rotation: -5, duration: 0.18, ease: "power4.in" }, 2.22);
+      tl.fromTo("#ze-titel", { x: 0 }, { x: 10, duration: 0.04, yoyo: true, repeat: 7, ease: "none" }, 2.4);
+      tl.to(["#ze-titel", "#ze-stempel"], { opacity: 0, duration: 0.2 }, 3.95);
+      desenhar(0);
+      window.__timelines["zentrale"] = tl;
+    })();
+  </script>
+</template>
