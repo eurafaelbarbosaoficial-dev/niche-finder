@@ -176,3 +176,31 @@ Pasta `producao/`. Aba **Produção** no site (`docs/producao.html`).
   no `projetos.json`.
 - Shorts: o dono decidiu não fazer por enquanto. Canal como vitrine de produto: para depois.
 - Canal: nome sugerido "Geld im Dunkeln" (aguardando o dono); arte em `videos/bankskandale-completo/publicar/`.
+
+## Rodada de melhorias de 13/11 (tarde/noite) — rapidez e acerto
+- **Linha de produção para qualquer vídeo** (`producao/produzir.py`): `novo <roteiro> <pasta> --ref <referência>` copia
+  `producao/modelo-video/` (motor, efeitos, montar, fotos, render, remix, juntar) e cria `projeto.json` com o RITMO ALVO
+  medido na referência; `status <pasta>` diz a etapa e o próximo comando; `rodar <pasta> <etapa>`.
+  Voz: `K=<chave> python -I producao/voz.py …` (chave nunca salva). Cenas: agente `diretor-de-cenas` (usa
+  `producao/modelo-video/CATALOGO.md`, gerado por `producao/catalogo.py`). O formato/ritmo vem da referência de cada
+  canal; o motor desenha o nosso estilo 2D (outro estilo visual = motor novo).
+- **Ritmo quadro a quadro** (`producao/ritmo.py`): cada cena (início, fim, duração), cada transição com tipo
+  matemático (corte seco, fusão por mistura, fade para preto/branco/cor lisa, movimento) e duração em quadros.
+  Validado no nosso vídeo (acertou os dips em 15,97/36,8/48,05 s). Econ in a Nutshell: 173 cenas, 15,4 trocas/min, cena
+  média 3,88 s (metade entre 2,7 e 4,9 s), 97% corte seco. `producao/estilo.py estudar|comparar` = ritmo + lupa da
+  /estudar (sons, câmera) em 3 trechos; agente `estudo-estilo`.
+- **Legenda SRT** com o texto exato do roteiro (`producao/legenda.py`; 99% das palavras casadas com a voz).
+- **3 thumbs por vídeo** (`producao/thumbs.py`, `producao/modelo-thumb/`): mesmo desenho, textos = fatos do roteiro;
+  "Testar e comparar" do YouTube com o MESMO título (testar uma coisa por vez).
+- **Desempenho dos nossos vídeos** (`producao/desempenho.py`): views/curtidas/comentários a cada 3 h (vigia), 24 h/48 h/7 d;
+  print do Studio entra com `desempenho.py studio <pasta> --ctr … --retencao …`. Ao postar: pôr `url` e
+  `publicado_em` em `producao/projetos.json`. API do YouTube opcional: `estado/youtube-api.txt` (fora do git).
+- **Subindo** (aba Canais → Subindo, `docs/subindo.json`): canais novos abaixo de 50 mil que crescem rápido
+  (≥ 5 mil no melhor vídeo e +2 mil/dia ou 20× views/inscrito; critério nosso). **Bola de neve**: a cada rodada, os
+  vídeos relacionados de cada outlier entram na fila (~19 canais por vídeo; a API não oferece isso).
+- **Validador com sinais**: estágio do formato (vazio/começando/crescendo/maduro/saturando), vídeos novos no mês e no
+  ano, canais pequenos com sucesso. Ex.: o formato "every … explained" está SATURANDO em inglês e VAZIO em alemão.
+- **Títulos** (`producao/titulos.py <projeto> "<tema>"`): autocompletar, mais vistos e moldes que rendem no idioma.
+- **Pautas semanais** (`producao/semanal.py`, `semanal.bat`): coleta + medida + matriz de validação (Raj 25, nota do
+  Claude marcada como opinião) + árvore editorial + calendário. A tarefa do Windows precisa ser criada pelo dono:
+  `powershell -ExecutionPolicy Bypass -File producao\agendar-semanal.ps1` (o instalar.ps1 já cria em máquina nova).

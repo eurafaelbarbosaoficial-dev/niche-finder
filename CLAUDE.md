@@ -49,3 +49,9 @@ Regra do dono: **nada de hipótese**. Todo candidato vem de dado real; o Claude 
   C (canal de referência) = subnicho vizinho, mesmo canal em bloco temático; A (molde em outros assuntos) = outro
   nicho → canal novo. Nunca misturar nichos no mesmo canal (Raj, vídeos 12 e 13). A ficha "Seu projeto"
   (nicho → subnicho → micronicho) e o "Mapa de dobras" (5 caminhos, recomendado pelos dados) saem de `pautas.py mapa`.
+
+## Produzir um vídeo (desde 13/11)
+`python -I producao/produzir.py status <pasta>` mostra a etapa e o próximo comando. Novo vídeo:
+`python -I producao/produzir.py novo <slug-roteiro> <pasta> --ref econ-in-a-nutshell`. Antes da voz: revisor de roteiro.
+Cenas: agente `diretor-de-cenas`. Depois do render: `rodar <pasta> revisar` + agente `revisor-video` + `estilo comparar`.
+Cada erro novo vira lição (`producao/licoes.py adicionar`). Ao postar: url e data em `producao/projetos.json`.

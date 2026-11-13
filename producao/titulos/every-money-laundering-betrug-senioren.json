@@ -1,0 +1,191 @@
+{
+ "projeto": "every-money-laundering",
+ "idioma": "de",
+ "tema": "betrug senioren",
+ "molde_do_canal": "alle {X} erklärt",
+ "autocompletar": [
+  "betrug frau",
+  "betrug online",
+  "betrug überwinden",
+  "betrugsfälle ganze folgen"
+ ],
+ "autocompletar_amplo": [
+  "betrug bei wer wird millionär",
+  "betrug strafrecht",
+  "betrug 263 stgb",
+  "betrug doku",
+  "betrug kleinanzeigen",
+  "betrug jura",
+  "betrug in der wissenschaft",
+  "betrug bei dsds",
+  "betrug beziehung",
+  "betrug bei rosins restaurants"
+ ],
+ "mais_vistos": [
+  {
+   "titulo": "Salt's senior citizen trap: She wanted help – and got four cell phones | 2026 | Kassensturz | SRF",
+   "views": 64444,
+   "canal": "SRF News & Hintergründe",
+   "letras": 97
+  },
+  {
+   "titulo": "🚨 Seniors, beware! This one debit card mistake could wipe out your account",
+   "views": 52382,
+   "canal": "Debatten Kraft DE",
+   "letras": 74
+  },
+  {
+   "titulo": "5 neue, schnell verbreitete Betrugsmaschen, die Senioren 2026 vermeiden müssen - Vorsicht, Betrug!",
+   "views": 16873,
+   "canal": "SeniorenRatgeber",
+   "letras": 98
+  },
+  {
+   "titulo": "🚨 Seniors Beware! This One Debit Card Mistake Can Empty Your Account",
+   "views": 14802,
+   "canal": "Rente Blick",
+   "letras": 68
+  },
+  {
+   "titulo": "Betrüger in Polizeiuniform! Fake-Cops bestehlen hilflose Senioren! | Auf Streife-Ganze Folge | SAT.1",
+   "views": 14231,
+   "canal": "Auf Streife",
+   "letras": 100
+  },
+  {
+   "titulo": "Senioren aufgepasst： 5 neue Betrugsmaschen zielen",
+   "views": 13373,
+   "canal": "NiemandSagtDirDas",
+   "letras": 49
+  },
+  {
+   "titulo": "Senioren mit Schockanrufen abgezockt? Polizeibekannte Roma-Großfamilie vor Gericht | RTL WEST",
+   "views": 5567,
+   "canal": "RTL WEST - das Nachrichtenmagazin für ganz NRW",
+   "letras": 93
+  },
+  {
+   "titulo": "TikTok-Betrug, Betrug an Senioren und Sextortion",
+   "views": 5483,
+   "canal": "JustJaren",
+   "letras": 48
+  },
+  {
+   "titulo": "15 Haustür-Tricks, vor denen die Polizei alleinlebende Senioren warnt",
+   "views": 8191,
+   "canal": "Der alte Schlosser",
+   "letras": 69
+  },
+  {
+   "titulo": "🇹🇭 THAILAND NEWS 21.12.2025 | Rule of Law Report | Senior Citizen Fraud | Police Scandal | Pattay...",
+   "views": 3592,
+   "canal": "Thailand Aktuell",
+   "letras": 100
+  },
+  {
+   "titulo": "GOLD-BARREN-BETRUG: Senioren in den USA Ziel einer massiven Masche",
+   "views": 6011,
+   "canal": "Fox News Clips",
+   "letras": 66
+  },
+  {
+   "titulo": "❗ Neue Betrugsfalle 2026: 5 fiese Ghost-Tap-Tricks gegen Senioren – Ihre Kreditkarte ist in Gefahr!",
+   "views": 2285,
+   "canal": "Weisheit der Alten 🌿",
+   "letras": 99
+  },
+  {
+   "titulo": "🚨 Neue Betrugsfalle 2026: Polizei warnt vor KI-Anrufen – Diese Stimme klingt wie dein Enkel!",
+   "views": 984,
+   "canal": "Weisheit der Alten 🌿",
+   "letras": 92
+  },
+  {
+   "titulo": "5 neue schnell verbreitete Betrugsmaschen, die Senioren 2026 meiden müssen – Achtung!",
+   "views": 444,
+   "canal": "SENIOREN WEISHEIT",
+   "letras": 85
+  },
+  {
+   "titulo": "Neuer Betrug gegen Senioren： 5 Ghost Tap Tricks ve",
+   "views": 431,
+   "canal": "NiemandSagtDirDas",
+   "letras": 50
+  }
+ ],
+ "moldes_em_alta_no_idioma": [
+  {
+   "molde": "[X] was [X]",
+   "canal": "Wahre Schicksale",
+   "n": 2,
+   "media": 196500,
+   "indice": 2.36,
+   "exemplo": "Billionärs-Oma testet Enkel-Verlobte als arme Witwe – Was sie entdeckt, schockiert sie!"
+  },
+  {
+   "molde": "[X] wie [X]",
+   "canal": "Ich mag Moneten",
+   "n": 3,
+   "media": 161333,
+   "indice": 1.03,
+   "exemplo": "LevlUp vom Hype zum MILLIONENVERLUST: Wie geht’s der Marke wirklich?!"
+  },
+  {
+   "molde": "warum [X] [N] [X]",
+   "canal": "Geschichte ohne Mythos",
+   "n": 2,
+   "media": 87500,
+   "indice": 1.65,
+   "exemplo": "Warum ließ Hitler 350.000 Soldaten in Norwegen, während Berlin fiel?"
+  },
+  {
+   "molde": "[X] warum [X]",
+   "canal": "Geschichte ohne Mythos",
+   "n": 3,
+   "media": 79000,
+   "indice": 1.49,
+   "exemplo": "Der WAHRE Grund, warum Hitler nie in die Schweiz einmarschierte"
+  },
+  {
+   "molde": "was [X] wenn du [X]",
+   "canal": "Monopology",
+   "n": 2,
+   "media": 76700,
+   "indice": 1.81,
+   "exemplo": "Was wäre, wenn du mit ALLEN Erinnerungen wiedergeboren wirst?"
+  },
+  {
+   "molde": "[X] ich [X]",
+   "canal": "Team Laki",
+   "n": 2,
+   "media": 61500,
+   "indice": 1.42,
+   "exemplo": "Dumme Sachen, die ich in der Pause gemacht habe."
+  },
+  {
+   "molde": "alle [X] erklart em [N] minn",
+   "canal": "Truppenkunde",
+   "n": 5,
+   "media": 60380,
+   "indice": 1.12,
+   "exemplo": "Alle Dienstgrade der Marine erklärt in 11 Minuten"
+  },
+  {
+   "molde": "[N] [X]",
+   "canal": "Polskaholic",
+   "n": 3,
+   "media": 52433,
+   "indice": 1.33,
+   "exemplo": "30 Dinge, die in Polen völlig normal sind (Deutsche sind schockiert)"
+  },
+  {
+   "molde": "[X] [N] [X] was [X]",
+   "canal": "Kronenfall",
+   "n": 3,
+   "media": 36000,
+   "indice": 1.15,
+   "exemplo": "Goebbels hatte 6 Kinder – Was geschah mit ihnen und mit Magdas siebtem Kind?"
+  }
+ ],
+ "tamanho_tipico": 85
+}
