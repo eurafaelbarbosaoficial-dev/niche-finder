@@ -1,4 +1,5 @@
 # Niche Finder — memória para o Claude
+n**Numa conversa nova, leia primeiro `CONTEXTO.md` (tudo o que foi decidido e aprendido) e depois este arquivo.**
 
 O dono não é programador: explique em português simples. Leia o `LEIA-ME.md` antes de mexer.
 
