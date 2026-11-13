@@ -74,17 +74,31 @@ def data_criacao(cid):
     return None
 
 
-def lista_videos(cid, lang=None):
+def _lista(cid, lang=None):
     args = ["-J", "--flat-playlist", "--playlist-end", str(MAX_VIDEOS + 1)]
-    if lang and not lang.startswith("en"):
-        args += ["--extractor-args", f"youtube:lang={lang.split('-')[0]}"]
+    if lang:
+        args += ["--extractor-args", f"youtube:lang={lang}"]
     out = yt(args + [f"https://www.youtube.com/channel/{cid}/videos"])
-    if not out.strip():
-        return None
     try:
-        return json.loads(out)
+        return json.loads(out) if out.strip() else None
     except Exception:
         return None
+
+
+def lista_videos(cid, lang=None):
+    """Vídeos do canal. Views e inscritos SEMPRE da página em inglês: em português o YouTube escreve
+    '3,6 mil' e o yt-dlp lê 36 (bug que escondia todo canal brasileiro). Do idioma original vêm só os títulos."""
+    d = _lista(cid)
+    lg = (lang or "").split("-")[0]
+    if d is None or not lg or lg == "en":
+        return d
+    loc = _lista(cid, lg)
+    if loc:
+        tit = {e.get("id"): e.get("title") for e in loc.get("entries") or [] if e.get("id")}
+        for e in d.get("entries") or []:
+            if tit.get(e.get("id")):
+                e["title"] = tit[e["id"]]
+    return d
 
 
 def medir_videos(d, min_dur):
