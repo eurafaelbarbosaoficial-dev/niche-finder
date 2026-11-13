@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <script src="assets/js/perfect-freehand.js"></script>
+    <script src="assets/js/pincel.js"></script>
+    <script src="assets/js/motor.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #efe6d2; }
+      #root { position: relative; width: 100%; height: 100%; }
+      #cv { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+      .fontes { position: absolute; left: -4000px; top: 0; opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="143.61" data-width="1920" data-height="1080">
+      <canvas id="cv" width="1920" height="1080"></canvas>
+      <div class="fontes"><span style="font: 700 20px 'Playfair Display'">Aa</span><span style="font: italic 700 20px 'Playfair Display'">Aa</span><span style="font: 700 20px Inter">Aa</span><span style="font: 600 20px Inter">Aa</span></div>
+      <audio id="vo" class="clip" src="assets/audio/narracao.mp3" data-start="2.4" data-duration="140.31" data-track-index="2" data-volume="1"></audio>
+      <audio id="sfx-0" class="clip" src="assets/sfx/transicao.mp3" data-start="0.05" data-duration="1.6" data-track-index="3" data-volume="0.32" data-fade-out="0.5"></audio>
+      <audio id="sfx-1" class="clip" src="assets/sfx/whoosh.mp3" data-start="2.18" data-duration="0.6" data-track-index="4" data-volume="0.35"></audio>
+      <audio id="sfx-2" class="clip" src="assets/sfx/whoosh.mp3" data-start="11.04" data-duration="0.6" data-track-index="5" data-volume="0.35"></audio>
+      <audio id="sfx-3" class="clip" src="assets/sfx/whoosh.mp3" data-start="15.3" data-duration="0.6" data-track-index="6" data-volume="0.35"></audio>
+      <audio id="sfx-4" class="clip" src="assets/sfx/pop.mp3" data-start="16.28" data-duration="0.7" data-track-index="3" data-volume="0.4"></audio>
+      <audio id="sfx-5" class="clip" src="assets/sfx/pop.mp3" data-start="17.06" data-duration="0.7" data-track-index="4" data-volume="0.4"></audio>
+      <audio id="sfx-6" class="clip" src="assets/sfx/pop.mp3" data-start="25.14" data-duration="0.7" data-track-index="5" data-volume="0.4"></audio>
+      <audio id="sfx-7" class="clip" src="assets/sfx/pop.mp3" data-start="31.22" data-duration="0.7" data-track-index="6" data-volume="0.4"></audio>
+      <audio id="sfx-8" class="clip" src="assets/sfx/pop.mp3" data-start="35.22" data-duration="0.7" data-track-index="3" data-volume="0.4"></audio>
+      <audio id="sfx-9" class="clip" src="assets/sfx/pop.mp3" data-start="36.28" data-duration="0.7" data-track-index="4" data-volume="0.4"></audio>
+      <audio id="sfx-10" class="clip" src="assets/sfx/pop.mp3" data-start="40.56" data-duration="0.7" data-track-index="5" data-volume="0.4"></audio>
+      <audio id="sfx-11" class="clip" src="assets/sfx/moedas.mp3" data-start="45.18" data-duration="2.0" data-track-index="6" data-volume="0.45" data-fade-out="0.6"></audio>
+      <audio id="sfx-12" class="clip" src="assets/sfx/moedas.mp3" data-start="52.68" data-duration="2.0" data-track-index="3" data-volume="0.45" data-fade-out="0.6"></audio>
+      <audio id="sfx-13" class="clip" src="assets/sfx/whoosh.mp3" data-start="69.04" data-duration="0.6" data-track-index="4" data-volume="0.35"></audio>
+      <audio id="sfx-14" class="clip" src="assets/sfx/whoosh.mp3" data-start="73.98" data-duration="0.6" data-track-index="5" data-volume="0.35"></audio>
+      <audio id="sfx-15" class="clip" src="assets/sfx/carimbo.mp3" data-start="75.6" data-duration="0.6" data-track-index="6" data-volume="0.85"></audio>
+      <audio id="sfx-16" class="clip" src="assets/sfx/impacto.mp3" data-start="75.58" data-duration="1.6" data-track-index="3" data-volume="0.35" data-fade-out="0.8"></audio>
+      <audio id="sfx-17" class="clip" src="assets/sfx/moedas.mp3" data-start="74.18" data-duration="2.0" data-track-index="4" data-volume="0.45" data-fade-out="0.6"></audio>
+      <audio id="sfx-18" class="clip" src="assets/sfx/moedas.mp3" data-start="89.94" data-duration="2.0" data-track-index="5" data-volume="0.45" data-fade-out="0.6"></audio>
+      <audio id="sfx-19" class="clip" src="assets/sfx/whoosh.mp3" data-start="104.34" data-duration="0.6" data-track-index="6" data-volume="0.35"></audio>
+      <audio id="sfx-20" class="clip" src="assets/sfx/whoosh.mp3" data-start="109.62" data-duration="0.6" data-track-index="3" data-volume="0.35"></audio>
+      <audio id="sfx-21" class="clip" src="assets/sfx/pop.mp3" data-start="120.46" data-duration="0.7" data-track-index="4" data-volume="0.4"></audio>
+      <audio id="sfx-22" class="clip" src="assets/sfx/whoosh.mp3" data-start="134.78" data-duration="0.6" data-track-index="5" data-volume="0.35"></audio>
+      <audio id="sfx-23" class="clip" src="assets/sfx/whoosh.mp3" data-start="138.42" data-duration="0.6" data-track-index="6" data-volume="0.35"></audio>
+      <audio id="sfx-24" class="clip" src="assets/sfx/pop.mp3" data-start="139.32" data-duration="0.7" data-track-index="3" data-volume="0.4"></audio>
+      <audio id="sfx-25" class="clip" src="assets/sfx/pop.mp3" data-start="139.82" data-duration="0.7" data-track-index="4" data-volume="0.4"></audio>
+      <audio id="sfx-26" class="clip" src="assets/sfx/pop.mp3" data-start="140.32" data-duration="0.7" data-track-index="5" data-volume="0.4"></audio>
+    </div>
+    <script>
+      const CENAS = [{"tipo": "iceberg", "em": null, "nivel": 3, "titulo": "Ebene 3: Die *Maschine*", "passos": [], "t0": 0.0, "t1": 2.28}, {"tipo": "titulo", "em": "Jetzt wird es professionell", "texto": "Milliarden aus einem *ganzen Land* herausbringen?", "icone": "globo", "detetive": "surpreso", "passos": [0.1, 5.52], "t0": 2.28, "t1": 11.14}, {"tipo": "titulo", "em": "Dann brauchst du keine Tür", "texto": "Keine Tür. *Eine Maschine.*", "icone": "aktie", "fundo": "noite", "passos": [0.1, 3.06], "t0": 11.14, "t1": 15.4}, {"tipo": "rota", "em": "Moskau, London", "titulo": "2011 – 2015", "cidades": [["Moskau", 400, 520, ""], ["London", 960, 520, ""], ["New York", 1520, 520, ""]], "passos": [0.12, 0.88, 1.66], "t0": 15.4, "t1": 20.5}, {"tipo": "fluxo", "em": "kauft ein Kunde", "titulo": "Deutsche Bank Moskau: Kunde *kauft* russische Aktien", "nos": [{"texto": "Kunde in Moskau", "icone": "aktie"}, {"texto": "kauft – in Rubel", "icone": "notas"}], "passos": [0.3, 4.64], "t0": 20.5, "t1": 25.96}, {"tipo": "fluxo", "em": "Fast gleichzeitig", "titulo": "Deutsche Bank London: verbundene Firma *verkauft*", "nos": [{"texto": "verbundene Firma", "icone": "aktie"}, {"texto": "verkauft – gegen Dollar", "icone": "moedas"}], "passos": [0.3, 5.26], "t0": 25.96, "t1": 32.68}, {"tipo": "lista", "em": "Unterm Strich", "titulo": "Unterm Strich:", "itens": ["kein Gewinn", "kein Verlust", "kein wirtschaftlicher Sinn"], "passos": [1.64, 2.54, 3.6], "detetive": "desconfia", "t0": 32.68, "t1": 37.86}, {"tipo": "rota", "em": "Nur eines passiert", "titulo": "Rubel werden zu *Dollar*", "cidades": [["Rubel", 520, 560, "Russland"], ["Dollar", 1400, 560, "Ausland"]], "passos": [1.68, 2.7], "nota": "Man nennt das: Spiegelgeschäfte", "passosNota": true, "t0": 37.86, "t1": 44.98}, {"tipo": "numero", "em": "Rund 10 Milliarden", "valor": 10, "prefixo": "rund ", "sufixo": "Mrd. $", "rotulo": "sollen so aus Russland geflossen sein", "icone": "moedas", "passos": [0.2], "t0": 44.98, "t1": 48.94}, {"tipo": "numero", "em": "Im Januar 2017", "valor": 630, "prefixo": "rund ", "sufixo": "Mio. $", "rotulo": "Januar 2017 · Deutsche Bank zahlt", "icone": "notas", "nota": "425 Mio. $ an die New Yorker Finanzaufsicht", "nota2": "163 Mio. £ an die britische FCA", "passos": [3.74, 6.5, 10.16], "t0": 48.94, "t1": 63.16}, {"tipo": "documento", "em": "Die Briten schrieben", "cabecalho": "FCA · Großbritannien", "titulo": "Das Urteil der Briten", "citacao": "Kontrollen schwach, Compliance-Leute überlastet", "passos": [2.28], "detetive": "preocupado", "t0": 63.16, "t1": 69.14}, {"tipo": "local", "em": "Juli 2020", "lugar": "New York", "data": "Juli 2020", "sub": "wieder die Deutsche Bank", "fundo": "noite", "passos": [0.3, 3.28], "t0": 69.14, "t1": 74.08}, {"tipo": "numero", "em": "150 Millionen", "valor": 150, "sufixo": "Mio. $", "rotulo": "Strafe", "icone": "notas", "carimbo": "STRAFE", "passos": [0.1, 99, 99, 1.4], "t0": 74.08, "t1": 77.12}, {"tipo": "titulo", "em": "Diesmal geht es", "texto": "Ein Kunde seit 2013: *Jeffrey Epstein*", "icone": "documento", "passos": [0.1, 5.14], "detetive": "surpreso", "t0": 77.12, "t1": 83.42}, {"tipo": "numero", "em": "Laut Aufsicht", "valor": 800000, "prefixo": "über ", "sufixo": "$ bar", "tam": 190, "rotulo": "Hunderte Transaktionen nicht genauer geprüft", "nota": "Bargeldabhebungen in rund vier Jahren", "icone": "notas", "passos": [6.52, 11.0, 99, 99, 0.2], "t0": 83.42, "t1": 95.6}, {"tipo": "documento", "em": "Im selben Bescheid", "cabecalho": "Bescheid · Juli 2020", "titulo": "Zwei andere Banken", "citacao": "Danske Bank Estland", "passos": [5.44], "detetive": "aponta", "t0": 95.6, "t1": 103.06}, {"tipo": "detetive", "em": "Merk dir den Namen", "pose": "aponta", "balao": "Danske Bank Estland", "passos": [0.2], "t0": 103.06, "t1": 104.44}, {"tipo": "local", "em": "Und zwei Monate später", "lugar": "FinCEN Files", "data": "September 2020", "sub": "Ein Leak", "fundo": "noite", "passos": [1.94, 5.64], "t0": 104.44, "t1": 109.72}, {"tipo": "numero", "em": "Ein Leak von über", "valor": 2000, "prefixo": "über ", "sufixo": "Verdachtsmeldungen", "tam": 200, "rotulo": "geheim, von amerikanischen Banken", "icone": "documento", "passos": [0.94], "t0": 109.72, "t1": 114.96}, {"tipo": "comparar", "em": "Rund 2 Billionen", "titulo": "Verdächtige Zahlungen in den *FinCEN Files*", "itens": [{"valor": 2, "texto": "2 Bio. $", "rotulo": "insgesamt"}, {"valor": 1.3, "texto": "1,3 Bio. $", "rotulo": "Deutsche Bank"}], "passos": [0.3, 5.5], "t0": 114.96, "t1": 124.32}, {"tipo": "titulo", "em": "Wichtig", "texto": "Eine Verdachtsmeldung ist *kein Beweis* für ein Verbrechen.", "icone": "lupa", "detetive": "aponta", "passos": [], "t0": 124.32, "t1": 128.66}, {"tipo": "titulo", "em": "Sie zeigt nur", "texto": "Die Bank fand es komisch – und hat das Geld *trotzdem weitergeleitet.*", "icone": "alerta", "passos": [0.1, 4.2], "t0": 128.66, "t1": 134.88}, {"tipo": "titulo", "em": "Und damit sind wir", "texto": "Zurück zur *Razzia* in Frankfurt", "fundo": "noite", "icone": "banco", "carimbo": null, "passos": [], "t0": 134.88, "t1": 138.52}, {"tipo": "tempo", "em": "Bei der Deutschen Bank ist es", "titulo": "Kein einzelner Skandal – *eine Reihe*", "marcos": [["2017", "Spiegelgeschäfte"], ["2018", "Razzia Frankfurt"], ["2020", "Epstein"], ["2020", "FinCEN Files"]], "passos": [0.3, 0.8, 1.3, 1.8], "t0": 138.52, "t1": 144.61}];
+      (async function () {
+        try { await Promise.all(['700 80px "Playfair Display"', 'italic 700 80px "Playfair Display"', '700 40px Inter', '600 40px Inter'].map((f) => document.fonts.load(f))); } catch (e) {}
+        const ctx = document.getElementById("cv").getContext("2d");
+        const tl = gsap.timeline({ paused: true });
+        const r = { t: 0 };
+        tl.fromTo(r, { t: 0 }, { t: 143.61, duration: 143.61, ease: "none", onUpdate: () => Motor.desenhar(ctx, CENAS, r.t) }, 0);
+        Motor.desenhar(ctx, CENAS, 0);
+        window.__timelines["main"] = tl;
+      })();
+    </script>
+  </body>
+</html>

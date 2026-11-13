@@ -1,0 +1,99 @@
+1
+00:00:00,000 --> 00:00:02,468
+Stell dir vor, du hast Geld aus einem Betrug.
+
+2
+00:00:02,459 --> 00:00:04,144
+Ein paar tausend Euro.
+
+3
+00:00:04,144 --> 00:00:05,985
+Bar einzahlen fällt auf.
+
+4
+00:00:05,985 --> 00:00:10,850
+Also brauchst du ein Konto – am besten eins, das man schnell per App eröffnet.
+
+5
+00:00:10,864 --> 00:00:14,784
+Genau hier sitzt die wichtigste Regel des ganzen Videos:
+
+6
+00:00:14,784 --> 00:00:18,772
+Banken sind gesetzlich verpflichtet, verdächtige Zahlungen zu melden.
+
+7
+00:00:18,772 --> 00:00:20,940
+Das nennt man Verdachtsmeldung.
+
+8
+00:00:20,940 --> 00:00:23,903
+Die Bank muss nicht beweisen, dass etwas kriminell ist.
+
+9
+00:00:23,903 --> 00:00:25,666
+Sie muss nur melden.
+
+10
+00:00:25,666 --> 00:00:27,434
+Und zwar rechtzeitig.
+
+11
+00:00:27,434 --> 00:00:32,213
+Die Berliner Smartphone-Bank N26 hat genau das nicht geschafft.
+
+12
+00:00:32,213 --> 00:00:36,155
+2021 verhängte die Finanzaufsicht BaFin ein
+
+13
+00:00:36,155 --> 00:00:40,301
+Bußgeld von 4,25 Millionen Euro wegen verspäteter
+
+14
+00:00:40,301 --> 00:00:41,749
+Verdachtsmeldungen.
+
+15
+00:00:41,749 --> 00:00:47,911
+Dazu kam ein Sonderbeauftragter im Haus – und eine Obergrenze: höchstens 50.000
+
+16
+00:00:47,911 --> 00:00:49,536
+Neukunden pro Monat.
+
+17
+00:00:49,536 --> 00:00:53,908
+Für eine Bank, die vom Wachstum lebt, ist das wie eine Vollbremsung.
+
+18
+00:00:53,908 --> 00:00:55,749
+Und 2024?
+
+19
+00:00:55,749 --> 00:00:59,503
+Das nächste Bußgeld: 9,2 Millionen Euro.
+
+20
+00:00:59,503 --> 00:01:06,063
+Der Vorwurf: Auch 2022 seien Verdachtsfälle systematisch zu spät gemeldet worden.
+
+21
+00:01:06,732 --> 00:01:08,720
+Das ist die Spitze des Eisbergs.
+
+22
+00:01:08,720 --> 00:01:12,641
+Niemand behauptet, dass N26 selbst Geld gewaschen hat.
+
+23
+00:01:12,641 --> 00:01:17,743
+Der Fehler ist kleiner – und trotzdem gefährlich: Wenn die Meldung zu spät kommt,
+
+24
+00:01:17,743 --> 00:01:18,764
+ist das Geld längst
+
+25
+00:01:18,764 --> 00:01:19,505
+weiter.

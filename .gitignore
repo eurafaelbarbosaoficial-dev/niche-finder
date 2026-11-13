@@ -18,3 +18,13 @@ videos/*/renders/*.mp4
 videos/*/renders/*-revisao/quadros/
 videos/*/node_modules/
 videos/*/.thumbnails/
+
+# video completo: partes geradas pelo montar.py (copias) e renders
+videos/**/renders/*.mp4
+videos/**/.hyperframes/
+videos/**/.thumbnails/
+videos/**/quadros/
+videos/bankskandale-completo/k*/assets/
+videos/bankskandale-completo/k*/.media/
+videos/bankskandale-completo/thumb/assets/
+videos/bankskandale-completo/render-*.log

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <script src="assets/js/perfect-freehand.js"></script>
+    <script src="assets/js/pincel.js"></script>
+    <script src="assets/js/motor.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1920px; height: 1080px; overflow: hidden; background: #efe6d2; }
+      #root { position: relative; width: 100%; height: 100%; }
+      #cv { position: absolute; inset: 0; width: 1920px; height: 1080px; }
+      .fontes { position: absolute; left: -4000px; top: 0; opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="22.25" data-width="1920" data-height="1080">
+      <canvas id="cv" width="1920" height="1080"></canvas>
+      <div class="fontes"><span style="font: 700 20px 'Playfair Display'">Aa</span><span style="font: italic 700 20px 'Playfair Display'">Aa</span><span style="font: 700 20px Inter">Aa</span><span style="font: 600 20px Inter">Aa</span></div>
+      <audio id="vo" class="clip" src="assets/audio/narracao.mp3" data-start="0.35" data-duration="21.0" data-track-index="2" data-volume="1"></audio>
+      <audio id="sfx-0" class="clip" src="assets/sfx/pop.mp3" data-start="7.61" data-duration="0.7" data-track-index="3" data-volume="0.4"></audio>
+      <audio id="sfx-1" class="clip" src="assets/sfx/pop.mp3" data-start="8.31" data-duration="0.7" data-track-index="4" data-volume="0.4"></audio>
+      <audio id="sfx-2" class="clip" src="assets/sfx/moedas.mp3" data-start="18.43" data-duration="2.0" data-track-index="5" data-volume="0.45" data-fade-out="0.6"></audio>
+    </div>
+    <script>
+      const CENAS = [{"tipo": "documento", "em": "Der Verdacht", "cabecalho": "Razzia · 29.11.2018", "titulo": "Der Verdacht", "citacao": "Briefkastenfirmen in Steueroasen gründen", "passos": [3.98, 99], "detetive": "desconfia", "t0": 0.0, "t1": 6.71}, {"tipo": "fluxo", "em": "und Geld aus Straftaten", "titulo": "Geld aus Straftaten *durchschleusen*", "nos": [{"texto": "Geld aus Straftaten", "icone": "notas"}, {"texto": "Briefkastenfirma", "icone": "documento"}, {"texto": "Bankkonto", "icone": "banco"}], "passos": [0.2, 0.9, 1.6, 99], "destacaFim": true, "t0": 6.71, "t1": 10.09}, {"tipo": "local", "em": "Allein eine Konzerngesellschaft", "lugar": "Britische Jungferninseln", "data": "2016", "sub": "eine Konzerngesellschaft", "passos": [2.6, 3.84], "t0": 10.09, "t1": 15.13}, {"tipo": "numero", "em": "über", "valor": 900, "prefixo": "über ", "sufixo": "Kunden", "rotulo": "betreut von einer Gesellschaft", "icone": "documento", "passos": [0.1, 99, 99], "t0": 15.13, "t1": 18.03}, {"tipo": "numero", "em": "Geschäftsvolumen", "valor": 311, "sufixo": "Mio. €", "rotulo": "Geschäftsvolumen", "icone": "notas", "passos": [0.4], "t0": 18.03, "t1": 23.25}];
+      (async function () {
+        try { await Promise.all(['700 80px "Playfair Display"', 'italic 700 80px "Playfair Display"', '700 40px Inter', '600 40px Inter'].map((f) => document.fonts.load(f))); } catch (e) {}
+        const ctx = document.getElementById("cv").getContext("2d");
+        const tl = gsap.timeline({ paused: true });
+        const r = { t: 0 };
+        tl.fromTo(r, { t: 0 }, { t: 22.25, duration: 22.25, ease: "none", onUpdate: () => Motor.desenhar(ctx, CENAS, r.t) }, 0);
+        Motor.desenhar(ctx, CENAS, 0);
+        window.__timelines["main"] = tl;
+      })();
+    </script>
+  </body>
+</html>
