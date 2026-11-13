@@ -77,7 +77,7 @@ function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return
 function fn(n){if(n==null)return"—";if(n>=1e6)return(n/1e6).toFixed(1).replace(".",",")+" mi";if(n>=1e3)return(n/1e3).toFixed(1).replace(".",",")+" mil";return String(n);}
 function ha(iso){if(!iso)return"?";var m=Math.round((Date.now()-new Date(iso).getTime())/6e4);if(m<60)return"há "+m+" min";var h=Math.round(m/60);if(h<48)return"há "+h+" h";return"há "+Math.round(h/24)+" dias";}
 function cor(t){var h=0;for(var i=0;i<(t||"").length;i++)h=(h*31+t.charCodeAt(i))%360;return"hsl("+h+" 55% 42%)";}
-function pedirLink(id,nome){var corpo="Projeto: "+id+"\n\nLink do canal no YouTube (ex.: https://www.youtube.com/@NomeDoCanal):\n\n";
+function pedirLink(id,nome){var corpo="Projeto: "+id+"\n\nLink do canal no YouTube (ex.: https://www.youtube.com/@NomeDoCanal):\n\n\n---\nClique em Create e NÃO feche este pedido: o sistema lê e fecha sozinho em até 10 minutos.";
   window.open(REPO+"/issues/new?labels=meu-canal&title="+encodeURIComponent("Canal: "+nome)+"&body="+encodeURIComponent(corpo),"_blank","noopener");}
 function studio(s){if(!s||!s.length)return"<p class='mut' style='margin:0'>Nenhum print ainda.</p>";
   return"<div class='sd'>"+s.slice().reverse().slice(0,12).map(function(x){var m=x.metricas||{},o=m.origens||{};

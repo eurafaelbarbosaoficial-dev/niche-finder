@@ -9,7 +9,7 @@ Histórico em estado/meus-canais.json (fora do site); resumo em docs/meus-canais
 Custo na cota da API: ~1 ponto por chamada (cota grátis: 10.000 por dia).
 Uso: python -I producao/meus_canais.py
 """
-import datetime as dt, json, re, sys, urllib.parse, urllib.request
+import datetime as dt, json, re, sys, urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -50,7 +50,12 @@ def medir(c):
         return None
     ch = api("channels", part="snippet,statistics,contentDetails", id=cid)["items"][0]
     st, up = ch["statistics"], ch["contentDetails"]["relatedPlaylists"]["uploads"]
-    ids = [x["contentDetails"]["videoId"] for x in api("playlistItems", part="contentDetails", playlistId=up, maxResults=50).get("items", [])]
+    try:  # canal sem vídeo público ainda: o YouTube responde 404 para a lista de envios
+        ids = [x["contentDetails"]["videoId"] for x in api("playlistItems", part="contentDetails", playlistId=up, maxResults=50).get("items", [])]
+    except urllib.error.HTTPError as e:
+        if e.code != 404:
+            raise
+        ids = []
     vids = []
     if ids:
         for v in api("videos", part="snippet,statistics,contentDetails", id=",".join(ids)).get("items", []):
