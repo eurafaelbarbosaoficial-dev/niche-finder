@@ -49,8 +49,10 @@ Passo a passo de cada parte: `CLAUDE.md`. Instalar em máquina nova: `LEIA-ME.md
 - 5 estruturas de roteiro analisadas (catálogo, iceberg, documentário, ascensão e queda, passo a passo) +
   `roteiros/adaptacao-de-lavagem.json`.
 - PRÓXIMO PASSO: escrever o 1º roteiro em alemão (tema a escolher pelo dono) e produzir o 1º vídeo.
-- Pedidos do dono em aberto: muitos canais todos os dias, mais formatos, ordenar por views, arquivo histórico
-  (base que acumula), faixa "Subindo" (abaixo de 50 mil mas ≥ 50× views/inscrito).
+- FEITO em 12/11 à noite: 14 formatos de título nas buscas (grupo "Formatos" em categorias.json), cada termo buscado
+  2 vezes (relevância no mês + MAIS VISTOS da semana = ~620 buscas por rodada) e arquivo histórico
+  (`docs/arquivo.json`, botão Agora | Arquivo no site: todo outlier que já apareceu, a base só cresce).
+- Em aberto: faixa "Subindo" (abaixo de 50 mil mas ≥ 50× views/inscrito), se o dono quiser.
 
 ## Lições técnicas (para não repetir erros)
 - `python -I` não põe a pasta do script no caminho: os scripts fazem `sys.path.insert`.

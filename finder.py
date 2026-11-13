@@ -164,6 +164,24 @@ def montar_dados(cache, info, cfg, a):
             "fora": fora, "em_observacao": em_observacao, "canais": canais}
 
 
+def montar_arquivo(cache, a):
+    """Arquivo histórico: TODO canal que já foi outlier (1 vídeo com bom_video+), mesmo depois de passar das
+    3 semanas. A base cresce a cada rodada."""
+    hoje, arq = dt.date.today(), []
+    for cid, c in cache.items():
+        m = c.get("melhor") or {}
+        if (m.get("views") or 0) < a.bom_video or not c.get("primeiro_video"):
+            continue
+        d1 = (hoje - dt.date.fromisoformat(c["primeiro_video"])).days
+        arq.append({**{k: c.get(k) for k in ("nome", "inscritos", "idioma", "categoria", "grupo", "termo",
+                                             "primeiro_video", "n_longos", "views_total", "melhor", "videos",
+                                             "palavras", "historico", "visto_em")},
+                    "id": cid, "url": f"https://www.youtube.com/channel/{cid}", "dias_primeiro": d1,
+                    "views_dia": round((c.get("views_total") or 0) / max(d1, 1)), "performando": True,
+                    "na_janela": d1 <= a.dias_video})
+    return {"atualizado": agora().isoformat(), "total": len(arq), "canais": arq}
+
+
 def publicar():
     """Envia docs/ para o GitHub (o GitHub Pages mostra o site). Erro aqui não para a busca."""
     import subprocess
@@ -218,6 +236,7 @@ def rodada(a, trava):
         trava.touch()
         gravar(CACHE_F, cache)
         gravar(DADOS_F, montar_dados(cache, info, cfg, a))
+        gravar(DADOS_F.parent / "arquivo.json", montar_arquivo(cache, a))
         if a.publicar and (forcar_push or time.time() - ultimo["push"] > a.publicar * 60):
             publicar()
             ultimo["push"] = time.time()
@@ -234,7 +253,9 @@ def rodada(a, trava):
         termos = [(cat, v["grupo"], lang, t) for cat, v in cfg.items() for lang in ("pt", "es", "en", "de", "fr")
                   for t in v.get(lang, [])]
         with ThreadPoolExecutor(a.paralelo) as ex:
-            futs = {ex.submit(buscar, t[3], a.por_busca, a.periodo): t for t in termos}
+            # cada termo 2 vezes: relevância no mês + MAIS VISTOS da semana (pega quem está explodindo agora)
+            futs = {ex.submit(buscar, t[3], a.por_busca, per, ordem): t
+                    for t in termos for per, ordem in ((a.periodo, None), ("semana", "views"))}
             for i, f in enumerate(as_completed(futs), 1):
                 cat, grupo, lang, termo = futs[f]
                 res = f.result() or []
@@ -242,7 +263,7 @@ def rodada(a, trava):
                     cid = r.get("channel_id")
                     if cid and (r.get("duration") or 0) >= a.min_duracao and cid not in achados:
                         achados[cid] = (cat, grupo, termo)
-                info.update(fase=f"Buscando vídeos novos ({i}/{len(termos)})", feito=i, total=len(termos))
+                info.update(fase=f"Buscando vídeos novos ({i}/{len(futs)})", feito=i, total=len(futs))
                 if i % 10 == 0:
                     salvar()
                 log(f"[{lang}] {cat}: “{termo}” → {len(res)} vídeos")

@@ -37,12 +37,14 @@ PAUSA = 1.5  # segundos entre chamadas, para o YouTube não bloquear (erro 429)
 PERIODOS = {"hora": 1, "hoje": 2, "semana": 3, "mes": 4, "ano": 5}
 
 
-def sp_filtro(periodo):
-    """Filtro de busca do YouTube: tipo = vídeo + data de envio (protobuf em base64)."""
+def sp_filtro(periodo, ordem=None):
+    """Filtro de busca do YouTube: tipo = vídeo + data de envio (protobuf em base64).
+    ordem="views" = ordenar pelos mais vistos (pega quem está explodindo agora, não só os canais grandes)."""
     f = b"\x10\x01"  # tipo: vídeo
     if periodo in PERIODOS:
         f = bytes([0x08, PERIODOS[periodo]]) + f
-    return base64.urlsafe_b64encode(b"\x12" + bytes([len(f)]) + f).decode()
+    pre = b"\x08\x03" if ordem == "views" else b""
+    return base64.urlsafe_b64encode(pre + b"\x12" + bytes([len(f)]) + f).decode()
 
 
 def yt(args, tentativas=3):
@@ -67,9 +69,9 @@ def linhas_json(out):
     return [json.loads(l) for l in out.splitlines() if l.strip().startswith("{")]
 
 
-def buscar(termo, n, periodo):
+def buscar(termo, n, periodo, ordem=None):
     q = termo.replace(" ", "+")
-    url = f"https://www.youtube.com/results?search_query={q}&sp={sp_filtro(periodo)}"
+    url = f"https://www.youtube.com/results?search_query={q}&sp={sp_filtro(periodo, ordem)}"
     return linhas_json(yt(["-j", "--flat-playlist", "--playlist-end", str(n), url]))
 
 

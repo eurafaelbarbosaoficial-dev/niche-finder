@@ -45,6 +45,7 @@
     <div class="ctrl-l">
       <label class="srch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
         <input id="q" type="search" placeholder="Filtrar por canal, vídeo ou tema" autocomplete="off"><kbd>/</kbd></label>
+      <div class="segm" id="fonte"><button data-f="agora">Agora</button><button data-f="arquivo">Arquivo</button></div>
       <div class="segm" id="langs"></div>
       <select class="drop" id="ordem" aria-label="Ordenar">
         <option value="melhor">↓ Melhor vídeo</option><option value="ratio">↓ Outlier ×</option><option value="dia">↓ Views por dia</option>
@@ -74,7 +75,7 @@
 <script>
 (function(){
 var LANGS={pt:"Português",es:"Espanhol",en:"Inglês",de:"Alemão",fr:"Francês"};
-var D=null,S={cat:"",lang:"",q:"",ordem:"melhor"},aberto=null,primeira=true;
+var D=null,S={cat:"",lang:"",q:"",ordem:"melhor",fonte:"agora"},aberto=null,primeira=true;
 try{var s=JSON.parse(localStorage.getItem("nf3")||"{}");for(var k in s)if(k in S)S[k]=s[k];}catch(e){}
 function salvar(){try{localStorage.setItem("nf3",JSON.stringify(S));}catch(e){}}
 function $(id){return document.getElementById(id);}
@@ -107,7 +108,9 @@ function carregar(){
   .then(function(d){var c=d.criterios||(d.criterios={});c.bom_video=c.bom_video||50000;
     (d.canais||[]).forEach(function(x){x.performando=((x.melhor||{}).views||0)>=c.bom_video;});
     if(d.em_observacao==null)d.em_observacao=(d.canais||[]).filter(function(x){return!x.performando;}).length;
-    d.canais=(d.canais||[]).filter(function(x){return x.performando;});D=d;$("erro").style.display="none";tudo();})
+    d.canais=(d.canais||[]).filter(function(x){return x.performando;});
+    if(S.fonte!=="arquivo"){D=d;$("erro").style.display="none";tudo();return;}
+    return fetch("arquivo.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():{canais:[]};}).then(function(a){d.canais=a.canais||[];D=d;$("erro").style.display="none";tudo();});})
   .catch(function(e){$("erro").style.display="block";$("erro").textContent="Não consegui ler os dados agora ("+e.message+"). Tento de novo em 30 s.";});
 }
 
@@ -150,7 +153,7 @@ function card(x){var m=x.melhor,r=ratio(x),g=cresc(x);
     "<div class='nums'><div><small>Inscritos</small><b>"+fmt(x.inscritos)+"</b></div><div><small>Vídeos</small><b>"+(x.n_longos==null?"?":x.n_longos)+"</b></div><div><small>Views/dia</small><b>"+fmt(x.views_dia)+"</b></div></div>"+
     "<div class='ft'>"+spark(x.historico,84,24)+(g?"<span class='up'>+"+fmt(g)+" 24h</span>":"")+"<span class='go'>Ver canal <span>→</span></span></div></div></article>";}
 function lista(){var cs=filtrados(),fs=[S.cat,S.lang&&LANGS[S.lang],S.q&&("“"+S.q+"”")].filter(Boolean);
-  $("cont").innerHTML="<b>"+cs.length+"</b> de "+(D.canais||[]).length+" outliers"+(fs.length?" · "+esc(fs.join(" · ")):"");$("limpar").style.display=fs.length?"":"none";$("ordem").value=S.ordem;
+  $("cont").innerHTML="<b>"+cs.length+"</b> de "+(D.canais||[]).length+(S.fonte==="arquivo"?" outliers no arquivo (todos que já apareceram)":" outliers das últimas 3 semanas")+(fs.length?" · "+esc(fs.join(" · ")):"");$("limpar").style.display=fs.length?"":"none";$("ordem").value=S.ordem;
   $("grid").innerHTML=cs.length?cs.map(card).join(""):"<div class='vazio'>"+((D.canais||[]).length?"Nenhum canal com esses filtros.":"Nenhum outlier ainda. A busca roda a cada 3 horas.")+"</div>";
   UI.revelar($("grid").querySelectorAll(".card"));
   [].forEach.call($("grid").querySelectorAll(".card"),function(el){el.onclick=function(){abrir(el.dataset.id);};});}
@@ -209,7 +212,8 @@ document.addEventListener("keydown",function(e){var tag=(e.target.tagName||"").t
   if(tag==="input"||tag==="select"||tag==="textarea")return;
   if(e.key==="/"){e.preventDefault();$("q").focus();}else if(e.key==="r"||e.key==="R")carregar();
   else if(e.key==="Enter"&&e.target.dataset&&e.target.dataset.id)abrir(e.target.dataset.id);});
-UI.pilula(document.querySelector(".tabs"));UI.revelar(document.querySelectorAll(".rv"));
+[].forEach.call($("fonte").children,function(b){b.className=b.dataset.f===S.fonte?"on":"";b.onclick=function(){S.fonte=b.dataset.f;salvar();[].forEach.call($("fonte").children,function(x){x.className=x.dataset.f===S.fonte?"on":"";});UI.pilula($("fonte"));carregar();};});
+UI.pilula($("fonte"));UI.pilula(document.querySelector(".tabs"));UI.revelar(document.querySelectorAll(".rv"));
 carregar();carregarCl();setInterval(carregar,30000);setInterval(carregarCl,300000);
 })();
 </script>

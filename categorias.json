@@ -527,5 +527,189 @@
       "comment les humains préhistoriques",
       "comment vivaient les gens au moyen âge"
     ]
+  },
+  "Explicado em N minutos": {
+    "grupo": "Formatos",
+    "pt": [
+      "explicado em minutos",
+      "história completa em minutos"
+    ],
+    "es": [
+      "explicado en minutos",
+      "historia completa en minutos"
+    ],
+    "en": [
+      "explained in minutes",
+      "entire history in minutes"
+    ],
+    "de": [
+      "in minuten erklärt",
+      "ganze geschichte in minuten"
+    ],
+    "fr": [
+      "expliqué en minutes",
+      "toute l'histoire en minutes"
+    ]
+  },
+  "A psicologia de…": {
+    "grupo": "Formatos",
+    "pt": [
+      "a psicologia de quem",
+      "psicologia por trás"
+    ],
+    "es": [
+      "la psicología de las personas que",
+      "psicología de por qué"
+    ],
+    "en": [
+      "the psychology of people who",
+      "psychology of why"
+    ],
+    "de": [
+      "die psychologie von menschen die",
+      "psychologie warum"
+    ],
+    "fr": [
+      "la psychologie des gens qui",
+      "psychologie pourquoi"
+    ]
+  },
+  "O que acontece com seu corpo": {
+    "grupo": "Formatos",
+    "pt": [
+      "o que acontece com seu corpo",
+      "o que acontece se você"
+    ],
+    "es": [
+      "qué le pasa a tu cuerpo si",
+      "qué pasa si dejas de"
+    ],
+    "en": [
+      "what happens to your body if",
+      "what happens when you"
+    ],
+    "de": [
+      "was passiert mit deinem körper wenn",
+      "was passiert wenn du"
+    ],
+    "fr": [
+      "ce qui arrive à ton corps si",
+      "que se passe-t-il si tu arrêtes"
+    ]
+  },
+  "Ascensão e queda": {
+    "grupo": "Formatos",
+    "pt": [
+      "ascensão e queda de",
+      "a história não contada de"
+    ],
+    "es": [
+      "auge y caída de",
+      "la historia no contada de"
+    ],
+    "en": [
+      "the rise and fall of",
+      "the untold story of"
+    ],
+    "de": [
+      "aufstieg und fall von",
+      "die wahre geschichte von"
+    ],
+    "fr": [
+      "l'ascension et la chute de",
+      "l'histoire vraie de"
+    ]
+  },
+  "Como funciona de verdade": {
+    "grupo": "Formatos",
+    "pt": [
+      "como funciona de verdade",
+      "como realmente funciona"
+    ],
+    "es": [
+      "cómo funciona realmente",
+      "cómo funciona de verdad"
+    ],
+    "en": [
+      "how it actually works",
+      "how does it really work"
+    ],
+    "de": [
+      "wie funktioniert eigentlich",
+      "so funktioniert wirklich"
+    ],
+    "fr": [
+      "comment ça marche vraiment",
+      "comment fonctionne vraiment"
+    ]
+  },
+  "Histórias e relatos (Reddit)": {
+    "grupo": "Formatos",
+    "pt": [
+      "histórias do reddit",
+      "relatos assustadores reais"
+    ],
+    "es": [
+      "historias de reddit",
+      "relatos de terror reales"
+    ],
+    "en": [
+      "reddit stories",
+      "true scary stories"
+    ],
+    "de": [
+      "reddit geschichten",
+      "wahre gruselgeschichten"
+    ],
+    "fr": [
+      "histoires reddit",
+      "histoires vraies effrayantes"
+    ]
+  },
+  "Segredos e coisas que você não sabia": {
+    "grupo": "Formatos",
+    "pt": [
+      "segredos que não te contam",
+      "coisas que você não sabia sobre"
+    ],
+    "es": [
+      "secretos que no te cuentan",
+      "cosas que no sabías de"
+    ],
+    "en": [
+      "secrets they don't want you to know",
+      "things you didn't know about"
+    ],
+    "de": [
+      "geheimnisse die man dir nicht erzählt",
+      "dinge die du nicht wusstest über"
+    ],
+    "fr": [
+      "secrets qu'on ne te dit pas",
+      "choses que tu ne savais pas sur"
+    ]
+  },
+  "O lado sombrio de…": {
+    "grupo": "Formatos",
+    "pt": [
+      "o lado sombrio de",
+      "fatos perturbadores sobre"
+    ],
+    "es": [
+      "el lado oscuro de",
+      "datos perturbadores sobre"
+    ],
+    "en": [
+      "dark history of",
+      "disturbing facts about"
+    ],
+    "de": [
+      "die dunkle seite von",
+      "verstörende fakten über"
+    ],
+    "fr": [
+      "le côté sombre de",
+      "faits troublants sur"
+    ]
   }
 }
