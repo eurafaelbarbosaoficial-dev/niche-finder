@@ -15,8 +15,8 @@ H.264 + AAC 320k.
   - a visão geral do iceberg acende a faixa de cada nível quando a voz fala dele.
 - **O revisor passou a pegar os dois casos:** corte seco (lista automática) e emenda de voz (regra 16 do agente).
 - **Ainda existem cortes de noite para papel com whoosh** nos capítulos 3, 4, 7 e 8, no mesmo estilo dos 5 s e
-  12 s que o dono aprovou na amostra. O revisor os lista como "corte seco com som de transição". Podem virar
-  "dip" suave se o dono quiser.
+  12 s que o dono aprovou na amostra. O revisor os lista como "corte seco com som de transição". **O dono decidiu
+  mantê-los assim (13/11).**
 
 ## Problemas restantes
 | # | tempo | área | gravidade | o que é | decisão |
