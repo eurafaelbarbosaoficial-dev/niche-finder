@@ -616,3 +616,27 @@ inscritos subindo, views estáveis) por formato; a página do formato mostra os 
 testes do vídeo 08 (formato existe? adjacentes? comentários? comunidade? CPM? produtos?).
 
 ## 21 · "aprenda editar vídeo e faça R$22.003,63" (uBiZVKueT3c) — edição prática (fora do foco; não detalhado)
+
+## 29 · "como criar um canal dark com Claude da maneira certa (passo a passo)" (xRRbT6cARoo, 17 min) — ★ bíblia visual + esteira
+Assistido em 13/11/2026 (legenda automática + 20 quadros).
+- [0:40] Baixa TODOS os vídeos do canal de referência ("Ampulheta", história; 37 shorts) — shorts primeiro porque a
+  análise é mais rápida.
+- [2:10] Pede ao Claude a análise do estilo de edição de todos eles → **"Bíblia visual"** que vira uma skill.
+- [2:39] **Feedback loop:** um agente de animação e um agente revisor; os erros e melhorias do revisor entram no
+  próximo vídeo (o animador melhora a cada conteúdo).
+- [5:20] O Claude gera **3 estilos de teste**; ele escolhe um ("Almanak").
+- [6:20] Estudo de temas + estruturas de título do canal de referência → **calendário programático simulado**
+  (continuar os tópicos do canal).
+- [7:46] Shorts primeiro para lapidar o motor; depois vídeos longos.
+- [8:10] O canal como **meio de distribuição de um produto** (app/site/sistema): CTA, leads; além do AdSense.
+  Pede "3 outros universos tão interessantes quanto o bíblico" com potencial de viralizar E vender produto.
+- [9:40] Opinião: hoje só há 3 caminhos — executar muito rápido, **prever a oportunidade antes de ser pública**, ou
+  ser tão bom que a oportunidade chega.
+- [11:00] Antes de produzir, pede **3 títulos** para visualizar a direção.
+- [14:20] **Esteira de produção automatizada:** campo de ideias → agente de roteiro → narração via API → **revisor
+  em cada etapa** → montagem e render → **agendar publicação em várias plataformas** (YouTube, Instagram, TikTok).
+- [4:20] Regra dele: render só à noite (placa de vídeo).
+
+**Para o sistema (hipótese, não do Raj):** já temos roteiro, voz por API, montagem, revisor de vídeo. Falta: bíblia
+visual da referência (dos vídeos, não da transcrição), revisor de roteiro, lições do revisor que voltam para o
+motor, fila de ideias no site, cortes em shorts e calendário programático.
