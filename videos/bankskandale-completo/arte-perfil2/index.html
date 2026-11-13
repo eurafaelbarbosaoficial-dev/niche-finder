@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <script src="assets/js/perfect-freehand.js"></script>
+    <script src="assets/js/pincel.js"></script>
+    <script src="assets/js/motor.js"></script>
+    <script src="assets/js/thumb2.js"></script>
+    <script src="assets/js/canal.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1080px; overflow: hidden; background: #efe6d2; }
+      #root { position: relative; width: 100%; height: 100%; }
+      #cv { position: absolute; inset: 0; width: 1080px; height: 1080px; }
+      .fontes { position: absolute; left: -4000px; top: 0; opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="1" data-width="1080" data-height="1080">
+      <canvas id="cv" width="1080" height="1080"></canvas>
+      <div class="fontes"><span style="font: 700 20px 'Playfair Display'">Aa</span><span style="font: italic 700 20px 'Playfair Display'">Aa</span><span style="font: 700 20px Inter">Aa</span><span style="font: 600 20px Inter">Aa</span><span style="font: 400 20px 'League Gothic'">Aa€Ä</span></div>
+    </div>
+    <script>
+      const CENAS = [{"tipo":"perfil2","t0":0,"t1":2,"passos":[],"batidas":[],"semFade":true}];
+      (async function () {
+        try { await Promise.all(['700 80px "Playfair Display"', 'italic 700 80px "Playfair Display"', '700 40px Inter', '600 40px Inter', '400 200px "League Gothic"'].map((f) => document.fonts.load(f))); } catch (e) {}
+        const ctx = document.getElementById("cv").getContext("2d");
+        const tl = gsap.timeline({ paused: true });
+        const r = { t: 0 };
+        tl.fromTo(r, { t: 0 }, { t: 1, duration: 1, ease: "none", onUpdate: () => Motor.desenhar(ctx, CENAS, r.t) }, 0);
+        Motor.desenhar(ctx, CENAS, 0);
+        window.__timelines["main"] = tl;
+      })();
+    </script>
+  </body>
+</html>
