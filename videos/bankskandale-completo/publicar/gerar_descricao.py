@@ -17,15 +17,12 @@ def mmss(s):
     return f"{s // 60}:{s % 60:02d}"
 
 
-# capítulo 1 = 16,95 + k1b + 11,35 + k1d
-d1 = 16.95 + dur(AQUI / "k1b/renders/k1b.mp4") + (28.3 - 16.95) + dur(AQUI / "k1d/renders/k1d.mp4")
+# inícios reais dos capítulos, gravados pelo juntar.py (já com os cortes de silêncio)
+cap = json.load(open(AQUI / "renders" / "capitulos.json", encoding="utf-8"))
 nomes = ["Razzia bei der Deutschen Bank", "Ebene 1: Die Bank auf deinem Handy (N26)", "Ebene 2: Banken, die wegschauen (ING, Commerzbank)",
          "Ebene 3: Die Maschine (Deutsche Bank)", "Ebene 4: Die Bank der Kartelle (HSBC, TD Bank)", "Ebene 5: Eine Filiale, 200 Milliarden (Danske Bank)",
          "Der Grund: Die Bank, die das Verbrechen war (BCCI)", "Strafe zahlen, weitermachen"]
-inicios, t = [0.0], d1
-for n in range(2, 9):
-    inicios.append(t)
-    t += dur(AQUI / f"k{n}/renders/k{n}.mp4")
+inicios = [cap["k1"]] + [cap[f"k{n}"] for n in range(2, 9)]
 
 fontes = []
 for b in ROT["blocos"]:
@@ -46,7 +43,7 @@ Quellen:
 
 Soundeffekte:
 "Deep Cinematic Impact" von MeijstroAudio (CC BY 4.0) – https://freesound.org/people/MeijstroAudio/sounds/377303
-"Gold coin clink (100 Rubles Witte)" von Walking.With.Microphones (CC BY 4.0) – https://freesound.org/people/Walking.With.Microphones/sounds/557223
+"Gold coin clink (100 Rubles Witte)" von Walking.With.Microphones (CC BY 4.0, bearbeitet: komprimiert und lauter) – https://freesound.org/people/Walking.With.Microphones/sounds/557223
 Weitere Effekte: CC0 (Freesound: Breviceps, kermite607, Rizzard, MaoDin204, chriskalos).
 
 #Geldwäsche #Banken #DeutscheBank

@@ -9,3 +9,4 @@ These sounds are licensed CC BY: credit them wherever the video is published.
 - `assets/sfx/riser.mp3` (sfx_009): "Riser" by Rizzard, CC0 1.0. Source: https://freesound.org/people/Rizzard/sounds/561207
 - `assets/sfx/caixa.mp3` (sfx_008): "Cash register" by MaoDin204, CC0 1.0. Source: https://freesound.org/people/MaoDin204/sounds/721774
 - Descartado: sfx_007 ("rubber stamp", Wikimedia Lingua Libre) — é uma pessoa FALANDO "rubber stamp", não o som.
+- `moedas.mp3` no vídeo completo: o original (sfx_005, CC BY 4.0, Walking.With.Microphones) foi comprimido e amplificado (bearbeitet) para ser ouvido sob a narração.

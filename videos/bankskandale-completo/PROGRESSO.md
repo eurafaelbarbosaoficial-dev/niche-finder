@@ -21,6 +21,13 @@ postar de manhã. Ele autorizou tudo (gastar créditos de voz, decidir, editar).
   Strafe" não apareceu. `palavras.py` agora usa `vad_filter` e `condition_on_previous_text=False`. Depois de
   transcrever, conferir se o número de palavras bate com o roteiro e procurar buracos de mais de 2 s.
 
+- As batidas de câmera (punch-in) precisam ser calculadas ANTES de escrever o index.html. Até 02:45 de 13/11 elas
+  não entravam no vídeo. Com zoom de 8% e pan de 46 px, o detector de "novidade" do revisor enxerga a batida.
+- O texto em canvas precisa de `textAlign = "left"` dentro de `texto()`. Um "center" vindo de outro desenho
+  embaralhava as palavras.
+- Fotografar cada cena a 85% da duração (`python -I fotos.py kN`) pegou 8 defeitos de layout antes do render.
+- Render: ~20 s de processamento por segundo de vídeo neste PC, quando roda junto com outras tarefas.
+
 ## Próximos passos
 1. Renderizar k4…k8: `./renderizar.sh k4 k5 k6 k7 k8`, depois de `python -I montar.py kN` para cada um.
 2. `python -I juntar.py`, depois `python -I ../../masterizar.py renders/bankskandale-completo.mp4`.

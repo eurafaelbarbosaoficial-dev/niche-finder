@@ -72,6 +72,23 @@ def main():
         a["t1"] = b["t0"]
     cenas[-1]["t1"] = total + 1
 
+    # batidas de câmera: onde a cena passaria mais de 2,8 s sem nada novo, um "punch-in" a cada ~2,2 s
+    for c in cenas:
+        d = c["t1"] - c["t0"]
+        # só eventos GRANDES contam (linha de texto pequena não segura o olho)
+        GRANDES = {"numero": {0, 3}, "titulo": {0, 1}, "documento": {0, 1}, "lista": set(), "local": set(), "banco": {1},
+                   "celular": {0}, "iceberg": set(), "detetive": {0}, "balanca": {0}, "carta": set(), "rota": set()}
+        idx = GRANDES.get(c["tipo"])
+        grandes = [p_ for j, p_ in enumerate(c["passos"]) if p_ is not None and 0 <= p_ < d and (idx is None or j in idx)]
+        evs = sorted([0.0] + grandes + ([grandes[0] + 1.4] if c["tipo"] == "numero" and grandes else []) + [d])
+        bat = []
+        for a_, b_ in zip(evs, evs[1:]):
+            if b_ - a_ > 2.8:
+                n = int((b_ - a_) / 2.2)
+                bat += [round(a_ + (b_ - a_) * (k + 1) / (n + 1), 2) for k in range(n)]
+        c["batidas"] = bat
+        c["passos_b"] = bat
+
     # efeitos sonoros automáticos (poucos e com função)
     sfx = []
     def som(arq, t, vol, dur=None, fade=None):
@@ -96,11 +113,11 @@ def main():
             som("carimbo.mp3", c["t0"] + pt + 0.12, 0.85, 0.6)
             som("impacto.mp3", c["t0"] + pt + 0.1, 0.35, 1.6, 0.8)
         if c["tipo"] == "numero" and c.get("icone") in ("moedas", "notas"):
-            som("moedas.mp3", c["t0"] + (P[0] if P and P[0] is not None else 0.1), 0.45, 2.0, 0.6)
+            som("moedas.mp3", c["t0"] + (P[0] if P and P[0] is not None else 0.1), 0.55, 2.0, 0.6)
         if c["tipo"] in ("lista", "rota", "fluxo", "tempo", "comparar"):
             for j, p in enumerate(P[: len(c.get("itens") or c.get("cidades") or c.get("nos") or c.get("marcos") or [])]):
                 if p is not None and j > 0:
-                    som("pop.mp3", c["t0"] + p, 0.4, 0.7)
+                    som("pop.mp3", c["t0"] + p, 0.6, 0.7)
         if c.get("caixa"):
             som("caixa.mp3", c["t0"] + c["caixa"], 0.5, 1.1)
     sfx = [s for s in sfx if 0 <= s[1] < total - 0.2]
@@ -167,18 +184,6 @@ def main():
             src = AQUI.parent / "amostra-bankskandale" / f
             if src.exists():
                 shutil.copy(src, out / f)
-    # batidas de câmera: onde a cena passaria mais de 2,8 s sem nada novo, um "punch-in" a cada ~2,2 s
-    for c in cenas:
-        d = c["t1"] - c["t0"]
-        evs = sorted([0.0] + [p_ for p_ in c["passos"] if p_ is not None and 0 <= p_ < d] + ([1.4] if c["tipo"] == "numero" else []) + [d])
-        bat = []
-        for a_, b_ in zip(evs, evs[1:]):
-            if b_ - a_ > 2.8:
-                n = int((b_ - a_) / 2.2)
-                bat += [round(a_ + (b_ - a_) * (k + 1) / (n + 1), 2) for k in range(n)]
-        c["batidas"] = bat
-        c["passos_b"] = bat
-
     # retenção: momentos em que algo novo entra (início de cena + passos); modelos com movimento contínuo contam
     CONTINUO = {"rota", "fluxo", "guiche", "teia", "carta"}
     ev = []

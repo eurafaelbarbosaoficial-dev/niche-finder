@@ -371,6 +371,14 @@ def efeitos_audiveis(video, projeto, clips):
         if k == 0:
             continue
         ganho = float(np.max(m_db[:k] - np.maximum(v_db[:k], -60)))
+        # som curto e seco (clink, estalo): o ouvido percebe pelo pico, não pela média
+        lin = 10 ** (off / 20)
+        pk_m = float(np.max(np.abs(mix[a:b]))) if b > a else 0
+        pk_v = float(np.max(np.abs(vo[a:b]))) * lin if b > a else 0
+        if pk_m > 0 and pk_v > 0:
+            ganho = max(ganho, 20 * np.log10(pk_m / pk_v))
+        elif pk_m > 0:
+            ganho = max(ganho, 60.0)
         out.append({"id": c["id"], "inicio": c["inicio"], "ganho_LU": round(ganho, 1)})
     return out
 

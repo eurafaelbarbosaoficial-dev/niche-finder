@@ -133,3 +133,26 @@ O dono pede ("quero usar o Niche Finder nesta máquina nova") e o Claude faz, gu
   - o revisor agora pega os dois casos.
 - Ele gera `<mp4>-revisao/RELATORIO.md` e as folhas de contato. O agente escreve o `REVISAO.md` com o veredito.
   Não corrige sozinho.
+
+## 1º vídeo completo (feito sozinho na madrugada de 13/11, a pedido do dono)
+- Pasta `videos/bankskandale-completo/`. Leia o `PROGRESSO.md` dela: tem o passo a passo e as lições.
+- **Linha de produção** (serve para os próximos vídeos):
+  1. voz por bloco do roteiro (ElevenLabs v4, chave do dono só na sessão);
+  2. `palavras.py` (tempo de cada palavra, whisper local) → conferir se o número de palavras bate com o roteiro;
+  3. `cenas.py` (roteiro visual, cenas presas às frases);
+  4. `montar.py kN`;
+  5. `fotos.py kN` (foto de cada cena a 85%: pega defeito de layout antes do render);
+  6. `renderizar.sh`;
+  7. `remixar.py` (refaz só o áudio, sem renderizar de novo);
+  8. `juntar.py` (corta o silêncio entre capítulos e põe o som de transição);
+  9. `masterizar.py`;
+  10. `revisor.py` + revisão visual;
+  11. `publicar/` (thumbnail, título, descrição com capítulos, fontes e créditos, tags).
+- **Motor de cenas** `comum/js/motor.js`: 18 modelos desenhados com o Pincel. Para outro tema, troque o `cenas.py`
+  e, se precisar, crie modelos novos.
+- **Custos e tempos medidos:**
+  - voz: 12.252 créditos para ~10.000 caracteres (≈1,2 por caractere);
+  - render: ~5 s de processamento por segundo de vídeo (quando roda sozinho);
+  - vídeo de ~12 min.
+- **Som:** o arquivo `moedas` original era baixo demais (o "clink" é curto). Foi comprimido e amplificado: o crédito
+  CC BY diz "bearbeitet".

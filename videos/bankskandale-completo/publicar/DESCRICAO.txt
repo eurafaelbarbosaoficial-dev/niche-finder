@@ -1,0 +1,56 @@
+TÍTULO:
+Alle Geldwäsche-Skandale der Banken erklärt
+
+DESCRIÇÃO:
+Die meisten denken bei Geldwäsche an Dönerläden und Koffer voller Bargeld. Aber am Ende landet jeder schmutzige Euro an demselben Ort: auf einem Bankkonto. Wir gehen den Eisberg der größten Geldwäsche-Skandale der Banken durch – von der Smartphone-Bank bis zu der Bank, die selbst das Verbrechen war.
+
+Kapitel:
+0:00 Razzia bei der Deutschen Bank
+1:17 Ebene 1: Die Bank auf deinem Handy (N26)
+2:40 Ebene 2: Banken, die wegschauen (ING, Commerzbank)
+4:23 Ebene 3: Die Maschine (Deutsche Bank)
+6:46 Ebene 4: Die Bank der Kartelle (HSBC, TD Bank)
+8:28 Ebene 5: Eine Filiale, 200 Milliarden (Danske Bank)
+10:03 Der Grund: Die Bank, die das Verbrechen war (BCCI)
+11:18 Strafe zahlen, weitermachen
+
+Wichtig: Eine Verdachtsmeldung ist kein Beweis für ein Verbrechen. Alle Zahlen stammen aus Behördenmitteilungen, Gerichtsdokumenten und Medienberichten – die Quellen stehen unten.
+
+Quellen:
+https://www.lto.de/recht/kanzleien-unternehmen/k/deutsche-bank-durchsuchung-verdacht-geldwaesche-staatsanwaltschaft-frankfurt-panama-papers
+https://www.db.com/files/news/documents/29.11.2018_Presseinfo_Staatswaltschaft.pdf
+https://www.it-finanzmagazin.de/bankenaufsicht-bafin-verhaengt-92-millionen-euro-geldbusse-gegen-n26-210524/
+https://www.fintechfutures.com/regulatory-actions/n26-fined-9-2m-by-bafin-over-late-submission-of-suspected-money-laundering-reports-in-2022
+https://heise.de/-9728416
+https://www.prosecutionservice.nl/latest/news/2018/09/04/ing-pays-775-million-due-to-serious-shortcomings-in-money-laundering-prevention
+https://nltimes.nl/2018/09/04/ing-pays-eu775-million-settlement-facilitating-money-laundering
+https://www.occrp.org/en/investigations/4958-vimpelcom-fined-us-795-million-over-uzbekistan-telecoms-bribes
+https://www.themoscowtimes.com/2015/08/13/us-asks-europe-to-seize-1-billion-in-russian-telecoms-bribery-case-a48962
+https://fortune.com/2015/03/12/commerzbank-to-pay-1-45-billion-to-resolve-probes-on-iran-olympus/
+https://www.steptoe.com/en/news-publications/commerzbank-1-45b-settlement-ofac-continues-scrutinizing-foreign-banks.html
+https://www.euronews.com/2017/01/31/deutsche-bank-fined-over-russian-money-laundering
+https://www.thelocal.de/20170131/deutsche-bank-handed-huge-fine-over-russian-money-laundering
+https://www.dfs.ny.gov/reports_and_publications/press_releases/pr202007071
+https://www.axios.com/2020/07/07/deutsche-bank-new-york-jeffrey-epstein
+https://www.icij.org/investigations/fincen-files/mining-sars-data/
+https://finews.asia/finance/32765-fincen-files-leader-deutsche-bank
+https://www.justice.gov/archive/usao/nye/pr/2012/2012dec11.html
+https://money.cnn.com/2012/12/12/news/companies/hsbc-money-laundering
+https://www.nbcnews.com/business/business-news/td-bank-pleads-guilty-money-laundering-case-will-pay-3-billion-penalti-rcna174912
+https://news.bloomberglaw.com/banking-law/td-will-plead-guilty-to-money-laundering-charges-in-nj-court
+https://danskebank.com/news-and-insights/news-archive/press-releases/2018/pr19092018
+https://news.err.ee/862450
+https://www.gulf-times.com/story/613532/Danske-Bank-whistleblower-says-European-bank-handl
+https://www.americanbanker.com/articles/danske-bank-pleads-guilty-to-u-s-fraud-will-forfeit-2-billion
+https://en.wikipedia.org/wiki/Danske_Bank_money_laundering_scandal
+https://irp.fas.org/congress/1992_rpt/bcci/01exec.htm
+https://www.int-comp.org/insight/the-bcci-scandal/
+https://www.thelocal.com/20160421/over-100-billion-laundered-in-germany-every-year-report
+https://www.uni-trier.de/fileadmin/fb4/prof/VWL/EWF/Research_Papers/2025-03.pdf
+
+Soundeffekte:
+"Deep Cinematic Impact" von MeijstroAudio (CC BY 4.0) – https://freesound.org/people/MeijstroAudio/sounds/377303
+"Gold coin clink (100 Rubles Witte)" von Walking.With.Microphones (CC BY 4.0, bearbeitet: komprimiert und lauter) – https://freesound.org/people/Walking.With.Microphones/sounds/557223
+Weitere Effekte: CC0 (Freesound: Breviceps, kermite607, Rizzard, MaoDin204, chriskalos).
+
+#Geldwäsche #Banken #DeutscheBank
