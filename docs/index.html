@@ -164,9 +164,9 @@ function carregar(){
 }
 
 function tudo(){
-  var r=D.rodada||{},rod=r.status==="buscando",cs=D.canais||[];
-  $("dot").className=rod?"on":"";$("st").textContent=rod?"buscando "+(r.total?Math.round(100*r.feito/r.total)+"%":""):ha(D.atualizado);
-  $("eyebrow").textContent=rod?"buscando agora · "+(r.total?r.feito+" de "+r.total:""):"atualizado "+ha(D.atualizado);$("dot2").className=rod?"on":"";
+  var r=D.rodada||{},cs=D.canais||[],parado=Date.now()-new Date(D.atualizado).getTime()>25*6e4,rod=r.status==="buscando"&&!parado,cai=r.status==="buscando"&&parado;
+  $("dot").className=rod?"on":"";$("st").textContent=rod?"buscando "+(r.total?Math.round(100*r.feito/r.total)+"%":""):cai?"busca interrompida":ha(D.atualizado);
+  $("eyebrow").textContent=rod?"buscando agora · "+(r.total?r.feito+" de "+r.total:""):cai?"busca interrompida "+ha(D.atualizado)+" (notebook desligado?) · volta sozinha na próxima rodada":"atualizado "+ha(D.atualizado);$("dot2").className=rod?"on":"";
   var rs=cs.map(ratio).filter(function(x){return x!=null;}).sort(function(a,b){return b-a;});
   UI.contar($("k-out"),cs.length,String);UI.contar($("k-obs"),D.em_observacao||0,ful);UI.contar($("k-chk"),D.checados||0,ful);
   $("k-x").textContent=rs.length?fr(rs[0]):"—";
