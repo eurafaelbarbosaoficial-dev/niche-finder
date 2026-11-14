@@ -29,14 +29,22 @@ $estudos = Join-Path ([Environment]::GetFolderPath("MyDocuments")) "estudos-de-m
 if (-not (Test-Path $estudos)) {
     if (Tem "gh") { gh repo clone eurafaelbarbosaoficial-dev/estudos-de-mercado "$estudos" } else { Write-Host "   Falta o GitHub CLI (winget install GitHub.cli + gh auth login): clone depois o estudos-de-mercado." -ForegroundColor Yellow }
 }
-if (Test-Path "$estudos\setup\instalar.ps1") {
-    & "$estudos\setup\instalar.ps1"   # watch-skill, ffmpeg, Demucs (a lupa)
+if (Test-Path "$estudos\setup\instalar.ps1") { & "$estudos\setup\instalar.ps1" }   # watch-skill, ffmpeg, Demucs (a lupa)
+
+Write-Host "3c. Parte PRIVADA do Niche Finder (pasta privado: backup, skills, memoria do Claude)..."
+$priv = Join-Path $pasta "privado"
+if (-not (Test-Path "$priv\.git")) {
+    if (Tem "gh") { gh repo clone eurafaelbarbosaoficial-dev/niche-finder-privado "$priv" } else { Write-Host "   Falta o GitHub CLI: clone depois o niche-finder-privado na pasta privado." -ForegroundColor Yellow }
+}
+if (Test-Path $priv) {
     $sk = Join-Path $HOME ".claude\skills"; New-Item -ItemType Directory -Force $sk | Out-Null
-    Get-ChildItem "$estudos\setup\skills" -Directory | ForEach-Object { if (-not (Test-Path "$sk\$($_.Name)")) { Copy-Item $_.FullName "$sk\$($_.Name)" -Recurse } }
+    Get-ChildItem "$priv\skills" -Directory -ErrorAction SilentlyContinue | ForEach-Object { if (-not (Test-Path "$sk\$($_.Name)")) { Copy-Item $_.FullName "$sk\$($_.Name)" -Recurse } }
     $mem = Join-Path $HOME ".claude\projects\C--Users-$env:USERNAME-Documents-Niche-Finder\memory"
     New-Item -ItemType Directory -Force $mem | Out-Null
-    Copy-Item "$estudos\setup\memoria-claude\*.md" $mem -Force
-    Write-Host "   skills e memoria do Claude restauradas." -ForegroundColor Green
+    Copy-Item "$priv\memoria-claude\*.md" $mem -Force -ErrorAction SilentlyContinue
+    # chave da API, historico e prints voltam para os lugares certos
+    if (Test-Path "$priv\backup") { Copy-Item "$priv\backup\*" $pasta -Recurse -Force }
+    Write-Host "   skills, memoria do Claude e backup restaurados." -ForegroundColor Green
 }
 
 if ($SemTarefa) { Write-Host "4/4 Tarefa do Windows: pulada (-SemTarefa)."; exit 0 }

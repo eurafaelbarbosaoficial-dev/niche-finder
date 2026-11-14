@@ -70,18 +70,23 @@ O dono pede ("quero usar o Niche Finder nesta máquina nova") e o Claude faz, gu
 3. Na pasta: `powershell -ExecutionPolicy Bypass -File instalar.ps1` (Python, yt-dlp, Deno, tarefa a cada 3 h).
 4. Configurar o git (user.name eurafaelbarbosaoficial-dev e o e-mail noreply do GitHub, nunca o e-mail pessoal).
 5. Ler este arquivo; rodar `python -I finder.py --publicar 5` de teste e conferir se o site atualiza.
-5b. O `instalar.ps1` (desde 13/11) também clona `eurafaelbarbosaoficial-dev/estudos-de-mercado` (PRIVADO, precisa do
-   `gh auth login` antes) em `Documents\estudos-de-mercado`, roda o `setup\instalar.ps1` de lá (watch-skill, ffmpeg e
-   Demucs = a LUPA da edição, usada pelo `producao/estilo.py`), copia as skills do dono para `%USERPROFILE%\.claude\skills\`
-   e a memória do Claude para `%USERPROFILE%\.claude\projects\C--Users-<usuário>-Documents-Niche-Finder\memory\`.
+5b. O `instalar.ps1` também:
+   - clona `eurafaelbarbosaoficial-dev/estudos-de-mercado` (PRIVADO, precisa do `gh auth login` antes) em
+     `Documents\estudos-de-mercado` e roda o `setup\instalar.ps1` de lá (watch-skill, ffmpeg e Demucs = a LUPA da edição,
+     usada pelo `producao/estilo.py`);
+   - clona `eurafaelbarbosaoficial-dev/niche-finder-privado` (PRIVADO) DENTRO do Niche Finder, na pasta `privado/`
+     (fora do git do site), e de lá restaura: as skills do dono (`%USERPROFILE%\.claude\skills\`), a memória do Claude
+     (`%USERPROFILE%\.claude\projects\C--Users-<usuário>-Documents-Niche-Finder\memory\`) e o backup (chave da API,
+     histórico dos canais, prints do Studio) para os lugares certos.
    **As conversas do Claude Code devem ser abertas na pasta `Documents\Niche Finder`** (é a ela que a memória está ligada).
    A pasta `Documents\analise de nicho` é só histórico do começo (o estudo de games foi copiado para
    `conhecimento/estudo-games-2026-11-12/`).
-5c. **Backup privado** (fora do GitHub de propósito): `Documents\Backup Niche Finder\backup-privado-<data>.zip` — chave da
-   API do YouTube, prints do Studio, histórico dos canais e o vídeo final. O dono guarda no Drive/pendrive; na máquina nova,
-   descompactar DENTRO de `Documents\Niche Finder`. Sem o zip: criar outra chave no Google Cloud (projeto "Niche Finder").
+5c. **Parte privada = pasta `privado/`** (pedido do dono em 14/11: TUDO dentro do Niche Finder). Backup semanal
+   (segunda 4h, `producao/backup.py`) atualiza `privado/` e envia para o repositório privado. O zip COM o vídeo final fica em
+   `privado/zips/` (só no notebook: o GitHub recusa arquivo > 100 MB; guarda os 3 últimos). Sem o repositório privado:
+   criar outra chave no Google Cloud (projeto "Niche Finder").
 5d. Tarefas do Windows: o `instalar.ps1` cria "Niche Finder" (busca), "Niche Finder - Roteiros" (vigia) e
-   "Niche Finder - Pautas semanais" e "Niche Finder - Backup" (segunda 4h: producao/backup.py → GitHub privado + zip local). O Claude Code de linha de comando precisa de login uma vez (`claude`, /login).
+   "Niche Finder - Pautas semanais" e "Niche Finder - Backup" (segunda 4h: producao/backup.py → pasta privado/ + repositório niche-finder-privado). O Claude Code de linha de comando precisa de login uma vez (`claude`, /login).
 6. Na máquina antiga: apagar a tarefa "Niche Finder" (`Unregister-ScheduledTask -TaskName "Niche Finder" -Confirm:$false`),
    pelo Claude de lá ou pelo Agendador de Tarefas. Só uma máquina busca por vez.
 
