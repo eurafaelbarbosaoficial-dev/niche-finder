@@ -333,7 +333,7 @@ def rodada(a, trava):
     # novos já conhecidos (para atualizar as views) + canais achados agora que ainda não foram descartados
     fila = [cid for cid, c in cache.items() if c.get("status") == "novo"]
     fila += [cid for cid in achados if cache.get(cid, {}).get("status") not in ("novo", "fora")]
-    info.update(fase="Checando canais", feito=0, total=len(fila))
+    info.update(fase="Checando canais", feito=0, total=len(fila), checando_desde=agora().isoformat())
     log(f"{len(achados)} canais nas buscas · {len(fila)} para checar")
 
     def trabalho(cid):
@@ -364,6 +364,17 @@ def rodada(a, trava):
             c = cache[cid]
             _registrar(c, cid, i, len(fila))
             info.update(feito=i)
+            # feed ao vivo para o site: os últimos canais checados e quantos novos/outliers já saíram nesta rodada
+            mv = (c.get("melhor") or {}).get("views") or 0
+            info.setdefault("ultimos", []).insert(0, {"nome": c.get("nome") or cid, "id": cid, "status": c.get("status"),
+                                                      "idioma": c.get("idioma"), "melhor": mv if c.get("status") == "novo" else None,
+                                                      "outlier": c.get("status") == "novo" and mv >= a.bom_video,
+                                                      "quando": agora().isoformat(timespec="seconds")})
+            del info["ultimos"][12:]
+            if c.get("status") == "novo":
+                info["novos_rodada"] = info.get("novos_rodada", 0) + 1
+                if mv >= a.bom_video:
+                    info["outliers_rodada"] = info.get("outliers_rodada", 0) + 1
             if i % 10 == 0:
                 salvar()
     info.update(status="pronto", fase="Rodada concluída", fim=agora().isoformat())
