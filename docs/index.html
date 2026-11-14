@@ -52,6 +52,29 @@
 .v .tg2 .g{color:var(--up)}
 .v:focus-visible .th{box-shadow:0 0 0 3px var(--az)}
 .como{margin-top:56px}
+/* painel da busca ao vivo */
+.rd{margin:14px 0 6px;border-radius:18px;background:var(--card);border:1px solid var(--ln);box-shadow:var(--sh);padding:16px 18px;display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,300px);gap:18px;align-items:center;overflow:hidden;position:relative}
+.rd.off{grid-template-columns:auto minmax(0,1fr);padding:12px 16px}
+.rad{width:64px;height:64px;border-radius:50%;position:relative;background:radial-gradient(circle,rgba(255,0,51,.08) 0 30%,transparent 31%),repeating-radial-gradient(circle,transparent 0 10px,var(--ln) 10px 11px);border:1px solid var(--ln2);overflow:hidden;flex:none}
+.rad:before{content:"";position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 0deg,rgba(255,0,51,.55),rgba(255,0,51,0) 70deg,transparent 360deg);animation:gira 2.4s linear infinite}
+.rad i{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--lm);box-shadow:0 0 8px var(--lm);animation:pisca 2.4s ease-in-out infinite}
+.rad i:nth-child(1){left:18px;top:14px}.rad i:nth-child(2){left:40px;top:34px;animation-delay:.8s}.rad i:nth-child(3){left:22px;top:44px;animation-delay:1.6s}
+.rd.off .rad:before,.rd.off .rad i{animation:none;opacity:.25}
+.rd.cai .rad:before{background:conic-gradient(from 0deg,rgba(217,48,37,.4),transparent 70deg)}
+@keyframes gira{to{transform:rotate(360deg)}} @keyframes pisca{0%,100%{opacity:.15;transform:scale(.6)}50%{opacity:1;transform:scale(1.2)}}
+.rd h4{margin:0;font-size:17px;font-weight:700;display:flex;align-items:center;gap:8px} .rd h4 small{font-size:13px;font-weight:400;color:var(--mut)}
+.bar{height:10px;border-radius:99px;background:var(--s2);overflow:hidden;margin:10px 0 8px;position:relative}
+.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--lm),#ff5a7a);transition:width 1s var(--ease);position:relative;overflow:hidden}
+.bar i:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform:translateX(-100%);animation:brilho 1.8s infinite}
+@keyframes brilho{to{transform:translateX(100%)}}
+.mtr{display:flex;flex-wrap:wrap;gap:6px} .mtr span{font-size:12.5px;background:var(--s2);border-radius:999px;padding:3px 10px;color:var(--tx2)} .mtr b{color:var(--tx);font-weight:700}
+.mtr .lm2{background:rgba(255,0,51,.1);color:var(--lm)}
+.tk2{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px;max-height:118px;overflow:hidden;mask-image:linear-gradient(#000 70%,transparent)}
+.tk2 li{display:flex;gap:8px;align-items:center;font-size:12.5px;animation:entra .5s var(--ease)} .tk2 li span{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tk2 em{font-style:normal;font-size:11px;font-weight:700;border-radius:6px;padding:1px 6px;background:var(--s2);color:var(--mut)} .tk2 em.n{background:rgba(11,128,67,.12);color:var(--up)} .tk2 em.o{background:var(--lm);color:#fff}
+@keyframes entra{from{opacity:0;transform:translateY(-6px)}}
+.rd .tt{font-size:11.5px;color:var(--mut);margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em;font-weight:500}
+@media(max-width:900px){.rd{grid-template-columns:auto minmax(0,1fr)}.rd .feedx{grid-column:1/-1}}
 @media (max-width:1000px){
   .yt{grid-template-columns:1fr;padding-top:64px;gap:0}
   .side{position:static;max-height:none;display:flex;gap:8px;overflow-x:auto;padding:8px 0;scrollbar-width:none}
@@ -90,6 +113,7 @@
   </aside>
 
   <main class="feed">
+    <section class="rd off" id="radar"></section>
     <div class="topo">
       <label class="srch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
         <input id="q" type="search" placeholder="Pesquisar canal, vídeo ou tema" autocomplete="off"><kbd>/</kbd></label>
@@ -175,8 +199,25 @@ function tudo(){
   $("t-lang").innerHTML=Object.keys(LANGS).map(function(k){return"<div class='rw'><span>"+LANGS[k]+"</span><span class='tr'><i data-w='"+Math.round(100*(nl[k]||0)/ml)+"'></i></span><b>"+(nl[k]||0)+"</b></div>";}).join("");
   setTimeout(function(){[].forEach.call(document.querySelectorAll(".tr i"),function(i){i.style.width=i.dataset.w+"%";});},120);
   $("rodape").textContent="Dados do YouTube · gravado em "+fdata(D.atualizado)+" às "+(D.atualizado||"").slice(11,16)+" · o que o YouTube não informou aparece como ?";
-  langs(cs);rail(cs);lista();if(aberto)abrir(aberto,true);
+  radar(r,rod,cai);langs(cs);rail(cs);lista();if(aberto)abrir(aberto,true);
 }
+function dur(min){if(min==null||!isFinite(min))return"?";min=Math.round(min);if(min<60)return min+" min";var h=Math.floor(min/60),m=min%60;return h+" h"+(m?" "+String(m).padStart(2,"0"):"");}
+function hm(iso){var d=new Date(iso);return String(d.getHours()).padStart(2,"0")+":"+String(d.getMinutes()).padStart(2,"0");}
+function radar(r,rod,cai){var el=$("radar");
+  var rad="<div class='rad'><i></i><i></i><i></i></div>";
+  if(!rod&&!cai){var fim=r.fim||D.atualizado,prox=new Date(new Date(fim).getTime()+3*36e5);
+    el.className="rd off";el.innerHTML=rad+"<div><h4>Busca em pausa <small>a última rodada terminou "+ha(fim)+" · a próxima começa por volta das "+hm(prox.toISOString())+"</small></h4></div>";return;}
+  var t=r.total||0,f=r.feito||0,pct=t?100*f/t:0,ini=r.checando_desde||r.inicio,min=(Date.now()-new Date(ini).getTime())/6e4,vel=min>1&&f?f/min:null,falta=vel?(t-f)/vel:null;
+  el.className="rd"+(cai?" cai":"");
+  var ult=(r.ultimos||[]).map(function(u){var tag=u.outlier?"<em class='o'>OUTLIER</em>":u.status==="novo"?"<em class='n'>novo</em>":"<em>fora</em>";
+    return"<li>"+tag+"<span>"+esc(u.nome)+(u.melhor!=null?" · "+fmt(u.melhor)+" views":"")+"</span><small class='mut'>"+(u.idioma?esc(u.idioma.toUpperCase()):"")+"</small></li>";}).join("");
+  el.innerHTML=rad+"<div><h4>"+(cai?"Busca interrompida":"Garimpando canais novos agora")+" <small>"+esc(cai?"o notebook desligou no meio; volta sozinha na próxima rodada":(r.fase||""))+"</small></h4>"+
+    "<div class='bar'><i style='width:"+pct.toFixed(1)+"%'></i></div>"+
+    "<div class='mtr'><span><b>"+pct.toFixed(1).replace(".",",")+"%</b></span><span><b>"+ful(f)+"</b> de "+ful(t)+" canais</span>"+
+    (vel&&!cai?"<span><b>"+vel.toFixed(1).replace(".",",")+"</b> canais/min</span><span>faltam <b>~"+dur(falta)+"</b></span>":"")+
+    "<span>começou às <b>"+hm(r.inicio)+"</b></span>"+(r.novos_rodada?"<span>novos nesta rodada: <b>"+ful(r.novos_rodada)+"</b></span>":"")+
+    (r.outliers_rodada?"<span class='lm2'>outliers achados: <b>"+r.outliers_rodada+"</b></span>":"")+"<span>dados de "+ha(D.atualizado)+"</span></div></div>"+
+    (ult?"<div class='feedx'><div class='tt'>Acabou de checar</div><ul class='tk2'>"+ult+"</ul></div>":"<div class='feedx'><div class='tt'>Acabou de checar</div><p class='mut' style='font-size:12.5px;margin:0'>A lista aparece a partir da próxima rodada.</p></div>");}
 function langs(cs){var n={};cs.forEach(function(x){n[x.idioma]=(n[x.idioma]||0)+1;});
   $("langs").innerHTML="<button class='si"+(S.lang===""?" on":"")+"' data-l=''><span class='fl'>●</span><span>Todos</span><em>"+cs.length+"</em></button>"+
     Object.keys(LANGS).map(function(k){return"<button class='si"+(S.lang===k?" on":"")+"' data-l='"+k+"'><span class='fl'>"+k.toUpperCase()+"</span><span>"+LANGS[k]+"</span><em>"+(n[k]||0)+"</em></button>";}).join("");
